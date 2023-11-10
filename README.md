@@ -2,9 +2,9 @@
 
 [ウェブアクセシビリティ基盤委員会 (WAIC) 翻訳ワーキンググループ (WG4)](http://waic.jp/committee/wg4/) が管理する、WCAG 2.2 とその関連文書のレポジトリです。
 
-GitHub Pages により
+raw.githack.com により
 
-- [WCAG 2.2](https://waic.github.io/wcag22/guidelines/)
+- [WCAG 2.2](https://raw.githack.com/waic/wcag22/main/guidelines/index.html)
 <!--
 - [WCAG 2.1 解説書](https://waic.github.io/wcag21/understanding/)
 - [WCAG 2.1 達成方法集](https://waic.github.io/wcag21/techniques/)
