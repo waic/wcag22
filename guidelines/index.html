@@ -397,44 +397,44 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             
             
             
-            <p>WCAG 2.2 was initiated with the goal to continue the work of WCAG 2.1: Improving accessibility guidance for three major groups: users with cognitive or learning disabilities, users with low vision, and users with disabilities on mobile devices. これらのニーズを満たすために多くの方法が提案され評価され、ワーキンググループによって洗練された。WCAG 2.0 から引き継がれた構造上の要件、提案の明確さ及び影響、並びに進行計画が、この版に含まれる最終的な一式の達成基準につながった。ワーキンググループは、WCAG 2.2 がこれらすべての領域におけるウェブコンテンツのアクセシビリティのガイダンスを段階的に進歩させると考えているが、このガイドラインではすべての利用者のニーズが満たされているわけではないことを強調している。</p>
+            <p>WCAG 2.2 は、認知または学習障害のある利用者、ロービジョンの利用者、及びモバイルデバイス上の障害のある利用者、という三つの主要なグループのためのアクセシビリティのガイダンスを改善する WCAG 2.1 の取組を継続することを目的に開始された。これらのニーズを満たすために多くの方法が提案され評価され、ワーキンググループによって洗練された。WCAG 2.0 から引き継がれた構造上の要件、提案の明確さ及び影響、並びに進行計画が、この版に含まれる最終的な一式の達成基準につながった。ワーキンググループは、WCAG 2.2 がこれらすべての領域におけるウェブコンテンツのアクセシビリティのガイダンスを段階的に進歩させると考えているが、このガイドラインによってすべての利用者のニーズが満たされているわけではないことを強調している。</p>
             
             				
-            <p>WCAG 2.2 builds on and is backwards compatible with WCAG 2.1, meaning web pages that conform to WCAG 2.2 are at least as accessible as pages that conform to WCAG 2.1. Requirements have been added that build on 2.1 and 2.0. WCAG 2.2 has removed one success criterion, <a href="#parsing">4.1.1 Parsing</a>. Authors that are required by policy to conform with WCAG 2.0 or 2.1 will be able to update content to WCAG 2.2, but may need to continue to test and report 4.1.1. Authors following more than one version of the guidelines should be aware of the following additions.</p>
+            <p>WCAG 2.2 は、WCAG 2.0 をベースに後方互換性を保ちつつ構築されているため、WCAG 2.2 に準拠しているウェブページは、少なくとも WCAG 2.1 に準拠しているページと同程度にアクセシブルである。2.1 及び 2.0 に基づく要件が追加された。WCAG 2.2 は達成基準 <a href="#parsing">4.1.1 構文解析</a>を削除した。WCAG 2.0 又は 2.1 への適合を方針によって要求されているコンテンツ制作者は、WCAG 2.2 に適合できるようコンテンツをアップデートできるが、4.1.1 については引き続きテスト及び報告を行う必要があるかもしれない。一つ以上のガイドラインに従うコンテンツ制作者は、以下に挙げる追加事項に注意すべきである。</p>
             				
             <section id="new-features-in-wcag-2-2"><div class="header-wrapper"><h4 id="new-features-in-wcag-2-2-0">WCAG 2.2 の新しい特徴</h4><a class="self-link" href="#new-features-in-wcag-2-2" aria-label="Permalink for this Section"></a></div>
                					
                
                					
-               <p>WCAG 2.2 extends WCAG 2.1 by adding new success criteria, definitions to support them, and guidelines to organize the additions. This additive approach helps to make it clear that sites which conform to WCAG 2.2 also conform to WCAG 2.1. The Accessibility Guidelines Working Group recommends that sites adopt WCAG 2.2 as their new conformance target, even if formal obligations mention previous versions, to provide improved accessibility and to anticipate future policy changes.</p>
+               <p>WCAG 2.2 は WCAG 2.1 に新しい達成基準やそれらを補助する定義、追加分をまとめるガイドラインによって拡張されている。この付加的なアプローチは、WCAG 2.2 に適合するサイトが WCAG 2.1 にも適合することを明確にするのに役立つ。アクセシビリティガイドライン ワーキンググループは新しい適合目標として、例え公的義務が以前のバージョンに言及するものであっても、将来のポリシーの変更を鑑みアクセシビリティをより向上させるために、サイトが WCAG 2.2 を採用することを推奨する。</p>
                
                <p>以下が WCAG 2.2 の新しい達成基準である:</p>
                
                <ul>
                   						
-                  <li>2.4.11 <a href="#focus-not-obscured-minimum">Focus Not Obscured (Minimum)</a> (AA)</li>
+                  <li>2.4.11 <a href="#focus-not-obscured-minimum">隠されないフォーカス (最低限)</a> (AA)</li>
                   						
-                  <li>2.4.12 <a href="#focus-not-obscured-enhanced">Focus Not Obscured (Enhanced)</a> (AAA)</li>
+                  <li>2.4.12 <a href="#focus-not-obscured-enhanced">隠されないフォーカス (高度)</a> (AAA)</li>
                   
-                  <li>2.4.13 <a href="#focus-appearance">Focus Appearance</a> (AAA)</li>	
+                  <li>2.4.13 <a href="#focus-appearance">フォーカスの外観</a> (AAA)</li>	
                   						
-                  <li>2.5.7 <a href="#dragging-movements">Dragging Movements</a> (AA)</li>
+                  <li>2.5.7 <a href="#dragging-movements">ドラッグ動作</a> (AA)</li>
                   						
-                  <li>2.5.8 <a href="#target-size-minimum">Target Size (Minimum)</a> (AA)</li>
+                  <li>2.5.8 <a href="#target-size-minimum">ターゲットのサイズ (最低限)</a> (AA)</li>
                   						
-                  <li>3.2.6 <a href="#consistent-help">Consistent Help</a> (A)</li>
+                  <li>3.2.6 <a href="#consistent-help">一貫したヘルプ</a> (A)</li>
                   						
-                  <li>3.3.7 <a href="#redundant-entry">Redundant Entry</a> (A)</li>
+                  <li>3.3.7 <a href="#redundant-entry">冗長な入力</a> (A)</li>
                   						
-                  <li>3.3.8 <a href="#accessible-authentication-minimum">Accessible Authentication (Minimum)</a> (AA)</li>
+                  <li>3.3.8 <a href="#accessible-authentication-minimum">アクセシブルな認証 (最低限)</a> (AA)</li>
                   						
-                  <li>3.3.9 <a href="#accessible-authentication-enhanced">Accessible Authentication (Enhanced)</a> (AAA)</li>
+                  <li>3.3.9 <a href="#accessible-authentication-enhanced">アクセシブルな認証 (高度)</a> (AAA)</li>
                   					
                </ul>
                					
                <p>新しい達成基準は、用語集に追加された新しい用語を参照していることがあり、それらもまた達成基準の規定要件の一部を構成することがある。</p>
                
-               <p>WCAG 2.2 also introduces new sections detailing aspects of the specification which may impact <a href="#privacy-summary">privacy</a> and <a href="#security-summary">security</a>.</p>
+               <p>WCAG 2.2 は、<a href="#privacy-summary">プライバシー</a>と<a href="#security-summary">セキュリティ</a>に影響を与える可能性のある仕様の側面を詳細に説明する新しいセクションも導入しています。</p>
                
                				
             </section>
@@ -443,7 +443,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                					
                
                					
-               <p>In order to avoid confusion for implementers for whom backwards compatibility to WCAG 2 versions is important, new success criteria in WCAG 2.2 have been appended to the end of the set of success criteria within their guideline. This avoids the need to change the section number of success criteria from WCAG 2, which would be caused by inserting new success criteria between existing success criteria in the guideline, but it means success criteria in each guideline are no longer grouped by conformance level. 各ガイドライン内での達成基準の順番は、適合レベルに関する情報を暗示するものではなく、各達成基準自身の適合レベル表示 (A / AA / AAA) のみが適合レベルを示す。<a href="https://www.w3.org/WAI/WCAG22/quickref/">WCAG 2.2 クイックリファレンス</a>は、他の多数のフィルターや並べ替え方法と共に、適合レベルごとにグループ化された達成基準を見る方法を提供する。</p>
+               <p>WCAG 2 系のバージョンに対する後方互換性が重要となる開発者の混乱を招くことを避けるため、WCAG 2.2 における新しい達成基準はガイドライン内の一連の達成基準の末尾に追加されている。これにより、ガイドラインの既存の達成基準の間に新しい達成基準を挿入することによって生じるであろう、WCAG 2.1 からある達成基準のセクション番号の変更の必要性が、回避される。しかしながらこのことは、各ガイドライン内の達成基準がもはや適合レベルごとにグループ分けされていないことを意味する。各ガイドライン内での達成基準の順番は、適合レベルに関する情報を暗示するものではなく、各達成基準自身の適合レベル表示 (A / AA / AAA) のみが適合レベルを示す。<a href="https://www.w3.org/WAI/WCAG22/quickref/">WCAG 2.2 Quick Reference</a>は、他の多数のフィルターや並べ替え方法と共に、適合レベルごとにグループ化された達成基準を見る方法を提供するだろう。</p>
                				
             </section>
             				
@@ -451,7 +451,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                					
                
                					
-               <p>WCAG 2.2 uses the same conformance model as WCAG 2.0. It is intended that sites that conform to WCAG 2.2 also conform to WCAG 2.0 and WCAG 2.1, which means they meet the requirements of any policies that reference WCAG 2.0 or WCAG 2.1, while also better meeting the needs of users on the current Web.</p>
+               <p>WCAG 2.2 は WCAG 2.0 と同様の適合モデルを使用している。これは WCAG 2.2 に適合するサイトが WCAG 2.0 及び WCAG 2.1 にも適合することを意図している。つまり、それらのサイトが WCAG 2.0 又は WCAG 2.1 を参照するいかなる方針の要件も満たすと同時に、現在のウェブ上の利用者のニーズをより良く満たすことを意味します。</p>
+              
                				
             </section>
             			
