@@ -1441,8 +1441,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     
     <p>キーボードの<a href="#dfn-focus-indicator" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-focus-indicator-1" title="[New]">フォーカスインジケータ</a>が視覚的に表示される場合、フォーカスインジケータの領域が以下の全てを満たす。</p>
     <ul>
-        <li>フォーカスされていないコンポーネント又はサブコンポーネントの厚さ 2 <a href="#dfn-css-pixels" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-css-pixels-3" title="約 0.0213 度の視野角。">CSS ピクセル</a>の<a href="#dfn-perimeter" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-perimeter-1" title="[New]">外周</a>の面積と少なくとも同じ大きさである。かつ、</li>
-        <li>同一ピクセルのフォーカス状態と非フォーカス状態との間で少なくとも 3:1 のコントラスト比がある。</li>
+        <li>フォーカスされていないコンポーネント又はサブコンポーネントの幅 2 <a href="#dfn-css-pixels" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-css-pixels-3" title="約 0.0213 度の視野角。">CSS ピクセル</a>の<a href="#dfn-perimeter" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-perimeter-1" title="[New]">外周</a>の面積と少なくとも同じ大きさである。かつ、</li>
+        <li>同一ピクセルのフォーカスされている状態とフォーカスされていない状態との間で少なくとも 3:1 のコントラスト比がある。</li>
     </ul>
 
     <p>例外:</p>
@@ -1451,11 +1451,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         <li>コンテンツ制作者がフォーカスインジケータ及びそのインジケータの背景色を変更していない場合。</li>
     </ul>
     
-																																																																																													<div class="note" role="note" id="issue-container-generatedID-29"><div role="heading" class="note-title marker" id="h-note-29" aria-level="5"><span>注記 1</span></div><p class="">ユーザインタフェースコンポーネント又はサブコンポーネントとして認識されるもの (輪郭又は大きさを決定づけるもの) は、その視覚的<a href="#dfn-presentation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-presentation-3" title="利用者が知覚できる形式でコンテンツをレンダリングすること。">提示</a>に依存する。視覚的提示には、コンポーネントの可視<a href="#dfn-content" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-content-1" title="コンテンツの構造、提示、及びインタラクションを定義するコード又はマークアップも含めて、ユーザエージェントによって利用者に伝達される情報及び感覚的な体験。">コンテンツ</a>、ボーダー、及びコンポーネント固有の背景が含まれる。コンポーネントのコンテンツ、背景、又はボーダーの外側にある、影及び光の効果は含まれない。</p></div>
+																																																																																													<div class="note" role="note" id="issue-container-generatedID-29"><div role="heading" class="note-title marker" id="h-note-29" aria-level="5"><span>注記 1</span></div><p class="">ユーザインタフェースコンポーネント又はサブコンポーネントとして認識されるもの (囲み又は大きさを決定づけるもの) は、その視覚的<a href="#dfn-presentation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-presentation-3" title="利用者が知覚できる形式でコンテンツをレンダリングすること。">提示</a>に依存する。視覚的提示には、コンポーネントの可視<a href="#dfn-content" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-content-1" title="コンテンツの構造、提示、及びインタラクションを定義するコード又はマークアップも含めて、ユーザエージェントによって利用者に伝達される情報及び感覚的な体験。">コンテンツ</a>、ボーダー、及びコンポーネント固有の背景が含まれる。コンポーネントのコンテンツ、背景、又はボーダーの外側にある、影及びグロー効果は含まれない。</p></div>
 
     <div class="note" role="note" id="issue-container-generatedID-30"><div role="heading" class="note-title marker" id="h-note-30" aria-level="5"><span>注記 2</span></div><p class="">フォーカスインジケータを受け取ることができるサブコンポーネントの例としては、開いたドロップダウンメニューの中のメニュー項目、又はグリッド内のフォーカス可能なセル、などがある。</p></div>
 
-																																																																																													<div class="note" role="note" id="issue-container-generatedID-31"><div role="heading" class="note-title marker" id="h-note-31" aria-level="5"><span>注記 3</span></div><p class="">コントラストの計算は、(HTML、CSS、及び SVG といった) <a href="#dfn-technologies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-technologies-1" title="ユーザエージェントがどのようにレンダリング、再生、又は実行するかを符号化するメカニズム。">技術</a>の中で定義された色を基に、行うことができる。その際、ユーザエージェントの解像度強化及びアンチエイリアスによって変更されたピクセルは、無視することができる。</p></div>
+																																																																																													<div class="note" role="note" id="issue-container-generatedID-31"><div role="heading" class="note-title marker" id="h-note-31" aria-level="5"><span>注記 3</span></div><p class="">コントラストは、(HTML、CSS、及び SVG のような) <a href="#dfn-technologies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-technologies-1" title="ユーザエージェントがどのようにレンダリング、再生、又は実行するかを符号化するメカニズム。">技術</a>の中で定義された色を基に計算できる。その際、ユーザエージェントの高解像度化及びアンチエイリアスによって変更されたピクセルは無視できる。</p></div>
 
  </section>
 
