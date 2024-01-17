@@ -1556,9 +1556,9 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 	<dt>同等のものが存在する </dt> 
   <dd>そのターゲットと同等のリンク又はコントロールが同じページに 44 × 44 CSS ピクセル以上のサイズで存在する。</dd>
 	<dt>インラインである </dt> 
-  <dd>そのターゲットが文中、又はテキストブロック内に存在する。</dd>
+  <dd>ターゲットが文中、又はテキストブロック内に存在する。</dd>
 	<dt>ユーザエージェントのコントロールである </dt> 
-  <dd>ターゲットのサイズがユーザエージェントによって定められており、かつコンテンツ制作者が変更していない。</dd>
+  <dd>ターゲットのサイズがユーザエージェントによって決定され、かつコンテンツ制作者によって変更されていない。</dd>
 	<dt>必要不可欠</dt> 
   <dd>そのターゲットを特定の方法で提示することが、情報伝達にとって<a href="#dfn-essential" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-essential-12" title="もし取り除いてしまうと、コンテンツの情報又は機能を根本的に変えてしまい、かつ、適合する他の方法では情報及び機能を実現できない。">必要不可欠</a>である。</dd>
 </dl>  
@@ -1595,10 +1595,10 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     
     <p><a href="#dfn-pointer-inputs" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-pointer-inputs-2" title="マウス、ペン、タッチ接触のように、画面上の特定の座標 (又は複数の座標群) をターゲットにできるデバイスからの入力。">ポインタ入力</a>の<a href="#dfn-targets" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-targets-2" title="ユーザインタフェース コンポーネントのインタラクティブな領域のような、ポインタアクションを受け入れるディスプレイの領域">ターゲット</a>のサイズは、少なくとも<a href="#dfn-css-pixels" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-css-pixels-5" title="約 0.0213 度の視野角。">CSS ピクセル</a>である。ただし、次の場合は除く:</p>
     <ul>
-        <li><strong>スペースがある:</strong> 小サイズ (24 × 24 CSS ピクセル未満) のターゲットにおいて、各ターゲットの<a href="#dfn-bounding-boxes" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-bounding-boxes-1" title="[New]">バウンディングボックス</a>の中心に直径 24 CSS ピクセルの円を置いた場合、その円が別のターゲットもしくは別の小サイズのターゲットの円と交差しないように、ターゲットが配置されている。</li>
-        <li><strong>同等のものが存在する:</strong> その機能を、同一ページ上の、この達成基準を満たす別のコントロールによって、実行することができる。</li>
-        <li><strong>インラインである:</strong> そのターゲットが文中に存在する、又は、そのサイズがターゲットでないテキストの行送りによって制約される。</li>
-        <li><strong>ユーザエージェントのコントロールである:</strong> ターゲットのサイズが<a href="#dfn-user-agents" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-agents-3" title="ウェブコンテンツを取得して利用者に提示するあらゆるソフトウェア。">ユーザエージェント</a>によって定められており、かつコンテンツ制作者が変更していない。</li>
+        <li><strong>スペースがある:</strong> 小さなターゲット (24 × 24 CSS ピクセル未満のもの) は、直径 24 CSS ピクセルの円をそれぞれの<a href="#dfn-bounding-boxes" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-bounding-boxes-1" title="[New]">境界ボックス</a>の中心に置く場合、その円が別のターゲット又は別の小さなターゲットの円と交差しないように配置されている。</li>
+        <li><strong>同等のものが存在する:</strong> その機能は、この達成基準を満たす同一ページ上の別のコントロールを通じて達成できる。</li>
+        <li><strong>インラインである:</strong> ターゲットが文中に存在する、又は、そのサイズがターゲット以外のテキストに対する行の高さによって制約されている。</li>
+        <li><strong>ユーザエージェントのコントロールである:</strong> ターゲットのサイズが<a href="#dfn-user-agents" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-agents-3" title="ウェブコンテンツを取得して利用者に提示するあらゆるソフトウェア。">ユーザエージェント</a>によって決定され、かつコンテンツ制作者によって変更されていない。</li>
         <li><strong>必要不可欠:</strong> そのターゲットを特定の方法で<a href="#dfn-presentation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-presentation-4" title="利用者が知覚できる形式でコンテンツをレンダリングすること。">提示</a>することが、情報伝達にとって<a href="#dfn-essential" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-essential-15" title="もし取り除いてしまうと、コンテンツの情報又は機能を根本的に変えてしまい、かつ、適合する他の方法では情報及び機能を実現できない。">必要不可欠</a>である、又は法的に要求されている。</li>
     </ul>
     <div class="note" role="note" id="issue-container-generatedID-37"><div role="heading" class="note-title marker" id="h-note-37" aria-level="5"><span>注記 1</span></div><p class="">ターゲット内の位置に基づいて空間的に値を選択できるターゲットは、達成基準の目的上、一つのターゲットとみなされる。例としては、スライダー、色のグラデーションを表示するカラーピッカー、カーソルを置く編集可能領域などがある。</p></div>
