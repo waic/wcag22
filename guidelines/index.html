@@ -416,7 +416,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                   						
                   <li>2.4.12 <a href="#focus-not-obscured-enhanced">隠されないフォーカス (高度)</a> (AAA)</li>
                   
-                  <li>2.4.13 <a href="#focus-appearance">Focus Appearance</a> (AAA)</li>	
+                  <li>2.4.13 <a href="#focus-appearance">フォーカスの外観</a> (AAA)</li>	
                   						
                   <li>2.5.7 <a href="#dragging-movements">ドラッグ動作</a> (AA)</li>
                   						
@@ -1433,30 +1433,30 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
  </section>
 
             
-            <section class="guideline" id="focus-appearance"><div class="header-wrapper"><h4 id="x2-4-13-focus-appearance"><bdi class="secno">Success Criterion 2.4.13 </bdi>Focus Appearance</h4><a class="self-link" href="#focus-appearance" aria-label="Permalink for Section 2.4.13"></a></div>
+            <section class="guideline" id="focus-appearance"><div class="header-wrapper"><h4 id="x2-4-13-focus-appearance"><bdi class="secno">達成基準 2.4.13 </bdi>フォーカスの外観</h4><a class="self-link" href="#focus-appearance" aria-label="Permalink for Section 2.4.13"></a></div>
    
     
     
     <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance.html">Understanding Focus Appearance</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#focus-appearance">How to Meet Focus Appearance</a></div><p class="conformance-level">(レベル AAA)</p>
 	<p class="change">[New]</p>
     
-    <p>When the keyboard <a href="#dfn-focus-indicator" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-focus-indicator-1" title="[New]">focus indicator</a> is visible, an area of the focus indicator meets all the following:</p>
+    <p>キーボードの<a href="#dfn-focus-indicator" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-focus-indicator-1" title="[New]">フォーカスインジケータ</a>が視覚的に表示される場合、フォーカスインジケータの領域が以下の全てを満たす。</p>
     <ul>
-        <li>is at least as large as the area of a 2 <a href="#dfn-css-pixels" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-css-pixels-3" title="約 0.0213 度の視野角。">CSS pixel</a> thick <a href="#dfn-perimeter" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-perimeter-1" title="[New]">perimeter</a> of the unfocused component or sub-component, and</li>
-        <li>has a contrast ratio of at least 3:1 between the same pixels in the focused and unfocused states.</li>
+        <li>フォーカスされていないコンポーネント又はサブコンポーネントの、太さ 2 <a href="#dfn-css-pixels" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-css-pixels-3" title="約 0.0213 度の視野角。">CSS ピクセル</a>の<a href="#dfn-perimeter" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-perimeter-1" title="[New]">外周</a>の領域と同等以上の大きさである。かつ、</li>
+        <li>フォーカスされている状態とフォーカスされていない状態との間で、同一ピクセルに少なくとも 3:1 のコントラスト比がある。</li>
     </ul>
 
-    <p>Exceptions:</p>
+    <p>例外:</p>
     <ul>
-      <li>The focus indicator is determined by the <a href="#dfn-user-agents" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-agents-1" title="ウェブコンテンツを取得して利用者に提示するあらゆるソフトウェア。">user agent</a> and cannot be adjusted by the author, or</li>
-        <li>The focus indicator and the indicator's background color are not modified by the author.</li>
+      <li>フォーカスインジケータが<a href="#dfn-user-agents" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-agents-1" title="ウェブコンテンツを取得して利用者に提示するあらゆるソフトウェア。">ユーザエージェント</a>によって決定され、かつコンテンツ制作者が調整できない場合。又は、</li>
+        <li>コンテンツ制作者がフォーカスインジケータ及びそのインジケータの背景色を変更していない場合。</li>
     </ul>
     
-    <div class="note" role="note" id="issue-container-generatedID-29"><div role="heading" class="note-title marker" id="h-note-29" aria-level="5"><span>注記 1</span></div><p class="">What is perceived as the user interface component or sub-component (to determine enclosure or size) depends on its visual <a href="#dfn-presentation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-presentation-3" title="rendering of the content in a form to be perceived by users">presentation</a>. The visual presentation includes the component's visible <a href="#dfn-content" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-content-1" title="コンテンツの構造、提示、及びインタラクションを定義するコード又はマークアップも含めて、ユーザエージェントによって利用者に伝達される情報及び感覚的な体験。">content</a>, border, and component-specific background. It does not include shadow and glow effects outside the component's content, background, or border.</p></div>
+																																																																																													<div class="note" role="note" id="issue-container-generatedID-29"><div role="heading" class="note-title marker" id="h-note-29" aria-level="5"><span>注記 1</span></div><p class="">ユーザインタフェースコンポーネント又はサブコンポーネントとして認識されるもの (輪郭又は大きさを決定づけるもの) は、その視覚的<a href="#dfn-presentation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-presentation-3" title="利用者が知覚できる形式でコンテンツをレンダリングすること。">提示</a>に依存する。視覚的提示には、コンポーネントの可視<a href="#dfn-content" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-content-1" title="コンテンツの構造、提示、及びインタラクションを定義するコード又はマークアップも含めて、ユーザエージェントによって利用者に伝達される情報及び感覚的な体験。">コンテンツ</a>、ボーダー、及びコンポーネント固有の背景が含まれる。コンポーネントのコンテンツ、背景、又はボーダーの外側にある、影及びグロー効果は含まれない。</p></div>
 
-    <div class="note" role="note" id="issue-container-generatedID-30"><div role="heading" class="note-title marker" id="h-note-30" aria-level="5"><span>注記 2</span></div><p class="">Examples of sub-components that may receive a focus indicator are menu items in an opened drop-down menu, or focusable cells in a grid.</p></div>
+    <div class="note" role="note" id="issue-container-generatedID-30"><div role="heading" class="note-title marker" id="h-note-30" aria-level="5"><span>注記 2</span></div><p class="">フォーカスインジケータを受け取ることができるサブコンポーネントの例としては、開いたドロップダウンメニューのメニュー項目、グリッド内のフォーカス可能なセルなどがある。</p></div>
 
-    <div class="note" role="note" id="issue-container-generatedID-31"><div role="heading" class="note-title marker" id="h-note-31" aria-level="5"><span>注記 3</span></div><p class="">Contrast calculations can be based on colors defined within the <a href="#dfn-technologies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-technologies-1" title="ユーザエージェントがどのようにレンダリング、再生、又は実行するかを符号化するメカニズム。">technology</a> (such as HTML, CSS and SVG). Pixels modified by user agent resolution enhancements and anti-aliasing can be ignored.</p></div>
+																																																																																													<div class="note" role="note" id="issue-container-generatedID-31"><div role="heading" class="note-title marker" id="h-note-31" aria-level="5"><span>注記 3</span></div><p class="">コントラストは、(HTML、CSS、及び SVG のような) <a href="#dfn-technologies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-technologies-1" title="ユーザエージェントがどのようにレンダリング、再生、又は実行するかを符号化するメカニズム。">技術</a>の中で定義された色を基に計算できる。その際、ユーザエージェントの高解像度化及びアンチエイリアスによって変更されたピクセルは無視できる。</p></div>
 
  </section>
 
