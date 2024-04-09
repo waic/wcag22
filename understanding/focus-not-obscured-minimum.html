@@ -113,59 +113,25 @@
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The intent of this Success Criterion is to ensure that the item receiving keyboard
-                  focus is always partially visible in the user's viewport. For sighted people who rely
-                  on a keyboard (or on a device that operates through the keyboard interface, such as
-                  a switch or voice input), knowing the current point of focus is critical. The component
-                  with focus signals the interaction point on the page. Where users cannot see the item
-                  with focus, they may not know how to proceed, or may even think the system has become
-                  unresponsive.
+               <h2>意図</h2>
+               <p>この達成基準の意図は、キーボードフォーカスを受け取る項目が、常に利用者のビューポート内で部分的に表示されるのを保証することである。キーボード (又はスイッチ、音声入力など、キーボードインターフェースを通じて操作するデバイス) に依存している目の見える人にとって、現在のフォーカス地点を知ることは非常に重要である。フォーカスを持つコンポーネントは、ページ上のインタラクション地点を示す。利用者がフォーカスを持つ項目を見ることができない場合、利用者はどのように進めればよいのかわからない、又はシステムが応答しなくなったとさえ思うかもしれない。
                </p>
-               <p>In recognition of the complex responsive designs common today, this AA criterion allows
-                  for the component receiving focus to be <em>partially</em> obscured by other author-created content. A partly obscured component can still be
-                  very visible, although the more of it that is obscured, the less easy it is to see.
-                  For that reason, authors should attempt to design interactions to reduce the degree
-                  and frequency with which the item receiving focus is partly obscured. For best visibility,
-                  <em>none</em> of the component receiving focus should be obscured. This preferred outcome is covered
-                  by the AAA criterion <a href="focus-not-obscured-enhanced.html">Focus Not Obscured (Enhanced)</a>.
+               <p>今日の一般的で複雑なレスポンシブデザインを認識して、この AA 基準は、フォーカスを受け取るコンポーネントが他の作コンテンツ制作が作成したコンテンツによって<em>部分的に</em>隠されることが許可される。コンポーネントが部分的に隠れていてもとても目立つ可能性があるが、隠される部分が増えるほど見づらくなる。そのため、コンテンツ制作者は、フォーカスを受ける項目が部分的に隠れる程度及び頻度を減らすようにインタラクションを設計するよう努めるべきである。最良の視認性を得るには、フォーカスを受けるコンポーネントが隠され<em>ない</em>ようにすべきである。この望ましい結果は、AAA 基準<a href="focus-not-obscured-enhanced.html">隠されないフォーカス (高度)</a> で扱われる。
                </p>
-               <p>Typical types of content that can overlap focused items are sticky footers, sticky
-                  headers, and non-modal dialogs. As a user tabs through the page, these layers of content
-                  can obscure the item receiving focus, along with its focus indicator.
+               <p>フォーカスされた項目と重なる可能性のある代表的なコンテンツの種類は、スティッキーフッター、スティッキーヘッダー、および非モーダルダイアログである。利用者がページ内をタブで移動すると、これらのコンテンツのレイヤーにより、フォーカスを受け取る項目と共にそのフォーカスインジケータが隠されてしまう可能性がある。
                </p>
-               <p>A notification implemented as sticky content, such as a cookie banner, will fail this
-                  Success Criterion if it entirely obscures a component receiving focus. Ways of passing
-                  include making the banner modal so the user has to dismiss the banner before navigating
-                  through the page, or using <a href="https://www.w3.org/TR/css-scroll-snap/#propdef-scroll-padding">scroll padding</a> so the banner does not overlap other content. Notifications that do not require user
-                  action could also meet this criterion by closing on loss of focus.
+               <p>Cookie バナーのようなスティッキーコンテンツとして実装された通知は、フォーカスを受け取るコンポーネントを完全に覆い隠してしまう場合、この達成基準に失敗する。合格する方法には、利用者がページ内をナビゲートする前にバナーを閉じる必要があるようにバナーをモーダルにする、又はバナーが他のコンテンツと重ならないように<a href="https://www.w3.org/TR/css-scroll-snap/#propdef-scroll-padding">スクロールパディング</a>を使用するものがある。利用者のアクションを必要としない通知も、フォーカスが失なわれるときに閉じることでこの基準を満たす可能性がある。
                </p>
-               <p>Another form of obscuring can occur where light boxes or other semi-opaque effects
-                  overlap the item with focus. While less than 100 percent opacity is not causing the
-                  component to be <q>entirely obscured</q>, such semi-opaque overlaps may cause a failure of <a href="../understanding/non-text-contrast.html">1.4.11 Non-text Contrast</a>. When a focus indicator can be covered by a semi-opaque component, the ability of
-                  the focus indicator to pass 1.4.11 should be evaluated (and pass) while the focus
-                  indicator is under the semi-opaque component. The intention in both situations is
-                  that the component receiving focus should never be obscured to the point a user cannot
-                  tell which item has focus.
+               <p>ライトボックス又はその他の半不透明効果がフォーカスを持つ項目に重なる場合に、別の形態で隠される可能性がある。不透明度が 100％未満であってもコンポーネントが<q>完全に隠れる</q>ことはないが、そのような半透明の重なりにより <a href="../understanding/non-text-contrast.html">1.4.11 非テキストコントラスト</a>の失敗が発生する場合がある。フォーカスインジケータが半透明コンポーネントで覆われる場合、フォーカスインジケータが半透明コンポーネントの下にある間に、フォーカスインジケータが 1.4.11 に合格する能力を評価 (および合格) すべきである。どちらの状況でも、利用者がどの項目にフォーカスがあるのか判断できないほど、フォーカスを受け取るコンポーネントが隠されないようにすることが目的である。
                </p>
                <section id="Movable">
                   
-                  <h3>User-movable content</h3>
+                  <h3>利用者が移動可能なコンテンツ</h3>
                   
-                  <p>This SC contains a note regarding content that can be repositioned. If users can move
-                     content regions, then they can potentially position the movable content such that
-                     it obscures other content that may receive focus. In such a case, the author is only
-                     responsible for ensuring that the movable content <em>in its initial position</em> does not obscure the item receiving focus.
+                  <p>この達成基準には、再配置可能なコンテンツに関する注記が含まれている。利用者がコンテンツ領域を移動できる場合、フォーカスを受ける可能性のある他のコンテンツを隠すように移動可能なコンテンツを配置できる可能性がある。そのような場合、コンテンツ制作者は、<em>初期位置にある</em>移動可能なコンテンツがフォーカスを受け取る項目を隠さないことを保証する責任だけを負う。
                   </p>
                   
-                  <p>This note is intended to accommodate a common interaction in complex applications
-                     such as authoring tools, where the main editing region (also called a canvas) can
-                     be enhanced by displaying toolbars or other panels, which can be repositioned around
-                     the canvas. It is possible to design such toolbars so they do <em>not</em> obscure focus. Authors are encouraged to do so, as well as pursue techniques which
-                     ensure equitable keyboard use of such toolbars. However, in recognition of the complexities
-                     involved in responsive design as well as in supporting the ability to transform the
-                     text size and spacing of content, only the starting position of such movable panels
-                     is assessed.
+                  <p>この注記は、オーサリングツールのような複雑なアプリケーションでの一般的なインタラクションに対応することを目的としている。ここで、主要な編集領域 (キャンバスとも呼ばれる) は、ツールバ又はその他のパネルを表示することで拡張でき、これは、キャンバスの周囲に再配置できる。そのようなツールバーがフォーカスを隠さ<em>ない</em>ように設計することが可能である。コンテンツ制作者は、そのようなツールバーのキーボードによる公平な使用を保証する技術を追求するだけでなく、そうすることが奨励される。ただし、レスポンシブデザインに伴う複雑さ、並びにコンテンツのテキストサイズ及び間隔を変更する機能のサポートを考慮して、そのような移動可能なパネルの開始位置だけが評価される。
                   </p>
                   
                   <!--
@@ -178,27 +144,13 @@
                </section>
                <section id="disclosed">
                   
-                  <h3>User-opened content</h3>
+                  <h3>利用者が開いたコンテンツ</h3>
                   
-                  <p>This SC contains a note regarding content that is opened or disclosed by the user.
-                     One example of such content is a menu button opened by a user that opens a list of
-                     choices over pre-existing content on the screen. Such content can obscure other information
-                     on the screen, but it does not obscure an item receiving keyboard focus, because the
-                     new content doesn't stay open through a change of focus. However, authors may create
-                     user-opened content that is intentionally designed to persist until closed by the
-                     user, such as a chat window. Such persistent content has the potential to fail Focus
-                     Not Obscured (Minimum). Various types are described in this section. All can be designed
-                     so that they pass this Success Criterion.
+                  <p>この達成基準には、利用者が開いたコンテンツに関する注記が含まれている。そのようなコンテンツの一つの例は、画面上の既存のコンテンツに対して選択肢のリストを開く、利用者によって開かれるメニューボタンである。そのようなコンテンツは画面上の他の情報を隠してしまう可能性があるが、フォーカスの変更によって新しいコンテンツが開いたままになることはないため、キーボードフォーカスを受け取る項目は隠すことはない。ただし、コンテンツ制作者は、チャットウィンドウなど、利用者が閉じるまで保持されるように意図的に設計された、利用者が開いたコンテンツを作成する場合がある。そのような永続的なコンテンツは、隠されないフォーカス (最低限) に失敗する可能性がある。次のサブセクションではさまざまな種類について説明する。全て、この達成基準を満たせるように設計できる。
                   </p>
                   
                   
-                  <p>This section only applies to content that the user actively discloses. Content pre-positioned
-                     by the author (such as a sticky footer), or content that appears without direct user
-                     initiation, such as system warnings, must not prevent the item receiving focus from
-                     being immediately visible in the viewport. Also, this note is not intended to apply
-                     to disclosures that are by convention non-persistent. As discussed in the following
-                     sub-section, an open dropdown that does not close when no longer focused is not following
-                     this convention.
+                  <p>このセクションは、利用者が積極的に開いたコンテンツにだけ適用される。コンテンツ制作者によって事前に配置されたコンテンツ (スティッキーフッターなど)、又は利用者が直接開始することなく表示されるコンテンツ (システム警告など) は、フォーカスを受け取った項目がビューポートにすぐに表示されるのを妨げてはならない。この注記はまた、慣例により永続的でない開示に適用することを意図したものではない。次のサブセクションで説明するように、フォーカスが外されても閉じない、開いているドロップダウンは、この規則に従っていない。
                   </p>
                   
                   
