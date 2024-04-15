@@ -322,68 +322,43 @@
                </section>
                <section id="dialogs">
                   
-                  <h3>Modal dialogs</h3>
+                  <h3>モーダルダイアログ</h3>
                   
                   
-                  <p>A properly constructed modal dialog will always pass this SC. Even if it appears directly
-                     on top of an item with focus, the dialog takes focus on appearance, and thus the item
-                     receiving focus -- the dialog or one of its components -- is visible. A properly constructed
-                     modal maintains that focus and prevents interaction outside the modal until it is
-                     dismissed.
+                  <p>適切に構成されたモーダルダイアログは、常にこの達成基準に通る。たとえフォーカスを持つ項目の上に直接表示されたとしても、ダイアログは外観上フォーカスを受け取り、したがってフォーカスを受け取る項目 (ダイアログ又はそのコンポーネントの一つ) が表示される。適切に構成されたモーダルは、そのフォーカスを維持し、モーダルが閉じられるまでモーダル外のインタラクションを防ぐ。
                   </p>
                   
-                  <p>A dialog-like overlay that does not take focus on appearance and does not either constrain
-                     interaction to the overlay or dismiss itself on loss of focus (thus allowing focus
-                     to exit into the content behind it) will be at risk of failing this SC, where it is
-                     positioned such that it can obscure other focusable items.
+                  <p>外観上でフォーカスを受け取らず、かつオーバーレイへのインタラクションを制限しないか、フォーカスを失ったときに自身を閉じない (したがって、フォーカスが背後のコンテンツに抜けるようにする) ダイアログのようなオーバーレイは、他のフォーカス可能な項目を隠すことができるように配置されており、この達成基準で失敗する危険性がある。
                   </p>
                   
                </section>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>メリット</h2>
                <ul>
                   
-                  <li>Sighted users who rely on a keyboard interface to operate the page will be able to
-                     see the component which gets keyboard focus. Such users include those who rely on
-                     a keyboard or on devices which use the keyboard interface, including speech input,
-                     sip-and-puff software, onscreen keyboards, scanning software, and a variety of assistive
-                     technologies and alternate keyboards.
+                  <li>キーボードインタフェースに依存してページを操作している目の見える利用者は、キーボードフォーカスを取得するコンポーネントを見ることができる。そのような利用者には、キーボード又は、音声入力、呼気・吸気ソフトウェア、オンスクリーンキーボード、スキャンソフトウェア、並びにさまざまな支援技術及び代替キーボードなどのキーボードインタフェースに依存している利用者が含まれる。
                   </li>
                   
-                  <li>People with limited or low vision, who may primarily user a pointer for screen orientation
-                     and repositioning, nonetheless benefit from a visible indication of the current point
-                     of keyboard interaction, especially where magnification reduces the overall viewing
-                     portion of the screen.
+                  <li>視覚に障害がある人々又はロービジョンの人々は、主に画面の向き及び再配置にポインタを使用するが、それにもかかわらず、キーボード操作の現在位置の可視的な表示は、特に拡大率によって画面全体の表示部分が減少させる場合には、有益である。
                   </li>
                   
-                  <li>People with attention limitations, short term memory limitations, or limitations in
-                     executive processes benefit by being able to discover where the focus is located.
+                  <li>注意力の制限、短期記憶の制限、又は実行プロセスの制限がある人々は、フォーカスがどこにあるのかを発見できることで恩恵を受ける。
                   </li>
                   
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>事例</h2>
                <ul>
                   
-                  <li>A page has a sticky footer (attached to the bottom of the viewport). When tabbing
-                     down the page the focused item is not completely visually obscured by the footer because
-                     content in the viewport scrolls up to always display the item with keyboard focus
-                     using <a href="https://www.w3.org/TR/css-scroll-snap/#propdef-scroll-padding" rel="nofollow">scroll padding</a>.
+                  <li>ページにスティッキーフッター (ビューポートの下部に固定されている) がある。ページをタブで下に移動すると、フォーカスされた項目はフッターによって視覚的に完全に隠れることはない。これは、ビューポート内のコンテンツが上にスクロールして、<a href="https://www.w3.org/TR/css-scroll-snap/#propdef-scroll-padding" rel="nofollow">スクロールパディング</a>を使用してキーボードフォーカスのある項目が常に表示されるためである。
                   </li>
                   
-                  <li>A page has a full-width cookie approval dialog. The dialog is modal, preventing access
-                     to the other controls in the page until it has been dismissed. Focus is not obscured
-                     because the major portion of the cookie approval dialog remains on screen (until selections
-                     are made and submitted),  and so the major portion of the keyboard focus indicator
-                     remains visible.
+                  <li>ページに全幅のクッキー承認ダイアログがある。ダイアログはモーダルであり、閉じられるまでページ内の他のコントロールへのアクセスを防ぐ。クッキー承認ダイアログの大部分は (選択が行われて送信されるまで) 画面上に残り、キーボードフォーカスインジケーターの大部分も表示されたままになるため、フォーカスは隠されない。
                   </li>
                   
-                  <li>A notification is implemented as a sticky header and the keyboard focus is moved to
-                     the notification so at least part of the focus indicator is in view. The notification
-                     disappears when it loses focus so it does not obscure any other controls, and part
-                     of the prior keyboard focus indicator is visible.
+                  <li>通知はスティッキーヘッダーとして実装され、キーボードフォーカスは通知に移動するため、少なくともフォーカスインジケーターの一部が表示される。フォーカスを失うと通知は消えるため、他のコントロールが隠れることはなく、以前のキーボードフォーカスインジケーターの一部が表示される。
                   </li>
                   
                </ul>
