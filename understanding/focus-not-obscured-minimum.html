@@ -199,12 +199,7 @@
                         </li>
                         
                         
-                        <li><strong>When the additional content appears, existing content reflows.</strong> The popout sidebar on the <a href="https://www.w3.org/TR/WCAG22/">WCAG standard</a> is an example of this pattern. When the side menu is activated, it opens a new section
-                           of information along the left side of the page. The main content area is reduced horizontally
-                           to accommodate the new content, and the existing content reflows to fit in the thinner
-                           space. As a result, there is no overlapping content between the two sections; the
-                           item receiving focus, whether in the left navigation or in the main content, will
-                           not be obscured by the other section.
+                        <li><strong>追加コンテンツが表示されると、既存のコンテンツがリフローする。</strong><a href="https://waic.jp/translations/WCAG22/">WCAG standard</a>WCAG 標準のポップアウトサイドバーは、このパターンの例である。サイドメニューをアクティブにすると、ページの左側に沿って情報の新しいセクションが開く。メインコンテンツ領域は、新しいコンテンツを収容するために水平方向に縮小され、既存のコンテンツはより狭いスペースに収まるようにリフローする。結果として、二つのセクション間に重なるコンテンツは存在しない。フォーカスを受け取る項目は、左側のナビゲーションであろうとメインコンテンツであろうと、他のセクションによって隠されることはないだろう。
                            
                            <!--
                <figure id="">
@@ -216,16 +211,7 @@
                         </li>
                         
                         <li>
-                           <strong>When the additional content is opened, it takes focus and the tab ring is constrained
-                              to the new content until it is dismissed.</strong> This modality is somewhat like a dialog, in that a user cannot navigate beyond the
-                           opened content by keyboard without dismissing it first (typically by pressing Esc).
-                           However, unlike in a modal dialog, in some implementations a pointer user may be able
-                           to interact with content outside the opened section without dismissing it. Since this
-                           pattern potentially creates an inequitable experience between keyboard and pointer
-                           users, it should be used cautiously. That said, it does prevent the opened content
-                           from obscuring the keyboard focus in the main content, and thus should pass this SC.
-                           This is described and demonstrated in a short video in the Knowbility article in the
-                           reference section, under the section heading <a href="https://knowbility.org/blog/2020/accessible-slide-menus#keep-keyboard-focus-in-the-slide-out-navigation-until-its-closed">Keep keyboard focus in the slide-out navigation until it's closed</a>.
+                           <strong>追加コンテンツが開かれると、その追加コンテンツにフォーカスが移り、タブリングは、新しいコンテンツが閉じられるまで拘束される。</strong>このモダリティは、利用者が最初に (典型的には Esc キーを押して) コンテンツを閉じることなく、開いているコンテンツを超えてキーボードでナビゲートできないという点で、ダイアログに少し似ている。しかし、モーダルダイアログとは異なり、実装によっては、ポインタの利用者は、開かれたセクションを閉じることなく外側のコンテンツを操作できる場合がある。このパターンはキーボードの利用者とポインタの利用者との間で不公平な体験を生み出す可能性があるため、慎重に使用すべきである。とはいえ、開かれたコンテンツがメインコンテンツのキーボードフォーカスを隠してしまうのを防ぐため、この達成基準は通るべきである。これは、関連リソースにある Knowability 記事のセクション見出し <a href="https://knowbility.org/blog/2020/accessible-slide-menus#keep-keyboard-focus-in-the-slide-out-navigation-until-its-closed">Keep keyboard focus in the slide-out navigation until it's closed</a> にある短い動画で説明及び実演されている。
                            
                            <!--
                <figure id="">
@@ -237,11 +223,7 @@
                         </li>
                         
                         <li>
-                           <strong>The disclosure expands into an area of the page containing no other content.</strong> Many pages are designed with wide margins, providing significant white space into
-                           which new content can be opened. Many chatbots and toast notifications are designed
-                           to 'slide up' into the right unpopulated side of a page. Where authors are careful
-                           to ensure content is not obscured at each breakpoint in a responsive design, no obscuring
-                           of other operable content need occur.
+                           <strong>ディスクロージャーは、他のコンテンツを含まないページの領域に展開する。</strong>多くのページは余白が広く設計されており、新しいコンテンツを開くための大きなスペースが提供されている。多くのチャットボット及びトースト通知は、ページの空いている右側に「上にスライド」するように設計されている。コンテンツ制作者がレスポンシブデザインの各ブレークポイントでコンテンツが隠されないように注意している場合、他の操作可能なコンテンツが隠されることはない。
                            
                            <!-- <figure id="">
                <img src="" alt="" />
@@ -252,12 +234,7 @@
                         </li>
                         
                         <li>
-                           <strong>When focus leaves the additional content, the additional content is automatically
-                              hidden or collapsed, or the content can be hidden or collapsed by use of a dedicated
-                              keyboard command (for example, the <kbd>Escape</kbd> key</strong>.) This is very similar to patterns discussed previously under Non-persistent opened
-                           information. A distinguishing factor can be that the user's last point of interaction
-                           in the disclosure is preserved (it persists) even though it may be hidden until a
-                           user returns. Some trees and left navigation patterns behave this way.
+                           <strong>フォーカスが追加コンテンツから離れると、追加コンテンツは自動的に非表示又は折りたたまれる。もしくは、専用のキーボードコマンド (例: <kbd>Escape</kbd> キー) を使用してコンテンツを非表示又は折りたたむことができる。</strong>これは、前述の永続的でない開いている情報で説明したパターンと非常によく似ている。特徴的な要因は、たとえ利用者が戻るまで非表示になっているとしても、ディスクロージャー内での利用者のインタラクションの最終地点が保存される (存続する) ことである。一部のツリー及び左側のナビゲーションパターンはこのように動作する。
                            
                            <!--
                <figure id="">
@@ -288,27 +265,18 @@
                      </ul>
                      
                      
-                     <p>For example:</p>
+                     <p>例:</p>
                      
                      
                      <ul>
                         
-                        <li>A user opens a chat interface, which is a popover non-modal dialog. This results in
-                           some content of the underlying page being fully obscured. The user navigates away
-                           from the chat interface by use of the <kbd>tab</kbd> key, focusing onto a link that has been fully obscured by the dialog. The user presses
-                           the <kbd>Escape</kbd> key to close the chat interface, which un-obscures the link.
+                        <li>利用者は、チャットインタフェースを開く。これはポップオーバーの非モーダルダイアログである。これにより、下にあるページの一部のコンテンツが完全に隠されてしまう。利用者は <kbd>Tab</kbd> キーを使用してチャットインタフェースから離れ、ダイアログによって完全に隠されているリンクにフォーカスを当てる。利用者が <kbd>Escape</kbd> キーを押してチャットインタフェースを閉じると、リンクが隠されないようになる。
                         </li>
                         
-                        <li>A user expands a fixed-position page feedback component at the bottom of a Web page.
-                           They then use their keyboard to navigate to a link that's fully obscured by the expanded
-                           component and press the <kbd>down arrow</kbd> or <kbd>space</kbd> key on their keyboard to scroll the content on the page, un-obscuring the link.
+                        <li>利用者は、ウェブページの下部にある固定位置のページフィードバックコンポーネントを展開する。次に、キーボードを使用して、展開されたコンポーネントによって完全に隠されているリンクにナビゲートし、キーボードの<kbd>下矢印</kbd>又は<kbd>スペース</kbd>キーを押してページ上のコンテンツをスクロールし、リンクが隠されないようにする。
                         </li>
                         
-                        <li>A user opens a web-based multi-user authoring application. An overlay appears displaying
-                           a list of people who have contributed to the document. The user tabs through the list
-                           of contributors and activates one of them. The application displays a new overlay,
-                           which obscures the first one, that displays that person's recent contributions. The
-                           user presses the <kbd>F6</kbd> key to toggle the stacking order of the two overlays.
+                        <li>利用者がウェブベースのマルチユーザオーサリングアプリケーションを開く。ドキュメントに貢献した人のリストを表示しているオーバーレイが表示される。利用者は貢献者のリストをタブで移動し、そのうちの一つをアクティブにする。アプリケーションは、最初のオーバーレイを隠す、その人の最近の投稿を表示する新しいオーバーレイを表示する。利用者は <kbd>F6</kbd> キーを押して、二つのオーバーレイの積み重ね順序を切り替える。
                         </li>
                         
                      </ul>
