@@ -159,7 +159,7 @@ dexterityを巧緻性としているが、
                      <li><strong>間隔:</strong> 複数の小さなターゲット (24 × 24 CSS ピクセル未満のもの) が配置されており、それぞれの<a href="#dfn-minimum-bounding-box">境界ボックス</a>の中心に直径 24 CSS ピクセルの円があるとした場合に、その円が別のターゲットと重なる、又は別の小さなターゲットの円と重なることがない。
                      </li>
                      
-                     <li><strong>Equivalent:</strong> ターゲットが 24 × 24 CSS ピクセルに相当するサイズを持たないが、最小サイズを<em>満たす</em>基本的な機能を達成できる別のコントロールがある場合、「同等」の例外に基づいてそのターゲットを除外できる。
+                     <li><strong>同等:</strong> ターゲットが 24 × 24 CSS ピクセルに相当するサイズを持たないが、最小サイズを<em>満たす</em>基本的な機能を達成できる別のコントロールがある場合、「同等」の例外に基づいてそのターゲットを除外できる。
                      </li>
                      
                      <li><strong>インライン:</strong> 達成基準は、文中のインラインのターゲット、又は、ターゲットのサイズがターゲット以外のテキストの行の高さによって制約されている場合には適用されない。この例外が認められるのは、ビューポートサイズに基づいてテキストをリフローすると、リンクが互いに対してどこに配置されるかをコンテンツ制作者が予測することが不可能になるためである。複数のリンクがより小さなテキストサイズのテキストブロックに埋め込まれている場合、隣接するテキスト行の小さなリンクが間隔の例外を満たす (直径 24 CSS ピクセルの円が他のリンク又は別の小さなターゲットの円と交差しない) ことを保証するには、大きな行の高さが必要になる。これは、多くの設計の状況において望ましくない可能性がある。
@@ -177,154 +177,111 @@ dexterityを巧緻性としているが、
                </section>
                <section id="size-requirement">
                   
-                  <h3>Size requirement</h3>
+                  <h3>サイズ要件</h3>
                   
                   
-                  <p>For a target to be "at least 24 by 24 CSS pixels", it must be possible to draw a solid
-                     24 by 24 CSS pixel square, aligned to the horizontal and vertical axis such that the
-                     square is completely within the target (does not extend outside the target's area).
+                  <p>ターゲットを「少なくとも 24 × 24 CSS ピクセル」にするためには、正方形が完全にターゲットの内部に収まるように (ターゲットの領域外に広がらないように) 水平軸及び垂直軸に向きを揃えて、24 × 24 CSS ピクセルの実線の正方形を描画できなければならない。
                   </p>
                   
                   
                   <figure id="target-size-basic">
                      <img src="img/target-size-basic.svg" width="180" height="75" alt="Three square boxes next to each other, each with a height and width of 24px" />
                      
-                     <figcaption>Figure 1 Where targets are a 24 by 24px square (and larger is better), they meet the size requirement
-                        of the criterion and pass (image shown to scale - <a href="img/target-size-basic.svg">see the scalable original version</a>)
+                     <figcaption>図 1 ターゲットが 24 × 24 ピクセルの正方形 (大きいほど良い) の場合、達成基準のサイズ要件を満たし、合格する (画像は拡大縮小して表示している - <a href="img/target-size-basic.svg">拡大縮小可能なオリジナルバージョンを参照</a>)
                      </figcaption>
                      
                   </figure>
                   
                   
-                  <p>The 24 by 24px square has to be aligned with the page, although the target itself
-                     could be skewed.
+                  <p>ターゲット自体が歪んでいても、24 × 24 ピクセルの正方形はページと向きを揃える必要がある。
                   </p>
                   
                   
                   <figure id="target-size-skewed">
                      <img src="img/target-size-skewed.svg" width="130" height="120" alt="A skewed rectangle that includes a 24 by 24px square within it." />
                      
-                     <figcaption>Figure 2 So long as there is a solid 24 by 24px square within the target, it meets the size
-                        requirement of the criterion and passes (image shown to scale - <a href="img/target-size-skewed.svg">see the scalable original version</a>)
+                     <figcaption>図 2 ターゲット内に 24 x 24 ピクセルの正方形が存在する限り、達成基準のサイズ要件を満たし、合格する (画像は拡大縮小して表示している - <a href="img/target-size-skewed.svg">拡大縮小可能なオリジナルバージョンを参照</a>)
                      </figcaption>
                      
                   </figure>
                   
                   
-                  <p>If a target is not large enough to allow for a 24 by 24px square to be drawn inside
-                     it, it is considered <em>undersized</em>, and does not pass the size requirement of the Success Criterion. However, if it
-                     has sufficient space around it without adjacent targets, it may still pass the criterion
-                     thanks to the spacing exception (below).
+                  <p>ターゲットが内部に 24 × 24 ピクセルの正方形を描画するのに十分な大きさでない場合、そのターゲットはサイズが<em>小さい</em>とみなされ、達成基準のサイズ要件を合格しない。しかし、隣接するターゲットがなく、周囲に十分な間隔がある場合、間隔の例外 (下記) により達成基準を合格する場合がある。
                   </p>
                   
                   
                   <figure id="target-size-undersized-rounded">
                      <img src="img/target-size-undersized-rounded.svg" width="250" height="105" alt="A circle with a diameter of 24px, but not filling up a 24px square." />
                      
-                     <figcaption>Figure 3 The rounded corners do not leave sufficient space to draw a 24 by 24px square inside
-                        the target, making the target <em>undersized</em>. Depending on the spacing to other targets, it may still pass if it has sufficient
-                        clearance (image shown at 1:1 and 2:1 scale - <a href="img/target-size-undersized-rounded.svg">see the scalable original version</a>)
+                     <figcaption>図 3 角が丸くなっているため、ターゲット内に 24 × 24 ピクセルの正方形を描画するのに十分な面積が残されておらず、<em>小さな</em>ターゲットとなる。他のターゲットとの間隔に依存して、十分な間隔がある場合に合格する場合がある (画像は 1:1 及び 2:1 のスケールで示されている - <a href="img/target-size-undersized-rounded.svg">拡大縮小可能なオリジナルバージョンを参照</a>)
                      </figcaption>
                      
                   </figure>
                   
                   
-                  <p>The requirement is independent of the zoom factor of the page; when users zoom in
-                     the CSS pixel size of elements does not change. This means that authors cannot meet
-                     it by claiming that the target will have enough spacing or sufficient size if the
-                     user zooms into the page.
+                  <p>この要件は、ページのズーム率とは無関係である。利用者がズームインしても、要素の CSS ピクセルサイズは変わらない。これは、利用者がページをズームインした場合に、ターゲットに十分な間隔及び十分なサイズがあると主張しても、コンテンツ制作者がこの要件を満たすことはできないことを意味する。
                   </p>
                   
                   
-                  <p>The requirement does not apply to targets while they are obscured by content displayed
-                     as a result of a user interaction or scripted behavior of content, for example:
+                  <p>この要件は、利用者のインタラクション又はコンテンツのスクリプト化された動作の結果として表示されるコンテンツによって隠されているターゲットには適用されない。例えば:
                   </p>
                   
                   
                   <ul>
                      
-                     <li>interacting with a combobox shows a dropdown list of suggestions</li>
+                     <li>コンボボックスを操作すると、候補のドロップダウンリストが表示される</li>
                      
-                     <li>activating a button displays a modal dialog</li>
+                     <li>ボタンをアクティブにするとモーダルダイアログが表示される</li>
                      
-                     <li>content displays a cookie banner after page load</li>
+                     <li>ページの読み込み後にコンテンツにクッキーバナーが表示される</li>
                      
-                     <li>content displays a "Take a survey" dialog after some period of user inactivity</li>
+                     <li>利用者が一定時間操作をしなかった後に、コンテンツに「アンケートに参加する」ダイアログが表示される</li>
                      
                   </ul>    
                   
-                  <p>The requirement does however apply to targets in any new content that appears on top
-                     of other content.
+                  <p>ただし、この要件は、他のコンテンツの上に表示される新しいコンテンツ内のターゲットに適用される。
                   </p>
                   
                   
-                  <p>While the Success Criterion primarily helps touch users by providing target sizing
-                     to prevent accidental triggering of adjacent targets, it is also useful for mouse
-                     or pen users. It reduces the chances of erroneous activation due to either a tremor
-                     or reduced precision, whether because of reduced fine motor control or input imprecision.
+                  <p>達成基準は主に、隣接するターゲットの誤作動を防ぐためにターゲットサイズを提供することでタッチの利用者を支援するが、マウス又はペンの利用者にも役立つ。これは、細かい運動制御の低下又は入力の不正確さによる、震え又は正確さの低下による誤作動の可能性を減らす。
                   </p>
                   
                   
                </section>
                <section id="spacing">
                   
-                  <h3>Spacing</h3>
+                  <h3>間隔</h3>
                   
                   
-                  <p>When the minimum size for a target is not met, spacing can at least improve the user
-                     experience. There is less chance of accidentally activating a neighboring target if
-                     a target is not immediately adjacent to another. Touchscreen devices and user agents
-                     generally have internal heuristics to identify which link or control is closest to
-                     a user's touch interaction - this means that sufficient spacing between targets can
-                     work as effectively as a larger target size itself.
+                  <p>ターゲットの最小サイズが満たされていない場合、少なくとも間隔を空けることでユーザ体験を改善できる。ターゲットが別のターゲットに直接に隣接していない場合、隣接するターゲットを誤作動する可能性は低くなる。一般に、タッチスクリーンデバイス及びユーザエージェントは、どのリンク又はコントロールが利用者のタッチ操作に最も近いかを特定するための内部ヒューリスティックがある。これは、ターゲット間の十分な間隔が、ターゲットのサイズ自体を大きくするのと同じくらい効果的に機能できることを意味する。
                   </p>
                   
                   
-                  <p>When a target is smaller than 24 by 24 CSS pixels, it is <em>undersized</em>. In this case, we check if it at least has sufficient <em>spacing</em> by drawing a 24 CSS pixel diameter circle over the undersized target, centered on
-                     the target's <a href="#dfn-minimum-bounding-box">bounding box</a>. For rectangular targets, the bounding box coincides with the target itself – thus,
-                     the circle is placed on the center of the target. If the target is <em>not</em> rectangular – for instance, if the target is clipped, has rounded corners, or if
-                     it's a more complex clickable SVG shape – we need to first determine the bounding
-                     box, and then find the box's center. Note that for concave shapes, the center of the
-                     bounding box may be outside of the target itself. Now, we center the circle on the
-                     center of the bounding box.
+                  <p>ターゲットが 24 × 24 CSS ピクセルより小さい場合、<em>小さな</em>ターゲットである。この場合、ターゲットの境界ボックスを中心として、小さなターゲットの上に直径 24 CSS ピクセルの円を描画することで、少なくとも十分な<em>間隔</em>があるかどうかを確認する。矩形のターゲットの場合、<a href="#dfn-minimum-bounding-box">境界ボックス</a>はターゲット自体と一致する。つまり、円はターゲットの中心に配置される。ターゲットが矩形でない場合、例えば、ターゲットが切り取られている、角が丸い、又はより複雑なクリック可能な SVG 形状である場合、まず境界ボックスを決定し、次にボックスの中心を見つける必要がある。凹型の場合、境界ボックスの中心がターゲット自体の外側にある可能性があることに注意する。ここで、円を境界ボックスの中心に配置する。
                   </p>
                   
                   
                   <figure id="target-size-bounding-boxes">
                      <img src="img/target-size-bounding-boxes.svg" width="395" height="100" alt="Three undersized targets - a square target, a convex target, and a concave target; the concave and convex targets have a bounding box around them; all three targets have a 24 CSS pixel circle centered on the center of their bounding box" />
                      
-                     <figcaption>Figure 4 For a square/rectangular target, the 24 CSS pixel diameter circle is centered on the
-                        target itself. For convex and concave targets, it is centered on the bounding box
-                        of the shape. Note the concave target, where in this case the center of the bounding
-                        box is outside of the actual target (image shown to scale - <a href="img/target-size-bounding-boxes.svg">see the scalable original version</a>)
+                     <figcaption>図 4 正方形/長方形のターゲットの場合、24 CSS ピクセルの直径の円はターゲット自体の中心にある。凸型及び凹型のターゲットの場合、形状の境界ボックスの中心に配置される。凹型のターゲットに注目すると、この場合、境界ボックスの中心は実際のターゲットの外側にある。 (画像は拡大縮小して表示している - <a href="img/target-size-bounding-boxes.svg">拡大縮小可能なオリジナルバージョンを参照</a>)
                      </figcaption>
                      
                   </figure>
                   
                   
-                  <p>We repeat this process for all adjacent undersized targets. To determine if an undersized
-                     target has sufficient spacing (to pass this Success Criterion's spacing exception),
-                     we check that the 24 CSS pixel diameter circle of the target does not intersect another
-                     target or the circle of any other adjacent undersized targets.
+                  <p>全ての隣接する小さなターゲットに対してこのプロセスを繰り返す。小さなターゲットに十分な間隔があるかどうかを判断するため (この達成基準の間隔の例外を合格するため) には、ターゲットの直径 24 CSS ピクセルの円が、別のターゲット又は隣接する他の小さなターゲットの円と重ならないことを確認する。
                   </p>
                   
                   
-                  <p>The following example shows three versions of a horizontal row of six icon-based buttons.
-                     In the top row, the dimensions of each target are 24 by 24 CSS pixels, passing this
-                     Success Criterion. In the second row, the same targets are only 20 by 20 CSS pixels,
-                     but have a 4 CSS pixel space between them – as the target size is below 24 by 24 CSS
-                     pixels, these need to be evaluated against the Success Criterion's spacing exception,
-                     and they pass. In the last row, the targets are again 20 by 20 CSS pixels, but have
-                     no space between them – these fail the spacing exception, because when drawing the
-                     24 CSS pixel diameter circles over the targets, the circles intersect.
+                  <p>次の例は、六つのアイコンベースのボタンが水平方向に並んだ三つのバージョンを示している。一番上の行では、各ターゲットのサイズは 24 × 24 CSS ピクセルであり、この達成基準を満たしている。2 行目では、同じターゲットは 20 × 20 CSS ピクセルしかないが、それらターゲットの間には 4 CSS ピクセルの間隔がある。ターゲットのサイズが 24 x 24 CSS ピクセル未満であるため、これらは達成基準の間隔の例外に対して評価する必要があり、そして合格する。最後の行では、ターゲットは再び 20 × 20 CSS ピクセルであるが、それらターゲットの間に間隔は存在しない。これらのターゲット上に直径 24 CSS ピクセルの円を描画すると、円が重なるため、これらのターゲットは間隔の例外に失敗する。
                   </p>
                   
                   
                   <figure id="target-spacing-toolbar">
                      <img src="img/target-spacing-toolbar.svg" width="560" height="265" alt="The first toolbar's targets have a dimension of 24 by 24 CSS pixels, so pass. The second toolbar, with smaller targets, shows 24 CSS pixel circles drawn on each target for assessment. The circles do not intersect and so the targets have enough space to pass. The third toolbar shows similar circles on the targets, but the circles intersect due to the lack of spacing between targets, so the toolbar fails." />
                      
-                     <figcaption>Figure 5 Three rows of targets, illustrating two ways of meeting this Success Criterion and
-                        one way of failing it (image shown to scale - <a href="img/target-spacing-toolbar.svg">see the scalable original version</a>)
+                     <figcaption>図 5 この達成基準を満たす二つの方法及び失敗する一つの方法を説明する、3 行のターゲット (画像は拡大縮小して表示している - <a href="img/target-spacing-toolbar.svg">拡大縮小可能なオリジナルバージョンを参照</a>)
                      </figcaption>
                      
                   </figure>
