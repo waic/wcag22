@@ -319,23 +319,14 @@ dexterityを巧緻性としているが、
                   </figure>
                   
                   
-                  <p>The following example has one large target (an image that links to a new page related
-                     to that image) and a very small second target (a control with a magnifier icon, to
-                     open a zoomed-in preview, possibly in a modal, of the image itself). In the top row,
-                     the small target overlaps - or, to be more technically accurate, clips - the large
-                     target. The small target itself has a size of 24 by 24 CSS pixels, so passes. In the
-                     second row, we see that if the second target is any smaller – in this case 16 by 16
-                     CSS pixels – it fails the criterion, as the circle with a 24 CSS pixel diameter we
-                     draw over the small target will intersect the large target itself.
+                  <p>次の例では、一つの大きなターゲット (その画像に関連する新しいページにリンクする画像) 及び、非常に小さなもう一つのターゲット (おそらくモーダルで、画像自身の拡大プレビューを開くための、虫めがねアイコンの付いたコントロール) がある。一番上の行では、小さなターゲットが大きなターゲットと重なっている (より正確に言えば、切り取られている)。小さなターゲット自体のサイズは 24 × 24 CSS ピクセルであるため、合格する。2 行目では、もう一つのターゲットがより小さい場合 (この場合は 16 × 16 CSS ピクセル)、小さなターゲット上に描画した直径 24 CSS ピクセルの円が大きいターゲッ自体と重なるため、基準に失敗する。
                   </p>
                   
                   
                   <figure id="target-large-small-clipping">
                      <img src="img/target-large-small-clipping.svg" width="460" height="320" alt="Two rows showing a small target clipping a large target" />
                      
-                     <figcaption>Figure 9 The 24 by 24 CSS pixel small target passes, while the 16 by 16 CSS pixel small target
-                        fails, since the 24 CSS pixel diameter circle used for undersized targets intersect
-                        the large target (image shown to scale - <a href="img/target-large-small-clipping.svg">see the scalable original version</a>)
+                     <figcaption>図 9 24 × 24 CSS ピクセルの小さなターゲットは合格するが、16 × 16 CSS ピクセルの小さなターゲットは失敗する。これは、小さなターゲットに使用される直径 24 CSS ピクセルの円が大きいターゲットと重なるためである (画像は拡大縮小して表示している - <a href="img/target-large-small-clipping.svg">拡大縮小可能なオリジナルバージョンを参照</a>)
                      </figcaption>
                      
                   </figure>
