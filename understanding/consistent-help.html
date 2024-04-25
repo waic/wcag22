@@ -3,13 +3,13 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  3.2.6: Consistent Help | WAI | W3C</title>
+      <title>解説書 達成基準 3.2.6: 一貫したヘルプ | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
+            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 解説書</a></div>
             <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
@@ -34,17 +34,16 @@
          <div class="nav">
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
-                  <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                  <li class="nav__item"><a href=".">目次
                         							</a></li>
                   <li class="nav__item"><a href="predictable">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Predictable</a></li>
+                        </svg> ガイドライン: 予測可能</a></li>
                   <li class="nav__item"><a href="change-on-request">
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-left-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
-                        </svg>Previous SC: Change on Request</a></li>
+                        </svg>前: 要求による変化</a></li>
                   <li class="nav__item"></li>
                </ul>
             </nav>
@@ -53,322 +52,225 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#resources">Related Resources</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
-                     <li><a href="#key-terms">Key Terms</a></li>
+                     <li><a href="#brief">要約</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#benefits">利点</a></li>
+                     <li><a href="#examples">事例</a></li>
+                     <li><a href="#resources">関連リソース</a></li>
+                     <li><a href="#techniques">テクニック</a></li>
+                     <li><a href="#key-terms">重要な用語</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				SC 3.2.6:</span>Consistent Help (Level A)
+            <h1><span class="standalone-resource__type-of-guidance">解説書 達成基準 3.2.6:</span>一貫したヘルプ (レベル A)
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>If a <a href="#dfn-web-page">Web page</a> contains any of the following help <a href="#dfn-mechanism">mechanisms</a>, and those mechanisms are repeated on multiple Web pages within a <a href="#dfn-set-of-web-pages">set of Web pages</a>, they occur in the same order relative to other page content, unless a change is
-                     initiated by the user:
+                  <p><a href="#dfn-web-page">ウェブページ</a>が次のヘルプの<a href="#dfn-mechanism">メカニズム</a>のいずれかを含み、かつ、それらのメカニズムが<a href="#dfn-set-of-web-pages">ウェブページ一式</a>の中にある複数のウェブページで繰り返されている場合、他のページコンテンツに対して相対的に同じ順序で出現する。ただし、変更が利用者によって行われた場合は除く。
                   </p>
                   <ul>
                      
-                     <li>Human contact details;</li>
+                     <li>人間への連絡先</li>
                      
-                     <li>Human contact mechanism;</li>
+                     <li>人間への連絡メカニズム</li>
                      
-                     <li>Self-help option;</li>
+                     <li>自己解決のためのオプション</li>
                      
-                     <li>A fully automated contact mechanism.</li>
+                     <li>完全に自動化された連絡メカニズム</li>
                      
                   </ul>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
-                     <p>Help mechanisms may be provided directly on the page, or may be provided via a direct
-                        link to a different page containing the information.
+                     <p class="note-title marker">注記</p>
+                     <p>ヘルプのメカニズムは、ページ上で直接提供されることもあれば、その情報を含む別のページへの直接リンクを経由して提供されることもある。
                      </p>
                   </div>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
-                     <p>For this Success Criterion, "the same order relative to other page content" can be
-                        thought of as how the content is ordered when the page is serialized. The visual position
-                        of a help mechanism is likely to be consistent across pages for the same page variation
-                        (e.g., CSS break-point). The user can initiate a change, such as changing the page's
-                        zoom or orientation, which may trigger a different page variation. This criterion
-                        is concerned with relative order across pages displayed in the same page variation
-                        (e.g., same zoom level and orientation).
+                     <p class="note-title marker">注記</p>
+                     <p>この達成基準における「他のページコンテンツに対して相対的に同じ順序」は、ページが線形化されたときのコンテンツの並べ方と考えることができる。ヘルプのメカニズムの視覚的な位置は、ページの同じバリエーション (例えば CSS のブレークポイント) に対してページ間で一貫している可能性が高い。利用者は、ページのズーム、ページの向きを変えるなどの変更を発生させることができ、これはページのバリエーションが変化するきっかけになる可能性がある。この達成基準で扱うのは、同じバリエーション (例えば、同じズームレベル、向き) で表示されるページ同士の間における、相対的な順序である。
                      </p>
                   </div>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   
-                  <dt>Goal</dt>
-                  <dd>Make it easier to find help and support.</dd>
+                  <dt>目標</dt>
+                  <dd>ヘルプ及びサポートを見つけやすくする。</dd>
                   
-                  <dt>What to do</dt>
-                  <dd>Put help in the same place when it is on multiple pages.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>ヘルプが複数のページにある場合は、同じ場所にヘルプを配置する。</dd>
                   
-                  <dt>Why it's important</dt>
-                  <dd>People who need help can find it more easily if it's in the same place.</dd>
+                  <dt>なぜそれが重要か</dt>
+                  <dd>同じ場所にあれば、ヘルプを必要とする人は、より簡単に見つけることができる。</dd>
                   
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The intent of this Success Criterion is to ensure users can find help for completing
-                  tasks on a Web site, when it is available. When the placement of the help mechanism
-                  is kept consistent across a set of pages, users looking for help will find it easier
-                  to identify. This is distinct from interface-level help, such as contextual help,
-                  features like spell checkers, and instructional text in a form. 
+               <h2>意図</h2>
+               <p>この達成基準の意図は、ウェブサイト上で作業を完了するためのヘルプが利用可能な場合に、そのヘルプを利用者が確実に見つけられるようにすることである。ヘルプメカニズムの配置が一連のページ群で一貫していると、ヘルプを探している利用者が見つけやすくなる。これは、コンテキストヘルプ、スペルチェッカーのような機能、フォーム内の説明テキストなどのインタフェースレベルのヘルプとは区別される。
                </p>
-               <p>Locating the help mechanism in a consistent location across pages makes it easier
-                  for users to find it.  For example, when a mechanism or link is located in the header
-                  of one Web page, it will be easier to find if it is in the header of other pages.
-                  The help mechanism, such as a contact phone number, may be provided directly on the
-                  page, or it may also be a direct link to a contact page. Regardless of which approach
-                  is used, the mechanism must be located in the same relative order on each page within
-                  the set of pages.
+               <p>ヘルプメカニズムをページ間で一貫した場所に配置すると、利用者が見つけやすくなる。例えば、一つのウェブページで、あるメカニズム又はリンクがヘッダーにある場合、他のページでもそれがヘッダーにあれば、見つけやすくなる。連絡先の電話番号などのヘルプメカニズムは、ページ上に直接提供されてもよく、又は連絡先ページへの直接リンクであってもよい。どちらのアプローチを使用するかに関係なく、そのメカニズムは、その一連のページ群の中の各ページに相対的に同じ順序で配置されなければならない。
                </p>
-               <p>When testing this Success Criterion, it is the help item which is relative to the
-                  rest of the content. When testing a page, other content that is present across the
-                  set of web pages and is before the help item should be before the help item on this
-                  page. Items which are after the help item on other pages should be after the help
-                  item on this page.
+               <p>この達成基準をテストする場合、ヘルプ項目と他のコンテンツとの位置関係の比較になる。あるページをテストする場合、ウェブページ一式の全体に存在して、ヘルプ項目の前にある他のコンテンツは、このページでもヘルプ項目の前に存在すべきである。他のページでヘルプ項目の後にある項目は、このページでもヘルプ項目の後に存在すべきである。
                </p>
-               <p>If the help item is visually in a different location, but in the same serial order,
-                  that is not helpful from a user's point of view, but it would not fail this criterion.
+               <p>ヘルプ項目が視覚的には異なる場所にあるものの、同じシリアル順序で配置されている場合、利用者の観点からは役に立たないが、この基準に失敗することにはならない。
                </p>
-               <p>When having problems completing a task on a Web site (or part of a Web site, what
-                  we call a <a href="#dfn-set-of-web-pages">set of Web pages</a>), people with some types of disabilities may not be able to work through the issue
-                  without further help.  Issues could include difficulty:
-                  completing a form, or finding a document or page which provides information required
-                  to complete a task.
+               <p>ウェブサイト (又はウェブサイトの一部、いわゆる<a href="#dfn-set-of-web-pages">ウェブページ一式</a>) でタスクの完了に問題がある場合、障害のある人の中には、さらなるヘルプなしに問題を解決できない場合がある。問題には、次の困難が含まれる可能性がある: フォームの完了、又は、作業を完了するために必要な情報を提供する文書もしくはページの発見
                </p>
-               <p>Without help, some users may abandon the task. They may also fail to correctly complete
-                  a task, or they may require assistance from people who do not necessarily keep private
-                  information secure.
+               <p>ヘルプがなければ、一部の利用者は作業をあきらめる可能性がある。作業を正しく完了するのに失敗するかもしれないし、個人情報を必ずしも安全に管理していない人からの支援を必要とするかもしれない。
                </p>
                <section id="limitations">
                   
-                  <h3>Limitations and Exceptions</h3>
+                  <h3>制限及び例外</h3>
                   
                   
-                  <p>It is not the intent of this Success Criterion to require authors to provide help
-                     or access to help. The Criterion only requires that <em>when</em> one of the listed forms of help is available across multiple pages that it be in
-                     a consistent location. It does not require authors to provide help information on
-                     PDFs or other static documents that may be available for viewing/download from the
-                     Web pages. PDFs and other static documents are not considered part of the "<a href="#dfn-set-of-web-pages">set of web pages</a>" from which they are downloaded.
+                  <p>この達成基準の意図は、コンテンツ制作者にヘルプの提供又はヘルプへのアクセスを要求することではない。この基準は、リストされた形式のヘルプの一つが複数のページにわたって利用できる<em>場合に</em>、そのヘルプが一貫した場所にあることだけを要求する。ウェブページから表示／ダウンロードできる PDF 又はその他の静的ドキュメントに関するヘルプ情報をコンテンツ制作者が提供することは要求されない。PDF 及びその他の静的ドキュメントは、ダウンロード元の「<a href="#dfn-set-of-web-pages">ウェブページ一式</a>」の一部とみなされることはない。
                   </p>
                   
                   
-                  <p>It is also not the intent of this Success Criterion to require a human be available
-                     at all times. Ideally, if the human contact is not available during certain hours
-                     or certain days then information would be provided so the user can tell when it will
-                     be available. 
+                  <p>また、人間が常に対応できるようにすることを要求することも、この達成基準の意図ではない。理想的には、特定の時間又は特定の日に人間への連絡先が利用できない場合、いつ連絡が取れるようになるかを利用者がわかるように情報を提供する。
                   </p>
                   
                   
-                  <p>This Success Criterion only requires help mechanisms to be consistent <em>within</em> a particular <a href="#dfn-set-of-web-pages">set of web pages</a>. Some complex Web sites consist of multiple different sets of web pages with different
-                     purposes. For example, a web-based spreadsheet application might have one set of pages
-                     for editing spreadsheets and a separate set of pages for marketing the application.
-                     This Success Criterion would allow the different sets of web pages to use different
-                     help mechanism locations. However, it is best if help mechanisms are located as consistently
-                     as possible even among different related sets of web pages.
+                  <p>この達成基準は、特定の<a href="#dfn-set-of-web-pages">ウェブページ一式</a><em>内で</em>ヘルプメカニズムが一貫していることだけを要求する。複雑なウェブサイトの中には、異なる目的を持つ複数の異なるウェブページ一式で構成されているものがある。例えば、ウェブベースのスプレッドシートアプリケーションには、スプレッドシートを編集するための一つのページ一式と、アプリケーションのマーケティング用の別のページ一式があるかもしれない。この達成基準は、異なるウェブページ一式が異なるヘルプメカニズムの場所を使用することを可能にする。しかし、関連する異なるウェブページ一式の間であっても、ヘルプメカニズムができるだけ一貫して配置されることが最善である。
                   </p>
                   
                   
-                  <p>This Success Criterion contains an exception when "a change is initiated by the user."
-                     This exception is intended to cover cases where a user performs an action with the
-                     intent of changing the display or layout of a page, such as changing the zoom level,
-                     orientation, or viewport size. Help mechanism locations may change in response to
-                     such a user-initiated change; as the criterion's second note clarifies, "this criterion
-                     is concerned with relative order across pages displayed in the same page variation
-                     (e.g., same zoom level and orientation)."
+                  <p>この達成基準には、「変更が利用者によって行われた」場合の例外が含まれている。この例外は、利用者がズームレベル、向き、ビューポートサイズの変更など、ページの表示又はレイアウトを変更する目的でアクションを実行する場合を扱うことを目的としている。ヘルプメカニズムの場所は、利用者が開始したそのような変更に応じて変更される場合がある。この基準の 2 番目の注記で明確にされているように、「この達成基準で扱うのは、同じバリエーション (例えば、同じズームレベル、向き) で表示されるページ同士の間における、相対的な順序である」。
                   </p>
                   
                   
-                  <p>This exception allows the location in a smaller viewport to be different than in a
-                     larger viewport. However, it is best if the mechanism or link is consistent across
-                     a set of web pages. A consistent location, both visually and programmatically, is
-                     the most usable.
+                  <p>この例外は、小さいビューポート内の場所が、大きいビューポート内と異なることを許容している。しかし、メカニズム又はリンクがウェブページ一式の間で一貫していることが最善である。場所が視覚的にもプログラム的にも一貫していると、最も使いやすくなる。
                   </p>
                   
                   
-                  <p>This exception is <em>not</em> intended to treat every action that a user might initiate as a "change"; to qualify
-                     for the exception, the user must be initiating an action that would reasonably be
-                     expected to change the relative order of components within a page. For example, merely
-                     navigating between pages within a set of web pages is not a "change initiated by the
-                     user" for the purposes of this exception. Similarly, logging into or out of a page
-                     would not typically qualify, unless logging in would present the user with a distinct
-                     <a href="#dfn-set-of-web-pages">set of web pages</a>.
+                  <p>この例外は、利用者が開始する可能性のある全てのアクションを「変更」として扱うことを意図したもの<em>ではない</em>。例外の対象となるためには、ページ内のコンポーネントの相対的な順序を変更することが合理的に予想されるアクションを利用者が開始しなければならない。例えば、ページ一式内のページ間を単に移動することは、この例外の目的上「利用者によって開始された変更」とはならない。同様に、ページへのログイン又はログアウトは、ログインによって利用者に明確に異なる<a href="#dfn-set-of-web-pages">ウェブページ一式</a>が表示される場合を除き、通常は対象とならない。
                   </p>
                   
                </section>
                <section id="help-mechanisms">
                   
-                  <h3>Help Mechanisms</h3>
+                  <h3>ヘルプメカニズム</h3>
                   
                   
-                  <p>Typical help mechanisms include:</p>
+                  <p>典型的なヘルプメカニズムには、次のものがある:</p>
                   
                   <ul>
                      
-                     <li>Human contact details such as a phone number, email address, hours of operation.</li>
+                     <li>電話番号、電子メールアドレス、営業時間などの人間への連絡先の詳細。</li>
                      
-                     <li>Human contact mechanism such as a messaging system, chat client, contact form, social
-                        media channel.
+                     <li>メッセージングシステム、チャットクライアント、問い合わせフォーム、ソーシャルメディアチャネルなどの人間への連絡メカニズム。
                      </li>
                      
-                     <li>Self-help option such as an up-to-date Frequently Asked Questions, How Do I page,
-                        Support page.
+                     <li>最新のよくある質問、操作方法ページ、サポートページなどの自己解決のためのオプション。
                      </li>
                      
-                     <li>A fully automated contact mechanism such as a chatbot.</li>
+                     <li>チャットボットなどの完全に自動化された連絡メカニズム。</li>
                      
                   </ul>
                   
                   
-                  <p>The order of the types of help listed in the Success Criterion does not imply priority.</p>
+                  <p>達成基準に記載されているヘルプの種類の順序は、優先順位を意味するものではない。</p>
                   
                </section>
                <section id="support-for-coga">
                   
-                  <h3>Support for people with cognitive and learning disabilities</h3>
+                  <h3>認知障害及び学習障害のある人々へのサポート</h3>
                   
                   
-                  <p>This section is not required by the Consistent Help success criterion, but provides
-                     advice related to <a href="https://www.w3.org/TR/coga-usable/#support-user-story">Making Content Usable for People with Cognitive and Learning Disabilities</a>.
+                  <p>このセクションは、一貫したヘルプの達成基準では必須ではないが、<a href="https://www.w3.org/TR/coga-usable/#support-user-story">Making Content Usable for People with Cognitive and Learning Disabilities</a> に関連するアドバイスを提供する。.
                   </p>
                   
                   
-                  <p>The human contact details enable users to connect with the  organization or the part
-                     of the organization that can assist with the content. For example, an online jobs
-                     / recruitment portal may provide a contact method for the team that supports the recruitment
-                     portal and not a catch-all for the entire company. Each layer of contact added prolongs
-                     the time before the user will receive help.
+                  <p>人間への連絡先があれば、利用者は、組織又は組織の担当部署と連絡をとり、コンテンツについての支援を受けられる。例えば、オンラインの求人／採用ポータルは、会社全体の包括的な連絡方法ではなく、その採用ポータルをサポートするチームへの連絡方法を提供する場合がある。連絡先の階層が増えるほど、利用者が助けを受けるまでの時間が長くなる。
                   </p>
                   
                   
-                  <p>The human contact mechanism enables a person to express what they are looking for
-                     using their own words. For some with cognitive disabilities, this may be the best
-                     way for them to find an answer to their problem.
+                  <p>人間への連絡メカニズムがあれば、人は、探しているものを自分の言葉で表現できる。認知障害のある人の中には、これが問題の答えを見つける最善の方法になる人もいるかもしれない。
                   </p>
                   
                   
-                  <p>For pages for which no human support is available it helps if a self-help option says
-                     that no human support is available. Self-help options can go beyond allowing the user
-                     to search within the site. Contextual help is still recommended (see <a href="help">Success Criterion 3.3.5</a> for more information), but a self-help option provides a single location that makes
-                     it easier for people with cognitive disabilities to understand what help is available
-                     without having to hunt for it. While some people may easily be able to identify that
-                     no support would be available for a particular type of Web site, this may not be apparent
-                     to some users with disabilities.
+                  <p>人間によるサポートが利用できないページでは、自己解決のためのオプションに人間によるサポートが利用できないことが示されていると助けになる。自己解決のためのオプションは、利用者がサイト内の検索を可能にするだけではない。状況に応じたヘルプは依然として推奨されている (詳細については<a href="help.html">達成基準 3.3.5</a> を参照) が、自己解決のためのオプションは、認知障害のある人が、ヘルプを探なさくても利用可能なヘルプを簡単に理解できる、単一の場所を提供する。特定の種類のウェブサイトではサポートが利用できないことを簡単に認識できる人もいるが、障害のある利用者の中には明らかではない場合もある。
                   </p>
                   
                   
-                  <p>Chatbots can work for many people, and particularly for people with cognitive disabilities
-                     if they:
+                  <p>チャットボットは、多くの人々、特に認知障害のある人々にとって、次のような場合に有効である:
                   </p>
                   
                   
                   <ul>
                      
-                     <li>recognize misspelled words,</li>
+                     <li>スペルミスの単語を認識する、</li>
                      
-                     <li>provide human contact details if the chatbot is unable to provide a satisfactory response
-                        after 3 attempts, and
+                     <li>チャットボットが 3 回試行しても満足のいく応答を提供できない場合は、人間の連絡先を提供する、及び、
                      </li>
                      
-                     <li>can be dismissed with a single interaction, and recalled using a link or button.</li>
+                     <li>1 回の操作で閉じることができ、一つのリンク又はボタンを使用して開き直すことができる。</li>
                      
                   </ul>
                   
                   
-                  <p>This criterion does not require that a site provide a help mechanism. However, when
-                     help is available:
+                  <p>この達成基準は、サイトがヘルプメカニズムを提供することを要求しない。しかし、ヘルプが利用できる場合:
                   </p>
                   
                   <ul>
                      
-                     <li>People who may have difficulty locating help are more likely to find it and complete
-                        their task.
+                     <li>ヘルプを見つけるのが難しい人でも、ヘルプを見つけて作業を完了する可能性が高くなる。
                      </li>
                      
-                     <li>Users that experience cognitive fatigue or cognitive shut down will be able to reserve
-                        their energy for the task, instead of using it to find support.
+                     <li>認知の疲労又は認知の途絶を経験した利用者は、サポートを見つけるためにエネルギーを使うのではなく、作業のためにエネルギーを蓄えることができる。
                      </li>
                      
-                     <li>Enabling users (especially those with cognitive disabilities) to find solutions while
-                        expressing their question using their own words (for example by interacting with a
-                        chatbot) increases their chances of success for completing a task.
+                     <li>利用者 (特に認知障害のある利用者) が自分の言葉で質問を表現しながら (例えばチャットボットと対話することで) 解決策を見つけられるようにすると、作業の完了に対する成功の可能性が高まる。
                      </li>
                      
                   </ul>
                   
                   
-                  <p>Self help methods beyond the site, such as using internet search to find the contact
-                     information for an organization, can be too difficult. Further, the user's disability
-                     may make it more difficult to find the help available (such as a "contact us" link,
-                     phone number, or support page) if the information is not consistently present within
-                     a few interactions (e.g., displayed in the header, or via a menu). In addition, for
-                     some users with disabilities, struggling to complete a task on a site may cause additional
-                     cognitive challenges when searching for help within the site.
+                  <p>インターネット検索を使用して組織の連絡先情報を見つけるなど、そのサイトの外で自己解決する方法は難しすぎる場合がある。さらに、利用者の障害によっては、利用可能なヘルプ (「お問い合わせ」リンク、電話番号、サポートページなど) の情報が数回のインタラクションの中で一貫して存在しない場合 (例えば、ヘッダーに表示される、メニュー経由)、見つけることがより困難になる可能性がある。加えて、障害のある一部の利用者によっては、サイト内でヘルプを検索するときに、サイト上で作業を完了するのに苦労することで、さらなる認知的な問題が発生する可能性がある。
                   </p>
                   
                   
-                  <p>When a user is quickly able to find help, they are able to complete the task even
-                     if they encounter challenges.
+                  <p>利用者がすぐにヘルプを見つけることができれば、たとえ困難に直面したとしても作業を完了することができる。
                   </p>
                   
                </section>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>利点</h2>
                <ul>
                   
-                  <li>People who may have difficulty locating help are more likely to find it when it is
-                     consistently located.
+                  <li>ヘルプを見つけるのが困難な人々でも、ヘルプが一貫して置かれていると、ヘルプを見つけやすくなる。
                   </li>
                   
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>事例</h2>
                <ul>
                   
-                  <li>On-line job application: Some of the application questions may be hard for new job
-                     seekers to understand even after reading the contextual help. For example, the form
-                     may request their identification number, but they may have several and not know which
-                     one to enter. Consistently located contact information will enable them to use phone
-                     or email so they can get an answer to their question.
+                  <li>オンラインでの求人応募: 応募に関する質問の中には、コンテキストに沿ったヘルプを読んだ後でも、新規求職者にとって理解するのが難しいものがある。例えば、フォームで識別番号を要求するが、複数の識別番号があり、どれを入力すればよいかわからない場合がある。連絡先情報を一貫して配置することで、電話又は電子メールを使用して質問に対する回答を得ることができる。
                   </li>
                   
-                  <li>Medical appointment scheduling form: When the service a patient is trying to book
-                     is not easily findable within the interface, they may need human help. A consistently
-                     located messaging option (chat client) enables them to quickly interact with a staff
-                     person that can help, without requiring them to manage a second interface.
+                  <li>診察予約スケジュールフォーム: 患者が予約しようとしているサービスがインタフェース内で簡単に見つけられない場合、人間の助けが必要になる場合がある。一貫して配置されているメッセージングオプション (チャットクライアント) により、別のインタフェースを操作する必要がなく、サポートできるスタッフと素早く対話できる。
                   </li>
                   
-                  <li>Finding a specific policy or procedure: An employee who needs to complete a work task
-                     may have difficulty locating the specific policy or procedure document on their employer's
-                     Web site. A consistently located "How Do I" page may include the information that
-                     enables them to independently complete this task.
+                  <li>特定のポリシー又は手順を見つける: 仕事の作業を完了する必要がある従業員は、雇用主のウェブサイトで特定のポリシー又は手順の文書を見つけるのが困難な場合がある。一貫して配置されている "How Do I" ページには、このタスクを自力で完了できるようにするための情報が含まれている場合がある。
                   </li>
                   
                </ul>
             </section>
             <section id="resources">
-               <h2>Related Resources</h2>
-               <p>Resources are for information purposes only, no endorsement implied.</p>
+               <h2>関連リソース</h2>
+               <p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p>
                <ul>
                   
                   <li><a href="https://www.w3.org/TR/coga-gap-analysis/#table6">Cognitive Accessibility Gap Analysis Topic 6: Familiar Interface</a></li>
@@ -379,14 +281,11 @@
                </ul>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
+                  <h3>十分なテクニック</h3>
                   <ol>
                      
                      <li><a class="general" href="https://w3c.github.io/wcag/techniques/general/G220">G220: Provide a contact-us link in a consistent location</a></li>
@@ -394,9 +293,8 @@
                   </ol>
                </section>
                <section id="failure">
-                  <h3>Failures</h3>
-                  <p>The following are common mistakes that are considered failures of this Success Criterion
-                     by the WCAG Working Group.
+                  <h3>失敗</h3>
+                  <p>次に挙げるものは、WCAG ワーキンググループが達成基準の失敗とみなした、よくある間違いである。
                   </p>
                   <ul>
                      
@@ -410,50 +308,37 @@
             <section id="key-terms">
                <details>
                   <summary>
-                     <h2>Key Terms</h2>
+                     <h2>重要な用語</h2>
                   </summary>
-                  <dt id="dfn-assistive-technology">assistive technology</dt>
+                  <dt id="dfn-assistive-technology">支援技術 (assistive technology)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">hardware and/or software that acts as a <a href="#dfn-user-agent">user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements
-                           of users with disabilities that go beyond those offered by mainstream user agents
+                        <p xmlns="http://www.w3.org/1999/xhtml">障害のある利用者の要件を満たすために、主流の<a href="#dfn-user-agent">ユーザエージェント</a>が提供する機能を超えた機能を提供するような、ユーザエージェントとして動作する、又は主流のユーザエージェントと共に動作するハードウェア及び／又はソフトウェア。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Functionality provided by assistive technology includes alternative presentations
-                              (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
-                              voice), additional navigation or orientation mechanisms, and content transformations
-                              (e.g., to make tables more accessible).
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術が提供する機能としては、代替の提示 (例: 合成音声や拡大表示したコンテンツ)、代替入力手法 (例: 音声認識)、付加的なナビゲーション又は位置確認のメカニズム、及びコンテンツ変換 (例: テーブルをよりアクセシブルにするもの) などを挙げることができる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Assistive technologies often communicate data and messages with mainstream user agents
-                              by using and monitoring APIs.
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術は、API を利用、監視することで、主流のユーザエージェントとデータやメッセージのやりとりをすることが多い。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The distinction between mainstream user agents and assistive technologies is not absolute.
-                              Many mainstream user agents provide some features to assist individuals with disabilities.
-                              The basic difference is that mainstream user agents target broad and diverse audiences
-                              that usually include people with and without disabilities. Assistive technologies
-                              target narrowly defined populations of users with specific disabilities. The assistance
-                              provided by an assistive technology is more specific and appropriate to the needs
-                              of its target users. The mainstream user agent may provide important functionality
-                              to assistive technologies like retrieving Web content from program objects or parsing
-                              markup into identifiable bundles.
+                           <p class="note-title marker">注記</p>
+                           <p>主流のユーザエージェントと支援技術との区別は、絶対的なものではない。多くの主流のユーザエージェントは、障害のある個人を支援する機能を提供している。基本的な差異は、主流のユーザエージェントが障害のある人もない人も含めて、広く多様な利用者を対象にしているのに対し、支援技術は、特定の障害のある利用者という、より狭く限られた人たちを対象にしているということである。支援技術により提供される支援は、対象とする利用者に特化した、よりニーズに適したものである。主流のユーザエージェントは、プログラムオブジェクトからのウェブコンテンツの抽出、マークアップの識別可能な構造への解釈といった、重要な機能を支援技術に対して提供する場合がある。
                               
                            </p>
                         </div>
@@ -461,8 +346,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Assistive technologies that are important in the context of this document include
-                              the following:
+                           <p>この文書の文脈において重要な支援技術としては、以下のものが挙げられる:
                               
                            </p>
                            
@@ -470,38 +354,30 @@
                            <ul>
                               
                               
-                              <li>screen magnifiers, and other visual reading assistants, which are used by people with
-                                 visual, perceptual and physical print disabilities to change text font, size, spacing,
-                                 color, synchronization with speech, etc. in order to improve the visual readability
-                                 of rendered text and images;
+                              <li>画面拡大ソフト及びその他の視覚的な表示に関する支援技術。視覚障害、知覚障害、及び読書困難などの障害のある人が、レンダリング後のテキスト及び画像の視覚的な読みやすさを改善するために、テキストのフォント、サイズ、間隔、色、音声との同期などを変更するのに使用している。
                                  
                               </li>
                               
                               
-                              <li>screen readers, which are used by people who are blind to read textual information
-                                 through synthesized speech or braille;
+                              <li>スクリーンリーダー。全盲の人がテキスト情報を合成音声あるいは点字で読み取るために使用している。
                                  
                               </li>
                               
                               
-                              <li>text-to-speech software, which is used by some people with cognitive, language, and
-                                 learning disabilities to convert text into synthetic speech;
+                              <li>音声変換ソフトウェア。認知障害、言語障害、及び学習障害のある人が、テキストを合成音声に変換するために使用している。
                                  
                               </li>
                               
                               
-                              <li>speech recognition software, which may be used by people who have some physical disabilities;</li>
+                              <li>音声認識ソフトウェア。何らかの身体障害のある利用者が使用することがある。</li>
                               
                               
-                              <li>alternative keyboards, which are used by people with certain physical disabilities
-                                 to simulate the keyboard (including alternate keyboards that use head pointers, single
-                                 switches, sip/puff and other special input devices.);
+                              <li>代替キーボード。特定の身体障害のある人がキーボード操作をシミュレートするのに使用している (ヘッドポインタ、シングルスイッチ、呼気・吸気スイッチ、及びその他の特別な入力デバイスを使った代替キーボードを含む)。
                                  
                               </li>
                               
                               
-                              <li>alternative pointing devices, which are used by people with certain physical disabilities
-                                 to simulate mouse pointing and button activations.
+                              <li>代替ポインティングデバイス。特定の身体障害のある人がマウスポインタとボタンの動きをシミュレートするのに使用している。
                                  
                               </li>
                               
@@ -512,56 +388,53 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-conformance">conformance</dt>
+                  <dt id="dfn-conformance">適合 (conformance)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">satisfying all the requirements of a given standard, guideline or specification</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">与えられた規格、ガイドライン、又は仕様のすべての要件を満たすこと。</p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-mechanism">mechanism</dt>
+                  <dt id="dfn-mechanism">メカニズム (mechanism)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">
-                           <a href="#dfn-process">process</a> or technique for achieving a result
+                        <p xmlns="http://www.w3.org/1999/xhtml">結果を得るための<a href="#dfn-process">プロセス</a>又は手法。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The mechanism may be explicitly provided in the content, or may be <a href="#dfn-relied-upon">relied upon</a> to be provided by either the platform or by <a href="#dfn-user-agent">user agents</a>, including <a href="#dfn-assistive-technology">assistive technologies</a>.
+                           <p class="note-title marker">注記</p>
+                           <p>メカニズムは、コンテンツ内で明示的に提供されることもあれば、プラットフォーム又は<a href="#dfn-assistive-technology">支援技術</a>を含む<a href="#dfn-user-agent">ユーザエージェント</a>で提供されるものに<a href="#dfn-relied-upon">依存</a>することもある。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The mechanism needs to meet all success criteria for the conformance level claimed.</p>
+                           <p class="note-title marker">注記</p>
+                           <p>メカニズムは、宣言する適合レベルのすべての達成基準を満たしている必要がある。</p>
                         </div>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-process">process</dt>
+                  <dt id="dfn-process">プロセス (process)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">series of user actions where each action is required in order to complete an activity</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ある活動を完了させるために必要な利用者の一連の動作。</p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Successful use of a series of Web pages on a shopping site requires users to view
-                              alternative products, prices and offers, select products, submit an order, provide
-                              shipping information and provide payment information.
+                           <p>ショッピングサイト上の一連のウェブページで目的を果たすためには、利用者が選択肢となりうる製品、価格及び内容を閲覧した後、製品を選択して発注し、配送先情報及び支払情報を提供する必要がある。
                               
                            </p>
                            
@@ -570,8 +443,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>An account registration page requires successful completion of a <a href="https://www.w3.org/TR/turingtest/">Turing test</a> before
-                              the registration form can be accessed.
+                           <p>アカウント登録ページでは、登録フォームにアクセスする前に<a href="https://www.w3.org/TR/turingtest/">チューリングテスト</a>に成功する必要がある。
                               
                            </p>
                            
@@ -580,49 +452,41 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-relied-upon">relied upon</dt>
+                  <dt id="dfn-relied-upon">依存されている (relied upon)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">the content would not <a href="#dfn-conformance">conform</a> if that <a href="#dfn-technology">technology</a> is turned off or is not supported
+                        <p xmlns="http://www.w3.org/1999/xhtml">その<a href="#dfn-technology">技術</a>が無効になっている場合、又はサポートされていない場合に、コンテンツが<a href="#dfn-conformance">適合</a>できないこと。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-set-of-web-pages">set of web pages</dt>
+                  <dt id="dfn-set-of-web-pages">ウェブページ一式 (set of Web pages)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">collection of <a href="#dfn-web-page">web pages</a> that share a common purpose and that are created by the same author, group or organization
+                        <p xmlns="http://www.w3.org/1999/xhtml"><a href="#dfn-web-page">web pages</a> 共通の目的を共有し、同じコンテンツ制作者、グループ、又は組織により制作されたウェブページの集合。
                            
                         </p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Examples include:</p>
+                           <p>以下の例がある:</p>
                            
                            <ul>
                               
-                              <li>a publication which is split across multiple Web pages, where each page contains one
-                                 chapter or other significant section of the work. The publication is logically a single
-                                 contiguous unit, and contains navigation features that enable access to the full set
-                                 of pages.
+                              <li>複数のウェブページにまたがる発行物で、各ページには一つの章又はその他の重要なセクションが含まれる。その発行物は論理的には一つの連続した集合体であり、ページ一式全体へのアクセスを可能にするナビゲーション機能を有する。
                               </li>
                               
-                              <li>an e-commerce website shows products in a set of Web pages that all share the same
-                                 navigation and identification. However, when progressing to the checkout process,
-                                 the template changes; the navigation and other elements are removed, so the pages
-                                 in that process are functionally and visually different. The checkout pages are not
-                                 part of the set of product pages.
+                              <li>e コマースのウェブサイトで、同じナビゲーション及び識別を共有するウェブページ一式に、商品が表示されている。しかし、精算プロセスに進むと、テンプレートが変更される。ナビゲーション及び他の要素が削除され、それによって、そのプロセスのページは機能的にも視覚的にも異なったものとなる。その精算ページは商品のページ一式の一部ではない。
                               </li>
                               
-                              <li>a blog on a sub-domain (e.g. blog.example.com) which has a different navigation and
-                                 is authored by a distinct set of people from the pages on the primary domain (example.com).
+                              <li>サブドメイン (例えば blog.example.com) 上のブログで、プライマリドメイン (example.com) 上のページとは異なるナビゲーションを持ち、かつ異なる人々によって制作されている。
                               </li>
                               
                            </ul>
@@ -631,39 +495,34 @@
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Different language versions would be considered different sets of Web pages.</p>
+                           <p class="note-title marker">注記</p>
+                           <p>他言語版は、異なるウェブページ一式と見なされることもある。</p>
                         </div>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-technology">technology</dt>
+                  <dt id="dfn-technology">技術 (technology)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">
-                           <a href="#dfn-mechanism">mechanism</a> for encoding instructions to be rendered, played or executed by <a href="#dfn-user-agent">user agents</a>
+                        <p xmlns="http://www.w3.org/1999/xhtml"><a href="#dfn-user-agent">ユーザエージェント</a>がどのようにレンダリング、再生、又は実行するかを符号化する<a href="#dfn-mechanism">メカニズム</a>。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>As used in these guidelines "Web Technology" and the word "technology" (when used
-                              alone) both refer to Web Content Technologies.
+                           <p class="note-title marker">注記</p>
+                           <p>このガイドラインで用いられている「ウェブ技術」及び (単独で用いられている) 「技術」という用語は、どちらもウェブコンテンツ技術を指す。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Web content technologies may include markup languages, data formats, or programming
-                              languages that authors may use alone or in combination to create end-user experiences
-                              that range from static Web pages to synchronized media presentations to dynamic Web
-                              applications.
+                           <p class="note-title marker">注記</p>
+                           <p>ウェブコンテンツ技術には、マークアップ言語、データ形式、及びプログラム言語などがあり、これらをコンテンツ制作者が単独で、又は組み合わせて用いることによって、静的なウェブページや同期したメディアによる提示、さらには動的なウェブアプリケーションに至るまでの様々なエンドユーザ体験を作ることができる。
                               
                            </p>
                         </div>
@@ -671,8 +530,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Some common examples of Web content technologies include HTML, CSS, SVG, PNG, PDF,
-                              Flash, and JavaScript.
+                           <p>ウェブコンテンツ技術のよくある事例としては、HTML、CSS、SVG、PNG、PDF、Flash、 JavaScript などがある。
                               
                            </p>
                            
@@ -681,17 +539,17 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-user-agent">user agent</dt>
+                  <dt id="dfn-user-agent">ユーザエージェント (user agent)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">any software that retrieves and presents Web content for users</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ウェブコンテンツを取得して利用者に提示するあらゆるソフトウェア。</p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technology">assistive technologies</a> — that help in retrieving, rendering, and interacting with Web content.
+                           <p>ウェブコンテンツの取得、レンダリング及びインタラクションを支援する、ウェブブラウザ、メディアプレーヤ、プラグイン、及びその他のプログラム (<a href="#dfn-assistive-technology">支援技術</a>も含む)。
                               
                            </p>
                            
@@ -700,30 +558,27 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-web-page">web page</dt>
+                  <dt id="dfn-web-page">ウェブページ (Web page)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">a non-embedded resource obtained from a single URI using HTTP plus any other resources
-                           that are used in the rendering or intended to be rendered together with it by a <a href="#dfn-user-agent">user agent</a>
+                        <p xmlns="http://www.w3.org/1999/xhtml">単一の URI から HTTP で得た埋め込まれていないリソースに加え、レンダリングに使われる、又は<a href="#dfn-user-agent">ユーザエージェント</a>がこのリソースと一緒にレンダリングすることを意図しているその他のあらゆるリソースを合わせたもの。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Although any "other resources" would be rendered together with the primary resource,
-                              they would not necessarily be rendered simultaneously with each other.
+                           <p class="note-title marker">注記 </p>
+                           <p>どのような「その他のリソース」も主たるリソースと一緒にレンダリングされるであろうが、これらのリソースが同時にレンダリングされるとは限らない。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>For the purposes of conformance with these guidelines, a resource must be "non-embedded"
-                              within the scope of conformance to be considered a Web page.
+                           <p class="note-title marker">注記 </p>
+                           <p>このガイドラインの適合範囲に含まれる対象となるウェブページとみなされるためには、リソースが「埋め込まれていない」リソースでなければならない。
                               
                            </p>
                         </div>
@@ -731,17 +586,14 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A Web resource including all embedded images and media.</p>
+                           <p>単体のウェブリソースであり、埋め込まれている画像及びメディアのすべてを含んだもの。</p>
                            
                         </aside>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A Web mail program built using Asynchronous JavaScript and XML (AJAX). The program
-                              lives entirely at http://example.com/mail, but includes an inbox, a contacts area
-                              and a calendar. Links or buttons are provided that cause the inbox, contacts, or calendar
-                              to display, but do not change the URI of the page as a whole.
+                           <p>Asynchronous JavaScript and XML (AJAX) を用いたウェブメールのプログラム。そのプログラム全体は http://example.com/mail に存在しているが、受信トレイ、連絡先、カレンダーがある。受信トレイ、連絡先、又はカレンダーを表示するリンク又はボタンが提供されているが、全体としてページの URI は変更されない。
                               
                            </p>
                            
@@ -750,8 +602,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A customizable portal site, where users can choose content to display from a set of
-                              different content modules.
+                           <p>カスタマイズ可能なポータルサイトで、利用者が様々なコンテンツモジュールのセットから表示させるコンテンツを選択できるようなもの。
                               
                            </p>
                            
@@ -760,12 +611,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>When you enter "http://shopping.example.com/" in your browser, you enter a movie-like
-                              interactive shopping environment where you visually move around in a store dragging
-                              products off of the shelves around you and into a visual shopping cart in front of
-                              you. Clicking on a product causes it to be demonstrated with a specification sheet
-                              floating alongside. This might be a single-page Web site or just one page within a
-                              Web site.
+                           <p>ブラウザで "http://shopping.example.com/" へ行くと、映画のようなインタラクティブなショッピング環境になる。そこでは、視覚的に店内を移動して、店内の棚から商品をドラッグして、目の前にある視覚的な買物カゴに商品を入れる。商品をクリックすると、同時に仕様書が浮き上がるように表示される。これは 1 ページだけのウェブサイトかもしれないし、ウェブサイトの中のほんの 1 ページなのかもしれない。
                               
                            </p>
                            
@@ -785,13 +631,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -806,11 +651,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -832,13 +679,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -847,7 +694,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -868,8 +715,10 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+    <!--noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-      </noscript>
+      </noscript-->
    </body>
 </html>
