@@ -214,26 +214,10 @@
                   <p>一部のサイトでは、ユーザ名とパスワード以外に 2 要素認証を使用し、利用者に確認コード (パスコード又はワンタイムパスワードとも呼ばれる) の記入を求める場合がある。検証コードを<em>手作業で</em>転記する必要があるサービスは準拠していない。ユーザ名とパスワードと同様に、利用者が少なくとも (スタンドアロンのサードパーティのパスワードマネージャー、テキストメッセージアプリケーション、ソフトウェアベースのセキュリティキーなどから) そのコードを貼り付ける、又はユーザエージェントがフィールドに自動的に記入できるようにする必要がある。
                   </p>
                   
-                  <p>There are scenarios where a verification code must be received or generated on a secondary
-                     device. For example, authenticating in a web browser on a laptop requires a verification
-                     code that is sent as an SMS text message to a mobile phone. However, in most cases,
-                     it is possible for the code to then be sent directly to the primary device, where
-                     it can then be copied and pasted (for example, by copying the code on the secondary
-                     device and emailing it to the primary device, or through the use of a shared cross-device
-                     clipboard where copying content on the secondary device makes it available to paste
-                     on the primary device). Evaluating whether or not the code can be seamlessly transferred
-                     from the secondary device to the primary device is <em>outside of the scope</em> for this Success Criterion. For the purpose of evaluating Web content that relies
-                     on authentication using these types of secondary device systems, it is assumed that
-                     provisions are in place that make the code available in the user's clipboard. Evaluating
-                     this criterion therefore only requires verification that the web content does allow
-                     pasting the clipboard content in the related authentication challenge field.
+                  <p>検証コードをセカンダリーデバイスで受信又は生成しなければならないシナリオがある。例えば、ラップトップ上のウェブブラウザで認証する場合、携帯電話に SMS テキストメッセージとして送信される確認コードが必要である。しかし、ほとんどの場合、コードをプライマリーデバイスに直接送信し、コピー＆ペーストできる (例えば、セカンダリーデバイス上のコードをコピーしてプライマリデバイスに電子メールで送信したり、共有のクロスデバイスクリップボードを使用して、セカンダリーデバイス上のコンテンツをコピーすると、そのコンテンツをプライマリーデバイスに貼り付けできる)。コードをセカンダリーデバイスからプライマリーデバイスにシームレスに転送できるかどうかの評価は、この達成基準の<em>範囲外</em>である。このようなタイプのセカンダリーデバイスシステムを使用して認証に依存するウェブコンテンツを評価する目的の場合、利用者のクリップボードでコードを利用できるように準備が整っていることが前提となる。したがって、この基準を評価するには、ウェブコンテンツが関連する認証チャレンジフィールドでクリップボードのコンテンツの貼り付けを許可していることを検証する必要があるだけである。
                   </p>
                   
-                  <p>Note that two-factor systems that do not rely on codes — including hardware authentication
-                     devices (such as YubiKey), secondary applications (either on the same primary device,
-                     or on a secondary device) that expect the user to confirm that it is indeed them trying
-                     to log in, and authentication methods provided by the user's operating system (such
-                     as Windows Hello, or Touch ID/Face ID on macOS and iOS) — are <em>not</em><a href="#"> a cognitive function test</a>.
+                  <p>ハードウェア認証デバイス (YubiKey など)、実際にログインしようとしているのが本人であることを利用者が確認することを期待するセカンダリーアプリケーション (同じプライマリーデバイス上か、セカンダリーデバイス上のいずれか)、利用者のオペレーティングシステムによって提供される認証方法 (Windows Hello、macOS、iOS の Touch ID/Face ID など) など、コードに依存しない 2 要素システムは、<a href="#">認知機能テスト</a><em>ではない</em>ことに注意する。
                   </p>
                   
                </section>
