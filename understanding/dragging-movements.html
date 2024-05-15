@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  2.5.7: Dragging Movements | WAI | W3C</title>
+      <title>解説書 達成基準 2.5.7: ドラッグ動作 | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -35,17 +35,17 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"><a href="input-modalities">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Input Modalities</a></li>
+                        </svg> ガイドライン: 入力モダリティ</a></li>
                   <li class="nav__item"><a href="concurrent-input-mechanisms">
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-left-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
-                        </svg>Previous SC: Concurrent Input Mechanisms</a></li>
-                  <li class="nav__item"><a href="target-size-minimum">Next SC: Target Size (Minimum)
+                        </svg>前: 入力メカニズムの共存</a></li>
+                  <li class="nav__item"><a href="target-size-minimum">次: ターゲットのサイズ (最低限)
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -56,213 +56,154 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
-                     <li><a href="#key-terms">Key Terms</a></li>
+                     <li><a href="#brief">要約</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#benefits">利点</a></li>
+                     <li><a href="#examples">事例</a></li>
+                     <li><a href="#techniques">テクニック</a></li>
+                     <li><a href="#key-terms">重要な用語</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				SC 2.5.7:</span>Dragging Movements (Level AA)
+            <h1><span class="standalone-resource__type-of-guidance">解説書 
+                  				達成基準 2.5.7:</span>ドラッグ動作 (レベル AA)
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>All <a href="#dfn-functionality">functionality</a> that uses a <a href="#dfn-dragging-movement">dragging movement</a> for operation can be achieved by a <a href="#dfn-single-pointer">single pointer</a> without dragging, unless dragging is <a href="#dfn-essential">essential</a> or the functionality is determined by the <a href="#dfn-user-agent">user agent</a> and not modified by the author.
+                  <p>操作に<a href="#dfn-dragging-movement">ドラッグ動作</a>を用いる全ての<a href="#dfn-functionality">機能</a>は、ドラッグなしの<a href="#dfn-single-pointer">シングルポインタ</a>で完遂できる。ただし、ドラッグが<a href="#dfn-essential">必要不可欠</a>である、又はその機能が<a href="#dfn-user-agent">ユーザエージェント</a>によって決定され、かつコンテンツ制作者によって変更されない場合は除く。
                   </p>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
-                     <p>This requirement applies to web content that interprets pointer actions (i.e. this
-                        does not apply to actions that are required to operate the user agent or assistive
-                        technology).
+                     <p class="note-title marker">注記</p>
+                     <p>この要件は、ポインタの動作を解釈するウェブコンテンツに適用される (すなわち、これはユーザエージェント又は支援技術の操作に必要なアクションには適用されない)。
                      </p>
                   </div>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   
-                  <dt>Goal</dt>
-                  <dd>Don’t rely on dragging for user actions.</dd>
+                  <dt>目標</dt>
+                  <dd>利用者のアクションをドラッグに依存しない。</dd>
                   
-                  <dt>What to do</dt>
-                  <dd>For any action that involves dragging, provide a simple pointer alternative.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>ドラッグを伴う全てのアクションに対して、シングルポインタによる代替を提供する。</dd>
                   
-                  <dt>Why it's important</dt>
-                  <dd>Some people cannot use a mouse to drag items.</dd>
+                  <dt>なぜそれが重要か</dt>
+                  <dd>マウスを用いて項目をドラッグできない人もいる。</dd>
                   
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The intent of this Success Criterion is to ensure functionality that uses a dragging
-                  movement has another <a href="#dfn-single-pointer">single pointer</a> mode of operation without the need for the dexterity required to drag elements.
+               <h2>意図</h2>
+               <p>この達成基準の目的は、ドラッグ動作を使用する機能が、要素のドラッグに必要な器用さを必要とせずに、別の<a href="#dfn-single-pointer">シングルポインタ</a>操作モードを持つことを保証することである。
                </p>
-               <p>Some people cannot perform dragging movements in a precise manner. Others use a specialized
-                  or adapted input device, such as a trackball, head pointer, eye-gaze system, or speech-controlled
-                  mouse emulator, which may make dragging cumbersome and error-prone.
+               <p>ドラッグ動作を正確に実行できない人もいる。また、トラックボール、ヘッドポインタ、視線システム、音声制御マウスエミュレータなどの特殊な又は適応した入力デバイスを使用する場合もあるが、これによりドラッグが煩雑になり、エラーが発生しやすくなる場合がある。
                </p>
-               <p>When an interface implements functionality that uses dragging movements, users perform
-                  four discrete actions:
+               <p>インタフェースがドラッグ動作を使用する機能を実装する場合、利用者は次の四つの個別のアクションを実行する:
                </p>
                <ol>
                   
-                  <li>tap or click to establish a starting point, then</li>
+                  <li>タップ又はクリックして始点を確立し、</li>
                   
-                  <li>press and hold that contact while...</li>
+                  <li>その接点を押しながら、</li>
                   
-                  <li>performing a repositioning of the pointer, before...</li>
+                  <li>ポインタの位置変更を実行する前に、</li>
                   
-                  <li>releasing the pointer at the end point.</li>
+                  <li>終点でポインタを放す。</li>
                   
                </ol>
-               <p>Not all users can accurately press and hold that contact while also repositioning
-                  the pointer. An alternative method must be provided so that users with mobility impairments
-                  who use a pointer (mouse, pen, or touch contact) can use the functionality.
+               <p>全ての利用者が、その接点を正確に押し続けながら、ポインタの位置を変更できるとは限らない。ポインタ (マウス、ペン、またはタッチ接触) を使用する運動障害のある利用者が機能を使用できるように、代替方法を提供しなければならない。
                </p>
-               <p>This requirement is separate from keyboard accessibility because people using a touch
-                  screen device may not use a physical keyboard. Keyboard specific interactions such
-                  as tabbing or arrow keys may not be possible when encountering a drag and drop control.
-                  Note, however, that providing a text input can be an acceptable single-pointer alternative
-                  to dragging. For example, an input beside a slider could allow any user to enter a
-                  precise value for the slider. In such a situation, the on-screen keyboard that appears
-                  for touch users offers a single-pointer means of entering an alphanumeric value.
+               <p>タッチスクリーンデバイスを使用する人々は物理キーボードを使用しない可能性があるため、この要件はキーボードのアクセシビリティとは異なるものである。ドラッグ＆ドロップコントロールに遭遇したときに、タブキー、矢印キーなどのキーボード固有の操作ができない場合がある。ただし、テキスト入力を提供することは、ドラッグの代わりにシングルポインタとして受け入れられる可能性があることに注意する。例えば、スライダーの隣の入力は、利用者がスライダーに正確な値の記入を可能にする。そのような状況では、タッチの利用者に表示されるオンスクリーンキーボードは、シングルポインタで英数字を記入する手段を提供する。
                </p>
-               <p>This criterion does not apply to scrolling enabled by the user-agent. Scrolling a
-                  page is not in scope, nor is using a technique such as <abbr title="Cascading Style Sheets">CSS</abbr> <code>overflow</code> to make a section of content scrollable.
+               <p>この基準は、ユーザエージェントによって有効にされたスクロールには適用されない。ページのスクロールは範囲外である。また、<abbr title="Cascading Style Sheets">CSS</abbr> <code>overflow</code> などの技術を使用してコンテンツのセクションをスクロール可能にすることも対象外である。
                </p>
                <section id="relationship-to-other-requirements">
                   
                   
-                  <h3>Relationship to other requirements</h3>
+                  <h3>他の要件との関係</h3>
                   
                   
-                  <p>Success Criteria 2.1.1 Keyboard and 2.1.3 Keyboard (No Exception) require dragging
-                     features to be keyboard accessible. However, achieving keyboard equivalence for a
-                     dragging operation does not automatically meet this Success Criterion. It is possible
-                     to create an interface that works with dragging and keyboard controls that does not
-                     work using only clicks or taps. While many designs can be created for a dragging alternative
-                     which address both keyboard accessibility and operability by single pointer operation,
-                     the two requirements should be assessed independently.
+                  <p>達成基準 2.1.1 キーボード及び 2.1.3 キーボード (例外なし) は、ドラッグ機能がキーボードでアクセスできることを必要とする。しかし、ドラッグ操作に対してキーボードの同等性を達成しても、自動的にはこの達成基準を満たさない。クリック又はタップだけでは動作しない、ドラッグ又はキーボードコントロールと連動するインタフェースを作成することは可能である。キーボードのアクセシビリティとシングルポインタ操作による操作性の両方に対処するドラッグの代替として多くの設計を作成できるが、二つの要件は個別に評価されるべきである。
                   </p>
                   
                   
-                  <p>This Success Criterion applies to dragging movements as opposed to pointer gestures,
-                     which are covered in <a href="pointer-gestures">Success Criterion 2.5.1 Pointer Gestures</a>. Pointer gestures include directional path-based as well as multi-point gestures.
-                     In contrast, for dragging movements, only the start and end point of the movement
-                     matters, not the actual path.
+                  <p>この達成基準は、<a href="pointer-gestures">達成基準 2.5.1 ポインタジェスチャ</a>で説明されているポインタジェスチャではなく、ドラッグ動作に適用される。ポインタジェスチャには、方向性のある軌跡ベースのジェスチャだけでなくマルチポイントのジェスチャも含まれる。対照的に、ドラッグ動作の場合は、実際の軌跡ではなく、動作の開始点と終了点だけが問題になる。
                   </p>
                   
                   
-                  <p>Additional examples are selection rectangles that set the first x/y rectangle coordinate
-                     at the pointer position via a pointer down-event, and the second x/y coordinate, after
-                     a dragging movement, at the next up-event. A similar example is a connecting line
-                     drawn between two different items on the screen, as in an allocation test where users
-                     are required to draw a line between questions and corresponding answers. In these
-                     cases, the dragging movement requires an alternative way to accomplish the same action
-                     that does not rely on the dragging movement. For example, two separate single tap
-                     or click actions may define the rectangle coordinates or the start and end points
-                     of a connecting line.
+                  <p>追加の例としては、ポインタのダウンイベントによってそのポインタの位置に 1 番目の x/y 直交座標を設定し、ドラッグ移動後の次のアップイベントで 2 番目の x/y 座標を設定する選択範囲がある。同様の例は、利用者が質問と対応する回答の間に線を引くように要求される割り当てテストのように、画面上の二つの異なる項目の間に引かれる接続線である。このような場合、ドラッグ動作には、ドラッグ動作に依存しない同じアクションを達成する別の方法が必要である。例えば、二つの別々のシングルタップ又はクリック操作で、直交座標、又は接続線の始点及び終点を定義できる。
                   </p>
                   
                   
                </section>
                <section id="alternatives-for-dragging-movements-on-the-same-page">
                   
-                  <h3>Alternatives for dragging movements on the same page</h3>
+                  <h3>同一ページ上でのドラッグ動作の代替</h3>
                   
                   
-                  <p>Where functionality can be executed via dragging movements and an equivalent option
-                     exists that allows for single-pointer access without dragging, this Success Criterion
-                     is passed. It does not have to be the same component, so long as the functionality
-                     is equivalent. An example is a color wheel where a color can be changed by dragging
-                     an indicator. In addition, text fields for the numerical input of color values allow
-                     the definition of a color without requiring dragging movements. (Note that a text
-                     input is considered device agnostic; although the purpose is to enter characters,
-                     text entry can take place through voice, pointer or keyboard.)
+                  <p>ドラッグ操作によって機能を実行できる、及びドラッグせずにシングルポインタアクセスを可能にする同等のオプションが存在する場合、この達成基準に合格する。機能が同等である限り、同じコンポーネントである必要はない。例としては、インジケーターをドラッグすることで色を変更できる色相環がある。加えて、色の値を数値入力するテキストフィールドは、ドラッグ操作を必要とせずに色の定義を可能にする。(テキスト入力はデバイスに依存しないと見なされることに注意する。目的は文字を記入することであるが、テキスト入力は音声、ポインタ、又はキーボードを通じて行われることがある。)
                   </p> 
                   
                   
                </section>
                <section id="distinguishing-dragging-movements-from-path-based-pointer-gestures">
                   
-                  <h3>Distinguishing dragging movements from path-based pointer gestures</h3>
+                  <h3>ドラッグ動作と軌跡ベースのポインタジェスチャの区別</h3>
                   
                   
-                  <p>Dragging movements covered in this Success Criterion are pointer interactions where
-                     only the start- and endpoints matter. Once the pointer engages with a target, the
-                     direction of the dragging movement does not factor into the interaction until the
-                     pointer disengages the target. Since the dragging movement does not have an intermediate
-                     point, the dragging movement can go in any direction. Path-based gestures are covered
-                     in Success Criterion 2.5.1 Pointer Gestures. For more details, refer to <a href="https://www.w3.org/WAI/WCAG21/Understanding/pointer-gestures.html">Understanding Success Criterion 2.5.1 Pointer Gestures</a></p> 
+                  <p>この達成基準で扱われるドラッグ動作は、始点と終点だけが重要となるポインタの操作である。ポインタがターゲットに接触すると、ポインタがターゲットから外れるまで、ドラッグ動作の方向はインタラクションに考慮されない。ドラッグ動作には中間点がないため、ドラッグ動作は、どの方向にも進むことができる。軌跡ベースのジェスチャは、達成基準 2.5.1 ポインタ ジェスチャで扱われる。詳細については、<a href="https://www.w3.org/WAI/WCAG21/Understanding/pointer-gestures.html">解説書 達成基準 2.5.1 ポインタ ジェスチャ</a>を参照。</p> 
                   
                   
                </section>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>利点</h2>
                <ul>
                   
-                  <li>Users who struggle with performing dragging movements can still operate an interface
-                     with a pointer interface.
+                  <li>ドラッグ動作に苦労する利用者でも、ポインタインタフェースを使用してインタフェースを操作できる。
                   </li>
                   
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>事例</h2>
                <ul>
                   
-                  <li>A map allows users to drag the view of the map around, and the map has up/down/left/right
-                     buttons to move the view as well.
+                  <li>マップでは、利用者がそのマップのビューをあらゆる方向にドラッグして移動でき、そのマップにはビューを移動するための上下左右のボタンもある。
                   </li>
                   
-                  <li>A sortable list of elements may, after tapping or clicking on a list element, provide
-                     adjacent controls for moving the element up or down in the list by simply tapping
-                     or clicking on those controls.
+                  <li>要素の並べ替え可能なリストは、リスト要素をタップ又はクリックした後、それらのコントロールをタップ又はクリックするだけで要素をリスト内で上下に移動するための隣接するコントロールを提供してもよい。
                   </li>
                   
-                  <li>A taskboard that allows users to drag and drop items between columns also provides
-                     an additional pop-up menu after tapping or clicking on items for moving the selected
-                     element to another column by tapping or clicking on pop-up menu entries.
+                  <li>利用者がカラム間で項目をドラッグ＆ドロップできるタスクボードでは、項目をタップ又はクリックした後に、ポップアップメニュー項目をタップ又はクリックして、選択した要素を別のカラムに移動するための追加のポップアップメニューも提供される。
                   </li>
                   
-                  <li>A radial control widget (color wheel) where the value can be set by dragging the marker
-                     for the currently selected color to another position, also allows picking another
-                     color value by tapping or clicking on another place in the color wheel.
+                  <li>放射状コントロールウィジェット (カラーホイール) は、現在選択されている色のマーカーを別の位置にドラッグすることで値を設定でき、カラーホイールの別の場所をタップ又はクリックして別の色の値を選択することもできる。
                   </li>
                   
-                  <li>A linear slider control widget, where the value can be set by dragging the visual
-                     indicator (thumb) showing the current value, allows tapping or clicking on any point
-                     of the slider track to change the value and set the thumb to that position. 
+                  <li>リニアスライダーコントロールウィジェットは、現在の値を示す視覚的なインジケータ (つまみ) をドラッグすることで値を設定でき、スライダートラックの任意の点をタップ又はクリックして値を変更して、つまみをその位置に設定できる。
                   </li>  
                   
-                  <li>A widget where you can drag a gift to one person in a photo of a group of people also
-                     has a menu alternative where users can select the person that should receive the gift
-                     from the menu.
+                  <li>あるグループの写真の中の 1 人にギフトをドラッグできるウィジェットには、メニューからギフトを受け取る人を選択できる代替メニューもある。
                   </li>
                   
                </ul>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
+                  <h3>十分なテクニック</h3>
                   <ol>
                      
                      <li>
@@ -273,9 +214,8 @@
                   </ol>
                </section>
                <section id="failure">
-                  <h3>Failures</h3>
-                  <p>The following are common mistakes that are considered failures of this Success Criterion
-                     by the WCAG Working Group.
+                  <h3>失敗</h3>
+                  <p>次に挙げるものは、WCAG ワーキンググループが達成基準の失敗例とみなした、よくある間違いである。
                   </p>
                   <ul>
                      
@@ -292,50 +232,37 @@
             <section id="key-terms">
                <details>
                   <summary>
-                     <h2>Key Terms</h2>
+                     <h2>重要な用語</h2>
                   </summary>
-                  <dt id="dfn-assistive-technology">assistive technology</dt>
+                  <dt id="dfn-assistive-technology">支援技術 (assistive technology)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">hardware and/or software that acts as a <a href="#dfn-user-agent">user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements
-                           of users with disabilities that go beyond those offered by mainstream user agents
+                        <p xmlns="http://www.w3.org/1999/xhtml">障害のある利用者の要件を満たすために、主流の<a href="#dfn-user-agent">ユーザエージェント</a>が提供する機能を超えた機能を提供するような、ユーザエージェントとして動作する、又は主流のユーザエージェントと共に動作するハードウェア及び／又はソフトウェア。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Functionality provided by assistive technology includes alternative presentations
-                              (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
-                              voice), additional navigation or orientation mechanisms, and content transformations
-                              (e.g., to make tables more accessible).
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術が提供する機能としては、代替の提示 (例: 合成音声や拡大表示したコンテンツ)、代替入力手法 (例: 音声認識)、付加的なナビゲーション又は位置確認のメカニズム、及びコンテンツ変換 (例: テーブルをよりアクセシブルにするもの) などを挙げることができる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Assistive technologies often communicate data and messages with mainstream user agents
-                              by using and monitoring APIs.
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術は、API を利用、監視することで、主流のユーザエージェントとデータやメッセージのやりとりをすることが多い。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The distinction between mainstream user agents and assistive technologies is not absolute.
-                              Many mainstream user agents provide some features to assist individuals with disabilities.
-                              The basic difference is that mainstream user agents target broad and diverse audiences
-                              that usually include people with and without disabilities. Assistive technologies
-                              target narrowly defined populations of users with specific disabilities. The assistance
-                              provided by an assistive technology is more specific and appropriate to the needs
-                              of its target users. The mainstream user agent may provide important functionality
-                              to assistive technologies like retrieving Web content from program objects or parsing
-                              markup into identifiable bundles.
+                           <p class="note-title marker">注記</p>
+                           <p>主流のユーザエージェントと支援技術との区別は、絶対的なものではない。多くの主流のユーザエージェントは、障害のある個人を支援する機能を提供している。基本的な差異は、主流のユーザエージェントが障害のある人もない人も含めて、広く多様な利用者を対象にしているのに対し、支援技術は、特定の障害のある利用者という、より狭く限られた人たちを対象にしているということである。支援技術により提供される支援は、対象とする利用者に特化した、よりニーズに適したものである。主流のユーザエージェントは、プログラムオブジェクトからのウェブコンテンツの抽出、マークアップの識別可能な構造への解釈といった、重要な機能を支援技術に対して提供する場合がある。
                               
                            </p>
                         </div>
@@ -343,8 +270,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Assistive technologies that are important in the context of this document include
-                              the following:
+                           <p>この文書の文脈において重要な支援技術としては、以下のものが挙げられる:
                               
                            </p>
                            
@@ -352,38 +278,30 @@
                            <ul>
                               
                               
-                              <li>screen magnifiers, and other visual reading assistants, which are used by people with
-                                 visual, perceptual and physical print disabilities to change text font, size, spacing,
-                                 color, synchronization with speech, etc. in order to improve the visual readability
-                                 of rendered text and images;
+                              <li>画面拡大ソフト及びその他の視覚的な表示に関する支援技術。視覚障害、知覚障害、及び読書困難などの障害のある人が、レンダリング後のテキスト及び画像の視覚的な読みやすさを改善するために、テキストのフォント、サイズ、間隔、色、音声との同期などを変更するのに使用している。
                                  
                               </li>
                               
                               
-                              <li>screen readers, which are used by people who are blind to read textual information
-                                 through synthesized speech or braille;
+                              <li>sスクリーンリーダー。全盲の人がテキスト情報を合成音声あるいは点字で読み取るために使用している。
                                  
                               </li>
                               
                               
-                              <li>text-to-speech software, which is used by some people with cognitive, language, and
-                                 learning disabilities to convert text into synthetic speech;
+                              <li>音声変換ソフトウェア。認知障害、言語障害、及び学習障害のある人が、テキストを合成音声に変換するために使用している。
                                  
                               </li>
                               
                               
-                              <li>speech recognition software, which may be used by people who have some physical disabilities;</li>
+                              <li>音声認識ソフトウェア。何らかの身体障害のある利用者が使用することがある。</li>
                               
                               
-                              <li>alternative keyboards, which are used by people with certain physical disabilities
-                                 to simulate the keyboard (including alternate keyboards that use head pointers, single
-                                 switches, sip/puff and other special input devices.);
+                              <li>代替キーボード。特定の身体障害のある人がキーボード操作をシミュレートするのに使用している (ヘッドポインタ、シングルスイッチ、呼気・吸気スイッチ、及びその他の特別な入力デバイスを使った代替キーボードを含む)。
                                  
                               </li>
                               
                               
-                              <li>alternative pointing devices, which are used by people with certain physical disabilities
-                                 to simulate mouse pointing and button activations.
+                              <li>代替ポインティングデバイス。特定の身体障害のある人がマウスポインタとボタンの動きをシミュレートするのに使用している。
                                  
                               </li>
                               
@@ -394,76 +312,72 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-down-event">down-event</dt>
+                  <dt id="dfn-down-event">ダウンイベント (down-event)</dt>
                   <dd>
                      <definition xmlns="">
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">platform event that occurs  when the trigger stimulus of a pointer is depressed</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">トリガ刺激が depressed (押し下げられた) となった時に発生するプラットフォームのイベント。</p>
                         	        
-                        <p xmlns="http://www.w3.org/1999/xhtml">The down-event may have different names on different platforms, such as "touchstart"
-                           or "mousedown".
+                        <p xmlns="http://www.w3.org/1999/xhtml">ダウンイベントは、「touchstart」「mousedown」など、プラットフォームによって異なる名前を持つ場合がある。
                         </p>
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-dragging-movement">dragging movement</dt>
+                  <dt id="dfn-dragging-movement">ドラッグ動作 (dragging movement)</dt>
                   <dd>
                      <definition xmlns="">
                         	        
                         					
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">an operation where the pointer engages with an element on the <a href="#dfn-down-event">down-event</a> and the element (or a representation of its position) follows the pointer until an
-                           <a href="#dfn-up-event">up-event</a>
+                        <p xmlns="http://www.w3.org/1999/xhtml"><a href="#dfn-down-event">ダウンイベント</a>と同時にポインタが要素と結びつき、<a href="#dfn-up-event">アップイベント</a>になるまでその要素 (又はその位置の表現) がポインタに追従する操作。
+                           
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Examples of draggable elements include list items, text elements, and images.</p>
+                           <p class="note-title marker">注記</p>
+                           <p>ドラッグ可能な要素の例としては、リスト項目、テキスト要素、画像などがある。</p>
                         </div>
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-essential">essential</dt>
+                  <dt id="dfn-essential">必要不可欠 (essential)</dt>
                   <dd>
                      <definition xmlns="">
                         					
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">if removed, would fundamentally change the information or functionality of the content,
-                           <strong>and</strong> information and functionality cannot be achieved in another way that would conform
+                        <p xmlns="http://www.w3.org/1999/xhtml">もし取り除いてしまうと、コンテンツの情報又は機能を根本的に変えてしまい、<strong>かつ</strong>、適合する他の方法では情報及び機能を実現できない。
                            
                         </p>
                         				
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-functionality">functionality</dt>
+                  <dt id="dfn-functionality">機能 (functionality)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
                         <p xmlns="http://www.w3.org/1999/xhtml">
-                           <a href="#dfn-process">processes</a> and outcomes achievable through user action
+                           利用者の操作により実現可能な<a href="#dfn-process">プロセス</a>及び結果。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-process">process</dt>
+                  <dt id="dfn-process">プロセス (process)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">series of user actions where each action is required in order to complete an activity</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ある活動を完了させるために必要な利用者の一連の動作。</p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Successful use of a series of Web pages on a shopping site requires users to view
-                              alternative products, prices and offers, select products, submit an order, provide
-                              shipping information and provide payment information.
+                           <p>ショッピングサイト上の一連のウェブページで目的を果たすためには、利用者が選択肢となりうる製品、価格及び内容を閲覧した後、製品を選択して発注し、配送先情報及び支払情報を提供する必要がある。
                               
                            </p>
                            
@@ -472,8 +386,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>An account registration page requires successful completion of a <a href="https://www.w3.org/TR/turingtest/">Turing test</a> before
-                              the registration form can be accessed.
+                           <p>アカウント登録ページでは、登録フォームにアクセスする前に<a href="https://www.w3.org/TR/turingtest/">チューリングテスト</a>に成功する必要がある。
                               
                            </p>
                            
@@ -482,41 +395,39 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-single-pointer">single pointer</dt>
+                  <dt id="dfn-single-pointer">シングルポインタ (single pointer)</dt>
                   <dd>
                      <definition xmlns="">
                         	
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">pointer input that operates with one point of contact with the screen, including single
-                           taps and clicks, double-taps and clicks, long presses, and path-based gestures
+                        <p xmlns="http://www.w3.org/1999/xhtml">シングルタップ・クリック、ダブルタップ・クリック、長押し、軌跡ベースのジェスチャなど、画面と一つの接点で動作するポインタ入力。
                         </p>
                         				
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-up-event">up-event</dt>
+                  <dt id="dfn-up-event">アップイベント (up-event)</dt>
                   <dd>
                      <definition xmlns="">
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">platform event that occurs  when the trigger stimulus of a pointer is released</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ポインタのトリガが解除されたときに生じるプラットフォームイベント。</p>
                         	        
-                        <p xmlns="http://www.w3.org/1999/xhtml">The up-event may have different names on different platforms, such as "touchend" or
-                           "mouseup".
+                        <p xmlns="http://www.w3.org/1999/xhtml">アップイベントは、プラットフォームによっては「タッチエンド」や「マウスアップ」などの異なる名称で呼ばれている場合がある。
                         </p>
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-user-agent">user agent</dt>
+                  <dt id="dfn-user-agent">ユーザエージェント (user agent)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">any software that retrieves and presents Web content for users</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ウェブコンテンツを取得して利用者に提示するあらゆるソフトウェア。</p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technology">assistive technologies</a> — that help in retrieving, rendering, and interacting with Web content.
+                           <p>ウェブコンテンツの取得、レンダリング及びインタラクションを支援する、ウェブブラウザ、メディアプレーヤ、プラグイン、及びその他のプログラム (<a href="#dfn-assistive-technology">支援技術</a>も含む)。
                               
                            </p>
                            
@@ -536,13 +447,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -557,11 +467,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -583,13 +495,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -598,7 +510,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -619,8 +531,10 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+    <!--noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-      </noscript>
+      </noscript-->
    </body>
 </html>
