@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  3.3.7: Redundant Entry | WAI | W3C</title>
+      <title>解説書 達成基準 3.3.7: 冗長な入力項目 | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -34,18 +34,17 @@
          <div class="nav">
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
-                  <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                  <li class="nav__item"><a href=".">目次
                         							</a></li>
                   <li class="nav__item"><a href="input-assistance">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Input Assistance</a></li>
+                        </svg> ガイドライン: 入力支援</a></li>
                   <li class="nav__item"><a href="error-prevention-all">
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-left-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
-                        </svg>Previous SC: Error Prevention (All)</a></li>
-                  <li class="nav__item"><a href="accessible-authentication-minimum">Next SC: Accessible Authentication (Minimum)
+                        </svg>前: 誤り防止 (すべて)</a></li>
+                  <li class="nav__item"><a href="accessible-authentication-minimum">次: アクセシブルな認証 (最低限)
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -56,191 +55,142 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#resources">Related Resources</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
-                     <li><a href="#key-terms">Key Terms</a></li>
+                     <li><a href="#brief">要約</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#benefits">利点</a></li>
+                     <li><a href="#examples">事例</a></li>
+                     <li><a href="#resources">関連リソース</a></li>
+                     <li><a href="#techniques">テクニック</a></li>
+                     <li><a href="#key-terms">重要な用語</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				SC 3.3.7:</span>Redundant Entry (Level A)
+            <h1><span class="standalone-resource__type-of-guidance">解説書 達成基準 3.3.7:</span>冗長な入力項目 (レベル A)
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>Information previously entered by or provided to the user that is required to be entered
-                     again in the same <a href="#dfn-process">process</a> is either:
+                  <p>以前に利用者によって入力された、又は利用者に対して提供された情報であって、同一の<a href="#dfn-process">プロセス</a>において再入力する必要がある情報は、次のいずれかである。
                   </p>
                   <ul>
                      
-                     <li>auto-populated, or</li>
+                     <li>自動入力される。又は、</li>
                      
-                     <li>available for the user to select.</li>
+                     <li>利用者が選択可能である。</li>
                      
                   </ul>
-                  <p>Except when:</p>
+                  <p>ただし、次の場合は除く:</p>
                   <ul>
                      
-                     <li>re-entering the information is <a href="#dfn-essential">essential</a>,
+                     <li>情報の再入力が<a href="#dfn-essential">必要不可欠</a>である。
                      </li>
                      
-                     <li>the information is required to ensure the security of the content, or</li>
+                     <li>その情報がコンテンツのセキュリティを確保するために必要である。又は、</li>
                      
-                     <li>previously entered information is no longer valid.</li>
+                     <li>以前に入力された情報が無効になっている。</li>
                      
                   </ul>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   
-                  <dt>Goal</dt>
-                  <dd>Make it easier for users to complete multi-step processes.</dd>
+                  <dt>目標</dt>
+                  <dd>利用者が複数ステップのプロセスを完了しやすいようにする。</dd>
                   
-                  <dt>What to do</dt>
-                  <dd>Don't ask for the same information twice in the same session.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>同じセッションで同じ情報を 2 回要求しない。</dd>
                   
-                  <dt>Why it's important</dt>
-                  <dd>Some people with cognitive disabilities have difficulty remembering what they entered
-                     before.
+                  <dt>なぜそれが重要か</dt>
+                  <dd>認知障害のある人の中には、以前に入力したものを思い出すのが困難な人がいる。
                   </dd>
                   
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The intent of this Success Criterion is to ensure that users can successfully complete
-                  multi-step processes. It reduces cognitive effort where information is asked for more
-                  than once during a process. It also reduces the need to recall information provided
-                  in a previous step.
+               <h2>意図</h2>
+               <p>この達成基準の意図は、利用者が複数ステップのプロセスを確実に完了できるようにすることである。これにより、プロセス中に情報が複数回要求される場合の認知的労力が軽減される。また、前のステップで提供した情報を思い出す必要性も軽減される。
                </p>
-               <p>Information that is required to be remembered for input can pose a significant barrier
-                  to users with cognitive or memory difficulties. All users experience a natural gradual
-                  mental fatigue as they proceed through steps in a process. This fatigue is accelerated
-                  by the stress of recalling information from short-term working memory. Users with
-                  learning, and cognitive disabilities are highly susceptible to mental fatigue.
+               <p>入力のために記憶する必要がある情報は、認知又は記憶に問題のある利用者にとって大きな障壁となる可能性がある。どんな利用者も、プロセスのステップを進めるにつれて、自然と緩やかに精神的な疲労を体験するようになる。この疲労は、短期の作業記憶から情報を呼び出すストレスによって加速される。学習障害及び認知障害のある利用者は、精神的な疲労の影響を非常に受けやすい。
                </p>
-               <p>Requiring people to recall information previously entered can cause them to give up
-                  or re-enter the same information incorrectly. The autocomplete feature of browsers
-                  is not considered sufficient because it is the content (the web site) that needs to
-                  provide the stored information for a redundant entry, or avoid asking for the same
-                  information again.
+               <p>以前に入力した情報を思い出すように要求すると、人々は諦める、又は同じ情報の再入力を間違えてしまう可能性がある。冗長な入力項目のために保存された情報を提供する、又は同じ情報を再度要求しないようにする必要があるのはコンテンツ (ウェブサイト) であるため、ブラウザーのオートコンプリート機能では十分とはみなされない。
                </p>
-               <p>This Success Criterion does not add a requirement to store information between sessions.
-                  A <a href="#dfn-process">process</a> is defined on the basis of an activity and is not applicable when a user returns
-                  after closing a session or navigating away. However, a process can run across different
-                  domains, so if a check-out process includes a 3rd party payment provider, that would
-                  be in scope.
+               <p>この達成基準は、複数のセッションにわたって情報を保存するという要件を追加するものではない。<a href="#dfn-process">プロセス</a>はアクティビティに基づいて定義され、利用者がセッションを閉じる、又はナビゲートして離れた後に戻った場合には適用されない。ただし、プロセスは異なるドメインにまたがることもできるため、精算プロセスに第三者の決済代行事業者が含まれている場合は、適用範囲に含まれる。
                </p>
-               <p>The term "available to select" is not prescriptive. The term allows authors to develop
-                  techniques where auto-population is not possible. It can include allowing the user
-                  to:
+               <p>「選択可能」という用語は、規範的なものではない。この用語は、自動入力が不可能な場合には、コンテンツ制作者が技術を開発してよいという意味である。これには、利用者が次のことを実行できるようにすることが含まれる:
                </p>
                <ul>
                   
-                  <li>select and populate a field, including from a drop-down;</li>
+                  <li>ドロップダウンなどから値を選択し、フィールドに適用する。</li>
                   
-                  <li>select text from the page and copy it into an input;</li>
+                  <li>ページ内からテキストを選択して、入力欄にコピーする。</li>
                   
-                  <li>tick a checkbox to populate inputs with the same values as previously entered (e.g.,
-                     my billing address is the same as my shipping address).
+                  <li>以前に入力したものと同じ値を適用するために、チェックボックスにチェックを入れる (例: 請求先住所が配送先住所と同じ)。
                   </li>
                   
                </ul>
-               <p>Data which is "available to select" would need to be on the same page. Ideally, it
-                  would be visible by default and closely associated with the input where the data is
-                  required. However, it could be elsewhere on a page, including within a show/hide component.
+               <p>「選択可能」なデータは、同じページに存在する必要がある。デフォルトで表示され、データが要求される入力と近くで関連付けられているのが理想的である。ただし、表示/非表示コンポーネント内など、ページ上の別の場所に存在する場合もある。
                </p>
-               <p>This Success Criterion does not apply if data is provided by the user with a different
-                  method, such as uploading a resume in a document format.
+               <p>この達成基準は、履歴書を文書形式でアップロードするなど、データがその利用者によって別の方法で提供されていた場合には適用されない。
                </p>
-               <p>This Success Criterion does not impact <a href="accessible-authentication-minimum.html">Accessible Authentication (Minimum)</a>, for which allowing auto-filling of passwords is a sufficient technique. In that
-                  case the filling is performed by the user's browser. Redundant Entry is asking for
-                  the website content to make the previous entry available, but not between sessions
-                  or for essential purposes such as asking for a password.
+               <p>この達成基準は、パスワードの自動補完を許可することが十分なテクニックとなる、<a href="accessible-authentication-minimum.html">アクセシブルな認証 (最低限)</a> には影響しない。この場合、補完は利用者のブラウザーによって実行される。冗長な入力項目は、ウェブサイトのコンテンツに対して以前の入力項目を利用可能にすることを要求するが、複数のセッションにわたるもの、又はパスワードなど必要不可欠な目的のあるものに対しては要求しない。
                </p>
-               <p>This criterion does not include requirements or exceptions specific to privacy or
-                  personally identifiable information (PII), but when implementing techniques such as
-                  auto-population, authors should ensure data protection when storing information even
-                  temporarily during a process. It is possible to eliminate redundant entry in ways
-                  that do not introduce additional privacy risks, but it is also possible that a poor
-                  implementation (for meeting this criterion) could leak additional PII.
+               <p>この達成基準には、プライバシー又は個人を特定できる情報 (PII) に特有の要件又は例外は含まれていないが、自動入力などの技術を実装する場合、コンテンツ制作者は、プロセス中に一時的であっても情報を保存する際にデータ保護を確実にするべきである。追加のプライバシーリスクをもたらさない方法で冗長な入力項目を排除することは可能であるが、(この達成基準を満たすための) 不十分な実装によって追加の PII が漏洩する可能性もある。
                </p>
-               <p>There are exceptions for:</p>
+               <p>次の場合は例外である:</p>
                <ul>
                   
-                  <li>Essential uses of input re-entry for things like memory games which would be invalidated
-                     if the previous answers were supplied.
+                  <li>記憶ゲームなど、前の答えが提供されると無効になってしまうような、入力項目の再入力が必要不可欠な用途。
                   </li>
                   
-                  <li>Security measures such as preventing a password string from being shown or copied.
-                     When creating a password, it should be a unique and complex string and therefore cannot
-                     be validated by the author. If the system requires the user to manually create a password
-                     that is not displayed, having users re-validate their new string is allowed as an
-                     exception.
+                  <li>パスワード文字列が表示又はコピーされないようにするなどのセキュリティ対策。パスワードを作成するとき、パスワードは一意で複雑な文字列である必要があるため、コンテンツ制作者は検証できない。システムが、パスワードを利用者が手動で作成することを要求し、それが表示されない場合、利用者に新しい文字列を再検証させることは例外として許可される。
                   </li>
                   
-                  <li>When the previously entered information is no longer valid, it can be requested that
-                     the user enter that information again.
+                  <li>以前に入力された情報が有効でなくなった場合、利用者にその情報を再度入力するように要求できる。
                   </li>
                   
                </ul>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>利点</h2>
                <ul>
                   
-                  <li>Users with cognitive disabilities experience short-term, working memory difficulty.
-                     Not having to repeatedly remember particular information reduces stress and the likelihood
-                     of mistakes.
+                  <li>認知障害のある使用者は、短期的な作業記憶の難しさを感じている。特定の情報を繰り返し思い出す必要がないため、ストレスが軽減され、間違いが起こりにくくなる。
                   </li>
                   
-                  <li>Users who experience difficulty forming new memories, recalling information, and other
-                     functions related to cognition can complete processes without having to unnecessarily
-                     rely on their memory.
+                  <li>新しい記憶の形成、情報の想起、および認知に関連するその他の機能に難しさを感じている利用者は、必要以上に記憶に頼ることなくプロセスを完了できる。
                   </li>
                   
-                  <li>Users with mobility impairments, for example using switch control or voice input,
-                     benefit from a reduced need for text entry.
+                  <li>例えば、スイッチ操作、音声入力を使用するような、運動障害のある利用者は、テキストの入力の必要性が軽減されるというメリットがある。
                   </li>
                   
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>事例</h2>
                <ul>
                   
-                  <li>A form requests the user’s corporate identification number (ID) in the first step
-                     of a process to purchase a new computer. In the 3rd step the user is asked to confirm
-                     that the computer will belong to the user (rather than a colleague), and re-shows
-                     the ID. It allows the user to change the ID, but defaults to the previously entered
-                     one.
+                  <li>新しいコンピューターを購入するプロセスの最初のステップで、フォームが利用者の法人識別番号 (ID) を要求する。3 番目のステップで、利用者はコンピューターが (同僚ではなく) 利用者のものであることを確認するよう求められ、ID が再表示される。利用者は ID を変更できるが、デフォルトでは以前に入力した ID になっている。
                   </li>
                   
-                  <li>A form on an e-commerce website allows the user to confirm that the billing address
-                     and delivery address are the same address.
+                  <li>電子商取引サイトのフォームでは、利用者は請求先住所と配送先住所が同じ住所であることを確認して確定できる。
                   </li>
                   
-                  <li>A search results page pre-fills the search input with the previously entered search
-                     term in the same process.
+                  <li>検索結果ページでは、同じプロセスで以前に入力した検索語が検索入力欄に事前に補完されている。
                   </li>        
                   
                </ul>
             </section>
             <section id="resources">
-               <h2>Related Resources</h2>
-               <p>Resources are for information purposes only, no endorsement implied.</p>
+               <h2>関連リソース</h2>
+               <p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p>
                <ul>
                   
                   <li><a href="https://www.w3.org/TR/coga-gap-analysis/#table3">Cognitive Accessibility Gap Analysis Topic 3: Entering Data, Error Prevention, &amp; Recovery</a></li>
@@ -251,14 +201,11 @@
                </ul>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
+                  <h3>十分なテクニック</h3>
                   <ul>
                      
                      <li><a href="https://w3c.github.io/wcag/techniques/general/G221">G221: Provide data from a previous step in a process</a></li>
@@ -271,34 +218,31 @@
             <section id="key-terms">
                <details>
                   <summary>
-                     <h2>Key Terms</h2>
+                     <h2>重要な用語</h2>
                   </summary>
-                  <dt id="dfn-essential">essential</dt>
+                  <dt id="dfn-essential">必要不可欠 (essential)</dt>
                   <dd>
                      <definition xmlns="">
                         					
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">if removed, would fundamentally change the information or functionality of the content,
-                           <strong>and</strong> information and functionality cannot be achieved in another way that would conform
+                        <p xmlns="http://www.w3.org/1999/xhtml">もし取り除いてしまうと、コンテンツの情報又は機能を根本的に変えてしまい、<strong>かつ</strong>、適合する他の方法では情報及び機能を実現できない。
                            
                         </p>
                         				
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-process">process</dt>
+                  <dt id="dfn-process">プロセス (process)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">series of user actions where each action is required in order to complete an activity</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ある活動を完了させるために必要な利用者の一連の動作。</p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Successful use of a series of Web pages on a shopping site requires users to view
-                              alternative products, prices and offers, select products, submit an order, provide
-                              shipping information and provide payment information.
+                           <p>ショッピングサイト上の一連のウェブページで目的を果たすためには、利用者が選択肢となりうる製品、価格及び内容を閲覧した後、製品を選択して発注し、配送先情報及び支払情報を提供する必要がある。
                               
                            </p>
                            
@@ -307,8 +251,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>An account registration page requires successful completion of a <a href="https://www.w3.org/TR/turingtest/">Turing test</a> before
-                              the registration form can be accessed.
+                           <p>アカウント登録ページでは、登録フォームにアクセスする前に<a href="https://www.w3.org/TR/turingtest/">チューリングテスト</a>に成功する必要がある。
                               
                            </p>
                            
@@ -328,13 +271,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -349,11 +291,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -375,13 +319,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
-               <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
+               <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="https://www.w3.org/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -390,7 +334,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -411,8 +355,10 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+    <!--noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-      </noscript>
+      </noscript-->
    </body>
 </html>
