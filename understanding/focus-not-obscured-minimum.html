@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  2.4.11: Focus Not Obscured (Minimum) | WAI | W3C</title>
+      <title>解説書 達成基準 2.4.11: 隠されないフォーカス (最低限) | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -35,17 +35,17 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"><a href="navigable">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Navigable</a></li>
+                        </svg> ガイドライン: ナビゲーション可能</a></li>
                   <li class="nav__item"><a href="section-headings">
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-left-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
-                        </svg>Previous SC: Section Headings</a></li>
-                  <li class="nav__item"><a href="focus-not-obscured-enhanced">Next SC: Focus Not Obscured (Enhanced)
+                        </svg>前: セクション見出し</a></li>
+                  <li class="nav__item"><a href="focus-not-obscured-enhanced">次: 隠されないフォーカス (高度)
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -56,116 +56,76 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#resources">Related Resources</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
-                     <li><a href="#key-terms">Key Terms</a></li>
+                     <li><a href="#brief">要約</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#benefits">利点</a></li>
+                     <li><a href="#examples">事例</a></li>
+                     <li><a href="#resources">関連リソース</a></li>
+                     <li><a href="#techniques">テクニック</a></li>
+                     <li><a href="#key-terms">重要な用語</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				SC 2.4.11:</span>Focus Not Obscured (Minimum) (Level AA)
+            <h1><span class="standalone-resource__type-of-guidance">解説書 達成基準 2.4.11:</span>隠されないフォーカス (最低限) (レベル AA)
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>When a <a href="#dfn-user-interface-component">user interface component</a> receives keyboard focus, the component is not entirely hidden due to author-created
-                     content.
+                  <p><a href="#dfn-user-interface-component">ユーザインタフェース コンポーネント</a>がキーボードフォーカスを受け取るとき、コンテンツ制作者が作成したコンテンツによって、そのコンポーネントの全体が隠されるようなことがない。
                   </p>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
-                     <p>Where content in a configurable interface can be repositioned by the user, then only
-                        the initial positions of user-movable content are considered for testing and conformance
-                        of this Success Criterion.
+                     <p class="note-title marker">注記</p>
+                     <p>設定可能なインタフェースの中にあるコンテンツが利用者によって再配置可能な場合、この達成基準のテスト及び適合性の対象として検討されるのは、利用者によって移動可能なコンテンツの初期位置だけである。
                      </p>
                   </div>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
-                     <p>Content opened by the <em>user</em> may obscure the component receiving focus. If the user can reveal the focused component
-                        without advancing the keyboard focus, the component with focus is not considered visually
-                        hidden due to author-created content.
+                     <p class="note-title marker">注記</p>
+                     <p><em>利用者</em>が開いたコンテンツによって、フォーカスを受け取るコンポーネントが隠される場合がある。利用者がキーボードフォーカスを移動せずにフォーカスを持つコンポーネントを表示できる場合、そのフォーカスを持つコンポーネントは、コンテンツ制作者が作成したコンテンツによって隠されたとはみなされない。
                      </p>
                   </div>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   
-                  <dt>Goal</dt>
-                  <dd>Keep the focused item visible.</dd>
+                  <dt>目標</dt>
+                  <dd>フォーカスのある項目を見えるようにしておく。</dd>
                   
-                  <dt>What to do</dt>
-                  <dd>Ensure when an item gets keyboard focus, it is at least partially visible.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>項目がキーボードフォーカスを取得したときに、その項目が少なくとも部分的に見えることを保証する。</dd>
                   
-                  <dt>Why it's important</dt>
-                  <dd>People who can't use a mouse need to see what has keyboard focus.</dd>
+                  <dt>なぜそれが重要か</dt>
+                  <dd>マウスを使用できない人々は、キーボードフォーカスがどこにあるかを確認する必要がある。</dd>
                   
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The intent of this Success Criterion is to ensure that the item receiving keyboard
-                  focus is always partially visible in the user's viewport. For sighted people who rely
-                  on a keyboard (or on a device that operates through the keyboard interface, such as
-                  a switch or voice input), knowing the current point of focus is critical. The component
-                  with focus signals the interaction point on the page. Where users cannot see the item
-                  with focus, they may not know how to proceed, or may even think the system has become
-                  unresponsive.
+               <h2>意図</h2>
+               <p>この達成基準の意図は、キーボードフォーカスを受け取る項目が、利用者のビューポート内で常に部分的に表示されることを保証することである。キーボード (又はスイッチ、音声入力など、キーボードインターフェースを通じて操作するデバイス) に依存している目の見える人にとって、現在のフォーカス地点を知ることは非常に重要である。フォーカスを持つコンポーネントは、ページ上のインタラクション地点を示す。利用者がフォーカスを持つ項目を見ることができない場合、利用者はどのように進めればよいのかわからない、又はシステムが応答しなくなったとさえ思うかもしれない。
                </p>
-               <p>In recognition of the complex responsive designs common today, this AA criterion allows
-                  for the component receiving focus to be <em>partially</em> obscured by other author-created content. A partly obscured component can still be
-                  very visible, although the more of it that is obscured, the less easy it is to see.
-                  For that reason, authors should attempt to design interactions to reduce the degree
-                  and frequency with which the item receiving focus is partly obscured. For best visibility,
-                  <em>none</em> of the component receiving focus should be obscured. This preferred outcome is covered
-                  by the AAA criterion <a href="focus-not-obscured-enhanced.html">Focus Not Obscured (Enhanced)</a>.
+               <p>今日の一般的で複雑なレスポンシブデザインのために、この AA 基準は、フォーカスを受け取るコンポーネントが、コンテンツ制作者が作成した他のコンテンツによって<em>部分的に</em>隠されることを許容する。部分的に隠れたコンポーネントは十分な視認性を持つこともあるが、隠される部分が増えるほど見づらくなる。そのため、コンテンツ制作者は、フォーカスを受ける項目が部分的に隠れる程度及び頻度を減らすようにインタラクションを設計するよう努めるべきである。最良の視認性を得るには、フォーカスを受けるコンポーネントが隠され<em>ない</em>ようにすべきである。この望ましい結果は、AAA 基準の<a href="focus-not-obscured-enhanced.html">隠されないフォーカス (高度)</a> で扱われる。
                </p>
-               <p>Typical types of content that can overlap focused items are sticky footers, sticky
-                  headers, and non-modal dialogs. As a user tabs through the page, these layers of content
-                  can obscure the item receiving focus, along with its focus indicator.
+               <p>フォーカスされた項目と重なる可能性のある代表的なコンテンツの種類は、スティッキーフッター、スティッキーヘッダー、及び非モーダルダイアログである。利用者がページ内をタブで移動すると、これらのコンテンツのレイヤーにより、フォーカスを受け取った項目がフォーカスインジケータと共に隠されてしまう可能性がある。
                </p>
-               <p>A notification implemented as sticky content, such as a cookie banner, will fail this
-                  Success Criterion if it entirely obscures a component receiving focus. Ways of passing
-                  include making the banner modal so the user has to dismiss the banner before navigating
-                  through the page, or using <a href="https://www.w3.org/TR/css-scroll-snap/#propdef-scroll-padding">scroll padding</a> so the banner does not overlap other content. Notifications that do not require user
-                  action could also meet this criterion by closing on loss of focus.
+               <p>Cookie バナーのようなスティッキーコンテンツとして実装された通知は、フォーカスを受け取るコンポーネントを完全に覆い隠してしまう場合、この達成基準に失敗する。合格する方法には、利用者がページ内をナビゲートする前にバナーを閉じる必要があるようにバナーをモーダルにする、又はバナーが他のコンテンツと重ならないように<a href="https://www.w3.org/TR/css-scroll-snap/#propdef-scroll-padding">scroll-padding</a>を使用する、といったものがある。利用者のアクションを必要としない通知も、フォーカスが失なわれるときに閉じることでこの基準を満たす可能性がある。
                </p>
-               <p>Another form of obscuring can occur where light boxes or other semi-opaque effects
-                  overlap the item with focus. While less than 100 percent opacity is not causing the
-                  component to be <q>entirely obscured</q>, such semi-opaque overlaps may cause a failure of <a href="../understanding/non-text-contrast.html">1.4.11 Non-text Contrast</a>. When a focus indicator can be covered by a semi-opaque component, the ability of
-                  the focus indicator to pass 1.4.11 should be evaluated (and pass) while the focus
-                  indicator is under the semi-opaque component. The intention in both situations is
-                  that the component receiving focus should never be obscured to the point a user cannot
-                  tell which item has focus.
+               <p>別の隠される状況としては、ライトボックス又はその他の半透明効果がフォーカスを持つ項目に重なる場合がある。不透明度が 100％未満であればコンポーネントが<q>完全に隠れる</q>ことはないが、そのような半透明の重なりにより <a href="../understanding/non-text-contrast.html">1.4.11 非テキストコントラスト</a>の失敗が発生する場合がある。フォーカスインジケータが半透明コンポーネントで覆われる場合、フォーカスインジケータが半透明コンポーネントの下にある間に、フォーカスインジケータが 1.4.11 に合格できているかを評価する (そして合格している) べきである。この達成方法の意図は、どちらの状況にせよ、利用者がどの項目にフォーカスがあるのか判断できないほどにフォーカスを受け取るコンポーネントが隠されるべきではない、ということである。
                </p>
                <section id="Movable">
                   
-                  <h3>User-movable content</h3>
+                  <h3>利用者が移動可能なコンテンツ</h3>
                   
-                  <p>This SC contains a note regarding content that can be repositioned. If users can move
-                     content regions, then they can potentially position the movable content such that
-                     it obscures other content that may receive focus. In such a case, the author is only
-                     responsible for ensuring that the movable content <em>in its initial position</em> does not obscure the item receiving focus.
+                  <p>この達成基準には、再配置可能なコンテンツに関する注記が含まれている。利用者がコンテンツ領域を移動できる場合、フォーカスを受ける可能性のある他のコンテンツを隠すように移動可能なコンテンツを配置できる可能性がある。そのような場合、コンテンツ制作者は、<em>初期位置にある</em>移動可能なコンテンツがフォーカスを受け取る項目を隠さないことを保証する責任だけを負う。
                   </p>
                   
-                  <p>This note is intended to accommodate a common interaction in complex applications
-                     such as authoring tools, where the main editing region (also called a canvas) can
-                     be enhanced by displaying toolbars or other panels, which can be repositioned around
-                     the canvas. It is possible to design such toolbars so they do <em>not</em> obscure focus. Authors are encouraged to do so, as well as pursue techniques which
-                     ensure equitable keyboard use of such toolbars. However, in recognition of the complexities
-                     involved in responsive design as well as in supporting the ability to transform the
-                     text size and spacing of content, only the starting position of such movable panels
-                     is assessed.
+                  <p>この注記は、オーサリングツールのような複雑なアプリケーションでの一般的なインタラクションに対応することを目的としている。ここで、主要な編集領域 (キャンバスとも呼ばれる) は、ツールバー又はその他のパネルを表示することで拡張でき、キャンバスの周囲に再配置できる。そのようなツールバーがフォーカスを隠さ<em>ない</em>ように設計することは可能である。コンテンツ制作者は、そのようにするだけでなく、そのようなツールバーをキーボードでも等しく使用できることを保証する技術を追求することが奨励される。ただし、レスポンシブデザインに伴う複雑さ、並びにコンテンツのテキストサイズ及び間隔を変更する機能のサポートを考慮して、そのような移動可能なパネルの開始位置だけが評価の対象となる。
                   </p>
                   
                   <!--
@@ -178,45 +138,21 @@
                </section>
                <section id="disclosed">
                   
-                  <h3>User-opened content</h3>
+                  <h3>利用者が開いたコンテンツ</h3>
                   
-                  <p>This SC contains a note regarding content that is opened or disclosed by the user.
-                     One example of such content is a menu button opened by a user that opens a list of
-                     choices over pre-existing content on the screen. Such content can obscure other information
-                     on the screen, but it does not obscure an item receiving keyboard focus, because the
-                     new content doesn't stay open through a change of focus. However, authors may create
-                     user-opened content that is intentionally designed to persist until closed by the
-                     user, such as a chat window. Such persistent content has the potential to fail Focus
-                     Not Obscured (Minimum). Various types are described in this section. All can be designed
-                     so that they pass this Success Criterion.
+                  <p>この達成基準には、利用者が開いたコンテンツに関する注記が含まれている。そのようなコンテンツの一つの例は、画面上の既存のコンテンツの上に選択肢のリストを展開する、利用者によって開かれるメニューボタンである。そのようなコンテンツは画面上の他の情報を隠してしまう可能性があるが、フォーカスの変更によって新しいコンテンツが開いたままになることはないため、キーボードフォーカスを受け取る項目は隠すことはない。ただし、コンテンツ制作者は、チャットウィンドウなど、利用者が閉じるまで保持されるように意図的に設計された、利用者が開いたコンテンツを作成する場合がある。そのような永続的なコンテンツは、隠されないフォーカス (最低限) に失敗する可能性がある。次のサブセクションではさまざまな種類について説明する。全て、この達成基準を満たせるように設計できる。
                   </p>
                   
                   
-                  <p>This section only applies to content that the user actively discloses. Content pre-positioned
-                     by the author (such as a sticky footer), or content that appears without direct user
-                     initiation, such as system warnings, must not prevent the item receiving focus from
-                     being immediately visible in the viewport. Also, this note is not intended to apply
-                     to disclosures that are by convention non-persistent. As discussed in the following
-                     sub-section, an open dropdown that does not close when no longer focused is not following
-                     this convention.
+                  <p>このセクションは、利用者が主体的に開いたコンテンツにだけ適用される。コンテンツ制作者によって事前に配置されたコンテンツ (スティッキーフッターなど)、又は利用者が直接開始することなく表示されるコンテンツ (システム警告など) は、フォーカスを受け取った項目がビューポートにすぐに表示されるのを妨げてはならない。この注記はまた、慣例による永続的でないディスクロージャーに適用することを意図したものではない。次のサブセクションで説明するように、フォーカスが外されても閉じない、開いているドロップダウンは、この慣例に従っていない。
                   </p>
                   
                   
                   <section id="non-persistent-opened-information">
                      
-                     <h4>Non-persistent opened information</h4>
+                     <h4>永続的でなく開かれた情報</h4>
                      
-                     <p>A number of components on the web open (or disclose) additional content (on activation
-                        or on focus) intended for immediate user interaction or information. This new content
-                        is often on top of other content, obscuring it. Examples of such components are menu
-                        items, select element items, combobox lists (and other dropdown items), date picker
-                        calendars, and tooltips. The common trait of all these components is that they are
-                        not expected to persist after being acted on or once they are no longer the primary
-                        point of user interaction. Such non-persistent disclosures do not fail this SC since
-                        they do not obscure the item with focus. However, if an author allows such components
-                        to <strong>persist</strong> after the user has 1) activated one of the opened items or 2) moved the focus away
-                        from the triggering item and the additional content, it is at risk of failing this
-                        criterion by obscuring the item with focus.
+                     <p>ウェブ上の多くのコンポーネントは、即時的な利用者による操作又は情報提示を目的とした追加コンテンツを (アクティブ時又はフォーカス時に) 開く (又は展開する)。この新しいコンテンツは他のコンテンツの上にあり、隠すことがよくある。このようなコンポーネントの例としては、メニュー項目、select 要素の項目、コンボボックスリスト (及びその他のドロップダウン項目)、日付ピッカーカレンダー、ツールチップなどがある。これら全てのコンポーネントに共通する特徴は、アクションが実行された後、または利用者の操作の主要なポイントでなくなった後は、それらのコンポーネントが存続することが期待されていないことである。そのような永続的でないディスクロージャーは、フォーカスを当てた項目を隠さないため、この達成基準に失敗とはならない。ただし、利用者が 1) 開いている項目の一つをアクティブにした後、又は 2) フォーカスをトリガー項目及び追加コンテンツから遠ざけた後に、コンテンツ制作者がそのようなコンポーネントの<strong>存続</strong>を許可した場合、フォーカスを持つ項目を隠すことによって、この基準に失敗する危険性がある。
                      </p>
                      
                      <!--
@@ -231,21 +167,15 @@
                   
                   <section id="user-openable-persistent-disclosures">
                      
-                     <h4>User openable, persistent disclosures</h4>
+                     <h4>利用者が開くことができる、永続的なディスクロージャー</h4>
                      
-                     <p>Some disclosure patterns provide a mechanism for the user to open additional content
-                        that remains open until intentionally closed by the user. Accordions are a simple
-                        example of such a pattern. Chatbots and expandable side navigation are more complex
-                        examples. All of these patterns can be implemented so they are not at risk of failing
-                        this SC. Some possible approaches are:
+                     <p>一部のディスクロージャーパターンでは、利用者が意図的に閉じるまで開いたままになる追加コンテンツを利用者が開くメカニズムを提供する。アコーディオンは、そのようなパターンの単純な例である。チャットボット及び拡張可能なサイドナビゲーションは、より複雑な例である。これらのパターンはすべて、この達成基準に失敗するリスクがないように実装できる。考えられるアプローチとしては次のようなものがある:
                      </p>
                      
                      
                      <ul>
                         
-                        <li><strong>When the additional content appears, it displaces existing content.</strong> An accordion is an example of this. When an accordion is opened, the disclosed content
-                           shifts existing content further down the page. Since the new content does not obscure
-                           existing content, it cannot obscure the item with focus.
+                        <li><strong>追加のコンテンツが表示されると、既存のコンテンツが移動する。</strong>アコーディオンはその一例である。アコーディオンを開くと、展開されたコンテンツが既存のコンテンツをページのさらに下に移動させる。新しいコンテンツは既存のコンテンツを隠さないため、フォーカスのある項目を隠すことはできない。
                            
                            <!--
                <figure id="">
@@ -257,12 +187,7 @@
                         </li>
                         
                         
-                        <li><strong>When the additional content appears, existing content reflows.</strong> The popout sidebar on the <a href="https://www.w3.org/TR/WCAG22/">WCAG standard</a> is an example of this pattern. When the side menu is activated, it opens a new section
-                           of information along the left side of the page. The main content area is reduced horizontally
-                           to accommodate the new content, and the existing content reflows to fit in the thinner
-                           space. As a result, there is no overlapping content between the two sections; the
-                           item receiving focus, whether in the left navigation or in the main content, will
-                           not be obscured by the other section.
+                        <li><strong>追加コンテンツが表示されると、既存のコンテンツがリフローする。</strong><a href="https://waic.jp/translations/WCAG22/">WCAG 標準</a>のポップアウトサイドバーは、このパターンの例である。サイドメニューをアクティブにすると、ページの左側に沿って情報の新しいセクションが開く。メインコンテンツ領域は、新しいコンテンツを収容するために水平方向に縮小され、既存のコンテンツはより狭いスペースに収まるようにリフローする。結果として、二つのセクション間に重なるコンテンツは存在しない。フォーカスを受け取る項目は、左側のナビゲーションであろうとメインコンテンツであろうと、他のセクションによって隠されることはないだろう。
                            
                            <!--
                <figure id="">
@@ -274,16 +199,7 @@
                         </li>
                         
                         <li>
-                           <strong>When the additional content is opened, it takes focus and the tab ring is constrained
-                              to the new content until it is dismissed.</strong> This modality is somewhat like a dialog, in that a user cannot navigate beyond the
-                           opened content by keyboard without dismissing it first (typically by pressing Esc).
-                           However, unlike in a modal dialog, in some implementations a pointer user may be able
-                           to interact with content outside the opened section without dismissing it. Since this
-                           pattern potentially creates an inequitable experience between keyboard and pointer
-                           users, it should be used cautiously. That said, it does prevent the opened content
-                           from obscuring the keyboard focus in the main content, and thus should pass this SC.
-                           This is described and demonstrated in a short video in the Knowbility article in the
-                           reference section, under the section heading <a href="https://knowbility.org/blog/2020/accessible-slide-menus#keep-keyboard-focus-in-the-slide-out-navigation-until-its-closed">Keep keyboard focus in the slide-out navigation until it's closed</a>.
+                           <strong>追加コンテンツが開かれるとフォーカスが移り、閉じられるまでの間、タブリングはその追加コンテンツに閉じ込められる。</strong>このモダリティはダイアログに少し似ており、キーボードでは、利用者が先に (典型的には Esc キーを押して) コンテンツを閉じないかぎり、開いているコンテンツを超えてナビゲートすることはできない。しかし、モーダルダイアログとは異なり、実装によっては、ポインタの利用者は、開かれたセクションを閉じることなく外側のコンテンツを操作できる場合がある。このパターンはキーボードの利用者とポインタの利用者との間で不公平な体験を生み出す可能性があるため、慎重に使用すべきである。とはいえ、開かれたコンテンツがメインコンテンツのキーボードフォーカスを隠してしまうのを防いでおり、したがって、この達成基準を合格するはずである。これは、関連リソースにある Knowability の記事において、セクション見出し <a href="https://knowbility.org/blog/2020/accessible-slide-menus#keep-keyboard-focus-in-the-slide-out-navigation-until-its-closed">Keep keyboard focus in the slide-out navigation until it's closed</a> にある短い動画で説明及び実演されている。
                            
                            <!--
                <figure id="">
@@ -295,11 +211,7 @@
                         </li>
                         
                         <li>
-                           <strong>The disclosure expands into an area of the page containing no other content.</strong> Many pages are designed with wide margins, providing significant white space into
-                           which new content can be opened. Many chatbots and toast notifications are designed
-                           to 'slide up' into the right unpopulated side of a page. Where authors are careful
-                           to ensure content is not obscured at each breakpoint in a responsive design, no obscuring
-                           of other operable content need occur.
+                           <strong>ディスクロージャーは、他のコンテンツを含まないページの領域に展開する。</strong>多くのページは余白が広く設計されており、新しいコンテンツを開くための大きなスペースが提供されている。多くのチャットボット及びトースト通知は、ページの空いている右側に「上にスライド」するように設計されている。コンテンツ制作者がレスポンシブデザインの各ブレークポイントでコンテンツが隠されないように注意している場合、他の操作可能なコンテンツが隠されることはない。
                            
                            <!-- <figure id="">
                <img src="" alt="" />
@@ -310,12 +222,7 @@
                         </li>
                         
                         <li>
-                           <strong>When focus leaves the additional content, the additional content is automatically
-                              hidden or collapsed, or the content can be hidden or collapsed by use of a dedicated
-                              keyboard command (for example, the <kbd>Escape</kbd> key</strong>.) This is very similar to patterns discussed previously under Non-persistent opened
-                           information. A distinguishing factor can be that the user's last point of interaction
-                           in the disclosure is preserved (it persists) even though it may be hidden until a
-                           user returns. Some trees and left navigation patterns behave this way.
+                           <strong>フォーカスが追加コンテンツから離れると、追加コンテンツは自動的に非表示になる又は折りたたまれる。もしくは、専用のキーボードコマンド (例: <kbd>Escape</kbd> キー) を使用してコンテンツを非表示にする又は折りたたむことができる。</strong>これは、前述の永続的でない開いている情報で説明したパターンと非常によく似ている。特徴的な要因は、たとえ利用者が戻るまで非表示になっているとしても、ディスクロージャー内での利用者のインタラクションの最終地点が保存される (存続する) ことである。一部のツリー及び左側のナビゲーションパターンはこのように動作する。
                            
                            <!--
                <figure id="">
@@ -329,47 +236,35 @@
                      </ul>
                      
                      
-                     <p>In recognition of more complex interfaces and user needs there is a note: <cite>Content opened by the user may obscure the component receiving focus</cite>. If the user can bring the item with focus into view using a method without having
-                        to navigate back to the user-opened content to dismiss it, this criterion would be
-                        passed. For example, keyboard actions that may allow the item with focus to be revealed
-                        include:
+                     <p>より複雑なインタフェース及び利用者のニーズのために、次の注記がある: <cite>利用者が開いたコンテンツによって、フォーカスを受け取るコンポーネントが隠される場合がある。</cite>利用者がフォーカスを持つ項目を表示でき、その際に利用者の開いたコンテンツにナビゲートしてその項目を閉じる必要がなければ、この基準に合格する。例えば、フォーカスを持つ項目を表示できるキーボード操作には、次のものがある:
                         
                      </p>
                      
                      
                      <ul>
                         
-                        <li>using the <kbd>Escape</kbd> key to dismiss the obscuring content;
+                        <li><kbd>Escape</kbd> キーを使用して、隠しているコンテンツを閉じる。
                         </li>
                         
-                        <li>using keys to scroll the content in the viewport to reveal the item with focus;</li>
+                        <li>キーを使用してビューポート内のコンテンツをスクロールし、フォーカスのある項目を表示する。</li>
                         
-                        <li>issuing a key to move between overlays.</li>
+                        <li>オーバーレイ間を移動するためのキーを用意する。</li>
                         
                      </ul>
                      
                      
-                     <p>For example:</p>
+                     <p>例:</p>
                      
                      
                      <ul>
                         
-                        <li>A user opens a chat interface, which is a popover non-modal dialog. This results in
-                           some content of the underlying page being fully obscured. The user navigates away
-                           from the chat interface by use of the <kbd>tab</kbd> key, focusing onto a link that has been fully obscured by the dialog. The user presses
-                           the <kbd>Escape</kbd> key to close the chat interface, which un-obscures the link.
+                        <li>利用者は、チャットインタフェースを開く。これはポップオーバーの非モーダルダイアログである。これにより、下にあるページの一部のコンテンツが完全に隠されてしまう。利用者は <kbd>Tab</kbd> キーを使用してチャットインタフェースから離れ、ダイアログによって完全に隠されているリンクにフォーカスを当てる。利用者が <kbd>Escape</kbd> キーを押してチャットインタフェースを閉じると、リンクが隠されないようになる。
                         </li>
                         
-                        <li>A user expands a fixed-position page feedback component at the bottom of a Web page.
-                           They then use their keyboard to navigate to a link that's fully obscured by the expanded
-                           component and press the <kbd>down arrow</kbd> or <kbd>space</kbd> key on their keyboard to scroll the content on the page, un-obscuring the link.
+                        <li>利用者は、ウェブページの下部にある固定位置のページフィードバックコンポーネントを展開する。次に、キーボードを使用して、展開されたコンポーネントによって完全に隠されているリンクにナビゲートし、キーボードの<kbd>下矢印</kbd>又は<kbd>スペース</kbd>キーを押してページ上のコンテンツをスクロールし、リンクが隠されないようにする。
                         </li>
                         
-                        <li>A user opens a web-based multi-user authoring application. An overlay appears displaying
-                           a list of people who have contributed to the document. The user tabs through the list
-                           of contributors and activates one of them. The application displays a new overlay,
-                           which obscures the first one, that displays that person's recent contributions. The
-                           user presses the <kbd>F6</kbd> key to toggle the stacking order of the two overlays.
+                        <li>利用者がウェブベースのマルチユーザオーサリングアプリケーションを開く。ドキュメントに貢献した人のリストを表示しているオーバーレイが表示される。利用者は貢献者のリストをタブで移動し、そのうちの一つをアクティブにする。アプリケーションは、最初のオーバーレイを隠す、その人の最近の投稿を表示する新しいオーバーレイを表示する。利用者は <kbd>F6</kbd> キーを押して、二つのオーバーレイの積み重ね順序を切り替える。
                         </li>
                         
                      </ul>
@@ -380,75 +275,50 @@
                </section>
                <section id="dialogs">
                   
-                  <h3>Modal dialogs</h3>
+                  <h3>モーダルダイアログ</h3>
                   
                   
-                  <p>A properly constructed modal dialog will always pass this SC. Even if it appears directly
-                     on top of an item with focus, the dialog takes focus on appearance, and thus the item
-                     receiving focus -- the dialog or one of its components -- is visible. A properly constructed
-                     modal maintains that focus and prevents interaction outside the modal until it is
-                     dismissed.
+                  <p>適切に構成されたモーダルダイアログは、常にこの達成基準に合格する。たとえフォーカスを持つ項目の上に直接表示されたとしても、表示された際にこのダイアログがフォーカスを受け取り、したがってフォーカスを受け取っている項目 (このダイアログ、又はその中のコンポーネントの一つ) は表示される。適切に構成されたモーダルは、そのフォーカスを維持し、モーダルが閉じられるまでモーダル外のインタラクションを防ぐ。
                   </p>
                   
-                  <p>A dialog-like overlay that does not take focus on appearance and does not either constrain
-                     interaction to the overlay or dismiss itself on loss of focus (thus allowing focus
-                     to exit into the content behind it) will be at risk of failing this SC, where it is
-                     positioned such that it can obscure other focusable items.
+                  <p>ダイアログのようなオーバーレイが、表示された際にフォーカスを受け取らず、かつオーバーレイに対してインタラクションを制限しない、又はフォーカスを失ったときに自身を閉じない (したがって、フォーカスが背後のコンテンツに抜けるようになる) 場合に、他のフォーカス可能な項目を隠すことができるように配置されていると、この達成基準で失敗する危険性がある。
                   </p>
                   
                </section>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>利点</h2>
                <ul>
                   
-                  <li>Sighted users who rely on a keyboard interface to operate the page will be able to
-                     see the component which gets keyboard focus. Such users include those who rely on
-                     a keyboard or on devices which use the keyboard interface, including speech input,
-                     sip-and-puff software, onscreen keyboards, scanning software, and a variety of assistive
-                     technologies and alternate keyboards.
+                  <li>キーボードインタフェースに依存してページを操作している目の見える利用者は、キーボードフォーカスを取得するコンポーネントを見ることができる。そのような利用者には、キーボード又はキーボードインタフェースを利用するデバイス (音声入力、呼気・吸気ソフトウェア、オンスクリーンキーボード、スキャンソフトウェア、並びにさまざまな支援技術及び代替キーボードなど) に依存するような利用者が含まれる。
                   </li>
                   
-                  <li>People with limited or low vision, who may primarily user a pointer for screen orientation
-                     and repositioning, nonetheless benefit from a visible indication of the current point
-                     of keyboard interaction, especially where magnification reduces the overall viewing
-                     portion of the screen.
+                  <li>視覚に制限のある人々又はロービジョンの人々は、主に画面上の位置取り及び移動にポインタを使用するが、それにもかかわらず、キーボード操作による現在位置の可視的な表示は、特に拡大率によって画面全体の表示視野が狭くなる場合、有益である。
                   </li>
                   
-                  <li>People with attention limitations, short term memory limitations, or limitations in
-                     executive processes benefit by being able to discover where the focus is located.
+                  <li>注意力の制限、短期記憶の制限、又は実行プロセスの制限がある人々は、フォーカスがどこにあるのかを発見できることで恩恵を受ける。
                   </li>
                   
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>事例</h2>
                <ul>
                   
-                  <li>A page has a sticky footer (attached to the bottom of the viewport). When tabbing
-                     down the page the focused item is not completely visually obscured by the footer because
-                     content in the viewport scrolls up to always display the item with keyboard focus
-                     using <a href="https://www.w3.org/TR/css-scroll-snap/#propdef-scroll-padding" rel="nofollow">scroll padding</a>.
+                  <li>ページにスティッキーフッター (ビューポートの下部に固定されている) がある。ページをタブで下に移動すると、フォーカスされた項目はフッターによって視覚的に完全に隠れることはない。これは、ビューポート内のコンテンツが上にスクロールして、<a href="https://www.w3.org/TR/css-scroll-snap/#propdef-scroll-padding" rel="nofollow">scroll-padding</a>を使用してキーボードフォーカスのある項目が常に表示されるためである。
                   </li>
                   
-                  <li>A page has a full-width cookie approval dialog. The dialog is modal, preventing access
-                     to the other controls in the page until it has been dismissed. Focus is not obscured
-                     because the major portion of the cookie approval dialog remains on screen (until selections
-                     are made and submitted),  and so the major portion of the keyboard focus indicator
-                     remains visible.
+                  <li>ページに全幅のクッキー承認ダイアログがある。ダイアログはモーダルであり、閉じられるまでページ内の他のコントロールへのアクセスを防ぐ。クッキー承認ダイアログの大部分は (選択が行われて送信されるまで) 画面上に残り、キーボードフォーカスインジケーターの大部分も表示されたままになるため、フォーカスは隠されない。
                   </li>
                   
-                  <li>A notification is implemented as a sticky header and the keyboard focus is moved to
-                     the notification so at least part of the focus indicator is in view. The notification
-                     disappears when it loses focus so it does not obscure any other controls, and part
-                     of the prior keyboard focus indicator is visible.
+                  <li>通知はスティッキーヘッダーとして実装され、キーボードフォーカスは通知に移動するため、少なくともフォーカスインジケーターの一部が表示される。フォーカスを失うと通知は消えるため、他のコントロールが隠れることはなく、以前のキーボードフォーカスインジケーターの一部が表示される。
                   </li>
                   
                </ul>
             </section>
             <section id="resources">
-               <h2>Related Resources</h2>
-               <p>Resources are for information purposes only, no endorsement implied.</p>
+               <h2>関連リソース</h2>
+               <p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p>
                <ul>
                   
                   <li><a href="https://knowbility.org/blog/2020/accessible-slide-menus">Let's Focus on Slide-Out Navigation </a></li>
@@ -456,14 +326,11 @@
                </ul>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
+                  <h3>十分なテクニック</h3>
                   <ol>
                      
                      <li>
@@ -474,9 +341,8 @@
                   </ol>
                </section>
                <section id="failure">
-                  <h3>Failures</h3>
-                  <p>The following are common mistakes that are considered failures of this Success Criterion
-                     by the WCAG Working Group.
+                  <h3>失敗</h3>
+                  <p>次に挙げるものは、WCAG ワーキンググループが達成基準の失敗例とみなした、よくある間違いである。
                   </p>
                   <ol>
                      
@@ -492,42 +358,37 @@
             <section id="key-terms">
                <details>
                   <summary>
-                     <h2>Key Terms</h2>
+                     <h2>重要な用語</h2>
                   </summary>
-                  <dt id="dfn-user-interface-component">user interface component</dt>
+                  <dt id="dfn-user-interface-component">ユーザインタフェース コンポーネント (user interface component)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">a part of the content that is perceived by users as a single control for a distinct
-                           function
+                        <p xmlns="http://www.w3.org/1999/xhtml">コンテンツの一部分で、特定の機能を実現するための単一のコントロールとして利用者が知覚するもの。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Multiple user interface components may be implemented as a single programmatic element.
-                              "Components" here is not tied to programming techniques, but rather to what the user
-                              perceives as separate controls.
+                           <p class="note-title marker">注記</p>
+                           <p>複数のユーザインタフェース コンポーネントが、単一のプログラム要素で実装されることもある。ここでいう「コンポーネント」は、プログラムの手法と結びついたものではなく、利用者が別々のコントロールとして知覚するものを指す。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>User interface components include form elements and links as well as components generated
-                              by scripts.
+                           <p class="note-title marker">注記</p>
+                           <p>ユーザインタフェース コンポーネントには、フォーム要素、リンクだけでなく、スクリプトで生成されるコンポーネントが含まれる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>What is meant by "component" or "user interface component" here is also sometimes
-                              called "user interface element".
+                           <p class="note-title marker">注記</p>
+                           <p>ここでの「コンポーネント」又は「ユーザインタフェース コンポーネント」は、「ユーザインターフェース要素」とも呼ばれる。
                               
                            </p>
                         </div>
@@ -535,9 +396,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>An applet has a "control" that can be used to move through content by line or page
-                              or random access. Since each of these would need to have a name and be settable independently,
-                              they would each be a "user interface component."
+                           <p>アプレットには、コンテンツ内を行単位、ページ単位、又はランダムアクセスで移動するために用いられる「コントロール」がある。これらには、いずれも名前 (name) を割り当て、個別に設定できるようにする必要があるため、それぞれが「ユーザインタフェース コンポーネント」となる。
                               
                            </p>
                            
@@ -557,13 +416,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -578,11 +436,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -604,13 +464,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -619,7 +479,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -640,8 +500,10 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+    <!--noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-      </noscript>
+      </noscript-->
    </body>
 </html>
