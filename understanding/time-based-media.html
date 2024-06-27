@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Guideline  1.2: Time-based Media | WAI | W3C</title>
+      <title>解説書 ガイドライン 1.2: 時間依存メディア | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
    </head>
@@ -66,101 +66,72 @@
             <aside class="box">
                <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>Provide alternatives for time-based media.</p>
+                  <p>時間依存メディアには代替コンテンツを提供すること。</p>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The purpose of this guideline is to provide access to time-based and synchronized
-                  media.This includes media that is:
+               <h2>意図</h2>
+               <p>このガイドラインの目的は、時間の経過に伴って変化する、同期したメディアへのアクセスを提供することである。具体的には、次のようなメディアがある:
                   
                </p>
                <ul>
                   
                   
-                  <li>audio-only</li>
+                  <li>音声しか含まない</li>
                   
                   
-                  <li>video-only </li>
+                  <li>映像しか含まない </li>
                   
                   
-                  <li>audio-video </li>
+                  <li>音声と映像を含む </li>
                   
                   
-                  <li>audio and/or video combined with interaction </li>
+                  <li>インタラクションを組み合わせた音声と映像、又は音声あるいは映像のどちらかを含む </li>
                   
                   
                </ul>
-               <p>To make it easy for authors to quickly determine which success criteria apply to their
-                  content, the type of media each success criterion applies to is included in its short
-                  name. 
+               <p>コンテンツ制作者が、そのコンテンツにはどの達成基準が適用されるのかを素早く容易に判断できるように、各達成基準が適用されるメディアの種類をその簡潔な名前で示している。 
                   
                </p>
-               <p>For 
-                  <strong>audio-only</strong> or 
-                  <strong>video-only</strong> media, you only need to apply the success criteria that say "
-                  <strong>audio-only</strong>" or "
-                  <strong>video-only</strong>" in their short name. If your media is not 
-                  <strong>audio-only</strong> or 
-                  <strong>video-only</strong>, then all the rest of the success criteria apply.
+               <p><strong>音声しか含まない</strong>メディア又は<strong>映像しか含まない</strong>メディアに対しては、達成基準の名前に「<strong>音声しか含まない</strong>」又は「<strong>映像しか含まない</strong>」とあるものを適用するだけでよい。そのメディアが、<strong>音声しか含まない</strong>メディア又は<strong>映像しか含まない</strong>メディアではない場合、残りの達成基準すべてが適用される。
                   
                </p>
-               <p>Media can also be 
-                  <strong>live</strong> or 
-                  <strong>prerecorded</strong>. Each of the success criterion short names clearly tells you if the success criterion
-                  applies to 
-                  <strong>live</strong> or 
-                  <strong>prerecorded</strong> media. 
+               <p>そして、メディアは、<strong>ライブ</strong>又は<strong>収録済</strong>のどちらかである。その達成基準が<strong>ライブ</strong>又は<strong>収録済</strong>のどちらのメディアに適用されるのかが、各達成基準の簡潔な名前ではっきりと分かるようになっている。 
                   
                </p>
                <p>
-                  Synchronized media is defined in the glossary as:
+                  同期したメディアは、用語集で次のように定義されている:
                   
                </p>
                <p id="copysynchronizedmediadef"></p>
-               <p>Note that an audio file accompanied by interaction is covered here, as is a video-only
-                  file that involves interaction. These are covered because interaction must take place
-                  at a particular time. Having a text transcript that said, "for more information, click
-                  now," would not be very helpful since the reader would have no idea when the audio
-                  said, "now." As a result, synchronized captions would be needed.
+               <p>インタラクションに付随する音声ファイルは、インタラクションを伴う映像しか含まないファイルと同様に、このガイドラインの対象であることに留意されたい。これらが対象となっているのは、インタラクションが特定のタイミングで発生しなければならないからである。例えば、「より多くの情報を知るためには、今、クリックしてください」というトランスクリプトをつけるのは、全く役に立たない。なぜなら、利用者にはその音声がどのタイミングで「今」と言ったのかが分からないからである。そのため、同期したキャプションが必要となる。
                   
                </p>
-               <p>Sometimes, there is so much dialogue that audio description cannot fit into existing
-                  pauses in the dialogue. The option at Level A to provide an alternative for time-based
-                  media instead of audio description for synchronized media would allow access to all
-                  of the information in the synchronized media. This option also allows access to the
-                  visual information in non-visual form when audio description is not provided for some
-                  other reason. 
+               <p>時には、音声解説を発話内にある合間にぴったり収めることができないくらい沢山の発話があることがある。同期したメディアの音声解説ではなく、時間の経過に伴って変化するメディアの代替を提供するレベル A での選択肢は、同期したメディアにあるすべての情報へのアクセスを可能にすることである。また、この選択肢は、何らかの理由で音声解説が提供されていないとき、視覚的でない形態での視覚的な情報へのアクセスも可能にする。 
                   
                </p>
-               <p>For synchronized media that includes interaction, interactive elements (for example
-                  links) could be embedded in the alternative for time-based media. 
+               <p>インタラクションを伴う同期したメディアの場合、時間の経過に伴って変化するメディアの代替の中にインタラクティブな要素（例えば、リンク）を埋め込むことが可能である。 
                   
                </p>
-               <p>This guideline also includes (at Level AAA) sign language interpretation for synchronized
-                  media as well as an approach called extended audio description. In extended audio
-                  description, the video is frozen periodically to allow more audio description to take
-                  place than is possible in the existing pauses in the dialogue. This is a case where
-                  higher-level Success Criteria build upon the requirements of lower-level Success Criterion
-                  with the intention of having cumulative, progressively stronger, requirements. 
+               <p>また、このガイドラインには、(レベル AAA で) 同期したメディアへの手話通訳というアプローチの他に、拡張した音声解説と呼ばれるアプローチがある。拡張した音声解説では、映像を一時的に停止させて、実際に存在する発話の合間で可能な量よりも多くの音声解説を提供することができる。これは、要件を積み上げていくようにして徐々に強めていくという意図があって、低いレベルの達成基準の上にそれよりも高いレベルの達成基準を設けている一例である。 
                   
                   
                   
                </p>
             </section>
             <section id="success-criteria">
-               <h2>Success Criteria for this Guideline</h2>
+               <h2>このガイドラインの達成基準</h2>
                <ul>
-                  <li><a href="audio-only-and-video-only-prerecorded">1.2.1 Audio-only and Video-only (Prerecorded)</a></li>
-                  <li><a href="captions-prerecorded">1.2.2 Captions (Prerecorded)</a></li>
-                  <li><a href="audio-description-or-media-alternative-prerecorded">1.2.3 Audio Description or Media Alternative (Prerecorded)</a></li>
-                  <li><a href="captions-live">1.2.4 Captions (Live)</a></li>
-                  <li><a href="audio-description-prerecorded">1.2.5 Audio Description (Prerecorded)</a></li>
-                  <li><a href="sign-language-prerecorded">1.2.6 Sign Language (Prerecorded)</a></li>
-                  <li><a href="extended-audio-description-prerecorded">1.2.7 Extended Audio Description (Prerecorded)</a></li>
-                  <li><a href="media-alternative-prerecorded">1.2.8 Media Alternative (Prerecorded)</a></li>
-                  <li><a href="audio-only-live">1.2.9 Audio-only (Live)</a></li>
+                  <li><a href="audio-only-and-video-only-prerecorded.html">1.2.1音声のみ及び映像のみ (収録済)</a></li>
+                  <li><a href="captions-prerecorded.html">1.2.2キャプション (収録済)</a></li>
+                  <li><a href="audio-description-or-media-alternative-prerecorded.html">1.2.3音声解説、又はメディアに対する代替 (収録済)</a></li>
+                  <li><a href="captions-live.html">1.2.4キャプション (ライブ)</a></li>
+                  <li><a href="audio-description-prerecorded.html">1.2.5音声解説 (収録済)</a></li>
+                  <li><a href="sign-language-prerecorded.html">1.2.6手話 (収録済)</a></li>
+                  <li><a href="extended-audio-description-prerecorded.html">1.2.7拡張音声解説 (収録済)</a></li>
+                  <li><a href="media-alternative-prerecorded.html">1.2.8メディアに対する代替 (収録済)</a></li>
+                  <li><a href="audio-only-live.html">1.2.9音声のみ (ライブ)</a></li>
                </ul>
             </section><a class="button button-backtotop" href="#top"><span>
                   <svg focusable="false" aria-hidden="true" class="icon-arrow-up " viewBox="0 0 26 28">
