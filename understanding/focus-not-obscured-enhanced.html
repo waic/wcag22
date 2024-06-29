@@ -86,7 +86,7 @@
                <dl>
                   
                   <dt>目標</dt>
-                  <dd>Don't cover any part of the item with focus.</dd>
+                  <dd>フォーカスのある項目のどの部分も覆わない。</dd>
                   
                   <dt>何をすればよいか</dt>
                   <dd>項目がキーボードフォーカスを取得したときに、その項目が完全に見えることを保証する。</dd>
@@ -114,10 +114,7 @@
                   <li>キーボードインタフェースに依存してページを操作している目の見える利用者は、キーボードフォーカスを取得するコンポーネントを見ることができる。そのような利用者には、キーボードインタフェースを利用するデバイス (音声入力、呼気・吸気ソフトウェア、オンスクリーンキーボード、スキャンソフトウェア、並びにさまざまな支援技術及び代替キーボードなど) に依存するような利用者が含まれる。
                   </li>
                   
-                  <li>People with limited or low vision but who rely upon a pointing device (for viewport
-                     orientation and repositioning) benefit from a clearly visible indication of the current
-                     point of keyboard interaction, especially where magnification reduces the overall
-                     useable portion of content.
+                  <li>視力に制限がある又はロービジョンだが、ポインティングデバイス (ビューポートの方向及び位置を変えるため) に依存している利用者は、特に拡大によってコンテンツの全体的な使用可能部分が減少する場合に、キーボード操作の現在位置が明確に表示されることで恩恵を受ける。
                   </li>
                   
                   <li>注意力の制限、短期記憶の制限、又は実行プロセスの制限がある人々は、フォーカスがどこにあるのかをより容易に発見できることで恩恵を受ける。
@@ -132,15 +129,10 @@
                   <li>ページにスティッキーフッター (ビューポートの下部に固定されている) がある。ページをタブで下に移動すると、フォーカスされた項目はフッターによって全て隠れることはない。これは、ビューポート内のコンテンツが上にスクロールして、<a href="https://www.w3.org/TR/css-scroll-snap/#propdef-scroll-padding" rel="nofollow">scroll-padding</a> を使用してキーボードフォーカスのある項目が常に表示されるためである。
                   </li>
                   
-                  <li>A page has a large (30% wide) cookie approval dialog. The dialog is modal, preventing
-                     access to the other controls in the page until it has been dismissed. Focus is not
-                     obscured because the cookie approval dialog (including the focus indicator) remains
-                     on screen until selections are made and submitted.
+                  <li>ページに大きな (幅 30％の) クッキー承認ダイアログがある。ダイアログはモーダルであり、閉じられるまでページ内の他のコントロールにアクセスを防ぐ。選択が行われて送信されるまで、クッキー承認ダイアログ (フォーカスインジケータを含む) は画面上に残るため、フォーカスは隠されない。
                   </li>
                   
-                  <li>A notification is implemented as a sticky header and the keyboard focus is moved to
-                     the notification. The notification disappears when it loses focus, and does not obscure
-                     any other controls (including the focus indicator visible prior to the notification).
+                  <li>通知はスティッキーヘッダーとして実装され、キーボードフォーカスは通知に移動する。通知はフォーカスを失うと消え、他のコントロール (通知の前に表示されていたフォーカスインジケータを含む) に隠されることはない。
                   </li>
                   
                </ul>
@@ -163,15 +155,10 @@
                   </p>
                   <ul>
                      
-                     <li>An interaction that causes content to appear over the component with keyboard focus,
-                        visually covering part of the focus indicator. This behavior might be encountered
-                        with advertising or promotional material meant to provide more information about a
-                        product as the user navigates through a catalogue.
+                     <li>キーボードフォーカスを持つコンポーネントの上にコンテンツを表示させ、フォーカスインジケータの一部を視覚的に覆うインタラクション。この動作は、利用者がカタログ内をナビゲートするときに、製品に関する詳細情報を提供することを目的とした広告又は販促資料で遭遇する可能性がある。
                      </li>
                      
-                     <li>A page has a sticky footer (attached to the bottom of the viewport). When tabbing
-                        down the page, a focused item is partially obscured by the footer because content
-                        in the viewport scrolls without sufficient <a href="https://www.w3.org/TR/css-scroll-snap/#propdef-scroll-padding" rel="nofollow">scroll padding</a>.
+                     <li>ページにはスティッキーフッター（ビューポートの下部に貼り付けられる）がある。ページをタブで下に移動すると、ビューポート内のコンテンツが十分な <a href="https://www.w3.org/TR/css-scroll-snap/#propdef-scroll-padding" rel="nofollow">scroll padding</a> なしにスクロールするため、フォーカスされた項目がフッターによって部分的に隠される。
                      </li>
                      
                   </ul>
