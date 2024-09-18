@@ -78,130 +78,88 @@
             <aside class="box">
                <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>Content does not restrict its view and operation to a single display orientation,
-                     such as portrait or landscape, unless a specific display orientation is <a href="#dfn-essential">essential</a>.
+                  <p>コンテンツは、その表示及び操作を、縦向き (portrait) 又は横向き (landscape) のような単一のディスプレイの向きに制限しない。ただし、特定のディスプレイの向きが<a href="#dfn-essential">必要不可欠</a>な場合は除く。
                   </p>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
-                     <p>Examples where a particular display orientation may be essential are a bank check,
-                        a piano application, slides for a projector or television, or virtual reality content
-                        where content is not necessarily restricted to landscape or portrait display orientation.
+                     <p class="note-title marker">注記</p>
+                     <p>特定のディスプレイの向きが必要不可欠となり得る例としては、銀行の小切手、ピアノのアプリケーション、プロジェクターもしくはテレビ向けのスライド、又はコンテンツが必ずしも横向き (landscape) もしくは縦向き (portrait) のディスプレイの向きに制限されないバーチャルリアリティのコンテンツが挙げられる。
                      </p>
                   </div>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   				
-                  <dt>Goal</dt>
-                  <dd>Devices can be used in any orientation.</dd>
+                  <dt>目標</dt>
+                  <dd>デバイスがどの向きであっても使用できるようにする。</dd>
                   				
-                  <dt>What to do</dt>
-                  <dd>Don't lock content to either portrait or landscape presentation.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>コンテンツを、縦向き (portrait) 又は横向き (landscape) のいずれかの提示に固定しない。</dd>
                   				
-                  <dt>Why it's important</dt>
-                  <dd>Wheelchair users and others may have devices mounted in a fixed orientation.</dd>
+                  <dt>なぜそれが重要か</dt>
+                  <dd>車いすの利用者など、固定された向きでデバイスが取り付けられている可能性がある。</dd>
                   			
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The intent of this Success Criterion is to ensure that content displays in the orientation
-                  (portrait or landscape) preferred by the user. Some websites and applications automatically
-                  set and restrict the screen to a particular display orientation and expect
-                  			that users will respond by rotating their device to match, but this can create
-                  problems. Some users have their devices mounted
-                  			in a fixed orientation (e.g. on the arm of a power wheelchair). Therefore, websites
-                  and applications need to support both orientations
-                  			by not restricting the orientation. Changes in content or functionality due to
-                  the size of display are not covered by this criterion which is focused on restrictions
-                  of orientation.
+               <h2>意図</h2>
+               <p>この達成基準の意図は、コンテンツがユーザーの好みの向き (縦向き又は横向き) で表示されるようにすることである。ウェブサイトやアプリケーションの中には、自動的に画面を特定の表示方向に制限し利用者がデバイスを適応するように回転させることを期待するものがあり、これにより問題が生じる可能性がある。利用者の中には、 (例えば電動車椅子の腕に) 固定された向きでデバイスを取り付けている。したがって、ウェブサイトやアプリケーションは向きを制限せず両方の向きをサポートする必要がある。ディスプレイのサイズによるコンテンツ又は機能の変更は、向きの制限に焦点を当てているこの達成基準では対象としていない。
                </p>
-               <p>Historically, devices tended to have a fixed-orientation display, and all content
-                  was created to match that display orientation. Today, most handhelds and many other
-                  devices (e.g., monitors) have a hardware-level ability to dynamically adjust default
-                  display orientation based on sensor information. The goal of this Success Criterion
-                  is that authors should never restrict content's orientation, thus ensuring that it
-                  always match the device display orientation.
+               <p>歴史的に、デバイスは固定の向きのディスプレイを持つ傾向があり、全てのコンテンツはディスプレイの向きに合わせて制作されてきた。今日では、ほとんどの携帯情報端末及びその他多くのデバイス (モニターなど) はセンサー情報に基づいてデフォルトのディスプレイの向きを動的に調整するハードウェアレベルの機能を備えている。この達成基準の目的は、コンテンツ制作者がコンテンツの向きを決して制限しないことで、コンテンツが常にデバイスのディスプレイの向きに一致することを保証することである。
                </p>
-               <p>It is important to distinguish between an author's responsibility not to restrict
-                  content to a specific orientation, and device-specific settings governing the locking
-                  of display orientation.
+               <p>コンテンツを特定の向きに制限しないという制作者の責任と、ディスプレイの向きの固定を調整するデバイス固有の設定とを区別することが重要である。
                </p>
-               <p>Many hand-held devices offer a mechanical switch or a system setting (or both) to
-                  allow the user to lock the device display to a specific orientation. Where a user
-                  decides to lock their entire device to an orientation, all applications are expected
-                  to pick up that setting and to display content accordingly.
+               <p>多くの携帯情報端末は、利用者がディスプレイを特定の向きに固定することを可能にするために、機械的なスイッチ又はシステム設定 (又はその両方) を提供している。利用者がデバイス全体の向きを固定した場合、全てのアプリケーションはその設定を取得し、向きに応じてコンテンツを表示することが期待される。
                </p>
-               <p>This Success Criterion complements device "lock orientation" settings. A web page
-                  that does not restrict its display orientation will always support the system-level
-                  orientation setting, since the system setting is picked up by the user agent. Alternatively,
-                  where a device-level orientation lock is not in place, the user agent should display
-                  the page according to the orientation of the device (either its default, or the current
-                  orientation determined by any device sensors).
+               <p>この達成基準は、デバイスの「向きを固定する」設定を補完するものである。システム設定はユーザエージェントによって選択されるため、ディスプレイの向きを制限しないウェブページは常にシステムレベルの表示設定をサポートする。あるいは、デバイスレベルの向き固定が設定されていない場合、ユーザエージェントはデバイスの向き (デフォルト、又は任意のデバイスセンサーによって特定された現在の向きのいずれか) によってページを表示するべきである。
                </p>
-               <p>The exception for things considered essential is aimed at situations where the content
-                  would only be understood in a particular orientation, or where the technology restricts
-                  the possible orientations. If content is aimed at a specific environment which is
-                  only available in one orientation (such as a television) then the content can restrict
-                  the orientation. Technologies such as virtual reality use screens within goggles that
-                  cannot change orientation relative to the user's eyes.
+               <p>必要不可欠と見なされるものの例外は、コンテンツが特定の方向でのみ理解される状況、又は技術が可能な表示の向きを制限する状況を対象としている。コンテンツが一つの表示の向きでのみ利用可能な特定の環境 (テレビなど) を対象としている場合、コンテンツは表示の向きを制限する可能性がある。バーチャルリアリティなどの技術は、利用者の目に対して表示の向きを変えることができないゴーグル内部で画面を使用する。
                </p>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>利点</h2>
                <ul>
                   					
-                  <li>Users with dexterity impairments, who have a mounted device will be able to use the
-                     content in their fixed orientation.
+                  <li>固定したデバイスを持つ巧緻性障害の利用者が、自分の決めた向きでコンテンツを利用できる。
                   </li>
                   					
-                  <li>Users with low-vision will be able to view content in the orientation that works best
-                     for them, for example to increase the text size by viewing content in landscape.
+                  <li>ロービジョンの利用者が、横長のコンテンツを見るときにテキストサイズを大きくするなど、自分に最適な向きでコンテンツを見ることができる。
                   </li>
                   				
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>事例</h2>
                <ul>
                   				
-                  <li><strong>Example 1: Online video site</strong><br />
-                     				A video is shown in either portrait or in landscape based on the user's chosen
-                     orientation.
+                  <li><strong>事例 1: オンライン映像サイト</strong><br />
+                     				利用者が選択した向きに基づいて、映像が縦向き又は横向きに表示される。
                   </li>
                   				
-                  <li><strong>Example 2: Messaging website</strong><br />
-                     				A messaging website can display messages in both portrait and landscape orientations.
+                  <li><strong>事例 2: メッセージングウェブサイト</strong><br />
+                     				メッセージングウェブサイトは縦向きと横向きの両方でメッセージを表示できる。
                      
                   </li>
                   				
-                  <li><strong>Example 3: eReader web app</strong><br />
-                     				An eReader web app can display the contents of a book in both portrait and landscape
-                     orientation.
+                  <li><strong>事例 3: 電子書籍ウェブアプリ</strong><br />
+                     				電子書籍ウェブアプリは縦向きと横向きの両方で本の内容を表示できる。
                   </li>
                   				
-                  <li><strong>Example 4: Check deposit in banking app</strong><br />
-                     				An example where orientation is essential could be a banking app that requires
-                     the device be in landscape mode to easily and accurately capture an image of a check
-                     for deposit. These paper forms are typically about twice as wide as they are high.
+                  <li><strong>事例 4: 銀行アプリで預金を確認する</strong><br />
+                     				向きが必要不可欠な例としては、預金小切手の画像を簡単かつ正確に読み取るために、ランドスケープモードにする必要がある銀行アプリがある。これらの紙の形は、通常高さの約二倍の幅がある。
                   </li>
                   				
-                  <li><strong>Example 5: Piano app</strong><br />
-                     				An example where orientation is essential could be a piano app that requires the
-                     device to be in landscape mode to allow room for enough of the piano keys to be functionally
-                     usable. Since a piano app is emulating a physical piano keyboard that needs to retain
-                     relative physical characteristics between keys, either too few keys would be available,
-                     or the keys would be much too narrow.
+                  <li><strong>事例 5: ピアノアプリ</strong><br />
+                     				向きが必要不可欠な例としては、ピアノの鍵を十分に機能的に使用できるスペースを確保するために、ランドスケープモードにする必要があるピアノアプリがある。ピアノアプリは、鍵の間の物理的な特徴を保持する必要がある物理的なピアノの鍵盤を模しているため、使用できる鍵が少なすぎるか、鍵が狭くなりすぎるかのいずれかになる。
                   </li>
                   			
                </ul>
             </section>
             <section id="resources">
-               <h2>Related Resources</h2>
-               <p>Resources are for information purposes only, no endorsement implied.</p>
+               <h2>関連リソース</h2>
+               <p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p>
                <ul>
                   				
                   <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model/Managing_screen_orientation">Managing Screen Orientation</a></li>
@@ -221,47 +179,41 @@
                </ul>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
+                  <h3>十分なテクニック</h3>
                   <ul>
                      			
-                     <li><a href="https://w3c.github.io/wcag/techniques/general/G214">G214: Using a control to allow access to content in different orientations which is otherwise
-                           restricted</a></li>
+                     <li><a href="https://waic.jp/translations/WCAG21/Techniques/general/G214">G214: 別の方法で制限されている、異なる向きのコンテンツへのアクセスを許可するコントロールを使用する</a></li>
                      				
                   </ul>
                </section>
                <section id="failure">
-                  <h3>Failures</h3>
-                  <p>The following are common mistakes that are considered failures of this Success Criterion
-                     by the WCAG Working Group.
+                  <h3>失敗例</h3>
+                  <p>以下に挙げるものは、WCAG ワーキンググループが達成基準の失敗例とみなした、よくある間違いである。
                   </p>
                   <ul>
-                     					
-                     <li><a href="https://w3c.github.io/wcag/techniques/failures/F97">F97: Failure due to locking the orientation to landscape or portrait view</a></li>
-                     					
-                     <li><a href="https://w3c.github.io/wcag/techniques/failures/F100">F100: Failure of Success Criterion 1.3.4 due to showing a message asking to reorient device</a></li>
-                     				
-                  </ul>
+                  					
+                  <li><a href="https://waic.jp/translations/WCAG21/Techniques/failures/F97">F97: 達成基準 1.3.4 の失敗例 － 表示の向きを縦向き (portrait) 又は横向き (landscape) に固定している</a></li>
+
+                  <li><a href="https://waic.jp/translations/WCAG21/Techniques/failures/F100">F100: 達成基準 1.3.4 の失敗例 － デバイスの向きを変更するように促すメッセージが表示される</a></li>
+                  				
+               </ul>
                </section>
             </section>
             <section id="key-terms">
                <details>
                   <summary>
-                     <h2>Key Terms</h2>
+                     <h2>重要な用語</h2>
                   </summary>
-                  <dt id="dfn-essential">essential</dt>
+                  <dt id="dfn-essential">必要不可欠 (essential)</dt>
                   <dd>
                      <definition xmlns="">
                         					
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">if removed, would fundamentally change the information or functionality of the content,
-                           <strong>and</strong> information and functionality cannot be achieved in another way that would conform
+                        <p xmlns="http://www.w3.org/1999/xhtml">もし取り除いてしまうと、コンテンツの情報又は機能を根本的に変えてしまい、<strong>かつ</strong>、適合する他の方法では情報及び機能を実現できない。
                            
                         </p>
                         				
@@ -271,14 +223,11 @@
                </details>
             </section>
             <section id="test-rules">
-               <h2>Test Rules</h2>
-               <p>The following are Test Rules for certain aspects of this Success Criterion. It is
-                  not necessary to use these particular Test Rules to check for conformance with WCAG,
-                  but they are defined and approved test methods. For information on using Test Rules,
-                  see <a href="understanding-act-rules.html">Understanding Test Rules for WCAG Success Criteria</a>.
+               <h2>テストルール</h2>
+               <p>以下は、この達成基準の特定の側面に関するテストルールである。この特定のルールを使用して WCAG に適合しているかどうかを確認する必要はないが、これらのルールは定義され、承認されたテスト方法である。テストルールの使用については、<a href="understanding-act-rules.html">WCAG 達成基準のテストルールを理解する</a>を参照のこと。
                </p>
                <ul>
-                  <li><a href="/WAI/standards-guidelines/act/rules/b33eff/proposed/">Orientation of the page is not restricted using CSS transforms</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/">Orientation of the page is not restricted using CSS transforms</a></li>
                </ul>
             </section><a class="button button-backtotop" href="#top"><span>
                   <svg focusable="false" aria-hidden="true" class="icon-arrow-up " viewBox="0 0 26 28">
