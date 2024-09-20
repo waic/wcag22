@@ -78,15 +78,14 @@
             <aside class="box">
                <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>The purpose of each input field collecting information about the user can be <a href="#dfn-programmatically-determined">programmatically determined</a> when:
+                  <p>利用者の情報を集める入力フィールドのそれぞれの目的は、次の場合に<a href="#dfn-programmatically-determined">プログラムによる解釈</a>が可能である:
                   </p>
                   <ul>
                      
-                     <li>The input field serves a purpose identified in the <a href="#input-purposes">Input Purposes for user interface components section</a>; and
+                     <li>入力フィールドが、<a href="https://waic.jp/translations/WCAG22/#input-purposes">ユーザインタフェース コンポーネントの入力目的の節</a>で示される目的を提供している、かつ
                      </li>
                      
-                     <li>The content is implemented using technologies with support for identifying the expected
-                        meaning for form input data.
+                     <li>フォーム入力データとして想定される意味の特定をサポートする技術を用いて、コンテンツが実装されている。
                      </li>
                      
                   </ul>
@@ -94,161 +93,103 @@
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   
-                  <dt>Goal</dt>
-                  <dd>It is easier to fill out forms.</dd>
+                  <dt>目標</dt>
+                  <dd>フォームへの記入を、より簡単にできるようにする。</dd>
                   
-                  <dt>What to do</dt>
-                  <dd>Use code to indicate the purpose of common inputs, where technology allows.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>コードを用いて、技術的に可能であれば共通の入力目的を示す。</dd>
                   
-                  <dt>Why it's important</dt>
-                  <dd>Some people with cognitive disabilities may not understand the input's purpose from
-                     the label alone.
-                  </dd>
+                  <dt>なぜそれが重要か</dt>
+                  <dd>認知障害を持つ人の中には、ラベルだけでは入力フィールドの目的を理解できない人がいる。</dd>
                   
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The intent of this Success Criterion is to ensure that the purpose of a form input
-                  collecting information about the user can be programmatically determined, so that
-                  user agents can extract and present this purpose to users using different modalities.
-                  The ability to programmatically declare the specific kind of data expected in a particular
-                  field makes filling out forms easier, especially for people with certain cognitive
-                  disabilities.
+               <h2>意図</h2>
+               <p>この達成基準の意図は、利用者に関する情報を収集するフォームの入力の目的を、プログラムによる解釈を可能にして、その結果、ユーザエージェントが異なるモダリティを使用し、その目的を抽出して利用者に提示できるようにすることである。特定のフィールドで期待される特定の種類のデータをプログラムで宣言する機能により、とりわけ特定の認知障害を持つ人々にとって、フォームへの入力が容易になる。
                </p>
-               <p>Appropriate visible labels and instruction can help users understand the purpose of
-                  form input fields, but users may benefit from having fields that collect specific
-                  types of information be rendered in an unambiguous, consistent, and possibly customized
-                  way for different modalities - either through defaults in their user agent, or through
-                  the aid of assistive technologies.
+               <p>適切なラベルと説明は、利用者が入力フォームフィールドの目的を理解するのに役立つが、利用者は、特定の種類の情報を収集するフィールドを、さまざまなモダリティに合わせて曖昧さがなく一貫性がありカスタマイズ可能な方法で (ユーザエージェントのデフォルトで、又は支援技術の助けを借りてのどちらかで) レンダリングできるという利点がある。
                </p>
-               <p>For some input fields, the <code>type</code> attribute already offers a way to broadly specify the intention of the input field,
-                  for example, <code>&lt;input type="tel"&gt;</code>, <code>&lt;input type="email"&gt;</code>, or <code>&lt;input type="password"&gt;</code>. However, these are only very broad categories, describing the type of input, but
-                  not necessarily its purpose, especially as it relates to user-specific input fields.
-                  As an example, <code>type="email"</code> indicates that the field is for an e-mail address but does not clarify if the purpose
-                  is for entering the user's e-mail address or some other person's e-mail.
+               <p>一部の入力フィールドでは、<code>type</code> 属性が既に入力フィールドの意図を広く指定する方法を提供している (例えば <code>&lt;input type="tel"&gt;</code> や <code>&lt;input type="email"&gt;</code>、<code>&lt;input type="password"&gt;</code> など) 。しかし、これらは入力の種類を説明する非常に広範なカテゴリに過ぎないが、特に利用者固有の入力フィールドに関するものであるため、必ずしもその目的は説明されていない。例えば、<code>type="email"</code> はそのフィールドがEメールアドレス用のフィールドであることを示すが、その目的が利用者のEメールアドレスを入力するためのものなのか、他の人のEメールを入力するためのものかは明確にしない。
                </p>
-               <p>This success criterion defines the types of user interface component input purposes,
-                  found in <a href="https://www.w3.org/TR/WCAG21/#input-purposes">Section 7 of the WCAG 2.1 Recommendation</a>, that must be programmatically identifiable. When these user input purposes are present,
-                  and if the technology supports doing so, the field purpose must be programmatically
-                  identifiable.
+               <p>この達成基準は <a href="https://waic.jp/translations/WCAG22/#input-purposes">WCAG 2.2 勧告のセクション 7</a> にある、ユーザインタフェースコンポーネントの入力目的の種類を定義し、プログラムによって特定可能でなければならない。これらの利用者の入力目的が存在し、それを技術がサポートしている場合、フィールドの目的はプログラムによって特定可能でなければならない。
                </p>
-               <p>The HTML <code>autocomplete</code> attribute only accepts a certain number of specific well-defined fixed values. This
-                  allows a more fine-grained definition or identification of purpose than the type attribute,
-                  for example, by allowing the author to specify a specific type of name: Name (<code>autocomplete="name"</code>), Given Name (<code>autocomplete="given-name"</code>), Family Name (<code>autocomplete="family-name"</code>), as well as Username (<code>autocomplete="username"</code>), and Nickname (<code>autocomplete="nickname"</code>).
+               <p>HTML の <code>autocomplete</code> 属性は、一定数の特定の明確に定義された固定値のみを受け入れる。これにより、例えばコンテンツ制作者が特定のタイプの名前 (名前 (<code>autocomplete="name"</code>)、Given Name (<code>autocomplete="given-name"</code>)、Family Name (<code>autocomplete="family-name"</code>)、に加えてユーザ名 (<code>autocomplete="username"</code>) 及びニックネーム (<code>autocomplete="nickname"</code>)) を指定できるようにすることで、<code>type</code> 属性よりもよりきめ細かい定義又は目的の特定が可能になる。
                </p>
-               <p>By adopting and repurposing this predefined taxonomy of definitions, user agents and
-                  assistive technologies can now present the purpose of the inputs to users in different
-                  modalities. For example, assistive technologies may display familiar icons next to
-                  input fields to help users who have difficulties reading. An icon of a birthday cake
-                  may be shown in front of an input field with <code>autocomplete="bday"</code>, or the icon of a telephone in front of an input field with <code>autocomplete="tel"</code>.
+               <p>この所定の定義の分類法を採用して再利用することで、ユーザエージェントと支援技術は、異なるモダリティで利用者に入力の目的を提示できる。例えば、読むのが困難な利用者を助けるために、支援技術は入力フィールドの隣に見慣れたアイコンを表示してもよい。誕生日ケーキのアイコンを <code>autocomplete="bday"</code> の入力フィールドの前に表示してもよいし、電話のアイコンを <code>autocomplete="tel"</code> の入力フィールドの前に表示してもよい。
                </p>
-               <p>In addition to repurposing this taxonomy, when the autocomplete attribute technique
-                  is used to meet this Success Criterion, browsers and other user-agents can suggest
-                  and 'autofill' the right content by autocompleting these fields based on past user
-                  input stored in the browser. By defining more granular definitions of common input
-                  purposes, for example “Birthday” (<code>autocomplete="bday"</code>), browsers can store personalized values for each of these fields (the user's birthday
-                  date). The user is relieved of having to type the information and can instead confirm
-                  or, if needed, change the value of the field, a significant benefit for users with
-                  memory issues, dyslexia, and other disabilities. Because the <code>autocomplete</code> values are independent of language, users that may not be familiar with the text
-                  used to visually identify user input fields (the label) can still have that purpose
-                  consistently identified to them due to the fixed taxonomy of terms.
+               <p>この分類法を再利用することに加えて、 autocomplete 属性を使用してこの達成基準を満たす場合、ブラウザ及び他のユーザエージェントは、ブラウザに保存された過去の利用者の入力に基づいてこれらのフィールドを自動補完して正しいコンテンツを提案及び「自動入力」できる。一般的な入力目的のより詳細な定義、例えば「Birthday」(<code>autocomplete="bday"</code>) を定義することによって、ブラウザはこれらの各フィールド (利用者の誕生日) にパーソナライズされた値を保存できる。利用者は情報を入力する必要がなくなり、代わりに入力値を確認又は必要に応じてフィールドの値を変更できる。これは記憶の問題、失読症、その他の障害を持つ利用者にとって著しい恩恵である。<code>autocomplete</code> の値は言語に依存しないため、ユーザ入力フィールドを視覚的に特定するために利用されるテキスト (ラベル) に馴染みのない利用者は、用語の固定された分類法によって、その目的を一貫して特定できる。
                </p>
-               <p>If an input field accepts two different types of input purpose (as in combined user
-                  name/user email fields) and the technology used does not allow multiple purpose values
-                  to be defined, it is valid to provide either one or the other value or leave out the
-                  designation of input purpose altogether.
+               <p>一つの入力フィールドが二つの異なる種類の入力目的を受け入れ (ユーザ名/利用者の電子メールフィールドを兼ね合わせるような)、かつ使用されている技術で複数の目的の値を定義できない場合、どちらか一方の値を提供する、又は入力目的の指定を完全に省略するのが妥当である。
                </p>
-               <p>When the user agent and assistive technology support for other metadata formats matures,
-                  metadata schemes like the <a href="https://www.w3.org/TR/adapt-symbols/">WAI-Adapt: Symbols Module</a> may be used in addition or instead of the HTML autocomplete attribute to identify
-                  the purpose of input fields. They can also support automated adaptations that identify
-                  and match author-provided input labels to defined vocabularies or symbols that are
-                  used instead for labelling inputs.
+               <p>他のメタデータフォーマットに対するユーザエージェントと支援技術のサポートが成熟すると、入力フィールドの目的を特定するために HTML の autocomplete 属性に加えて、又はその代わりに <a href="https://www.w3.org/TR/adapt-symbols/">WAI-Adapt: Symbols Module</a> のようなメタデータスキームが使用される。それらのメタデータスキームはまた、コンテンツ制作者が提供した入力ラベルを特定して、入力のラベルづけの代わりに使用される定義済みの語彙又は記号に一致させる自動適応もサポートできる。
                </p>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>利点</h2>
                <ul>
                   
-                  <li>People with language and memory related disabilities or disabilities that affects
-                     executive function and decision-making benefit from the browser auto-filling personal
-                     information (such as name or address) when the autocomplete attribute is used to meet
-                     this Success Criterion, which means information does not need to be remembered by
-                     the user.
+                  <li>この達成基準を満たすために autocomplete 属性が使われるとき、言語及び記憶に関連した障害を持つ人々、又は、遂行機能及び意思決定に影響を与える障害を持つ人々が、ブラウザが個人情報 (名前や住所などの) を自動入力することで恩恵を受ける。つまり、利用者がそれらの情報を記憶する必要がない。
                   </li>
                   
-                  <li>People with cerebral palsy, stroke, head injury, motor neuron disease or learning
-                     disability sometimes prefer images for communication. They can employ assistive technology
-                     which adds icons to input fields to communicate the purpose of the fields visually.
+                  <li>脳性麻痺、脳卒中、頭部損傷、運動ニューロン疾患又は学習障害を持つ人々は、コミュニケーションのために画像を好むことがある。彼らは、フィールドの目的を視覚的に伝えるために、入力フィールドにアイコンを追加する支援技術を使用できる。
                   </li>
                   
-                  <li>People with motor impairments also benefit from reducing the need for manual input
-                     when filling out forms.
+                  <li>運動障害を持つ人々はまた、フォームを埋めるときに手入力の必要性を減らすことで恩恵を受ける。
                   </li>
                   
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>事例</h2>
                <dl>
                   
-                  <dt>A contact form using autofill</dt>
+                  <dt>自動入力を使用したコンタクトフォーム</dt>
                   
-                  <dd>A contact form auto-fills in the fields for name, street, post code, city, telephone
-                     number and email address from autofill values stored in the user's browser. Assistive
-                     technology can offer a customized way of identifying particular input fields, for
-                     example drawing on a set of symbols / icons that is familiar to the user, to communicate
-                     the purpose of the fields visually.
+                  <dd>コンタクトフォームは、利用者のブラウザに保存されている自動入力の値から、名前、郵便番号、市町村、番地、電話番号、電子メールアドレスの各フィールドに自動入力する。支援技術は、個別の入力フィールドを特定するためのカスタマイズされた方法を提供する。例えば、フィールドの目的を視覚的に伝えるために、利用者に馴染みのある記号／アイコンの組み合わせを描画するなどの方法である。
                   </dd>
                   
-                  <dt>An order form with separate billing and shipping address</dt>
+                  <dt>請求先住所と配送先住所が別の注文フォーム</dt>
                   
-                  <dd>A product order form fills in the address fields for billing address and a separate
-                     set of address fields for the shipping address, using the autofill detail tokens 'billing'
-                     and 'shipping'
+                  <dd>製品注文フォームは、autofill の詳細トークン「billing」と「shipping」を使用して、請求先住所の住所フィールドと別の配送先住所の住所フィールドを入力する。
                   </dd>
                   
-                  <dt>A contact form using icons</dt>
+                  <dt>アイコンを使ったコンタクトフォーム</dt>
                   
-                  <dd>A browser plugin to add icons inserts icons representing the person's name, home address,
-                     telephone number and email address to  identify the input purpose visually.
+                  <dd>アイコンを追加するブラウザプラグインは、入力目的を視覚的に特定するために、人の名前、自宅住所、電話番号及び電子メールアドレスを表すアイコンを挿入する。
                   </dd>
                   
                </dl>
             </section>
             <section id="resources">
-               <h2>Related Resources</h2>
-               <p>Resources are for information purposes only, no endorsement implied.</p>
+               <h2>関連リソース</h2>
+               <p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p>
                <ul>
                   <li><a href="https://www.w3.org/TR/coga-gap-analysis/#table3">COGA Gap Analysis Table 3: Entering Data, Error Prevention, &amp; Recovery</a></li>
                </ul>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
+                  <h3>十分なテクニック</h3>
                   <ul>
                      
-                     <li><a href="https://w3c.github.io/wcag/techniques/html/H98">H98: Using HTML 5.2 autocomplete attributes</a></li>
+                     <li><a href="https://waic.jp/translations/WCAG21/Techniques/html/H98">H98: HTML 5.2 autocomplete 属性を使用する</a></li>
                      
                   </ul>
                </section>
                <section id="failure">
-                  <h3>Failures</h3>
-                  <p>The following are common mistakes that are considered failures of this Success Criterion
-                     by the WCAG Working Group.
+                  <h3>失敗例</h3>
+                  <p>以下に挙げるものは、WCAG ワーキンググループが達成基準の失敗例とみなした、よくある間違いである。
                   </p>
                   <ul>
                      
-                     <li><a href="https://w3c.github.io/wcag/techniques/failures/F107">F107: Failure of Success Criterion 1.3.5 due to incorrect autocomplete attribute values</a></li>
+                     <li><a href="https://waic.jp/translations/WCAG21/Techniques/failures/F107">F107: 達成基準 1.3.5 の失敗例 － 誤った autocomplete 属性値</a></li>
                      
                   </ul>
                </section>
@@ -256,50 +197,37 @@
             <section id="key-terms">
                <details>
                   <summary>
-                     <h2>Key Terms</h2>
+                     <h2>重要な用語</h2>
                   </summary>
-                  <dt id="dfn-assistive-technology">assistive technology</dt>
+                  <dt id="dfn-assistive-technology">支援技術 (assistive technology)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">hardware and/or software that acts as a <a href="#dfn-user-agent">user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements
-                           of users with disabilities that go beyond those offered by mainstream user agents
+                        <p xmlns="http://www.w3.org/1999/xhtml">障害のある利用者の要件を満たすために、主流の<a href="#dfn-user-agent">ユーザエージェント</a>が提供する機能を超えた機能を提供するような、ユーザエージェントとして動作する、又は主流のユーザエージェントと共に動作するハードウェア及び／又はソフトウェア。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Functionality provided by assistive technology includes alternative presentations
-                              (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
-                              voice), additional navigation or orientation mechanisms, and content transformations
-                              (e.g., to make tables more accessible).
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術が提供する機能としては、代替の提示 (例: 合成音声や拡大表示したコンテンツ)、代替入力手法 (例: 音声認識)、付加的なナビゲーション又は位置確認のメカニズム、及びコンテンツ変換 (例: テーブルをよりアクセシブルにするもの) などを挙げることができる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Assistive technologies often communicate data and messages with mainstream user agents
-                              by using and monitoring APIs.
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術は、API を利用、監視することで、主流のユーザエージェントとデータやメッセージのやりとりをすることが多い。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The distinction between mainstream user agents and assistive technologies is not absolute.
-                              Many mainstream user agents provide some features to assist individuals with disabilities.
-                              The basic difference is that mainstream user agents target broad and diverse audiences
-                              that usually include people with and without disabilities. Assistive technologies
-                              target narrowly defined populations of users with specific disabilities. The assistance
-                              provided by an assistive technology is more specific and appropriate to the needs
-                              of its target users. The mainstream user agent may provide important functionality
-                              to assistive technologies like retrieving Web content from program objects or parsing
-                              markup into identifiable bundles.
+                           <p class="note-title marker">注記</p>
+                           <p>主流のユーザエージェントと支援技術との区別は、絶対的なものではない。多くの主流のユーザエージェントは、障害のある個人を支援する機能を提供している。基本的な差異は、主流のユーザエージェントが障害のある人もない人も含めて、広く多様な利用者を対象にしているのに対し、支援技術は、特定の障害のある利用者という、より狭く限られた人たちを対象にしているということである。支援技術により提供される支援は、対象とする利用者に特化した、よりニーズに適したものである。主流のユーザエージェントは、プログラムオブジェクトからのウェブコンテンツの抽出、マークアップの識別可能な構造への解釈といった、重要な機能を支援技術に対して提供する場合がある。
                               
                            </p>
                         </div>
@@ -307,8 +235,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Assistive technologies that are important in the context of this document include
-                              the following:
+                           <p>この文書の文脈において重要な支援技術としては、以下のものが挙げられる:
                               
                            </p>
                            
@@ -316,38 +243,29 @@
                            <ul>
                               
                               
-                              <li>screen magnifiers, and other visual reading assistants, which are used by people with
-                                 visual, perceptual and physical print disabilities to change text font, size, spacing,
-                                 color, synchronization with speech, etc. in order to improve the visual readability
-                                 of rendered text and images;
+                              <li>画面拡大ソフト及びその他の視覚的な表示に関する支援技術。視覚障害、知覚障害、及び読書困難などの障害のある人が、レンダリング後のテキスト及び画像の視覚的な読みやすさを改善するために、テキストのフォント、サイズ、間隔、色、音声との同期などを変更するのに使用している。
                                  
                               </li>
                               
                               
-                              <li>screen readers, which are used by people who are blind to read textual information
-                                 through synthesized speech or braille;
+                              <li>スクリーンリーダー。全盲の人がテキスト情報を合成音声あるいは点字で読み取るために使用している。
+                              </li>
+                              
+                              
+                              <li>音声変換ソフトウェア。認知障害、言語障害、及び学習障害のある人が、テキストを合成音声に変換するために使用している。
                                  
                               </li>
                               
                               
-                              <li>text-to-speech software, which is used by some people with cognitive, language, and
-                                 learning disabilities to convert text into synthetic speech;
+                              <li>音声認識ソフトウェア。何らかの身体障害のある利用者が使用することがある。</li>
+                              
+                              
+                              <li>代替キーボード。特定の身体障害のある人がキーボード操作をシミュレートするのに使用している (ヘッドポインタ、シングルスイッチ、呼気・吸気スイッチ、及びその他の特別な入力デバイスを使った代替キーボードを含む)。
                                  
                               </li>
                               
                               
-                              <li>speech recognition software, which may be used by people who have some physical disabilities;</li>
-                              
-                              
-                              <li>alternative keyboards, which are used by people with certain physical disabilities
-                                 to simulate the keyboard (including alternate keyboards that use head pointers, single
-                                 switches, sip/puff and other special input devices.);
-                                 
-                              </li>
-                              
-                              
-                              <li>alternative pointing devices, which are used by people with certain physical disabilities
-                                 to simulate mouse pointing and button activations.
+                              <li>代替ポインティングデバイス。特定の身体障害のある人がマウスポインタとボタンの動きをシミュレートするのに使用している。
                                  
                               </li>
                               
@@ -358,21 +276,19 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-programmatically-determined">programmatically determined</dt>
+                  <dt id="dfn-programmatically-determined">プログラムによる解釈 (programmatically determined)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">determined by software from author-supplied data provided in a way that different
-                           <a href="#dfn-user-agent">user agents</a>, including <a href="#dfn-assistive-technology">assistive technologies</a>, can extract and present this information to users in different modalities
+                        <p xmlns="http://www.w3.org/1999/xhtml"><a href="#dfn-assistive-technology">支援技術</a>を含む様々な<a href="#dfn-user-agent">ユーザエージェント</a>が抽出でき、利用者に様々な感覚モダリティで提示できるような形のデータがコンテンツ制作者によって提供されたとき、そのデータがソフトウェアによって解釈されること。
                            
                         </p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Determined in a markup language from elements and attributes that are accessed directly
-                              by commonly available assistive technology.
+                           <p>マークアップ言語で、一般に入手可能な支援技術が直接アクセスできる要素と属性から解釈される。
                               
                            </p>
                            
@@ -381,9 +297,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Determined from technology-specific data structures in a non-markup language and exposed
-                              to assistive technology via an accessibility API that is supported by commonly available
-                              assistive technology.
+                           <p>非マークアップ言語の技術特有のデータ構造から解釈され、一般に入手可能な支援技術がサポートするアクセシビリティ API を通じて支援技術に提供される。
                               
                            </p>
                            
@@ -392,17 +306,17 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-user-agent">user agent</dt>
+                  <dt id="dfn-user-agent">ユーザエージェント (user agent)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">any software that retrieves and presents Web content for users</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ウェブコンテンツを取得して利用者に提示するあらゆるソフトウェア。</p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technology">assistive technologies</a> — that help in retrieving, rendering, and interacting with Web content.
+                           <p>ウェブコンテンツの取得、レンダリング及びインタラクションを支援する、ウェブブラウザ、メディアプレーヤ、プラグイン、及びその他のプログラム (<a href="#dfn-assistive-technology">支援技術</a>も含む)。
                               
                            </p>
                            
@@ -414,14 +328,11 @@
                </details>
             </section>
             <section id="test-rules">
-               <h2>Test Rules</h2>
-               <p>The following are Test Rules for certain aspects of this Success Criterion. It is
-                  not necessary to use these particular Test Rules to check for conformance with WCAG,
-                  but they are defined and approved test methods. For information on using Test Rules,
-                  see <a href="understanding-act-rules.html">Understanding Test Rules for WCAG Success Criteria</a>.
+               <h2>テストルール</h2>
+               <p>以下は、この達成基準の特定の側面に関するテストルールである。この特定のルールを使用して WCAG に適合しているかどうかを確認する必要はないが、これらのルールは定義され、承認されたテスト方法である。テストルールの使用については、<a href="understanding-act-rules.html">WCAG 達成基準のテストルールを理解する</a>を参照のこと。
                </p>
                <ul>
-                  <li><a href="/WAI/standards-guidelines/act/rules/73f2c2/">Autocomplete attribute has valid value</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/73f2c2/">Autocomplete attribute has valid value</a></li>
                </ul>
             </section><a class="button button-backtotop" href="#top"><span>
                   <svg focusable="false" aria-hidden="true" class="icon-arrow-up " viewBox="0 0 26 28">
