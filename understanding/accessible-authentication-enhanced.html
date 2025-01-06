@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  3.3.9: Accessible Authentication (Enhanced) | WAI | W3C</title>
+      <title>解説書 達成基準 3.3.9 アクセシブルな認証 (高度) | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -35,16 +35,16 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"><a href="input-assistance">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Input Assistance</a></li>
+                        </svg> ガイドライン: 入力支援</a></li>
                   <li class="nav__item"><a href="accessible-authentication-minimum">
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-left-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
-                        </svg>Previous SC: Accessible Authentication (Minimum)</a></li>
+                        </svg>前: アクセシブルな認証 (最低限)</a></li>
                   <li class="nav__item"></li>
                </ul>
             </nav>
@@ -53,39 +53,38 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#resources">Related Resources</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
-                     <li><a href="#key-terms">Key Terms</a></li>
+                     <li><a href="#brief">要約</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#benefits">利点</a></li>
+                     <li><a href="#examples">事例</a></li>
+                     <li><a href="#resources">関連リソース</a></li>
+                     <li><a href="#techniques">テクニック</a></li>
+                     <li><a href="#key-terms">重要な用語</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				SC 3.3.9:</span>Accessible Authentication (Enhanced) (Level AAA)
+            <h1><span class="standalone-resource__type-of-guidance">解説書 
+                  				達成基準 3.3.9:</span>アクセシブルな認証 (高度) (レベル AAA)
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>A <a href="#dfn-cognitive-function-test">cognitive function test</a> (such as remembering a password or solving a puzzle) is not required for any step
-                     in an authentication <a href="#dfn-process">process</a> unless that step provides at least one of the following:
+                  <p><a href="#dfn-cognitive-function-test">認知機能テスト</a> (パスワードを記憶する、パズルを解く、など) は、認証<a href="#dfn-process">プロセス</a>のどのステップにおいても要求されない。ただし、そのステップが次の少なくとも一つを提供する場合は除く。
                   </p>
                   <dl>
                      
-                     <dt>Alternative</dt>
+                     <dt>代替手段</dt>
                      
-                     <dd>Another authentication method that does not rely on a cognitive function test.</dd>
+                     <dd>認知機能テストに依存しない別の認証方法がある。</dd>
                      
-                     <dt>Mechanism</dt>
+                     <dt>メカニズム</dt>
                      
-                     <dd>A <a href="#dfn-mechanism">mechanism</a> is available to assist the user in completing the cognitive function test.
+                     <dd>認知機能テストを利用者が完遂できるように支援する<a href="#dfn-mechanism">メカニズム</a>が利用できる。
                      </dd>
                      
                   </dl>
@@ -93,96 +92,76 @@
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   
-                  <dt>Goal</dt>
-                  <dd>Make logins possible with less mental effort.</dd>
+                  <dt>目標</dt>
+                  <dd>より少ない知的努力でログインできるようにする。</dd>
                   
-                  <dt>What to do</dt>
-                  <dd>Don't make people recognize objects or user-supplied images and media to login.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>ログインの際に、人々に物体を認識させたり、利用者が提供した画像及びメディアを認識させないようにする。</dd>
                   
-                  <dt>Why it's important</dt>
-                  <dd>Some people with cognitive disabilities can't do puzzles, including identifying objects
-                     and non-text information they previously supplied.
+                  <dt>なぜそれが重要か</dt>
+                 <dd>認知障害のある人々の中には、物体及び以前に自身が提供した非テキストの情報を特定するなどの、パズルができない人もいる。
                   </dd>
                   
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The purpose of this Success Criterion is to ensure there is an accessible, easy-to-use,
-                  and secure method to log in, access content, and undertake tasks. This criterion is
-                  the same as <a href="accessible-authentication-minimum">Accessible Authentication (Minimum)</a> but without the exceptions for objects and user-provided content.
+               <h2>意図</h2>
+               <p>この達成基準の意図は、ログインし、コンテンツにアクセスし、タスクを実行するための、アクセシブルで、使いやすく、安全な方法を確保することである。この基準は、<a href="accessible-authentication-minimum">アクセシブルな認証 (最低限)</a> と同様であるが、「物体の認識」及び「個人特有のコンテンツ」の例外はない。
                </p>
-               <p>Any required step of the authentication process:</p>
+               <p>認証プロセスに必要なあらゆるステップにおいては:</p>
                <ul>
                   
-                  <li>cannot display a selection of images, videos, or audio clips, where users must choose
-                     which image they provided;
+                  <li>画像、映像、又は音声クリップの選択肢を表示して、利用者にどの画像等を提供したかを選ばせることを必須にしてはならない。
                   </li>
                   
-                  <li>cannot display a selection of images, where users must choose the images which contain
-                     a specific object, such as a car.
+                  <li>画像の選択肢を表示して、利用者にどの画像が特定の物体 (車など) を含んでいるかを選ばせることを必須にしてはならない。
                   </li>
                   
                </ul>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
-               <p>The benefits of this Success Criterion are the same as <a href="accessible-authentication-minimum.html#benefits">Accessible Authentication (Minimum)</a>.
+               <h2>利点</h2>
+               <p>この達成基準の利点は、<a href="accessible-authentication-minimum.html#benefits">アクセシブルな認証 (最低限)</a> と同様である。 
                </p>
-               <p>People with cognitive issues relating to memory, reading (for example, dyslexia),
-                  numbers (for example, dyscalculia), or perception-processing limitations will be able
-                  to authenticate irrespective of the level of their cognitive abilities.
+               <p>記憶に関する認知的問題のある人、読解に関する認知的問題のある人（例えばディスレクシア）、数字に関する認知的問題のある人（例えばディスカリキュリア）、又は知覚処理制限に関する認知的問題のある人でも、認知能力のレベルに関係なく認証できる。
                </p>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
-               <p>The examples of this Success Criterion are very similar to the <a href="accessible-authentication-minimum.html#examples">Accessible Authentication (Minimum)</a> examples.
+               <h2>事例</h2>
+               <p>この達成基準の例は、<a href="accessible-authentication-minimum.html#examples">アクセシブルな認証 (最低限) </a> の例と同様である。
                </p>
                <ul>
                   
-                  <li>A web site uses a properly marked up username (or email) and password fields as the
-                     login authentication (meeting <a href="identify-input-purpose">Success Criterion 1.3.5 Input Purpose</a> and <a href="name-role-value">Success Criterion 4.1.2: Name, Role, Value</a>). The user's browser or integrated third-party password manager extension can identify
-                     the purpose of the inputs and automatically fill in the username and password.
+                  <li>ウェブサイトは、適切にマークアップされたユーザ名 (又は電子メール) 及びパスワードのフィールドをログイン認証として使用する (<a href="identify-input-purpose">達成基準 1.3.5 入力目的の特定</a>及び<a href="name-role-value">達成基準 4.1.2: 名前 (name)・役割 (role)・値 (value)</a> を満たしている)。利用者のブラウザ又は統合されたサードパーティのパスワードマネージャー拡張機能は、入力の目的を特定し、ユーザ名及びパスワードを自動的に入力できる。
                   </li>
                   
-                  <li>A web site does not block paste functionality. The user is able to use a third-party
-                     password manager to store credentials, copy them, and paste them directly into a login
-                     form.
+                  <li>ウェブサイトは貼り付け機能をブロックしていない。利用者は、サードパーティのパスワードマネージャーを使用して資格情報を保存し、コピーしてログインフォームに直接貼り付けることができる。
                   </li>
                   
-                  <li>A web site uses WebAuthn so the user can authenticate with their device instead of
-                     username/password. The user's device could use any available modality. Common methods
-                     on laptops and phones are facial-scan, fingerprint, and PIN (Personal Identification
-                     Number). The web site is not enforcing any particular use; it is assumed a user will
-                     set up a method that suits them.
+                  <li>ウェブサイトは WebAuthn を使用するため、利用者はユーザ名/パスワードの代わりにデバイスで認証できる。利用者のデバイスは、利用可能な任意のモダリティを使用できる。ノートパソコン及び携帯電話での一般的な方法は、顔スキャン、指紋、PIN (個人識別番号) である。このウェブサイトは、特定の使用を強制するものではない。利用者が自分に合った方法を設定することを想定している。
                   </li>
                   
-                  <li>A web site offers the ability to login with a third-party provider using the OAuth
-                     method.
+                  <li>ウェブサイトは、OAuth メソッドを使用してサードパーティプロバイダーにログインする機能を提供する。
+
                   </li>
                   
-                  <li>A web site that requires two-factor authentication allows for multiple options for
-                     the 2nd factor, including a USB-based method where the user simply presses a button
-                     to enter a time-based token.
+                  <li>2 要素認証を必要とするウェブサイトは、利用者がボタンを押すだけで時間ベースのトークンを入力する USB ベースの方法など、2 要素認証について複数のオプションを許容する。
                   </li>
                   
-                  <li>A web site that requires two-factor authentication displays a QR code which can be
-                     scanned by an app on a user's device to confirm identity.
+                  <li>2 要素認証を必要とするウェブサイトは、利用者のデバイス上のアプリでスキャンして本人確認できる QR コードを表示する。
                   </li>
                   
-                  <li>A web site that requires two-factor authentication sends a notification to a user's
-                     device. The user must use their device's authentication mechanism (for example, user-defined
-                     PIN, fingerprint, facial recognition) to confirm identity.
+                  <li>2 要素認証を必要とするウェブサイトは、利用者のデバイスに通知を送信する。利用者は、デバイスの認証メカニズム (ユーザ定義の PIN、指紋、顔認識など) を使用して本人であることを確認しなければならない。
                   </li>
                   
                </ul>
             </section>
             <section id="resources">
-               <h2>Related Resources</h2>
-               <p>Resources are for information purposes only, no endorsement implied.</p>
+               <h2>関連リソース</h2>
+               <p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p>
                <ul>
                   
                   <li><a href="https://www.w3.org/TR/coga-gap-analysis/#table1">Cognitive Accessibility Gap Analysis Topic 1: Authentication and Safety</a></li>
@@ -212,14 +191,11 @@
                </ul>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
+                  <h3>十分なテクニック</h3>
                   <ul>
                      
                      <li>
@@ -250,9 +226,8 @@
                   </ul>
                </section>
                <section id="failure">
-                  <h3>Failures</h3>
-                  <p>The following are common mistakes that are considered failures of this Success Criterion
-                     by the WCAG Working Group.
+                  <h3>失敗</h3>
+                  <p>以下に挙げるものは、WCAG ワーキンググループが達成基準の失敗とみなした、よくある間違いである。
                   </p>
                   <ul>
                      
@@ -268,50 +243,37 @@
             <section id="key-terms">
                <details>
                   <summary>
-                     <h2>Key Terms</h2>
+                     <h2>重要な用語</h2>
                   </summary>
-                  <dt id="dfn-assistive-technology">assistive technology</dt>
+                  <dt id="dfn-assistive-technology">支援技術 (assistive technology)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">hardware and/or software that acts as a <a href="#dfn-user-agent">user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements
-                           of users with disabilities that go beyond those offered by mainstream user agents
+                        <p xmlns="http://www.w3.org/1999/xhtml">障害のある利用者の要件を満たすために、<a href="#dfn-user-agent">主流のユーザエージェント</a>が提供する機能を超えた機能を提供するような、ユーザエージェントとして動作する、又は主流のユーザエージェントと共に動作するハードウェア及び／又はソフトウェア。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Functionality provided by assistive technology includes alternative presentations
-                              (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
-                              voice), additional navigation or orientation mechanisms, and content transformations
-                              (e.g., to make tables more accessible).
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術が提供する機能としては、代替の提示 (例: 合成音声や拡大表示したコンテンツ)、代替入力手法 (例: 音声認識)、付加的なナビゲーション又は位置確認のメカニズム、及びコンテンツ変換 (例: テーブルをよりアクセシブルにするもの) などを挙げることができる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Assistive technologies often communicate data and messages with mainstream user agents
-                              by using and monitoring APIs.
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術は、API を利用、監視することで、主流のユーザエージェントとデータやメッセージのやりとりをすることが多い。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The distinction between mainstream user agents and assistive technologies is not absolute.
-                              Many mainstream user agents provide some features to assist individuals with disabilities.
-                              The basic difference is that mainstream user agents target broad and diverse audiences
-                              that usually include people with and without disabilities. Assistive technologies
-                              target narrowly defined populations of users with specific disabilities. The assistance
-                              provided by an assistive technology is more specific and appropriate to the needs
-                              of its target users. The mainstream user agent may provide important functionality
-                              to assistive technologies like retrieving Web content from program objects or parsing
-                              markup into identifiable bundles.
+                           <p class="note-title marker">注記</p>
+                           <p>主流のユーザエージェントと支援技術との区別は、絶対的なものではない。多くの主流のユーザエージェントは、障害のある個人を支援する機能を提供している。基本的な差異は、主流のユーザエージェントが障害のある人もない人も含めて、広く多様な利用者を対象にしているのに対し、支援技術は、特定の障害のある利用者という、より狭く限られた人たちを対象にしているということである。支援技術により提供される支援は、対象とする利用者に特化した、よりニーズに適したものである。主流のユーザエージェントは、プログラムオブジェクトからのウェブコンテンツの抽出、マークアップの識別可能な構造への解釈といった、重要な機能を支援技術に対して提供する場合がある。
                               
                            </p>
                         </div>
@@ -319,8 +281,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Assistive technologies that are important in the context of this document include
-                              the following:
+                           <p>この文書の文脈において重要な支援技術としては、以下のものが挙げられる:
                               
                            </p>
                            
@@ -328,38 +289,30 @@
                            <ul>
                               
                               
-                              <li>screen magnifiers, and other visual reading assistants, which are used by people with
-                                 visual, perceptual and physical print disabilities to change text font, size, spacing,
-                                 color, synchronization with speech, etc. in order to improve the visual readability
-                                 of rendered text and images;
+                              <li>画面拡大ソフト及びその他の視覚的な表示に関する支援技術。視覚障害、知覚障害、及び読書困難などの障害のある人が、レンダリング後のテキスト及び画像の視覚的な読みやすさを改善するために、テキストのフォント、サイズ、間隔、色、音声との同期などを変更するのに使用している。
                                  
                               </li>
                               
                               
-                              <li>screen readers, which are used by people who are blind to read textual information
-                                 through synthesized speech or braille;
+                              <li>スクリーンリーダー。全盲の人がテキスト情報を合成音声あるいは点字で読み取るために使用している。
                                  
                               </li>
                               
                               
-                              <li>text-to-speech software, which is used by some people with cognitive, language, and
-                                 learning disabilities to convert text into synthetic speech;
+                              <li>音声変換ソフトウェア。認知障害、言語障害、及び学習障害のある人が、テキストを合成音声に変換するために使用している。
                                  
                               </li>
                               
                               
-                              <li>speech recognition software, which may be used by people who have some physical disabilities;</li>
+                              <li>音声認識ソフトウェア。何らかの身体障害のある利用者が使用することがある。</li>
                               
                               
-                              <li>alternative keyboards, which are used by people with certain physical disabilities
-                                 to simulate the keyboard (including alternate keyboards that use head pointers, single
-                                 switches, sip/puff and other special input devices.);
+                              <li>代替キーボード。特定の身体障害のある人がキーボード操作をシミュレートするのに使用している (ヘッドポインタ、シングルスイッチ、呼気・吸気スイッチ、及びその他の特別な入力デバイスを使った代替キーボードを含む)。
                                  
                               </li>
                               
                               
-                              <li>alternative pointing devices, which are used by people with certain physical disabilities
-                                 to simulate mouse pointing and button activations.
+                              <li>代替ポインティングデバイス。特定の身体障害のある人がマウスポインタとボタンの動きをシミュレートするのに使用している。
                                  
                               </li>
                               
@@ -370,88 +323,82 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-cognitive-function-test">cognitive function test</dt>
+                  <dt id="dfn-cognitive-function-test">認知機能テスト (cognitive function test)</dt>
                   <dd>
                      <definition xmlns="">
                         					
                         
                         					
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">A task that requires the user to remember, manipulate, or transcribe information.
-                           Examples include, but are not limited to:
+                        <p xmlns="http://www.w3.org/1999/xhtml">利用者に情報の記憶、操作又は転記を要求するタスク。例には、次のものが含まれるが、これらに限定されない:
                         </p>
                         
                         <ul xmlns="http://www.w3.org/1999/xhtml">
                            
-                           <li>memorization, such as remembering a username, password, set of characters, images,
-                              or patterns. The common identifiers name, e-mail, and phone number are not considered
-                              cognitive function tests as they are personal to the user and consistent across Web
-                              sites;
+                           <li>記憶させること、たとえばユーザー名、パスワード、文字の一式、画像、パターンを覚えさせるなど。一般的な識別子である名前、電子メール及び電話番号は、利用者にとって個人特有のものであって、ウェブサイト間で一貫しているため、認知機能テストとはみなされない。
                            </li>
                            
-                           <li>transcription, such as typing in characters;</li>
+                           <li>転記させること、たとえば文字をタイピングさせるなど。</li>
                            
-                           <li>use of correct spelling;</li>
+                           <li>正しい綴りを使わせること。</li>
                            
-                           <li>performance of calculations;</li>
+                           <li>計算を実行させること。</li>
                            
-                           <li>solving of puzzles.</li>
+                           <li>パズルを解かせること。</li>
                            
                         </ul>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-conformance">conformance</dt>
+                  <dt id="dfn-conformance">適合 (conformance)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">satisfying all the requirements of a given standard, guideline or specification</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">与えられた規格、ガイドライン、又は仕様のすべての要件を満たすこと。</p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-mechanism">mechanism</dt>
+                  <dt id="dfn-mechanism">メカニズム (mechanism)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
                         <p xmlns="http://www.w3.org/1999/xhtml">
-                           <a href="#dfn-process">process</a> or technique for achieving a result
+                           結果を得るための<a href="#dfn-process">プロセス</a>又は手法。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The mechanism may be explicitly provided in the content, or may be <a href="#dfn-relied-upon">relied upon</a> to be provided by either the platform or by <a href="#dfn-user-agent">user agents</a>, including <a href="#dfn-assistive-technology">assistive technologies</a>.
+                           <p class="note-title marker">注記</p>
+                           <p>メカニズムは、コンテンツ内で明示的に提供されることもあれば、プラットフォーム又は<a href="#dfn-assistive-technology">支援技術</a>を含む<a href="#dfn-user-agent">ユーザエージェント</a>で提供されるものに<a href="#dfn-relied-upon">依存</a>することもある。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The mechanism needs to meet all success criteria for the conformance level claimed.</p>
+                           <p class="note-title marker">注記</p>
+                           <p>メカニズムは、宣言する適合レベルのすべての達成基準を満たしている必要がある。</p>
                         </div>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-process">process</dt>
+                  <dt id="dfn-process">プロセス (process)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">series of user actions where each action is required in order to complete an activity</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ある活動を完了させるために必要な利用者の一連の動作。</p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Successful use of a series of Web pages on a shopping site requires users to view
-                              alternative products, prices and offers, select products, submit an order, provide
-                              shipping information and provide payment information.
+                           <p>ショッピングサイト上の一連のウェブページで目的を果たすためには、利用者が選択肢となりうる製品、価格及び内容を閲覧した後、製品を選択して発注し、配送先情報及び支払情報を提供する必要がある。
                               
                            </p>
                            
@@ -460,8 +407,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>An account registration page requires successful completion of a <a href="https://www.w3.org/TR/turingtest/">Turing test</a> before
-                              the registration form can be accessed.
+                           <p>アカウント登録ページでは、登録フォームにアクセスする前に<a href="https://www.w3.org/TR/turingtest/">チューリングテスト</a>に成功する必要がある。
                               
                            </p>
                            
@@ -470,44 +416,40 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-relied-upon">relied upon</dt>
+                  <dt id="dfn-relied-upon">依存されている (relied upon)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">the content would not <a href="#dfn-conformance">conform</a> if that <a href="#dfn-technology">technology</a> is turned off or is not supported
+                        <p xmlns="http://www.w3.org/1999/xhtml">その<a href="#dfn-technology">技術</a>が無効になっている場合、又はサポートされていない場合に、コンテンツが<a href="#dfn-conformance">適合</a>できないこと。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-technology">technology</dt>
+                  <dt id="dfn-technology">技術 (technology)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
                         <p xmlns="http://www.w3.org/1999/xhtml">
-                           <a href="#dfn-mechanism">mechanism</a> for encoding instructions to be rendered, played or executed by <a href="#dfn-user-agent">user agents</a>
+                            <a href="#dfn-user-agent">ユーザエージェント</a>がどのようにレンダリング、再生、又は実行するかを符号化する<a href="#dfn-mechanism">メカニズム</a>。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>As used in these guidelines "Web Technology" and the word "technology" (when used
-                              alone) both refer to Web Content Technologies.
+                           <p class="note-title marker">注記</p>
+                           <p>このガイドラインで用いられている「ウェブ技術」及び (単独で用いられている) 「技術」という用語は、どちらもウェブコンテンツ技術を指す。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Web content technologies may include markup languages, data formats, or programming
-                              languages that authors may use alone or in combination to create end-user experiences
-                              that range from static Web pages to synchronized media presentations to dynamic Web
-                              applications.
+                           <p class="note-title marker">注記</p>
+                           <p>ウェブコンテンツ技術には、マークアップ言語、データ形式、及びプログラム言語などがあり、これらをコンテンツ制作者が単独で、又は組み合わせて用いることによって、静的なウェブページや同期したメディアによる提示、さらには動的なウェブアプリケーションに至るまでの様々なエンドユーザ体験を作ることができる。
                               
                            </p>
                         </div>
@@ -515,8 +457,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Some common examples of Web content technologies include HTML, CSS, SVG, PNG, PDF,
-                              Flash, and JavaScript.
+                           <p>ウェブコンテンツ技術のよくある事例としては、HTML、CSS、SVG、PNG、PDF、Flash、JavaScript などがある。
                               
                            </p>
                            
@@ -525,17 +466,17 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-user-agent">user agent</dt>
+                  <dt id="dfn-user-agent">ユーザエージェント (user agent)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">any software that retrieves and presents Web content for users</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ウェブコンテンツを取得して利用者に提示するあらゆるソフトウェア。</p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technology">assistive technologies</a> — that help in retrieving, rendering, and interacting with Web content.
+                           <p>ウェブコンテンツの取得、レンダリング及びインタラクションを支援する、ウェブブラウザ、メディアプレーヤ、プラグイン、及びその他のプログラム (<a href="#dfn-assistive-technology">支援技術</a>も含む)。
                               
                            </p>
                            
@@ -555,13 +496,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -576,11 +516,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -602,13 +544,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -617,7 +559,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -638,8 +580,10 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+    <!--noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-      </noscript>
+      </noscript-->
    </body>
 </html>
