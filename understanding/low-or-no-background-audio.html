@@ -77,55 +77,50 @@
             <aside class="box">
                <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>For <a href="#dfn-prerecorded">prerecorded</a>
-                     <a href="#dfn-audio-only">audio-only</a> content that (1) contains primarily speech in the foreground, (2) is not an audio
-                     <a href="#dfn-captcha">CAPTCHA</a> or audio logo, and (3) is not vocalization intended to be primarily musical expression
-                     such as singing or rapping, at least one of the following is true:
+                  <p><a href="#dfn-prerecorded">収録済</a>の音声しか含まないコンテンツで、(1) 前景に主として発話を含み、(2) 音声 <a href="#dfn-captcha">CAPTCHA</a> 又は音声ロゴではなく、かつ、(3) 例えば、歌やラップなどのように、主として音楽表現を意図した発声ではないものについては、次に挙げる事項のうち、少なくとも一つを満たしている:
                      
                   </p>
                   <dl>
                      
                      
-                     <dt>No Background</dt>
+                     <dt>背景音なし</dt>
                      
                      
                      <dd>
                         
                         
-                        <p>The audio does not contain background sounds.</p>
+                        <p>音声は背景音を含まない。</p>
                         
                         
                      </dd>
                      
                      
-                     <dt>Turn Off</dt>
+                     <dt>消音</dt>
                      
                      
                      <dd>
                         
                         
-                        <p>The background sounds can be turned off.</p>
+                        <p>背景音を消すことができる。</p>
                         
                         
                      </dd>
                      
                      
-                     <dt>20 dB</dt>
+                     <dt>20 デシベル</dt>
                      
                      
                      <dd>
                         
                         
-                        <p>The background sounds are at least 20 decibels lower than the foreground speech content,
-                           with the exception of occasional sounds that last for only one or two seconds.
+                        <p>背景音は、前景にある発話のコンテンツより少なくとも 20 デシベルは低い。ただし、継続時間が 2 秒以内で発生頻度が低い背景音は除く。
                            
                         </p>
                         
                         
                         <div class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Per the definition of "decibel," background sound that meets this requirement will
-                              be approximately four times quieter than the foreground speech content.
+                           <p class="note-title marker">注記</p>
+                           <p>デシベルの定義によれば、この要件を満たす背景音は、前景にある発話のコンテンツの約 4 分の 1 の大きさになる。
                               
                            </p>
                         </div>
@@ -142,33 +137,26 @@
                <h2>要約</h2>
                <dl>
                   
-                  <dt>Goal</dt>
-                  <dd>Prerecorded speech is not disrupted by background sound.</dd>
+                  <dt>目標</dt>
+                  <dd>収録済の発話が、背景音によって妨げられないようにする。</dd>
                   
-                  <dt>What to do</dt>
-                  <dd>Avoid or lessen background sound, or let users turn it off.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>背景音をなくすか小さくする、又は利用者が消せるようにする。</dd>
                   
-                  <dt>Why it's important</dt>
-                  <dd>People who are hard of hearing may have difficulty distinguishing speech from music
-                     and other sounds.
+                  <dt>なぜそれが重要か</dt>
+                  <dd>音声の聞こえづらい利用者は、発話と音楽及びその他の音を、識別しづらい可能性がある。
+
                   </dd> 
                   
                </dl>
             </section>
             <section id="intent">
                <h2>意図</h2>
-               <p>The intent of this Success Criterion is to ensure that any non-speech sounds are low
-                  enough that a user who is hard of hearing can separate the speech from background
-                  sounds or other noise foreground speech content. 
-                  
+               <p>この達成基準の意図は、発話ではないあらゆる音が、音声の聞こえづらい利用者が発話を背景音又は前景にある不要な他の発話コンテンツと区別することができるようにすることである。
                   
                   
                </p>
-               <p>The value of 20 dB was chosen based on Large area assistive listening systems (ALS):
-                  Review and recommendations [[LAALS]] and In-the-ear measurements of interference in
-                  hearing aids from digital wireless
-                  telephones [[HEARING-AID-INT]] 
-                  
+               <p>20 デシベルという値は、 Large area assistive listening systems (ALS): Review and recommendations [LAALS]と、In-the-ear measurements of interference in hearing aids from digital wireless telephones [HEARING-AID-INT] に基づいている。
                   
                </p>
             </section>
@@ -177,8 +165,8 @@
                <ul>
                   
                   
-                  <li>People who are hard of hearing often have great difficulty separating speech from
-                     background sound. 
+                  <li>音声の聞こえづらい利用者は、発話と背景音を区別しづらいことがしばしばある。
+
                      
                   </li>
                   
@@ -187,7 +175,7 @@
             </section>
             <section id="resources">
                <h2>関連リソース</h2>
-               <p>Resources are for information purposes only, no endorsement implied.</p>
+               <p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p>
                <ul>
                   
                   
@@ -203,10 +191,7 @@
             </section>
             <section id="techniques">
                <h2>テクニック</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
                   <h3>十分なテクニック</h3>
@@ -230,18 +215,17 @@
                   <summary>
                      <h2>重要な用語</h2>
                   </summary>
-                  <dt id="dfn-audio">audio</dt>
+                  <dt id="dfn-audio">音声 (audio)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">the technology of sound reproduction</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">音の再生技術。</p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Audio can be created synthetically (including speech synthesis), recorded from real
-                              world sounds, or both.
+                           <p class="note-title marker">注記</p>
+                           <p>音声には、合成して作られたもの (音声合成を含む)、実世界の音を収録したもの、又はその両方が含まれる。
                               
                            </p>
                         </div>
@@ -249,43 +233,37 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-audio-only">audio-only</dt>
+                  <dt id="dfn-audio-only">音声しか含まない (audio-only)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">a time-based presentation that contains only <a href="#dfn-audio">audio</a> (no <a href="#dfn-video">video</a> and no interaction)
-                           
+                        <p xmlns="http://www.w3.org/1999/xhtml"><a href="#dfn-audio">音声</a>のみを含んだ、時間に依存する提示 (<a href="#dfn-video">映像</a>やインタラクションを含まない)。                           
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-captcha">captcha</dt>
+                  <dt id="dfn-captcha">CAPTCHA</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">initialism for "Completely Automated Public Turing test to tell Computers and Humans
-                           Apart"
-                           
+                        <p xmlns="http://www.w3.org/1999/xhtml">コンピュータと人間とを判別する完全自動化されたチューリングテスト (Completely Automated Public Turing test to tell Computers and Humans Apart) の頭文字語。
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>CAPTCHA tests often involve asking the user to type in text that is displayed in an
-                              obscured image or audio file.
+                           <p class="note-title marker">注記</p>
+                           <p>CAPTCHA のテストは多くの場合、利用者に対し、不明瞭な画像又は音声ファイルによって提示されたテキストを入力するよう求める。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>A Turing test is any system of tests designed to differentiate a human from a computer.
-                              It is named after famed computer scientist Alan Turing. The term was coined by researchers
-                              at Carnegie Mellon University.
+                           <p class="note-title marker">注記</p>
+                           <p>チューリングテストは、人間とコンピュータを区別することを目的としたテストの仕組みである。その名は、高名なコンピュータ科学者のアラン チューリングにちなんでいる。この用語は、カーネギーメロン大学の研究者たちによる造語である。
                               
                            </p>
                         </div>
@@ -293,58 +271,54 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-live">live</dt>
+                  <dt id="dfn-live">ライブ (live)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">information captured from a real-world event and transmitted to the receiver with
-                           no more than a broadcast delay
-                           
+                        <p xmlns="http://www.w3.org/1999/xhtml">現実の出来事から取り込まれ、放送遅延以上の遅延なく受け手に送信される情報。
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>A broadcast delay is a short (usually automated) delay, for example used in order
-                              to give the broadcaster time to cue or censor the audio (or video) feed, but not sufficient
-                              to allow significant editing.
+                           <p class="note-title marker">注記</p>
+                           <p>放送遅延は、短時間の (通常は自動的な) 遅れで、例えば放送局に放送のタイミング[queue→cue]の調整や音声 (又は映像) の検閲のための時間を与えるものだが、意味のある編集ができるほどのものではない。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>If information is completely computer generated, it is not live.</p>
+                           <p class="note-title marker">注記</p>
+                           <p>もし情報が完全にコンピュータで生成されたものならば、それはライブではない。</p>
                         </div>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-prerecorded">prerecorded</dt>
+                  <dt id="dfn-prerecorded">収録済 (prerecorded)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">information that is not <a href="#dfn-live">live</a>
+                        <p xmlns="http://www.w3.org/1999/xhtml"><a href="#dfn-live">ライブ</a>ではない情報。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-video">video</dt>
+                  <dt id="dfn-video">映像 (video)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">the technology of moving or sequenced pictures or images</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">写真又は画像を動かす、又はシーケンス化する技術。</p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Video can be made up of animated or photographic images, or both.</p>
+                           <p class="note-title marker">注記</p>
+                           <p>映像は、アニメーション画像もしく実写画像、又はその両方で構成され得る。</p>
                         </div>
                         
                         
