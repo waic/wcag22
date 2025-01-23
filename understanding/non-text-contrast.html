@@ -78,24 +78,22 @@
             <aside class="box">
                <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>The visual <a href="#dfn-presentation">presentation</a> of the following have a <a href="#dfn-contrast-ratio">contrast ratio</a> of at least 3:1 against adjacent color(s):
+                  <p>以下の視覚的<a href="#dfn-presentation">提示</a>には、隣接した色との間で少なくとも 3:1 の<a href="#dfn-contrast-ratio">コントラスト比</a>がある。
                   </p>
                   <dl>
                      						
                      
-                     <dt>User Interface Components</dt>
+                     <dt>ユーザインタフェース コンポーネント</dt>
                      						
                      
-                     <dd>Visual information required to identify <a href="#dfn-user-interface-component">user interface components</a> and <a href="#dfn-state">states</a>, except for inactive components or where the appearance of the component is determined
-                        by the user agent and not modified by the author;
+                     <dd><a href="#dfn-user-interface-component">ユーザインタフェース コンポーネント</a>及び<a href="#dfn-state">状態 (state)</a> を特定するのに必要な視覚的な情報。ただし、アクティブではないユーザインタフェース コンポーネントや、そのコンポーネントの見た目がユーザエージェントによって提示されていてコンテンツ制作者が変更していない場合は除く。
                      </dd>
                      						
                      
-                     <dt>Graphical Objects</dt>
+                     <dt>グラフィカルオブジェクト</dt>
                      						
                      
-                     <dd>Parts of graphics required to understand the content, except when a particular presentation
-                        of graphics is <a href="#dfn-essential">essential</a> to the information being conveyed.
+                     <dd>コンテンツを理解するのに必要なグラフィック部分。ただし、そのグラフィック特有の提示が、情報を伝えるうえで<a href="#dfn-essential">必要不可欠</a>な場合は除く。
                      </dd>
                      						
                      
@@ -107,284 +105,195 @@
                <h2>要約</h2>
                <dl>
                   				
-                  <dt>Goal</dt>
-                  <dd>Important visual information meets the same minimum contrast required for larger text.</dd>
+                  <dt>目標</dt>
+                  <dd>重要な視覚的情報が、大きな文字に対して求められているのと同様の最低限のコントラストを満たすようにする。</dd>
                   				
-                  <dt>What to do</dt>
-                  <dd>Ensure meaningful visual cues achieve 3:1 against the background.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>意味を成す視覚的な手がかりが、背景色に対して 3:1 のコントラスト比になるようにする。</dd>
                   				
-                  <dt>Why it's important</dt>
-                  <dd>Some people cannot see elements with low contrast.</dd>
+                  <dt>なぜそれが重要か</dt>
+                  <dd>コントラストが低い要素を見ることができない人がいる。</dd>
                   			
                </dl>
             </section>
             <section id="intent">
                <h2>意図</h2>
-               <p>The intent of this Success Criterion is to ensure that user interface components (i.e.,
-                  controls) and meaningful graphics are distinguishable by people with moderately low
-                  vision. The requirements and rationale are similar to those for large text in <a href="contrast-minimum">1.4.3 Contrast (Minimum)</a>. Note that this requirement does not apply to <em>inactive</em> user interface components.
+               <p>この達成基準の意図は、アクティブなユーザインタフェース コンポーネント (つまり、コントロール) 及び意味のあるグラフィックが中程度のロービジョンの人によって識別できるようすることである。この必須要件の根拠は、<a href="contrast-minimum">1.4.3 コントラスト (最低限)</a> の大きな文字のものと同様である。この要件は、<em>非アクティブな</em>ユーザインタフェース コンポーネントには適用されないことに注意されたい。
                </p>
-               <p>Low contrast controls are more difficult to perceive, and may be completely missed
-                  by people with a visual impairment. Similarly, if a graphic is needed to understand
-                  the content or functionality of the webpage then it should be perceivable by people
-                  with low vision or other impairments without the need for contrast-enhancing assistive
-                  technology.
+               <p>低いコントラストのコントロールは知覚するのが難しく、かつ視覚障害のある人に完全に見逃される可能性がある。同様に、ウェブページのコンテンツ又は機能を理解するためにグラフィックが必要とされる場合、コントラストを強化する支援技術の必要なくロービジョン又は他の障害のある人に知覚されるべきある。
                </p>
                <div class="note">
-                  <p class="note-title marker">Note</p>
+                  <p class="note-title marker">注記</p>
                   <div>
                      				
-                     <p>The 3:1 contrast ratios referenced in this Success Criterion is intended to be treated
-                        as threshold values. When comparing the computed contrast ratio to the Success Criterion
-                        ratio, the computed values should not be rounded (e.g. 2.999:1 would not meet the
-                        3:1 threshold).
+                     <p>この達成基準で言及されている 3:1 のコントラスト比は、閾値として扱われることを意図している。算出されたコントラスト比を達成基準のコントラスト比と比較する場合、算出された値は丸めるべきではない（例えば、 2.999:1 は 3:1 という閾値を満たさない）。
                      </p>
                      			
                   </div>
                </div>
                <div class="note">
-                  <p class="note-title marker">Note</p>
+                  <p class="note-title marker">注記</p>
                   <div>
                      				
-                     <p>Because authors do not have control over user settings for font smoothing and anti-aliasing,
-                        when evaluating this
-                        					 Success Criterion, refer to the colors obtained from the user agent, or the
-                        underlying
-                        					 markup and stylesheets, rather than the non-text elements as presented on screen.
+                     <p>フォントスムージング及びアンチエイリアシングのユーザー設定をコンテンツ制作者はコントロールできないので、この達成基準を評価するときは、画面に表示される非テキスト要素よりも、ユーザエージェントで取得できる、つまり基礎となるマークアップ及びスタイルシートから得られる、色を参照すること。
                      </p>
                      				
-                     <p>Due to anti-aliasing, particularly thin lines and shapes of non-text elements may
-                        be rendered by user agents with
-                        					 a much fainter color than the actual color defined in the underlying CSS. This
-                        can lead to situations where
-                        					 non-text elements have a contrast ratio that nominally passes the Success Criterion,
-                        but have a much lower contrast
-                        					 in practice. In these cases, best practice would be for authors to avoid particularly
-                        thin lines and shapes,
-                        					 or to use a combination of colors that exceeds the normative requirements of
-                        this Success Criterion.
-                        				
+                     <p>アンチエイリアスが原因で、非テキスト要素における特に細い線及び図形は、ユーザエージェントによって、基礎となる CSS で定義された実際の色よりもずっと淡い色で表示されることがある。このため、非テキスト要素のコントラスト比が一応は達成基準を満たしていても、実際にはコントラストがかなり低いという状況が起こり得る。このような場合、ベストプラクティスは、コンテンツ制作者が特に細い線及び図形を避けるか、この達成基準の規範的要件を上回る色の組み合わせを用いることであろう。
                      </p>
                      		 
                   </div>
                </div>
                <section id="user-interface-components">
                   				
-                  <h3>User Interface Components</h3>
+                  <h3>ユーザインタフェース コンポーネント</h3>
                   
                   				
-                  <p>Unless the control is <em>inactive</em>, any visual information provided that is necessary for a user to identify that a
-                     control is present and how to operate it must have a minimum 3:1 contrast ratio with
-                     the adjacent colors. Also, any visual information necessary to indicate state, such
-                     as whether a component is selected or focused must also ensure that the information
-                     used to identify the control in that state has a minimum 3:1 contrast ratio.
+                  <p>コントロールが<em>非アクティブ</em>ではない場合、利用者がコントロールが存在すること及び操作方法を識別するために必要な提供されたあらゆる視覚情報は、隣接している色と最低でも 3:1 のコントラスト比がなければならない。また、コンポーネントが選択されている又はフォーカスされているといった状態を示すために必要なあらゆる視覚情報も、その状態のコントロールを識別するために使用された情報が最低でも 3:1 のコントラスト比を持つようにしなければならない。
                   </p>
                   
                   				
-                  <p>This Success Criterion does not require that changes in color that differentiate between
-                     states of an individual component meet the 3:1 contrast ratio when they do not appear
-                     next to each other. For example, there is not a new requirement that visited links
-                     contrast with the default color, or that mouse hover indicators contrast with the
-                     default state. However, the component must not lose contrast with the adjacent colors,
-                     and non-text indicators such as the check in a checkbox, or an arrow graphic indicating
-                     a menu is selected or open must have sufficient contrast to the adjacent colors.
+                  <p>この達成基準は互いが隣に現れない時、個別のコンポーネントの状態を区別する色の変化が 3:1 のコントラスト比を満たすことを求めない。例えば、訪問済みのリンクとデフォルトの色とのコントラスト、又はマウスホバーインジケータとデフォルトの状態とのコントラストの新しい必須要件はない。しかし、コンポーネントは隣接している色とコントラストを失ってはならず、かつチェックボックス内のチェック、又はメニューが選択されているもしくは開いていることを表す矢印のグラフィックなどの非テキストインジケータは隣接している色に対して十分なコントラストがなければならない。
                   </p>
                   
                   				
-                  <h3>Boundaries</h3>
+                  <h3>境界</h3>
                   				
                   				
-                  <p>This success criterion does not require that controls have a visual boundary indicating
-                     the hit area, but if the visual indicator of the control is the only way to identify
-                     the control, then that indicator must have sufficient contrast. If text (or an icon)
-                     within a button or placeholder text inside a text input is visible and there is no
-                     visual indication of the hit area then the Success Criterion is passed. If a button
-                     with text also has a colored border, since the border does not provide the only indication
-                     there is no contrast requirement beyond the text contrast (<a href="contrast-minimum">1.4.3 Contrast (Minimum)</a>). Note that for people with cognitive disabilities it is recommended to delineate
-                     the boundary of controls to aid in the recognition of controls and therefore the completion
-                     of activities.
+                  <p>この達成基準はコントロールにヒット領域を示す視覚的な境界が存在することを求めないが、コントロールの視覚的インジケータがコントロールを識別する唯一の方法である場合、そのインジケータは十分なコントラストがなければならない。ボタン内のテキスト (もしくはアイコン) 又はテキスト入力内のプレースホルダーテキストが可視であり、かつヒット領域の視覚的なしるしがない場合、達成基準に合格する。テキストボタンに色つきのボーダーもある場合、ボーダーはしるしだけを提供しないため、テキストのコントラスト (<a href="contrast-minimum">1.4.3 コントラスト (最低限)</a>) を越えるコントラストの要件はない。認知障害のある人には、コントロールを認識するため、ひいては動作の完了のための支援をするために、コントロールの境界を描くことが推奨されることに注意する。
                   </p>
                   				
                   				
                   <figure id="figure-buttons-no-visual-indicator">
-                     						<img alt="Two buttons, the first with no visual indicator except text saying 'button'. The second is the same but with an added grey border." src="img/minimal-button.png" /> 
+                     						<img alt="二つのボタン。一つ目は「ボタン」というテキスト以外の視覚的インジケータがない。二つ目は同じだが、グレーのボーダーが追加されている。" src="img/minimal-button.png" /> 
                      						
-                     <figcaption>Figure 1 A button without a visual boundary, and the same button with a focus indicator that
-                        is a defined visual boundary of grey (#949494) adjacent to white.
+                     <figcaption>図 1 視覚的境界のないボタン及び白に隣接する灰色 (#949494) の定義された視覚的境界のあるフォーカスインジケータのある同じボタン。
                      </figcaption>
                      				
                   </figure>
                   
                   				
-                  <h3>Adjacent colors</h3>
+                  <h3>隣接している色</h3>
                   				
-                  <p>For user interface components 'adjacent colors' means the colors adjacent to the component.
-                     For example, if an input has a white internal background, dark border, and white external
-                     background the 'adjacent color' to the component would be the white external background.
+                  <p>ユーザインタフェース コンポーネントの「隣接している色」とは、コンポーネントに隣接している色を意味する。例えば、入力に白い内側の背景、濃いボーダー、及び白い外側の背景があった場合、コンポーネントの「隣接している色」は白い外側の背景になる。
                   </p>
                   				
                   <figure id="figure-standard-text-adjacent-white">
-                     					<img src="img/text-input-default.png" alt="Standard text input with a label, white internal and external background with a dark border." />
+                     					<img src="img/text-input-default.png" alt="標準的なラベル付きのテキスト入力。濃いボーダー付きの白い内側及び外側の背景。" />
                      					
-                     <figcaption>Figure 2 A standard text input with a grey border (#767676) and white adjacent color outside
-                        the component
+                     <figcaption>図 2 灰色のボーダー (#767676) とコンポーネントの外側に隣接している白色がある標準的なテキスト入力
                      </figcaption>
                      				
                   </figure>
                   
                   				
-                  <p>If components use several colors, any color which does not interfere with identifying
-                     the component can be ignored for the purpose of measuring contrast ratio. For example,
-                     a 3D drop-shadow on an input, or a dark border line between contrasting backgrounds
-                     is considered to be subsumed into the color closest in brightness (perceived luminance).
+                  <p>コンポーネントが複数の色を使用している場合、コントラスト比を測定する目的で、コンポーネントの識別に干渉しない色は無視できる。例えば、入力の 3D ドロップシャドウ、又はコントラストをもつ背景間の暗いボーダーは、明るさ (知覚される輝度) が最も近い色に含まれていると見なされる。
                   </p>
                   
                   				
-                  <p>The following example shows an input that has a light background on the inside and
-                     a dark background around it. The input also has a dark grey border which is considered
-                     to be subsumed into the dark background. The border does not interfere with identifying
-                     the component, so the contrast ratio is taken between the white background and dark
-                     blue background.
+                  <p>次の例は、内側に明るい背景があり、周囲に暗い背景がある入力を示している。入力には、暗い背景に含まれていると見なされる暗い灰色のボーダーもある。このボーダーはコンポーネントの識別に干渉しないため、コントラスト比は白の背景と濃い青の背景の間で取得される。
                   </p>
                   
                   				
                   <figure id="figure-text-box-dark-bg-light-border">
-                     					<img alt="A text box with a dark background and light border, with a white background." src="img/text-input-background-border.png" />
+                     					<img alt="濃い背景及び薄いボーダーの、白い背景のテキストボックス" src="img/text-input-background-border.png" />
                      					
-                     <figcaption>Figure 3  The contrast of the input background (white) and color adjacent to the control (dark
-                        blue #003366) is sufficient. There is also a border (silver) on the component that
-                        is not required to contrast with either.
+                     <figcaption>図 3 入力背景 (白) 及びコントロールに隣接している色 (濃い青 #003366) のコントラストは十分である。コンポーネントにはまた、どちらにもコントラストをもつことが必須ではないボーダー (シルバー) がある。
                      </figcaption>
                      				
                   </figure>
                   
                   				
-                  <p>For visual information required to identify a state, such as the check in a checkbox
-                     or the thumb of a slider, that part might be within the component so the adjacent
-                     color might be another part of the component.
+                  <p>チェックボックスのチェック又はスライダーのつまみなど、状態を特定するために必須の視覚情報には、その部分はコンポーネント内にあるかもしれず、そのため隣接している色はコンポーネントの別の部分かもしれない。
                   </p>
                   
                   				
                   <figure id="figure-purple-box-light-check">
-                     					<img alt="A purple box with a light grey check." src="img/checkbox-purple.png" />
+                     					<img alt="紫のボックスと薄いグレーのチェック。" src="img/checkbox-purple.png" />
                      					
-                     <figcaption>Figure 4  A customized checkbox with light grey check (#E5E5E5), which has a contrast ratio
-                        of 5.6:1 with the purple box (#6221EA).
+                     <figcaption>図 4 薄いグレーのチェック (#E5E5E5) のあるカスタマイズされたチェックボックスは、紫のボックス(#6221EA) と 5.6:1 のコントラスト比を持っている。
                      </figcaption>
                      				
                   </figure>
                   
                   				
-                  <p>It is possible to use a flat design where the status indicator fills the component
-                     and does not contrast with the component, but does contrast with the colors adjacent
-                     to the component.
+                  <p>ステータスインジケータがコンポーネントを埋め、かつコンポーネントとコントラストをもたないが、コンポーネントと隣接している色とコントラストをもつようなフラットなデザインを使用することは可能である。
                   </p>
                   
                   
                   				
                   <figure id="figure-three-radios">
-                     					<img alt="Four radio buttons, the first is a plain circle labelled 'Not selected'. The second shows the circle filled with a darker color than the border. The third is filled with the same color as the border. The fourth has an inner filled circle with a gap between it and the outer border." src="img/radio-custom.png" />
+                     					<img alt="四つのラジオボタン。一つ目は「Not selected」とラベル付けされた無地の円。二つ目はボーダーより濃い色で埋められた円を示す。三つ目はボーダーと同じ色で埋められている。四つ目は内部が埋められた、外側のボーダーとの間に隙間がある円。" src="img/radio-custom.png" />
                      					
-                     <figcaption>Figure 5 The first radio button shows the default state with a grey (#949494) circle. The second
-                        and third show the radio button selected and filled with a color that contrasts with
-                        the color adjacent to the component. The last example shows the state indicator contrasting
-                        with the component colors.
+                     <figcaption>図 5 一つ目のラジオボタンはデフォルトの状態を灰色 (#949494) の円で示している。二つ目及び三つ目は選択されたラジオボタンを表し、コンポーネントに隣接している色とコントラストをもつ色で埋められている。最後の例はコンポーネントの色とコントラストをもつステータスインジケータを表している。
                      </figcaption>
                      				
                   </figure>
                   
                   				
-                  <h3>Relationship with Use of Color</h3>
+                  <h3>色の使用との関係性</h3>
                   
                   				
-                  <p>The <a href="use-of-color">Use of Color</a> success criterion addresses changing <strong>only the color</strong> (hue) of an object or text without otherwise altering the object's form. The principle
-                     is that contrast ratio (the difference in brightness) can be used to distinguish text
-                     or graphics. For example, <a href="https://w3c.github.io/wcag/techniques/general/G183">G183: Using a contrast ratio of 3:1 with surrounding text and providing additional visual
-                        cues on hover for links or controls where color alone is used to identify them</a> is a technique to use a contrast ratio of 3:1 with surrounding text to distinguish
-                     links and controls. In that case the Working Group regards a link color that meets
-                     the 3:1 contrast ratio relative to the non-linked text color as satisfying the Success
-                     Criterion <a href="use-of-color">1.4.1 Use of color</a> since it is relying on contrast ratio as well as color (hue) to convey that the text
-                     is a link.
+                  <p><a href="use-of-color">色の使用</a>という達成基準は、オブジェクトの形を一切変えずにオブジェクト又はテキストの色のみ (色相) を変更することを取り上げている。この原則は、コントラスト比 (明るさの差) がテキスト又はグラフィックを区別するために使用できるということである。例えば、<a href="https://w3c.github.io/wcag/techniques/general/G183">G183: 色が単独でリンク又はコントロールを特定する場所で、周囲のテキストと一緒に 3:1 のコントラスト比を使用し、そのリンク又はコントロールのフォーカスに追加の視覚的な手がかりを提供する</a>は周囲のテキストと 3:1 のコントラスト比を使用してリンク及びコントロールを区別する達成方法である。この場合、ワーキンググループは、テキストがリンクであることを伝えるために色 (色相) だけでなくコントラスト比にも依存しているため、リンクではないテキスト色に対して 3:1 のコントラスト比を満たすリンクの色は<a href="use-of-color">達成基準 1.4.1 色の使用</a>を満たすと考える。
                   </p>
                   
                   				
-                  <p>Non-text information within controls that uses a change of hue alone to convey the
-                     value or state of an input, such as a 1-5 star indicator with a black outline for
-                     each star filled with either yellow (full) or white (empty) is likely to fail the
-                     Use of color criterion rather than this one.
+                  <p>例えばそれぞれの星が黄色 (満ちている) 又は白 (空いている) のいずれかで埋まった黒いアウトラインをもつ 1-5 のスターインジケータなど、入力の値又は状態を伝えるために色相の違いのみを使用するコントロール内の非テキスト情報は、この基準よりも色の使用の基準に失敗する可能性がある。
                   </p>
                   
                   				
                   <figure id="figure-two-star-ratings">
-                     					<img src="img/star-examples-pass.png" alt="Two star ratings, one uses a black outline (on white) with a black fill to indicate it is checked. The second has a yellow fill and a thicker dark border." width="300" />
+                     					<img src="img/star-examples-pass.png" alt="二つ星評価。一つはチェックされていることを表すために黒い塗りつぶしと (白に) 黒いアウトラインを使用している。二つ目は黄色い塗りつぶし及び太く濃いボーダーがある。" width="300" />
                      					
-                     <figcaption>Figure 6 
-                        						Two examples which pass this success criterion, using either a solid fill to
-                        indicate a checked-state that has contrast, or a thicker border as well as yellow
-                        fill.
+                     <figcaption>図 6 チェックされている状態を示すためのコントラストのあるべた塗り、又は太いボーダー及び黄色い塗りつぶしのいずれかを使用して達成基準に合格している二つの例。
                         					
                      </figcaption>
                      				
                   </figure>
                   				
                   <figure id="figure-two-star-ratings-failing">
-                     					<img src="img/star-examples-fail.png" alt="Two star ratings, the first uses 5 stars with a black outline and a yellow or white fill, where yellow indicates checked. The second uses only pale yellow stars on white." width="300" />
+                     					<img src="img/star-examples-fail.png" alt="二つ星評価。一つ目は黄色がチェックされていることを示す、黒いアウトライン及び黄色又は白の塗りつぶしの五つ星を使用している。二つ目は白に薄い黄色の星のみを使用している。" width="300" />
                      					
-                     <figcaption>Figure 7 
-                        						Two examples which fail a success criterion, the first fails the Use of color
-                        criterion due to relying on yellow and white hues. The second example fails the Non-text
-                        contrast criterion due to the yellow (#FFF000) to white contrast ratio of 1.2:1.
+                     <figcaption>図 7 達成基準に失敗する二つの例。一つ目は、黄色 (#fff000) 及び白の色相に依存していることにより、色の使用の基準に失敗する。二つ目の例は黄色対白のコントラスト比が 1.2:1 であることにより、非テキストのコントラストの基準に失敗する。
                         					
                      </figcaption>
                      				
                   </figure>
                   
                   				
-                  <p>Using a change of contrast for focus and other states is a technique to differentiate
-                     the states. This is the basis for <a class="general" href="https://w3c.github.io/wcag/techniques/general/G195">G195: Using an author-supplied, visible focus indicator</a>, and more techniques are being added.
+                  <p>フォーカス及び他の状態にコントラストの変化を使用することは状態を区別する方法である。これは  <a class="general" href="https://w3c.github.io/wcag/techniques/general/G195">G195: コンテンツ制作者が提供する視認性に優れたフォーカスインジケータを使用する</a>の基礎であり、かつより多くの達成方法が追加されている。
                   </p>
                   
                   
                   				
-                  <h3>Relationship with Focus Visible</h3>
+                  <h3>フォーカスの可視化との関係性</h3>
                   				
                   				
-                  <p>In combination with <a href="focus-visible" class="sc">2.4.7 Focus Visible</a>, the visual focus indicator for a component <em>must</em> have sufficient contrast against the adjacent background when the component is focused,
-                     except where the appearance of the component is determined by the user agent and not
-                     modified by the author.
+                  <p><a href="focus-visible" class="sc">2.4.7 フォーカスの可視化</a>と組み合わせて、コンポーネントがフォーカスされている時に、そのコンポーネントの視覚的なフォーカスインジケータは、隣接している背景に対して十分なコントラストがなければならない。ただし、コンポーネントの見た目がユーザエージェントにより決定されており、かつコンテンツ制作者により変更されていない場合を除く。
                   </p>
                   
                   				
-                  <p>Most focus indicators appear outside the component - in that case it needs to contrast
-                     with the background that the component is on. Other cases include focus indicators
-                     which are:
+                  <p>ほとんどのフォーカスインジケータはコンポーネントの外側に表示される。その場合、コンポーネントの背景とコントラストをつける必要がある。その他のケースとしては、以下のようなフォーカスインジケータがある:
                   </p>
                   
                   				
                   <ul>
                      					
-                     <li>only inside the component and need to contrast with the adjacent color(s) within the
-                        component.
+                     <li>コンポーネントの内側のみにあって、コンポーネント内における隣接色とコントラストをつける必要がある。
                      </li>
                      					
-                     <li>the border of the component (inside the component and adjacent to the outside) and
-                        need to contrast with both adjacent colours. 
+                     <li>コンポーネントのボーダーにあって (コンポーネントの内側にあって、外側に隣接している)、隣接する両方の色とコントラストをつける必要がある。
                      </li>
                      					
-                     <li>partly inside and partly outside, where either part of the focus indicator can contrast
-                        with the adjacent colors.
+                     <li>一部は内部、一部は外部にあって、フォーカスインジケータのいずれかの部分が隣接する色とコントラストをつけることができる。
                      </li>
                      				
                   </ul>
                   
                   				
                   <figure id="figure-focus-inner">
-                     					<img src="img/ntc-focus-inner.png" alt="Three blue buttons, the middle has a thick yellow outline well inside the border of the button." width="400" />
+                     					<img src="img/ntc-focus-inner.png" alt="青いボタンが 3 つあり、真ん中は、ボタンの枠の内側に、太い黄色のアウトラインがある。" width="400" />
                      					
-                     <figcaption>Figure 8 
-                        						The internal yellow indicator (#FFFF00) contrasts with the blue button background
-                        (#4189B9), <strong>passing</strong> the criterion.
-                        					
+                     <figcaption>図 8 内部の黄色いインジケータ (#FFFF00) は、青いボタンの背景 (#4189B9) とコントラストがついていて、達成基準を<strong>満たしている</strong>。
                      </figcaption>
                      				
                   </figure>
@@ -392,11 +301,9 @@
                   
                   				
                   <figure id="figure-focus-outer-yellow">
-                     					<img src="img/ntc-focus-outer-yellow.png" alt="Three blue buttons on a white background, the middle has a light yellow outline outside of the botton's non-focused boundary." width="400" />
+                     					<img src="img/ntc-focus-outer-yellow.png" alt="白い背景に 3 つの青いボタンがあり、真ん中は、ボタンのフォーカスでない境界の外側に、薄い黄色のアウトラインがある。" width="400" />
                      					
-                     <figcaption>Figure 9 
-                        						The external yellow indicator (#FFFF00) does not contrast with the white background
-                        (#FFF) which the component is on, <strong>failing</strong> the criterion.
+                     <figcaption>図 9 外側の黄色いインジケータ (#FFFF00) は、コンポーネントが置かれている白い背景 (#FFF) とのコントラストが十分でなく、達成基準の<strong>失敗</strong>となる。
                         					
                      </figcaption>
                      				
@@ -404,64 +311,46 @@
                   
                   				
                   <figure id="figure-focus-outer-green">
-                     					<img src="img/ntc-focus-outer-green.png" alt="Three blue buttons on a white background, the middle has a dark green outline outside of the botton's non-focused boundary." width="400" />
+                     					<img src="img/ntc-focus-outer-green.png" alt="白い背景に 3 つの青いボタンがあり、真ん中は、ボタンのフォーカスでない境界の外側に、濃い緑のアウトラインがある。" width="400" />
                      					
-                     <figcaption>Figure 10 
-                        						The external green indicator (#008000) does contrast with the white background
-                        (#FFF) which the component is on, <strong>passing</strong> the criterion. It does not need to contrast with both the component background and
-                        the component.
-                        					
+                     <figcaption>図 10 外側の緑色のインジケータ (#008000) は、コンポーネントが置かれている白い背景 (#FFF) との間でコントラストがあり、達成基準を<strong>満たしている</strong>。コンポーネントの背景及びコンポーネントの両方との間で、コントラストがついている必要はない。
                      </figcaption>
                      				
                   </figure>
                   				
-                  <p>Although the figure above with a dark outline passes non-text contrast, it is not
-                     a good indicator unless it is very thick. <span class="wcag22"> <span class="new-version">New in WCAG 22: </span>There is a criterion in WCAG 2.2 that addresses this aspect, <a href="focus-appearance" class="sc">Focus Appearance</a>.</span></p>
+                  <p>上の図のようにアウトラインが濃いものは、非テキストのコントラストの達成基準を満たすものの、よほど太いものでない限り、よいインジケータではない。<span class="wcag22"> <span class="new-version">WCAG 2.2 での追記：</span>WCAG 2.2 には、この側面に対応する達成基準として、<a href="focus-appearance" class="sc">フォーカスの外観</a>がある。</span></p>
                   				
-                  <p>If an indicator is partly inside and partly outside the component, either part of
-                     the indicator could provide contrast.
+                  <p>インジケータの一部がコンポーネントの内側にあり、一部が外側にある場合は、インジケータのどちらかの部分にコントラストがついている可能性がある。
                   </p>
                   
                   				
                   <figure id="figure-focus-outer-inner">
-                     					<img src="img/ntc-focus-inner-outer.png" alt="Three blue buttons on a white background, the middle has the outline of a yellow rectangle that is partly inside the button's boundary, and partly outside on the white background." width="400" />
+                     					<img src="img/ntc-focus-inner-outer.png" alt="白い背景に 3 つの青いボタンがあり、真ん中には、黄色い四角形のアウトラインが、一部はボタンの境界の内側に、一部は外側の白い背景の上にある。" width="400" />
                      					
-                     <figcaption>Figure 11 
-                        						The focus indicator is partially inside, partially outside the button. The internal
-                        part of the yellow indicator (#FFFF00) contrasts with the blue button background (#4189B9),
-                        <strong>passing</strong> the criterion.
+                     <figcaption>図 11 フォーカスインジケータの一部がボタンの内側に、一部がボタンの外側にある。内側にある黄色のインジケータ (#FFFF00) は、青いボタンの背景色 (#4189B9) との間でコントラストがついているため、達成基準を<strong>満たしている</strong>。
                         					
                      </figcaption>
                      				
                   </figure>
                   
                   				
-                  <p>If the focus indicator changes the border of the component within the visible boundary
-                     it must contrast with the component. Typically an outline goes around (outside) the
-                     visible boundary of the component, in this case changing the border is just inside
-                     the visible edge of the component.
+                  <p>フォーカスインジケータが、コンポーネントの目に見える境界にあるボーダーを変更する場合、コンポーネントとの間でコントラストがついていなければならない。通常、アウトラインはコンポーネントの目に見える境界の周り (外側) を一回りするが、この場合、ボーダーを変更するのはコンポーネントの目に見える辺のすぐ内側である。
                   </p>
                   
                   				
                   <figure id="figure-focus-border">
-                     					<img src="img/ntc-focus-border.png" alt="Three blue buttons on a white background, the center button has a green border exactly on the outer boundary of the button." width="400" />
+                     					<img src="img/ntc-focus-border.png" alt="白い背景に 3 つの青いボタンがあり、真ん中のボタンは、ボタンのちょうど境界の上に、緑のボーダーがある。" width="400" />
                      					
-                     <figcaption>Figure 12 
-                        						The border of the control changes from blue (#4189B9) to green (#4B933A). This
-                        is within the component and does not contrast with the inside background of the component
-                        therefore <strong>fails</strong> non-text contrast.
-                        					
+                     <figcaption>図 12 コントロールのボーダーが青 (#4189B9) から緑 (#4B933A) に変化する。これはコンポーネントの中であり、コンポーネント内側の背景色とのコントラストが十分でないため、非テキストのコントラストの達成基準の<strong>失敗</strong>となる。
                      </figcaption>
                      				
                   </figure>
                   
                   				
                   <figure id="figure-focus-inner-green">
-                     					<img src="img/ntc-focus-inner-border.png" alt="Three blue buttons with a black border on a white background, the center button has a green border inside, adjacent to the inner background and black border." width="400" />
+                     					<img src="img/ntc-focus-inner-border.png" alt="白い背景に、黒いボーダーを持つ青いボタンが 3 つあり、真ん中のボタンは、その内側に緑のボーダーがあり、内側の背景色及び黒いボーダーと隣接している。" width="400" />
                      					
-                     <figcaption>Figure 13 
-                        						An inner border of dark green (#008000) does contrast with the black border,
-                        but does not contrast with the blue component background, therefore <strong>fails</strong> non-text contrast.
+                     <figcaption>図 13 内側にある濃い緑 (#008000) のボーダーは、黒いボーダーとの間でコントラストをもつが、コンポーネントの青い背景色とのコントラストが十分ないため、非テキストのコントラストの達成基準の<strong>失敗</strong>となる。
                         					
                      </figcaption>
                      				
@@ -469,30 +358,23 @@
                   
                   				
                   <figure id="figure-focus-inner-white">
-                     					<img src="img/ntc-focus-inner-white.png" alt="Three blue buttons with a black border on a white background, the center button has a white border inside, adjacent to the inner background and black border." width="400" />
+                     					<img src="img/ntc-focus-inner-white.png" alt="白い背景に、黒いボーダーを持つ青いボタンが 3 つあり、真ん中のボタンは、その内側に白いボーダーがあり、内側の背景色及び黒いボーダーと隣接している。" width="400" />
                      					
-                     <figcaption>Figure 14 
-                        						An inner border of white contrasts with the black border and the blue component
-                        background, therefore <strong>passes</strong> non-text contrast.
+                     <figcaption>図 14 白い内側にあるボーダーは、黒いボーダー及びコンポーネントの青い背景色との間でコントラストがついているため、非テキストのコントラストの達成基準を<strong>満たしている</strong>。
                         					
                      </figcaption>
                      				
                   </figure>
                   
                   		        
-                  <p>Note that this Success Criterion does not directly compare the focused and unfocused
-                     states of a control - if the focus state relies on a change of color (e.g., changing
-                     <em>only</em> the background color of a button), this Success Criterion does not define any requirement
-                     for the difference in contrast between the two states.
+                  <p>この達成基準は、コントロールのフォーカスされた状態とフォーカスされていない状態を直接比較しないことに注意すること。フォーカス状態が色の変化 (例: ボタンの背景色のみを変更する) に依存している場合、この達成基準は、二つの状態間のコントラストの違いに関する要件を定義していない。
                   </p>
                   
                   				
                   <figure id="figure-focus-background">
-                     					<img src="img/ntc-focus-background.png" alt="Three blue buttons, the center button is a lighter blue than the others." width="400" />
+                     					<img src="img/ntc-focus-background.png" alt="3 つの青いボタンばあり、真ん中のボタンは、他のボタンより薄い青色になっている。" width="400" />
                      					
-                     <figcaption>Figure 15 
-                        						The change of background within the component is not in scope of non-text contrast.
-                        However, this would not pass <a href="use-of-color.html">Use of color</a>.
+                     <figcaption>図 15 コンポーネント内の背景色の変更は、非テキストのコントラストの範囲外である。ただしこれは、<a href="use-of-color.html">色の使用</a>の達成基準を満たさない。
                         					
                      </figcaption>
                      				
@@ -501,78 +383,71 @@
                   				
                   <section id="user-interface-component-examples">
                      					
-                     <h4>User Interface Component Examples</h4>
+                     <h4>ユーザインタフェース コンポーネントの例</h4>
                      					
-                     <p>For designing focus indicators, selection indicators and user interface components
-                        that need to be perceived clearly, the following are examples that have sufficient
-                        contrast.
+                     <p>はっきりと知覚される必要のあるフォーカスインジケータ、選択インジケータ、及びユーザインタフェース コンポーネントをデザインするため、次の例には十分なコントラストがある。
                      </p>
                      
                      					
                      <table class="left-headers">
                         						
                         <caption>
-                           							User Interface Component Examples
+                           							ユーザインタフェース コンポーネントの例
                            						
                         </caption>
                         						
                         <tr>
                            						
-                           <th>Type</th>
+                           <th>タイプ</th>
                            						
-                           <th>Description</th>
+                           <th>説明</th>
                            						
-                           <th>Examples</th>
+                           <th>事例</th>
                            						
                         </tr>
                         						
                         <tr>
                            							
-                           <th>Link Text</th>
+                           <th>リンクテキスト</th>
                            							
-                           <td>Default link text is in the scope of <a href="contrast-minimum">1.4.3 Contrast (Minimum)</a>, and the underline is sufficient to indicate the link.
+                           <td>デフォルトのリンクテキストは <a href="contrast-minimum">1.4.3 コントラスト (最低限)</a> のスコープに含まれ、かつ下線はリンクを示すのに十分である。
                            </td>
                            							
-                           <td><img src="img/link-text-default.png" alt="A browser-default styled link, blue with an underline." /></td>
+                           <td><img src="img/link-text-default.png" alt="青い下線の、ブラウザのデフォルトスタイルのリンク。" /></td>
                            						
                         </tr>
                         						
                         <tr>
                            							
-                           <th>Default focus style</th>
+                           <th>デフォルトのフォーカススタイル</th>
                            							
-                           <td>Links are required to have a visible focus indicator by <a href="focus-visible.html">2.4.7 Focus Visible</a>. Where the focus style of the user-agent is not adjusted on interactive controls
-                              (such as links, form fields or buttons) by the website (author), the default focus
-                              style is exempt from contrast requirements (but must still be visible).
+                           <td>リンクには可視のフォーカスインジケータが存在することが <a href="focus-visible.html">2.4.7 フォーカスの可視化</a>により求められている。ウェブサイト (コンテンツ制作者) によって、ユーザエージェントのフォーカススタイルが、インタラクティブなコントロール (リンク、フォームフィールド、又はボタンなどの) において変更されていない場合、デフォルトのフォーカススタイルはコントラスト要件から除外される (ただし、可視でなければならない)。
                            </td>
                            							
-                           <td><img src="img/link-text-focus.png" alt="A browser-default styled link, with a black dotted outline around the link." /></td>
+                           <td><img src="img/link-text-focus.png" alt="リンクの周りに黒い点線のアウトラインのついた、ブラウザデフォルトのスタイル付けがされたリンク。" /></td>
                            						
                         </tr>
                         						
                         <tr>
                            							
-                           <th>Buttons</th>
+                           <th>ボタン</th>
                            							
-                           <td>A button which has a distinguishing indicator such as position, text style, or context
-                              does not need a <em>contrasting</em> visual indicator to show that it is a button, although some users are likely to identify
-                              a button with an outline that meets contrast requirements more easily.
+                           <td>位置、テキストスタイル、コンテキストなどの識別インジケータがあるボタンは、ボタンであることを示すためにコントラストをもつ視覚インジケーターを必要としないが、一部の利用者は、コントラスト要件をより簡単に満たすアウトラインでボタンを識別する可能性がある。
                            </td>
                            							
-                           <td><img src="img/button-background.png" alt="Button with a faint blue background." width="100" /></td>
+                           <td><img src="img/button-background.png" alt="かすかな青い背景のボタン。" width="100" /></td>
                            						
                         </tr>
                         						
                         <tr>
                            							
-                           <th>Text input (minimal)</th>
+                           <th>テキスト入力 (最小限)</th>
                            							
-                           <td>Where a text-input has a visual indicator to show it is an input, such as a bottom
-                              border (#767676), that indicator must meet 3:1 contrast ratio.
+                           <td>テキスト入力に、下部のボーダー (#767676) など、入力であることを示す視覚的なインジケータがあるところでは、そのインジケータは 3:1 のコントラスト比を満たさなければならない。
                            </td>
                            							
                            <td>
-                              								<img src="img/text-input-minimal.png" alt="A label with a text input shown by a bottom border and faint grey background." />
+                              								<img src="img/text-input-minimal.png" alt="下部のボーダー及び淡いグレーの背景で示されたラベルのあるテキスト入力。" />
                               							
                            </td>
                            						
@@ -580,14 +455,13 @@
                         						
                         <tr>
                            							
-                           <th>Text input</th>
+                           <th>テキスト入力</th>
                            							
-                           <td>Where a text-input has an indicator such as a complete border (#767676), that indicator
-                              must meet 3:1 contrast ratio.
+                           <td>完全なボーダー (#767676) など、テキスト入力がインジケータを持つところでは、そのインジケータは 3:1 のコントラスト比を満たさなければならない。
                            </td>
                            							
                            <td>
-                              								<img src="img/text-input-default.png" alt="A label with a text input shown by a complete border." />
+                              								<img src="img/text-input-default.png" alt="完全なボーダーで示されたラベルのあるテキスト入力。" />
                               							
                            </td>
                            						
@@ -595,15 +469,13 @@
                         						
                         <tr>
                            							
-                           <th>Text input focus style</th>
+                           <th>テキスト入力のフォーカススタイル</th>
                            							
-                           <td>A focus indicator is required. While in this case the additional gray (#CCC) outline
-                              has an insufficient contrast of 1.6:1 against the white (#FFF) background, the cursor/caret
-                              which is displayed when the input receives focus <em>does</em> provide a sufficiently strong visual indication.
+                           <td>フォーカスインジケータは必須である。この場合、追加の灰色 (#CCC) のアウトラインは白色 (#FFF) の背景に対して 1.6:1 の不十分なコントラストであるが、入力がフォーカスを受け取ったときに表示されるカーソル/キャレットは、十分に強い視覚的表示を提供する。
                            </td>
                            							
                            <td>
-                              								<img src="img/text-input-focus.png" alt="A label with a text input with a faint gray outline and a visible cursor/caret." />
+                              								<img src="img/text-input-focus.png" alt="かすかな灰色のアウトラインとカーソル/キャレットが表示されたラベルのあるテキスト入力。" />
                               							
                            </td>
                            						
@@ -611,14 +483,13 @@
                         						
                         <tr> 
                            							
-                           <th>Text input using background color</th>
+                           <th>背景色を使用しているテキスト入力</th>
                            							
-                           <td>Text inputs that have no border and are differentiated only by a background color
-                              must have a 3:1 contrast ratio to the adjacent background (#043464).
+                           <td>ボーダーがなく、かつ背景色のみで区別されるテキスト入力は隣接している背景 (#043464) に対して 3:1 のコントラスト比を持たなければならない。
                            </td>
                            							
                            <td>
-                              								<img src="img/text-input-background.png" alt="A label with a text input shown by a dark blue page background, and white box." />
+                              								<img src="img/text-input-background.png" alt="濃い青のページ背景及び白いボックスで示されたラベルのあるテキスト入力。" />
                               							
                            </td>
                            						
@@ -626,100 +497,89 @@
                         						
                         <tr>
                            							
-                           <th>Toggle button</th>
+                           <th>トグルボタン</th>
                            							
-                           <td>The toggle button's internal background (#070CD5) has a good contrast with the external
-                              white background. Also, the round toggle within (#7AC2FF) contrasts with the internal
-                              background.
+                           <td>トグルボタンの内部の背景 (#070CD5) は、外部の白色の背景とのコントラストが良好である。また、その中の丸いトグル (#7AC2FF) は、内部の背景とコントラストをもつ。
                            </td>
                            							
-                           <td><img src="img/toggle.png" alt="Dark blue oval toggle button with light blue internal indicator." width="150" /></td>
+                           <td><img src="img/toggle.png" alt="水色の内部インジケータ付きの濃い青色の楕円形のトグルボタン。" width="150" /></td>
                            						
                         </tr>
                         						
                         <tr>
                            							
-                           <th>Dropdown indicator</th>
+                           <th>ドロップダウンインジケータ</th>
                            							
-                           <td>The down-arrow is required to understand that there is drop-down functionality, it
-                              has a contrast of 4.7:1 for the white icon on dark gray (#6E747B).
+                           <td>下矢印は、ドロップダウン機能があることを理解するために必要である。濃い灰色 (#6E747B) にある白いアイコンのコントラストは 4.7:1 である。
                            </td>
                            							
-                           <td><img src="img/dropdown.png" alt="Button with the word Menu, and a down-arrow icon next to it." width="150" /></td>
+                           <td><img src="img/dropdown.png" alt="Menu という単語が付いたボタンと、その横にある下向きの矢印アイコン。" width="150" /></td>
                            						
                         </tr>
                         						
                         <tr>
                            							
-                           <th>Dropdown indicator</th>
+                           <th>ドロップダウンインジケータ</th>
                            							
-                           <td>The down-arrow is required to understand that there is drop-down functionality, it
-                              has a contrast of 21:1 for the black icon on white.
+                           <td>下矢印は、ドロップダウン機能があることを理解するために必要である。白に対する黒いアイコンのコントラストは 21:1 である。
                            </td>
                            							
-                           <td><img src="img/dropdown2.png" alt="Text with the word Menu, and a down-arrow icon next to it." width="150" /></td>
+                           <td><img src="img/dropdown2.png" alt="Menu という単語とその横にある下向き矢印アイコンが付いたテキスト。" width="150" /></td>
                            						
                         </tr>
                         						
                         <tr>
                            							
-                           <th>Checkbox - empty</th>
+                           <th>チェックボックス - 空</th>
                            							
-                           <td>A black border on a white background indicates the checkbox.</td>
+                           <td>白色の背景上の黒いボーダーはチェックボックスを示す。</td>
                            							
-                           <td><img src="img/checkbox-example1.png" alt="Black square border with a text label." width="150" /></td>
+                           <td><img src="img/checkbox-example1.png" alt="テキストラベル付きの黒い四角のボーダー。" width="150" /></td>
                            						
                         </tr>
                         						
                         <tr>
                            							
-                           <th>Checkbox - checked</th>
+                           <th>チェックボックス - チェックされた</th>
                            							
-                           <td>A black border on a white background indicates the checkbox, the black tick shape
-                              indicates the state of checked.
+                           <td>白色の背景上の黒色のボーダーはチェックボックスを示し、黒色のチェックマークの形はチェックされた状態を示す。
                            </td>
                            							
-                           <td><img src="img/checkbox-example2.png" alt="Black square border with a tick inside, and a text label." width="150" /></td>
+                           <td><img src="img/checkbox-example2.png" alt="内側にチェックマークが付いた黒い四角のボーダーとテキストラベル。" width="150" /></td>
                            						
                         </tr>
                         						
                         <tr>
                            							
-                           <th>Checkbox - Fail</th>
+                           <th>チェックボックス - 失敗</th>
                            							
-                           <td>The grey border color of the checkbox (#9D9D9D) has a contrast ratio of 2.7:1 with
-                              the white background, which is not sufficient for the visual information required
-                              to identify the checkbox.
+                           <td>チェックボックスの灰色のボーダーの色 (#9D9D9D) は、白色の背景の 2.7:1 のコントラスト比であり、これはチェックボックスを識別するために必要な視覚情報には不十分である。
                            </td>
                            							
-                           <td><img src="img/checkbox-example3.png" alt="Grey box on a white background with a black tick in the middle." width="150" /></td>
+                           <td><img src="img/checkbox-example3.png" alt="真ん中に黒いチェックマークがある、白い背景上の灰色のボックス。" width="150" /></td>
                            						
                         </tr>
                         						
                         <tr>
                            							
-                           <th>Checkbox - Subtle hover style</th>
+                           <th>チェックボックス - かすかなホバースタイル</th>
                            							
-                           <td>A black border on a white background indicates the checkbox, when the mouse pointer
-                              activates the subtle hover state adds a grey background (#DEDEDE). The black border
-                              has a 15:1 contrast ratio with the grey background.
+                           <td>白色の背景上の黒色のボーダーはチェックボックスを示し、マウスポインタがかすかなホバー状態をアクティブにすると、灰色の背景 (#DEDEDE) が追加される。黒色のボーダーは、灰色の背景と 15:1 のコントラスト比を持つ。
                            </td>
                            							
-                           <td><img src="img/checkbox-example4.png" alt="Blackbox on a circular grey background next to a text label." width="150" /></td>
+                           <td><img src="img/checkbox-example4.png" alt="テキストラベルの横にある円形の灰色の背景上の黒いボックス。" width="150" /></td>
                            						
                         </tr>
                         						
                         <tr>
                            							
-                           <th>Checkbox - Subtle focus style - fail</th>
+                           <th>チェックボックス - かすかなフォーカススタイル - 失敗</th>
                            							
-                           <td>A focus indicator is required. If the focus indicator is styled by the author, it
-                              must meet the 3:1 contrast ratio with adjacent colors. In this case, the gray (#AAA)
-                              indicator has an insufficient ratio of 2.3:1 with the white (#FFF) adjacent background.
+                           <td>フォーカスインジケータが必要である。フォーカスインジケータがコンテンツ制作者によってスタイル設定されている場合、隣接する色との 3:1 のコントラスト比を満たさなければならない。この場合、灰色 (#AAA) インジケータのコントラスト比は隣接する白色 (#FFF) の背景に対して 2.3:1 と不十分である。
                            </td>
                            							
                            <td>
-                              								<img src="img/checkbox-example5.png" alt="Unchecked checkbox with a thick gray additional outline as focus indication." width="150" />
+                              								<img src="img/checkbox-example5.png" alt="フォーカス表示として太い灰色の追加のアウトラインがある未チェックのチェックボックス。" width="150" />
                               							
                            </td>
                            						
@@ -732,30 +592,20 @@
                   				
                   <section id="inactive-controls">
                      					
-                     <h4>Inactive User Interface Components</h4>
+                     <h4>アクティブではないユーザインタフェース コンポーネント</h4>
                      
                      					
-                     <p>User Interface Components that are not available for user interaction (e.g., a disabled
-                        control in HTML) are not required to meet contrast requirements. An inactive user
-                        interface component is visible but not currently operable. An example would be a submit
-                        button at the bottom of a form that is visible but cannot be activated until all the
-                        required fields in the form are completed.
+                     <p>利用者とのインタラクションに利用できないユーザインタフェース コンポーネント (例: HTML で無効化されたコントロール) はコントラストの要件を満たすことを求められていない。アクティブではないユーザインタフェース コンポーネントは可視だが、現在は操作可能ではない。例としては、可視だが、フォームのすべての必須のフィールドに記入されるまで有効化できないフォームの下部にある送信ボタンがある。
                      </p>
                      					
                      <figure id="figure-grey-button-and-text">
-                        						<img src="img/inactive-button.png" alt="Grey button with non-contrasting grey text." width="120" />
+                        						<img src="img/inactive-button.png" alt="グレーのボタンとコントラストをもたないグレーのテキスト。" width="120" />
                         						
-                        <figcaption>Figure 16  An inactive button using default browser styles</figcaption>
+                        <figcaption>図 16 デフォルトのブラウザのスタイルを用いたアクティブではないボタン</figcaption>
                         					
                      </figure>
                      					
-                     <p>Inactive components, such as disabled controls in HTML, are not available for user
-                        interaction. The decision to exempt inactive controls from the contrast requirements
-                        was based on a number of considerations. Although it would be beneficial to some people
-                        to discern inactive controls, a one-size-fits-all solution has been very difficult
-                        to establish. A method of varying the presentation of disabled controls, such as adding
-                        an icon for disabled controls, based on user preferences is anticipated as an advancement
-                        in the future.
+                     <p>HTML の無効化されたコントロールなどのアクティブではないコンポーネントは利用者とのインタラクションに利用できない。アクティブではないコントロールをコントラストの要件から免除するという判断は、多数の考察に基づく。アクティブでないコントロールを識別することは一部の人にとって有益であるが、汎用的な解決策を制定することは非常に困難だった。無効化されたコントロールにアイコンを追加するなど、利用者の設定に応じて無効化されたコントロールを様々に提示する方法が将来の発展として期待されている。
                      </p>
                      				
                   </section>
@@ -763,21 +613,15 @@
                </section>
                <section id="graphical-objects">
                   				
-                  <h3>Graphical Objects</h3>
+                  <h3>グラフィカルオブジェクト</h3>
                   
                   
                   				
-                  <p>The term "graphical object" applies to stand-alone icons such as a print icon (with
-                     no text), and the important parts of a more complex diagram such as each line in a
-                     graph. For simple graphics such as single-color icons the entire image is a graphical
-                     object. Images made up of multiple lines, colors and shapes will be made of multiple
-                     graphical objects, some of which are required for understanding.
+                  <p>「グラフィカルオブジェクト」という用語は、(テキストのない) 印刷アイコンなどの独立したアイコン及びグラフの各線などのより複雑な図の重要な部分に適用される。単一色のアイコンなどの単純なグラフィックの場合、画像全体がグラフィカルオブジェクトになる。複数の線、色、及び形で形成された画像は複数のグラフィカルオブジェクトで形成されており、それらのいくつかは理解するのに必要である。
                   </p>
                   
                   				
-                  <p>Not every graphical object needs to contrast with its surroundings - only those that
-                     are required for a user to understand what the graphic is conveying. <a href="https://en.wikipedia.org/wiki/Gestalt_psychology#Pr.C3.A4gnanz">Gestalt principles</a> such as the "law of continuity" can be used to ignore minor overlaps with other graphical
-                     objects or colors.
+                  <p>すべてのグラフィカルオブジェクトが周囲とのコントラストをもつことが必要なわけではない - グラフィックが伝えていることを利用者が理解するのに必要なもののみである。<a href="https://en.wikipedia.org/wiki/Gestalt_psychology#Pr.C3.A4gnanz">Gestalt principles</a> の「連続性の法則」などは他のグラフィカルオブジェクト又は色の軽微な重なりを無視するために使用できる。
                   </p>
                   
                   				
@@ -787,9 +631,9 @@
                         						
                         <tr>
                            							
-                           <th>Image</th>
+                           <th>画像</th>
                            							
-                           <th>Notes</th>
+                           <th>注記</th>
                            						
                         </tr>
                         					
@@ -799,16 +643,13 @@
                         						
                         <tr>
                            							
-                           <td><img src="img/contrast-phone.png" alt="An orange circle with a white telephone icon in the middle." width="40" /></td>
+                           <td><img src="img/contrast-phone.png" alt="中央に白い電話のアイコンのあるオレンジの円。" width="40" /></td>
                            							
                            <td>
-                              <p>The phone icon is a simple shape within the orange (#E3660E) circle. The meaning can
-                                 be understood from that icon alone, the background behind the circle is irrelevant.
-                                 The orange background and the white icon have a contrast ration greater than 3:1,
-                                 which passes.
+                              <p>電話のアイコンはオレンジ (#E3660E) の円の中にある単純な形である。この意味はアイコン単体から理解でき、円の後ろにある背景は重要ではない。オレンジの背景及び白いアイコンは 3:1 以上のコントラストがあり、合格する。
                               </p>
                               							
-                              <p>The graphical object is the white phone icon.</p>
+                              <p>グラフィカルオブジェクトは白い電話のアイコンである。</p>
                               							
                            </td>
                            						
@@ -816,17 +657,13 @@
                         						
                         <tr>
                            							
-                           <td><img src="img/contrast-magnet.png" alt="A red magnet with grey tips and a black outline." /></td>
+                           <td><img src="img/contrast-magnet.png" alt="先端がグレーかつ黒いアウトラインの赤いマグネット。" /></td>
                            							
                            <td>
-                              <p>A magnet can be understood by the "U" shape with lighter colored tips. Therefore to
-                                 understand this graphic you should be able to discern the overall shape (against the
-                                 background) and the lighter colored tips (against the rest of the U shape and the
-                                 background).
+                              <p>マグネットは薄く色づけられた先端と「U」という形により理解できる。そのため、このグラフィックを理解するには、(背景に対して) 全体の形及び (その他の U の形及び背景に対して) 薄く色づけられた先端を理解できるべきである。
                               </p>
                               							
-                              <p>The graphical objects are the "U" shape (by outline or by the solid red color #D0021B),
-                                 and each tip of the magnet.
+                              <p>グラフィカルオブジェクトは (アウトラインによる、又はベタ塗りの赤色 #D0021B による) 「U」という形及びマグネットの各先端である。
                               </p>
                               							
                            </td>
@@ -835,17 +672,13 @@
                         						
                         <tr>
                            							
-                           <td><img src="img/contrast-currency-down.png" alt="A yellow arrow pointing down with a pound sign (currency) in the middle." /></td>
+                           <td><img src="img/contrast-currency-down.png" alt="ポンド記号 (通貨) が中央にある下向きの黄色い矢印。" /></td>
                            							
                            <td>
-                              <p>The symbol to show a currency (the £) going down can be understood with recognition
-                                 of the shape (down arrow) and the currency symbol (pound icon with the shape which
-                                 is part of the graphic). To understand this graphic you need to discern the arrow
-                                 shape against the white background, and the pound icon against the yellow background
-                                 (#F5A623).
+                              <p>通貨 (£) が下がっていることを示す記号は、外形 (下向き矢印) 及び通貨記号 (グラフィックの一部である外形とポンドアイコン) を識別することにより理解することができる。このグラフィックを理解するには、白い背景に対して矢印の形、及び黄色い背景 (#F5A623) に対してポンドアイコンを理解する必要がある。
                               </p>
                               							
-                              <p>The graphical objects are the shape and the currency symbol.</p>
+                              <p>グラフィカルオブジェクトは外形及び通貨記号である。</p>
                               							
                            </td>
                            						
@@ -855,22 +688,17 @@
                            							
                            <td>
                               <!-- Sourced from wikipedia under CC sharealike license https://en.wikipedia.org/wiki/File:Simple_line_graph_of_ACE_2012_results_by_candidate_sj01.png -->
-                              								<a href="img/simple-line-graph.png"><img src="img/simple-line-graph.png" alt="A line chart of votes across a region, with 4 lines of different colors tracking over time." width="200" /></a></td>
+                              								<a href="img/simple-line-graph.png"><img src="img/simple-line-graph.png" alt="四つの異なる色の線が時間と共に追跡している、地域を横断する投票数の線チャート。" width="200" /></a></td>
                            
                            							
                            <td>
-                              <p>In order to understand the graph you need to discern the lines and shapes for each
-                                 condition. To perceive the values of each line along the chart you need to discern
-                                 the grey lines marking the graduated 100 value increments.
+                              <p>グラフを理解するためには、各条件の線及び外形を理解する必要がある。チャートに沿った各線の値を認識するには、目盛りの 100 きざみの値を示す灰色の線を識別する必要がある。
                               </p>
                               							
-                              <p>The graphical objects are the lines in the graph, including the background lines for
-                                 the values, and the colored lines with shapes.
+                              <p>グラフィカルオブジェクトは値のための背景の線を含むグラフ内の線、及び形と色つきの線である。
                               </p>
                               							
-                              <p>The lines should have 3:1 contrast against their background, but as there is little
-                                 overlap with other lines they do not need to contrast with each other or the graduated
-                                 lines. (See the testing principles below.)
+                              <p>線には背景に対して 3:1 のコントラストがあるべきだが、それらの他の線との重なりは小さいため、それぞれ又は目盛り付きの線とコントラストをもたなくても良い。(以下の検証の原則を確認すること。)
                               </p>
                               						
                            </td>
@@ -880,17 +708,15 @@
                         						
                         <tr>
                            							
-                           <td><a href="img/graphics-contrast_pie-chart_pass.png"><img src="img/graphics-contrast_pie-chart_pass.png" alt="A pie chart with small gaps between each slice showing the white background, and a dark outline around light colored slices." width="200" /></a></td>
+                           <td><a href="img/graphics-contrast_pie-chart_pass.png"><img src="img/graphics-contrast_pie-chart_pass.png" alt="各扇形の間に白い背景を表示している小さい隙間がある円グラフ。薄く色づけられた扇形は濃いアウトラインで囲まれている。" width="200" /></a></td>
                            							
                            <td>
-                              <p>To understand the pie chart you have to discern each slice of the pie chart from the
-                                 others.
+                              <p>円グラフを理解するためには、円グラフの各扇形を他と区別する必要がある。
                               </p>
                               							
-                              <p>The graphical objects are the slices of the pie (chart).</p>
+                              <p>グラフィカルオブジェクトは円 (グラフ) の各扇形である。</p>
                               							
-                              <p>Note: If the values of the pie chart slices were also presented in a conforming manner
-                                 (see the Pie Charts example for details), the slices would not be required for understanding.
+                              <p>注記: もし円グラフの扇形の値が適合する方法で提示されていた場合 (詳細は円グラフの例を参照)、扇形は理解するのに必要ではない。
                               </p>
                               						
                            </td>
@@ -902,69 +728,56 @@
                   </table>
                   
                   				
-                  <p>Taking the magnet image above as an example, the process for establishing the graphical
-                     object(s) is to:
+                  <p>上記のマグネット画像を例にとると、グラフィカルオブジェクトを定める過程は:
                   </p>
                   				
                   <ul>
                      					
-                     <li>Assess what part of each image is needed to understand what it represents.<br />
-                        						The magnet's "U" shape can be conveyed by the outline or by the red background
-                        (either is acceptable). The white tips are also important (otherwise it would be a
-                        horseshoe), which needs to contrast with the red background.
+                     <li>画像が何を表しているかを理解するために、各画像のどの部分が必要かを評価する。
+マグネットの「U」という形はアウトライン又は赤い背景で伝えることができる (どちらも条件を満たしている)。白い先端も重要であり (そうでなければ馬蹄になってしまう)、赤い背景とコントラストをもつ必要がある。
                      </li>
                      					
-                     <li>Assume that the user could only see those aspects. Do they contrast with the adjacent
-                        colors?<br />
-                        						The outline of the magnet contrasts with the surrounding text (black/white),
-                        and the red and white between the tips also has sufficient contrast.
+                     <li>利用者がそれらの特徴しか見られないと仮定する。それらは隣接している色とコントラストをもつか？<br />
+マグネットのアウトラインは周囲のテキスト (黒／白) とコントラストをもち、かつ先端の赤及び白も十分なコントラストがある。
                      </li>
                      				
                   </ul>
                   
                   				
-                  <p>Due to the strong contrast of the red and white, it would also be possible to only
-                     put the outline around the white tips of the magnet and it would still conform.
+                  <p>赤と白の強いコントラストにより、マグネットの白い先端の周りのみにアウトラインをつけることも可能であり、それでも適合する。
                   </p>
                   
                   				
                   <section id="required-for-understanding">
                      				
-                     <h4>Required for Understanding</h4>
+                     <h4>理解するのに必要</h4>
                      
                      				
-                     <p>The term "required for understanding" is used in the Success Criterion as many graphics
-                        do not need to meet the contrast requirements. If a person needs to perceive a graphic,
-                        or part of a graphic (a graphical object) in order to understand the content it should
-                        have sufficient contrast. However, that is not a requirement when:
+                     <p>「理解するのに必要」という用語は、多くのグラフィックがコントラストの要件を満たさなくて良いため、達成基準の中で使用されている。もし人がコンテンツを理解するためにグラフィック、又はグラフィックの一部 (グラフィカルオブジェクト) を知覚する必要がある場合、それは十分なコントラストを持つべきである。しかし、これは次の場合は必須要件ではない:
                      </p>
                      				
                      <ul>
                         					
                         <li>
                            						
-                           <p>A graphic with text embedded or overlayed conveys the same information, such as labels
-                              <em>and</em> values on a chart.
+                           <p>ラベル<em>及び</em>チャート内の値など、グラフィックに埋め込まれた又は重ねられたテキストが同じ情報を伝えている。
                            </p>
                            						
                            <div class="note">
-                              <p class="note-title marker">Note</p>
-                              <p>Text within a graphic must meet <a href="contrast-minimum" class="sc">1.4.3 Contrast (Minimum)</a>.
+                              <p class="note-title marker">注記</p>
+                              <p>グラフィック内のテキストは <a href="contrast-minimum" class="sc">1.4.3 コントラスト (最低限)</a> を満たさなければならない。
                               </p>
                            </div>
                            					
                         </li>
                         					
-                        <li> The graphic is for aesthetic purposes that does not require the user to see or understand
-                           it to understand the content or use the functionality.
+                        <li>グラフィックが見栄えのためにあり、利用者にコンテンツを理解するため又は機能を使用するために見る又は理解することを求めない。
                         </li>
                         					
-                        <li> The information is available in another form, such as in a table that follows the
-                           graph, which becomes visible when a "Long Description" button is pressed.
+                        <li>「長い説明」ボタンを押下すると表示されるグラフに続く表など、情報が他の形式で提供されている。
                         </li>
                         					
-                        <li> The graphic is part of a logo or brand name (which is considered "essential" to its
-                           presentation).
+                        <li>グラフィックはロゴ又はブランド名の一部である (その提示にとって「必要不可欠」と考えらえている)。
                         </li>
                         				
                      </ul>
@@ -973,21 +786,16 @@
                   				
                   <section id="gradients">
                      				
-                     <h4>Gradients</h4>
+                     <h4>グラデーション</h4>
                      
                      				
-                     <p>Gradients can reduce the apparent contrast between areas, and make it more difficult
-                        to test. The general principles is to identify the graphical object(s) required for
-                        understanding, and take the central color of that area. If you remove the adjacent
-                        color which does not have sufficient contrast, can you still identify and understand
-                        the graphical object?
+                     <p>グラデーションは領域間の見かけのコントラストを減らすことができ、かつ検証をより困難にする。一般的な原則としては、理解するのに必要なグラフィカルオブジェクトを特定し、その領域の中央の色をとることである。もし十分なコントラストのない隣接している色を取り除いても、まだグラフィカルオブジェクトを特定しかつ理解することができるのか？
                      </p>
                      				
                      <figure id="figure-blue-circle-i-versions">
-                        <img src="img/contrast-gradient.png" alt="Two versions of a blue circle with an 'i' indicating information. The first example has a blue gradient background, the second is missing the upper half of the background which obscures the i." width="300" />
+                        <img src="img/contrast-gradient.png" alt="「i」が情報ということを示す二つのバージョンの青い円。一つ目の例では青いグラデーションの背景があり、二つ目は上半分の背景がなくなっており、 i を不明瞭にしている。" width="300" />
                         				
-                        <figcaption>Figure 17 Removing the background which does not have sufficient contrast highlights that the
-                           graphical object (the "i") is not then understandable.
+                        <figcaption>図 17 十分なコントラストのない背景を取り除くことは、グラフィカルオブジェクト (「i」) が理解できなくなることを強調する。
                         </figcaption>
                      </figure>
                      				
@@ -995,25 +803,19 @@
                   				
                   <section id="dynamic-examples">
                      				
-                     <h4>Dynamic Examples</h4>
+                     <h4>動的な例</h4>
                      
                      				
-                     <p>Some graphics may have interactions that either vary the contrast, or display the
-                        information as text when you mouseover/tap/focus each graphical object. In order for
-                        someone to discern the graphics exist at all, the unfocused default version must already
-                        have sufficiently contrasting colors or text. For the area that receives focus, information
-                        can then be made available dynamically as pop-up text, or be foregrounded dynamically
-                        by increasing the contrast.
+                     <p>グラフィックの中には、コントラストを変更したり、各グラフィカルオブジェクトにマウスオーバー／タップ／フォーカスをしたときに情報をテキストとして表示するインタラクションがあるかもしれない。結局のところ人がグラフィックの存在を認識するには、フォーカスされていないデフォルトのバージョンにおいて、あらかじめ十分なコントラストの色又はテキストがなければならない。フォーカスを受け取る領域においては、情報をポップアップテキストとして動的に提供したり、コントラストを高めることで動的に目立たせたりすることができる。
                      </p>
                      
                      				
                      <!-- example from http://www.oracle.com/webfolder/technetwork/jet/jetCookbook.html?component=pieChart&demo=default -->
                      				
                      <figure id="figure-pie-slice-hover-data">
-                        					<img alt="A pie chart with one slice highlighted and a box hovering next to it that shows the data and indicates the source in the key." src="img/dynamic-pie-chart.png" width="350" /> 
+                        					<img alt="一つの扇形が強調された円グラフ及び隣に付いているボックスはデータを表していて、かつ凡例内のソースを示している。" src="img/dynamic-pie-chart.png" width="350" /> 
                         					
-                        <figcaption>Figure 18 A dynamic chart where the current 'slice' is hovered or focused, which activates the
-                           associated text display of the values and highlights the series
+                        <figcaption>図 18 現在の「扇形」がホバー又はフォーカスされている動的なチャートは、値の関連しているテキスト表示を活性化し、かつ series を強調する。
                         </figcaption>
                         				
                      </figure>
@@ -1022,37 +824,30 @@
                   				
                   <section id="infographics">
                      				
-                     <h4>Infographics</h4>
+                     <h4>インフォグラフィック</h4>
                      
                      				
-                     <p>Infographics can mean any graphic conveying data, such as a chart or diagram. On the
-                        web it is often used to indicate a large graphic with lots of statements, pictures,
-                        charts or other ways of conveying data. In the context of graphics contrast, each
-                        item within such an infographic should be treated as a set of graphical objects, regardless
-                        of whether it is in one file or separate files.
+                     <p>インフォグラフィックはチャート又は図など、データを伝えるあらゆるグラフィックを意味することができる。ウェブではよくたくさんの意見、絵、チャート、又は他のデータを伝える方法を含む大きなグラフィックを示すために使われている。グラフィックのコントラストの文脈では、そのようなインフォグラフィック内の各アイテムは、一つのファイルか個別のファイルかにかかわらず、一連のグラフィカルオブジェクトとして扱われるべきである。
                      </p>
                      
                      				
-                     <p>Infographics often fail to meet several WCAG level AA criteria including:</p>
+                     <p>インフォグラフィックはよく、以下を含む WCAG レベル AA の基準を満たすことに失敗する:</p>
                      
                      				
                      <ul>
                         					
-                        <li><a href="non-text-content" class="sc">1.1.1 Non-text Content</a></li>
+                        <li><a href="non-text-content" class="sc">1.1.1 非テキストコンテンツ</a></li>
                         					
-                        <li><a href="use-of-color" class="sc">1.4.1 Use of Color</a></li>
+                        <li><a href="use-of-color" class="sc">1.4.1 色の使用</a></li>
                         					
-                        <li><a href="contrast-minimum" class="sc">1.4.3 (Text) Contrast</a></li>
+                        <li><a href="contrast-minimum" class="sc">1.4.3 (テキストの) コントラスト</a></li>
                         					
-                        <li><a href="images-of-text" class="sc">1.4.5 Images of Text</a></li>
+                        <li><a href="images-of-text" class="sc">1.4.5 文字画像</a></li>
                         				
                      </ul>
                      
                      				
-                     <p>An infographic can use text which meets the other criteria to minimise the number
-                        of graphical objects required for understanding. For example, using text with sufficient
-                        contrast to provide the values in a chart. A long description would also be sufficient
-                        because then the infograph is not relied upon for understanding.
+                     <p>インフォグラフィックは、理解するのに必要なグラフィカルオブジェクトの数を最小限にするために、他の基準を満たすテキストを使用することができる。例えば、チャート内の値を提供するために、十分なコントラストのテキストを使用する。インフォグラフィックが理解のために依存されなくなるため、長い説明でも十分だろう。
                      </p>
                      
                      				
@@ -1061,17 +856,15 @@
                   				
                   <section id="symbolic-text-characters">
                      					
-                     <h4>Symbolic text characters</h4>
+                     <h4>記号文字</h4>
                      					
-                     <p>When text characters are used as symbols – used for their visual appearance, rather
-                        than <q>expressing something in human language</q> – they fall under the definition of <a href="#dfn-non-text-content">non-text content</a>.
+                     <p>テキスト文字が記号として使用される場合 — つまり<q>自然言語で何かを表現する</q>のではなく、その視覚的な外観のために使用される場合 — それらは<a href="#dfn-non-text-content">非テキストコンテンツ</a>の定義に該当する。
                      </p>
                      					
                      <figure id="figure-text-symbols">
-                        						<img alt="A button using an uppercase 'X' and a button with a greater-than character" src="img/buttons-text-symbols.png" />
+                        						<img alt="大文字の「X」を使用しているボタン及び「大なり」記号を使用しているボタン。" src="img/buttons-text-symbols.png" />
                         						
-                        <figcaption>Figure 19 Even though the two buttons use text characters — an uppercase <q>X</q>, often used for "Close" buttons, and a <q>&gt;</q> character, to act as a right-pointing arrow — they count as non-text characters/symbols.
-                           Their contrast ratio of just above 3:1 passes this Success Criterion.
+                        <figcaption>図 19 「閉じる」ボタンとしてしばしば使われる大文字の「X」と、右向きの矢印として機能する「>」の 2 つのボタンは、テキスト文字を使用しているにもかかわらず、非テキスト文字／記号としてみなされる。これらのコントラスト比はちょうど 3:1 強で、この達成基準を満たす。
                         </figcaption>
                         					
                      </figure>
@@ -1081,37 +874,30 @@
                   				
                   <section id="essential-exception">
                      					
-                     <h4>Essential Exception</h4>
+                     <h4>必要不可欠な例外</h4>
                      
                      					
-                     <p>Graphical objects do not have to meet the contrast requirements when "a particular
-                        presentation of graphics is essential to the information being conveyed". The Essential
-                        exception is intended to apply when there is no way of presenting the graphic with
-                        sufficient contrast without undermining the meaning. For example:
+                     <p>グラフィカルオブジェクトは、「グラフィック特有の提示が、情報を伝えるうえで必要不可欠」な場合、コントラストの要件を満たす必要はない。必要不可欠の例外は、意味を損なわずに十分なコントラストのグラフィックを提示する方法がない場合に適用することを意図している。例えば:
                      </p>
                      					
                      <ul>
                         						
-                        <li><strong>Logotypes and flags</strong>: The brand logo of an organization or product is the representation of that organization
-                           and therefore exempt. Flags may not be identifiable if the colors are changed to have
-                           sufficient contrast.
+                        <li><strong>ロゴタイプ及び旗</strong>: 組織又は製品のブランドのロゴはその組織の象徴であるため、免除する。旗は、十分なコントラストを持つために色が変更された場合、識別できないかもしれない。
                         </li>
                         						
-                        <li><strong>Sensory</strong>: There is no requirement to change pictures of real life scenes such as photos of
-                           people or scenery.
+                        <li><strong>感覚的</strong>: 人又は風景の写真などの現実の場面の絵を変更するという必須要件はない。
                         </li>
                         						
-                        <li><strong>Representing other things</strong>: If you cannot represent the graphic in any other way, it is essential. Examples
-                           include: 
+                        <li><strong>他のものを表している: </strong>: グラフィックを他のどの方法でも表現できない場合、それは必要不可欠である。例に含まれるのは:
                            							
                            <ul>
                               								
-                              <li>Screenshots to demonstrate how a website appeared.</li>
+                              <li>ウェブサイトがどのように表示されていたかを明示するスクリーンショット。</li>
                               								
-                              <li>Diagrams of medical information that use the colors found in biology (<a href="https://commons.wikimedia.org/wiki/File:Schematic_diagram_of_the_human_eye_it.svg">example medical schematic from Wikipedia</a>).
+                              <li>生物学で見られる色を使用した医療情報の図 (<a href="https://commons.wikimedia.org/wiki/File:Schematic_diagram_of_the_human_eye_it.svg">Wikipedia の医療的な図解の例</a>)。
                               </li>
                               								
-                              <li>color gradients that represent a measurement, such as heat maps (<a href="https://commons.wikimedia.org/wiki/File:Eyetracking_heat_map_Wikipedia.jpg">example heatmap from Wikipedia</a>).
+                              <li>ヒートマップなどの、測定結果を表す色のグラデーション (<a href="https://commons.wikimedia.org/wiki/File:Eyetracking_heat_map_Wikipedia.jpg">Wikipedia からのヒートマップの例</a>)。
                               </li>
                               							
                            </ul>
@@ -1125,48 +911,41 @@
                   			
                   <section id="testing-principles">
                      					
-                     <h4>Testing Principles</h4>
+                     <h4>検証の原則</h4>
                      					
-                     <p>A summary of the high-level process for finding and assessing non-text graphics on
-                        a web page:
+                     <p>ウェブページの非テキストグラフィックを見つける及び評価するための上層工程の概要:
                      </p>
                      					
                      <ul>
                         						
-                        <li>Identify each user-interface component (link, button, form control) on the page and:
+                        <li>ページ内の各ユーザインタフェースコンポーネント (リンク、ボタン、フォームコントロール) を特定する。及び:
                            							
                            <ul>
                               								
-                              <li>Identify the visual (non-text) indicators of the component that are required to identify
-                                 that a control exists, and indicate the current state. In the default (on page load)
-                                 state, test the contrast ratio against the adjacent colors.
+                              <li>コントロールが存在することを特定するために必要とされているコンポーネントの視覚的な (非テキストの) 目安を特定し、かつ現在の状態を示す。規定 (ページロード時) の状態では、隣接している色に対してコントラスト比を検証する。
                               </li>
                               								
-                              <li>Test those contrast indicators in each state.</li>
+                              <li>それらのコントラストの目安を各状態で検証する。</li>
                               							
                            </ul>
                            						
                         </li>
                         						
-                        <li>Identify each graphic on the page that includes information required for understanding
-                           the content (i.e. excluding graphics which have visible text for the same information,
-                           or are decorative) and:
+                        <li>ページ内のコンテンツを理解するのに必要な情報を含む各グラフィックを特定する (つまり、同じ情報の可視テキストを含む、又は装飾的なグラフィックは除外する)。及び:
                            							
                            <ul>
                               								
-                              <li>Check the contrast of the graphical object against its adjacent colors;</li>
+                              <li>隣接している色に対してグラフィカルオブジェクトのコントラストを確認する。</li>
                               								
-                              <li>If there are multiple colors and/or a gradient, choose the least contrasting area
-                                 to test;
+                              <li>もし複数の色及び／又はグラデーションがある場合、最もコントラストが低い箇所を選択して検証する。
                               </li>
                               								
-                              <li>If it passes, move to the next graphical object;</li>
+                              <li>合格の場合、次のグラフィカルオブジェクトに移動する。</li>
                               								
-                              <li>If the least-contrasting area is less than 3:1, assume that area is invisible, is
-                                 the graphical object still understandable?
+                              <li>もし最もコントラストが低い領域が 3:1 を下回る場合、その領域が非可視であると仮定して、グラフィカルオブジェクトはそれでも理解できるか？
                               </li>
                               								
-                              <li>If there is enough of the graphical object to understand, it passes, else fail.</li>
+                              <li>グラフィカルオブジェクトを理解するのに十分な場合、合格する。そうでなければ、失敗する。</li>
                               							
                            </ul>
                            						
@@ -1174,7 +953,7 @@
                         					
                      </ul>
                      					
-                     <p>The techniques below each have testing criteria, and the related criteria for <a href="focus-visible">Focus visible (2.4.7)</a>, <a href="use-of-color">Use of color (1.4.1)</a>, and <a href="contrast-minimum">Contrast minimum</a> also have techniques.
+                     <p>以下の達成方法はそれぞれ検証基準があり、かつ<a href="focus-visible">フォーカスの可視化 (2.4.7)</a>、<a href="use-of-color">色の使用 (1.4.1)</a>、及びコントラスト (最低限) の関連する基準にも達成方法がある。
                      </p>
                      			
                   </section>
@@ -1184,46 +963,35 @@
             </section>
             <section id="benefits">
                <h2>利点</h2>
-               <p>People with low vision often have difficulty perceiving graphics that have insufficient
-                  contrast. This can be exacerbated if the person has a color vision deficiency that
-                  lowers the contrast even further. Providing a <a href="https://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef">relative luminance</a> (lightness difference) of 3:1 or greater can make these items more distinguishable
-                  when the person does not see a full range of colors.
+               <p>ロービジョンの人は不十分なコントラストのグラフィックを知覚するのが困難なことがよくある。これは、コントラストをさらに低下させる色覚異常がある人の場合、深刻となりえる。3:1 又はそれ以上の<a href="#dfn-relative-luminance">相対輝度</a> (明るさの違い) を提供することで、その人があらゆる色を見ることができなくても、これらの項目をさらに識別しやすくする。
                </p>
             </section>
             <section id="examples">
                <h2>事例</h2>
                <ul>
                   				
-                  <li>Status icons on an application's dashboard (without associated text) have a 3:1 minimum
-                     contrast ratio.
+                  <li>アプリケーションのダッシュボードにある (関連しているテキストのない) ステータスアイコンには 3:1 の最低限のコントラスト比がある。
                   </li>
                   				
-                  <li>A text input has a dark border around the white editable area.</li>
+                  <li>テキスト入力には白い編集可能領域の周りに濃いボーダーがある。</li>
                   				
-                  <li>A graph uses a light background and ensures that the colors for each line have a 3:1
-                     contrast ratio against the background.
+                  <li>グラフは薄い背景を使用し、各線の色が背景に対して 3:1 のコントラスト比を持つようにしている。
                   </li>
                   			
                </ul>
                <section class="example" id="pie-charts">
                   				
-                  <h3>Pie Charts</h3>
+                  <h3>円グラフ</h3>
                   				
-                  <p>Pie charts make a good case study for the graphical objects part of this success criterion,
-                     the following pie charts are intended to convey the proportion of market share each
-                     browser has. Please Note: The actual figures are made up, these are not actual market
-                     shares. 
+                  <p>円グラフはこの達成基準のグラフィカルオブジェクトに関する部分の良いケーススタディになる。次の円グラフは、ブラウザの市場シェアの割合を伝えることを意図している。実際の数字は作られたものであり、これらは実際の市場シェアではないことに注意いただきたい。
                   </p>
                   				
                   <figure id="figure-failing-pie-chart">
-                     					<img src="img/graphics-contrast_pie-chart_fail.png" alt="Failing pie chart" />
+                     					<img src="img/graphics-contrast_pie-chart_fail.png" alt="失敗している円グラフ" />
                      					
-                     <figcaption>Figure 20 
+                     <figcaption>図 20 
                         						
-                        <p><strong>Fail:</strong> The pie chart has labels for each slice (so passes 1.4.1 Use of Color), but in order
-                           to understand the proportions of the slices you must discern the edges of the slices
-                           (the graphical objects conveying essential information), and the contrast between
-                           the slices is not  3:1 or greater. 
+                        <p><strong>失敗:</strong> 円グラフには各扇形にラベルがついている (そのため、1.4.1 色の使用は合格する) が、扇形の割合を理解するためには、その扇形の縁 (必要不可欠な情報を伝えるグラフィカルオブジェクト) を認識しなければならず、かつ各扇形間のコントラストは 3:1 又はそれ以上ではない。
                         </p>
                         					
                      </figcaption>
@@ -1231,11 +999,11 @@
                   </figure>
                   				
                   <figure id="figure-not-applicable-pie-chart">
-                     					<img src="img/graphics-contrast_pie-chart_na.png" alt="Not applicable pie chart" />
+                     					<img src="img/graphics-contrast_pie-chart_na.png" alt="適用されない円グラフ" />
                      					
-                     <figcaption>Figure 21 
+                     <figcaption>図 21 
                         						
-                        <p><strong>Not applicable:</strong> The pie chart has visible labels <em>and</em> values that convey equivalent information to the graphical objects (the pie slices).
+                        <p><strong>非適用:</strong> 円グラフには可視ラベル及び値があり、グラフィカルオブジェクト (円の扇形) の同等の情報を伝えている。
                            
                         </p>
                         					
@@ -1244,13 +1012,11 @@
                   </figure>
                   				
                   <figure id="figure-passing-pie-chart">
-                     					<img src="img/graphics-contrast_pie-chart_pass.png" alt="Passing pie chart" />
+                     					<img src="img/graphics-contrast_pie-chart_pass.png" alt="合格している円グラフ" />
                      					
-                     <figcaption>Figure 22 
+                     <figcaption>図 22 
                         						
-                        <p><strong>Pass:</strong> The pie chart has visible labels, and sufficient contrast around and between the
-                           slices of the pie chart (the graphical objects). A darker border has been added around
-                           the yellow slice in order to achieve the contrast level.
+                        <p><strong>合格:</strong> 円グラフには可視ラベルがあり、かつ十分なコントラストが円グラフの扇形 (グラフィカルオブジェクト) の周囲及び間にある。コントラストレベルを得るために、さらに濃いボーダーが黄色い扇形の周りに追加されている。
                         </p>
                         					
                      </figcaption>
@@ -1260,48 +1026,43 @@
                </section>
                <section class="example" id="infographics">
                   				
-                  <h3>Infographics</h3>
+                  <h3>インフォグラフィック</h3>
                   				
                   <figure id="figure-infographic-light-circles">
-                     					<img src="img/infographic-fail.png" alt="An infographic showing lightly colored circles of various sizes to indicate the size of five different social networks" />
+                     					<img src="img/infographic-fail.png" alt="五つの異なるソーシャルネットワークのサイズ示すために複数のサイズの明るい色の円で表しているインフォグラフィック" />
                      					
-                     <figcaption>Figure 23 
+                     <figcaption>図 23 
                         						
-                        <p><strong>Fail:</strong> Discerning the circles is required to understand the size of network and discerning
-                           the icons in each circle is required to identify which network it shows.
+                        <p><strong>失敗:</strong> ネットワークのサイズを理解するために円を識別する必要があり、かつどのネットワークを表しているかを識別するために各円の中のアイコンを区別する必要がある。
                         </p>
                         					
                      </figcaption>
                      				
                   </figure>
                   				
-                  <p>The graphical objects are the circles (measured against the background) and the icons
-                     in each circle (measured against the circle's background).
+                  <p>グラフィカルオブジェクトは (背景に対して測定される) 円及び (円の背景に対して測定される) 各円の中のアイコンである。
                   </p>
                   				
                   <figure id="figure-infographic-contrasting-text">
-                     					<img src="img/infographic-pass.png" alt="The same infographic with contrasting text, dark borders around the circles, and contrasting icons." />
+                     					<img src="img/infographic-pass.png" alt="円の周りに濃いボーダーとコントラストをもつアイコン、コントラストをもつテキストのある同じインフォグラフィック" />
                      					
-                     <figcaption>Figure 24 
+                     <figcaption>図 24 
                         						
-                        <p><strong>Pass:</strong> The circles have contrasting borders and the icons are a contrasting dark color against
-                           the light circle backgrounds.
+                        <p><strong>合格:</strong> 円にはコントラストをもつボーダーがあり、かつアイコンは薄い円の背景に対してコントラストをもつ濃い色である。
                         </p>
                         					
                      </figcaption>
                      				
                   </figure>
                   				
-                  <p>There are many possible solutions to ensuring contrast, the example shows the use
-                     of borders. Other techniques are to use darker colors for the circle backgrounds,
-                     or to add text labels &amp; values for each item.
+                  <p>コントラストを確保するためのたくさんの可能な解決策があり、例ではボーダーの使用を表している。他の達成方法には、円の背景により濃い色を使用する、又は各項目にテキストラベル及び値を追加することがある。
                   </p>
                   			
                </section>
             </section>
             <section id="resources">
                <h2>関連リソース</h2>
-               <p>Resources are for information purposes only, no endorsement implied.</p>
+               <p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p>
                <ul>
                   				
                   <li><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html">Accessibility Requirements for People with Low Vision</a>.
@@ -1319,21 +1080,15 @@
             </section>
             <section id="techniques">
                <h2>テクニック</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
                   <h3>十分なテクニック</h3>
-                  <p>Select the situation below that matches your content. Each situation includes techniques
-                     or combinations of techniques that are known and documented to be sufficient for that
-                     situation. 
+                  <p>そのコンテンツに合致する状況を以下から選択すること。それぞれの状況には、WCAG ワーキンググループがその状況において十分であると判断する、番号付のテクニック (又は、テクニックの組み合わせ) がある。
                   </p>
                   <section class="situation" id="situation-a-color-is-used-to-identify-user-interface-components-or-used-to-identify-user-interface-component-states">
                      						
-                     <h4>Situation A: Color is used to identify user interface components or used to identify
-                        user interface component states
+                     <h4>状況 A: 色は、ユーザインタフェース コンポーネントを識別するために使用される、又はユーザインタフェース コンポーネントの状態を識別するために使用される
                      </h4>
                      						
                      <ul>
@@ -1348,7 +1103,7 @@
                   </section>
                   <section class="situation" id="situation-b-color-is-required-to-understand-graphical-content">
                      					
-                     <h4>Situation B: Color is required to understand graphical content</h4>
+                     <h4>状況 B: 色はグラフィカルコンテンツを理解するために必須である</h4>
                      					
                      <ul>
                         						
@@ -1362,8 +1117,7 @@
                </section>
                <section id="failure">
                   <h3>失敗例</h3>
-                  <p>The following are common mistakes that are considered failures of this Success Criterion
-                     by the WCAG Working Group.
+                  <p>以下に挙げるものは、WCAG ワーキンググループが達成基準の失敗例とみなした、よくある間違いである。
                   </p>
                   <ul>
                      					
@@ -1378,61 +1132,47 @@
                   <summary>
                      <h2>重要な用語</h2>
                   </summary>
-                  <dt id="dfn-ascii-art">ascii art</dt>
+                  <dt id="dfn-ascii-art">ASCII アート (ASCII art)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">picture created by a spatial arrangement of characters or glyphs (typically from the
-                           95 printable characters defined by ASCII)
+                        <p xmlns="http://www.w3.org/1999/xhtml">文字又はグリフの空間的配置によって作られた図画 (典型的には、ASCII で定義されている 95 の印字可能文字から作られる)。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-assistive-technology">assistive technology</dt>
+                  <dt id="dfn-assistive-technology">支援技術 (assistive technology)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">hardware and/or software that acts as a <a href="#dfn-user-agent">user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements
-                           of users with disabilities that go beyond those offered by mainstream user agents
+                        <p xmlns="http://www.w3.org/1999/xhtml">障害のある利用者の要件を満たすために、主流の<a href="#dfn-user-agent">ユーザエージェント</a>が提供する機能を超えた機能を提供するような、ユーザエージェントとして動作する、又は主流のユーザエージェントと共に動作するハードウェア及び／又はソフトウェア。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Functionality provided by assistive technology includes alternative presentations
-                              (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
-                              voice), additional navigation or orientation mechanisms, and content transformations
-                              (e.g., to make tables more accessible).
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術が提供する機能としては、代替の提示 (例: 合成音声や拡大表示したコンテンツ)、代替入力手法 (例: 音声認識)、付加的なナビゲーション又は位置確認のメカニズム、及びコンテンツ変換 (例: テーブルをよりアクセシブルにするもの) などを挙げることができる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Assistive technologies often communicate data and messages with mainstream user agents
-                              by using and monitoring APIs.
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術は、API を利用、監視することで、主流のユーザエージェントとデータやメッセージのやりとりをすることが多い。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The distinction between mainstream user agents and assistive technologies is not absolute.
-                              Many mainstream user agents provide some features to assist individuals with disabilities.
-                              The basic difference is that mainstream user agents target broad and diverse audiences
-                              that usually include people with and without disabilities. Assistive technologies
-                              target narrowly defined populations of users with specific disabilities. The assistance
-                              provided by an assistive technology is more specific and appropriate to the needs
-                              of its target users. The mainstream user agent may provide important functionality
-                              to assistive technologies like retrieving Web content from program objects or parsing
-                              markup into identifiable bundles.
+                           <p class="note-title marker">注記</p>
+                           <p>主流のユーザエージェントと支援技術との区別は、絶対的なものではない。多くの主流のユーザエージェントは、障害のある個人を支援する機能を提供している。基本的な差異は、主流のユーザエージェントが障害のある人もない人も含めて、広く多様な利用者を対象にしているのに対し、支援技術は、特定の障害のある利用者という、より狭く限られた人たちを対象にしているということである。支援技術により提供される支援は、対象とする利用者に特化した、よりニーズに適したものである。主流のユーザエージェントは、プログラムオブジェクトからのウェブコンテンツの抽出、マークアップの識別可能な構造への解釈といった、重要な機能を支援技術に対して提供する場合がある。
                               
                            </p>
                         </div>
@@ -1440,8 +1180,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Assistive technologies that are important in the context of this document include
-                              the following:
+                           <p>この文書の文脈において重要な支援技術としては、以下のものが挙げられる:
                               
                            </p>
                            
@@ -1449,38 +1188,30 @@
                            <ul>
                               
                               
-                              <li>screen magnifiers, and other visual reading assistants, which are used by people with
-                                 visual, perceptual and physical print disabilities to change text font, size, spacing,
-                                 color, synchronization with speech, etc. in order to improve the visual readability
-                                 of rendered text and images;
+                              <li>画面拡大ソフト及びその他の視覚的な表示に関する支援技術。視覚障害、知覚障害、及び読書困難などの障害のある人が、レンダリング後のテキスト及び画像の視覚的な読みやすさを改善するために、テキストのフォント、サイズ、間隔、色、音声との同期などを変更するのに使用している。
                                  
                               </li>
                               
                               
-                              <li>screen readers, which are used by people who are blind to read textual information
-                                 through synthesized speech or braille;
+                              <li>スクリーンリーダー。全盲の人がテキスト情報を合成音声あるいは点字で読み取るために使用している。
                                  
                               </li>
                               
                               
-                              <li>text-to-speech software, which is used by some people with cognitive, language, and
-                                 learning disabilities to convert text into synthetic speech;
+                              <li>音声変換ソフトウェア。認知障害、言語障害、及び学習障害のある人が、テキストを合成音声に変換するために使用している。
                                  
                               </li>
                               
                               
-                              <li>speech recognition software, which may be used by people who have some physical disabilities;</li>
+                              <li>音声認識ソフトウェア。何らかの身体障害のある利用者が使用することがある。</li>
                               
                               
-                              <li>alternative keyboards, which are used by people with certain physical disabilities
-                                 to simulate the keyboard (including alternate keyboards that use head pointers, single
-                                 switches, sip/puff and other special input devices.);
+                              <li>代替キーボード。特定の身体障害のある人がキーボード操作をシミュレートするのに使用している (ヘッドポインタ、シングルスイッチ、呼気・吸気スイッチ、及びその他の特別な入力デバイスを使った代替キーボードを含む)。
                                  
                               </li>
                               
                               
-                              <li>alternative pointing devices, which are used by people with certain physical disabilities
-                                 to simulate mouse pointing and button activations.
+                              <li>代替ポインティングデバイス。特定の身体障害のある人がマウスポインタとボタンの動きをシミュレートするのに使用している。
                                  
                               </li>
                               
@@ -1491,35 +1222,35 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-content">content</dt>
+                  <dt id="dfn-content">コンテンツ (content)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">information and sensory experience to be communicated to the user by means of a <a href="#dfn-user-agent">user agent</a>, including code or markup that defines the content's <a href="#dfn-structure">structure</a>, <a href="#dfn-presentation">presentation</a>, and interactions
+                        <p xmlns="http://www.w3.org/1999/xhtml">コンテンツの<a href="#dfn-structure">構造</a>、<a href="#dfn-presentation">提示</a>、及びインタラクションを定義するコード又はマークアップも含めて、<a href="#dfn-user-agent">ユーザエージェント</a>によって利用者に伝達される情報及び感覚的な体験。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-contrast-ratio">contrast ratio</dt>
+                  <dt id="dfn-contrast-ratio">コントラスト比 (contrast ratio)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">(L1 + 0.05) / (L2 + 0.05), where</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">(L1 + 0.05) / (L2 + 0.05) ここでは、</p>
                         
                         
                         <ul xmlns="http://www.w3.org/1999/xhtml">
                            
                            
-                           <li>L1 is the <a href="#dfn-relative-luminance">relative luminance</a> of the lighter of the colors, and
+                           <li>L1 は、明るいほうの色の<a href="#dfn-relative-luminance">相対輝度</a>である。そして、
                               
                            </li>
                            
                            
-                           <li>L2 is the <a href="#dfn-relative-luminance">relative luminance</a> of the darker of the colors.
+                           <li>L2 は、暗いほうの色の<a href="#dfn-relative-luminance">相対輝度</a>である。
                               
                            </li>
                            
@@ -1528,60 +1259,46 @@
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Contrast ratios can range from 1 to 21 (commonly written 1:1 to 21:1).</p>
+                           <p class="note-title marker">注記</p>
+                           <p>コントラスト比は、1～21 の範囲になりうる (通常は、1:1～21:1 と記述される)。</p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Because authors do not have control over user settings as to how text is rendered
-                              (for example font smoothing or anti-aliasing), the contrast ratio for text can be
-                              evaluated with anti-aliasing turned off.
+                           <p class="note-title marker">注記</p>
+                           <p>コンテンツ制作者は、テキストのレンダリング (例: フォントのスムージングやアンチエイリアス) に関する利用者の設定を制御できないため、アンチエイリアスをオフにした状態でテキストのコントラスト比を評価してもよい。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>For the purpose of Success Criteria 1.4.3 and 1.4.6, contrast is measured with respect
-                              to the specified background over which the text is rendered in normal usage. If no
-                              background color is specified, then white is assumed.
+                           <p class="note-title marker">注記</p>
+                           <p>達成基準 1.4.3 及び 1.4.6 の目的上、コントラストは通常の使用においてテキストがレンダリングされるときに指定されている背景色に対して測定する。もし背景色の指定がない場合は、背景色には白を想定する。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Background color is the specified color of content over which the text is to be rendered
-                              in normal usage. It is a failure if no background color is specified when the text
-                              color is specified, because the user's default background color is unknown and cannot
-                              be evaluated for sufficient contrast. For the same reason, it is a failure if no text
-                              color is specified when a background color is specified.
+                           <p class="note-title marker">注記</p>
+                           <p>背景色は、テキストが通常の使用においてレンダリングされるときに背景となるコンテンツの色として指定された色である。テキストの色は指定されているが背景色が指定されていない場合、利用者のデフォルトの背景色は未知であり、コントラストが十分かどうかを評価することができないため、失敗例となる。同じ理由で、背景色が指定されているがテキストの色が指定されていない場合も失敗例となる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>When there is a border around the letter, the border can add contrast and would be
-                              used in calculating the contrast between the letter and its background. A narrow border
-                              around the letter would be used as the letter. A wide border around the letter that
-                              fills in the inner details of the letters acts as a halo and would be considered background.
+                           <p class="note-title marker">注記</p>
+                           <p>文字の周囲に縁取りがある場合、その縁取りがコントラストを強めることもあり、文字とその背景色におけるコントラストの計算に用いられる。文字の周囲の細い縁取りは文字として扱われる。文字の周囲の太い縁取りが、光彩のようになって、文字の内側の細部を塗りつぶしていれば、背景色として考慮されることになる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>WCAG conformance should be evaluated for color pairs specified in the content that
-                              an author would expect to appear adjacent in typical presentation. Authors need not
-                              consider unusual presentations, such as color changes made by the user agent, except
-                              where caused by authors' code.
+                           <p class="note-title marker">注記</p>
+                           <p>WCAG に適合しているか判断する場合は、典型的な提示において隣接するであろうと制作者が想定するコンテンツで指定された色の組み合わせについて評価しなければならない。制作者は、ユーザエージェントによる色の変更などのように通常とは異なる提示を考慮する必要はない。ただし、それが制作者のコードによって起こる場合は除く。
                               
                            </p>
                         </div>
@@ -1589,33 +1306,31 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-essential">essential</dt>
+                  <dt id="dfn-essential">必要不可欠 (essential)</dt>
                   <dd>
                      <definition xmlns="">
                         					
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">if removed, would fundamentally change the information or functionality of the content,
-                           <strong>and</strong> information and functionality cannot be achieved in another way that would conform
+                        <p xmlns="http://www.w3.org/1999/xhtml">もし取り除いてしまうと、コンテンツの情報又は機能を根本的に変えてしまい、<strong>かつ</strong>、適合する他の方法では情報及び機能を実現できない。
                            
                         </p>
                         				
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-human-language">human language</dt>
+                  <dt id="dfn-human-language">自然言語 (human language)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">language that is spoken, written or signed (through visual or tactile means) to communicate
-                           with humans
+                        <p xmlns="http://www.w3.org/1999/xhtml">人間とコミュニケーションをとるために話される、書かれる、又は (視覚的もしくは触覚的な手段で) 手話にされる言語。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>See also <a href="#dfn-sign-language">sign language</a>.
+                           <p class="note-title marker">注記</p>
+                           <p><a href="#dfn-sign-language">手話</a>も参照。
                               
                            </p>
                         </div>
@@ -1623,20 +1338,19 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-non-text-content">non-text content</dt>
+                  <dt id="dfn-non-text-content">非テキストコンテンツ (non-text content)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">any content that is not a sequence of characters that can be <a href="#dfn-programmatically-determined">programmatically determined</a> or where the sequence is not expressing something in <a href="#dfn-human-language">human language</a>
+                        <p xmlns="http://www.w3.org/1999/xhtml"><a href="#dfn-programmatically-determined">プログラムによる解釈</a>が可能な文字の並びではないコンテンツ、又は文字の並びが<a href="#dfn-human-language">自然言語</a>においても何をも表現していないコンテンツ。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>This includes <a href="#dfn-ascii-art">ASCII Art</a> (which is a pattern of characters), emoticons, leetspeak (which uses character substitution),
-                              and images representing text
+                           <p class="note-title marker">注記</p>
+                           <p>これには、 (文字による図画である) <a href="#dfn-ascii-art">ASCII アート</a>、顔文字、 (文字を置き換える) リートスピーク、文字を表現している画像が含まれる。
                               
                            </p>
                         </div>
@@ -1644,33 +1358,30 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-presentation">presentation</dt>
+                  <dt id="dfn-presentation">提示 (presentation)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">rendering of the <a href="#dfn-content">content</a> in a form to be perceived by users
+                        <p xmlns="http://www.w3.org/1999/xhtml">利用者が知覚できる形式で<a href="#dfn-content">コンテンツ</a>をレンダリングすること。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-programmatically-determined">programmatically determined</dt>
+                  <dt id="dfn-programmatically-determined">プログラムによる解釈 (programmatically determined)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">determined by software from author-supplied data provided in a way that different
-                           <a href="#dfn-user-agent">user agents</a>, including <a href="#dfn-assistive-technology">assistive technologies</a>, can extract and present this information to users in different modalities
-                           
+                        <p xmlns="http://www.w3.org/1999/xhtml"><a href="#dfn-assistive-technology">支援技術</a>を含む様々な<a href="#dfn-user-agent">ユーザエージェント</a>が抽出でき、利用者に様々な感覚モダリティで提示できるような形のデータがコンテンツ制作者によって提供されたとき、そのデータがソフトウェアによって解釈されること。
                         </p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Determined in a markup language from elements and attributes that are accessed directly
-                              by commonly available assistive technology.
+                           <p>マークアップ言語で、一般に入手可能な支援技術が直接アクセスできる要素と属性から解釈される。
                               
                            </p>
                            
@@ -1679,9 +1390,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Determined from technology-specific data structures in a non-markup language and exposed
-                              to assistive technology via an accessibility API that is supported by commonly available
-                              assistive technology.
+                           <p>非マークアップ言語の技術特有のデータ構造から解釈され、一般に入手可能な支援技術がサポートするアクセシビリティ API を通じて支援技術に提供される。
                               
                            </p>
                            
@@ -1690,41 +1399,38 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-relative-luminance">relative luminance</dt>
+                  <dt id="dfn-relative-luminance">相対輝度 (relative luminance)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">the relative brightness of any point in a colorspace, normalized to 0 for darkest
-                           black and 1 for lightest white
+                        <p xmlns="http://www.w3.org/1999/xhtml">最も暗い黒を 0 に、最も明るい白を 1 に正規化した色空間内の任意の点の相対的な明るさ。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">注記</p>
                            <div>
                               
-                              <p>For the sRGB colorspace, the relative luminance of a color is defined as L = 0.2126
-                                 * <strong>R</strong> + 0.7152 * <strong>G</strong> + 0.0722 * <strong>B</strong> where <strong>R</strong>, <strong>G</strong> and <strong>B</strong> are defined as:
-                                 
+                              <p>sRGB 色空間においては、色の相対輝度は、L = 0.2126 * <strong>R</strong> + 0.7152 * <strong>G</strong> + 0.0722 * <strong>B</strong> と定義されており、<strong>R</strong>、<strong>G</strong> 及び <strong>B</strong> は以下のように定義される:
                               </p>
                               
                               
                               <ul>
                                  
                                  
-                                 <li>if RsRGB &lt;= 0.04045 then <strong>R</strong> = RsRGB/12.92 else <strong>R</strong> = ((RsRGB+0.055)/1.055) ^ 2.4
+                                 <li>RsRGB &lt;= 0.04045 の場合 <strong>R</strong> = RsRGB/12.92、そうでない場合 <strong>R</strong> = ((RsRGB+0.055)/1.055) ^ 2.4
                                     
                                  </li>
                                  
                                  
-                                 <li>if GsRGB &lt;= 0.04045 then <strong>G</strong> = GsRGB/12.92 else <strong>G</strong> = ((GsRGB+0.055)/1.055) ^ 2.4
+                                 <li>GsRGB &lt;= 0.04045 の場合 <strong>G</strong> = GsRGB/12.92、そうでない場合 <strong>G</strong> = ((GsRGB+0.055)/1.055) ^ 2.4
                                     
                                  </li>
                                  
                                  
-                                 <li>if BsRGB &lt;= 0.04045 then <strong>B</strong> = BsRGB/12.92 else <strong>B</strong> = ((BsRGB+0.055)/1.055) ^ 2.4
+                                 <li>BsRGB &lt;= 0.04045 の場合 <strong>B</strong> = BsRGB/12.92、そうでない場合 <strong>B</strong> = ((BsRGB+0.055)/1.055) ^ 2.4
                                     
                                  </li>
                                  
@@ -1732,7 +1438,7 @@
                               </ul>
                               
                               
-                              <p>and RsRGB, GsRGB, and BsRGB are defined as:</p>
+                              <p>そして、RsRGB、GsRGB、及び BsRGB は、次のように定義される:</p>
                               
                               
                               <ul>
@@ -1750,8 +1456,7 @@
                               </ul>
                               
                               
-                              <p>The "^" character is the exponentiation operator. (Formula taken from 
-                                 [[SRGB]].)
+                              <p>^ という記号は、指数演算子である (計算式は、[SRGB] を参考にしている)。
                                  
                               </p>
                               
@@ -1761,46 +1466,38 @@
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Before May 2021 the value of 0.04045 in the definition was different (0.03928). It
-                              was taken from an older version of the specification and has been updated. It has
-                              no practical effect on the calculations in the context of these guidelines.
+                           <p class="note-title marker">注記</p>
+                           <p>021 年 5 月以前は、定義にある 0.04045 の値が異なっていた (0.03928)。これは、古いバージョンの仕様から取り込んだものであり、現在は更新されている。本ガイドラインの文脈における計算には、実質的な影響はない。
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Almost all systems used today to view Web content assume sRGB encoding. Unless it
-                              is known that another color space will be used to process and display the content,
-                              authors should evaluate using sRGB colorspace. If using other color spaces, see <a href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum">Understanding Success Criterion 1.4.3</a>.
+                           <p class="note-title marker">注記</p>
+                           <p>ウェブコンテンツを閲覧するのに今日用いられているほとんどすべてのシステムは、sRGB 符号化を前提としている。コンテンツを処理して表示するのに別の色空間が用いられている事が分かっているのでない限り、コンテンツ制作者は sRGB 色空間を用いて検証するべきである。もしその他の色空間を用いるのであれば、<a href="https://waic.jp/translations/WCAG22/Understanding/contrast-minimum">達成基準 1.4.3 を理解する</a>を参照。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>If dithering occurs after delivery, then the source color value is used. For colors
-                              that are dithered at the source, the average values of the colors that are dithered
-                              should be used (average R, average G, and average B).
+                           <p class="note-title marker">注記</p>
+                           <p>表示時にディザリングが発生する場合は、元の色の値が用いられる。元々ディザリングがかけられている色については、用いられている色の平均値を用いるべきである (R の平均値、G の平均値、及び B の平均値)。
+                           </p>
+                        </div>
+                        
+                        
+                        <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                           <p class="note-title marker">注記</p>
+                           <p>コントラストと閃光を検証する際に、この計算を自動で行うツールが利用できる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Tools are available that automatically do the calculations when testing contrast and
-                              flash.
-                              
-                           </p>
-                        </div>
-                        
-                        
-                        <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>A <a href="relative-luminance.html">separate page giving the relative luminance definition using MathML</a> to display the formulas is available.
+                           <p class="note-title marker">注記</p>
+                           <p><a href="https://www.w3.org/TR/WCAG22/relative-luminance.html">MathML を用いて相対輝度の定義を与える別のページ</a>でもこの計算式を表示できる。
                               
                            </p>
                         </div>
@@ -1808,36 +1505,32 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-sign-language">sign language</dt>
+                  <dt id="dfn-sign-language">手話 (sign language)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">a language using combinations of movements of the hands and arms, facial expressions,
-                           or body positions to convey meaning
+                        <p xmlns="http://www.w3.org/1999/xhtml">意味を伝えるために、手と腕の動き、顔の表情又は身体の姿勢の組み合わせを用いる言語。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-state">state</dt>
+                  <dt id="dfn-state">状態 (state)</dt>
                   <dd>
                      <definition xmlns="">
                         					
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">dynamic property expressing characteristics of a user interface component that may
-                           change in response to user action or automated processes
+                        <p xmlns="http://www.w3.org/1999/xhtml">利用者のアクション又は自動プロセスに応答して変化し得るユーザインタフェースコンポーネントの特性を表現する動的プロパティ。
                         </p>
                         	        
-                        <p xmlns="http://www.w3.org/1999/xhtml">States do not affect the nature of the component, but represent data associated with
-                           the component or user interaction possibilities. Examples include focus, hover, select,
-                           press, check, visited/unvisited, and expand/collapse.
+                        <p xmlns="http://www.w3.org/1999/xhtml">状態はコンポーネントの本質に影響を与えないが、コンポーネント又はインタラクションの変化の候補に関連付けられているデータを表す。例えば、フォーカス、ホバー、選択、プレス、チェック、訪問済・未訪問、展開・折りたたみが挙げられる。
                         </p>
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-structure">structure</dt>
+                  <dt id="dfn-structure">構造 (structure)</dt>
                   <dd>
                      <definition xmlns="">
                         
@@ -1845,12 +1538,12 @@
                         <ol xmlns="http://www.w3.org/1999/xhtml">
                            
                            
-                           <li>The way the parts of a <a href="#dfn-web-page">Web page</a> are organized in relation to each other; and
+                           <li><a href="#dfn-web-page">ウェブページ</a>の各部を相互の関係性によりまとめる方法論。及び、
                               
                            </li>
                            
                            
-                           <li>The way a collection of <a href="#dfn-web-page">Web pages</a> is organized
+                           <li>一連の<a href="#dfn-web-page">ウェブページ</a>をまとめる方法論。
                               
                            </li>
                            
@@ -1860,17 +1553,17 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-user-agent">user agent</dt>
+                  <dt id="dfn-user-agent">ユーザエージェント (user agent)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">any software that retrieves and presents Web content for users</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ウェブコンテンツを取得して利用者に提示するあらゆるソフトウェア。</p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technology">assistive technologies</a> — that help in retrieving, rendering, and interacting with Web content.
+                           <p>ウェブコンテンツの取得、レンダリング及びインタラクションを支援する、ウェブブラウザ、メディアプレーヤ、プラグイン、及びその他のプログラム (<a href="#dfn-assistive-technology">支援技術</a>も含む)。
                               
                            </p>
                            
@@ -1879,40 +1572,35 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-user-interface-component">user interface component</dt>
+                  <dt id="dfn-user-interface-component">ユーザインタフェース コンポーネント (user interface component)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">a part of the content that is perceived by users as a single control for a distinct
-                           function
+                        <p xmlns="http://www.w3.org/1999/xhtml">コンテンツの一部分で、特定の機能を実現するための単一のコントロールとして利用者が知覚するもの。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Multiple user interface components may be implemented as a single programmatic element.
-                              "Components" here is not tied to programming techniques, but rather to what the user
-                              perceives as separate controls.
+                           <p class="note-title marker">注記</p>
+                           <p>複数のユーザインタフェース コンポーネントが、単一のプログラム要素で実装されることもある。ここでいう「コンポーネント」は、プログラムの手法と結びついたものではなく、利用者が別々のコントロールとして知覚するものを指す。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>User interface components include form elements and links as well as components generated
-                              by scripts.
+                           <p class="note-title marker">注記</p>
+                           <p>ユーザインタフェース コンポーネントには、フォーム要素、リンクだけでなく、スクリプトで生成されるコンポーネントが含まれる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>What is meant by "component" or "user interface component" here is also sometimes
-                              called "user interface element".
+                           <p class="note-title marker">注記</p>
+                           <p>ここでの「コンポーネント」又は「ユーザインタフェース コンポーネント」は、「ユーザインタフェース要素」とも呼ばれる。
                               
                            </p>
                         </div>
@@ -1920,9 +1608,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>An applet has a "control" that can be used to move through content by line or page
-                              or random access. Since each of these would need to have a name and be settable independently,
-                              they would each be a "user interface component."
+                           <p>アプレットには、コンテンツ内を行単位、ページ単位、又はランダムアクセスで移動するために用いられる「コントロール」がある。これらには、いずれも名前 (name) を割り当て、個別に設定できるようにする必要があるため、それぞれが「ユーザインタフェース コンポーネント」となる。
                               
                            </p>
                            
@@ -1931,30 +1617,25 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-web-page">web page</dt>
+                  <dt id="dfn-web-page">ウェブページ (web page)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">a non-embedded resource obtained from a single URI using HTTP plus any other resources
-                           that are used in the rendering or intended to be rendered together with it by a <a href="#dfn-user-agent">user agent</a>
-                           
-                        </p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">単一の URI から HTTP で得た埋め込まれていないリソースに加え、レンダリングに使われる、又は<a href="#dfn-user-agent">ユーザエージェント</a>がこのリソースと一緒にレンダリングすることを意図しているその他のあらゆるリソースを合わせたもの。
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Although any "other resources" would be rendered together with the primary resource,
-                              they would not necessarily be rendered simultaneously with each other.
+                           <p class="note-title marker">注記</p>
+                           <p>どのような「その他のリソース」も主たるリソースと一緒にレンダリングされるであろうが、これらのリソースが同時にレンダリングされるとは限らない。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>For the purposes of conformance with these guidelines, a resource must be "non-embedded"
-                              within the scope of conformance to be considered a Web page.
+                           <p class="note-title marker">注記</p>
+                           <p>このガイドラインの適合範囲に含まれる対象となるウェブページとみなされるためには、リソースが「埋め込まれていない」リソースでなければならない。
                               
                            </p>
                         </div>
@@ -1962,17 +1643,22 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A Web resource including all embedded images and media.</p>
+                           <p>単体のウェブリソースであり、埋め込まれている画像及びメディアのすべてを含んだもの。</p>
                            
                         </aside>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A Web mail program built using Asynchronous JavaScript and XML (AJAX). The program
-                              lives entirely at http://example.com/mail, but includes an inbox, a contacts area
-                              and a calendar. Links or buttons are provided that cause the inbox, contacts, or calendar
-                              to display, but do not change the URI of the page as a whole.
+                           <p>Asynchronous JavaScript and XML (AJAX) を用いたウェブメールのプログラム。そのプログラム全体は http://example.com/mail に存在しているが、受信トレイ、連絡先、カレンダーがある。受信トレイ、連絡先、又はカレンダーを表示するリンク又はボタンが提供されているが、全体としてページの URI は変更されない。
+                           </p>
+                           
+                        </aside>
+                        
+                        
+                        <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
+                           
+                           <p>カスタマイズ可能なポータルサイトで、利用者が様々なコンテンツモジュールのセットから表示させるコンテンツを選択できるようなもの。
                               
                            </p>
                            
@@ -1981,22 +1667,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A customizable portal site, where users can choose content to display from a set of
-                              different content modules.
-                              
-                           </p>
-                           
-                        </aside>
-                        
-                        
-                        <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
-                           
-                           <p>When you enter "http://shopping.example.com/" in your browser, you enter a movie-like
-                              interactive shopping environment where you visually move around in a store dragging
-                              products off of the shelves around you and into a visual shopping cart in front of
-                              you. Clicking on a product causes it to be demonstrated with a specification sheet
-                              floating alongside. This might be a single-page Web site or just one page within a
-                              Web site.
+                           <p>ブラウザで "http://shopping.example.com/" へ行くと、映画のようなインタラクティブなショッピング環境になる。そこでは、視覚的に店内を移動して、店内の棚から商品をドラッグして、目の前にある視覚的な買物カゴに商品を入れる。商品をクリックすると、同時に仕様書が浮き上がるように表示される。これは 1 ページだけのウェブサイトかもしれないし、ウェブサイトの中のほんの 1 ページなのかもしれない。
                               
                            </p>
                            
