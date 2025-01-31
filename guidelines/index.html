@@ -1,4 +1,3 @@
-
 <!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja"><head>
 <meta charset="UTF-8">
 <meta name="generator" content="ReSpec 35.2.0">
@@ -206,10 +205,10 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-REC"></head>
     <body class="h-entry informative">
-<aside class="trnote">
-<p>この文書は、<a href="https://www.w3.org/TR/2024/REC-WCAG22-20241212/">2024 年 12 月 12 日付けの W3C 勧告 Web Content Accessibility Guidelines (WCAG) 2.2</a> を、<a href="https://waic.jp/committee/wg4/">ウェブアクセシビリティ基盤委員会 (WAIC) の翻訳ワーキンググループ</a>が翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。翻訳上の誤りを見つけられた場合は、<a href="https://docs.google.com/forms/d/e/1FAIpQLSdIpvogLx8kGIMewhQ6MzhG2pOCQZ50iIBViGg8pUrRJuslKg/viewform?entry.685195438=https%3A%2F%2Fwaic.jp%2ftranslations%2fWCAG22%2f" id="file-issue">翻訳に関するお問い合わせ (Google フォーム)</a>からご連絡ください。</p>
-<p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
-</aside><div class="head">
+    <aside class="trnote">
+    <p>この文書は、<a href="https://www.w3.org/TR/2024/REC-WCAG22-20241212/">2024 年 12 月 12 日付けの W3C 勧告 Web Content Accessibility Guidelines (WCAG) 2.2</a> を、<a href="https://waic.jp/committee/wg4/">ウェブアクセシビリティ基盤委員会 (WAIC) の翻訳ワーキンググループ</a>が翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。翻訳上の誤りを見つけられた場合は、<a href="https://docs.google.com/forms/d/e/1FAIpQLSdIpvogLx8kGIMewhQ6MzhG2pOCQZ50iIBViGg8pUrRJuslKg/viewform?entry.685195438=https%3A%2F%2Fwaic.jp%2ftranslations%2fWCAG22%2f" id="file-issue">翻訳に関するお問い合わせ (Google フォーム)</a>からご連絡ください。</p>
+    <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
+    </aside><div class="head">
     <p class="logos"><a class="logo" href="https://www.w3.org/"><img crossorigin="" alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" width="72">
   </a></p>
     <h1 id="title" class="title">Web Content Accessibility Guidelines (WCAG) 2.2</h1> 
@@ -294,255 +293,166 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                     </p></section><nav id="toc"><h2 class="introductory" id="table-of-contents">目次</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">概要</a></li><li class="tocline"><a class="tocxref" href="#sotd">この文書のステータス</a></li><li class="tocline"><a class="tocxref" href="#intro">イントロダクション</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#background-on-wcag-2">WCAG 2 の背景</a></li><li class="tocline"><a class="tocxref" href="#wcag-2-layers-of-guidance">WCAG 2 ガイダンスのレイヤー</a></li><li class="tocline"><a class="tocxref" href="#wcag-2-2-supporting-documents">WCAG 2.2 関連文書</a></li><li class="tocline"><a class="tocxref" href="#requirements-for-wcag-2-2">WCAG 2.2 の要件</a></li><li class="tocline"><a class="tocxref" href="#comparison-with-wcag-2-1">WCAG 2.1 との比較</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#new-features-in-wcag-2-2">WCAG 2.2 の新しい特徴</a></li><li class="tocline"><a class="tocxref" href="#numbering-in-wcag-2-2">WCAG 2.2 におけるナンバリング</a></li><li class="tocline"><a class="tocxref" href="#conformance-to-wcag-2-2">WCAG 2.2 への適合</a></li></ol></li><li class="tocline"><a class="tocxref" href="#later-versions-of-accessibility-guidelines">アクセシビリティガイドラインの後続版</a></li></ol></li><li class="tocline"><a class="tocxref" href="#perceivable"><bdi class="secno">1. </bdi>知覚可能</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#text-alternatives"><bdi class="secno">1.1 </bdi>テキストによる代替</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#non-text-content"><bdi class="secno">1.1.1 </bdi>非テキストコンテンツ</a></li></ol></li><li class="tocline"><a class="tocxref" href="#time-based-media"><bdi class="secno">1.2 </bdi>時間依存メディア</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#audio-only-and-video-only-prerecorded"><bdi class="secno">1.2.1 </bdi>音声のみ及び映像のみ (収録済)</a></li><li class="tocline"><a class="tocxref" href="#captions-prerecorded"><bdi class="secno">1.2.2 </bdi>キャプション (収録済)</a></li><li class="tocline"><a class="tocxref" href="#audio-description-or-media-alternative-prerecorded"><bdi class="secno">1.2.3 </bdi>音声解説、又はメディアに対する代替 (収録済)</a></li><li class="tocline"><a class="tocxref" href="#captions-live"><bdi class="secno">1.2.4 </bdi>キャプション (ライブ)</a></li><li class="tocline"><a class="tocxref" href="#audio-description-prerecorded"><bdi class="secno">1.2.5 </bdi>音声解説 (収録済)</a></li><li class="tocline"><a class="tocxref" href="#sign-language-prerecorded"><bdi class="secno">1.2.6 </bdi>手話 (収録済)</a></li><li class="tocline"><a class="tocxref" href="#extended-audio-description-prerecorded"><bdi class="secno">1.2.7 </bdi>拡張音声解説 (収録済)</a></li><li class="tocline"><a class="tocxref" href="#media-alternative-prerecorded"><bdi class="secno">1.2.8 </bdi>メディアに対する代替 (収録済)</a></li><li class="tocline"><a class="tocxref" href="#audio-only-live"><bdi class="secno">1.2.9 </bdi>音声のみ (ライブ)</a></li></ol></li><li class="tocline"><a class="tocxref" href="#adaptable"><bdi class="secno">1.3 </bdi>適応可能</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#info-and-relationships"><bdi class="secno">1.3.1 </bdi>情報及び関係性</a></li><li class="tocline"><a class="tocxref" href="#meaningful-sequence"><bdi class="secno">1.3.2 </bdi>意味のあるシーケンス</a></li><li class="tocline"><a class="tocxref" href="#sensory-characteristics"><bdi class="secno">1.3.3 </bdi>感覚的な特徴</a></li><li class="tocline"><a class="tocxref" href="#orientation"><bdi class="secno">1.3.4 </bdi>表示の向き</a></li><li class="tocline"><a class="tocxref" href="#identify-input-purpose"><bdi class="secno">1.3.5 </bdi>入力目的の特定</a></li><li class="tocline"><a class="tocxref" href="#identify-purpose"><bdi class="secno">1.3.6 </bdi>目的の特定</a></li></ol></li><li class="tocline"><a class="tocxref" href="#distinguishable"><bdi class="secno">1.4 </bdi>判別可能</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#use-of-color"><bdi class="secno">1.4.1 </bdi>色の使用</a></li><li class="tocline"><a class="tocxref" href="#audio-control"><bdi class="secno">1.4.2 </bdi>音声の制御</a></li><li class="tocline"><a class="tocxref" href="#contrast-minimum"><bdi class="secno">1.4.3 </bdi>コントラスト (最低限)</a></li><li class="tocline"><a class="tocxref" href="#resize-text"><bdi class="secno">1.4.4 </bdi>テキストのサイズ変更</a></li><li class="tocline"><a class="tocxref" href="#images-of-text"><bdi class="secno">1.4.5 </bdi>文字画像</a></li><li class="tocline"><a class="tocxref" href="#contrast-enhanced"><bdi class="secno">1.4.6 </bdi>コントラスト (高度)</a></li><li class="tocline"><a class="tocxref" href="#low-or-no-background-audio"><bdi class="secno">1.4.7 </bdi>小さな背景音、又は背景音なし</a></li><li class="tocline"><a class="tocxref" href="#visual-presentation"><bdi class="secno">1.4.8 </bdi>視覚的提示</a></li><li class="tocline"><a class="tocxref" href="#images-of-text-no-exception"><bdi class="secno">1.4.9 </bdi>文字画像 (例外なし)</a></li><li class="tocline"><a class="tocxref" href="#reflow"><bdi class="secno">1.4.10 </bdi>リフロー</a></li><li class="tocline"><a class="tocxref" href="#non-text-contrast"><bdi class="secno">1.4.11 </bdi>非テキストのコントラスト</a></li><li class="tocline"><a class="tocxref" href="#text-spacing"><bdi class="secno">1.4.12 </bdi>テキストの間隔</a></li><li class="tocline"><a class="tocxref" href="#content-on-hover-or-focus"><bdi class="secno">1.4.13 </bdi>ホバー又はフォーカスで表示されるコンテンツ</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#operable"><bdi class="secno">2. </bdi>操作可能</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#keyboard-accessible"><bdi class="secno">2.1 </bdi>キーボード操作可能</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#keyboard"><bdi class="secno">2.1.1 </bdi>キーボード</a></li><li class="tocline"><a class="tocxref" href="#no-keyboard-trap"><bdi class="secno">2.1.2 </bdi>キーボードトラップなし</a></li><li class="tocline"><a class="tocxref" href="#keyboard-no-exception"><bdi class="secno">2.1.3 </bdi>キーボード (例外なし)</a></li><li class="tocline"><a class="tocxref" href="#character-key-shortcuts"><bdi class="secno">2.1.4 </bdi>文字キーのショートカット</a></li></ol></li><li class="tocline"><a class="tocxref" href="#enough-time"><bdi class="secno">2.2 </bdi>十分な時間</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#timing-adjustable"><bdi class="secno">2.2.1 </bdi>タイミング調整可能</a></li><li class="tocline"><a class="tocxref" href="#pause-stop-hide"><bdi class="secno">2.2.2 </bdi>一時停止、停止、非表示</a></li><li class="tocline"><a class="tocxref" href="#no-timing"><bdi class="secno">2.2.3 </bdi>タイミング非依存</a></li><li class="tocline"><a class="tocxref" href="#interruptions"><bdi class="secno">2.2.4 </bdi>割り込み</a></li><li class="tocline"><a class="tocxref" href="#re-authenticating"><bdi class="secno">2.2.5 </bdi>再認証</a></li><li class="tocline"><a class="tocxref" href="#timeouts"><bdi class="secno">2.2.6 </bdi>タイムアウト</a></li></ol></li><li class="tocline"><a class="tocxref" href="#seizures-and-physical-reactions"><bdi class="secno">2.3 </bdi>発作と身体的反応</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#three-flashes-or-below-threshold"><bdi class="secno">2.3.1 </bdi>3 回の閃光、又は閾値以下</a></li><li class="tocline"><a class="tocxref" href="#three-flashes"><bdi class="secno">2.3.2 </bdi>3 回の閃光</a></li><li class="tocline"><a class="tocxref" href="#animation-from-interactions"><bdi class="secno">2.3.3 </bdi>インタラクションによるアニメーション</a></li></ol></li><li class="tocline"><a class="tocxref" href="#navigable"><bdi class="secno">2.4 </bdi>ナビゲーション可能</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#bypass-blocks"><bdi class="secno">2.4.1 </bdi>ブロックスキップ</a></li><li class="tocline"><a class="tocxref" href="#page-titled"><bdi class="secno">2.4.2 </bdi>ページタイトル</a></li><li class="tocline"><a class="tocxref" href="#focus-order"><bdi class="secno">2.4.3 </bdi>フォーカス順序</a></li><li class="tocline"><a class="tocxref" href="#link-purpose-in-context"><bdi class="secno">2.4.4 </bdi>リンクの目的 (コンテキスト内)</a></li><li class="tocline"><a class="tocxref" href="#multiple-ways"><bdi class="secno">2.4.5 </bdi>複数の手段</a></li><li class="tocline"><a class="tocxref" href="#headings-and-labels"><bdi class="secno">2.4.6 </bdi>見出し及びラベル</a></li><li class="tocline"><a class="tocxref" href="#focus-visible"><bdi class="secno">2.4.7 </bdi>フォーカスの可視化</a></li><li class="tocline"><a class="tocxref" href="#location"><bdi class="secno">2.4.8 </bdi>現在位置</a></li><li class="tocline"><a class="tocxref" href="#link-purpose-link-only"><bdi class="secno">2.4.9 </bdi>リンクの目的 (リンクのみ)</a></li><li class="tocline"><a class="tocxref" href="#section-headings"><bdi class="secno">2.4.10 </bdi>セクション見出し</a></li><li class="tocline"><a class="tocxref" href="#focus-not-obscured-minimum"><bdi class="secno">2.4.11 </bdi>隠されないフォーカス (最低限)</a></li><li class="tocline"><a class="tocxref" href="#focus-not-obscured-enhanced"><bdi class="secno">2.4.12 </bdi>隠されないフォーカス (高度)</a></li><li class="tocline"><a class="tocxref" href="#focus-appearance"><bdi class="secno">2.4.13 </bdi>フォーカスの外観</a></li></ol></li><li class="tocline"><a class="tocxref" href="#input-modalities"><bdi class="secno">2.5 </bdi>入力モダリティ</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#pointer-gestures"><bdi class="secno">2.5.1 </bdi>ポインタのジェスチャ</a></li><li class="tocline"><a class="tocxref" href="#pointer-cancellation"><bdi class="secno">2.5.2 </bdi>ポインタのキャンセル</a></li><li class="tocline"><a class="tocxref" href="#label-in-name"><bdi class="secno">2.5.3 </bdi>ラベルを含む名前 (name)</a></li><li class="tocline"><a class="tocxref" href="#motion-actuation"><bdi class="secno">2.5.4 </bdi>動きによる起動</a></li><li class="tocline"><a class="tocxref" href="#target-size-enhanced"><bdi class="secno">2.5.5 </bdi>ターゲットのサイズ (高度)</a></li><li class="tocline"><a class="tocxref" href="#concurrent-input-mechanisms"><bdi class="secno">2.5.6 </bdi>入力メカニズムの共存</a></li><li class="tocline"><a class="tocxref" href="#dragging-movements"><bdi class="secno">2.5.7 </bdi>ドラッグ動作</a></li><li class="tocline"><a class="tocxref" href="#target-size-minimum"><bdi class="secno">2.5.8 </bdi>ターゲットのサイズ (最低限)</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#understandable"><bdi class="secno">3. </bdi> 理解可能</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#readable"><bdi class="secno">3.1 </bdi>読み取り可能</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#language-of-page"><bdi class="secno">3.1.1 </bdi>ページの言語</a></li><li class="tocline"><a class="tocxref" href="#language-of-parts"><bdi class="secno">3.1.2 </bdi>一部分の言語</a></li><li class="tocline"><a class="tocxref" href="#unusual-words"><bdi class="secno">3.1.3 </bdi>一般的ではない用語</a></li><li class="tocline"><a class="tocxref" href="#abbreviations"><bdi class="secno">3.1.4 </bdi>略語</a></li><li class="tocline"><a class="tocxref" href="#reading-level"><bdi class="secno">3.1.5 </bdi>読解レベル</a></li><li class="tocline"><a class="tocxref" href="#pronunciation"><bdi class="secno">3.1.6 </bdi>発音</a></li></ol></li><li class="tocline"><a class="tocxref" href="#predictable"><bdi class="secno">3.2 </bdi>予測可能</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#on-focus"><bdi class="secno">3.2.1 </bdi>フォーカス時</a></li><li class="tocline"><a class="tocxref" href="#on-input"><bdi class="secno">3.2.2 </bdi>入力時</a></li><li class="tocline"><a class="tocxref" href="#consistent-navigation"><bdi class="secno">3.2.3 </bdi>一貫したナビゲーション</a></li><li class="tocline"><a class="tocxref" href="#consistent-identification"><bdi class="secno">3.2.4 </bdi>一貫した識別性</a></li><li class="tocline"><a class="tocxref" href="#change-on-request"><bdi class="secno">3.2.5 </bdi>要求による変化</a></li><li class="tocline"><a class="tocxref" href="#consistent-help"><bdi class="secno">3.2.6 </bdi>一貫したヘルプ</a></li></ol></li><li class="tocline"><a class="tocxref" href="#input-assistance"><bdi class="secno">3.3 </bdi>入力支援</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#error-identification"><bdi class="secno">3.3.1 </bdi>エラーの特定</a></li><li class="tocline"><a class="tocxref" href="#labels-or-instructions"><bdi class="secno">3.3.2 </bdi>ラベル又は説明</a></li><li class="tocline"><a class="tocxref" href="#error-suggestion"><bdi class="secno">3.3.3 </bdi>エラー修正の提案</a></li><li class="tocline"><a class="tocxref" href="#error-prevention-legal-financial-data"><bdi class="secno">3.3.4 </bdi>誤り防止 (法的、金融、データ)</a></li><li class="tocline"><a class="tocxref" href="#help"><bdi class="secno">3.3.5 </bdi>ヘルプ</a></li><li class="tocline"><a class="tocxref" href="#error-prevention-all"><bdi class="secno">3.3.6 </bdi>誤り防止 (すべて)</a></li><li class="tocline"><a class="tocxref" href="#redundant-entry"><bdi class="secno">3.3.7 </bdi>冗長な入力項目</a></li><li class="tocline"><a class="tocxref" href="#accessible-authentication-minimum"><bdi class="secno">3.3.8 </bdi>アクセシブルな認証 (最低限)</a></li><li class="tocline"><a class="tocxref" href="#accessible-authentication-enhanced"><bdi class="secno">3.3.9 </bdi>アクセシブルな認証 (高度)</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#robust"><bdi class="secno">4. </bdi>堅牢 (robust)</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#compatible"><bdi class="secno">4.1 </bdi>互換性</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#parsing"><bdi class="secno">4.1.1 </bdi>構文解析 (廃止・削除)</a></li><li class="tocline"><a class="tocxref" href="#name-role-value"><bdi class="secno">4.1.2 </bdi>名前 (name)・役割 (role)・値 (value)</a></li><li class="tocline"><a class="tocxref" href="#status-messages"><bdi class="secno">4.1.3 </bdi>ステータスメッセージ</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">5. </bdi>適合</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#interpreting-normative-requirements"><bdi class="secno">5.1 </bdi>規定要件の解釈</a></li><li class="tocline"><a class="tocxref" href="#conformance-reqs"><bdi class="secno">5.2 </bdi>適合要件</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#cc1"><bdi class="secno">5.2.1 </bdi>適合レベル</a></li><li class="tocline"><a class="tocxref" href="#cc2"><bdi class="secno">5.2.2 </bdi>ウェブページ全体</a></li><li class="tocline"><a class="tocxref" href="#cc3"><bdi class="secno">5.2.3 </bdi>プロセス全体</a></li><li class="tocline"><a class="tocxref" href="#cc4"><bdi class="secno">5.2.4 </bdi>技術のアクセシビリティ サポーテッドな使用方法だけ</a></li><li class="tocline"><a class="tocxref" href="#cc5"><bdi class="secno">5.2.5 </bdi>非干渉</a></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance-claims"><bdi class="secno">5.3 </bdi>適合表明 (任意)</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#conformance-required"><bdi class="secno">5.3.1 </bdi>適合表明の必須要素</a></li><li class="tocline"><a class="tocxref" href="#conformance-optional"><bdi class="secno">5.3.2 </bdi>適合表明の任意要素</a></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance-partial"><bdi class="secno">5.4 </bdi>部分適合に関する記述 － 第三者によるコンテンツ</a></li><li class="tocline"><a class="tocxref" href="#conformance-partial-lang"><bdi class="secno">5.5 </bdi>部分適合に関する記述 － 言語</a></li><li class="tocline"><a class="tocxref" href="#privacy-summary"><bdi class="secno">5.6 </bdi>プライバシーの考慮事項</a></li><li class="tocline"><a class="tocxref" href="#security-summary"><bdi class="secno">5.7 </bdi>セキュリティの考慮事項</a></li></ol></li><li class="tocline"><a class="tocxref" href="#glossary"><bdi class="secno">6. </bdi>用語集</a></li><li class="tocline"><a class="tocxref" href="#input-purposes"><bdi class="secno">7. </bdi>ユーザインタフェース コンポーネントの入力目的</a></li><li class="tocline"><a class="tocxref" href="#changelog"><bdi class="secno">A. </bdi>変更点</a></li><li class="tocline"><a class="tocxref" href="#acknowledgements"><bdi class="secno">B. </bdi>謝辞</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#ack_participants-active"><bdi class="secno">B.1 </bdi>この文書の作成時にアクティブだった AG WG 参加者:</a></li><li class="tocline"><a class="tocxref" href="#ack_participants-previous"><bdi class="secno">B.2 </bdi>以前に活動していた他の WCAG WG 参加者及び WCAG 2.0、WCAG 2.1、又は関連文書への他の貢献者</a></li><li class="tocline"><a class="tocxref" href="#enabling-funders"><bdi class="secno">B.3 </bdi>有効な資金提供者</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">C. </bdi>参考文献</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informative-references"><bdi class="secno">C.1 </bdi>参考文書</a></li></ol></li></ol></nav>
         <section class="informative introductory" id="intro"><div class="header-wrapper"><h2 id="introduction">イントロダクション</h2><a class="self-link" href="#intro" aria-label="Permalink for this Section"></a></div><p><em>この節は規定ではない。</em></p>
 			
-         <section id="background-on-wcag-2"><div class="header-wrapper"><h3 id="background-on-wcag-2-0">WCAG 2 の背景</h3><a class="self-link" href="#background-on-wcag-2" aria-label="Permalink for this Section"></a></div>
+           <section id="background-on-wcag-2"><div class="header-wrapper"><h3 id="background-on-wcag-2-0">WCAG 2 の背景</h3><a class="self-link" href="#background-on-wcag-2" aria-label="Permalink for this Section"></a></div>
             				
+              <p>Web Content Accessibility Guidelines (WCAG) 2.2 は、ウェブコンテンツを障害のある人にとってよりアクセシブルにする方法を定義している。アクセシビリティは、視覚、聴覚、身体、発話、認知、言語、学習、神経の障害を含む、広範な障害に関係している。このガイドラインは、広範囲に及ぶ事項を網羅しているが、障害のすべての種類、程度、組合せからくるニーズを満たすことはできない。また、このガイドラインは、加齢により能力が変化している高齢者にとってもウェブコンテンツをより使いやすくするものであるとともに、しばしば利用者全般のユーザビリティを向上させる。</p>
+              <p>WCAG 2.2 は、ウェブコンテンツのアクセシビリティに対して、様々な国の個人、組織、政府のニーズを満たすような共通の基準を提供することを目的として、 <a href="https://www.w3.org/WAI/standards-guidelines/w3c-process/"><abbr title="World Wide Web Consortium">W3C</abbr> process</a> に従って世界中の個人及び組織の協力のもと作成されている。WCAG 2.2 は、WCAG 2.0 [<cite><a class="bibref" data-link-type="biblio" href="#bib-wcag20" title="Web Content Accessibility Guidelines (WCAG) 2.0">WCAG20</a></cite>] 及び WCAG 2.1 [<cite><a class="bibref" data-link-type="biblio" href="#bib-wcag21" title="Web Content Accessibility Guidelines (WCAG) 2.1">WCAG21</a></cite>] をベースに、さらに WCAG 1.0 [<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-webcontent" title="Web Content Accessibility Guidelines 1.0">WAI-WEBCONTENT</a></cite>] をベースに順に作られており、現在及び将来の様々なウェブ技術に広く適用され、自動テストと人間による評価の組み合わせでテスト可能になるように設計されている。WCAG のイントロダクションとしては、<a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG) Overview</a> を参照。</p>
             
-            				
-            <p>Web Content Accessibility Guidelines (WCAG) 2.2 は、ウェブコンテンツを障害のある人にとってよりアクセシブルにする方法を定義している。アクセシビリティは、視覚、聴覚、身体、発話、認知、言語、学習、神経の障害を含む、広範な障害に関係している。このガイドラインは、広範囲に及ぶ事項を網羅しているが、障害のすべての種類、程度、組合せからくるニーズを満たすことはできない。また、このガイドラインは、加齢により能力が変化している高齢者にとってもウェブコンテンツをより使いやすくするものであるとともに、しばしば利用者全般のユーザビリティを向上させる。</p>
-            				
-            <p>WCAG 2.2 は、ウェブコンテンツのアクセシビリティに対して、様々な国の個人、組織、政府のニーズを満たすような共通の基準を提供することを目的として、 <a href="https://www.w3.org/WAI/standards-guidelines/w3c-process/"><abbr title="World Wide Web Consortium">W3C</abbr> process</a> に従って世界中の個人及び組織の協力のもと作成されている。WCAG 2.2 は、WCAG 2.0 [<cite><a class="bibref" data-link-type="biblio" href="#bib-wcag20" title="Web Content Accessibility Guidelines (WCAG) 2.0">WCAG20</a></cite>] 及び WCAG 2.1 [<cite><a class="bibref" data-link-type="biblio" href="#bib-wcag21" title="Web Content Accessibility Guidelines (WCAG) 2.1">WCAG21</a></cite>] をベースに、さらに WCAG 1.0 [<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-webcontent" title="Web Content Accessibility Guidelines 1.0">WAI-WEBCONTENT</a></cite>] をベースに順に作られており、現在及び将来の様々なウェブ技術に広く適用され、自動テストと人間による評価の組み合わせでテスト可能になるように設計されている。WCAG のイントロダクションとしては、<a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG) Overview</a> を参照。</p>
-            
-            				
-            <p>認知、言語、及び学習障害に対処するための追加の達成基準を定義するにあたり、勧告策定期間の短さに加えて、勧告案のテスト可能性や実装可能性、国際的な観点からの検討について合意形成に至る際の課題など、重大な課題に向き合うこととなった。こうした領域については、WCAG の将来の版で検討が継続されることになる。コンテンツ制作者においては、<a href="https://www.w3.org/WAI/standards-guidelines/wcag/#supplement">学習障害、認知障害、ロービジョンなど障害のある人のインクルージョンを向上するための補足的なガイダンス</a>を参照することを推奨する。</p>
-            
-            				
-            <p>ウェブアクセシビリティは、アクセシブルなコンテンツだけではなく、アクセシブルなウェブブラウザやその他のユーザエージェントにも依存している。そして、オーサリングツールもウェブアクセシビリティにおいて重要な役割を担っている。ウェブ開発やインタラクションを構成するこれらの要素が相互にどのように関係しているかの概要については、以下を参照:</p>
-            				
-            <ul>
-               					
-               <li><strong><a href="https://www.w3.org/WAI/fundamentals/components/">Essential Components of Web Accessibility</a></strong></li>
-               					
-               <li><strong><a href="https://www.w3.org/WAI/standards-guidelines/uaag/">User Agent Accessibility Guidelines (UAAG) Overview</a></strong></li>
-               					
-               <li><strong><a href="https://www.w3.org/WAI/standards-guidelines/atag/">Authoring Tool Accessibility Guidelines (ATAG) Overview</a></strong></li>
-               
-            </ul>
-            
-            <p>この文書で <q>WCAG 2</q> を表す場合、2 で始まる WCAG の全てのバージョンを表すことを意図している。</p>
-            			
-         </section>
-         <section id="wcag-2-layers-of-guidance"><div class="header-wrapper"><h3 id="wcag-2-layers-of-guidance-0">WCAG 2 ガイダンスのレイヤー</h3><a class="self-link" href="#wcag-2-layers-of-guidance" aria-label="Permalink for this Section"></a></div>
-            				
-            
-            				
-            <p>WCAG を用いる個人や組織は実に幅広く、ウェブデザイナーや開発者、政策立案者、調達担当者、教師、及び生徒などが含まれる。これらの人たちの様々なニーズに応えるために WCAG 2.0 では、 <em>原則</em>、一般的な <em>ガイドライン</em> 、検証可能な<em>達成基準</em> 、<em>十分なテクニック</em>、<em>参考テクニック</em>、及び<em>よくある失敗例</em>を示した豊富な文書群を含む様々なレイヤーのガイダンスが、事例や参考リンク及びコードとともに提供されている。</p>
-            				
-            <ul>
-               					
-               <li><p><strong>原則</strong> - 最上位には、ウェブアクセシビリティの土台となる四つの原則がある: <em>知覚可能、操作可能、理解可能、及び堅牢 (robust)</em> 。あわせて、<a href="https://www.w3.org/WAI/WCAG22/Understanding/intro#understanding-the-four-principles-of-accessibility">Understanding the Four Principles of Accessibility</a> も参照。</p>
-                  					
-               </li>
-               					
-               <li><p><strong>ガイドライン</strong> - 原則の下にあるのがガイドラインである。13 のガイドラインは、様々な障害のある利用者に対してコンテンツをよりアクセシブルにするためにコンテンツ制作者が取り組むべき基本的な目標を提供している。これらのガイドラインは検証可能ではないが、コンテンツ制作者が達成基準を理解し、より適したテクニックを用いることができるように、全体的な枠組みや全般的な目的を提供するものである。</p>
-                  					
-               </li>
-               					
-               <li><p><strong>達成基準</strong> - 各ガイドラインには、検証可能な達成基準が設けられており、デザイン仕様検討、調達、基準策定、及び契約上の合意などにあたりその要件や適合試験が必要となる際に WCAG 2.2 を用いることが可能である。様々な利用者層や状況からくるニーズを満たすために、三つの適合レベルが定義されている: A (最低レベル)、AA、AAA (最高レベル)。WCAG のレベルに関する補足情報は、<a href="https://www.w3.org/WAI/WCAG22/Understanding/conformance#levels">Understanding Levels of Conformance</a> を参照。</p>
-                  					
-               </li>
-               					
-               <li><p><strong>十分なテクニック及び参考テクニック</strong> - WCAG 2.2 文書自体にある<em>ガイドライン </em>及び<em>達成基準</em>それぞれに対して、ワーキンググループは<em>テクニック</em>についても広範囲にわたって文書化している。テクニックは参考情報であり、二つのカテゴリに分類される: 達成基準を満たすのに<em>十分な</em>テクニックと<em>参考テクニック</em>である。参考テクニックは、個々の達成基準の要件を上回るもので、これらのテクニックを用いることで、コンテンツ制作者はガイドラインに対してより良い対処をすることができる。参考テクニックの中には、検証可能な達成基準によってカバーされていないアクセシビリティの問題に対処するものもある。よくある失敗例がある場合は、それも文書化されている。<a href="https://www.w3.org/WAI/WCAG22/Understanding/understanding-techniques">Sufficient and Advisory Techniques in Understanding WCAG 2.2</a> も参照。</p>
-                  					
-               </li>
-               				
-            </ul>
-            				
-            <p>このガイダンスのレイヤー (原則、ガイドライン、達成基準、十分なテクニック及び参考テクニック) はすべて、コンテンツをよりアクセシブルにする方法に関するガイダンスを提供するために連携している。コンテンツ制作者は可能な範囲で最も広い利用者のニーズに最大限対処できるように、参考テクニックを含めたすべてのレイヤーを確認して適用することが推奨される。</p>
-            				
-            <p>最高レベル (AAA) に適合しているコンテンツでさえも、特に認知言語及び認知学習の分野において、あらゆる障害の種類、程度又は組合せのある人にとってアクセシブルであるとは限らないことに留意されたい。コンテンツ制作者は、参考テクニック及び <a href="https://www.w3.org/TR/coga-usable/">Making Content Usable for People with Cognitive and Learning Disabilities</a> を含む、あらゆるテクニックを検討するとともに、こうした人たちにとって可能な限りウェブコンテンツがアクセシブルであることを確実にするためにも、最新のベストプラクティスに関する適切な助言を求めることを勧める。<a href="https://www.w3.org/WAI/WCAG22/Understanding/understanding-metadata">メタデータ</a> は、利用者が自分のニーズに最適なコンテンツを探し出すのに役立つ可能性がある。</p>
-            			
-         </section>
-         <section id="wcag-2-2-supporting-documents"><div class="header-wrapper"><h3 id="wcag-2-2-supporting-documents-0">WCAG 2.2 関連文書</h3><a class="self-link" href="#wcag-2-2-supporting-documents" aria-label="Permalink for this Section"></a></div>
-            				
-            
-            				
-            <p>WCAG 2.2 の文書は、安定した参照可能な技術標準を必要とする人たちのニーズを満たすように作成されている。関連文書と呼ばれるその他の文書は、WCAG 2.2 文書に基づいて、WCAG が新しい技術にどのように適用されるかを説明するために更新できるようにすることを含め、その他の重要な役割を果たすものである。関連文書には以下に挙げるものがある:</p>
-            				
-            <ol class="enumar">
-               					
-               <li><p><strong><a href="https://www.w3.org/WAI/WCAG22/quickref/">How to Meet WCAG 2.2</a></strong> - WCAG 2.2 のカスタマイズ可能なクイックリファレンス。コンテンツ制作者がウェブコンテンツを制作したり評価したりする際に用いるガイドライン、達成基準、テクニックのすべてが含まれる。これには WCAG 2.0、2.1 及び 2.2 のコンテンツが含まれており、関連するコンテンツにコンテンツ制作者がフォーカスできるよう、様々な方法でフィルタリングできるようになっている。</p>
-                  					
-               </li>
-               					
-               <li><p><strong><a href="https://www.w3.org/WAI/WCAG22/Understanding/">Understanding WCAG 2.2</a></strong> - WCAG 2.2 を理解して実践するための解説書。重要なトピックスとあわせて、WCAG 2.2 の各ガイドライン及び達成基準を「理解する」ための簡潔な文書がある。</p>
-                  					
-               </li>
-               					
-               <li><p><strong><a href="https://www.w3.org/WAI/WCAG22/Techniques/">Techniques for WCAG 2.2</a></strong> - テクニック集及びよくある失敗例集。個々に別々の文書になっており、解説、事例、コード例、テストが含まれる。</p>
-                  					
-               </li>
-               					
-               <li><p><strong><a href="https://www.w3.org/WAI/standards-guidelines/wcag/docs/">The WCAG 2 Documents</a></strong> - WCAG 2 の関連文書及び補足的なガイダンスの簡単な紹介。</p>
-                  					
-               </li>
-               
-               <li><p><strong><a href="https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/">What's New in WCAG 2.2</a></strong> では、アクセシビリティ問題の例を説明するペルソナともに、新しい達成基準を紹介している。</p>
-               </li>
-               				
-            </ol>
-            				
-            <p>WCAG 2.2 に関する教育資料を含む関連資料の説明は、<a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG) Overview</a> を参照。例えば、ウェブアクセシビリティのビジネスにおける効果、ウェブサイトのアクセシビリティを改善するための実施計画作成、及びアクセシビリティ方針といったトピックに関する補足資料は、<a href="https://www.w3.org/WAI/Resources/Overview">WAI Resources</a> に挙げられている。</p>
-            			
-         </section>
-         	
-         <section id="requirements-for-wcag-2-2"><div class="header-wrapper"><h3 id="requirements-for-wcag-2-2-0">WCAG 2.2 の要件</h3><a class="self-link" href="#requirements-for-wcag-2-2" aria-label="Permalink for this Section"></a></div>
-            		
-            
-            
-            <p>WCAG 2.2 は、以前の WCAG 2 のバージョンから要件を継承する一連の <a href="https://w3c.github.io/wcag/requirements/22/">requirements for WCAG 2.2</a> を満たしている。要件は、ガイドラインの全体的なフレームワークを構成し、後方互換性を確保している。ワーキンググループはまた、達成基準のスタイルや品質が WCAG 2.0 のものと類似することを確保するために、達成基準に対し、あまり形式的ではない一連の受け入れ基準を採用した。これらの要件は、WCAG 2.2 に含めることができるものを制限している。この制限は、WCAG 2 のドットリリースの性質を保持するために重要である。</p>
-            	
-         </section>
-         <section id="comparison-with-wcag-2-1"><div class="header-wrapper"><h3 id="comparison-with-wcag-2-1-0">WCAG 2.1 との比較</h3><a class="self-link" href="#comparison-with-wcag-2-1" aria-label="Permalink for this Section"></a></div>
-            
-            
-            
-            <p>WCAG 2.2 は、認知又は学習障害のある利用者、ロービジョンの利用者、及びモバイルデバイス上の障害のある利用者という三つの主要なグループに対するアクセシビリティのガイダンスを改善する WCAG 2.1 の取組を継続することを目的に開始された。これらのニーズを満たすために多くの方法が提案され評価され、ワーキンググループによって洗練された。WCAG 2.0 から引き継がれた構造上の要件、提案の明確さ及び影響、並びに進行計画が、この版に含まれる最終的な一式の達成基準につながった。ワーキンググループは、WCAG 2.2 がこれら全ての領域におけるウェブコンテンツのアクセシビリティのガイダンスを段階的に進歩させると考えているが、このガイドラインによって全ての利用者のニーズが満たされているわけではないことを強調している。</p>
-            
-            				
-            <p>WCAG 2.2 は、WCAG 2.1 をベースに構築されており、WCAG 2.1 と後方互換性がある。そのため、WCAG 2.2 に適合しているウェブページは、少なくとも WCAG 2.1 に適合しているページと同程度にアクセシブルである。2.1 及び 2.0 をベースにした複数の要件が追加されている。WCAG 2.2 では、一つの達成基準 <a href="#parsing">4.1.1 構文解析</a>が削除された。WCAG 2.0 又は 2.1 への適合を方針によって要求されているコンテンツ制作者は、WCAG 2.2 に適合できるようコンテンツをアップデートできるが、4.1.1 については引き続きテスト及び報告を行う必要があるかもしれない。複数のバージョンのガイドラインに従うコンテンツ制作者は、以下に挙げる追加事項に注意すべきである。</p>
-            				
-            <section id="new-features-in-wcag-2-2"><div class="header-wrapper"><h4 id="new-features-in-wcag-2-2-0">WCAG 2.2 の新しい特徴</h4><a class="self-link" href="#new-features-in-wcag-2-2" aria-label="Permalink for this Section"></a></div>
-               					
-               
-               					
-               <p>WCAG 2.2 は、新しい達成基準、それをサポートする定義、及び追加分をまとめるガイドラインを追加することによって、WCAG 2.1 を拡張している。この付加的なアプローチは、WCAG 2.2 に適合するサイトが WCAG 2.1 にも適合することを明確にするのに役立つ。アクセシビリティガイドライン ワーキンググループは、たとえ公的義務が以前のバージョンに言及するものであっても、アクセシビリティをより向上させて、将来の方針の変更に備えておくために、サイトが新しい適合目標として WCAG 2.2 を採用することを推奨する。</p>
-               
-               <p>以下が WCAG 2.2 の新しい達成基準である:</p>
-               
-               <ul>
-                  						
-                  <li>2.4.11 <a href="#focus-not-obscured-minimum">隠されないフォーカス (最低限)</a> (AA)</li>
-                  						
-                  <li>2.4.12 <a href="#focus-not-obscured-enhanced">隠されないフォーカス (高度)</a> (AAA)</li>
-                  
-                  <li>2.4.13 <a href="#focus-appearance">フォーカスの外観</a> (AAA)</li>	
-                  						
-                  <li>2.5.7 <a href="#dragging-movements">ドラッグ動作</a> (AA)</li>
-                  						
-                  <li>2.5.8 <a href="#target-size-minimum">ターゲットのサイズ (最低限)</a> (AA)</li>
-                  						
-                  <li>3.2.6 <a href="#consistent-help">一貫したヘルプ</a> (A)</li>
-                  						
-                  <li>3.3.7 <a href="#redundant-entry">冗長な入力項目</a> (A)</li>
-                  						
-                  <li>3.3.8 <a href="#accessible-authentication-minimum">アクセシブルな認証 (最低限)</a> (AA)</li>
-                  						
-                  <li>3.3.9 <a href="#accessible-authentication-enhanced">アクセシブルな認証 (高度)</a> (AAA)</li>
-                  					
-               </ul>
-               					
-               <p>新しい達成基準は、用語集に追加された新しい用語を参照していることがあり、それらもまた達成基準の規定要件の一部を構成することがある。</p>
-               
-               <p>WCAG 2.2 はまた、新しい章を導入し、この仕様が<a href="#privacy-summary">プライバシー</a>及び<a href="#security-summary">セキュリティ</a>に与える影響の観点から説明を加えている。</p>
-               
-               				
-            </section>
-            				
-            <section id="numbering-in-wcag-2-2"><div class="header-wrapper"><h4 id="numbering-in-wcag-2-2-0">WCAG 2.2 におけるナンバリング</h4><a class="self-link" href="#numbering-in-wcag-2-2" aria-label="Permalink for this Section"></a></div>
-               					
-               
-               					
-               <p>WCAG 2 系のバージョンに対する後方互換性を重視する実装者の混乱を避けるため、WCAG 2.2 における新しい達成基準はガイドライン内の一連の達成基準の末尾に追加されている。これにより、ガイドラインの既存の達成基準の間に新しい達成基準を挿入することによって生じるであろう、WCAG 2 からある達成基準のセクション番号を変更する必要がなくなる。しかしながらこのことは、各ガイドライン内の達成基準がもはや適合レベルごとにグループ化されていないことを意味する。各ガイドライン内での達成基準の順番は、適合レベルに関する情報を暗示するものではなく、各達成基準自身の適合レベル表示 (A / AA / AAA) のみが適合レベルを示す。<a href="https://www.w3.org/WAI/WCAG22/quickref/">WCAG 2.2 Quick Reference</a> が、他の多数のフィルター及び並べ替え方法とともに、適合レベルごとにグループ化された達成基準を見る方法を提供するだろう。</p>
-               				
-            </section>
-            				
-            <section id="conformance-to-wcag-2-2"><div class="header-wrapper"><h4 id="conformance-to-wcag-2-2-0">WCAG 2.2 への適合</h4><a class="self-link" href="#conformance-to-wcag-2-2" aria-label="Permalink for this Section"></a></div>
-               					
-               
-               					
-               <p>WCAG 2.2 は WCAG 2.0 と同様の適合モデルを使用している。これは WCAG 2.2 に適合するサイトが WCAG 2.0 及び WCAG 2.1 にも適合することを意図している。つまり、それらのサイトが WCAG 2.0 又は WCAG 2.1 を参照するあらゆる方針の要件も満たすと同時に、現在のウェブ上の利用者のニーズをより良く満たすことを意味する。</p>
+              <p>認知、言語、及び学習障害に対処するための追加の達成基準を定義するにあたり、勧告策定期間の短さに加えて、勧告案のテスト可能性や実装可能性、国際的な観点からの検討について合意形成に至る際の課題など、重大な課題に向き合うこととなった。こうした領域については、WCAG の将来の版で検討が継続されることになる。コンテンツ制作者においては、<a href="https://www.w3.org/WAI/standards-guidelines/wcag/#supplement">学習障害、認知障害、ロービジョンなど障害のある人のインクルージョンを向上するための補足的なガイダンス</a>を参照することを推奨する。</p>
               
+              <p>ウェブアクセシビリティは、アクセシブルなコンテンツだけではなく、アクセシブルなウェブブラウザやその他のユーザエージェントにも依存している。そして、オーサリングツールもウェブアクセシビリティにおいて重要な役割を担っている。ウェブ開発やインタラクションを構成するこれらの要素が相互にどのように関係しているかの概要については、以下を参照:</p>
+              <ul>
+                 <li><strong><a href="https://www.w3.org/WAI/fundamentals/components/">Essential Components of Web Accessibility</a></strong></li>
+                 <li><strong><a href="https://www.w3.org/WAI/standards-guidelines/uaag/">User Agent Accessibility Guidelines (UAAG) Overview</a></strong></li>
+                 <li><strong><a href="https://www.w3.org/WAI/standards-guidelines/atag/">Authoring Tool Accessibility Guidelines (ATAG) Overview</a></strong></li>
+              </ul>
+              <p>この文書で <q>WCAG 2</q> を表す場合、2 で始まる WCAG の全てのバージョンを表すことを意図している。</p>
+           </section>
+           <section id="wcag-2-layers-of-guidance"><div class="header-wrapper"><h3 id="wcag-2-layers-of-guidance-0">WCAG 2 ガイダンスのレイヤー</h3><a class="self-link" href="#wcag-2-layers-of-guidance" aria-label="Permalink for this Section"></a></div>
+            				
+              <p>WCAG を用いる個人や組織は実に幅広く、ウェブデザイナーや開発者、政策立案者、調達担当者、教師、及び生徒などが含まれる。これらの人たちの様々なニーズに応えるために WCAG 2.0 では、 <em>原則</em>、一般的な <em>ガイドライン</em> 、検証可能な<em>達成基準</em> 、<em>十分なテクニック</em>、<em>参考テクニック</em>、及び<em>よくある失敗例</em>を示した豊富な文書群を含む様々なレイヤーのガイダンスが、事例や参考リンク及びコードとともに提供されている。</p>
+              <ul>
+                 <li><p><strong>原則</strong> - 最上位には、ウェブアクセシビリティの土台となる四つの原則がある: <em>知覚可能、操作可能、理解可能、及び堅牢 (robust)</em> 。あわせて、<a href="https://www.w3.org/WAI/WCAG22/Understanding/intro#understanding-the-four-principles-of-accessibility">Understanding the Four Principles of Accessibility</a> も参照。</p>
+                 </li>
+                 <li><p><strong>ガイドライン</strong> - 原則の下にあるのがガイドラインである。13 のガイドラインは、様々な障害のある利用者に対してコンテンツをよりアクセシブルにするためにコンテンツ制作者が取り組むべき基本的な目標を提供している。これらのガイドラインは検証可能ではないが、コンテンツ制作者が達成基準を理解し、より適したテクニックを用いることができるように、全体的な枠組みや全般的な目的を提供するものである。</p>
+                 </li>
+                 <li><p><strong>達成基準</strong> - 各ガイドラインには、検証可能な達成基準が設けられており、デザイン仕様検討、調達、基準策定、及び契約上の合意などにあたりその要件や適合試験が必要となる際に WCAG 2.2 を用いることが可能である。様々な利用者層や状況からくるニーズを満たすために、三つの適合レベルが定義されている: A (最低レベル)、AA、AAA (最高レベル)。WCAG のレベルに関する補足情報は、<a href="https://www.w3.org/WAI/WCAG22/Understanding/conformance#levels">Understanding Levels of Conformance</a> を参照。</p>
+                 </li>
+                 <li><p><strong>十分なテクニック及び参考テクニック</strong> - WCAG 2.2 文書自体にある<em>ガイドライン </em>及び<em>達成基準</em>それぞれに対して、ワーキンググループは<em>テクニック</em>についても広範囲にわたって文書化している。テクニックは参考情報であり、二つのカテゴリに分類される: 達成基準を満たすのに<em>十分な</em>テクニックと<em>参考テクニック</em>である。参考テクニックは、個々の達成基準の要件を上回るもので、これらのテクニックを用いることで、コンテンツ制作者はガイドラインに対してより良い対処をすることができる。参考テクニックの中には、検証可能な達成基準によってカバーされていないアクセシビリティの問題に対処するものもある。よくある失敗例がある場合は、それも文書化されている。<a href="https://www.w3.org/WAI/WCAG22/Understanding/understanding-techniques">Sufficient and Advisory Techniques in Understanding WCAG 2.2</a> も参照。</p>
+                 </li>
+              </ul>
+              <p>このガイダンスのレイヤー (原則、ガイドライン、達成基準、十分なテクニック及び参考テクニック) はすべて、コンテンツをよりアクセシブルにする方法に関するガイダンスを提供するために連携している。コンテンツ制作者は可能な範囲で最も広い利用者のニーズに最大限対処できるように、参考テクニックを含めたすべてのレイヤーを確認して適用することが推奨される。</p>
+              <p>最高レベル (AAA) に適合しているコンテンツでさえも、特に認知言語及び認知学習の分野において、あらゆる障害の種類、程度又は組合せのある人にとってアクセシブルであるとは限らないことに留意されたい。コンテンツ制作者は、参考テクニック及び <a href="https://www.w3.org/TR/coga-usable/">Making Content Usable for People with Cognitive and Learning Disabilities</a> を含む、あらゆるテクニックを検討するとともに、こうした人たちにとって可能な限りウェブコンテンツがアクセシブルであることを確実にするためにも、最新のベストプラクティスに関する適切な助言を求めることを勧める。<a href="https://www.w3.org/WAI/WCAG22/Understanding/understanding-metadata">メタデータ</a> は、利用者が自分のニーズに最適なコンテンツを探し出すのに役立つ可能性がある。</p>
+           </section>
+           <section id="wcag-2-2-supporting-documents"><div class="header-wrapper"><h3 id="wcag-2-2-supporting-documents-0">WCAG 2.2 関連文書</h3><a class="self-link" href="#wcag-2-2-supporting-documents" aria-label="Permalink for this Section"></a></div>
+
+              <p>WCAG 2.2 の文書は、安定した参照可能な技術標準を必要とする人たちのニーズを満たすように作成されている。関連文書と呼ばれるその他の文書は、WCAG 2.2 文書に基づいて、WCAG が新しい技術にどのように適用されるかを説明するために更新できるようにすることを含め、その他の重要な役割を果たすものである。関連文書には以下に挙げるものがある:</p>
+              <ol class="enumar">
+                 <li><p><strong><a href="https://www.w3.org/WAI/WCAG22/quickref/">How to Meet WCAG 2.2</a></strong> - WCAG 2.2 のカスタマイズ可能なクイックリファレンス。コンテンツ制作者がウェブコンテンツを制作したり評価したりする際に用いるガイドライン、達成基準、テクニックのすべてが含まれる。これには WCAG 2.0、2.1 及び 2.2 のコンテンツが含まれており、関連するコンテンツにコンテンツ制作者がフォーカスできるよう、様々な方法でフィルタリングできるようになっている。</p>
+                 </li>
+                 <li><p><strong><a href="https://www.w3.org/WAI/WCAG22/Understanding/">Understanding WCAG 2.2</a></strong> - WCAG 2.2 を理解して実践するための解説書。重要なトピックスとあわせて、WCAG 2.2 の各ガイドライン及び達成基準を「理解する」ための簡潔な文書がある。</p>
+                 </li>
+                 <li><p><strong><a href="https://www.w3.org/WAI/WCAG22/Techniques/">Techniques for WCAG 2.2</a></strong> - テクニック集及びよくある失敗例集。個々に別々の文書になっており、解説、事例、コード例、テストが含まれる。</p>
+                 </li>
+                 <li><p><strong><a href="https://www.w3.org/WAI/standards-guidelines/wcag/docs/">The WCAG 2 Documents</a></strong> - WCAG 2 の関連文書及び補足的なガイダンスの簡単な紹介。</p>
+                 </li>
+                 <li><p><strong><a href="https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/">What's New in WCAG 2.2</a></strong> では、アクセシビリティ問題の例を説明するペルソナともに、新しい達成基準を紹介している。</p>
+                 </li>
+              </ol>
+              <p>WCAG 2.2 に関する教育資料を含む関連資料の説明は、<a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG) Overview</a> を参照。例えば、ウェブアクセシビリティのビジネスにおける効果、ウェブサイトのアクセシビリティを改善するための実施計画作成、及びアクセシビリティ方針といったトピックに関する補足資料は、<a href="https://www.w3.org/WAI/Resources/Overview">WAI Resources</a> に挙げられている。</p>
+           </section>
+           <section id="requirements-for-wcag-2-2"><div class="header-wrapper"><h3 id="requirements-for-wcag-2-2-0">WCAG 2.2 の要件</h3><a class="self-link" href="#requirements-for-wcag-2-2" aria-label="Permalink for this Section"></a></div>
+            		
+              <p>WCAG 2.2 は、以前の WCAG 2 のバージョンから要件を継承する一連の <a href="https://w3c.github.io/wcag/requirements/22/">requirements for WCAG 2.2</a> を満たしている。要件は、ガイドラインの全体的なフレームワークを構成し、後方互換性を確保している。ワーキンググループはまた、達成基準のスタイルや品質が WCAG 2.0 のものと類似することを確保するために、達成基準に対し、あまり形式的ではない一連の受け入れ基準を採用した。これらの要件は、WCAG 2.2 に含めることができるものを制限している。この制限は、WCAG 2 のドットリリースの性質を保持するために重要である。</p>
+           </section>
+           <section id="comparison-with-wcag-2-1"><div class="header-wrapper"><h3 id="comparison-with-wcag-2-1-0">WCAG 2.1 との比較</h3><a class="self-link" href="#comparison-with-wcag-2-1" aria-label="Permalink for this Section"></a></div>
+            
+              <p>WCAG 2.2 は、認知又は学習障害のある利用者、ロービジョンの利用者、及びモバイルデバイス上の障害のある利用者という三つの主要なグループに対するアクセシビリティのガイダンスを改善する WCAG 2.1 の取組を継続することを目的に開始された。これらのニーズを満たすために多くの方法が提案され評価され、ワーキンググループによって洗練された。WCAG 2.0 から引き継がれた構造上の要件、提案の明確さ及び影響、並びに進行計画が、この版に含まれる最終的な一式の達成基準につながった。ワーキンググループは、WCAG 2.2 がこれら全ての領域におけるウェブコンテンツのアクセシビリティのガイダンスを段階的に進歩させると考えているが、このガイドラインによって全ての利用者のニーズが満たされているわけではないことを強調している。</p>
+              
+              <p>WCAG 2.2 は、WCAG 2.1 をベースに構築されており、WCAG 2.1 と後方互換性がある。そのため、WCAG 2.2 に適合しているウェブページは、少なくとも WCAG 2.1 に適合しているページと同程度にアクセシブルである。2.1 及び 2.0 をベースにした複数の要件が追加されている。WCAG 2.2 では、一つの達成基準 <a href="#parsing">4.1.1 構文解析</a>が削除された。WCAG 2.0 又は 2.1 への適合を方針によって要求されているコンテンツ制作者は、WCAG 2.2 に適合できるようコンテンツをアップデートできるが、4.1.1 については引き続きテスト及び報告を行う必要があるかもしれない。複数のバージョンのガイドラインに従うコンテンツ制作者は、以下に挙げる追加事項に注意すべきである。</p>
+              <section id="new-features-in-wcag-2-2"><div class="header-wrapper"><h4 id="new-features-in-wcag-2-2-0">WCAG 2.2 の新しい特徴</h4><a class="self-link" href="#new-features-in-wcag-2-2" aria-label="Permalink for this Section"></a></div>
+               					
+                 <p>WCAG 2.2 は、新しい達成基準、それをサポートする定義、及び追加分をまとめるガイドラインを追加することによって、WCAG 2.1 を拡張している。この付加的なアプローチは、WCAG 2.2 に適合するサイトが WCAG 2.1 にも適合することを明確にするのに役立つ。アクセシビリティガイドライン ワーキンググループは、たとえ公的義務が以前のバージョンに言及するものであっても、アクセシビリティをより向上させて、将来の方針の変更に備えておくために、サイトが新しい適合目標として WCAG 2.2 を採用することを推奨する。</p>
+                 <p>以下が WCAG 2.2 の新しい達成基準である:</p>
+                 <ul>
+                    <li>2.4.11 <a href="#focus-not-obscured-minimum">隠されないフォーカス (最低限)</a> (AA)</li>
+                    <li>2.4.12 <a href="#focus-not-obscured-enhanced">隠されないフォーカス (高度)</a> (AAA)</li>
+                    <li>2.4.13 <a href="#focus-appearance">フォーカスの外観</a> (AAA)</li>	
+                    <li>2.5.7 <a href="#dragging-movements">ドラッグ動作</a> (AA)</li>
+                    <li>2.5.8 <a href="#target-size-minimum">ターゲットのサイズ (最低限)</a> (AA)</li>
+                    <li>3.2.6 <a href="#consistent-help">一貫したヘルプ</a> (A)</li>
+                    <li>3.3.7 <a href="#redundant-entry">冗長な入力項目</a> (A)</li>
+                    <li>3.3.8 <a href="#accessible-authentication-minimum">アクセシブルな認証 (最低限)</a> (AA)</li>
+                    <li>3.3.9 <a href="#accessible-authentication-enhanced">アクセシブルな認証 (高度)</a> (AAA)</li>
+                 </ul>
+                 <p>新しい達成基準は、用語集に追加された新しい用語を参照していることがあり、それらもまた達成基準の規定要件の一部を構成することがある。</p>
+                 <p>WCAG 2.2 はまた、新しい章を導入し、この仕様が<a href="#privacy-summary">プライバシー</a>及び<a href="#security-summary">セキュリティ</a>に与える影響の観点から説明を加えている。</p>
                				
-            </section>
-            			
-         </section>
-         	
-         <section id="later-versions-of-accessibility-guidelines"><div class="header-wrapper"><h3 id="later-versions-of-accessibility-guidelines-0">アクセシビリティガイドラインの後続版</h3><a class="self-link" href="#later-versions-of-accessibility-guidelines" aria-label="Permalink for this Section"></a></div>
+              </section>
+              <section id="numbering-in-wcag-2-2"><div class="header-wrapper"><h4 id="numbering-in-wcag-2-2-0">WCAG 2.2 におけるナンバリング</h4><a class="self-link" href="#numbering-in-wcag-2-2" aria-label="Permalink for this Section"></a></div>
+               					
+                 <p>WCAG 2 系のバージョンに対する後方互換性を重視する実装者の混乱を避けるため、WCAG 2.2 における新しい達成基準はガイドライン内の一連の達成基準の末尾に追加されている。これにより、ガイドラインの既存の達成基準の間に新しい達成基準を挿入することによって生じるであろう、WCAG 2 からある達成基準のセクション番号を変更する必要がなくなる。しかしながらこのことは、各ガイドライン内の達成基準がもはや適合レベルごとにグループ化されていないことを意味する。各ガイドライン内での達成基準の順番は、適合レベルに関する情報を暗示するものではなく、各達成基準自身の適合レベル表示 (A / AA / AAA) のみが適合レベルを示す。<a href="https://www.w3.org/WAI/WCAG22/quickref/">WCAG 2.2 Quick Reference</a> が、他の多数のフィルター及び並べ替え方法とともに、適合レベルごとにグループ化された達成基準を見る方法を提供するだろう。</p>
+              </section>            				
+              <section id="conformance-to-wcag-2-2"><div class="header-wrapper"><h4 id="conformance-to-wcag-2-2-0">WCAG 2.2 への適合</h4><a class="self-link" href="#conformance-to-wcag-2-2" aria-label="Permalink for this Section"></a></div>
+               					
+                 <p>WCAG 2.2 は WCAG 2.0 と同様の適合モデルを使用している。これは WCAG 2.2 に適合するサイトが WCAG 2.0 及び WCAG 2.1 にも適合することを意図している。つまり、それらのサイトが WCAG 2.0 又は WCAG 2.1 を参照するあらゆる方針の要件も満たすと同時に、現在のウェブ上の利用者のニーズをより良く満たすことを意味する。</p>
+              </section>
+           </section>
+           <section id="later-versions-of-accessibility-guidelines"><div class="header-wrapper"><h3 id="later-versions-of-accessibility-guidelines-0">アクセシビリティガイドラインの後続版</h3><a class="self-link" href="#later-versions-of-accessibility-guidelines" aria-label="Permalink for this Section"></a></div>
             		
+              <p>WCAG 2.2 と並行して、アクセシビリティガイドライン ワーキンググループは、アクセシビリティガイドラインの別の主要版を開発している。この作業の結果は、現実的な WCAG 2 のドットリリースのためと言うより、ウェブアクセシビリティガイダンスのより大幅な再構築になると期待されている。この作業は、コンテンツ制作、ユーザエージェントのサポート、及びオーサリングツールのサポートの役割を含む、最も効果的かつ柔軟な結果を生むために、研究に焦点を合わせた、ユーザ中心設計の方法論に従う。これは長年にわたる努力であるため、WCAG 2.0 の公開からのウェブ上の変化を反映するための最新のウェブアクセシビリティガイダンスを提供するための暫定措置として WCAG 2.2 が必要とされる。ワーキンググループは、主要版が完成するまでの間、同様に短いタイムラインで追加のサポートを提供するために、WCAG 2.2 及びそれに続く暫定版を開発するかもしれない。</p>
+           </section>
+        </section>
+        <section class="principle" id="perceivable"><div class="header-wrapper"><h2 id="x1-perceivable"><bdi class="secno">1. </bdi> 知覚可能</h2><a class="self-link" href="#perceivable" aria-label="Permalink for Section 1."></a></div>
             
-            		
-            <p>WCAG 2.2 と並行して、アクセシビリティガイドライン ワーキンググループは、アクセシビリティガイドラインの別の主要版を開発している。この作業の結果は、現実的な WCAG 2 のドットリリースのためと言うより、ウェブアクセシビリティガイダンスのより大幅な再構築になると期待されている。この作業は、コンテンツ制作、ユーザエージェントのサポート、及びオーサリングツールのサポートの役割を含む、最も効果的かつ柔軟な結果を生むために、研究に焦点を合わせた、ユーザ中心設計の方法論に従う。これは長年にわたる努力であるため、WCAG 2.0 の公開からのウェブ上の変化を反映するための最新のウェブアクセシビリティガイダンスを提供するための暫定措置として WCAG 2.2 が必要とされる。ワーキンググループは、主要版が完成するまでの間、同様に短いタイムラインで追加のサポートを提供するために、WCAG 2.2 及びそれに続く暫定版を開発するかもしれない。</p>
-            	
-         </section>
-         
-      </section>
-        <section class="principle" id="perceivable"><div class="header-wrapper"><h2 id="x1-perceivable"><bdi class="secno">1. </bdi> Perceivable </h2><a class="self-link" href="#perceivable" aria-label="Permalink for Section 1."></a></div>
-            
-            <p>Information and user interface components must be presentable to users in ways they can perceive.</p>
+            <p>情報及びユーザインタフェース コンポーネントは、利用者が知覚できる方法で利用者に提示可能でなければならない。</p>
 
-            <section class="guideline" id="text-alternatives"><div class="header-wrapper"><h3 id="x1-1-text-alternatives"><bdi class="secno">Guideline 1.1 </bdi>Text Alternatives</h3><a class="self-link" href="#text-alternatives" aria-label="Permalink for Section 1.1"></a></div>
+            <section class="guideline" id="text-alternatives"><div class="header-wrapper"><h3 id="x1-1-text-alternatives"><bdi class="secno">ガイドライン 1.1</bdi> テキストによる代替</h3><a class="self-link" href="#text-alternatives" aria-label="Permalink for Section 1.1"></a></div>
                 
-                <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/text-alternatives.html">Understanding Text Alternatives</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#text-alternatives">How to Meet Text Alternatives</a></div><p>Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.</p>
+                <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/text-alternatives.html">Understanding Text Alternatives</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#text-alternatives">How to Meet Text Alternatives</a></div><p>すべての非テキストコンテンツには、大活字、点字、音声、シンボル、平易な言葉などの利用者が必要とする形式に変換できるように、テキストによる代替を提供すること。</p>
+                <div class="note"><div role="heading" class="note-title marker" aria-level="4"><span>訳注</span></div><p>大活字とは、通常の出版物より大きな活字のことを指す。<a href="https://www.ndl.go.jp/jp/library/supportvisual/geppo201501/article05.html">障害者向け資料の紹介｜国立国会図書館―National Diet Library</a> も参照。</p></div>
 
-                <section id="non-text-content" class="guideline"><div class="header-wrapper"><h4 id="x1-1-1-non-text-content"><bdi class="secno">Success Criterion 1.1.1 </bdi>Non-text Content</h4><a class="self-link" href="#non-text-content" aria-label="Permalink for Section 1.1.1"></a></div>
+                <section id="non-text-content" class="guideline"><div class="header-wrapper"><h4 id="x1-1-1-non-text-content"><bdi class="secno">達成基準 1.1.1 </bdi>非テキストコンテンツ</h4><a class="self-link" href="#non-text-content" aria-label="Permalink for Section 1.1.1"></a></div>
    
    
    
-   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html">Understanding Non-text Content</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#non-text-content">How to Meet Non-text Content</a></div><p class="conformance-level">(Level A)</p>
+   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html">Understanding Non-text Content</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#non-text-content">How to Meet Non-text Content</a></div><p class="conformance-level">(レベル A)</p>
    
-   <p>All <a href="#dfn-non-text-content" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-non-text-content-1" title="any content that is not a sequence of characters that can be programmatically determined or where the sequence is not expressing something in human language">non-text content</a> that is presented to the user has a <a href="#dfn-text-alternative" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-text-alternative-1" title="Text that is programmatically associated with non-text content or referred to from text that is programmatically associated with non-text content. Programmatically associated text is text whose location can be programmatically determined from the non-text content.">text alternative</a> that serves the equivalent purpose, except for the situations listed below.
+   <p>利用者に提示されるすべての<a href="#dfn-non-text-content" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-non-text-content-1" title="プログラムによる解釈が可能な文字の並びではないコンテンツ、又は文字の並びが自然言語においても何をも表現していないコンテンツ。">非テキストコンテンツ</a>には、同等の目的を果たす<a href="#dfn-text-alternative" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-text-alternative-1" title="非テキストコンテンツとプログラムで関連付けられるテキスト。又は非テキストコンテンツとプログラムで関連付けられるテキストから参照されるテキスト。プログラムで関連付けられたテキストとは、その場所を、非テキストコンテンツからプログラムによる解釈が可能なテキストである。">テキストによる代替</a>が提供されている。ただし、次の場合は除く:
    </p>
    
    <dl>
       
-      <dt>Controls, Input</dt>
+      <dt>コントロール、入力</dt>
       
       <dd>
          
-         <p>If non-text content is a control or accepts user input, then it has a <a href="#dfn-name" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-name-1" title="text by which software can identify a component within web content to the user">name</a> that describes its purpose. (Refer to <a href="#name-role-value">Success Criterion 4.1.2</a> for additional requirements for controls and content that accepts user input.)
+         <p>非テキストコンテンツが、コントロール又は利用者の入力を受け付けるものであるとき、その目的を説明する<a href="#dfn-name" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-name-1" title="ソフトウェアが、ウェブコンテンツのコンポーネントを利用者に識別させることができるテキスト。">名前 (name)</a> を提供している。(コントロール及び利用者の入力を受け入れるコンテンツに関するその他の要件は、<a href="#name-role-value">達成基準 4.1.2</a> を参照。) 
          </p>
          
       </dd>
       
-      <dt>Time-Based Media</dt>
+      <dt>時間依存メディア</dt>
       
       <dd>
          
-         <p>If non-text content is time-based media, then text alternatives at least provide descriptive
-            identification of the non-text content. (Refer to <a href="#time-based-media">Guideline 1.2</a> for additional requirements for media.)
+         <p>非テキストコンテンツが、時間に依存したメディアであるとき、テキストによる代替は、少なくとも、その非テキストコンテンツを識別できる説明を提供している。(メディアに関するその他の要件は、<a href="#time-based-media">ガイドライン 1.2</a> を参照。)
          </p>
          
       </dd>
       
-      <dt>Test</dt>
+      <dt>テスト</dt>
       
       <dd>
          
-         <p>If non-text content is a test or exercise that would be invalid if presented in <a href="#dfn-text" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-text-1" title="sequence of characters that can be programmatically determined, where the sequence is expressing something in human language">text</a>, then text alternatives at least provide descriptive identification of the non-text
-            content.
+         <p>非テキストコンテンツが、<a href="#dfn-text" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-text-1" title="プログラムによる解釈が可能な文字の並びで、自然言語で何かを表現しているもの。">テキスト</a>で提示されると無効になるテスト又は演習のとき、テキストによる代替は、少なくともその非テキストコンテンツを識別できる説明を提供している。
          </p>
          
       </dd>
       
-      <dt>Sensory</dt>
+      <dt>感覚的</dt>
       
       <dd>
          
-         <p>If non-text content is primarily intended to create a <a href="#dfn-specific-sensory-experience" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-specific-sensory-experience-1" title="a sensory experience that is not purely decorative and does not primarily convey important information or perform a function">specific sensory experience</a>, then text alternatives at least provide descriptive identification of the non-text
-            content.
+         <p>非テキストコンテンツが、<a href="#dfn-specific-sensory-experience" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-specific-sensory-experience-1" title="純粋な装飾ではなく、かつ、重要な情報を伝える、又は機能を果たすことを主としない、感覚的な体験。">特定の感覚的体験</a>を創り出すことを主に意図しているとき、テキストによる代替は、少なくともその非テキストコンテンツを識別できる説明を提供している。
          </p>
          
       </dd>
       
-      <dt><a href="#dfn-captcha" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-captcha-1" title="initialism for &quot;Completely Automated Public Turing test to tell Computers and Humans Apart&quot;">CAPTCHA</a></dt>
+      <dt><a href="#dfn-captcha" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-captcha-1" title="コンピュータと人間とを判別する完全自動化されたチューリングテスト (Completely Automated Public Turing test to tell Computers and Humans Apart) の頭文字語。">CAPTCHA</a></dt>
       
       <dd>
          
-         <p>If the purpose of non-text content is to confirm that content is being accessed by
-            a person rather than a computer, then text alternatives that identify and describe
-            the purpose of the non-text content are provided, and alternative forms of CAPTCHA
-            using output modes for different types of sensory perception are provided to accommodate
-            different disabilities.
+         <p>非テキストコンテンツが、コンピュータではなく人間がコンテンツにアクセスしていることを確認する目的で用いられているとき、テキストによる代替は、その非テキストコンテンツの目的を特定し、説明している。なおかつ、他の感覚による知覚に対応して出力する CAPTCHA の代替形式を提供することで、様々な障害に対応している。
          </p>
          
       </dd>
       
-      <dt>Decoration, Formatting, Invisible</dt>
+      <dt>装飾、整形、非表示</dt>
       
       <dd>
          
-         <p>If non-text content is <a href="#dfn-pure-decoration" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-pure-decoration-1" title="serving only an aesthetic purpose, providing no information, and having no functionality">pure decoration</a>, is used only for visual formatting, or is not presented to users, then it is implemented
-            in a way that it can be ignored by <a href="#dfn-assistive-technologies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-assistive-technologies-1" title="hardware and/or software that acts as a user agent, or along with a mainstream user agent, to provide functionality to meet the requirements of users with disabilities that go beyond those offered by mainstream user agents">assistive technology</a>.
+         <p>非テキストコンテンツが、<a href="#dfn-pure-decoration" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-pure-decoration-1" title="見栄えのためだけのもので、情報は提供せず、機能性も備えていないもの。">純粋な装飾</a>である、見た目の整形のためだけに用いられている、又は利用者に提供されるものではないとき、<a href="#dfn-assistive-technologies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-assistive-technologies-1" title="障害のある利用者の要件を満たすために、主流のユーザエージェントが提供する機能を超えた機能を提供するような、ユーザエージェントとして動作する、又は主流のユーザエージェントと共に動作するハードウェア及び／又はソフトウェア。">支援技術</a>が無視できるように実装されている。
          </p>
          
       </dd>
@@ -553,37 +463,35 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 
             </section>
 
-            <section class="guideline" id="time-based-media"><div class="header-wrapper"><h3 id="x1-2-time-based-media"><bdi class="secno">Guideline 1.2 </bdi>Time-based Media</h3><a class="self-link" href="#time-based-media" aria-label="Permalink for Section 1.2"></a></div>
+            <section class="guideline" id="time-based-media"><div class="header-wrapper"><h3 id="x1-2-time-based-media"><bdi class="secno">ガイドライン 1.2 </bdi>時間依存メディア</h3><a class="self-link" href="#time-based-media" aria-label="Permalink for Section 1.2"></a></div>
                 
-                <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/time-based-media.html">Understanding Time-based Media</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#time-based-media">How to Meet Time-based Media</a></div><p>Provide alternatives for time-based media.</p>
+                <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/time-based-media.html">Understanding Time-based Media</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#time-based-media">How to Meet Time-based Media</a></div><p>時間依存メディアには代替コンテンツを提供すること。</p>
 
-                <section id="audio-only-and-video-only-prerecorded" class="guideline"><div class="header-wrapper"><h4 id="x1-2-1-audio-only-and-video-only-prerecorded"><bdi class="secno">Success Criterion 1.2.1 </bdi>Audio-only and Video-only (Prerecorded)</h4><a class="self-link" href="#audio-only-and-video-only-prerecorded" aria-label="Permalink for Section 1.2.1"></a></div>
+                <section id="audio-only-and-video-only-prerecorded" class="guideline"><div class="header-wrapper"><h4 id="x1-2-1-audio-only-and-video-only-prerecorded"><bdi class="secno">達成基準 1.2.1 </bdi>音声のみ及び映像のみ (収録済)</h4><a class="self-link" href="#audio-only-and-video-only-prerecorded" aria-label="Permalink for Section 1.2.1"></a></div>
    
    
    
-   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-only-and-video-only-prerecorded.html">Understanding Audio-only and Video-only (Prerecorded)</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#audio-only-and-video-only-prerecorded">How to Meet Audio-only and Video-only (Prerecorded)</a></div><p class="conformance-level">(Level A)</p>
+   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-only-and-video-only-prerecorded.html">Understanding Audio-only and Video-only (Prerecorded)</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#audio-only-and-video-only-prerecorded">How to Meet Audio-only and Video-only (Prerecorded)</a></div><p class="conformance-level">(レベル A)</p>
    
-   <p>For <a href="#dfn-prerecorded" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-prerecorded-1" title="information that is not live">prerecorded</a>
-      <a href="#dfn-audio-only" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-audio-only-1" title="a time-based presentation that contains only audio (no video and no interaction)">audio-only</a> and prerecorded <a href="#dfn-video-only" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-video-only-1" title="a time-based presentation that contains only video (no audio and no interaction)">video-only</a> media, the following are true, except when the audio or video is a <a href="#dfn-media-alternative-for-text" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-media-alternative-for-text-1" title="media that presents no more information than is already presented in text (directly or via text alternatives)">media alternative for text</a> and is clearly labeled as such:
+   <p><a href="#dfn-prerecorded" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-prerecorded-1" title="ライブではない情報。">収録済の</a><a href="#dfn-audio-only" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-audio-only-1" title="音声のみを含んだ、時間に依存する提示 (映像やインタラクションを含まない)。">音声しか</a>含まないメディア及び収録済の<a href="#dfn-video-only" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-video-only-1" title="映像のみを含んだ (音声もインタラクションも含まない)、時間に依存する提示。">映像しか</a>含まないメディアは、次の事項を満たしている。ただし、その音声又は映像がメディアによるテキストの代替であって、<a href="#dfn-media-alternative-for-text" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-media-alternative-for-text-1" title="テキストで (直接又はテキストによる代替によって) 既に提示されている情報以上のものを提示していないメディア。">メディアによる代替</a>であることが明確にラベル付けされている場合は除く:
    </p>
    
    <dl>
       
-      <dt>Prerecorded Audio-only</dt>
+      <dt>収録済の音声しか含まない</dt>
       
       <dd>
          
-         <p>An <a href="#dfn-alternative-for-time-based-media" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-alternative-for-time-based-media-1" title="document including correctly sequenced text descriptions of time-based visual and auditory information and providing a means for achieving the outcomes of any time-based interaction">alternative for time-based media</a> is provided that presents equivalent information for prerecorded audio-only content.
+         <p><a href="#dfn-alternative-for-time-based-media" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-alternative-for-time-based-media-1" title="時間依存の視覚的及び聴覚的情報を正しい順序で説明したテキストを含み、あらゆる時間依存のインタラクションによる結果を得る手段を提供している文書。">時間依存メディアに対する代替</a>コンテンツによって、収録済の音声しか含まないコンテンツと同等の情報を提供している。
          </p>
          
       </dd>
       
-      <dt>Prerecorded Video-only</dt>
+      <dt>収録済の映像しか含まない</dt>
       
       <dd>
          
-         <p>Either an alternative for time-based media or an audio track is provided that presents
-            equivalent information for prerecorded video-only content.
+         <p>時間依存メディアに対する代替コンテンツ又は音声トラックによって、収録済の映像しか含まないコンテンツと同等の情報を提供している。
          </p>
          
       </dd>
@@ -593,105 +501,97 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 </section>
 
 
-                <section id="captions-prerecorded" class="guideline"><div class="header-wrapper"><h4 id="x1-2-2-captions-prerecorded"><bdi class="secno">Success Criterion 1.2.2 </bdi>Captions (Prerecorded)</h4><a class="self-link" href="#captions-prerecorded" aria-label="Permalink for Section 1.2.2"></a></div>
+                <section id="captions-prerecorded" class="guideline"><div class="header-wrapper"><h4 id="x1-2-2-captions-prerecorded"><bdi class="secno">達成基準 1.2.2 </bdi>キャプション (収録済)</h4><a class="self-link" href="#captions-prerecorded" aria-label="Permalink for Section 1.2.2"></a></div>
    
    
    
-   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded.html">Understanding Captions (Prerecorded)</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#captions-prerecorded">How to Meet Captions (Prerecorded)</a></div><p class="conformance-level">(Level A)</p>
+   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded.html">Understanding Captions (Prerecorded)</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#captions-prerecorded">How to Meet Captions (Prerecorded)</a></div><p class="conformance-level">(レベル A)</p>
    
-   <p><a href="#dfn-captions" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-captions-1" title="synchronized visual and/or text alternative for both speech and non-speech audio information needed to understand the media content">Captions</a> are provided for all <a href="#dfn-prerecorded" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-prerecorded-2" title="information that is not live">prerecorded</a>
-      <a href="#dfn-audio" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-audio-1" title="the technology of sound reproduction">audio</a> content in <a href="#dfn-synchronized-media" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-synchronized-media-1" title="audio or video synchronized with another format for presenting information and/or with time-based interactive components, unless the media is a media alternative for text that is clearly labeled as such">synchronized media</a>, except when the media is a <a href="#dfn-media-alternative-for-text" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-media-alternative-for-text-2" title="media that presents no more information than is already presented in text (directly or via text alternatives)">media alternative for text</a> and is clearly labeled as such.
+   <p><a href="#dfn-synchronized-media" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-synchronized-media-1" title="情報を提示するために、他のフォーマットと同期した音声もしくは映像、及び／又は時間に依存するインタラクティブな構成要素と同期した音声もしくは映像。ただし、そのメディアがメディアによるテキストの代替であって、そのように明確にラベル付けされているものは除く。">同期したメディア</a>に含まれているすべての<a href="#dfn-prerecorded" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-prerecorded-2" title="ライブではない情報。">収録済の</a><a href="#dfn-audio" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-audio-1" title="音の再生技術。">音声</a>コンテンツに対して、<a href="#dfn-captions" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-captions-1" title="そのメディアのコンテンツを理解するのに必要な、会話及び会話でない音声情報に対する、同期した視覚、及び／又はテキストによる代替。">キャプション</a>が提供されている。ただし、その同期したメディアが<a href="#dfn-media-alternative-for-text" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-media-alternative-for-text-2" title="テキストで (直接又はテキストによる代替によって) 既に提示されている情報以上のものを提示していないメディア。">メディアによるテキストの代替</a>であって、メディアによる代替であることが明確にラベル付けされている場合は除く。
    </p>
    
 </section>
 
 
-                <section id="audio-description-or-media-alternative-prerecorded" class="guideline"><div class="header-wrapper"><h4 id="x1-2-3-audio-description-or-media-alternative-prerecorded"><bdi class="secno">Success Criterion 1.2.3 </bdi>Audio Description or Media Alternative (Prerecorded)</h4><a class="self-link" href="#audio-description-or-media-alternative-prerecorded" aria-label="Permalink for Section 1.2.3"></a></div>
+                <section id="audio-description-or-media-alternative-prerecorded" class="guideline"><div class="header-wrapper"><h4 id="x1-2-3-audio-description-or-media-alternative-prerecorded"><bdi class="secno">達成基準 1.2.3 </bdi>音声解説、又はメディアに対する代替 (収録済)</h4><a class="self-link" href="#audio-description-or-media-alternative-prerecorded" aria-label="Permalink for Section 1.2.3"></a></div>
    
    
    
-   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-description-or-media-alternative-prerecorded.html">Understanding Audio Description or Media Alternative (Prerecorded)</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#audio-description-or-media-alternative-prerecorded">How to Meet Audio Description or Media Alternative (Prerecorded)</a></div><p class="conformance-level">(Level A)</p>
+   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-description-or-media-alternative-prerecorded.html">Understanding Audio Description or Media Alternative (Prerecorded)</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#audio-description-or-media-alternative-prerecorded">How to Meet Audio Description or Media Alternative (Prerecorded)</a></div><p class="conformance-level">(レベル A)</p>
    
-   <p>An <a href="#dfn-alternative-for-time-based-media" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-alternative-for-time-based-media-2" title="document including correctly sequenced text descriptions of time-based visual and auditory information and providing a means for achieving the outcomes of any time-based interaction">alternative for time-based media</a> or <a href="#dfn-audio-descriptions" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-audio-descriptions-1" title="narration added to the soundtrack to describe important visual details that cannot be understood from the main soundtrack alone">audio description</a> of the <a href="#dfn-prerecorded" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-prerecorded-3" title="information that is not live">prerecorded</a>
-      <a href="#dfn-video" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-video-1" title="the technology of moving or sequenced pictures or images">video</a> content is provided for <a href="#dfn-synchronized-media" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-synchronized-media-2" title="audio or video synchronized with another format for presenting information and/or with time-based interactive components, unless the media is a media alternative for text that is clearly labeled as such">synchronized media</a>, except when the media is a <a href="#dfn-media-alternative-for-text" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-media-alternative-for-text-3" title="media that presents no more information than is already presented in text (directly or via text alternatives)">media alternative for text</a> and is clearly labeled as such.
+   <p><a href="#dfn-synchronized-media" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-synchronized-media-2" title="情報を提示するために、他のフォーマットと同期した音声もしくは映像、及び／又は時間に依存するインタラクティブな構成要素と同期した音声もしくは映像。ただし、そのメディアがメディアによるテキストの代替であって、そのように明確にラベル付けされているものは除く。">同期したメディア</a>に含まれている<a href="#dfn-prerecorded" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-prerecorded-3" title="ライブではない情報。">収録済の</a><a href="#dfn-video" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-video-1" title="写真又は画像を動かす、又はシーケンス化する技術。">映像</a>コンテンツに対して、<a href="#dfn-alternative-for-time-based-media" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-alternative-for-time-based-media-2" title="時間依存の視覚的及び聴覚的情報を正しい順序で説明したテキストを含み、あらゆる時間依存のインタラクションによる結果を得る手段を提供している文書。">時間依存メディアに対する代替</a>コンテンツ又は<a href="#dfn-audio-descriptions" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-audio-descriptions-1" title="主音声のトラックだけでは理解できない重要で視覚的な詳細を説明するために、音声トラックに追加されたナレーション。">音声解説</a>が提供されている。ただし、その同期したメディアが<a href="#dfn-media-alternative-for-text" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-media-alternative-for-text-3" title="テキストで (直接又はテキストによる代替によって) 既に提示されている情報以上のものを提示していないメディア。">メディアによるテキストの代替</a>であって、メディアによる代替であることが明確にラベル付けされている場合は除く。
    </p>
    
 </section>
 
 
-                <section id="captions-live" class="guideline"><div class="header-wrapper"><h4 id="x1-2-4-captions-live"><bdi class="secno">Success Criterion 1.2.4 </bdi>Captions (Live)</h4><a class="self-link" href="#captions-live" aria-label="Permalink for Section 1.2.4"></a></div>
+                <section id="captions-live" class="guideline"><div class="header-wrapper"><h4 id="x1-2-4-captions-live"><bdi class="secno">達成基準 1.2.4 </bdi>キャプション (ライブ)</h4><a class="self-link" href="#captions-live" aria-label="Permalink for Section 1.2.4"></a></div>
    
    
    
-   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/captions-live.html">Understanding Captions (Live)</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#captions-live">How to Meet Captions (Live)</a></div><p class="conformance-level">(Level AA)</p>
+   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/captions-live.html">Understanding Captions (Live)</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#captions-live">How to Meet Captions (Live)</a></div><p class="conformance-level">(レベル AA)</p>
    
-   <p><a href="#dfn-captions" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-captions-2" title="synchronized visual and/or text alternative for both speech and non-speech audio information needed to understand the media content">Captions</a> are provided for all <a href="#dfn-live" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-live-1" title="information captured from a real-world event and transmitted to the receiver with no more than a broadcast delay">live</a>
-      <a href="#dfn-audio" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-audio-2" title="the technology of sound reproduction">audio</a> content in <a href="#dfn-synchronized-media" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-synchronized-media-3" title="audio or video synchronized with another format for presenting information and/or with time-based interactive components, unless the media is a media alternative for text that is clearly labeled as such">synchronized media</a>.
+   <p><a href="#dfn-synchronized-media" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-synchronized-media-3" title="情報を提示するために、他のフォーマットと同期した音声もしくは映像、及び／又は時間に依存するインタラクティブな構成要素と同期した音声もしくは映像。ただし、そのメディアがメディアによるテキストの代替であって、そのように明確にラベル付けされているものは除く。">同期したメディア</a>に含まれているすべての<a href="#dfn-live" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-live-1" title="現実の出来事から取り込まれ、放送遅延以上の遅延なく受け手に送信される情報。">ライブ</a>の<a href="#dfn-audio" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-audio-2" title="音の再生技術。">音声</a>コンテンツに対して<a href="#dfn-captions" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-captions-2" title="そのメディアのコンテンツを理解するのに必要な、会話及び会話でない音声情報に対する、同期した視覚、及び／又はテキストによる代替。">キャプション</a>が提供されている。
    </p>
    
 </section>
 
 
-                <section id="audio-description-prerecorded" class="guideline"><div class="header-wrapper"><h4 id="x1-2-5-audio-description-prerecorded"><bdi class="secno">Success Criterion 1.2.5 </bdi>Audio Description (Prerecorded)</h4><a class="self-link" href="#audio-description-prerecorded" aria-label="Permalink for Section 1.2.5"></a></div>
+                <section id="audio-description-prerecorded" class="guideline"><div class="header-wrapper"><h4 id="x1-2-5-audio-description-prerecorded"><bdi class="secno">達成基準 1.2.5 </bdi>音声解説 (収録済)</h4><a class="self-link" href="#audio-description-prerecorded" aria-label="Permalink for Section 1.2.5"></a></div>
    
    
    
-   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded.html">Understanding Audio Description (Prerecorded)</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#audio-description-prerecorded">How to Meet Audio Description (Prerecorded)</a></div><p class="conformance-level">(Level AA)</p>
+   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded.html">Understanding Audio Description (Prerecorded)</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#audio-description-prerecorded">How to Meet Audio Description (Prerecorded)</a></div><p class="conformance-level">(レベル AA)</p>
    
-   <p><a href="#dfn-audio-descriptions" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-audio-descriptions-2" title="narration added to the soundtrack to describe important visual details that cannot be understood from the main soundtrack alone">Audio description</a> is provided for all <a href="#dfn-prerecorded" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-prerecorded-4" title="information that is not live">prerecorded</a>
-      <a href="#dfn-video" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-video-2" title="the technology of moving or sequenced pictures or images">video</a> content in <a href="#dfn-synchronized-media" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-synchronized-media-4" title="audio or video synchronized with another format for presenting information and/or with time-based interactive components, unless the media is a media alternative for text that is clearly labeled as such">synchronized media</a>.
+   <p><a href="#dfn-synchronized-media" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-synchronized-media-4" title="情報を提示するために、他のフォーマットと同期した音声もしくは映像、及び／又は時間に依存するインタラクティブな構成要素と同期した音声もしくは映像。ただし、そのメディアがメディアによるテキストの代替であって、そのように明確にラベル付けされているものは除く。">同期したメディア</a>に含まれているすべての<a href="#dfn-prerecorded" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-prerecorded-4" title="ライブではない情報。">収録済の</a><a href="#dfn-video" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-video-2" title="写真又は画像を動かす、又はシーケンス化する技術。">映像</a>コンテンツに対して、<a href="#dfn-audio-descriptions" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-audio-descriptions-2" title="主音声のトラックだけでは理解できない重要で視覚的な詳細を説明するために、音声トラックに追加されたナレーション。">音声解説</a>が提供されている。
    </p>
    
 </section>
 
 
-                <section id="sign-language-prerecorded" class="guideline"><div class="header-wrapper"><h4 id="x1-2-6-sign-language-prerecorded"><bdi class="secno">Success Criterion 1.2.6 </bdi>Sign Language (Prerecorded)</h4><a class="self-link" href="#sign-language-prerecorded" aria-label="Permalink for Section 1.2.6"></a></div>
+                <section id="sign-language-prerecorded" class="guideline"><div class="header-wrapper"><h4 id="x1-2-6-sign-language-prerecorded"><bdi class="secno">達成基準 1.2.6 </bdi>手話 (収録済)</h4><a class="self-link" href="#sign-language-prerecorded" aria-label="Permalink for Section 1.2.6"></a></div>
    
    
    
-   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/sign-language-prerecorded.html">Understanding Sign Language (Prerecorded)</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#sign-language-prerecorded">How to Meet Sign Language (Prerecorded)</a></div><p class="conformance-level">(Level AAA)</p>
+   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/sign-language-prerecorded.html">Understanding Sign Language (Prerecorded)</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#sign-language-prerecorded">How to Meet Sign Language (Prerecorded)</a></div><p class="conformance-level">(レベル AAA)</p>
    
-   <p><a href="#dfn-sign-language-interpretation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-sign-language-interpretation-1" title="translation of one language, generally a spoken language, into a sign language">Sign language interpretation</a> is provided for all <a href="#dfn-prerecorded" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-prerecorded-5" title="information that is not live">prerecorded</a>
-      <a href="#dfn-audio" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-audio-3" title="the technology of sound reproduction">audio</a> content in <a href="#dfn-synchronized-media" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-synchronized-media-5" title="audio or video synchronized with another format for presenting information and/or with time-based interactive components, unless the media is a media alternative for text that is clearly labeled as such">synchronized media</a>.
+   <p><a href="#dfn-synchronized-media" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-synchronized-media-5" title="情報を提示するために、他のフォーマットと同期した音声もしくは映像、及び／又は時間に依存するインタラクティブな構成要素と同期した音声もしくは映像。ただし、そのメディアがメディアによるテキストの代替であって、そのように明確にラベル付けされているものは除く。">同期したメディア</a>に含まれているすべての<a href="#dfn-prerecorded" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-prerecorded-5" title="ライブではない情報。">収録済の</a><a href="#dfn-audio" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-audio-3" title="音の再生技術。">音声</a>コンテンツに対して、<a href="#dfn-sign-language-interpretation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-sign-language-interpretation-1" title="ある言語、通常は話されている言語を、手話に訳すこと。">手話通訳</a>が提供されている。
    </p>
    
 </section>
 
 
-                <section id="extended-audio-description-prerecorded" class="guideline"><div class="header-wrapper"><h4 id="x1-2-7-extended-audio-description-prerecorded"><bdi class="secno">Success Criterion 1.2.7 </bdi>Extended Audio Description (Prerecorded)</h4><a class="self-link" href="#extended-audio-description-prerecorded" aria-label="Permalink for Section 1.2.7"></a></div>
+                <section id="extended-audio-description-prerecorded" class="guideline"><div class="header-wrapper"><h4 id="x1-2-7-extended-audio-description-prerecorded"><bdi class="secno">達成基準 1.2.7 </bdi>拡張音声解説 (収録済)</h4><a class="self-link" href="#extended-audio-description-prerecorded" aria-label="Permalink for Section 1.2.7"></a></div>
    
    
    
-   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/extended-audio-description-prerecorded.html">Understanding Extended Audio Description (Prerecorded)</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#extended-audio-description-prerecorded">How to Meet Extended Audio Description (Prerecorded)</a></div><p class="conformance-level">(Level AAA)</p>
+   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/extended-audio-description-prerecorded.html">Understanding Extended Audio Description (Prerecorded)</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#extended-audio-description-prerecorded">How to Meet Extended Audio Description (Prerecorded)</a></div><p class="conformance-level">(レベル AAA)</p>
    
-   <p>Where pauses in foreground audio are insufficient to allow <a href="#dfn-audio-descriptions" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-audio-descriptions-3" title="narration added to the soundtrack to describe important visual details that cannot be understood from the main soundtrack alone">audio descriptions</a> to convey the sense of the video, <a href="#dfn-extended-audio-description" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-extended-audio-description-1" title="audio description that is added to an audiovisual presentation by pausing the video so that there is time to add additional description">extended audio description</a> is provided for all <a href="#dfn-prerecorded" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-prerecorded-6" title="information that is not live">prerecorded</a>
-      <a href="#dfn-video" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-video-3" title="the technology of moving or sequenced pictures or images">video</a> content in <a href="#dfn-synchronized-media" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-synchronized-media-6" title="audio or video synchronized with another format for presenting information and/or with time-based interactive components, unless the media is a media alternative for text that is clearly labeled as such">synchronized media</a>.
+   <p>前景音の合間が、<a href="#dfn-audio-descriptions" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-audio-descriptions-3" title="主音声のトラックだけでは理解できない重要で視覚的な詳細を説明するために、音声トラックに追加されたナレーション。">音声解説</a>で映像の意味を伝達するのに不十分な場合、<a href="#dfn-synchronized-media" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-synchronized-media-6" title="情報を提示するために、他のフォーマットと同期した音声もしくは映像、及び／又は時間に依存するインタラクティブな構成要素と同期した音声もしくは映像。ただし、そのメディアがメディアによるテキストの代替であって、そのように明確にラベル付けされているものは除く。">同期したメディア</a>に含まれているすべての<a href="#dfn-prerecorded" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-prerecorded-6" title="ライブではない情報。">収録済の</a><a href="#dfn-video" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-video-3" title="写真又は画像を動かす、又はシーケンス化する技術。">映像</a>コンテンツに対して、<a href="#dfn-extended-audio-description" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-extended-audio-description-1" title="映像を一時停止することで追加の説明を付加するための時間を確保し、視聴覚提示に付加した音声解説。">拡張音声解説</a>が提供されている。
    </p>
    
 </section>
 
 
-                <section id="media-alternative-prerecorded" class="guideline"><div class="header-wrapper"><h4 id="x1-2-8-media-alternative-prerecorded"><bdi class="secno">Success Criterion 1.2.8 </bdi>Media Alternative (Prerecorded)</h4><a class="self-link" href="#media-alternative-prerecorded" aria-label="Permalink for Section 1.2.8"></a></div>
+                <section id="media-alternative-prerecorded" class="guideline"><div class="header-wrapper"><h4 id="x1-2-8-media-alternative-prerecorded"><bdi class="secno">達成基準 1.2.8 </bdi>メディアに対する代替 (収録済)</h4><a class="self-link" href="#media-alternative-prerecorded" aria-label="Permalink for Section 1.2.8"></a></div>
    
    
    
-   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/media-alternative-prerecorded.html">Understanding Media Alternative (Prerecorded)</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#media-alternative-prerecorded">How to Meet Media Alternative (Prerecorded)</a></div><p class="conformance-level">(Level AAA)</p>
+   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/media-alternative-prerecorded.html">Understanding Media Alternative (Prerecorded)</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#media-alternative-prerecorded">How to Meet Media Alternative (Prerecorded)</a></div><p class="conformance-level">(レベル AAA)</p>
    
-   <p>An <a href="#dfn-alternative-for-time-based-media" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-alternative-for-time-based-media-3" title="document including correctly sequenced text descriptions of time-based visual and auditory information and providing a means for achieving the outcomes of any time-based interaction">alternative for time-based media</a> is provided for all <a href="#dfn-prerecorded" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-prerecorded-7" title="information that is not live">prerecorded</a>
-      <a href="#dfn-synchronized-media" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-synchronized-media-7" title="audio or video synchronized with another format for presenting information and/or with time-based interactive components, unless the media is a media alternative for text that is clearly labeled as such">synchronized media</a> and for all prerecorded <a href="#dfn-video-only" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-video-only-2" title="a time-based presentation that contains only video (no audio and no interaction)">video-only</a> media.
+   <p>すべての<a href="#dfn-prerecorded" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-prerecorded-7" title="ライブではない情報。">収録済の</a><a href="#dfn-synchronized-media" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-synchronized-media-7" title="情報を提示するために、他のフォーマットと同期した音声もしくは映像、及び／又は時間に依存するインタラクティブな構成要素と同期した音声もしくは映像。ただし、そのメディアがメディアによるテキストの代替であって、そのように明確にラベル付けされているものは除く。">同期したメディア</a>及びすべての収録済の<a href="#dfn-video-only" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-video-only-2" title="映像のみを含んだ (音声もインタラクションも含まない)、時間に依存する提示。">映像しか含まない</a>メディアに対して、<a href="#dfn-alternative-for-time-based-media" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-alternative-for-time-based-media-3" title="時間依存の視覚的及び聴覚的情報を正しい順序で説明したテキストを含み、あらゆる時間依存のインタラクションによる結果を得る手段を提供している文書。">時間依存メディアに対する代替</a>コンテンツが提供されている。
    </p>
    
 </section>
 
 
-                <section id="audio-only-live" class="guideline"><div class="header-wrapper"><h4 id="x1-2-9-audio-only-live"><bdi class="secno">Success Criterion 1.2.9 </bdi>Audio-only (Live)</h4><a class="self-link" href="#audio-only-live" aria-label="Permalink for Section 1.2.9"></a></div>
+                <section id="audio-only-live" class="guideline"><div class="header-wrapper"><h4 id="x1-2-9-audio-only-live"><bdi class="secno">達成基準 1.2.9 </bdi>音声のみ (ライブ)</h4><a class="self-link" href="#audio-only-live" aria-label="Permalink for Section 1.2.9"></a></div>
    
    
    
-   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-only-live.html">Understanding Audio-only (Live)</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#audio-only-live">How to Meet Audio-only (Live)</a></div><p class="conformance-level">(Level AAA)</p>
+   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-only-live.html">Understanding Audio-only (Live)</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#audio-only-live">How to Meet Audio-only (Live)</a></div><p class="conformance-level">(レベル AAA)</p>
    
-   <p>An <a href="#dfn-alternative-for-time-based-media" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-alternative-for-time-based-media-4" title="document including correctly sequenced text descriptions of time-based visual and auditory information and providing a means for achieving the outcomes of any time-based interaction">alternative for time-based media</a> that presents equivalent information for <a href="#dfn-live" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-live-2" title="information captured from a real-world event and transmitted to the receiver with no more than a broadcast delay">live</a>
-      <a href="#dfn-audio-only" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-audio-only-2" title="a time-based presentation that contains only audio (no video and no interaction)">audio-only</a> content is provided.
+   <p><a href="#dfn-live" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-live-2" title="現実の出来事から取り込まれ、放送遅延以上の遅延なく受け手に送信される情報。">ライブ</a>の<a href="#dfn-audio-only" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-audio-only-2" title="音声のみを含んだ、時間に依存する提示 (映像やインタラクションを含まない)。">音声しか含まない</a>コンテンツに対して、それと同等の情報を提示する、<a href="#dfn-alternative-for-time-based-media" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-alternative-for-time-based-media-4" title="時間依存の視覚的及び聴覚的情報を正しい順序で説明したテキストを含み、あらゆる時間依存のインタラクションによる結果を得る手段を提供している文書。">時間依存メディアの代替</a>コンテンツが提供されている。
    </p>
    
 </section>
