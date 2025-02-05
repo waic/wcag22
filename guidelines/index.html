@@ -1026,86 +1026,77 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             </section>
 
         </section>
-        <section class="principle" id="operable"><div class="header-wrapper"><h2 id="x2-operable"><bdi class="secno">2. </bdi>Operable </h2><a class="self-link" href="#operable" aria-label="Permalink for Section 2."></a></div>
+        <section class="principle" id="operable"><div class="header-wrapper"><h2 id="x2-operable"><bdi class="secno">2. </bdi>操作可能 </h2><a class="self-link" href="#operable" aria-label="Permalink for Section 2."></a></div>
             
-            <p>User interface components and navigation must be operable.</p>
+            <p>ユーザインタフェース コンポーネント及びナビゲーションは操作可能でなければならない。</p>
 
-            <section class="guideline" id="keyboard-accessible"><div class="header-wrapper"><h3 id="x2-1-keyboard-accessible"><bdi class="secno">Guideline 2.1 </bdi>Keyboard Accessible</h3><a class="self-link" href="#keyboard-accessible" aria-label="Permalink for Section 2.1"></a></div>
+            <section class="guideline" id="keyboard-accessible"><div class="header-wrapper"><h3 id="x2-1-keyboard-accessible"><bdi class="secno">ガイドライン 2.1 </bdi>キーボード操作可能</h3><a class="self-link" href="#keyboard-accessible" aria-label="Permalink for Section 2.1"></a></div>
                 
-                <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard-accessible.html">Understanding Keyboard Accessible</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#keyboard-accessible">How to Meet Keyboard Accessible</a></div><p>Make all functionality available from a keyboard.</p>
+                <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard-accessible.html">Understanding Keyboard Accessible</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#keyboard-accessible">How to Meet Keyboard Accessible</a></div><p>すべての機能をキーボードから利用できるようにすること。</p>
 
-                <section id="keyboard" class="guideline"><div class="header-wrapper"><h4 id="x2-1-1-keyboard"><bdi class="secno">Success Criterion 2.1.1 </bdi>Keyboard</h4><a class="self-link" href="#keyboard" aria-label="Permalink for Section 2.1.1"></a></div>
+                <section id="keyboard" class="guideline"><div class="header-wrapper"><h4 id="x2-1-1-keyboard"><bdi class="secno">達成基準 2.1.1 </bdi>キーボード</h4><a class="self-link" href="#keyboard" aria-label="Permalink for Section 2.1.1"></a></div>
    
    
    
-   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html">Understanding Keyboard</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#keyboard">How to Meet Keyboard</a></div><p class="conformance-level">(Level A)</p>
+   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html">Understanding Keyboard</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#keyboard">How to Meet Keyboard</a></div><p class="conformance-level">(レベル A)</p>
    
-   <p>All <a href="#dfn-functionality" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-functionality-1" title="processes and outcomes achievable through user action">functionality</a> of the content is operable through a <a href="#dfn-keyboard-interface" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-keyboard-interface-1" title="interface used by software to obtain keystroke input">keyboard interface</a> without requiring specific timings for individual keystrokes, except where the underlying
-      function requires input that depends on the path of the user's movement and not just
-      the endpoints.
+   <p>コンテンツのすべての<a href="#dfn-functionality" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-functionality-1" title="利用者の操作により実現可能なプロセス及び結果。">機能</a>は、個々のキーストロークに特定のタイミングを要することなく、<a href="#dfn-keyboard-interface" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-keyboard-interface-1" title="キーストローク入力を取得するためにソフトウェアが用いるインタフェース。">キーボードインタフェース</a>を通じて操作可能である。ただし、その根本的な機能が利用者の動作による終点だけではない軌跡に依存する入力を必要とする場合は除く。
    </p>
    
-   <div class="note" role="note" id="issue-container-generatedID-15"><div role="heading" class="note-title marker" id="h-note-15" aria-level="5"><span>Note 1</span></div><p class="">This exception relates to the underlying function, not the input technique. For example,
-      if using handwriting to enter text, the input technique (handwriting) requires path-dependent
-      input but the underlying function (text input) does not.
+   <div class="note" role="note" id="issue-container-generatedID-15"><div role="heading" class="note-title marker" id="h-note-15" aria-level="5"><span>注記 1</span></div><p class="">上記の例外は、根本的な機能に関するものであり、入力手法に関するものではない。例えば、テキスト入力に手書き入力を用いるのであれば、その入力手法 (手書き) は利用者の動作による軌跡に依存した入力を必要とするが、その根本的な機能 (テキスト入力) は利用者の動作による軌跡に依存した入力を必要とするものではない。
    </p></div>
    
-   <div class="note" role="note" id="issue-container-generatedID-16"><div role="heading" class="note-title marker" id="h-note-16" aria-level="5"><span>Note 2</span></div><p class="">This does not forbid and should not discourage providing mouse input or other input
-      methods in addition to keyboard operation.
+   <div class="note" role="note" id="issue-container-generatedID-16"><div role="heading" class="note-title marker" id="h-note-16" aria-level="5"><span>注記 2</span></div><p class="">これは、キーボード操作に加えて、マウス入力、又はその他の入力手段を提供することを禁ずるものでも妨げるものでもない。
    </p></div>
    
 </section>
 
 
-                <section id="no-keyboard-trap" class="guideline"><div class="header-wrapper"><h4 id="x2-1-2-no-keyboard-trap"><bdi class="secno">Success Criterion 2.1.2 </bdi>No Keyboard Trap</h4><a class="self-link" href="#no-keyboard-trap" aria-label="Permalink for Section 2.1.2"></a></div>
+                <section id="no-keyboard-trap" class="guideline"><div class="header-wrapper"><h4 id="x2-1-2-no-keyboard-trap"><bdi class="secno">達成基準 2.1.2 </bdi>キーボードトラップなし</h4><a class="self-link" href="#no-keyboard-trap" aria-label="Permalink for Section 2.1.2"></a></div>
    
    
    
-   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/no-keyboard-trap.html">Understanding No Keyboard Trap</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#no-keyboard-trap">How to Meet No Keyboard Trap</a></div><p class="conformance-level">(Level A)</p>
+   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/no-keyboard-trap.html">Understanding No Keyboard Trap</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#no-keyboard-trap">How to Meet No Keyboard Trap</a></div><p class="conformance-level">(レベル A)</p>
    
-   <p>If keyboard focus can be moved to a component of the page using a <a href="#dfn-keyboard-interface" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-keyboard-interface-2" title="interface used by software to obtain keystroke input">keyboard interface</a>, then focus can be moved away from that component using only a keyboard interface,
-      and, if it requires more than unmodified arrow or tab keys or other standard exit
-      methods, the user is advised of the method for moving focus away.
+   <p><a href="#dfn-keyboard-interface" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-keyboard-interface-2" title="キーストローク入力を取得するためにソフトウェアが用いるインタフェース。">キーボードインタフェース</a>を用いてキーボードフォーカスをそのウェブページのあるコンポーネントに移動できる場合、キーボードインタフェースだけを用いてそのコンポーネントからフォーカスを外すことが可能である。さらに、修飾キーを伴わない矢印キー、Tab キー、又はフォーカスを外すその他の標準的な方法でフォーカスを外せない場合は、フォーカスを外す方法が利用者に通知される。
    </p>
    
-   <div class="note" role="note" id="issue-container-generatedID-17"><div role="heading" class="note-title marker" id="h-note-17" aria-level="5"><span>Note</span></div><p class="">Since any content that does not meet this success criterion can interfere with a user's
-      ability to use the whole page, all content on the web page (whether it is used to
-      meet other success criteria or not) must meet this success criterion. See <a href="#cc5">Conformance Requirement 5: Non-Interference</a>.
+   <div class="note" role="note" id="issue-container-generatedID-17"><div role="heading" class="note-title marker" id="h-note-17" aria-level="5"><span>注記</span></div><p class="">この達成基準を満たさないコンテンツでは、利用者がそのウェブページ全体を使用できない恐れがあるため、ウェブページ上のすべてのコンテンツは他の達成基準を満たすために用いられているか否かにかかわらず、この達成基準を満たさなければならない。<a href="#cc5">適合要件 5: 非干渉</a>を参照。
    </p></div>
    
 </section>
 
 
-                <section id="keyboard-no-exception" class="guideline"><div class="header-wrapper"><h4 id="x2-1-3-keyboard-no-exception"><bdi class="secno">Success Criterion 2.1.3 </bdi>Keyboard (No Exception)</h4><a class="self-link" href="#keyboard-no-exception" aria-label="Permalink for Section 2.1.3"></a></div>
+                <section id="keyboard-no-exception" class="guideline"><div class="header-wrapper"><h4 id="x2-1-3-keyboard-no-exception"><bdi class="secno">達成基準 2.1.3 </bdi>キーボード (例外なし)</h4><a class="self-link" href="#keyboard-no-exception" aria-label="Permalink for Section 2.1.3"></a></div>
    
    
    
-   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard-no-exception.html">Understanding Keyboard (No Exception)</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#keyboard-no-exception">How to Meet Keyboard (No Exception)</a></div><p class="conformance-level">(Level AAA)</p>
+   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard-no-exception.html">Understanding Keyboard (No Exception)</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#keyboard-no-exception">How to Meet Keyboard (No Exception)</a></div><p class="conformance-level">(レベル AAA)</p>
    
-   <p>All <a href="#dfn-functionality" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-functionality-2" title="processes and outcomes achievable through user action">functionality</a> of the content is operable through a <a href="#dfn-keyboard-interface" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-keyboard-interface-3" title="interface used by software to obtain keystroke input">keyboard interface</a> without requiring specific timings for individual keystrokes.
+   <p>コンテンツのすべての<a href="#dfn-functionality" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-functionality-2" title="利用者の操作により実現可能なプロセス及び結果。">機能</a>は、個々のキーストロークに特定のタイミングを要することなく、<a href="#dfn-keyboard-interface" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-keyboard-interface-3" title="キーストローク入力を取得するためにソフトウェアが用いるインタフェース。">キーボードインタフェース</a>を通じて操作可能である。
    </p>
    
 </section>
 
               
-                <section id="character-key-shortcuts" class="guideline"><div class="header-wrapper"><h4 id="x2-1-4-character-key-shortcuts"><bdi class="secno">Success Criterion 2.1.4 </bdi>Character Key Shortcuts</h4><a class="self-link" href="#character-key-shortcuts" aria-label="Permalink for Section 2.1.4"></a></div>
+                <section id="character-key-shortcuts" class="guideline"><div class="header-wrapper"><h4 id="x2-1-4-character-key-shortcuts"><bdi class="secno">達成基準 2.1.4 </bdi>文字キーのショートカット</h4><a class="self-link" href="#character-key-shortcuts" aria-label="Permalink for Section 2.1.4"></a></div>
    					
    
    					
-   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/character-key-shortcuts.html">Understanding Character Key Shortcuts</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#character-key-shortcuts">How to Meet Character Key Shortcuts</a></div><p class="conformance-level">(Level A)</p>
+   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/character-key-shortcuts.html">Understanding Character Key Shortcuts</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#character-key-shortcuts">How to Meet Character Key Shortcuts</a></div><p class="conformance-level">(レベル A)</p>
    					
-  <p>If a <a href="#dfn-keyboard-shortcuts" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-keyboard-shortcuts-1" title="alternative means of triggering an action by the pressing of one or more keys">keyboard shortcut</a> is implemented in content using only letter (including upper- and lower-case letters), punctuation, number, or symbol characters, then at least one of the following is true:</p>
+  <p>文字 (大文字と小文字を含む)、句読点、数字、又は記号のみを使用した<a href="#dfn-keyboard-shortcuts" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-keyboard-shortcuts-1" title="一つ以上のキーを押すことによる、動作のトリガーの代替手段">キーボードショートカット</a>がコンテンツに実装されている場合、少なくとも次のいずれかを満たしている:</p>
 
   <dl>
    
-   <dt>Turn off</dt>
-    <dd>A <a href="#dfn-mechanism" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-mechanism-4" title="process or technique for achieving a result">mechanism</a> is available to turn the shortcut off;</dd>
+   <dt>解除</dt>
+    <dd>ショートカットを解除する<a href="#dfn-mechanism" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-mechanism-4" title="結果を得るためのプロセス又は手法。">メカニズム</a>が利用できる</dd>
       						
-   <dt>Remap</dt>
-     <dd>A mechanism is available to remap the shortcut to include one or more non-printable keyboard keys (e.g., Ctrl, Alt);</dd>
+   <dt>再割当て</dt>
+     <dd>一つ以上のキーボードの非印字キー (例えば Ctrl、Alt) を含むようにショートカットを再割当てするメカニズムが利用できる</dd>
 
-    <dt>Active only on focus</dt>
-    <dd>The keyboard shortcut for a <a href="#dfn-user-interface-components" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-interface-components-5" title="a part of the content that is perceived by users as a single control for a distinct function">user interface component</a> is only active when that component has focus.</dd>
+    <dt>フォーカス中にのみ有効化</dt>
+    <dd><a href="#dfn-user-interface-components" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-interface-components-5" title="コンテンツの一部分で、特定の機能を実現するための単一のコントロールとして利用者が知覚するもの。">ユーザインタフェース コンポーネント</a>のキーボードショートカットは、そのコンポーネントがフォーカスをもっているときのみ有効になる。</dd>
     
   </dl>  
 </section>
@@ -1113,240 +1104,215 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 
             </section>
 
-            <section class="guideline" id="enough-time"><div class="header-wrapper"><h3 id="x2-2-enough-time"><bdi class="secno">Guideline 2.2 </bdi>Enough Time</h3><a class="self-link" href="#enough-time" aria-label="Permalink for Section 2.2"></a></div>
+            <section class="guideline" id="enough-time"><div class="header-wrapper"><h3 id="x2-2-enough-time"><bdi class="secno">ガイドライン 2.2 </bdi>十分な時間</h3><a class="self-link" href="#enough-time" aria-label="Permalink for Section 2.2"></a></div>
                 
-                <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/enough-time.html">Understanding Enough Time</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#enough-time">How to Meet Enough Time</a></div><p>Provide users enough time to read and use content.</p>
+                <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/enough-time.html">Understanding Enough Time</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#enough-time">How to Meet Enough Time</a></div><p>利用者がコンテンツを読み、使用するために十分な時間を提供すること。</p>
 
-                <section id="timing-adjustable" class="guideline"><div class="header-wrapper"><h4 id="x2-2-1-timing-adjustable"><bdi class="secno">Success Criterion 2.2.1 </bdi>Timing Adjustable</h4><a class="self-link" href="#timing-adjustable" aria-label="Permalink for Section 2.2.1"></a></div>
+                <section id="timing-adjustable" class="guideline"><div class="header-wrapper"><h4 id="x2-2-1-timing-adjustable"><bdi class="secno">達成基準 2.2.1 </bdi>タイミング調整可能</h4><a class="self-link" href="#timing-adjustable" aria-label="Permalink for Section 2.2.1"></a></div>
    
    
    
-   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable.html">Understanding Timing Adjustable</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#timing-adjustable">How to Meet Timing Adjustable</a></div><p class="conformance-level">(Level A)</p>
+   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable.html">Understanding Timing Adjustable</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#timing-adjustable">How to Meet Timing Adjustable</a></div><p class="conformance-level">(レベル A)</p>
    
-   <p>For each time limit that is set by the content, at least one of the following is true:</p>
+   <p>コンテンツに制限時間を設定する場合は、次に挙げる事項のうち、少なくとも一つを満たしている</p>
    
    <dl>
       
-      <dt>Turn off</dt>
+      <dt>解除</dt>
       
       <dd>
          
-         <p>The user is allowed to turn off the time limit before encountering it; or</p>
+         <p>制限時間があるコンテンツを利用する前に、利用者がその制限時間を解除することができる。又は、</p>
          
       </dd>
       
-      <dt>Adjust</dt>
+      <dt>調整</dt>
       
       <dd>
          
-         <p>The user is allowed to adjust the time limit before encountering it over a wide range
-            that is at least ten times the length of the default setting; or
+         <p>制限時間があるコンテンツを利用する前に、利用者が少なくともデフォルト設定の 10 倍を超える、大幅な制限時間の調整をすることができる。又は、
          </p>
          
       </dd>
       
-      <dt>Extend</dt>
+      <dt>延長</dt>
       
       <dd>
          
-         <p>The user is warned before time expires and given at least 20 seconds to extend the
-            time limit with a simple action (for example, "press the space bar"), and the user
-            is allowed to extend the time limit at least ten times; or
+         <p>時間切れになる前に利用者に警告し、かつ少なくとも 20 秒間の猶予をもって、例えば「スペースキーを押す」などの簡単な操作により、利用者が制限時間を少なくとも 10 倍以上延長することができる。又は、
          </p>
          
       </dd>
       
-      <dt>Real-time Exception</dt>
+      <dt>リアルタイムの例外</dt>
       
       <dd>
          
-        <p>The time limit is a required part of a <a href="#dfn-real-time-events" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-real-time-events-1" title="event that a) occurs at the same time as the viewing and b) is not completely generated by the content">real-time event</a> (for example, an auction),
-            and no alternative to the time limit is possible; or
+        <p><a href="#dfn-real-time-events" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-real-time-events-1" title="a) 閲覧と同時に発生し、かつ b) コンテンツによる生成だけでは完結しないイベント。">リアルタイムのイベント</a> (例えば、オークション) において制限時間が必須の要素で、その制限時間に代わる手段が存在しない。又は、
          </p>
          
       </dd>
       
-      <dt>Essential Exception</dt>
+      <dt>必要不可欠な例外</dt>
       
       <dd>
          
-         <p>The time limit is <a href="#dfn-essential" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-essential-5" title="if removed, would fundamentally change the information or functionality of the content, and information and functionality cannot be achieved in another way that would conform">essential</a> and extending it would invalidate the activity; or
+         <p>制限時間が<a href="#dfn-essential" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-essential-5" title="もし取り除いてしまうと、コンテンツの情報又は機能を根本的に変えてしまい、かつ、適合する他の方法では情報及び機能を実現できない。">必要不可欠</a>なもので、制限時間を延長することがコンテンツの動作を無効にすることになる。又は、
          </p>
          
       </dd>
       
-      <dt>20 Hour Exception</dt>
+      <dt>20 時間の例外</dt>
       
       <dd>
          
-         <p>The time limit is longer than 20 hours.</p>
+         <p>制限時間が 20 時間よりも長い。</p>
          
       </dd>
       
    </dl>
    
-   <div class="note" role="note" id="issue-container-generatedID-18"><div role="heading" class="note-title marker" id="h-note-18" aria-level="5"><span>Note</span></div><p class="">This success criterion helps ensure that users can complete tasks without unexpected
-      changes in content or context that are a result of a time limit. This success criterion
-      should be considered in conjunction with <a href="#on-focus">Success Criterion 3.2.1</a>, which puts limits on changes of content or context as a result of user action.
+   <div class="note" role="note" id="issue-container-generatedID-18"><div role="heading" class="note-title marker" id="h-note-18" aria-level="5"><span>注記</span></div><p class="">この達成基準は、制限時間の結果として、コンテンツ又は状況の予期せぬ変化を引き起こさないように利用者がタスクを完了できるようにするためのものである。この達成基準は、利用者の動作の結果としてのコンテンツ又はコンテキストの変化を制限する<a href="#on-focus">達成基準 3.2.1</a> と併せて考慮すること。
    </p></div>
    
 </section>
 
 
-                <section id="pause-stop-hide" class="guideline"><div class="header-wrapper"><h4 id="x2-2-2-pause-stop-hide"><bdi class="secno">Success Criterion 2.2.2 </bdi>Pause, Stop, Hide</h4><a class="self-link" href="#pause-stop-hide" aria-label="Permalink for Section 2.2.2"></a></div>
+                <section id="pause-stop-hide" class="guideline"><div class="header-wrapper"><h4 id="x2-2-2-pause-stop-hide"><bdi class="secno">達成基準 2.2.2 </bdi>一時停止、停止、非表示</h4><a class="self-link" href="#pause-stop-hide" aria-label="Permalink for Section 2.2.2"></a></div>
    
    
    
-   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html">Understanding Pause, Stop, Hide</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#pause-stop-hide">How to Meet Pause, Stop, Hide</a></div><p class="conformance-level">(Level A)</p>
+   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html">Understanding Pause, Stop, Hide</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#pause-stop-hide">How to Meet Pause, Stop, Hide</a></div><p class="conformance-level">(レベル A)</p>
    
-   <p>For moving, <a href="#dfn-blinking" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-blinking-1" title="switch back and forth between two visual states in a way that is meant to draw attention">blinking</a>, scrolling, or auto-updating information, all of the following are true:
+   <p>動きのある、<a href="#dfn-blinking" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-blinking-1" title="注意を引く意図で、二つの視覚的な状態を交互に切り替えること。">点滅</a>している、スクロールする、又は自動更新する情報は、次のすべての事項を満たしている
    </p>
    
    <dl>
       
-      <dt>Moving, blinking, scrolling</dt>
+      <dt>動き、点滅、スクロール</dt>
       
       <dd>
          
-         <p>For any moving, blinking or scrolling information that (1) starts automatically, (2)
-            lasts more than five seconds, and (3) is presented in parallel with other content,
-           there is a <a href="#dfn-mechanism" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-mechanism-5" title="process or technique for achieving a result">mechanism</a> for the user to <a href="#dfn-pause" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-pause-2" title="stopped by user request and not resumed until requested by user">pause</a>, stop, or hide it unless the movement, blinking, or scrolling is part of an activity
-            where it is <a href="#dfn-essential" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-essential-6" title="if removed, would fundamentally change the information or functionality of the content, and information and functionality cannot be achieved in another way that would conform">essential</a>; and
+         <p>動きのある、点滅している、又はスクロールしている情報が、(1) 自動的に開始し、(2) 5 秒よりも長く継続し、かつ、(3) その他のコンテンツと並行して提示される場合、利用者がそれらを<a href="#dfn-pause" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-pause-1" title="利用者の要求により停止し、利用者の要求があるまで再開しない。">一時停止</a>、停止、又は非表示にすることのできる<a href="#dfn-mechanism" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-mechanism-5" title="結果を得るためのプロセス又は手法。">メカニズム</a>がある。ただし、その動き、点滅、又はスクロールが<a href="#dfn-essential" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-essential-6" title="もし取り除いてしまうと、コンテンツの情報又は機能を根本的に変えてしまい、かつ、適合する他の方法では情報及び機能を実現できない。">必要不可欠</a>な動作の一部である場合は除く。
          </p>
          
       </dd>
       
-      <dt>Auto-updating</dt>
+      <dt>自動更新</dt>
       
       <dd>
          
-         <p>For any auto-updating information that (1) starts automatically and (2) is presented
-            in parallel with other content, there is a mechanism for the user to pause, stop,
-            or hide it or to control the frequency of the update unless the auto-updating is part
-            of an activity where it is essential.
+         <p>自動更新する情報が、(1) 自動的に開始し、 (2) その他のコンテンツと並行して提示される場合、利用者がそれを一時停止、停止、もしくは非表示にする、又はその更新頻度を調整することのできるメカニズムがある。ただし、その自動更新が必要不可欠な動作の一部である場合は除く。
          </p>
          
       </dd>
       
    </dl>
    
-   <div class="note" role="note" id="issue-container-generatedID-19"><div role="heading" class="note-title marker" id="h-note-19" aria-level="5"><span>Note 1</span></div><p class="">For requirements related to flickering or flashing content, refer to <a href="#seizures-and-physical-reactions">Guideline 2.3</a>.
+   <div class="note" role="note" id="issue-container-generatedID-19"><div role="heading" class="note-title marker" id="h-note-19" aria-level="5"><span>注記 1</span></div><p class="">画面がちらつく、又は閃光を放つコンテンツに関する要件は、<a href="#seizures-and-physical-reactions">ガイドライン 2.3</a> を参照。
    </p></div>
    
-   <div class="note" role="note" id="issue-container-generatedID-20"><div role="heading" class="note-title marker" id="h-note-20" aria-level="5"><span>Note 2</span></div><p class="">Since any content that does not meet this success criterion can interfere with a user's
-      ability to use the whole page, all content on the web page (whether it is used to
-      meet other success criteria or not) must meet this success criterion. See <a href="#cc5">Conformance Requirement 5: Non-Interference</a>.
+   <div class="note" role="note" id="issue-container-generatedID-20"><div role="heading" class="note-title marker" id="h-note-20" aria-level="5"><span>注記 2</span></div><p class="">この達成基準を満たさないコンテンツでは、利用者がそのウェブページ全体を使用できない恐れがあるため、ウェブページ上のすべてのコンテンツは他の達成基準を満たすために用いられているか否かにかかわらず、この達成基準を満たさなければならない。<a href="#cc5">適合要件 5: 非干渉</a>を参照。
    </p></div>
    
-   <div class="note" role="note" id="issue-container-generatedID-21"><div role="heading" class="note-title marker" id="h-note-21" aria-level="5"><span>Note 3</span></div><p class="">Content that is updated periodically by software or that is streamed to the user agent
-      is not required to preserve or present information that is generated or received between
-      the initiation of the pause and resuming presentation, as this may not be technically
-      possible, and in many situations could be misleading to do so.
+   <div class="note" role="note" id="issue-container-generatedID-21"><div role="heading" class="note-title marker" id="h-note-21" aria-level="5"><span>注記 3</span></div><p class="">定期的にソフトウェアによって自動的に更新されるコンテンツ、又はユーザエージェントにストリーム配信されるコンテンツでは、コンテンツ再生の一時停止と再開の操作の間に生成、又は受信される情報を保持、又は提示する必要はない。これは技術的に不可能であることが考えられ、多くの状況において利用者の混乱を招くことにつながる可能性があるためである。
    </p></div>
    
-   <div class="note" role="note" id="issue-container-generatedID-22"><div role="heading" class="note-title marker" id="h-note-22" aria-level="5"><span>Note 4</span></div><p class="">An animation that occurs as part of a preload phase or similar situation can be considered
-      essential if interaction cannot occur during that phase for all users and if not indicating
-      progress could confuse users or cause them to think that content was frozen or broken.
+   <div class="note" role="note" id="issue-container-generatedID-22"><div role="heading" class="note-title marker" id="h-note-22" aria-level="5"><span>注記 4</span></div><p class="">コンテンツの読み込み中やそれに類似した状況の一部として表示されるアニメーションについては、この段階ですべての利用者に対していかなるインタラクションも発生する可能性がなく、かつコンテンツ読み込みの進行状況を表示しないことが利用者の混乱を招いたり、コンテンツが動作を停止した、又はコンテンツが破損しているという誤解を生じたりする可能性がある場合には、必要不可欠なものと考えることができる。
    </p></div>
    
 </section>
 
 
-                <section id="no-timing" class="guideline"><div class="header-wrapper"><h4 id="x2-2-3-no-timing"><bdi class="secno">Success Criterion 2.2.3 </bdi>No Timing</h4><a class="self-link" href="#no-timing" aria-label="Permalink for Section 2.2.3"></a></div>
+                <section id="no-timing" class="guideline"><div class="header-wrapper"><h4 id="x2-2-3-no-timing"><bdi class="secno">達成基準 2.2.3 </bdi>タイミング非依存</h4><a class="self-link" href="#no-timing" aria-label="Permalink for Section 2.2.3"></a></div>
    
    
    
-   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/no-timing.html">Understanding No Timing</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#no-timing">How to Meet No Timing</a></div><p class="conformance-level">(Level AAA)</p>
+   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/no-timing.html">Understanding No Timing</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#no-timing">How to Meet No Timing</a></div><p class="conformance-level">(レベル AAA)</p>
    
-   <p>Timing is not an <a href="#dfn-essential" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-essential-7" title="if removed, would fundamentally change the information or functionality of the content, and information and functionality cannot be achieved in another way that would conform">essential</a> part of the event or activity presented by the content, except for non-interactive
-      <a href="#dfn-synchronized-media" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-synchronized-media-8" title="audio or video synchronized with another format for presenting information and/or with time-based interactive components, unless the media is a media alternative for text that is clearly labeled as such">synchronized media</a> and <a href="#dfn-real-time-events" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-real-time-events-2" title="event that a) occurs at the same time as the viewing and b) is not completely generated by the content">real-time events</a>.
+   <p>タイミングは、コンテンツによって提示されるイベント又は動作の<a href="#dfn-essential" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-essential-7" title="もし取り除いてしまうと、コンテンツの情報又は機能を根本的に変えてしまい、かつ、適合する他の方法では情報及び機能を実現できない。">必要不可欠</a>な部分ではない。ただし、インタラクティブではない<a href="#dfn-synchronized-media" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-synchronized-media-8" title="情報を提示するために、他のフォーマットと同期した音声もしくは映像、及び／又は時間に依存するインタラクティブな構成要素と同期した音声もしくは映像。ただし、そのメディアがメディアによるテキストの代替であって、そのように明確にラベル付けされているものは除く。">同期したメディア</a>及び<a href="#dfn-real-time-events" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-real-time-events-1" title="a) 閲覧と同時に発生し、かつ b) コンテンツによる生成だけでは完結しないイベント。">リアルタイムのイベント</a>は除く。
    </p>
    
 </section>
 
 
-                <section id="interruptions" class="guideline"><div class="header-wrapper"><h4 id="x2-2-4-interruptions"><bdi class="secno">Success Criterion 2.2.4 </bdi>Interruptions</h4><a class="self-link" href="#interruptions" aria-label="Permalink for Section 2.2.4"></a></div>
+                <section id="interruptions" class="guideline"><div class="header-wrapper"><h4 id="x2-2-4-interruptions"><bdi class="secno">達成基準 2.2.4 </bdi>割り込み</h4><a class="self-link" href="#interruptions" aria-label="Permalink for Section 2.2.4"></a></div>
    
    
    
-   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/interruptions.html">Understanding Interruptions</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#interruptions">How to Meet Interruptions</a></div><p class="conformance-level">(Level AAA)</p>
+   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/interruptions.html">Understanding Interruptions</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#interruptions">How to Meet Interruptions</a></div><p class="conformance-level">(レベル AAA)</p>
    
-   <p>Interruptions can be postponed or suppressed by the user, except interruptions involving
-      an <a href="#dfn-emergency" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-emergency-1" title="a sudden, unexpected situation or occurrence that requires immediate action to preserve health, safety, or property">emergency</a>.
+   <p>割り込みは、利用者が延期、又は抑制することができる。ただし、<a href="#dfn-emergency" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-emergency-1" title="健康、安全、又は財産を守るために即座の行動を必要とする、突然で予期しない状況又は出来事。">緊急</a>を要する割り込みは除く。
    </p>
    
 </section>
 
 
-                <section id="re-authenticating" class="guideline"><div class="header-wrapper"><h4 id="x2-2-5-re-authenticating"><bdi class="secno">Success Criterion 2.2.5 </bdi>Re-authenticating</h4><a class="self-link" href="#re-authenticating" aria-label="Permalink for Section 2.2.5"></a></div>
+                <section id="re-authenticating" class="guideline"><div class="header-wrapper"><h4 id="x2-2-5-re-authenticating"><bdi class="secno">達成基準 2.2.5 </bdi>再認証</h4><a class="self-link" href="#re-authenticating" aria-label="Permalink for Section 2.2.5"></a></div>
    
    
    
-   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/re-authenticating.html">Understanding Re-authenticating</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#re-authenticating">How to Meet Re-authenticating</a></div><p class="conformance-level">(Level AAA)</p>
+   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/re-authenticating.html">Understanding Re-authenticating</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#re-authenticating">How to Meet Re-authenticating</a></div><p class="conformance-level">(レベル AAA)</p>
    
-   <p>When an authenticated session expires, the user can continue the activity without
-      loss of data after re-authenticating.
+   <p>認証済のセッションが切れた場合は、再認証後でもデータを失うことなく利用者が操作を継続できる。
    </p>
    
 </section>
 
 
-                <section id="timeouts" class="guideline"><div class="header-wrapper"><h4 id="x2-2-6-timeouts"><bdi class="secno">Success Criterion 2.2.6 </bdi>Timeouts</h4><a class="self-link" href="#timeouts" aria-label="Permalink for Section 2.2.6"></a></div>
+                <section id="timeouts" class="guideline"><div class="header-wrapper"><h4 id="x2-2-6-timeouts"><bdi class="secno">達成基準 2.2.6 </bdi>タイムアウト</h4><a class="self-link" href="#timeouts" aria-label="Permalink for Section 2.2.6"></a></div>
    					
    
    					
-   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/timeouts.html">Understanding Timeouts</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#timeouts">How to Meet Timeouts</a></div><p class="conformance-level">(Level AAA)</p>
+   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/timeouts.html">Understanding Timeouts</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#timeouts">How to Meet Timeouts</a></div><p class="conformance-level">(レベル AAA)</p>
    					
-   <p>Users are warned of the duration of any <a href="#dfn-user-inactivity" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-inactivity-1" title="any continuous period of time where no user actions occur">user inactivity</a> that could cause data loss, unless the data is preserved for more than 20 hours when the user does not take any actions.</p>
+   <p>データの損失を引き起こす恐れのある<a href="#dfn-user-inactivity" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-inactivity-1" title="利用者がいかなる操作も行わない時間が続くこと。">利用者の無操作</a>の残り時間が警告される。ただし、利用者が 20 時間以上何もしなくてもデータが保持される場合は、この限りではない。</p>
   
-<div class="note" role="note" id="issue-container-generatedID-23"><div role="heading" class="note-title marker" id="h-note-23" aria-level="5"><span>Note</span></div><p class="">Privacy regulations may require explicit user consent before user identification has been authenticated and before user data is preserved. In cases where the user is a minor, explicit consent may not be solicited in most jurisdictions, countries or regions. Consultation with privacy professionals and legal counsel is advised when considering data preservation as an approach to satisfy this success criterion.</p></div>
+<div class="note" role="note" id="issue-container-generatedID-23"><div role="heading" class="note-title marker" id="h-note-23" aria-level="5"><span>注記</span></div><p class="">プライバシー関連の規制により、利用者を認証する前や利用者のデータが保存される前に、利用者の明確な同意が必要になる可能性がある。利用者が未成年の場合、ほとんどの司法管轄、国又は地域で、利用者からの明示的な同意を要請することができない。この達成基準に適合するためのアプローチとしてデータの保存を検討する場合は、プライバシーの専門家や弁護士に相談するのが望ましい。</p></div>
   
 </section>
  
 
             </section>
 
-            <section class="guideline" id="seizures-and-physical-reactions"><div class="header-wrapper"><h3 id="x2-3-seizures-and-physical-reactions"><bdi class="secno">Guideline 2.3 </bdi>Seizures and Physical Reactions</h3><a class="self-link" href="#seizures-and-physical-reactions" aria-label="Permalink for Section 2.3"></a></div>
+            <section class="guideline" id="seizures-and-physical-reactions"><div class="header-wrapper"><h3 id="x2-3-seizures-and-physical-reactions"><bdi class="secno">ガイドライン 2.3 </bdi>発作と身体的反応</h3><a class="self-link" href="#seizures-and-physical-reactions" aria-label="Permalink for Section 2.3"></a></div>
                 
-                <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/seizures-and-physical-reactions.html">Understanding Seizures and Physical Reactions</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#seizures-and-physical-reactions">How to Meet Seizures and Physical Reactions</a></div><p>Do not design content in a way that is known to cause seizures or physical reactions.</p>
+                <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/seizures-and-physical-reactions.html">Understanding Seizures and Physical Reactions</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#seizures-and-physical-reactions">How to Meet Seizures and Physical Reactions</a></div><p>発作や身体的反応を引き起こすようなコンテンツを設計しないこと。</p>
 
-                <section id="three-flashes-or-below-threshold" class="guideline"><div class="header-wrapper"><h4 id="x2-3-1-three-flashes-or-below-threshold"><bdi class="secno">Success Criterion 2.3.1 </bdi>Three Flashes or Below Threshold</h4><a class="self-link" href="#three-flashes-or-below-threshold" aria-label="Permalink for Section 2.3.1"></a></div>
+                <section id="three-flashes-or-below-threshold" class="guideline"><div class="header-wrapper"><h4 id="x2-3-1-three-flashes-or-below-threshold"><bdi class="secno">達成基準 2.3.1 </bdi>3 回の閃光、又は閾値以下</h4><a class="self-link" href="#three-flashes-or-below-threshold" aria-label="Permalink for Section 2.3.1"></a></div>
    
    
    
-   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold.html">Understanding Three Flashes or Below Threshold</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#three-flashes-or-below-threshold">How to Meet Three Flashes or Below Threshold</a></div><p class="conformance-level">(Level A)</p>
+   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold.html">Understanding Three Flashes or Below Threshold</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#three-flashes-or-below-threshold">How to Meet Three Flashes or Below Threshold</a></div><p class="conformance-level">(レベル A)</p>
    
-   <p><a href="#dfn-web-page-s" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-web-page-s-1" title="a non-embedded resource obtained from a single URI using HTTP plus any other resources that are used in the rendering or intended to be rendered together with it by a user agent">Web pages</a> do not contain anything that flashes more than three times in any one second period,
-      or the <a href="#dfn-flashes" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-flashes-1" title="a pair of opposing changes in relative luminance that can cause seizures in some people if it is large enough and in the right frequency range">flash</a> is below the <a href="#dfn-general-flash-and-red-flash-thresholds" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-general-flash-and-red-flash-thresholds-1" title="a flash or rapidly changing image sequence is below the threshold (i.e., content passes) if any of the following are true:">general flash and red flash thresholds</a>.
+   <p><a href="#dfn-web-page-s" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-web-page-s-1" title="単一の URI から HTTP で得た埋め込まれていないリソースに加え、レンダリングに使われる、又はユーザエージェントがこのリソースと一緒にレンダリングすることを意図しているその他のあらゆるリソースを合わせたもの。">ウェブページ</a>には、どの 1 秒間においても 3 回を超える閃光を放つものがない、又は<a href="#dfn-flashes" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-flashes-1" title="相対輝度の相反する変化の組合せで、十分な広さを持ち、かつ特定の頻度の場合に、一部の人に発作を誘発する恐れがあるもの。">閃光</a>が<a href="#dfn-general-flash-and-red-flash-thresholds" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-general-flash-and-red-flash-thresholds-1" title="次のいずれかに該当する場合、閃光、又は急速に変化する映像シーケンスは、閾値を下回っている (すなわち、コンテンツは基準を満たしている) ことになる:">一般閃光閾値及び赤色閃光閾値</a>を下回っている。
    </p>
    
-   <div class="note" role="note" id="issue-container-generatedID-24"><div role="heading" class="note-title marker" id="h-note-24" aria-level="5"><span>Note</span></div><p class="">Since any content that does not meet this success criterion can interfere with a user's
-      ability to use the whole page, all content on the web page (whether it is used to
-      meet other success criteria or not) must meet this success criterion. See <a href="#cc5">Conformance Requirement 5: Non-Interference</a>.
+   <div class="note" role="note" id="issue-container-generatedID-24"><div role="heading" class="note-title marker" id="h-note-24" aria-level="5"><span>注記</span></div><p class="">この達成基準を満たさないコンテンツでは、利用者がそのウェブページ全体を使用できない恐れがあるため、ウェブページ上のすべてのコンテンツは他の達成基準を満たすために用いられているか否かにかかわらず、この達成基準を満たさなければならない。<a href="#cc5">適合要件 5: 非干渉</a>を参照。
    </p></div>
    
 </section>
 
 
-                <section id="three-flashes" class="guideline"><div class="header-wrapper"><h4 id="x2-3-2-three-flashes"><bdi class="secno">Success Criterion 2.3.2 </bdi>Three Flashes</h4><a class="self-link" href="#three-flashes" aria-label="Permalink for Section 2.3.2"></a></div>
+                <section id="three-flashes" class="guideline"><div class="header-wrapper"><h4 id="x2-3-2-three-flashes"><bdi class="secno">達成基準 2.3.2 </bdi>3 回の閃光</h4><a class="self-link" href="#three-flashes" aria-label="Permalink for Section 2.3.2"></a></div>
    
    
    
-   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/three-flashes.html">Understanding Three Flashes</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#three-flashes">How to Meet Three Flashes</a></div><p class="conformance-level">(Level AAA)</p>
+   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/three-flashes.html">Understanding Three Flashes</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#three-flashes">How to Meet Three Flashes</a></div><p class="conformance-level">(レベル AAA)</p>
    
-   <p><a href="#dfn-web-page-s" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-web-page-s-2" title="a non-embedded resource obtained from a single URI using HTTP plus any other resources that are used in the rendering or intended to be rendered together with it by a user agent">Web pages</a> do not contain anything that <a href="#dfn-flashes" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-flashes-2" title="a pair of opposing changes in relative luminance that can cause seizures in some people if it is large enough and in the right frequency range">flashes</a> more than three times in any one second period.
+   <p><a href="#dfn-web-page-s" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-web-page-s-2" title="単一の URI から HTTP で得た埋め込まれていないリソースに加え、レンダリングに使われる、又はユーザエージェントがこのリソースと一緒にレンダリングすることを意図しているその他のあらゆるリソースを合わせたもの。">ウェブページ</a>には、どの 1 秒間においても 3 回を超える<a href="#dfn-flashes" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-flashes-2" title="相対輝度の相反する変化の組合せで、十分な広さを持ち、かつ特定の頻度の場合に、一部の人に発作を誘発する恐れがあるもの。">閃光</a>を放つものがない。
    </p>
    
 </section>
 
                 
-                <section id="animation-from-interactions" class="guideline"><div class="header-wrapper"><h4 id="x2-3-3-animation-from-interactions"><bdi class="secno">Success Criterion 2.3.3 </bdi>Animation from Interactions</h4><a class="self-link" href="#animation-from-interactions" aria-label="Permalink for Section 2.3.3"></a></div>
+                <section id="animation-from-interactions" class="guideline"><div class="header-wrapper"><h4 id="x2-3-3-animation-from-interactions"><bdi class="secno">達成基準 2.3.3 </bdi>インタラクションによるアニメーション</h4><a class="self-link" href="#animation-from-interactions" aria-label="Permalink for Section 2.3.3"></a></div>
    					
    
    					
-   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html">Understanding Animation from Interactions</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#animation-from-interactions">How to Meet Animation from Interactions</a></div><p class="conformance-level">(Level AAA)</p>
+   <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html">Understanding Animation from Interactions</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#animation-from-interactions">How to Meet Animation from Interactions</a></div><p class="conformance-level">(レベル AAA)</p>
    					
-  <p><a href="#dfn-motion-animation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-motion-animation-1" title="addition of steps between conditions to create the illusion of movement or to give a sense of a smooth transition">Motion animation</a> triggered by interaction can be disabled, unless the animation is <a href="#dfn-essential" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-essential-8" title="if removed, would fundamentally change the information or functionality of the content, and information and functionality cannot be achieved in another way that would conform">essential</a> to the functionality or the information being conveyed.</p>
+  <p>アニメーションが、機能又は伝達されている情報に<a href="#dfn-essential" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-essential-8" title="もし取り除いてしまうと、コンテンツの情報又は機能を根本的に変えてしまい、かつ、適合する他の方法では情報及び機能を実現できない。">必要不可欠</a>でない限り、インタラクションによって引き起こされる<a href="#dfn-motion-animation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-motion-animation-1" title="動いているような錯覚を作り出す、又は滑らかに遷移しているような感覚を与えるための、状態間へのステップの追加。">モーションアニメーション</a>を無効にできる。</p>
    				
 </section>
 
