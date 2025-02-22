@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Metadata | WAI | W3C</title>
+      <title>解説書 メタデータを理解する | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
-      <!-- 日本語訳されるまでの一時的なスクリプト -->
-      <script src="untranslated-note.js"></script>
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://waic.jp/translations/WCAG22/Understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -37,7 +35,7 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"></li>
                   <li class="nav__item"></li>
@@ -48,67 +46,50 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#understanding-metadata-resources">Metadata Resources</a></li>
+                     <li><a href="#understanding-metadata-resources">メタデータに関するリソース</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1>Understanding Metadata</h1>
+            <h1>メタデータを理解する</h1>
             <div>
                		
                		
-               <p>This section discusses metadata techniques that can be employed to satisfy WCAG 2.1
-                  Success Criteria. For more information about metadata see resources below. 
+               <p>この節では、WCAG 2.1 の達成基準に適合するために用いることのできるメタデータの達成方法について説明する。メタデータに関するより詳細な情報は、以下にあるリソースを参照のこと。
                </p>
                		
-               <p>At its most basic level, metadata is essentially 'data about data' and is used to
-                  both describe and find resources. 
+               <p>最も基本的なレベルでは、メタデータは本質的に 'データに関するデータ' であり、リソースを説明するため及び探すための両方に用いられる。
                </p>
                		
-               <p>Metadata is a powerful tool that can be used for describing Web pages and accessible
-                  components of Web pages as well as associating alternate versions of Web content to
-                  each other. These descriptions in turn allows users to locate specific information
-                  they need or prefer. 
+               <p>メタデータは、ウェブページ及びウェブページのアクセシブルなコンポーネントを説明するためにも、ウェブコンテンツの代替版をお互いに関連付けるためにも用いることのできる強力なツールである。言い換えると、メタデータによる説明によって、利用者が自分の求めている又は好んでいる特定の情報を見つけることができるようになる。
                </p>
                		
-               <p>In conjunction with WCAG, metadata can play a number of roles including: </p>
+               <p>WCAG と併用することで、メタデータは次のような数多くの役割を果たすことができる: </p>
                		
                <ol>
                   			
                   <li>
                      				
-                     <p> Metadata can be used to associate conforming alternate versions of Web pages with
-                        Web pages which do not conform, in order to allow users to find the conforming alternate
-                        version when they land on a non-conforming page that they cannot use. 
+                     <p>利用者が自分の使うことのできない不適合のページにやってきたときに、適合している代替版を見つけられるようにするために、メタデータを用いてウェブページの適合している代替版と適合していないウェブページとを関連付けることができる。
                      </p>
                      			
                   </li>
                   			
                   <li>
                      				
-                     <p> Metadata can be used to locate and also to describe alternate pages where there are
-                        multiple versions of a page which have been developed, especially where the alternate
-                        pages are optimized for individuals with different disabilities. The user can use
-                        the metadata both to locate the alternate versions and to identify characteristics
-                        of the versions, so that they can find the one that best meets their needs. 
+                     <p>制作されたページに複数のバージョンがあるとき、特に代替ページが様々な障害のある利用者に最適化されている場合に、その代替ページの場所を示して説明するために、メタデータを用いることができる。利用者はメタデータを用いて、代替版を見つけることも、そのバージョンの特徴を確認することもできる。それによって、利用者は自分のニーズに最も合うものを探すことができる。
                      </p>
                      			
                   </li>
                   			
                   <li>
                      				
-                     <p>In addition to being used for whole pages (as in #1 and #2 above), metadata can be
-                        used to describe alternate versions of subcomponents of a page. Again, the metadata
-                        can be used to find alternate versions of a Web page component as well as to get descriptions
-                        of the alternate versions (if there are several) in order to determine which one would
-                        best meet the user's needs. 
+                     <p>(上記 1.及び 2.のように、) ページ全体に対して用いるのに加えて、ページの一部分の代替版を説明するためにメタデータを用いることができる。さらに、メタデータを用いて、ウェブページのコンポーネントの代替版を探したり、(複数ある場合には) どちらのほうが利用者のニーズに合うのかを判断するために、各代替版の説明を取得したりすることができる。
                      </p>
                      			
                   </li>
@@ -117,16 +98,12 @@
                		
                <section id="understanding-metadata-resources">
                   			
-                  <h2>Metadata Resources</h2>
+                  <h2>メタデータに関するリソース</h2>
                   			
-                  <p>Metadata descriptions often provide values from defined, agreed vocabularies such
-                     as the resource's subject matter or its date of publication, and are machine readable
-                     - software that understands the metadata scheme in use can do useful tasks not feasible
-                     otherwise. Typically, an object having metadata may have one or more such metadata
-                     descriptions. 
+                  <p>メタデータによる説明は、リソースの題目又はその発行日などのように、定義済みの合意されたボキャブラリの値を提供する。そして、機械的に読み取ることが可能である。用いられているメタデータのスキームを理解しているソフトウェアは、有用なタスクを行うことができる。通常は、メタデータを持つオブジェクトには、そのようなメタデータによる説明が一つ以上ある。
                   </p>
                   			
-                  <p>Well-known specifications (schemas) for metadata include: </p>
+                  <p>メタデータのよく知られている仕様 (スキーマ) には、次のようなものがある:</p>
                   			
                   <ul>
                      				
@@ -150,13 +127,10 @@
                      			
                   </ul>
                   			
-                  <p>There are some tools available to provide resource descriptions, or they can be provided
-                     manually. The more easily the metadata can be created and collected at point of creation
-                     of a resource or at point of publication, the more efficient the process and the more
-                     likely it is to take place. 
+                  <p>リソースの説明を提供するツールがいくつか入手可能である。あるいは、その説明は人的に提供することが可能である。メタデータの作成及びリソースの作成又は発行時点でのメタデータの収集がもっと容易になればなるほど、プロセスはより効果的になり、より多く使われるようになるはずである。
                   </p>
                   			
-                  <p>Some examples include: </p>
+                  <p>次のような例がある:</p>
                   			
                   <ul>
                      				
@@ -168,7 +142,7 @@
                      			
                   </ul>
                   			
-                  <p>Accessibility metadata implementations include: </p>
+                  <p>アクセシビリティメタデータの実装には、次のようなものがある:</p>
                   			
                   <ul>
                      				
@@ -192,13 +166,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -213,11 +186,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -239,13 +214,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -254,7 +229,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -275,8 +250,10 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+      <!--noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-      </noscript>
+      </noscript-->
    </body>
 </html>
