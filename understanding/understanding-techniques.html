@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Techniques for WCAG Success Criteria | WAI | W3C</title>
+      <title>解説書 WCAG 達成基準のテクニックを理解する | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
-      <!-- 日本語訳されるまでの一時的なスクリプト -->
-      <script src="untranslated-note.js"></script>
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://waic.jp/translations/WCAG22/Understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -37,10 +35,10 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"></li>
-                  <li class="nav__item"><a href="understanding-act-rules">Next : Understanding Test Rules for WCAG Success Criteria
+                  <li class="nav__item"><a href="understanding-act-rules">次 : WCAG 達成基準のテストルールを理解する
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -51,176 +49,158 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#techniques-are-informative">Techniques are Informative</a></li>
-                     <li><a href="#sufficient-techniques">Sufficient Techniques</a></li>
-                     <li><a href="#advisory-techniques">Advisory Techniques</a></li>
-                     <li><a href="#failures">Failures</a></li>
-                     <li><a href="#-general-and-technology-specific-techniques"> General and Technology-specific Techniques</a></li>
-                     <li><a href="#other-techniques">Other Techniques</a></li>
-                     <li><a href="#testing-techniques">Testing Techniques</a></li>
-                     <li><a href="#user-agent-and-assistive-technology-support-notes">User Agent and Assistive Technology Support Notes</a></li>
-                     <li><a href="#using-the-techniques">Using the Techniques</a></li>
+                     <li><a href="#techniques-are-informative">テクニックは参考情報である</a></li>
+                     <li><a href="#sufficient-techniques">十分なテクニック</a></li>
+                     <li><a href="#advisory-techniques">参考テクニック</a></li>
+                     <li><a href="#failures">失敗例</a></li>
+                     <li><a href="#-general-and-technology-specific-techniques">一般的及び技術特有のテクニック</a></li>
+                     <li><a href="#other-techniques">その他のテクニック</a></li>
+                     <li><a href="#testing-techniques">テクニックの検証</a></li>
+                     <li><a href="#user-agent-and-assistive-technology-support-notes">ユーザエージェント及び支援技術のサポートに関する注記</a></li>
+                     <li><a href="#using-the-techniques">テクニックの使用</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1>Understanding Techniques for WCAG Success Criteria</h1>
+            <h1>WCAG 達成基準のテクニックを理解する</h1>
             <div>
                		
                		
-               <p>WCAG 2.1 guidelines and success criteria are designed to be broadly applicable to
-                  current and future web technologies, including dynamic applications, mobile, digital
-                  television, etc. They are stable and do not change.
+               <p>WCAG 2.2 のガイドライン及び達成基準は、動的アプリケーション、モバイル、デジタルテレビなどを含む現在及び将来のウェブ技術に対して広く適用可能となるよう設計されている。これらは安定しており変わることはない。
                </p>
                		
-               <p>Specific guidance for authors and evaluators on meeting the WCAG success criteria
-                  is provided in techniques, which include code examples, resources, and tests. W3C's
-                  <a href="https://www.w3.org/WAI/WCAG21/Techniques/">Techniques for WCAG 2.1</a> document is updated periodically, about twice per year, to cover more current best
-                  practices and changes in technologies and tools.
+               <p>WCAG 2.2 の達成基準を満たすための、制作者や評価者に対する個別のガイダンスはコード例、リソース及びテストを含むテクニック集で提供されている。W3C の
+                  <a href="https://www.w3.org/WAI/WCAG22/Techniques/">Techniques for WCAG 2.2</a> 文書は概ね年に 2 回、より最新の成功事例及び技術やツールの変化をカバーするよう定期的に更新されている。
                </p>
                		
-               <p>The three types of guidance in <a href="https://www.w3.org/WAI/WCAG21/Techniques/">Techniques for WCAG 2.1</a> are explained below:
+               <p><a href="https://www.w3.org/WAI/WCAG22/Techniques/">Techniques for WCAG 2.2</a> における三つのタイプのガイダンスを以下に説明する:
                </p>
                		
                <ul>
                   			
                   <li>
                      				
-                     <p>Sufficient techniques</p>
+                     <p>十分なテクニック</p>
                      			
                   </li>
                   			
                   <li>
                      				
-                     <p>Advisory techniques</p>
+                     <p>参考テクニック</p>
                      			
                   </li>
                   			
                   <li>
                      				
-                     <p>Failures</p>
+                     <p>失敗例</p>
                      			
                   </li>
                   		
                </ul>
                		
-               <p>Also explained below:</p>
+               <p>また以下についても説明する:</p>
                		
                <ul>
                   			
                   <li>
                      				
-                     <p>General and technology-specific techniques - which can be sufficient or advisory</p>
+                     <p>達成基準を満たすことのできる、又は参考にすることができる、一般的な及び技術特有のテクニック</p>
                      			
                   </li>
                   			
                   <li>
                      				
-                     <p>Other techniques - beyond what is in W3C's published document</p>
+                     <p>W3C の発行文書を超えた、その他のテクニック</p>
                      			
                   </li>
                   			
                   <li>
                      				
-                     <p>Technique tests</p>
+                     <p>テクニックの検証</p>
                      			
                   </li>
                   			
                   <li>
                      				
-                     <p>User agent and assistive technology support</p>
+                     <p>ユーザエージェント及び支援技術のサポート</p>
                      			
                   </li>
                   			
                   <li>
                      				
-                     <p>Using the techniques - with important considerations</p>
+                     <p>重要な考慮とともに、テクニックを使用する</p>
                      			
                   </li>
                   		
                </ul>
                		
-               <p><a href="conformance">Understanding Conformance</a> provides related information, including on <a href="conformance#accessibility-support">understanding accessibility support</a>.
+               <p><a href="conformance">適合を理解する</a>では、<a href="conformance#accessibility-support">アクセシビリティサポートを理解する</a>に関するものを含む関連情報を提供している。
                </p>
                		
                <section id="techniques-are-informative">
                   			
-                  <h2>Techniques are Informative</h2>
+                  <h2>テクニックは参考情報である</h2>
                   			
-                  <p><em>Techniques are informative—that means they are not required. The basis for determining
-                        conformance to WCAG 2.1 is the success criteria from the WCAG 2.1 standard—not the
-                        techniques.</em></p>
+                  <p><em>テクニックは、参考情報である。つまり、テクニックは必須要件ではない。WCAG 2.2 への適合を判断する根拠は、WCAG 2.2 で規定している達成基準であり、テクニックではない。</em></p>
                   			
-                  <p class="prefix"><em>Note 1: </em>W3C cautions against requiring W3C's sufficient techniques. The only thing that should
-                     be required is meeting the WCAG 2.1 success criteria. To learn more, see:
+                  <p class="prefix"><em>注記 1: </em>W3C は、W3C の十分なテクニックの要求に対して注意を促す。求められる唯一のことは WCAG 2.2 達成基準を満たすことである。より詳しくは、以下を参照のこと:
                   </p>
                   			
                   <ul>
                      				
                      <li>
                         					
-                        <p><a href="https://www.w3.org/WAI/WCAG20/wcag2faq.html#techsnot">What would be the negative consequences of allowing <em>only</em> W3C's published techniques to be used for conformance to WCAG 2.1?</a> in the WCAG 2 FAQ
+                        <p>WCAG 2 FAQ における <a href="https://www.w3.org/WAI/WCAG20/wcag2faq.html#techsnot">What would be the negative consequences of allowing <em>only</em> W3C's published techniques to be used for conformance to WCAG 2?</a>
                         </p>
                         				
                      </li>
                      			
                   </ul>
                   			
-                  <p class="prefix"><em>Note 2: </em><a href="https://www.w3.org/WAI/WCAG21/Techniques/">Techniques for WCAG 2.1</a> uses the words "must" and "should" only to clarify guidance within the techniques,
-                     not to convey requirements for WCAG.
+                  <p class="prefix"><em>注記 2: </em><a href="https://www.w3.org/WAI/WCAG22/Techniques/">Techniques for WCAG 2.2</a> では、そのテクニックのガイダンスを明確にするためにのみ "しなければならない" 及び "することが望ましい" という用語を用いており、WCAG 2.2 への要求事項を伝えるためには用いない。
                   </p>
                   		
                </section>
                		
                <section id="sufficient-techniques">
                   			
-                  <h2>Sufficient Techniques</h2>
+                  <h2>十分なテクニック</h2>
                   			
-                  <p><em>Sufficient techniques</em> are reliable ways to meet the success criteria.
+                  <p><em>十分なテクニック</em>は達成基準を満たすのに信頼できる方法である。
                   </p>
                   			
                   <ul>
                      				
                      <li>
                         					
-                        <p>From an author's perspective: If you use the sufficient techniques for a given criterion
-                           correctly and it is <a href="conformance#accessibility-support">accessibility-supported</a> for your users, you can be confident that you met the success criterion.
+                        <p>制作者の視点から: 与えられた基準に対して、十分なテクニックを正しく用い、かつそれが利用者に対して<a href="conformance#accessibility-support">アクセシビリティ サポーテッド</a>らば、その達成基準を満たしていると確信できる。
                         </p>
                         				
                      </li>
                      				
                      <li>
                         					
-                        <p>From an evaluator's perspective: If web content implements the sufficient techniques
-                           for a given criterion correctly and it is <a href="conformance#accessibility-support">accessibility-supported</a> for the content's users, it conforms to that success criterion. (The converse is
-                           not true; if content does not implement these sufficient techniques, it does not necessarily
-                           fail the success criteria, as explained in <a href="#understanding-techniques-tests">Testing Techniques</a> below.)
+                        <p>評価者の視点から: 与えられた達成基準に対して、ウェブコンテンツが、十分なテクニックによって正しく実装され、かつコンテンツの利用者に対して<a href="conformance#accessibility-support">アクセシビリティ サポーテッド</a>ならば、その達成基準を満たしている。(逆は真ではない。ウェブコンテンツがこれらの十分なテクニックで実装されていなくても、以下の<a href="#understanding-techniques-tests">テクニックの検証</a> で説明しているように、必ずしも達成基準を満たしていないとはいえない。)
                         </p>
                         				
                      </li>
                      			
                   </ul>
                   			
-                  <p>There may be other ways to meet success criteria besides the sufficient techniques
-                     in W3C's <a href="https://www.w3.org/WAI/WCAG21/Techniques/">Techniques for WCAG 2.1</a> document, as explained in <a href="#understanding-techniques-othertechs">Other Techniques</a> below. <em>(See also <a href="#understanding-techniques-informative">Techniques are Informative</a> above.)</em></p>
+                  <p>以下の<a href="#understanding-techniques-othertechs">その他のテクニック</a>で説明しているように、W3C の <a href="https://www.w3.org/WAI/WCAG22/Techniques/">Techniques for WCAG 2.2</a> 文書にある十分なテクニック以外にも、達成基準を満たす方法はあるだろう。<em>(上記 <a href="#understanding-techniques-informative">テクニックは参考情報である</a> 参照のこと。)</em></p>
                   			
                   <section id="numbered-lists-&#34;and&#34;">
                      				
-                     <h3>Numbered Lists, "AND"</h3>
+                     <h3>番号付きリスト、"かつ"</h3>
                      				
-                     <p> The W3C-documented sufficient techniques are provided in a numbered list where each
-                        list item provides a technique or combination of techniques that can be used to meet
-                        the success criterion. Where there are multiple techniques on a numbered list item
-                        connected by "AND" then all of the techniques must be used to be sufficient. For example,
-                        <a href="info-and-relationships#techniques">Sufficient Techniques for 1.3.1</a> has: "G115: Using semantic elements to mark up structure AND H49: Using semantic
-                        markup to mark emphasized or special text (HTML)".
+                     <p>W3C 文書にある十分なテクニックは番号付きリストになっており、各リスト項目はその十分なテクニック、あるいはテクニックの組み合わせとなっている。一つの番号付きリスト項目に、"かつ" で連結された複数のテクニックがある場合、テクニックを満たすためにはすべてのテクニックを用いなければならない。例えば、
+                        <a href="info-and-relationships#techniques">達成基準 1.3.1</a> を満たすことのできるテクニックでは "G115: Using semantic elements to mark up structure AND H49: Using semantic
+                        markup to mark emphasized or special text (HTML)" とある。
                      </p>
                      			
                   </section>
@@ -229,150 +209,134 @@
                		
                <section id="advisory-techniques">
                   			
-                  <h2>Advisory Techniques</h2>
+                  <h2>参考テクニック</h2>
                   			
-                  <p><em>Advisory techniques</em> are suggested ways to improve accessibility. They are often very helpful to some
-                     users, and may be the only way that some users can access some types of content.
+                  <p><em>参考テクニック</em>はアクセシビリティを改善するために推奨される方法である。これは一部の利用者にとっては非常に有用であり、またある利用者がある種のコンテンツにアクセスできる唯一の方法となることもあるかもしれない。
                   </p>
                   			
-                  <p>Advisory techniques are not designated as sufficient techniques for various reasons
-                     such as:
+                  <p>参考テクニックは以下のようなさまざまな理由で、十分なテクニックとはならない:
                   </p>
                   			
                   <ul>
                      				
                      <li>
                         					
-                        <p>they may not be sufficient to meet the full requirements of the success criteria;</p>
+                        <p>達成基準のすべての要求事項を満たすのに十分でない。</p>
                         				
                      </li>
                      				
                      <li>
                         					
-                        <p>they may be based on technology that is not yet stable;</p>
+                        <p>まだ安定していない技術に基づいている。</p>
                         				
                      </li>
                      				
                      <li>
                         					
-                        <p>they may not be <a href="conformance#accessibility-support">accessibility supported</a> in many cases (for example, assistive technologies do not work with them yet);
+                        <p>多くの場合において<a href="conformance#accessibility-support">アクセシビリティ サポーテッド</a>でない (例えば、支援技術がテクニックに対応できていない)。
                         </p>
                         				
                      </li>
                      				
                      <li>
                         					
-                        <p>they may not be testable;</p>
+                        <p>テスト可能でない。</p>
                         				
                      </li>
                      				
                      <li>
                         					
-                        <p>in some circumstances they may not be applicable or practical, and may even decrease
-                           accessibility for some users while increasing it for others;
+                        <p>ある状況においてそのテクニックが適用可能でないあるいは実用的でなく、かつその他の利用者に対してはアクセシビリティを向上させる一方、一部の利用者に対してアクセシビリティを低下させる可能性がある。
                         </p>
                         				
                      </li>
                      				
                      <li>
                         					
-                        <p>they may not address the success criterion itself, and instead provide related accessibility
-                           benefits.
+                        <p>達成基準そのものには対処しておらず、代わりに関連するアクセシビリティ上の利点を提供している。
                         </p>
                         				
                      </li>
                      			
                   </ul>
                   			
-                  <p>Authors are encouraged to apply all of the techniques where appropriate to best address
-                     the widest range of users' needs.
+                  <p>コンテンツ制作者には、最も幅広い利用者のニーズに対処するのに最適なすべてのテクニックを適用することが推奨される。
                   </p>
                   		
                </section>
                		
                <section id="failures">
                   			
-                  <h2>Failures</h2>
+                  <h2>失敗例</h2>
                   			
-                  <p><em>Failures</em> are things that cause accessibility barriers and fail specific success criteria.
-                     The documented <em>failures</em> are useful for:
+                  <p><em>失敗例</em>はアクセシビリティ上のバリアを引き起こし、特定の達成基準への不適合を招くものである。文書化された<em>失敗例</em>は以下の点で有益である:
                   </p>
                   			
                   <ul>
                      				
                      <li>
                         					
-                        <p>Authors to know what to avoid,</p>
+                        <p>コンテンツ制作者にとっては、避けるべきことを知ることができる。</p>
                         				
                      </li>
                      				
                      <li>
                         					
-                        <p>Evaluators to use for checking if content does not meet WCAG success criteria.</p>
+                        <p>評価者にとっては、コンテンツが WCAG 2.2 の達成基準を満たしていない場合に、チェックに用いることができる。</p>
                         				
                      </li>
                      			
                   </ul>
                   			
-                  <p>Content that has a <em>failure</em> does not meet WCAG success criteria, unless an alternate version is provided without
-                     the failure.
+                  <p><em>失敗例</em>にあるコンテンツは、失敗例にない代替版が提供されていなければ、WCAG 2.2 の達成基準を満たしていない。
                   </p>
                   			
-                  <p>If anyone identifies a situation where a documented failure is not correct, please
-                     <a href="https://www.w3.org/WAI/WCAG21/comments/">report the situation as a WCAG comment</a> so that it can be corrected or deleted as appropriate.
+                  <p>文書化された失敗例が正しくないような状況を確認した場合は、修正もしくは適切に削除できるように
+                     <a href="https://www.w3.org/WAI/standards-guidelines/wcag/commenting/">WCAG 2 コメントとしてその状況を報告していただきたい (英語)</a>。
                   </p>
                   		
                </section>
                		
                <section id="-general-and-technology-specific-techniques">
                   			
-                  <h2> General and Technology-specific Techniques</h2>
+                  <h2>一般的及び技術特有のテクニック</h2>
                   			
-                  <p><em>General techniques</em> describe basic practices that apply to all technologies. <em>Technology-specific techniques</em> apply to a specific technology.
+                  <p><em>一般的なテクニック</em> には、すべての技術に適用する基本事例を記載している。<em>技術特有のテクニック</em>は個別の技術に適用する。
                   </p>
                   			
-                  <p>Some success criteria do not have technology-specific techniques and are covered only
-                     with general techniques. Therefore, both the general techniques and the relevant technology-specific
-                     techniques should be considered.
+                  <p>いくつかの達成基準は技術特有のテクニックを持っておらず、一般的なテクニックのみによりカバーされる。したがって、一般的なテクニックと、それに関連する技術特有のテクニックの両方を考慮するとよい。
                   </p>
                   			
-                  <p>Publication of techniques for a specific technology does not imply that the technology
-                     can be used in all situations to create content that meets WCAG 2.1 success criteria
-                     and conformance requirements. Developers need to be aware of the limitations of specific
-                     technologies and provide content in a way that is accessible to people with disabilities.
+                  <p>特定の技術に対するテクニックを公開しているからといって、WCAG 2.2 達成基準及び適合要件を満たすコンテンツを制作するあらゆる状況においてその技術が用いられるわけではない。開発者は個々の技術の限界を知り、障害を持つ人にとってアクセシブルな方法でコンテンツを提供する必要がある。
                   </p>
                   		
                </section>
                		
                <section id="other-techniques">
                   			
-                  <h2>Other Techniques</h2>
+                  <h2>その他のテクニック</h2>
                   			
-                  <p>In addition to the techniques in W3C's <a href="https://www.w3.org/WAI/WCAG21/Techniques/">Techniques for WCAG 2.1</a> document, <em>there are other ways to meet WCAG success criteria</em>. W3C's techniques are not comprehensive and may not cover newer technologies and
-                     situations.
+                  <p>W3C の <a href="https://www.w3.org/WAI/WCAG22/Techniques/">Techniques for WCAG 2.2</a> 文書にあるテクニックに加えて、<em>WCAG 2.2 の達成基準を満たすその他の方法がある</em>。W3C のテクニックは包括的なものではなく、より新しい技術や状況をカバーしていないかもしれない。
                   </p>
                   			
-                  <p><em>Web content does not have to use W3C's published techniques in order to conform to
-                        WCAG 2.1.</em><em>(See also <a href="understanding-techniques-informative">Techniques are Informative</a> above.)</em></p>
+                  <p><em>ウェブコンテンツは、WCAG 2.2 に適合するために W3C が公開しているテクニックを用いなくてもよい。</em><em>(上記<a href="understanding-techniques-informative">テクニックは参考情報である</a> も参照のこと。)</em></p>
                   			
-                  <p>Content authors can develop different techniques. For example, an author could develop
-                     a technique for HTML5, <a href="https://www.w3.org/WAI/intro/aria">WAI-ARIA</a>, or other new technology. Other organizations may develop sets of techniques to meet
-                     WCAG 2.1 success criteria.
+                  <p>コンテンツ制作者はさまざまなテクニックを開発できる。例えば、制作者は HTML5 や <a href="https://www.w3.org/WAI/intro/aria">WAI-ARIA</a>、あるいはその他の新しい技術に対するテクニックを開発できる。他の組織が WCAG 2.2 達成基準を満たすテクニック集を開発してもよい。
                   </p>
                   			
-                  <p>Any techniques can be sufficient if:</p>
+                  <p>任意のテクニックは、以下のような場合に達成基準を満たすことができる:</p>
                   			
                   <ul>
                      				
                      <li>
                         					
-                        <p>they satisfy the success criterion, and</p>
+                        <p>それらが達成基準を満たし、かつ</p>
                         				
                      </li>
                      				
                      <li>
                         					
-                        <p> all of the <a href="conformance">WCAG 2.1 conformance requirements</a> are met.
+                        <p>すべての <a href="conformance">WCAG 2.2 適合要件</a>が満たされている。
                         </p>
                         				
                      </li>
@@ -381,10 +345,9 @@
                   			
                   <section id="submitting-techniques">
                      				
-                     <h3>Submitting Techniques</h3>
+                     <h3>テクニックの提出</h3>
                      				
-                     <p>The WCAG Working Group encourages people to submit new techniques so that they can
-                        be considered for inclusion in updates of the <a href="https://www.w3.org/WAI/WCAG21/Techniques/">Techniques for WCAG 2.1</a> document. Please submit techniques for consideration using the <a href="https://www.w3.org/WAI/GL/WCAG20/TECHS-SUBMIT/">Techniques Submission Form</a>.
+                     <p>WCAG Working Group では、<a href="https://www.w3.org/WAI/WCAG22/Techniques/">Techniques for WCAG 2.2</a>  文書の更新において取り入れることを検討できるように、新しいテクニックを提出することを推奨する。<a href="https://www.w3.org/WAI/GL/WCAG20/TECHS-SUBMIT/">Techniques Submission Form</a> を用いて、検討のためのテクニックを提出いただきたい。
                      </p>
                      			
                   </section>
@@ -393,95 +356,81 @@
                		
                <section id="testing-techniques">
                   			
-                  <h2>Testing Techniques</h2>
+                  <h2>テクニックの検証</h2>
                   			
-                  <p> Each technique has tests that help:</p>
+                  <p>それぞれのテクニックには以下のように役立つ検証がある:</p>
                   			
                   <ul>
                      				
                      <li>
                         					
-                        <p> authors verify that they implemented the technique properly, and</p>
+                        <p>コンテンツ制作者が、テクニックを正確に実装しているか確認し、かつ</p>
                         				
                      </li>
                      				
                      <li>
                         					
-                        <p>evaluators determine if web content meets the technique.</p>
+                        <p>評価者が、ウェブコンテンツがそのテクニックを満たしているか判断する。</p>
                         				
                      </li>
                      			
                   </ul>
                   			
-                  <p>The tests are only for a technique, they are not tests for conformance to WCAG success
-                     criteria.
+                  <p>この検証はテクニックに対してのみのものであり、WCAG 2 の達成基準への適合を検証するものではない。
                   </p>
                   			
                   <ul>
                      				
                      <li>
                         					
-                        <p>Failing a technique test does not necessarily mean failing WCAG, because the techniques
-                           are discrete (that is, they address one specific point) and they are not required.
+                        <p>テクニックは離散的であり (すなわち、特定の 1 点のみを扱っており)、かつこれらは要求事項ではないため、テクニックの検証失敗は必ずしも WCAG 2 への不適合を意味していない。
                         </p>
                         				
                      </li>
                      				
                      <li>
                         					
-                        <p>Content can meet WCAG success criteria in different ways other than W3C's published
-                           sufficient techniques.
+                        <p>コンテンツは、W3C が公開している十分なテクニック以外にも様々な方法で WCAG 2 の達成基準を満たすことができる。
                         </p>
                         				
                      </li>
                      				
                      <li>
                         					
-                        <p>Content that passes the sufficient techniques for a specific technology does not necessarily
-                           meet all WCAG success criteria. Some success criteria have only general techniques,
-                           not technology-specific techniques.
+                        <p>技術特有のテクニックの検証を通過したコンテンツは、必ずしもすべての WCAG 2 の達成基準を満たしていない。いくつかの達成基準は一般的なテクニックのみを持っており、技術特有のテクニックを持っていない。
                         </p>
                         				
                      </li>
                      				
                      <li>
                         					
-                        <p>The content must be <a href="conformance#accessibility-support">accessibility supported</a> for the content's users. Some sufficient techniques require browser, assistive technology,
-                           or other support that some users might not have.
+                        <p>コンテンツはその利用者に対して<a href="conformance#accessibility-support">アクセシビリティ サポーテッド</a>でなければならない。いくつかの十分なテクニックは、一部の利用者が持っていないかもしれないブラウザ、支援技術またはその他のサポートを必要とする。
                         </p>
                         				
                      </li>
                      			
                   </ul>
                   			
-                  <p>Thus while the techniques are useful for evaluating content, evaluations must go beyond
-                     just checking the sufficient technique tests in order to evaluate how content conforms
-                     to WCAG success criteria.
+                  <p>このようにテクニックはコンテンツの評価において有益であるが、コンテンツが WCAG 2 の達成基準にどのくらい適合しているか評価するためには、評価は十分なテクニックをただ検証することを超えて行わなければならない。
                   </p>
                   			
-                  <p><em>Failures</em> are particularly useful for evaluations because they do indicate non-conformance
-                     (unless an alternate version is provided without the failure).
+                  <p><em>失敗例</em>は、(失敗のない代替版が提供されていない場合) 不適合を意味するため、評価において特に有益である。
                   </p>
                   		
                </section>
                		
                <section id="user-agent-and-assistive-technology-support-notes">
                   			
-                  <h2>User Agent and Assistive Technology Support Notes</h2>
+                  <h2>ユーザエージェント及び支援技術のサポートに関する注記</h2>
                   			
-                  <p>Some techniques require that web content users have specific browsers or assistive
-                     technologies in order for the technique to be <a href="conformance#accessibility-support">accessibility-supported</a>. The <em>User Agent and Assistive Technology Support Notes</em> sections of individual techniques include some information to help determine accessibility
-                     support.
+                  <p>いくつかのテクニックでは、ウェブコンテンツの利用者に対して、そのテクニックが<a href="conformance#accessibility-support">アクセシビリティ サポーテッド</a>となるために、特定のブラウザや支援技術を持つことを求めている。個々のテクニックにおける<em>ユーザエージェント及び支援技術のサポートに関する注記</em>の節は、アクセシビリティ サポーテッドを判断するのに役立つ情報を含んでいる。
                   </p>
                   			
                   <section id="support-notes-change-over-time">
                      				
-                     <h3>Support Notes Change Over Time</h3>
+                     <h3>サポートに関する注記は時間とともに変化する</h3>
                      				
-                     <p>As time passes, the versions of user agents (browsers, etc.) or assistive technologies
-                        listed may not be the current versions. The Working Group may not update most of these
-                        notes as new versions are released. Authors should test techniques with the user agents
-                        and assistive technologies currently available to their users. See also <a href="conformance#accessibility-support">Understanding Accessibility Support</a>.
+                     <p>時間の経過に伴い、列挙されているユーザエージェント (ブラウザなど) や支援技術のバージョンが最新のバージョンではなくなるかもしれない。ワーキンググループでは、新しいバージョンが公開されてもこれらの注記の多くを更新しないだろう。制作者は、利用者が現時点で利用可能なユーザエージェントや支援技術を用いてテクニックを検証することが望ましい。<a href="conformance#accessibility-support">アクセシビリティサポートを理解する</a>も参照のこと。
                      </p>
                      			
                   </section>
@@ -490,38 +439,30 @@
                		
                <section id="using-the-techniques">
                   			
-                  <h2>Using the Techniques</h2>
+                  <h2>テクニック集の使用</h2>
                   			
-                  <p><a href="https://www.w3.org/WAI/WCAG21/Techniques/">Techniques for WCAG 2.1</a> is not intended to be used as a stand-alone document. Instead, it is expected that
-                     content authors will usually use <a href="https://www.w3.org/WAI/WCAG21/quickref/">How to Meet WCAG 2.1: A customizable quick reference</a> to read the WCAG success criteria, and follow links from there to specific topics
-                     in Understanding WCAG 2.1 and to specific techniques.
+                  <p><a href="https://www.w3.org/WAI/WCAG22/Techniques/">Techniques for WCAG 2.2</a> は単体の文書として用いられることを意図していない。代わりに、コンテンツ制作者は、WCAG 2 の達成基準を参照するために 
+                     <a href="https://www.w3.org/WAI/WCAG22/quickref/">How to Meet WCAG 2.2: A customizable quick reference</a> を用い、そこからリンクをたどって WCAG 2.2 解説書の特定の項及び特定のテクニックを参照することが想定している。
                   </p>
                   			
                   <section id="alternatives-must-meet-success-criteria">
                      				
-                     <h3>Alternatives must meet success criteria</h3>
+                     <h3>代替版は達成基準を満たしていなければならない</h3>
                      				
-                     <p>Some techniques describe how to provide alternate ways for users to get content. For
-                        example, <a href="https://w3c.github.io/wcag/techniques/general/G73">G73: Providing a long description in another location with a link to it that is immediately
-                           adjacent to the non-text content</a> mentions a transcript as an alternative for an audio file. Some alternatives must
-                        also conform to WCAG. For example, the transcript itself must meet all relevant success
-                        criteria. 
+                     <p>いくつかの達成基準では、ユーザがコンテンツを得るための代替方法をどのように提供するかについて述べている。例えば、<a href="https://w3c.github.io/wcag/techniques/general/G73">G73: Providing a long description in another location with a link to it that is immediately
+                           adjacent to the non-text content</a> では音声ファイルの代替としてトランスクリプトについて言及している。いくつかの代替はまた WCAG 2 に適合していなければならない。例えばそのトランスクリプト自体は、関連するすべての達成基準を満たしていなければならない。
                      </p>
                      			
                   </section>
                   			
                   <section id="example-code">
                      				
-                     <h3>Example Code</h3>
+                     <h3>コード例</h3>
                      				
-                     <p>The code examples in the techniques are intended to demonstrate only the specific
-                        point discussed in the technique. They might not demonstrate best practice for other
-                        aspects of accessibility, usability, or coding not related to the technique. They
-                        are not intended to be copied and used as the basis for developing web content.
+                     <p>テクニック集にあるコード例は、そのテクニックにおいて議論された特定の点についてのみ明示することを意図している。これらは、そのテクニックと無関係なアクセシビリティ、ユーザビリティ、またはコーディングのその他の側面に対する最良の実例を示しているわけではない。これらはウェブコンテンツ開発の基礎としてコピーして用いられることを意図していない。
                      </p>
                      				
-                     <p>Many techniques point to "working examples" that are more robust and may be appropriate
-                        for copying and integrating into web content.
+                     <p>多くのテクニックではより堅牢で、ウェブコンテンツにコピーしたり統合するのに適した "機能する例" を挙げている。
                      </p>
                      			
                   </section>
@@ -538,13 +479,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -559,11 +499,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -585,13 +527,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -600,7 +542,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -621,7 +563,9 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+      <noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
       </noscript>
    </body>
