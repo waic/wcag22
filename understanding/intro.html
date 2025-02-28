@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Introduction to Understanding WCAG  | WAI | W3C</title>
+      <title>解説書 WCAG 解説書のイントロダクション  | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
-      <!-- 日本語訳されるまでの一時的なスクリプト -->
-      <script src="untranslated-note.js"></script>
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -37,10 +35,10 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"></li>
-                  <li class="nav__item"><a href="understanding-techniques">Next : Understanding Techniques for WCAG Success Criteria
+                  <li class="nav__item"><a href="understanding-techniques">次 : WCAG 達成基準のテクニックを理解する
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -51,142 +49,122 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#understanding-the-four-principles-of-accessibility">Understanding the Four Principles of Accessibility</a></li>
-                     <li><a href="#layers-of-guidance">Layers of Guidance</a></li>
+                     <li><a href="#understanding-the-four-principles-of-accessibility">アクセシビリティの四つの原則を理解する</a></li>
+                     <li><a href="#layers-of-guidance">ガイダンスのレイヤー</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1>Introduction to Understanding WCAG </h1>
+            <h1>WCAG 解説書のイントロダクション</h1>
             <div>
                		
                		
-               <p>Understanding WCAG 2.1 is an essential guide to understanding and using "<a href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines 2.1</a>". Although the normative definition and requirements for WCAG 2.1 can all be found
-                  in the WCAG 2.1 document itself, the concepts and provisions may be new to some people.
-                  Understanding WCAG 2.1 provides a non-normative extended commentary on each guideline
-                  and each Success Criterion to help readers better understand the intent and how the
-                  guidelines and Success Criteria work together. It also provides examples of techniques
-                  or combinations of techniques that the Working Group has identified as being sufficient
-                  to meet each Success Criterion. Links are then provided to write-ups for each of the
-                  techniques.
+               <p>WCAG 2.2 解説書は、"<a href="https://www.w3.org/TR/WCAG22/">Web Content Accessibility Guidelines 2.2</a>" を理解して実践するために不可欠な案内書である。WCAG 2.2 の規定となる定義や要件はすべて WCAG 2.2 自体の文書で読むことができるが、その考え方や条項に馴染みのない方もいるかもしれない。WCAG 2.2 解説書は、読者の皆さんがその意図やどのようにガイドラインと達成基準が連携しているのかをよりよく理解できるように、各ガイドライン、及び、各達成基準について、WCAG 2.2 の規定にはならない詳細な解説を提供している。また、それぞれの達成基準を満たすのに十分であることをワーキンググループが確認した達成方法、及び、達成方法の組合せの事例も紹介している。そして、それぞれの達成方法の詳細にもリンクを提供している。
                </p>
                		
-               <p>This is not an introductory document. It is a detailed technical description of the
-                  guidelines and their Success Criteria. See <a href="https://www.w3.org/WAI/intro/wcag">Web Content Accessibility Guidelines (WCAG) Overview</a> for an introduction to WCAG, supporting technical documents, and educational material.
+               <p>この文書は、入門書ではなく、ガイドラインとその達成基準に関する詳細な技術解説である。WCAG やその関連技術文書、教育用素材などへのイントロダクションは、<a href="https://www.w3.org/WAI/intro/wcag">Web Content Accessibility Guidelines (WCAG) Overview</a> を参照のこと。
                   
                </p>
                		
-               <p>Understanding WCAG 2.1 is organized by guideline. There is an <em>Understanding Guideline X.X</em> section for each guideline. The intent and any advisory techniques that are related
-                  to the guideline but not specifically related to any of its Success Criteria are listed
-                  there as well.
+               <p>WCAG 2.2 解説書は、ガイドラインごとに構成されている。各ガイドラインには、<em>ガイドライン X.Xを理解する</em> という節がある。そのガイドラインの意図と、ガイドラインに関係あるが、そのガイドラインの達成基準のいずれにも特に関係のない参考達成方法も同様にそこに列挙されている。
                </p>
                		
-               <p>The <em>Understanding Guidelines X.X</em> section is then followed by a <em>Understanding Success Criterion X.X.X</em> section for each Success Criterion of that guideline. These sections each contain:
+               <p><em>ガイドライン X.Xを理解する</em>という節の後には、そのガイドラインの達成基準ごとに、<em>達成基準 X.X.Xを理解する</em>という節が続いている。これらの節にはそれぞれ以下の情報が提供されている:
                </p>
                		
                <ul>
                   			
                   <li>
                      				
-                     <p>The Success Criterion as it appears in WCAG 2.1</p>
+                     <p>WCAG 2.2 に書かれている達成基準</p>
                      			
                   </li>
                   			
                   <li>
                      				
-                     <p>Intent of the Success Criterion</p>
+                     <p>その達成基準の意図</p>
                      			
                   </li>
                   			
                   <li>
                      				
-                     <p>Benefits (how the Success Criterion helps people with disabilities)</p>
+                     <p>メリット (その達成基準が、どのように障害のある利用者の役に立つのか)</p>
                      			
                   </li>
                   			
                   <li>
                      				
-                     <p>Examples</p>
+                     <p>事例</p>
                      			
                   </li>
                   			
                   <li>
                      				
-                     <p> Related Resources </p>
+                     <p>関連リソース</p>
                      			
                   </li>
                   			
                   <li>
                      				
-                     <p>Techniques or combinations of techniques that are sufficient to meet the guidelines</p>
+                     <p>その達成基準の十分な達成方法及び達成方法の組合せ</p>
                      			
                   </li>
                   			
                   <li>
                      				
-                     <p>Common failures of this Success Criterion</p>
+                     <p>この達成基準のよくある失敗例</p>
                      			
                   </li>
                   			
                   <li>
                      				
-                     <p>Additional advisory techniques that go beyond what is required to meet the Success
-                        Criterion but can be used to make some or all types of content more accessible. Use
-                        of advisory techniques does not impact the level of conformance claimed. 
+                     <p>その達成基準を満たすための要求を超えているが、一部のあるいはすべてのコンテンツをさらにアクセシブルにするために用いることのできる参考達成方法。参考達成方法を使用することで、宣言する適合レベルに影響を及ぼすことはない。
                      </p>
                      			
                   </li>
                   			
                   <li>
                      				
-                     <p>Key terms for this Success Criterion (taken from the WCAG 2.1 Glossary)</p>
+                     <p>この達成基準における重要な用語 (WCAG 2.2 の用語集から引用)</p>
                      			
                   </li>
                   		
                </ul>
                		
-               <p>Links are provided from each Guideline in WCAG 2.1 directly to each <em>Understanding Guideline X.X</em> in this document. Similarly, there is a link from each Success Criterion in WCAG
-                  2.1 to the <em>Understanding Success Criterion X.X.X</em> section in this document. 
+               <p>WCAG 2.2 文書の各ガイドラインからは、この文書の<em>ガイドライン X.X を理解する</em>という節に直接リンクしている。同様に、WCAG 2.2 文書の各達成基準からも、この文書の<em>達成基準 X.X.X を理解する</em>という節に直接リンクしている。
                </p>
                		
-               <p>For information about individual techniques, follow the links throughout this document
-                  to the techniques of interest in the <a href="https://www.w3.org/WAI/WCAG21/Techniques/">Techniques for WCAG 2.1</a> document.
+               <p>個々の達成方法に関する情報については、この文書中にあるリンクから、<a href="https://www.w3.org/WAI/WCAG22/Techniques/">Techniques for WCAG 2.2</a>で関心のある達成方法を参照のこと。
                </p>
                		
-               <p>For links to information on different disabilities and assistive technologies see
-                  <a href="https://en.wikipedia.org/wiki/Disability">Disabilities on Wikipedia</a>. 
+               <p>様々な障害や支援技術に関する情報については、
+                  <a href="https://en.wikipedia.org/wiki/Disability">Disabilities on Wikipedia</a> を参照のこと。
                </p>
                		
                <section id="understanding-the-four-principles-of-accessibility">
                   			
-                  <h2>Understanding the Four Principles of Accessibility</h2>
+                  <h2>アクセシビリティの四つの原則を理解する</h2>
                   			
-                  <p>The guidelines and Success Criteria are organized around the following four principles,
-                     which lay the foundation necessary for anyone to access and use Web content. Anyone
-                     who wants to use the Web must have content that is:
+                  <p>ガイドライン及び達成基準は、誰もがウェブコンテンツにアクセスして利用するために必要な土台となる、次の四つの原則を中心に構成されている。ウェブを利用したい誰もが、コンテンツに求めるのは次のことである:
                   </p>
                   			
                   <ol>
                      				
                      <li>
                         					
-                        <p> Perceivable - Information and user interface components must be presentable to users
-                           in ways they can perceive.
+                        <p>知覚可能 － 情報及びユーザインタフェースコンポーネントは、利用者が知覚できる方法で利用者に提示可能でなければならない。
                         </p>
                         					
                         <ul>
                            						
                            <li>
                               							
-                              <p>This means that users must be able to perceive the information being presented (it
-                                 can't be invisible to all of their senses)
+                              <p>これは、利用者が提示されている情報を知覚できなければならないことを意味する (利用者の感覚すべてに対して知覚できないものであってはならない)。
                               </p>
                               						
                            </li>
@@ -197,14 +175,13 @@
                      				
                      <li>
                         					
-                        <p>Operable - User interface components and navigation must be operable.</p>
+                        <p>操作可能 － ユーザインタフェースコンポーネント及びナビゲーションは操作可能でなければならない。</p>
                         					
                         <ul>
                            						
                            <li>
                               							
-                              <p>This means that users must be able to operate the interface (the interface cannot
-                                 require interaction that a user cannot perform) 
+                              <p>これは、利用者がインタフェースを操作できなければならないことを意味する (インタフェースが、利用者の実行できないインタラクションを要求してはならない)。
                               </p>
                               						
                            </li>
@@ -215,14 +192,13 @@
                      				
                      <li>
                         					
-                        <p>Understandable - Information and the operation of user interface must be understandable.</p>
+                        <p>理解可能 － 情報及びユーザインタフェースの操作は理解可能でなければならない。</p>
                         					
                         <ul>
                            						
                            <li>
                               							
-                              <p>This means that users must be able to understand the information as well as the operation
-                                 of the user interface (the content or operation cannot be beyond their understanding)
+                              <p>これは、利用者がユーザインタフェースの操作と情報とを理解できなければならないことを意味する (コンテンツ又は操作が、理解できないものであってはならない)。
                               </p>
                               						
                            </li>
@@ -233,16 +209,14 @@
                      				
                      <li>
                         					
-                        <p>Robust - Content must be robust enough that it can be interpreted reliably by a wide
-                           variety of user agents, including assistive technologies.
+                        <p>堅牢 (robust) - コンテンツは、支援技術を含む様々なユーザエージェントが確実に解釈できるように十分に堅牢でなければならない。
                         </p>
                         					
                         <ul>
                            						
                            <li>
                               							
-                              <p>This means that users must be able to access the content as technologies advance (as
-                                 technologies and user agents evolve, the content should remain accessible)
+                              <p>これは、利用者が技術の進歩に応じてコンテンツにアクセスできなければならないことを意味する (技術やユーザエージェントの進化していったとしても、コンテンツはアクセシブルなままであるべきである)。
                               </p>
                               						
                            </li>
@@ -253,87 +227,63 @@
                      			
                   </ol>
                   			
-                  <p>If any of these are not true, users with disabilities will not be able to use the
-                     Web. 
+                  <p>もし、これらのいずれかが当てはまらなければ、障害のある利用者はウェブを利用することができなくなる。
                   </p>
                   			
-                  <p>Under each of the principles are guidelines and Success Criteria that help to address
-                     these principles for people with disabilities. There are many general usability guidelines
-                     that make content more usable by all people, including those with disabilities. However,
-                     in WCAG 2.1, we only include those guidelines that address problems particular to
-                     people with disabilities. This includes issues that block access or interfere with
-                     access to the Web more severely for people with disabilities.
+                  <p>それぞれの原則の下には、障害のある利用者のためのこれらの原則に対処するのに役立つ、ガイドライン及び達成基準がある。障害のある利用者を含むすべての利用者にとってコンテンツをより使いやすくする一般的なユーザビリティガイドラインは数多く存在する。しかし、WCAG 2.2 においては、障害のある利用者に特有の問題に対処するガイドラインだけが含まれている。これには、障害のある人のウェブへのアクセスを妨げる、またはウェブへのアクセスをより深刻な干渉をする問題が含まれる。
                   </p>
                   		
                </section>
                		
                <section id="layers-of-guidance">
                   			
-                  <h2>Layers of Guidance</h2>
+                  <h2>ガイダンスのレイヤー</h2>
                   			
                   <section id="the-guidelines">
                      				
-                     <h3>The Guidelines</h3>
+                     <h3>ガイドライン</h3>
                      				
-                     <p>Under each principle there is a list of guidelines that address the principle. There
-                        are a total of 12 guidelines. A convenient list of just the guidelines can be found
-                        in the <a class="gl-ref" href="https://www.w3.org/TR/WCAG21/#toc">WCAG 2.1 table of contents</a>. One of the key objectives of the guidelines is to ensure that content is directly
-                        accessible to as many people as possible, and capable of being re-presented in different
-                        forms to match different peoples' sensory, physical and cognitive abilities.
+                     <p>それぞれの原則の下には、その原則に対応するガイドラインのリストがある。全部で 13 のガイドラインがある。ガイドラインだけの一覧は、<a class="gl-ref" href="https://www.w3.org/TR/WCAG22/#toc">WCAG 2.2 目次</a>で見ることができる。ガイドラインの重要な目的の一つは、コンテンツが、できるだけ多くの利用者にとってそのままでアクセシブルであるようにすることであり、様々な利用者の感覚的、身体的及び認知的能力に合った様々な形態で再提示できるようにすることである。
                      </p>
                      			
                   </section>
                   			
                   <section id="success-criteria">
                      				
-                     <h3>Success Criteria</h3>
+                     <h3>達成基準</h3>
                      				
-                     <p>Under each guideline, there are Success Criteria that describe specifically what must
-                        be achieved in order to <a class="gl-ref" href="https://www.w3.org/TR/WCAG21/#dfn-conform">conform</a> to this standard. They are similar to the "checkpoints" in WCAG 1.0. Each Success
-                        Criterion is written as a statement that will be either true or false when specific
-                        Web content is tested against it. The Success Criteria are written to be technology
-                        neutral.
+                     <p>それぞれのガイドラインの下には、WCAG 2.2 に<a class="gl-ref" href="https://www.w3.org/TR/WCAG22/#dfn-conform">適合</a>するためには何をしなければならないのかを具体的に記述した達成基準がある。それは、WCAG 1.0 における「チェックポイント」によく似たものである。それぞれの達成基準は、特定のウェブコンテンツをその達成基準によってテストしたときに適合もしくは不適合が判別できるように記述されている。そして、達成基準はウェブコンテンツ技術に依存しないように書かれている。
                      </p>
                      				
-                     <p>All WCAG 2.1 Success Criteria are written as testable criteria for objectively determining
-                        if content satisfies the Success Criteria. While some of the testing can be automated
-                        using software evaluation programs, others require human testers for part or all of
-                        the test.
+                     <p>WCAG 2.1 の達成基準はすべて、コンテンツがその達成基準を満たしているかどうかを客観的に判断するテスト可能な基準として記述されている。テストには、評価プログラムのソフトウェアを用いた自動化可能なものもあれば、その一部又は全部に人間によるテストを必要とするものもある。
                      </p>
                      				
-                     <p>Although content may satisfy the Success Criteria, the content may not always be usable
-                        by people with a wide variety of disabilities. Professional reviews utilizing recognized
-                        qualitative heuristics are important in achieving accessibility for some audiences.
-                        In addition, usability testing is recommended. Usability testing aims to determine
-                        how well people can use the content for its intended purpose.
+                     <p>コンテンツが達成基準を満たしていたとしても、そのコンテンツは様々な障害のある利用者にとって利用可能であるとは限らない。ある利用者にとってのアクセシビリティを確保する上では、専門家による広く認められている定性的なヒューリスティック評価が重要である。さらに、ユーザビリティテスティングが推奨される。ユーザビリティテスティングは、その用途に応じて、利用者がコンテンツをどれだけうまく使えるかを判断することを目的としている。
                      </p>
                      				
-                     <p>The content should be tested by those who understand how people with different types
-                        of disabilities use the Web. It is recommended that users with disabilities be included
-                        in test groups when performing human testing. 
+                     <p>様々な種類の障害のある人がどのようにウェブを利用しているのかを理解している人が、コンテンツをテストすべきである。人間によるテストを行う際には、障害のある利用者をテストグループに含めることを推奨する。
                      </p>
                      				
-                     <p>Each Success Criterion for a guideline has a link to the section of the How to Meet
-                        document that provides:
+                     <p>ガイドラインの各達成基準には、次のものを提供する How to Meet 文書の節へのリンクがある:
                      </p>
                      				
                      <ul>
                         					
                         <li>
                            						
-                           <p>sufficient techniques for meeting the Success Criterion,</p>
+                           <p>その十分な達成方法</p>
                            					
                         </li>
                         					
                         <li>
                            						
-                           <p>optional advisory techniques, and</p>
+                           <p>任意の参考達成方法</p>
                            					
                         </li>
                         					
                         <li>
                            						
-                           <p>descriptions of the intent of the Success Criteria, including benefits, and examples.</p>
+                           <p>達成基準の意図、及びメリットの説明、事例</p>
                            					
                         </li>
                         				
@@ -343,9 +293,9 @@
                   			
                   <section id="sufficient-techniques-advisory-techniques-and-failures">
                      				
-                     <h3>Sufficient Techniques, Advisory Techniques, and Failures</h3>
+                     <h3>十分な達成方法及び参考達成方法、及び失敗例</h3>
                      				
-                     <p>The next section, <em><a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a></em>, provides important information about the techniques.
+                     <p>次の節 <em><a href="understanding-techniques">WCAG 達成基準の達成方法を理解する</a></em> では、達成方法に関する重要な情報を提供している。
                      </p>
                      			
                   </section>
@@ -362,13 +312,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -383,11 +332,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -409,13 +360,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -424,7 +375,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -445,7 +396,9 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+      <noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
       </noscript>
    </body>
