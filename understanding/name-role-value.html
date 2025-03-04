@@ -98,13 +98,13 @@
                <dl>
                   
                   <dt>目標</dt>
-                  <dd>People using assistive technology understand all components.</dd>
+                  <dd>支援技術を使用する人々が、すべてのコンポーネントを理解する。</dd>
                   
-                  <dt>何をすればよいか to do</dt>
-                  <dd>Give components correct names, roles, states, and values.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>コンポーネントに正しい名前 (name)、役割 (role)、及び値 (value) を与える。</dd>
                   
-                  <dt>なぜそれが重要か it's important</dt>
-                  <dd>Assistive technology only works well when code is done properly.</dd> 
+                  <dt>なぜそれが重要か</dt>
+                  <dd>支援技術は、コードが適切に記述されている場合にのみうまく機能する。</dd> 
                   
                </dl>
             </section>
@@ -119,12 +119,7 @@
                <p>しかし、カスタムコントロールが作成される、又はインタフェース要素が通常とは異なる役割及び／又は機能を持つように (ソースコード又はスクリプトで) プログラミングされている場合、コントロールが支援技術に重要及び適切な情報を提供し、支援技術によってコントロールされることを、それら自身ができるように保証する追加の手段を取る必要がある。
                   
                </p>
-               <p>What roles and states are appropriate to convey to assistive technology will depend
-                  on what the control represents. Specifics about such information are defined by other
-                  specifications, such as <a href="https://www.w3.org/TR/wai-aria/">WAI-ARIA</a>, or the
-                  relevant platform standards. Another factor to consider is whether there is sufficient
-                  <a href="https://www.w3.org/TR/WCAG22/#dfn-accessibility-supported">accessibility support</a> 
-                  with assistive technologies to convey the information as specified.
+               <p>どのような役割 (role) 及び状態を支援技術に伝えるのが適切かは、コントロールが何を表すかによる。そのような情報に関する詳細は、<a href="https://www.w3.org/TR/wai-aria/">WAI-ARIA</a> などの他の仕様、関連するプラットフォーム標準によって定義される。考慮すべきもう一つの要素は、指定されたとおりに情報を伝達するために、支援技術とともに十分な<a href="https://waic.jp/translations/WCAG22/#dfn-accessibility-supported">アクセシビリティサポート</a>があるかどうかである。
                   
                </p>
                <p>特に重要なユーザインタフェース コントロールの状態は、フォーカスを持つかどうかである。コントロールのフォーカス状態は、プログラムによる解釈が可能であり、フォーカスの変化に関する通知は、ユーザエージェント及び支援技術に送られる。ユーザインタフェース コントロールのステータスの他の例としては、チェックボックス又はラジオボタンが選択されているかどうか、折り畳み可能なツリーやリストが展開されている又は折り畳まれているかどうかである。
@@ -189,11 +184,11 @@
             </section>
             <section id="techniques">
                <h2>テクニック</h2>
-               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断する達成方法、又は複数の達成方法の組み合わせを表している。しかしながら、必ずしもこれらの達成方法を用いる必要はない。その他の達成方法についての詳細は、<a href="understanding-techniques">WCAG 達成基準の達成方法を理解する</a>の「その他の達成方法」を参照のこと。
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
-                  <h3>十分な達成方法</h3>
-                  <p>そのコンテンツに合致する状況を以下から選択すること。それぞれの状況には、WCAG ワーキンググループがその状況において十分であると判断する、番号付の達成方法 (又は、達成方法の組み合わせ) がある。
+                  <h3>十分なテクニック</h3>
+                  <p>そのコンテンツに合致する状況を以下から選択すること。それぞれの状況には、WCAG ワーキンググループがその状況において十分であると判断する、番号付のテクニック (又は、テクニックの組み合わせ) がある。
                   </p>
                   <section class="situation" id="name-role-value-situation-0">
                      
@@ -227,7 +222,7 @@
                            
                            <p> 
                               
-                              下記の技術固有の達成方法を用いて、<a class="general" href="https://w3c.github.io/wcag/techniques/general/G108">G108: Using markup features to expose the name and role, allow user-settable properties
+                              下記の技術固有のテクニックを用いて、<a class="general" href="https://w3c.github.io/wcag/techniques/general/G108">G108: Using markup features to expose the name and role, allow user-settable properties
                                  to be directly set, and provide notification of changes</a>:
                               
                            </p>
@@ -341,7 +336,7 @@
                            
                            <p>
                               										           
-                              下記の技術固有の達成方法を用いて<a class="general" href="https://w3c.github.io/wcag/techniques/general/G135">G135: Using the accessibility API features of a technology to expose names and notification
+                              下記の技術固有のテクニックを用いて<a class="general" href="https://w3c.github.io/wcag/techniques/general/G135">G135: Using the accessibility API features of a technology to expose names and notification
                                  of changes</a>:
                               									
                               
@@ -391,7 +386,7 @@
                            
                            <p>
                               										           
-                              下記の技術固有の達成方法を用いて、<a class="general" href="https://w3c.github.io/wcag/techniques/general/G10">G10: Creating components using a technology that supports the accessibility notification
+                              下記の技術固有のテクニックを用いて、<a class="general" href="https://w3c.github.io/wcag/techniques/general/G10">G10: Creating components using a technology that supports the accessibility notification
                                  of changes</a>:
                               									
                               
@@ -924,7 +919,7 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-web-page">ウェブページ (Web page)</dt>
+                  <dt id="dfn-web-page">ウェブページ (web page)</dt>
                   <dd>
                      <definition xmlns="">
                         
