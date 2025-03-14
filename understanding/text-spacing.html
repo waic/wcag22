@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  1.4.12: Text Spacing | WAI | W3C</title>
+      <title>解説書 達成基準  1.4.12: テキストの間隔 | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
       <!-- 日本語訳されるまでの一時的なスクリプト -->
@@ -11,8 +11,8 @@
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://waic.jp/translations/WCAG22/Understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -37,17 +37,17 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"><a href="distinguishable">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Distinguishable</a></li>
+                        </svg>ガイドライン: 判別可能</a></li>
                   <li class="nav__item"><a href="non-text-contrast">
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-left-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
-                        </svg>Previous SC: Non-text Contrast</a></li>
-                  <li class="nav__item"><a href="content-on-hover-or-focus">Next SC: Content on Hover or Focus
+                        </svg>前: 非テキストのコントラスト</a></li>
+                  <li class="nav__item"><a href="content-on-hover-or-focus">次: ホバー又はフォーカスで表示されるコンテンツ
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -58,194 +58,142 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#resources">Related Resources</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
-                     <li><a href="#key-terms">Key Terms</a></li>
-                     <li><a href="#test-rules">Test Rules</a></li>
+                     <li><a href="#brief">要約</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#benefits">利点</a></li>
+                     <li><a href="#examples">事例</a></li>
+                     <li><a href="#resources">関連リソース</a></li>
+                     <li><a href="#techniques">テクニック</a></li>
+                     <li><a href="#key-terms">重要な用語</a></li>
+                     <li><a href="#test-rules">テストルール</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				SC 1.4.12:</span>Text Spacing (Level AA)
+            <h1><span class="standalone-resource__type-of-guidance">解説書 
+                  				達成基準 1.4.12:</span>テキストの間隔 (レベル AA)
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>In content implemented using markup languages that support the following <a href="#dfn-text">text</a> 
-                     <a href="#dfn-style-property">style properties</a>, no loss of content or functionality occurs by setting all of the following and by
-                     changing no other style property:
+                  <p>以下の<a href="#dfn-text">テキスト</a><a href="#dfn-style-property">スタイルプロパティ</a>をサポートするマークアップ言語を用いて実装されているコンテンツにおいては、以下をすべて設定し、かつ他のスタイルプロパティを変更しないことによって、コンテンツ又は機能の損失が生じない:
                   </p>
                   <ul>
                      
-                     <li>Line height (line spacing) to at least 1.5 times the font size;</li>
+                     <li>行の間隔 (行送り) をフォントサイズの少なくとも 1.5 倍に設定する</li>
                      
-                     <li>Spacing following paragraphs to at least 2 times the font size;</li>
+                     <li>段落に続く間隔をフォントサイズの少なくとも 2 倍に設定する</li>
                      
-                     <li>Letter spacing (tracking) to at least 0.12 times the font size;</li>
+                     <li>文字の間隔 (字送り) をフォントサイズの少なくとも 0.12 倍に設定する</li>
                      
-                     <li>Word spacing to at least 0.16 times the font size.</li>
+                     <li>単語の間隔をフォントサイズの少なくとも 0.16 倍に設定する</li>
                      
                   </ul>
-                  <p>Exception: Human languages and scripts that do not make use of one or more of these
-                     text style properties in written text can conform using only the properties that exist
-                     for that combination of language and script.
+                  <p>例外: テキスト表記においてこれらのテキストスタイルプロパティの一つ以上を使用しない自然言語及び文字体系では、その言語と文字体系の組み合わせに存在するプロパティだけを用いて、この達成基準に適合することができる。
                   </p>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
-                     <p>Content is not required to use these text spacing values. The requirement is to ensure
-                        that when a user overrides the authored text spacing, content or functionality is
-                        not lost.
+                     <p class="note-title marker">注記</p>
+                     <p>コンテンツが、これらのテキストの間隔の値を用いる必要はない。要求事項は、制作者が指定したテキストの間隔を利用者が上書きした場合に、コンテンツ又は機能が失われないことである。
                      </p>
                   </div>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
-                     <p>Writing systems for some languages use different text spacing settings, such as paragraph
-                        start indent. Authors are encouraged to follow locally available guidance for improving
-                        readability and legibility of text in their writing system.
+                     <p class="note-title marker">注記</p>
+                     <p>言語の中には、書記体系において、例えば段落開始のインデントのように、異なるテキストの間隔の設定が用いられるものもある。コンテンツ制作者は、テキストの可読性及び視認性を向上させるために、その書記体系の、その地域に適用されるガイドラインに従うことが推奨される。
                      </p>
                   </div>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   				
-                  <dt>Goal</dt>
-                  <dd>Users can adjust text spacing to make it easier to read.</dd>
+                  <dt>目標</dt>
+                  <dd>読みやすくなるように利用者が文字間隔を調整できるようにする。</dd>
                   				
-                  <dt>Author task</dt>
-                  <dd>Ensure content adapts to user-defined text settings.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>利用者が定義したテキスト設定に、コンテンツが適応するようにする。</dd>
                   	         
-                  <dt>Why it's important</dt>
-                  <dd>Some people need text with different spacing or font characteristics.</dd>
+                  <dt>なぜそれが重要か</dt>
+                  <dd>間隔やフォント特性の異なるテキストを必要とする人がいる。</dd>
                   			
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The intent of this Success Criterion (SC) is to ensure that when people override author
-                  specified text spacing to improve their reading experience, content is still readable
-                  and operable. Each of the requirements stipulated in the SC's four bullets helps ensure
-                  text styling can be adapted by the user to suit their needs.
+               <h2>意図</h2>
+               <p>この達成基準の意図は、読書体験を向上させるために、コンテンツ制作者が指定したテキストの間隔を変更しても、コンテンツが読みやすく、操作しやすいことを保証することである。達成基準の四つの箇条書きで規定されている各要件は、利用者の自分のニーズに合わせてテキストのスタイルを適用できるようにするためのものである。
                </p>
-               <p>The specified metrics set a minimum baseline. The values in between the author's metrics
-                  and the metrics specified in this SC should not have loss of content or functionality.
+               <p>規定された指標は、最小のベースラインを設定する。コンテンツ制作者の指標とこの達成基準で規定された指標の間の値で、コンテンツ又は機能が失われるべきでない。
                </p>
-               <p>This SC focuses on the adaptability of content to an increase in spacing between lines,
-                  words, letters, and paragraphs. Any combination of these may assist a user with effectively
-                  reading text. As well, ensuring that content correctly adapts when users override
-                  author settings for spacing also significantly increases the likelihood other style
-                  preferences can be set by the user. For example, a user may need to change to a wider
-                  font family than the author has set in order to effectively read text. 
+               <p>この達成基準は、行、単語、文字及び段落間の間隔を広げることによるコンテンツの適応性に焦点を当てている。これらのすべての組み合わせによって、利用者がテキストを効率よく読むのに役立つことがある。また、利用者がコンテンツ制作者の間隔設定を上書きしたときにコンテンツが正しく適応するようにすることで、利用者が他のスタイルの設定を設定できる可能性も大幅に高まる。例えば、テキストを効果的に読むためには、利用者は、コンテンツ制作者が設定したものよりも幅の広いフォントファミリーに変更する必要があるかもしれない。
                </p>
                <section id="author-responsibility-">
                   
-                  <h3>Author Responsibility </h3>
+                  <h3>コンテンツ制作者の責任</h3>
                   
-                  <p>This SC does not dictate that authors must set all their content to the specified
-                     metrics, nor does the SC intend to imply that all users will adjust the specified
-                     metrics. Rather, it specifies that should a user choose to set any of these metrics
-                     they can do so without any loss of content or functionality. The author requirement
-                     is both to not interfere with a user's ability to override the author settings, and
-                     to ensure that content thus modified does not break content in the manners shown in
-                     figures 1 through 3 in Effects of Not Allowing for Spacing Override.
+                  <p>この達成基準は、コンテンツ制作者が全てのコンテンツを指定された指標に設定しなければならないことを指示するものではなく、又、全ての利用者が指定された指標に調整することを暗に示すものでもない。むしろ、利用者がこれらの指標のいずれかを設定することを選択した場合、コンテンツ又は機能を損なうことなく、そうすることができることを規定している。コンテンツ制作者の要件は、コンテンツ制作者の設定を利用者が上書きすることを妨げないことと、そのように変更されたコンテンツが、"間隔の上書きを許可しないことによる影響" の図 1～3 に示されている方法でコンテンツを壊させないようにすることの両方である。
                   </p>
                   
                   
-                  <p>In some human languages and scripts, some of the metrics specified by the SC are inapplicable.
-                     For example, languages such as Japanese do not use spacing following paragraphs, meaning
-                     that users are unlikely to make any paragraph spacing changes in practice. The exception
-                     in this SC allows authors to ignore text style properties which are inapplicable to
-                     the combination of language and script being used.
+                  <p>自然言語及び文字体系の中には、達成基準が規定する指標の一部が適用できないものがある。例えば、日本語のような言語は段落に続く間隔を用いないため、利用者が実際に段落の間隔を変更する可能性は低い。この達成基準の例外は、使用する言語及び文字体系の組み合わせに適用できないテキストのスタイルプロパティについては無視することをコンテンツ制作者に許容している。
                   </p>
                   
                   
-                  <p>It is beneficial for users if authors use any locally available guidance for improving
-                     readability in the local language or writing system. If the user chooses to go beyond
-                     the metrics specified, any resulting loss of content or functionality is the user's
-                     responsibility.
+                  <p>現地の言語又は文字体系の可読性の向上のために、利用可能なガイダンスをコンテンツ制作者が使用することは、利用者にとって有益である。利用者が規定された指標を超えることを選択した場合、結果として生じるコンテンツ又は機能の損失は利用者の責任である。
                   </p>
                   
                   
-                  <p>Further, this SC is not concerned with <em>how</em> users change the line height and spacing metrics. It does not require that content
-                     implement its own mechanisms to allow users to do this. It is not a failure of the
-                     content if a user agent or platform does not provide a way for users to do this. Content
-                     does not fail this SC if the method chosen by the user - for instance, the use of
-                     an extension or bookmarklet - fails to correctly set the line height and spacing text
-                     properties on the content (provided that the content is not actively and purposely
-                     preventing the properties from being added).
+                  <p>さらに、この達成基準は、利用者が行の高さ及び間隔の指標を変更する方法には関係ない。利用者がこれを実行できるようにするために、コンテンツが独自のメカニズムを実装する必要はない。ユーザエージェント又はプラットフォームが利用者にこれを実行する方法を提供していない場合でも、コンテンツの失敗ではない。利用者が選択した方法 (拡張機能、ブックマークレットの使用など) で、コンテンツの行の高及び間隔のテキストプロパティを正しく設定できない場合でも、コンテンツはこの達成基準に失敗しない (コンテンツがプロパティの追加を積極的かつ意図的に妨げていない場合)。
                   </p>
                   
                   <section id="applicability">
                      
-                     <h4>Applicability</h4>
+                     <h4>適用範囲</h4>
                      
-                     <p>If the markup-based technologies being used are capable of overriding text to the
-                        Success Criterion's metrics, then this SC is applicable. For instance Cascading Style
-                        Sheet/HTML technologies are quite able to allow for the specified spacing metrics.
-                        Plugin technologies would need to have a built-in ability to modify styles to the
-                        specified metrics. Currently, this SC does not apply to PDF as it is not implemented
-                        using markup.
+                     <p>使用されているマークアップベースの技術が、テキストをこの達成基準の指標で上書きできる場合、この達成基準は適用可能である。例えば、Cascading Style Sheet / HTML 技術は、規定された間隔の指標を許すことが十分に可能である。プラグイン技術には、スタイルを規定された指標に変更するための組み込み機能が必要である。現在のところ、PDF はマークアップを使用して実装されていないため、この達成基準は適用されない。
                      </p>
                      
-                     <p>Examples of text that are typically not affected by <a href="#dfn-style-property">style properties</a> and not expected to adapt are:
+                     <p><a href="#dfn-style-property">スタイルプロパティ</a>の影響を受けず、適応が見込まれないテキストの例は次の通りである:
                      </p>
                      
                      <ul>
                         
-                        <li>Video captions embedded directly into the video frames and not provided as an associated
-                           caption file
+                        <li>動画のフレームに直接埋め込まれ、関連付けられたキャプションファイルとしては提供されない、動画のキャプション
                         </li>
                         
-                        <li><a href="#dfn-image-of-text">Images of text</a></li>
+                        <li><a href="#dfn-image-of-text">文字画像</a></li>
                         
                      </ul>
                      
-                     <p>For this SC, <a href="https://html.spec.whatwg.org/multipage/canvas.html#the-canvas-element">canvas</a> implementations of text are considered to be <a href="#dfn-image-of-text">images of text</a>.
+                     <p>この達成基準では、<a href="https://html.spec.whatwg.org/multipage/canvas.html#the-canvas-element">canvas</a> でのテキストの実装は<a href="#dfn-image-of-text">文字画像</a>と見なされる。
                      </p>
                      	
                   </section>
                   
                   <section id="use-of-ellipses">
                      
-                     <h4>Use of ellipses</h4>
+                     <h4>省略記号の使用</h4>
                      
-                     <p>There may be regions of a page where text containers cannot expand due to design constraints
-                        (such as a maximum width for the left navigation or table column headers). A common
-                        convention if text exceeds its space is to replace truncated text with an ellipsis.
-                        Where ellipses appear as a result of modifying text style properties, the page can
-                        still meet the Text Spacing requirements, so long as the content is still available.
-                        For example:
+                     <p>デザイン上の制約 (左ナビゲーションやテーブルの列見出しの最大幅など) で、テキストコンテナを広げることができないページ領域があるかもしれない。テキストがその間隔を超えた場合の一般的な慣例は、切り詰められたテキストを省略記号で置き換えることである。テキストスタイルプロパティを変更した結果、省略記号が表示された場合でも、コンテンツが利用可能である限り、そのページはテキストの間隔の要件を満たすとすることができる。例えば:
                      </p>
                      
                      <ul>
                         
-                        <li>a mechanism is provided to reveal the truncated text on the page (for instance, the
-                           text appears on focus or on activation)
+                        <li>切り詰められたテキストを開示するメカニズムがページ上に用意されている (例えば、フォーカス時やアクティブ化されたときにテキストが表示される)。
                         </li>
                         
-                        <li>where the ellipsis is part of a section of 
-                           content which includes a link, the truncated text is revealed on the linked page
+                        <li>省略記号がリンクを含むコンテンツの一部である場合、切り詰められたテキストはリンク先のページで開示される。
                         </li>
                         
                      </ul>
                      
                      
-                     <p>Where text is not truncated but it is when text is spaced, if there is no mechanism
-                        to show the truncated text, it fails this Success Criterion.
+                     <p>テキストが切り詰められないところで、テキストが間隔をあけて表示されたときに、切り詰められたテキストを表示するメカニズムがない場合、この達成基準への失敗となる。
                      </p>
                      
                   </section>
@@ -253,53 +201,40 @@
                </section>
                <section id="user-responsibility">
                   
-                  <h3>User Responsibility</h3>
+                  <h3>利用者の責任</h3>
                   
-                  <p>The ability to read and derive meaning from the overridden spacing rests with the
-                     user. The user may choose to exceed the spacing adjustments in the SC. If the increased
-                     spacing causes loss of content or functionality, the user will adjust or return to
-                     the author’s original spacing or spacing within the bounds of the SC. Regardless,
-                     the user needs the flexibility to adjust spacing within the bounds set in the SC without
-                     loss of content or functionality. Such changes may be achieved via user stylesheet,
-                     bookmarklet, extension, or application.
+                  <p>上書きされた間隔から意味を読んで導き出す能力は利用者次第である。利用者は、達成基準の間隔調整を超えることを選択できる。間隔を広げるとコンテンツ又は機能が失われる場合、利用者はコンテンツ制作者の元の間隔又は達成基準の範囲内の間隔に調整する又は戻す。いずれにせよ、利用者は、コンテンツ又は機能を失うことなく、達成基準で設定された範囲内の間隔を調整する柔軟性を必要としている。そのような変更は、ユーザスタイルシート、ブックマークレット、拡張機能、又はアプリケーションを介して実現できる。
                   </p>
                   	
                </section>
                <section id="effects-of-not-allowing-for-spacing-override">
                   
-                  <h3>Effects of Not Allowing for Spacing Override</h3>
+                  <h3>間隔の上書きを許可しないことによる影響</h3>
                   
-                  <p>The following images show some types of  failures when authors do not take into consideration
-                     that users may override spacing to the metrics specified in this Success Criterion.
+                  <p>次の画像は、利用者がこの達成基準の指標に間隔を上書きする可能性を、コンテンツ制作者が考慮していない場合のいくつかの失敗を示している。
                   </p>
                   		
                   <section id="text-cut-off">
                      
-                     <h4>Text Cut Off</h4>
+                     <h4>切れているテキスト</h4>
                      
-                     <p>The bottom portion of the words "Your Needs" is cut off in a heading making that text
-                        unreadable in Figure 1. It should read  "We Provide a Mobile Application Service to
-                        Meet Your Needs."
+                     <p>図 1 では、見出しにある "Your Needs" という単語の下部が切り取られているため、そのテキストが判読できない。"We Provide a Mobile Application Service to Meet Your Needs." と読まれるべきである。
                      </p>
                      
                      <figure id="figure-text-cut">
                         
-                        <figcaption>Figure 1 Vertical text cut off is a failure.</figcaption>
-                        <img src="img/spacing_cutoff_fail_vertical.png" alt="Heading text truncated vertically." width="420" height="190" />         
+                        <figcaption>図 1 縦方向にテキストが切れている失敗</figcaption>
+                        <img src="img/spacing_cutoff_fail_vertical.png" alt="見出しテキストが縦方向に切れている。" width="420" height="190" />         
                         
                      </figure>
                      
-                     <p>In Figure 2 the last portion of text is cut off in 3 side-by-side  headings. The 1st
-                        heading should read "A cog in the wheel." But it reads "A cog in the whe". Only half
-                        of the second "e" is visible and the letter "l" is completely missing. The  2nd heading
-                        should read "A penny for your thoughts". But it reads "A penny for your". The 3rd
-                        should read "Back to the drawing board." But it reads "Back to the drawi". 
+                     <p>図 2 では、3 つの横に並んだ見出しにあるテキストの最後の部分が切り取られている。最初の見出しは "A cog in the wheel." と読まれるべきだが、"A cog in the whe" と読める。二つ目の "e" は半分しか表示されず、"l" という文字は完全に欠落している。2 番目の見出しは "A penny for your thoughts" と読まれるべきだが、"A penny for your" と読める。3 番目の見出しは "Back to the drawing board." と読まれるべきだが、"Back to the drawi" と読める。
                      </p>
                      
                      <figure id="figure-horiz-text-cut">
                         
-                        <figcaption>Figure 2 Horizontal text cut off is a failure.</figcaption>
-                        <img src="img/spacing_cutoff_fail_horizontal.png" alt="3 side-by-side headings with truncated text." width="509" height="184" />         
+                        <figcaption>図 2 横方向にテキストが切れている失敗</figcaption>
+                        <img src="img/spacing_cutoff_fail_horizontal.png" alt="3 つの横並びの見出しで、テキストが切れている。" width="509" height="184" />         
                         
                      </figure>
                      		
@@ -307,19 +242,15 @@
                   		
                   <section id="text-overlap">
                      
-                     <h4>Text Overlap</h4>
+                     <h4>重なっているテキスト</h4>
                      
-                     <p>In Figure 3 the last 3 words "Groups and Programs" of the heading "Technologists Seeking
-                        Input from Groups and Programs" overlap the following sentence. That sentence should
-                        read, "You are invited to share  ideas and areas of interest related to the  integration
-                        of technology from a group or program perspective." But the words "You are invited
-                        to share  ideas" are obscured and unreadable.
+                     <p>図 3 では、"Technologists Seeking Input from Groups and Programs" という見出しの最後の 3 つの単語 "Groups and Programs" が、次に続く文と重なっている。その文は、"You are invited to share ideas and areas of interest related to the integration of technology from a group or program perspective." と読まれるべきだが、"You are invited to share ideas" という言葉では不明瞭で判読できない。
                      </p>
                      
                      <figure id="figure-overlapping-text">
                         
-                        <figcaption>Figure 3 Overlapping text is a failure.</figcaption>
-                        <img src="img/spacing_overlap_fail.png" alt="Heading text overlaps part of paragraph text." width="510" height="170" />            
+                        <figcaption>図 3 テキストが重なっている失敗</figcaption>
+                        <img src="img/spacing_overlap_fail.png" alt="見出しテキストが段落テキストの一部と重なっている。" width="510" height="170" />            
                         
                      </figure>
                      		
@@ -328,52 +259,46 @@
                </section>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>利点</h2>
                <ul>
                   
-                  <li>People with low vision who require increased space between lines, words, and letters
-                     are able to read text.
+                  <li>行、単語、及び文字の間の間隔を広げる必要があるロービジョンの人が、テキストを読むことができるようになる。
                   </li>
                   
-                  <li>People with dyslexia may increase space between lines, words, and letters to increase
-                     reading speed.
+                  <li>失読症の人が読字速度を上げるために、行、単語、及び文字の間隔を広げることができるようになる。
                   </li>
                   
-                  <li>Although not required by this SC, white space between blocks of text can help people
-                     with cognitive disabilities discern sections and call out boxes.
+                  <li>この達成基準では必須ではないが、テキストのブロック間の余白は認知障害のある人がセクション及び吹き出しの囲みを見分けるのに役立つ。
                   </li>
                   
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
-               <p>When spacing is being overridden to the SC's metrics:</p>
+               <h2>事例</h2>
+               <p>間隔が達成基準の指標に上書きされた場合:</p>
                <ol>
                   
-                  <li>Text fits within the bounds of its containing box without being cut off.</li>
+                  <li>テキストは、切り取られることなく、そのテキストを包含するボックスの領域内に収まる。</li>
                   
-                  <li>Text fits within the bounds of its containing box without overlapping other boxes.</li>
+                  <li>テキストは、他のボックスと重なることなく、そのテキストを包含するボックスの領域内に収まる。</li>
                   
                </ol>
             </section>
             <section id="resources">
-               <h2>Related Resources</h2>
-               <p>Resources are for information purposes only, no endorsement implied.</p>
+               <h2>関連リソース</h2>
+               <p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p>
                <section id="research">
                   		
-                  <h3>Research</h3>
+                  <h3>研究</h3>
                   
-                  <p>The  grounds for this SC are <a href="#resources">based on research</a>. The metrics chosen as measures are based on the <a href="http://journals.sagepub.com/doi/pdf/10.1177/0264619607075995">McLeish</a> study. She ran from .04 to .25 em tests. McLeish found an increasing curve in reading
-                     speed of actual materials up to .25, but it  started to flatten at .20. Previous studies
-                     that reported no improvement started at .5em. Right at the flat point.  <a href="https://lists.w3.org/Archives/Public/public-low-vision-a11y-tf/2017Jun/0047.html">Wayne E. Dick, Ph.D. analyzed the McLeish study</a> and translated from points. Dr. Dick recommended the metrics that the Working Group
-                     adopted.
+                  <p>この達成基準の根拠は<a href="#resources">研究に基づいている</a>。基準値として選択された指標は、<a href="http://journals.sagepub.com/doi/pdf/10.1177/0264619607075995">McLeish</a> の研究に基づいている。McLeish は 0.04 em から 0.25 em までテストを行った。McLeish は 0.25 まで実際の資料の読書速度の増加する曲線を見つけたが、その曲線は 0.20 で平坦になり始めた。改善が報告されていない以前の調査では 0.5 em で始まった。まさに平らな点である。<a href="https://lists.w3.org/Archives/Public/public-low-vision-a11y-tf/2017Jun/0047.html">Wayne E. Dick 博士は McLeish の研究を分析</a>し、要点から翻訳した。Dick 博士は、ワーキンググループが採択した指標を推奨した。</p>
                   </p>
                   		
                   <section id="languages-and-scripts">
                      
-                     <h4>Languages and Scripts</h4>
+                     <h4>言語及び表記体系</h4>
                      
-                     <p>Roughly 480 different languages and scripts <a href="https://lists.w3.org/Archives/Public/public-low-vision-a11y-tf/2018Feb/0001.html">have been tested</a>.  Maximum spacing adjustments allowed by the SC were set on the following 3 pages:
+                     <p>およそ 480 の異なる言語及び表記体系が<a href="https://lists.w3.org/Archives/Public/public-low-vision-a11y-tf/2018Feb/0001.html">テストされている</a>。 達成基準によって許容されている最大間隔調整は、次の 3 ページに記載されている。
                      </p>
                      
                      <ol>
@@ -390,39 +315,33 @@
                   			
                   <section id="results">
                      
-                     <h4>Results</h4>
+                     <h4>結果</h4>
                      
-                     <p id="langimpact">No adverse effects occurred. The following are the specific findings:</p>
+                     <p id="langimpact">悪影響はなかった。具体的な調査結果は次のとおりである:</p>
                      
                      <dl>
                         
-                        <dt>Character Spacing </dt>
+                        <dt>文字の間隔</dt>
                         
-                        <dd>Individual characters in words remained intact though they were spaced a bit further
-                           apart.
+                        <dd>単語の個々の文字は少し離れているが、完全なまま残った。
                         </dd>
                         
-                        <dt>Word Spacing </dt>
+                        <dt>単語の間隔</dt>
                         
-                        <dd>Words were spaced farther apart. In languages that do not have words (e.g. Japanese)
-                           applying word spacing had no effect. This is expected.
+                        <dd>単語はもっと離れていた。word spacing が適用された単語を含まない言語 (例 : 日本語) では、単語の間隔を適用しても効果はなかった。予想通りである。
                         </dd>
                         
-                        <dt>Line Height</dt>
+                        <dt>行の高さ</dt>
                         
-                        <dd>Changing line height did not separate diacritics from characters, nor did it adversely
-                           impact ascenders or descenders.
+                        <dd>行の高さを変更しても、発音区別符号と文字が区別されなくなったり、アセンダ及びディセンダに悪影響が及すこともなかった。
                         </dd>
                         
                      </dl>
                      
-                     <p>As previously discussed, the ability to read text with adjusted spacing is a user
-                        responsibility. This is true no matter the language.        
+                     <p>前述したように、間隔を調整してテキストを読む能力は利用者の責任である。これは言語に関係なく当てはまる。
                      </p>
                      
-                     <p>The SC's exception addresses cases where a text style property is not used in a language
-                        or script. In such cases, authors are only required  to ensure  relevant  properties
-                        do not break the layout.
+                     <p>達成基準の例外は、テキストのスタイルプロパティが言語又は表記体系で使用されていない場合に対処する。そのような場合、コンテンツ制作者は関連プロパティがレイアウトを壊さないことを保証することだけが求められる。
                      </p>
                      			
                   </section>
@@ -430,7 +349,7 @@
                </section>
                <section id="other-references">
                   		
-                  <h3>Other references</h3>
+                  <h3>その他の参考文献</h3>
                   
                   <ul>
                      
@@ -468,14 +387,11 @@
                </section>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
+                  <h3>十分なテクニック</h3>
                   <ul>
                      
                      <li><a href="https://w3c.github.io/wcag/techniques/css/C36">C36: Allowing for text spacing override</a>
@@ -487,10 +403,8 @@
                   </ul>
                </section>
                <section id="advisory">
-                  <h3>Advisory Techniques</h3>
-                  <p>Although not required for conformance, the following additional techniques should
-                     be considered in order to make content more accessible. Not all techniques can be
-                     used or would be effective in all situations.
+                  <h3>参考テクニック</h3>
+                  <p>適合のために必須ではないが、コンテンツをよりアクセシブルにするために、次の追加のテクニックを検討することが望ましい。ただし、すべての状況において、すべてのテクニックが使用可能、又は効果的であるとは限らない。
                   </p>
                   <ul>
                      	
@@ -503,9 +417,8 @@
                   </ul>
                </section>
                <section id="failure">
-                  <h3>Failures</h3>
-                  <p>The following are common mistakes that are considered failures of this Success Criterion
-                     by the WCAG Working Group.
+                  <h3>失敗例</h3>
+                  <p>以下に挙げるものは、WCAG ワーキンググループが達成基準の失敗例とみなした、よくある間違いである。
                   </p>
                   <ul>
                      		
@@ -518,50 +431,37 @@
             <section id="key-terms">
                <details>
                   <summary>
-                     <h2>Key Terms</h2>
+                     <h2>重要な用語</h2>
                   </summary>
-                  <dt id="dfn-assistive-technology">assistive technology</dt>
+                  <dt id="dfn-assistive-technology">支援技術 (assistive technology)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">hardware and/or software that acts as a <a href="#dfn-user-agent">user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements
-                           of users with disabilities that go beyond those offered by mainstream user agents
+                        <p xmlns="http://www.w3.org/1999/xhtml">障害のある利用者の要件を満たすために、主流の<a href="#dfn-user-agent">ユーザエージェント</a>が提供する機能を超えた機能を提供するような、ユーザエージェントとして動作する、又は主流のユーザエージェントと共に動作するハードウェア及び／又はソフトウェア。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Functionality provided by assistive technology includes alternative presentations
-                              (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
-                              voice), additional navigation or orientation mechanisms, and content transformations
-                              (e.g., to make tables more accessible).
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術が提供する機能としては、代替の提示 (例: 合成音声や拡大表示したコンテンツ)、代替入力手法 (例: 音声認識)、付加的なナビゲーション又は位置確認のメカニズム、及びコンテンツ変換 (例: テーブルをよりアクセシブルにするもの) などを挙げることができる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Assistive technologies often communicate data and messages with mainstream user agents
-                              by using and monitoring APIs.
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術は、API を利用、監視することで、主流のユーザエージェントとデータやメッセージのやりとりをすることが多い。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The distinction between mainstream user agents and assistive technologies is not absolute.
-                              Many mainstream user agents provide some features to assist individuals with disabilities.
-                              The basic difference is that mainstream user agents target broad and diverse audiences
-                              that usually include people with and without disabilities. Assistive technologies
-                              target narrowly defined populations of users with specific disabilities. The assistance
-                              provided by an assistive technology is more specific and appropriate to the needs
-                              of its target users. The mainstream user agent may provide important functionality
-                              to assistive technologies like retrieving Web content from program objects or parsing
-                              markup into identifiable bundles.
+                           <p class="note-title marker">注記</p>
+                           <p>主流のユーザエージェントと支援技術との区別は、絶対的なものではない。多くの主流のユーザエージェントは、障害のある個人を支援する機能を提供している。基本的な差異は、主流のユーザエージェントが障害のある人もない人も含めて、広く多様な利用者を対象にしているのに対し、支援技術は、特定の障害のある利用者という、より狭く限られた人たちを対象にしているということである。支援技術により提供される支援は、対象とする利用者に特化した、よりニーズに適したものである。主流のユーザエージェントは、プログラムオブジェクトからのウェブコンテンツの抽出、マークアップの識別可能な構造への解釈といった、重要な機能を支援技術に対して提供する場合がある。
                               
                            </p>
                         </div>
@@ -569,8 +469,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Assistive technologies that are important in the context of this document include
-                              the following:
+                           <p>この文書の文脈において重要な支援技術としては、以下のものが挙げられる:
                               
                            </p>
                            
@@ -578,38 +477,30 @@
                            <ul>
                               
                               
-                              <li>screen magnifiers, and other visual reading assistants, which are used by people with
-                                 visual, perceptual and physical print disabilities to change text font, size, spacing,
-                                 color, synchronization with speech, etc. in order to improve the visual readability
-                                 of rendered text and images;
+                              <li>画面拡大ソフト及びその他の視覚的な表示に関する支援技術。視覚障害、知覚障害、及び読書困難などの障害のある人が、レンダリング後のテキスト及び画像の視覚的な読みやすさを改善するために、テキストのフォント、サイズ、間隔、色、音声との同期などを変更するのに使用している。
                                  
                               </li>
                               
                               
-                              <li>screen readers, which are used by people who are blind to read textual information
-                                 through synthesized speech or braille;
+                              <li>スクリーンリーダー。全盲の人がテキスト情報を合成音声あるいは点字で読み取るために使用している。
                                  
                               </li>
                               
                               
-                              <li>text-to-speech software, which is used by some people with cognitive, language, and
-                                 learning disabilities to convert text into synthetic speech;
+                              <li>音声変換ソフトウェア。認知障害、言語障害、及び学習障害のある人が、テキストを合成音声に変換するために使用している。
                                  
                               </li>
                               
                               
-                              <li>speech recognition software, which may be used by people who have some physical disabilities;</li>
+                              <li>音声認識ソフトウェア。何らかの身体障害のある利用者が使用することがある。</li>
                               
                               
-                              <li>alternative keyboards, which are used by people with certain physical disabilities
-                                 to simulate the keyboard (including alternate keyboards that use head pointers, single
-                                 switches, sip/puff and other special input devices.);
+                              <li>代替キーボード。特定の身体障害のある人がキーボード操作をシミュレートするのに使用している (ヘッドポインタ、シングルスイッチ、呼気・吸気スイッチ、及びその他の特別な入力デバイスを使った代替キーボードを含む)。
                                  
                               </li>
                               
                               
-                              <li>alternative pointing devices, which are used by people with certain physical disabilities
-                                 to simulate mouse pointing and button activations.
+                              <li>代替ポインティングデバイス。特定の身体障害のある人がマウスポインタとボタンの動きをシミュレートするのに使用している。
                                  
                               </li>
                               
@@ -620,20 +511,19 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-human-language">human language</dt>
+                  <dt id="dfn-human-language">自然言語 (human language)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">language that is spoken, written or signed (through visual or tactile means) to communicate
-                           with humans
+                        <p xmlns="http://www.w3.org/1999/xhtml">人間とコミュニケーションをとるために話される、書かれる、又は (視覚的もしくは触覚的な手段で) 手話にされる言語。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>See also <a href="#dfn-sign-language">sign language</a>.
+                           <p class="note-title marker">注記</p>
+                           <p><a href="#dfn-sign-language">手話</a>も参照。</a>.
                               
                            </p>
                         </div>
@@ -641,20 +531,19 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-image-of-text">image of text</dt>
+                  <dt id="dfn-image-of-text">文字画像 (image of text)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">text that has been rendered in a non-text form (e.g., an image) in order to achieve
-                           a particular visual effect
+                        <p xmlns="http://www.w3.org/1999/xhtml">特定の視覚的効果を得るために非テキスト形式 (例えば画像) でレンダリングされたテキスト。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>This does not include <a href="#dfn-text">text</a> that is part of a picture that contains significant other visual content.
+                           <p class="note-title marker">注記</p>
+                           <p><a href="#dfn-text">テキスト</a>以外の部分が重要な視覚的コンテンツである場合、画像に含まれるテキストは該当しない。
                               
                            </p>
                         </div>
@@ -662,28 +551,25 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A person's name on a nametag in a photograph.</p>
+                           <p>写真に写っている人の名札にある人名。</p>
                            
                         </aside>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-programmatically-determined">programmatically determined</dt>
+                  <dt id="dfn-programmatically-determined">プログラムによる解釈 (programmatically determined)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">determined by software from author-supplied data provided in a way that different
-                           <a href="#dfn-user-agent">user agents</a>, including <a href="#dfn-assistive-technology">assistive technologies</a>, can extract and present this information to users in different modalities
-                           
+                        <p xmlns="http://www.w3.org/1999/xhtml"><a href="#dfn-assistive-technology">支援技術</a>を含む様々な<a href="#dfn-user-agent">ユーザエージェント</a>が抽出でき、利用者に様々な感覚モダリティで提示できるような形のデータがコンテンツ制作者によって提供されたとき、そのデータがソフトウェアによって解釈されること。
                         </p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Determined in a markup language from elements and attributes that are accessed directly
-                              by commonly available assistive technology.
+                           <p>マークアップ言語で、一般に入手可能な支援技術が直接アクセスできる要素と属性から解釈される。
                               
                            </p>
                            
@@ -692,9 +578,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Determined from technology-specific data structures in a non-markup language and exposed
-                              to assistive technology via an accessibility API that is supported by commonly available
-                              assistive technology.
+                           <p>非マークアップ言語の技術特有のデータ構造から解釈され、一般に入手可能な支援技術がサポートするアクセシビリティ API を通じて支援技術に提供される。
                               
                            </p>
                            
@@ -703,74 +587,65 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-sign-language">sign language</dt>
+                  <dt id="dfn-sign-language">手話 (sign language)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">a language using combinations of movements of the hands and arms, facial expressions,
-                           or body positions to convey meaning
+                        <p xmlns="http://www.w3.org/1999/xhtml">意味を伝えるために、手と腕の動き、顔の表情又は身体の姿勢の組み合わせを用いる言語。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-style-property">style property</dt>
+                  <dt id="dfn-style-property">スタイルプロパティ (style properties)</dt>
                   <dd>
                      <definition xmlns="">
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">property whose value determines the presentation (e.g. font, color, size, location,
-                           padding, volume, synthesized speech prosody) of
-                           content elements as they are rendered (e.g. onscreen, via loudspeaker, via braille
-                           display) by user agents
+                        <p xmlns="http://www.w3.org/1999/xhtml">ユーザエージェントによってコンテンツ要素が (画面、音声スピーカー、点字ディスプレイなどを介して) レンダリングされるとき、その値の提示 (フォント、色、サイズ、位置、パディング、音量、合成音声の韻律など) を定義するプロパティ。
                         </p>
                         	       
-                        <p xmlns="http://www.w3.org/1999/xhtml">Style properties can have several origins:</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">スタイルプロパティには、オリジンがいくつか考えられる。</p>
                         
                         <ul xmlns="http://www.w3.org/1999/xhtml">
                            
-                           <li>User agent default styles: The default style property values applied in the absence
-                              of any author or user styles. Some web content technologies specify a default rendering,
-                              others do not;
+                           <li>ユーザエージェントのデフォルトのスタイル: コンテンツ制作者又は利用者のスタイルがない場合は、ユーザエージェントのデフォルトのスタイルプロパティが適用される。ウェブコンテンツ技術には、デフォルトのレンダリングを規定しているものと、規定していないものがある。
                            </li>
                            
-                           <li>Author styles: Style property values that are set by the author as part of the content
-                              (e.g. in-line styles, author style
-                              sheets);
+                           <li>コンテンツ制作者のスタイル: コンテンツ制作者がコンテンツの一部として設定するスタイルプロパティの値 (インラインスタイル、コンテンツ制作者のスタイルシートなど)。
                            </li>
                            
-                           <li>User styles: Style property values that are set by the user (e.g. via user agent interface
-                              settings, user style sheets)
+                           <li>利用者のスタイル: 利用者が設定するスタイルプロパティの値 (ユーザエージェントのインタフェース設定、ユーザスタイルシートなど)。
                            </li>
                            
                         </ul>
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-text">text</dt>
+                  <dt id="dfn-text">テキスト (text)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">sequence of characters that can be <a href="#dfn-programmatically-determined">programmatically determined</a>, where the sequence is expressing something in <a href="#dfn-human-language">human language</a>
+                        <p xmlns="http://www.w3.org/1999/xhtml">プログラムによる解釈</a>が可能な文字の並びで、<a href="#dfn-human-language">自然言語</a>で何かを表現しているもの。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-user-agent">user agent</dt>
+                  <dt id="dfn-user-agent">ユーザエージェント (user agent)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">any software that retrieves and presents Web content for users</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ウェブコンテンツを取得して利用者に提示するあらゆるソフトウェア。</p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technology">assistive technologies</a> — that help in retrieving, rendering, and interacting with Web content.
+                           <p>ウェブコンテンツの取得、レンダリング及びインタラクションを支援する、ウェブブラウザ、メディアプレーヤ、プラグイン、及びその他のプログラム (<a href="#dfn-assistive-technology">支援技術</a>も含む)。
                               
                            </p>
                            
@@ -782,16 +657,13 @@
                </details>
             </section>
             <section id="test-rules">
-               <h2>Test Rules</h2>
-               <p>The following are Test Rules for certain aspects of this Success Criterion. It is
-                  not necessary to use these particular Test Rules to check for conformance with WCAG,
-                  but they are defined and approved test methods. For information on using Test Rules,
-                  see <a href="understanding-act-rules.html">Understanding Test Rules for WCAG Success Criteria</a>.
+               <h2>テストルール</h2>
+               <p>以下は、この達成基準の特定の側面に関するテストルールである。この特定のルールを使用して WCAG に適合しているかどうかを確認する必要はないが、これらのルールは定義され、承認されたテスト方法である。テストルールの使用については、<a href="understanding-act-rules.html">WCAG 達成基準のテストルールを理解する</a>を参照のこと。
                </p>
                <ul>
-                  <li><a href="/WAI/standards-guidelines/act/rules/24afc2/">Important letter spacing in style attributes is wide enough</a></li>
-                  <li><a href="/WAI/standards-guidelines/act/rules/78fd32/">Important line height in style attributes is wide enough</a></li>
-                  <li><a href="/WAI/standards-guidelines/act/rules/9e45ec/">Important word spacing in style attributes is wide enough</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/">Important letter spacing in style attributes is wide enough</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/78fd32/">Important line height in style attributes is wide enough</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/">Important word spacing in style attributes is wide enough</a></li>
                </ul>
             </section><a class="button button-backtotop" href="#top"><span>
                   <svg focusable="false" aria-hidden="true" class="icon-arrow-up " viewBox="0 0 26 28">
@@ -803,13 +675,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -824,11 +695,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -850,13 +723,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -865,7 +738,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -886,8 +759,10 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+    <!--noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-      </noscript>
+      </noscript-->
    </body>
 </html>
