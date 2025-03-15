@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  1.4.13: Content on Hover or Focus | WAI | W3C</title>
+      <title>解説書 達成基準  1.4.13: ホバー又はフォーカスで表示されるコンテンツ | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
-      <!-- 日本語訳されるまでの一時的なスクリプト -->
-      <script src="untranslated-note.js"></script>
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://waic.jp/translations/WCAG22/Understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -37,16 +35,16 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"><a href="distinguishable">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Distinguishable</a></li>
+                        </svg>ガイドライン: 判別可能</a></li>
                   <li class="nav__item"><a href="text-spacing">
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-left-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
-                        </svg>Previous SC: Text Spacing</a></li>
+                        </svg>前: テキストの間隔</a></li>
                   <li class="nav__item"></li>
                </ul>
             </nav>
@@ -55,232 +53,183 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#resources">Related Resources</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
-                     <li><a href="#key-terms">Key Terms</a></li>
+                     <li><a href="#brief">要約</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#benefits">利点</a></li>
+                     <li><a href="#examples">事例</a></li>
+                     <li><a href="#resources">関連リソース</a></li>
+                     <li><a href="#techniques">テクニック</a></li>
+                     <li><a href="#key-terms">重要な用語</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				SC 1.4.13:</span>Content on Hover or Focus (Level AA)
+            <h1><span class="standalone-resource__type-of-guidance">解説書
+                  				達成基準 1.4.13:</span>ホバー又はフォーカスで表示されるコンテンツ (レベル AA)
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>Where receiving and then removing pointer hover or keyboard focus triggers additional
-                     content to become visible and then hidden, the following are true:
+                  <p>ポインタホバー又はキーボードフォーカスを受け取ってから外すことで、追加コンテンツを表示させてから非表示にさせる場合は、以下の要件を全て満たす:
                   </p>
                   <dl>
                      
                      
-                     <dt>Dismissible</dt>
+                     <dt>非表示にすることができる</dt>
                      
-                     <dd>A <a href="#dfn-mechanism">mechanism</a> is available to dismiss the additional content without moving pointer hover or keyboard
-                        focus, unless the additional content communicates an <a href="#dfn-input-error">input error</a> or does not obscure or replace other content;
+                     <dd>ポインタホバー又はキーボードフォーカスを動かさずに追加コンテンツを非表示にするA <a href="#dfn-mechanism">メカニズム</a>が存在する。ただし、追加コンテンツが<a href="#dfn-input-error">入力エラー</a>を伝える場合や、他のコンテンツを不明瞭にしたり置き換えたりしない場合は除く。ポインタホバー又はキーボードフォーカスを動かさずに追加コンテンツを非表示にするメカニズムが存在する。ただし、追加コンテンツが入力エラーを伝える場合や、他のコンテンツを不明瞭にしたり置き換えたりしない場合は除く。
                      </dd>
                      
                      
-                     <dt>Hoverable</dt>
+                     <dt>ホバーすることができる</dt>
                      
-                     <dd>If pointer hover can trigger the additional content, then the pointer can be moved
-                        over the additional content without the additional content disappearing;
+                     <dd>ポインタホバーによって追加コンテンツを表示させることができる場合、その追加コンテンツを消すことなく、ポインタを追加コンテンツ上で動かすことができる。
                      </dd>
                      
                      
-                     <dt>Persistent</dt>
+                     <dt>表示が継続される</dt>
                      
-                     <dd>The additional content remains visible until the hover or focus trigger is removed,
-                        the user dismisses it, or its information is no longer valid.
+                     <dd>ホバーやフォーカスが解除される、利用者が非表示にする、又はその情報が有効でなくなるまでは、追加コンテンツが表示され続ける。
                      </dd>
                      
                      
                   </dl>
-                  <p>Exception: The visual presentation of the additional content is controlled by the
-                     user agent and is not modified by the author.
+                  <p>例外: 追加コンテンツの視覚的提示がユーザエージェントによって制御されていて、かつコンテンツ制作者が変更していない場合は例外とする。
                   </p>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
-                     <p>Examples of additional content controlled by the user agent include browser tooltips
-                        created through use of the HTML <a href="https://html.spec.whatwg.org/multipage/dom.html#the-title-attribute">
-                           <code>title</code> attribute</a> [[HTML]].
+                     <p class="note-title marker">注記</p>
+                     <p>ユーザエージェントによって制御されている追加コンテンツの例としては、HTML の <a href="https://html.spec.whatwg.org/multipage/dom.html#the-title-attribute"><code>title</code> 属性</a> [HTML] を用いて作られているブラウザのツールチップが挙げられる。
                      </p>
                   </div>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
-                     <p>Custom tooltips, sub-menus, and other nonmodal popups that display on hover and focus
-                        are examples of additional content covered by this criterion.
+                     <p class="note-title marker">注記</p>
+                     <p>ホバー時やフォーカス時に表示されるカスタムツールチップ、サブメニュー、他の非モーダルポップアップは、この達成基準の適用対象となる「追加コンテンツ」の例である。
                      </p>
                   </div>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
-                     <p>This criterion applies to content that appears in addition to the triggering component
-                        itself. Since hidden components that are made visible on keyboard focus (such as links
-                        used to skip to another part of a page) do not present additional content they are
-                        not covered by this criterion.
+                     <p class="note-title marker">注記</p>
+                     <p>この達成基準は、トリガーとなるコンポーネント自体に追加で表示されるコンテンツに対して適用される。キーボードフォーカスによって可視化される非表示のコンポーネント (例えば、ページの別の部分にスキップするためのリンク) は追加コンテンツを提示しないため、この達成基準の適用対象外である。
                      </p>
                   </div>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   				
-                  <dt>Goal</dt>
-                  <dd>More users can perceive and dismiss non-persistent content.</dd>
+                  <dt>目標</dt>
+                  <dd>より多くの利用者が、非永続的なコンテンツを知覚し、非表示にできるようにする。</dd>
                   				
-                  <dt>What to do</dt>
-                  <dd>If hover or focus causes content changes, ensure interaction is predictable.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>ホバー又はフォーカスによってコンテンツが変化する場合、インタラクションを確実に予測可能にする。</dd>
                   				
-                  <dt>Why it's important</dt>
-                  <dd>Unpredictable temporary content can be hard for some to consume and may disrupt others.</dd>
+                  <dt>なぜそれが重要か</dt>
+                  <dd>予測不可能な一時的なコンテンツは、ある人にとっては利用しづらく、他の人にとっては混乱を招く可能性がある。</dd>
                   			
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>Additional content that appears and disappears in coordination with keyboard focus
-                  or pointer hover often leads to accessibility issues. Reasons for such issues include:
+               <h2>意図</h2>
+               <p>キーボードフォーカス又はポインタホバーと連動して現れたり消えたりする追加のコンテンツはしばしばアクセシビリティの問題へ発展することがある。そのような問題の理由には以下が含まれる:
                </p>
                <ol>
                   			
-                  <li>the user may not have intended to trigger the interaction</li>
+                  <li>利用者はインタラクションを引き起こすことを目的としていなかった可能性がある</li>
                   			
-                  <li>the user may not know new content has appeared</li>
+                  <li>利用者は新しいコンテンツが現れたことに気づかない可能性がある</li>
                   			
-                  <li>the new content may intefere with a user's ability to do a task</li>
+                  <li>新しいコンテンツは利用者のタスクを実行する能力を妨げる可能性がある</li>
                   		
                </ol>
-               <p>Examples of such interactions can include custom tooltips, sub-menus and other nonmodal
-                  popups which display on hover and focus. The intent of this success criterion is to
-                  ensure that authors who cause additional content to appear and disappear in this manner
-                  must design the interaction in such a way that users can:
+               <p>そのようなインタラクションの例には、ホバー及びフォーカスで表示されるカスタムツールチップ、サブメニュー及びその他の非モーダルポップアップが含まれる。この達成基準の意図は、追加のコンテンツをこのように表示及び非表示にするコンテンツ制作者が、以下を利用できるような方法で利用者がインタラクションを設計しなければならないことを保証することである:
                </p>
                <ul>
                   					
-                  <li>perceive the additional content AND</li>
+                  <li>追加のコンテンツを知覚できる、及び</li>
                   					
-                  <li>dismiss it without disrupting their page experience.</li>
+                  <li>ページ体験を損なうことなく非表示にすることができる。</li>
                   				
                </ul>
-               <p>There are usually more predictable and accessible means of adding content to the page,
-                  which authors are recommended to employ. If an author <em>does</em> choose to make additional content appear and disappear in coordination with hover
-                  and keyboard focus, this success criterion specifies three conditions that must be
-                  met:
+               <p>大抵はより予測可能かつアクセシブルな、ページにコンテンツを追加する方法があり、コンテンツ制作者はその方法を使用することを推奨する。コンテンツ制作者が追加のコンテンツをホバー及びキーボードフォーカスと連携して表示及び非表示にすることを選んだ場合、この達成基準は満たさなければならない三つの条件を指定する:
                </p>
                <ul>
                   					
-                  <li>dismissable</li>
+                  <li>非表示にすることができる</li>
                   					
-                  <li>hoverable</li>
+                  <li>ホバーすることができる</li>
                   					
-                  <li>persistent</li>
+                  <li>表示が継続される</li>
                   				
                </ul>
-               <p>Each of these is discussed in a separate section.</p>
+               <p>それぞれは個別の節で議論されている。</p>
                <section id="dismissable">
                   			
-                  <h3>Dismissable</h3>
+                  <h3>非表示にすることができる</h3>
                   			
-                  <p>The intent of this condition is to ensure that the additional content does not interfere
-                     with viewing or operating the page's original content. When magnified, the portion
-                     of the page visible in the viewport can be significantly reduced. Mouse users frequently
-                     move the pointer to pan the magnified viewport and display another portion of the
-                     screen. However, almost the entire portion of the page visible in this restricted
-                     viewport may trigger the additional content, making it difficult for a user to pan
-                     without re-triggering the content. A keyboard means of dismissing the additional content
-                     provides a workaround.
+                  <p>この条件の意図は、追加のコンテンツがページの元のコンテンツを確認する又は操作することを妨げないようにすることである。拡大時、ビューポート内で表示されるページの部分はかなり縮小する。マウスの利用者は、拡大したビューポートをパンして画面の他の部分を表示するために、頻繁にポインタを動かす。しかし、この限られたビューポートで表示されるページのほぼ全域が追加のコンテンツをトリガーするかもしれず、利用者がコンテンツを再トリガーせずにパンすることを困難にする。キーボードで追加コンテンツを非表示にする方法は、回避方法を提供する。
                   </p>
                   			
-                  <p>Alternatively, low vision users who can only navigate via the keyboard do not want
-                     the small area of their magnified viewport cluttered with hover text. They need a
-                     keyboard method of dismissing something that is obscuring the current focal area.
+                  <p>代わりに、キーボードを用いてのみナビゲートするロービジョンの利用者は、拡大されたビューポートの小さい領域がホバーテキストで雑然としてほしくない。彼らは現在のフォーカスが当たっている領域を覆い隠すものをキーボードで非表示にする方法が必要である。
                   </p>
                   		
-                  <p>Two methods may be used to satisfy this condition and prevent such interference:</p>
+                  <p>この条件を満たし、このような干渉を防ぐために、二つの方法が使用できる:</p>
                   			
                   <ol>
                      			
-                     <li>Position the additional content so that it does not obscure any other content including
-                        the trigger, with the exception of white space and purely decorative content, such
-                        as a background graphic which provides no information.
+                     <li>余白及び情報を提供しない背景画像などの純粋な装飾コンテンツを除き、トリガーを含む他のあらゆるコンテンツを隠さないよう追加のコンテンツを配置する。
                      </li>
                      			
-                     <li>Provide a mechanism to easily dismiss the additional content, such as by pressing
-                        Escape.
+                     <li>Esc キーを押すなど、追加のコンテンツを容易に非表示にするメカニズムを提供する。
                      </li>
                      			
                   </ol>
                   			
-                  <p>For most triggers of relatively small size, it is desirable for both methods to be
-                     implemented.  If the trigger is large, noticing the additional content may be of concern
-                     if it appears away from the trigger.  In those cases, only the second method may be
-                     appropriate.
+                  <p>ほとんどの比較的小さいサイズのトリガーには、両方の方法が実装されることが望ましい。トリガーが大きい場合、追加コンテンツがトリガーより遠くに現れると、気づくことが難しいかもしれない。そのような場合は、二つ目の方法のみが適切かもしれない。
+
+
                   </p>
                   			
-                  <p>The success criterion allows for input error messages to persist as there are cases
-                     that require attention, explicit confirmation or remedial action.
+                  <p>注目、明示的な確認、又は是正措置が必要な場合があるため、達成基準により、入力エラーメッセージを持続させることができる。
                   </p>
                   			
                </section>
                <section id="hoverable">
                   			
-                  <h3>Hoverable</h3>
+                  <h3>ホバーすることができる</h3>
                   			
-                  <p>The intent of this condition is to ensure that additional content which may appear
-                     on hover of a target may also be hovered itself.  Content which appears on hover can
-                     be difficult or impossible to perceive if a user is required to keep their mouse pointer
-                     over the trigger. When the added content is large, magnified views may mean that the
-                     user needs to scroll or pan to completely view it, which is impossible unless the
-                     user is able to move their pointer off the trigger without the additional content
-                     disappearing.
+                  <p>この条件の意図は、ターゲットにホバーすることで現れるかもしれない追加のコンテンツがそれ自身にもホバーできるように保証することである。ホバーで現れるコンテンツは、利用者がマウスポインタをトリガーの上に固定することを求められた場合、知覚するのが難しい又は不可能な可能性がある。追加されたコンテンツが大きい場合、拡大されたビューは、利用者がそのコンテンツを完全に表示するためにスクロール又はパンする必要があることを意味し、これは、追加コンテンツが消えないように利用者がトリガーからポインタを移動できない限り不可能である。
                   </p>
                   			
-                  <p>Another common situation is when large pointers have been selected via platform settings
-                     or assistive technology. Here, the pointer can obscure a significant area of the additional
-                     content. A technique to view the content fully in both situations is to move the mouse
-                     pointer directly from the trigger onto the new content.  This capability also offers
-                     significant advantages for users who utilize screen reader feedback on mouse interactions.
-                     This condition generally implies that the additional content overlaps or is positioned
-                     adjacent to the target.
+                  <p>もう一つの一般的な状況は、大きいポインタがプラットフォームの設定又は支援技術により選択されていた場合である。ここでは、ポインタが追加コンテンツの重要な領域を隠してしまう可能性がある。両方の状況でコンテンツを完全に見る方法は、マウスポインタをトリガーから新しいコンテンツに直接移動させることである。この機能はまた、マウスとのインタラクションのフィードバックにスクリーンリーダーを使用する利用者に重要な利点を提供する。この条件は、ほとんどの場合、追加コンテンツがターゲットに重なる又はそれが隣接して配置されていることを暗示する。
+
+
                   </p>
                   			
                </section>
                <section id="persistent">
                   			
-                  <h3>Persistent</h3>
+                  <h3>表示が継続される</h3>
                   			
-                  <p>The intent of this condition is to ensure users have adequate time to perceive the
-                     additional content after it becomes visible.  Users with disabilities may require
-                     more time for many reasons, such as to change magnification, move the pointer, or
-                     simply to bring the new content into their visual field.  Once it appears, the content
-                     should remain visible until:
+                  <p>この条件の意図は、利用者に追加コンテンツが可視になった後、知覚するための十分な時間があるようにすることである。障害のある利用者は拡大率を変更する、ポインタを動かす、又は可視領域に新しいコンテンツを持ってくるなどの様々な理由により、より多くの時間が必要かもしれない。一度現れたら、次のことをする時までコンテンツは可視のままにするべきである:
+
+
                   </p>
                   			
                   <ul>
                      			
-                     <li>The user removes hover or focus from the trigger and the additional content, consistent
-                        with the typical user experience;
+                     <li>利用者が、典型的なユーザ体験と一致して、トリガー及び追加コンテンツからホバー又はフォーカスを取り除く。
                      </li>
                      			
-                     <li>The user dismisses the additional content via the mechanism provided to satisfy the
-                        Dismissable condition; or
+                     <li>利用者が非表示にすることができる条件を満たすために提供されたメカニズムを通して追加コンテンツを非表示にする。又は、
                      </li>
                      			
-                     <li>The information conveyed by the additional content becomes invalid, such as a 'busy'
-                        message that is no longer valid.
+                     <li>もはや有効ではない「使用中」メッセージなど、追加コンテンツにより伝えられた情報が無効になる。
                      </li>
                      			
                   </ul>
@@ -288,21 +237,17 @@
                </section>
                <section id="additional-notes">
                   			
-                  <h3>Additional Notes</h3>
+                  <h3>追加の注記</h3>
                   			
                   <ul>
                      			
-                     <li>This criterion does not attempt to solve such issues when the appearance of the additional
-                        content is completely controlled by the user agent. A prominent example is the common
-                        behavior of browsers to display the <code>title</code>  attribute in HTML as a small tooltip.
+                     <li>この基準は、追加コンテンツの見た目が完全にユーザエージェントにより制御されている時に、このような問題を解決することに努めていない。顕著な例は、HTML の <code>title</code> 属性を小さなツールチップとして表示するブラウザの一般的な挙動である。
                      </li>
                      			
-                     <li>Modal dialogs are out of scope for this criterion because they must take keyboard
-                        focus  and thus should not appear on hover or focus.  Refer to <a href="https://www.w3.org/TR/WCAG21/#on-focus">Success Criterion 3.2.1, On Focus</a>.
+                     <li>モーダルダイアログはキーボードフォーカスを受け取らなければならないため、ホバー又はフォーカスで現れるべきではなく、この基準のスコープ外である。 <a href="https://waic.jp/translations/WCAG22/#on-focus">達成基準 3.2.1 フォーカス時</a>を参照すること。
                      </li>
                      			
-                     <li>Content which can be triggered via pointer hover should also be able to be triggered
-                        by keyboard focus.  Refer to <a href="https://www.w3.org/TR/WCAG21/#keyboard">Success Criterion 2.1.1, Keyboard</a>.
+                     <li>ポインタホバーを通して動作できるコンテンツはキーボードフォーカスでも動作できるべきである。<a href="https://waic.jp/translations/WCAG22/#keyboard">達成基準 2.1.1 キーボード</a>を参照すること。
                      </li>
                      			
                   </ul>
@@ -310,53 +255,42 @@
                </section>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>利点</h2>
                <ul>
                   			
-                  <li>Users with low vision who view content under magnification will be better able to
-                     view content on hover or focus without reducing their desired magnification.
+                  <li>拡大してコンテンツを見ているロービジョンの利用者は、望ましい倍率を減らさなくてもより上手くホバー又はフォーカスしたコンテンツを見ることができるようになる。
                   </li>
                   			
-                  <li>Users who increase the size of mouse cursors via platform settings or assistive technology
-                     will be able to employ a technique to view obscured content on hover.
+                  <li>プラットフォームの設定又は支援技術を通してマウスカーソルのサイズを大きくしている利用者は、ホバー時に隠されたコンテンツを見る方法を使用できるようになる。
                   </li>
                   			
-                  <li>Users with low vision or cognitive disabilities will have adequate time to perceive
-                     additional content appearing on hover or focus and to view the trigger content with
-                     less distraction.
+                  <li>ロービジョン又は認知障害のある利用者はホバー又はフォーカスで現れる追加コンテンツを知覚し、かつトリガーコンテンツを気を散らすことなく見るための十分な時間を持てるようになる。
                   </li>
                   			
-                  <li>users with low pointer accuracy will be able to more easily dismiss unintentionally-triggered
-                     additional content
+                  <li>ポインタの正確さが低い利用者は、より簡単に意図せず動作させた追加コンテンツを非表示にできるようになる。
                   </li>
                   			
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>事例</h2>
                <section class="example" id="example-1-dismissable-tooltip">
                   				
-                  <h3>Example 1: Dismissable Tooltip</h3>
+                  <h3>事例 1: 非表示にすることができるツールチップ</h3>
                   				
                   <figure id="figure-mouse-tooltip-below">
-                     				<img src="img/button-pointer-tooltip.png" alt="Screenshot of a button with a mouse pointer over it, and a tooltip displayed  below the button" />
-                     				<img src="img/button-pointer.png" alt="Screenshot of a button with a mouse pointer over it, and no tooltip" />
+                     				<img src="img/button-pointer-tooltip.png" alt="ボタンの下にツールチップが表示されている、マウスポインタが上にのっているボタンのスクリーンショット" />
+                     				<img src="img/button-pointer.png" alt="ツールチップがなく、マウスポインタが上にのっているボタンのスクリーンショット" />
                      				
-                     <figcaption>Figure 1 A tooltip is displayed below a LVTF button on hover so as not to obscure the button
-                        itself. It does however obscure content below the button (the next red button, called
-                        ~comment-zoom-content). To meet the Dismissible requirement, a user can press the
-                        Escape key to clear the tooltip without moving the mouse, as demonstrated in the second
-                        image.
+                     <figcaption>図 1 ボタンそのものを覆い隠さないように、ホバーしている LVTF ボタンの下にツールチップが表示されている。それはしかし、ボタンの下にあるコンテンツを覆い隠している (~comment-zoom-content と呼ばれている次の赤いボタン)。非表示にすることができる必須条件を満たすため、二つ目の画像で示している通り、利用者は Esc キーを押してマウスを動かさずにツールチップを消去できる。
                      </figcaption>
                      				
                   </figure>
                   				
                   <figure id="figure-focused-button-no-tooltip">
-                     				<img src="img/button-focus-indicator.png" alt="Screenshot of a button with a focus indicator on it, and no tooltip" />
+                     				<img src="img/button-focus-indicator.png" alt="ツールチップがなく、フォーカスインジケータがあるボタンのスクリーンショット" />
                      				
-                     <figcaption>Figure 2 The button's tooltip also appears on focus and can be removed with the Escape key.
-                        The screen shot shows the same LVTF button with focus, but the tooltip has been dismissed
-                        and is no longer visible.
+                     <figcaption>図 2 ボタンのツールチップはフォーカス時にも現れ、Esc キーで取り除くことができる。スクリーンショットは同じ LVTF ボタンのフォーカス時を表しているが、ツールチップは非表示にされ、すでに可視ではない。
                      </figcaption>
                      				
                   </figure>
@@ -364,15 +298,13 @@
                </section>
                <section class="example" id="example-2-hoverable-tooltip">
                   				
-                  <h3>Example 2: Hoverable Tooltip</h3>
+                  <h3>事例 2: ホバーすることができるツールチップ</h3>
                   				
                   <figure id="figure-large-pointer-tooltip">
-                     				<img src="img/button-pointer-on-tooltip.png" alt="Screenshot of a button with a large mouse pointer over it, and a tooltip displayed  below the button which is obscured by the large pointer" />
-                     				<img src="img/button-pointer-below-tooltip.png" alt="Screenshot of a button with a tooltip below it, and a large mouse pointer at the bottom of the tooltip" />
+                     				<img src="img/button-pointer-on-tooltip.png" alt="大きいポインタに覆い隠されたツールチップがボタンの下に表示されている、大きいマウスポインタが上にのっているボタンのスクリーンショット" />
+                     				<img src="img/button-pointer-below-tooltip.png" alt="大きいマウスポインタがツールチップの下部にある、ツールチップが下にあるボタンのスクリーンショット" />
                      				
-                     <figcaption>Figure 3 A button's tooltip is displayed directly below it on mouse hover which can easily
-                        be obscured by a large pointer.  The tooltip itself is able to be hovered so the mouse
-                        pointer can be moved down to its bottom edge in order to view the tooltip text.
+                     <figcaption>図 3 ボタンのツールチップはマウスホバーの直下に表示されており、大きなポインタで簡単に隠すことができる。ツールチップそのものはホバーできるので、ツールチップのテキストを見るためにマウスポインタをその下側に下げることができる。
                      </figcaption>
                      				
                   </figure>
@@ -380,8 +312,8 @@
                </section>
             </section>
             <section id="resources">
-               <h2>Related Resources</h2>
-               <p>Resources are for information purposes only, no endorsement implied.</p>
+               <h2>関連リソース</h2>
+               <p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p>
                <ul>
                   				
                   <li><a href="https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/">Tooltip design described in WAI-ARIA Authoring Practices</a></li>
@@ -389,14 +321,11 @@
                </ul>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
+                  <h3>十分なテクニック</h3>
                   <ul>
                      						
                      <li><a href="https://w3c.github.io/wcag/techniques/client-side-script/SCR39">SCR39: Making content on focus or hover hoverable, dismissible, and persistent</a></li>
@@ -408,9 +337,8 @@
                   </ul>
                </section>
                <section id="failure">
-                  <h3>Failures</h3>
-                  <p>The following are common mistakes that are considered failures of this Success Criterion
-                     by the WCAG Working Group.
+                  <h3>失敗例</h3>
+                  <p>以下に挙げるものは、WCAG ワーキンググループが達成基準の失敗例とみなした、よくある間違いである。
                   </p>
                   <ul>
                      					
@@ -430,50 +358,37 @@
             <section id="key-terms">
                <details>
                   <summary>
-                     <h2>Key Terms</h2>
+                     <h2>重要な用語</h2>
                   </summary>
-                  <dt id="dfn-assistive-technology">assistive technology</dt>
+                  <dt id="dfn-assistive-technology">支援技術 (assistive technology)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">hardware and/or software that acts as a <a href="#dfn-user-agent">user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements
-                           of users with disabilities that go beyond those offered by mainstream user agents
+                        <p xmlns="http://www.w3.org/1999/xhtml">障害のある利用者の要件を満たすために、主流の<a href="#dfn-user-agent">ユーザエージェント</a>が提供する機能を超えた機能を提供するような、ユーザエージェントとして動作する、又は主流のユーザエージェントと共に動作するハードウェア及び／又はソフトウェア。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Functionality provided by assistive technology includes alternative presentations
-                              (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
-                              voice), additional navigation or orientation mechanisms, and content transformations
-                              (e.g., to make tables more accessible).
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術が提供する機能としては、代替の提示 (例: 合成音声や拡大表示したコンテンツ)、代替入力手法 (例: 音声認識)、付加的なナビゲーション又は位置確認のメカニズム、及びコンテンツ変換 (例: テーブルをよりアクセシブルにするもの) などを挙げることができる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Assistive technologies often communicate data and messages with mainstream user agents
-                              by using and monitoring APIs.
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術は、API を利用、監視することで、主流のユーザエージェントとデータやメッセージのやりとりをすることが多い。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The distinction between mainstream user agents and assistive technologies is not absolute.
-                              Many mainstream user agents provide some features to assist individuals with disabilities.
-                              The basic difference is that mainstream user agents target broad and diverse audiences
-                              that usually include people with and without disabilities. Assistive technologies
-                              target narrowly defined populations of users with specific disabilities. The assistance
-                              provided by an assistive technology is more specific and appropriate to the needs
-                              of its target users. The mainstream user agent may provide important functionality
-                              to assistive technologies like retrieving Web content from program objects or parsing
-                              markup into identifiable bundles.
+                           <p class="note-title marker">注記</p>
+                           <p>主流のユーザエージェントと支援技術との区別は、絶対的なものではない。多くの主流のユーザエージェントは、障害のある個人を支援する機能を提供している。基本的な差異は、主流のユーザエージェントが障害のある人もない人も含めて、広く多様な利用者を対象にしているのに対し、支援技術は、特定の障害のある利用者という、より狭く限られた人たちを対象にしているということである。支援技術により提供される支援は、対象とする利用者に特化した、よりニーズに適したものである。主流のユーザエージェントは、プログラムオブジェクトからのウェブコンテンツの抽出、マークアップの識別可能な構造への解釈といった、重要な機能を支援技術に対して提供する場合がある。
                               
                            </p>
                         </div>
@@ -481,8 +396,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Assistive technologies that are important in the context of this document include
-                              the following:
+                           <p>この文書の文脈において重要な支援技術としては、以下のものが挙げられる:
                               
                            </p>
                            
@@ -490,38 +404,30 @@
                            <ul>
                               
                               
-                              <li>screen magnifiers, and other visual reading assistants, which are used by people with
-                                 visual, perceptual and physical print disabilities to change text font, size, spacing,
-                                 color, synchronization with speech, etc. in order to improve the visual readability
-                                 of rendered text and images;
+                              <li>画面拡大ソフト及びその他の視覚的な表示に関する支援技術。視覚障害、知覚障害、及び読書困難などの障害のある人が、レンダリング後のテキスト及び画像の視覚的な読みやすさを改善するために、テキストのフォント、サイズ、間隔、色、音声との同期などを変更するのに使用している。
                                  
                               </li>
                               
                               
-                              <li>screen readers, which are used by people who are blind to read textual information
-                                 through synthesized speech or braille;
+                              <li>スクリーンリーダー。全盲の人がテキスト情報を合成音声あるいは点字で読み取るために使用している。
                                  
                               </li>
                               
                               
-                              <li>text-to-speech software, which is used by some people with cognitive, language, and
-                                 learning disabilities to convert text into synthetic speech;
+                              <li>音声変換ソフトウェア。認知障害、言語障害、及び学習障害のある人が、テキストを合成音声に変換するために使用している。
                                  
                               </li>
                               
                               
-                              <li>speech recognition software, which may be used by people who have some physical disabilities;</li>
+                              <li>音声認識ソフトウェア。何らかの身体障害のある利用者が使用することがある。</li>
                               
                               
-                              <li>alternative keyboards, which are used by people with certain physical disabilities
-                                 to simulate the keyboard (including alternate keyboards that use head pointers, single
-                                 switches, sip/puff and other special input devices.);
+                              <li>代替キーボード。特定の身体障害のある人がキーボード操作をシミュレートするのに使用している (ヘッドポインタ、シングルスイッチ、呼気・吸気スイッチ、及びその他の特別な入力デバイスを使った代替キーボードを含む)。
                                  
                               </li>
                               
                               
-                              <li>alternative pointing devices, which are used by people with certain physical disabilities
-                                 to simulate mouse pointing and button activations.
+                              <li>代替ポインティングデバイス。特定の身体障害のある人がマウスポインタとボタンの動きをシミュレートするのに使用している。
                                  
                               </li>
                               
@@ -532,41 +438,40 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-conformance">conformance</dt>
+                  <dt id="dfn-conformance">適合 (conformance)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">satisfying all the requirements of a given standard, guideline or specification</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">与えられた規格、ガイドライン、又は仕様のすべての要件を満たすこと。</p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-input-error">input error</dt>
+                  <dt id="dfn-input-error">入力エラー (input error)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">information provided by the user that is not accepted</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">利用者が入力した情報で、受け付けられないもの。</p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">注記</p>
                            <div>
                               
-                              <p>This includes:</p>
+                              <p>以下のものが含まれる:</p>
                               
                               
                               <ol>
                                  
                                  
-                                 <li>Information that is required by the <a href="#dfn-web-page">Web page</a> but omitted by the user
+                                 <li>その<a href="#dfn-web-page">ウェブページ</a>では必須であるが、利用者が入力しなかった情報
                                     
                                  </li>
                                  
                                  
-                                 <li>Information that is provided by the user but that falls outside the required data
-                                    format or values
+                                 <li>利用者が入力したが、要求されたデータ形式あるいは値ではない情報
                                     
                                  </li>
                                  
@@ -578,46 +483,44 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-mechanism">mechanism</dt>
+                  <dt id="dfn-mechanism">メカニズム (mechanism)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
                         <p xmlns="http://www.w3.org/1999/xhtml">
-                           <a href="#dfn-process">process</a> or technique for achieving a result
+                           結果を得るための<a href="#dfn-process">プロセス</a>又は手法。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The mechanism may be explicitly provided in the content, or may be <a href="#dfn-relied-upon">relied upon</a> to be provided by either the platform or by <a href="#dfn-user-agent">user agents</a>, including <a href="#dfn-assistive-technology">assistive technologies</a>.
+                           <p class="note-title marker">注記</p>
+                           <p>メカニズムは、コンテンツ内で明示的に提供されることもあれば、プラットフォーム又は<a href="#dfn-assistive-technology">支援技術</a>を含む<a href="#dfn-user-agent">ユーザエージェント</a>で提供されるものに<a href="#dfn-relied-upon">依存</a>することもある。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The mechanism needs to meet all success criteria for the conformance level claimed.</p>
+                           <p class="note-title marker">注記</p>
+                           <p>メカニズムは、宣言する適合レベルのすべての達成基準を満たしている必要がある。</p>
                         </div>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-process">process</dt>
+                  <dt id="dfn-process">プロセス (process)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">series of user actions where each action is required in order to complete an activity</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ある活動を完了させるために必要な利用者の一連の動作。</p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Successful use of a series of Web pages on a shopping site requires users to view
-                              alternative products, prices and offers, select products, submit an order, provide
-                              shipping information and provide payment information.
+                           <p>ショッピングサイト上の一連のウェブページで目的を果たすためには、利用者が選択肢となりうる製品、価格及び内容を閲覧した後、製品を選択して発注し、配送先情報及び支払情報を提供する必要がある。
                               
                            </p>
                            
@@ -626,8 +529,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>An account registration page requires successful completion of a <a href="https://www.w3.org/TR/turingtest/">Turing test</a> before
-                              the registration form can be accessed.
+                           <p>アカウント登録ページでは、登録フォームにアクセスする前に<a href="https://www.w3.org/TR/turingtest/">チューリングテスト</a>に成功する必要がある。
                               
                            </p>
                            
@@ -636,44 +538,40 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-relied-upon">relied upon</dt>
+                  <dt id="dfn-relied-upon">依存されている (relied upon)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">the content would not <a href="#dfn-conformance">conform</a> if that <a href="#dfn-technology">technology</a> is turned off or is not supported
+                        <p xmlns="http://www.w3.org/1999/xhtml">その<a href="#dfn-technology">技術</a>が無効になっている場合、又はサポートされていない場合に、コンテンツが<a href="#dfn-conformance">適合</a>できないこと。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-technology">technology</dt>
+                  <dt id="dfn-technology">技術 (technology)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
                         <p xmlns="http://www.w3.org/1999/xhtml">
-                           <a href="#dfn-mechanism">mechanism</a> for encoding instructions to be rendered, played or executed by <a href="#dfn-user-agent">user agents</a>
+                           <a href="#dfn-user-agent">ユーザエージェント</a>がどのようにレンダリング、再生、又は実行するかを符号化する<a href="#dfn-mechanism">メカニズム</a>。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>As used in these guidelines "Web Technology" and the word "technology" (when used
-                              alone) both refer to Web Content Technologies.
+                           <p class="note-title marker">注記</p>
+                           <p>このガイドラインで用いられている「ウェブ技術」及び (単独で用いられている) 「技術」という用語は、どちらもウェブコンテンツ技術を指す。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Web content technologies may include markup languages, data formats, or programming
-                              languages that authors may use alone or in combination to create end-user experiences
-                              that range from static Web pages to synchronized media presentations to dynamic Web
-                              applications.
+                           <p class="note-title marker">注記</p>
+                           <p>ウェブコンテンツ技術には、マークアップ言語、データ形式、及びプログラム言語などがあり、これらをコンテンツ制作者が単独で、又は組み合わせて用いることによって、静的なウェブページや同期したメディアによる提示、さらには動的なウェブアプリケーションに至るまでの様々なエンドユーザ体験を作ることができる。
                               
                            </p>
                         </div>
@@ -681,8 +579,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Some common examples of Web content technologies include HTML, CSS, SVG, PNG, PDF,
-                              Flash, and JavaScript.
+                           <p>ウェブコンテンツ技術のよくある事例としては、HTML、CSS、SVG、PNG、PDF、Flash、JavaScript などがある。
                               
                            </p>
                            
@@ -691,17 +588,17 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-user-agent">user agent</dt>
+                  <dt id="dfn-user-agent">ユーザエージェント (user agent)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">any software that retrieves and presents Web content for users</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ウェブコンテンツを取得して利用者に提示するあらゆるソフトウェア。</p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technology">assistive technologies</a> — that help in retrieving, rendering, and interacting with Web content.
+                           <p>ウェブコンテンツの取得、レンダリング及びインタラクションを支援する、ウェブブラウザ、メディアプレーヤ、プラグイン、及びその他のプログラム (<a href="#dfn-assistive-technology">支援技術</a>も含む)。
                               
                            </p>
                            
@@ -710,30 +607,27 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-web-page">web page</dt>
+                  <dt id="dfn-web-page">ウェブページ (Web page)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">a non-embedded resource obtained from a single URI using HTTP plus any other resources
-                           that are used in the rendering or intended to be rendered together with it by a <a href="#dfn-user-agent">user agent</a>
+                        <p xmlns="http://www.w3.org/1999/xhtml">単一の URI から HTTP で得た埋め込まれていないリソースに加え、レンダリングに使われる、又は<a href="#dfn-user-agent">ユーザエージェント</a>がこのリソースと一緒にレンダリングすることを意図しているその他のあらゆるリソースを合わせたもの。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Although any "other resources" would be rendered together with the primary resource,
-                              they would not necessarily be rendered simultaneously with each other.
+                           <p class="note-title marker">注記</p>
+                           <p>どのような「その他のリソース」も主たるリソースと一緒にレンダリングされるであろうが、これらのリソースが同時にレンダリングされるとは限らない。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>For the purposes of conformance with these guidelines, a resource must be "non-embedded"
-                              within the scope of conformance to be considered a Web page.
+                           <p class="note-title marker">注記</p>
+                           <p>このガイドラインの適合範囲に含まれる対象となるウェブページとみなされるためには、リソースが「埋め込まれていない」リソースでなければならない。
                               
                            </p>
                         </div>
@@ -741,17 +635,14 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A Web resource including all embedded images and media.</p>
+                           <p>単体のウェブリソースであり、埋め込まれている画像及びメディアのすべてを含んだもの。</p>
                            
                         </aside>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A Web mail program built using Asynchronous JavaScript and XML (AJAX). The program
-                              lives entirely at http://example.com/mail, but includes an inbox, a contacts area
-                              and a calendar. Links or buttons are provided that cause the inbox, contacts, or calendar
-                              to display, but do not change the URI of the page as a whole.
+                           <p>Asynchronous JavaScript and XML (AJAX) を用いたウェブメールのプログラム。そのプログラム全体は http://example.com/mail に存在しているが、受信トレイ、連絡先、カレンダーがある。受信トレイ、連絡先、又はカレンダーを表示するリンク又はボタンが提供されているが、全体としてページの URI は変更されない。
                               
                            </p>
                            
@@ -760,8 +651,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A customizable portal site, where users can choose content to display from a set of
-                              different content modules.
+                           <p>カスタマイズ可能なポータルサイトで、利用者が様々なコンテンツモジュールのセットから表示させるコンテンツを選択できるようなもの。
                               
                            </p>
                            
@@ -770,12 +660,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>When you enter "http://shopping.example.com/" in your browser, you enter a movie-like
-                              interactive shopping environment where you visually move around in a store dragging
-                              products off of the shelves around you and into a visual shopping cart in front of
-                              you. Clicking on a product causes it to be demonstrated with a specification sheet
-                              floating alongside. This might be a single-page Web site or just one page within a
-                              Web site.
+                           <p>ブラウザで "http://shopping.example.com/" へ行くと、映画のようなインタラクティブなショッピング環境になる。そこでは、視覚的に店内を移動して、店内の棚から商品をドラッグして、目の前にある視覚的な買物カゴに商品を入れる。商品をクリックすると、同時に仕様書が浮き上がるように表示される。これは 1 ページだけのウェブサイトかもしれないし、ウェブサイトの中のほんの 1 ページなのかもしれない。
                               
                            </p>
                            
@@ -795,13 +680,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -816,11 +700,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -842,13 +728,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -857,7 +743,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -878,8 +764,10 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+    <!--noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-      </noscript>
+      </noscript-->
    </body>
 </html>
