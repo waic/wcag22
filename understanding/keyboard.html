@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  2.1.1: Keyboard | WAI | W3C</title>
+      <title>解説書 達成基準  2.1.1: キーボード | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
-      <!-- 日本語訳されるまでの一時的なスクリプト -->
-      <script src="untranslated-note.js"></script>
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://waic.jp/translations/WCAG22/Understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -37,14 +35,14 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"><a href="keyboard-accessible">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Keyboard Accessible</a></li>
+                        </svg>ガイドライン: キーボード操作可能</a></li>
                   <li class="nav__item"></li>
-                  <li class="nav__item"><a href="no-keyboard-trap">Next SC: No Keyboard Trap
+                  <li class="nav__item"><a href="no-keyboard-trap">次: キーボードトラップなし
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -55,47 +53,41 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
-                     <li><a href="#key-terms">Key Terms</a></li>
-                     <li><a href="#test-rules">Test Rules</a></li>
+                     <li><a href="#brief">要約</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#benefits">利点</a></li>
+                     <li><a href="#examples">事例</a></li>
+                     <li><a href="#techniques">テクニック</a></li>
+                     <li><a href="#key-terms">重要な用語</a></li>
+                     <li><a href="#test-rules">テストルール</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				SC 2.1.1:</span>Keyboard (Level A)
+            <h1><span class="standalone-resource__type-of-guidance">解説書 
+                  				達成基準 2.1.1:</span>キーボード (レベル A)
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>All <a href="#dfn-functionality">functionality</a> of the content is operable through a <a href="#dfn-keyboard-interface">keyboard interface</a> without requiring specific timings for individual keystrokes, except where the underlying
-                     function requires input that depends on the path of the user's movement and not just
-                     the endpoints.
+                  <p>コンテンツのすべての<a href="#dfn-functionality">機能</a>は、個々のキーストロークに特定のタイミングを要することなく、<a href="#dfn-keyboard-interface">キーボードインタフェース</a>を通じて操作可能である。ただし、その根本的な機能が利用者の動作による終点だけではない軌跡に依存する入力を必要とする場合は除く。
+
                      
                   </p>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
-                     <p>This exception relates to the underlying function, not the input technique. For example,
-                        if using handwriting to enter text, the input technique (handwriting) requires path-dependent
-                        input but the underlying function (text input) does not.
+                     <p class="note-title marker">注記</p>
+                     <p>上記の例外は、根本的な機能に関するものであり、入力手法に関するものではない。例えば、テキスト入力に手書き入力を用いるのであれば、その入力手法 (手書き) は利用者の動作による軌跡に依存した入力を必要とするが、その根本的な機能 (テキスト入力) は利用者の動作による軌跡に依存した入力を必要とするものではない。
                         
                      </p>
                   </div>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
-                     <p>This does not forbid and should not discourage providing mouse input or other input
-                        methods in addition to keyboard operation.
+                     <p class="note-title marker">注記</p>
+                     <p>これは、キーボード操作に加えて、マウス入力、又はその他の入力手段を提供することを禁ずるものでも妨げるものでもない。
                         
                      </p>
                   </div>
@@ -103,108 +95,65 @@
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   
-                  <dt>Goal</dt>
-                  <dd>Everything can be done with a keyboard except freehand movements.</dd>
+                  <dt>目標</dt>
+                  <dd>フリーハンドの動作を除き、全てのことがキーボードでできるようにする。</dd>
                   
-                  <dt>What to do</dt>
-                  <dd>Ensure pointer actions have a keyboard equivalent.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>ポインタのアクションに、キーボードによる同等のアクションがあることを確実にする。</dd>
                   
-                  <dt>Why it's important</dt>
-                  <dd>Many people rely on the keyboard interface, including blind and some mobility impaired
-                     people.
+                  <dt>なぜそれが重要か</dt>
+                  <dd>全盲や一部の運動機能障害者を含む、多くの人がキーボードインタフェースに依存している。
                   </dd> 
                   
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The intent of this Success Criterion is to ensure that, wherever possible, content
-                  can be operated through a keyboard or keyboard interface (so an alternate keyboard
-                  can be used). When content can be operated through a keyboard or alternate keyboard,
-                  it is operable by people with no vision (who cannot use devices such as mice that
-                  require eye-hand coordination) as well as by people who must use alternate keyboards
-                  or input devices that act as keyboard emulators. Keyboard emulators include speech
-                  input software, sip-and-puff software, on-screen keyboards, scanning software and
-                  a variety of assistive technologies and alternate keyboards. Individuals with low
-                  vision also may have trouble tracking a pointer and find the use of software much
-                  easier (or only possible) if they can control it from the keyboard.
+               <h2>意図</h2>
+               <p>この達成基準の意図は、可能な限り、コンテンツをキーボード又は (代替キーボードが利用できるような) キーボードインタフェースで操作ができるようにすることである。コンテンツがキーボード又は代替キーボードで操作できるとき、(目と手の協調運動を必要とするマウスのようなデバイスを使用できない) 全盲の人にも、代替キーボード又はキーボードエミュレータの機能を果たす入力デバイスを使用しなければならない人にも操作できる。キーボードエミュレータには、音声入力ソフトウェア、息操作ソフトウェア、オンスクリーンキーボード、スキャニングソフトウェア、そして様々な支援技術及び代替キーボードが挙げられる。ロービジョンの人はまた、ポインタを目で追うのが困難なことがあり、キーボードからソフトウェアを操作できる場合、ソフトウェアの使用がはるかに容易になる (又は、単に使えるようになる)。
+               </p>
+               <p>「個々のキーストロークに特定のタイミング」の事例としては、利用者が短時間のうちに複数のキーストロークを繰り返すもしくは実行する必要がある状況、又はキーストロークが記録される前に長い間キーを押し続けなければならない状況が挙げられる。
+               </p>
+               <p>「ただし、その根本的な機能が利用者の動作による終点だけではない軌跡に依存する入力を必要とする場合は除く。」というフレーズは、キーボードから合理的に操作できないものを区別するために含まれている。
+               </p>
+               <p>ポインティングデバイスにより実行される操作のほとんどは、キーボードでも実行可能である (例えば、クリックする、選択する、移動する、サイズ変更するなど)。しかし、過度のキーストローク数を必要としない既知の方法でキーボードから実行できないポインティングデバイスで行われる細かな入力の分類がある。自由な手描きや水彩画は、軌跡に依存した入力を必要とする。直線や規則的な幾何学的図形を描く、ウィンドウのサイズを変更する及びある位置へオブジェクトをドラッグすること (その位置への軌跡に関係がない場合) は、軌跡に依存した入力を必要としない。
                   
                </p>
-               <p>Examples of "specific timings for individual keystrokes" include situations where
-                  a user would be required to repeat or execute multiple keystrokes within a short period
-                  of time or where a key must be held down for an extended period before the keystroke
-                  is registered. 
-                  
-                  
-               </p>
-               <p>The phrase "except where the underlying function requires input that depends on the
-                  path of the user's movement and not just the endpoints" is included to separate those
-                  things that cannot reasonably be controlled from a keyboard.
-                  
-               </p>
-               <p>Most actions carried out by a pointing device can also be done from the keyboard (for
-                  example, clicking, selecting, moving, sizing). However, there is a small class of
-                  input that is done with a pointing device that cannot be done from the keyboard in
-                  any known fashion without requiring an inordinate number of keystrokes. Free hand
-                  drawing, or watercolor painting require path dependent input. Drawing straight lines,
-                  regular geometric shapes, re-sizing windows and dragging objects to a location (when
-                  the path to that location is not relevant) do not require path dependent input.
-                  
-                  
-               </p>
-               <p>The use of MouseKeys would not satisfy this Success Criterion because it is not a
-                  keyboard equivalent to the application; it is a mouse equivalent (i.e., it looks like
-                  a mouse to the application).
-                  
-               </p>
-               <p>It is assumed that the design of user input features takes into account that operating
-                  system keyboard accessibility features may be in use. For example, modifier key locking
-                  may be turned on. Content continues to function in such an environment, not sending
-                  events that would collide with the modifier key lock to produce unexpected results.
-                  
-                  
+               <p>マウスキーの使用は、アプリケーションにとってキーボードに相当しないので、この達成基準を満たさないだろう。これはマウスに相当する (つまり、アプリケーションにはマウスのように見える)。
                </p>
                <div class="note">
-                  <p class="note-title marker">Note</p>
+                  <p class="note-title marker">訳注</p>
+                  <div><p>マウスキーとは、キーボードでマウスの操作を代替することのできるアクセシビリティ機能である。<a href="https://ja.wikipedia.org/wiki/%E3%83%9E%E3%82%A6%E3%82%B9%E3%82%AD%E3%83%BC">マウスキー - Wikipedia</a>も参照のこと。</p></div>
+               </div>
+                  
+               <p>利用者が入力を行う機能の設計においては、オペレーティングシステムのキーボードアクセシビリティ機能が利用されている可能性を考慮することが期待される。例えば、修飾キーをロックする機能が有効になっているかもしれない。そのような環境でもコンテンツは機能し、修飾キーロックと衝突して予期しない結果を生じるようなイベントを送信しない (ようにすべきである)。
+               </p>
+               <div class="note">
+                  <p class="note-title marker">訳注</p>
+                  <div><p>修飾キーとは、別のキーと組み合わせて使用し、そのキーの意味を一時的に変えるものである。例えば、Shift キーがこれに当たる。<a href="https://e-words.jp/w/%E4%BF%AE%E9%A3%BE%E3%82%AD%E3%83%BC.html">修飾キーとは - IT用語辞典</a>も参照のこと。</p></div>
+               </div>
+                  
+               <div class="note">
+                  <p class="note-title marker">注記</p>
                   <div>
                      
-                     <p>Platforms and user agents usually have conventions for how web content or
-                        applications are controlled with a keyboard interface. If content does not follow
-                        the platform/user agent conventions it may be difficult to use, as users will need
-                        to learn different interaction methods. As a <em>best practice</em>, content
-                        should follow the platform/user agent conventions. However, deviating from these
-                        conventions does <em>not</em> fail the normative requirement of this Success Criterion.
+                     <p>プラットフォーム及びユーザエージェントは通常、ウェブコンテンツ又はアプリケーションをキーボードインターフェイスでどう操作するかの慣習を持っている。コンテンツがプラットフォーム／ユーザエージェントの慣習に従わない場合、利用者は異なるインタラクション方法を学習しなければならず、使いにくくなる可能性がある。<em>ベストプラクティス</em>としては、コンテンツはプラットフォーム／ユーザエージェントの慣習に従うべきである。しかし、こうした慣習から逸脱しているからといって、この達成基準の規範的要件に失敗するとはならない。
                      </p>
                      
                      <p>
-                        For instance, buttons that have focus can generally be activated using both the
-                        <kbd>Enter</kbd> key and the <kbd>Space</kbd> bar. If a custom button control
-                        in a web application instead only reacts to <kbd>Enter</kbd>
-                        (or even a completely custom key or key combination), this still
-                        <strong>satisfies</strong> the requirements of this Success Criterion.
-                        
+                        例えば、フォーカスを持つボタンは、一般的に <kbd>Enter</kbd> キーと<kbd>スペースバー</kbd>のどちらを用いても実行することができる。ただしウェブアプリケーションのカスタムボタンコントロールが <kbd>Enter</kbd> キー (あるいは、完全にカスタムなキー又はキーの組み合わせ) にしか反応しない場合でも、この達成基準の要件を<strong>満たす</strong>ことになる。
+
                      </p>
                      
                   </div>
                </div>
                <div class="note">
-                  <p class="note-title marker">Note</p>
+                  <p class="note-title marker">注記</p>
                   <div>
                      
-                     <p>This Success Criterion does not require that every visible control that can be activated
-                        using a mouse or touch screen must also be focusable and actionable using the keyboard.
-                        The normative requirement is only that there must be a way for keyboard interface
-                        users to perform
-                        the same, or comparable, actions and to operate the content. Generally, the easiest
-                        way
-                        to achieve this is to provide controls that can be operated with all possible input
-                        devices;
-                        however, if a web application implements a separate mode of operation for keyboard
-                        interface users,
-                        it will <strong>not</strong> fail the Success Criterion.
+                     <p>この達成基準は、マウス又はタッチスクリーンを用いて実行できる全ての可視コントロールが、キーボードを用いてフォーカス可能かつ操作可能でなければならないことを要求するものではない。規範的な要件としては、キーボードインターフェースの利用者が、同じ又は同等のアクションを実行し、コンテンツを操作する方法がなければならないということだけである。一般的に、これを達成する最も簡単な方法は、想定されるすべての入力デバイスで操作可能なコントロールを提供することである。ただし、ウェブアプリケーションがキーボードインターフェイス利用者のために個別の操作モードを実装している場合でも、この達成基準への失敗と<strong>はならない</strong>。
                         
                      </p>
                      
@@ -212,91 +161,69 @@
                </div>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>利点</h2>
                <ul>
                   
                   
-                  <li>People who are blind (who cannot use devices such as mice that require eye-hand coordination)</li>
+                  <li>(目と手の協調運動を必要とするマウスのようなデバイスを使用できない) 全盲の人</li>
                   
                   
-                  <li>People with low vision (who may have trouble finding or tracking a pointer indicator
-                     on screen)
-                     
-                  </li>
+                  <li>(画面上のポインタを見つけたり、目で追ったりするのが困難である) ロービジョンの人</li>
                   
                   
                   <li>
-                     Some people with hand tremors find using a mouse very difficult and therefore usually
-                     use a keyboard
-                     
-                     
-                     
-                  </li>
+                     マウスを使うのが非常に難しいと感じ、通常はキーボードを使用している手に震えのある人</li>
                   
                   
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>事例</h2>
                <dl>
                   
-                  <dt>Example 1: A drawing Program</dt>
+                  <dt>事例 1: 描画プログラム</dt>
                   
-                  <dd>A drawing program allows users to create, size, position and rotate objects from the
-                     keyboard.
+                  <dd>描画プログラムは、利用者がキーボードからオブジェクトの作成、サイズ変更、配置及び回転をするのを可能にする。
                   </dd>
                   
-                  <dt>Example 2: A drag and Drop Feature</dt>
+                  <dt>事例 2: ドラッグ＆ドロップ機能</dt>
                   
-                  <dd>An application that uses drag and drop also supports "cut" and "paste" or form controls
-                     to move objects.
+                  <dd>ドラッグ＆ドロップを用いるアプリケーションは、オブジェクトを移動させるための「切り取り」及び「貼り付け」又はフォームコントロールもサポートしている。
                   </dd>
                   
-                  <dt>Example 3: Moving between and connecting discrete points</dt>
+                  <dt>事例 3: 離れている点の間の移動及び接続</dt>
                   
-                  <dd>A connect-the-dots program allows the user to move between dots on a screen and use
-                     the spacebar to connect the current dot to the previous one.
+                  <dd>点を結ぶプログラムは、利用者が画面上の点間を移動し、スペースキーで現在の点と直前の点を結ぶことを可能にする。
                   </dd>
                   
-                  <dt>Example 4: Exception - Painting Program</dt>
+                  <dt>事例 4: 例外 － お絵描きプログラム</dt>
                   
-                  <dd>A watercolor painting program passes as an exception because the brush strokes vary
-                     depending on the speed and duration of the movements.
+                  <dd>水彩画を描くプログラムは、筆の動きが速度及び持続時間によって変化するため、例外の一つとして認められる。
                   </dd>
                   
-                  <dt>Example 5: Exception - Model helicopter flight training simulator</dt>
+                  <dt>事例 5: 例外 － 模型ヘリコプター飛行訓練シミュレータ</dt>
                   
-                  <dd>A model helicopter flight training simulator passes as an exception because the nature
-                     of the simulator is to teach real-time behavior of a model helicopter.
+                  <dd>ヘリコプター飛行訓練シミュレータは、シミュレータの性質上、模型ヘリコプターの動作をリアルタイムで教えるものであるため、例外の一つとして認められる。
                   </dd>
                   
-                  <dt>Example 6: A PDA with an optional keyboard</dt>
+                  <dt>事例 6: オプションのキーボード付き PDA</dt>
                   
-                  <dd>A PDA device that is usually operated via a stylus has an optional keyboard that can
-                     be attached.  The keyboard allows full Web browsing in standard fashion.  The Web
-                     content is operable because it was designed to work with keyboard-only access.
+                  <dd>通常スタイラスペンで操作する PDA 機器は、オプションで取り付け可能なキーボードがある。そのキーボードは、標準的な方法で完全なウェブ閲覧を可能にする。キーボードのみのアクセスで動作するように設計されているので、ウェブコンテンツは操作可能である。
                   </dd>
                   
-                  <dt>Example 7: Simple search form with pointer-operable submit button</dt>
+                  <dt>事例 7: ポインタ操作可能な送信ボタンを備えたシンプルな検索フォーム</dt>
                   
-                  <dd>A search form includes a text input field followed by a submit button. The submit
-                     button itself
-                     has been coded so that it does <em>not</em> receive focus, and can only be activated using a pointer input.
-                     However, since keyboard users can submit the search by pressing <kbd>Enter</kbd> in the text input
-                     after typing their search terms, the form passes this Success Criterion.
+                  <dd>検索フォームには、テキスト入力フィールドとそれに続く送信ボタンがある。送信ボタン自体はフォーカスを受け取ら<em>ない</em>ようにコーディングされており、ポインタ入力によってのみ実行できるようになっている。ただしキーボード利用者は、テキスト入力で検索語を入力した後に <kbd>Enter</kbd> キーを押すことで検索を送信できるので、このフォームは達成基準に合格となる。
                   </dd>
                   
                </dl>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
+                  <h3>十分なテクニック</h3>
                   <ul>
                      
                      
@@ -311,7 +238,7 @@
                      <li>
                         
                         
-                        <p>Ensuring keyboard control by using one of the following techniques.</p>
+                        <p>次のテクニックの一つを用いて、キーボードで操作できることを保証する。</p>
                         
                         
                         <ul>
@@ -361,7 +288,7 @@
                         
                         <p> 
                            
-                           <a class="general" href="https://w3c.github.io/wcag/techniques/general/G90">G90: Providing keyboard-triggered event handlers</a> using one of the following techniques:     
+                           次の達成方法の一つを用いて、<a class="general" href="https://w3c.github.io/wcag/techniques/general/G90">G90: Providing keyboard-triggered event handlers</a>:     
                            
                         </p>
                         
@@ -402,16 +329,13 @@
                   </ul>
                </section>
                <section id="advisory">
-                  <h3>Advisory Techniques</h3>
-                  <p>Although not required for conformance, the following additional techniques should
-                     be considered in order to make content more accessible. Not all techniques can be
-                     used or would be effective in all situations.
+                  <h3>参考テクニック</h3>
+                  <p>適合のために必須ではないが、コンテンツをよりアクセシブルにするために、次の追加のテクニックを検討することが望ましい。ただし、すべての状況において、すべてのテクニックが使用可能、又は効果的であるとは限らない。
                   </p>
                   <ul>
                      
                      
-                     <li>Using XHTML role, state, and value attributes if repurposing static elements as interactive
-                        user interface components (future link) AND 
+                     <li>インタラクティブなユーザインタフェースコンポーネントとして静的な要素に再度目的を持たせる場合、XHTML の役割、状態、及び値の属性を使用する (リンク追加予定) かつ 
                         <a class="script" href="https://w3c.github.io/wcag/techniques/client-side-script/SCR29">SCR29: Adding keyboard-accessible actions to static HTML elements</a>
                         
                         
@@ -421,9 +345,8 @@
                   </ul>
                </section>
                <section id="failure">
-                  <h3>Failures</h3>
-                  <p>The following are common mistakes that are considered failures of this Success Criterion
-                     by the WCAG Working Group.
+                  <h3>失敗例</h3>
+                  <p>以下に挙げるものは、WCAG ワーキンググループが達成基準の失敗例とみなした、よくある間違いである。
                   </p>
                   <ul>
                      
@@ -460,45 +383,40 @@
             <section id="key-terms">
                <details>
                   <summary>
-                     <h2>Key Terms</h2>
+                     <h2>重要な用語</h2>
                   </summary>
-                  <dt id="dfn-functionality">functionality</dt>
+                  <dt id="dfn-functionality">機能 (functionality)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
                         <p xmlns="http://www.w3.org/1999/xhtml">
-                           <a href="#dfn-process">processes</a> and outcomes achievable through user action
+                           利用者の操作により実現可能な<a href="#dfn-process">プロセス</a>及び結果。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-keyboard-interface">keyboard interface</dt>
+                  <dt id="dfn-keyboard-interface">キーボードインタフェース (keyboard interface)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">interface used by software to obtain keystroke input</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">キーストローク入力を取得するためにソフトウェアが用いるインタフェース。</p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">注記</p>
                            <div>
                               
-                              <p>A keyboard interface allows users to provide keystroke input to programs even if the
-                                 native technology does not contain a keyboard.
+                              <p>標準ではキーボードが存在しない技術であっても、キーボードインタフェースによって、利用者がキーストローク入力をプログラムに提供できる。
                               </p>
                               
                               
                               <aside class="example">
                                  
-                                 <p>A touchscreen PDA has a keyboard interface built into its operating system as well
-                                    as a connector for external keyboards. Applications on the PDA can use the interface
-                                    to obtain keyboard input either from an external keyboard or from other applications
-                                    that provide simulated keyboard output, such as handwriting interpreters or speech-to-text
-                                    applications with "keyboard emulation" functionality.
+                                 <p>タッチスクリーンを搭載している PDA には、外部キーボードへのコネクタとあわせて、そのオペレーティングシステムに組み込まれたキーボードインタフェースがある。PDA 上のアプリケーションはそのインタフェースを用いて、外部キーボード、あるいは手書き解釈プログラムや「キーボードエミュレーション」機能付きの音声テキスト変換アプリケーションのような擬似キーボード出力を提供する他のアプリケーションのいずれかからキーボード入力を取得することができる。
                                  </p>
                                  
                               </aside>
@@ -508,11 +426,8 @@
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Operation of the application (or parts of the application) through a keyboard-operated
-                              mouse emulator, such as MouseKeys, does not qualify as operation through a keyboard
-                              interface because operation of the program is through its pointing device interface,
-                              not through its keyboard interface.
+                           <p class="note-title marker">注記</p>
+                           <p>マウスキーのようなキーボード操作によるマウスエミュレータによるアプリケーション (又は、そのアプリケーションの一部) の操作は、キーボードインタフェースからの操作とは見なさない。なぜならば、この場合、プログラムの操作は、キーボードインタフェースからではなく、そのポインティングデバイス インタフェースからの入力によって行われるからである。
                               
                            </p>
                         </div>
@@ -520,19 +435,17 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-process">process</dt>
+                  <dt id="dfn-process">プロセス (process)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">series of user actions where each action is required in order to complete an activity</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ある活動を完了させるために必要な利用者の一連の動作。</p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Successful use of a series of Web pages on a shopping site requires users to view
-                              alternative products, prices and offers, select products, submit an order, provide
-                              shipping information and provide payment information.
+                           <p>ショッピングサイト上の一連のウェブページで目的を果たすためには、利用者が選択肢となりうる製品、価格及び内容を閲覧した後、製品を選択して発注し、配送先情報及び支払情報を提供する必要がある。
                               
                            </p>
                            
@@ -541,8 +454,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>An account registration page requires successful completion of a <a href="https://www.w3.org/TR/turingtest/">Turing test</a> before
-                              the registration form can be accessed.
+                           <pアカウント登録ページでは、登録フォームにアクセスする前に<a href="https://www.w3.org/TR/turingtest/">チューリングテスト</a>に成功する必要がある。
                               
                            </p>
                            
@@ -554,15 +466,12 @@
                </details>
             </section>
             <section id="test-rules">
-               <h2>Test Rules</h2>
-               <p>The following are Test Rules for certain aspects of this Success Criterion. It is
-                  not necessary to use these particular Test Rules to check for conformance with WCAG,
-                  but they are defined and approved test methods. For information on using Test Rules,
-                  see <a href="understanding-act-rules.html">Understanding Test Rules for WCAG Success Criteria</a>.
+               <h2>テストルール</h2>
+               <p>以下は、この達成基準の特定の側面に関するテストルールである。この特定のルールを使用して WCAG に適合しているかどうかを確認する必要はないが、これらのルールは定義され、承認されたテスト方法である。テストルールの使用については、<a href="understanding-act-rules.html">WCAG 達成基準のテストルールを理解する</a>を参照のこと。
                </p>
                <ul>
-                  <li><a href="/WAI/standards-guidelines/act/rules/akn7bn/">Iframe with interactive elements is not excluded from tab-order</a></li>
-                  <li><a href="/WAI/standards-guidelines/act/rules/0ssw9k/">Scrollable content can be reached with sequential focus navigation</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/akn7bn/">Iframe with interactive elements is not excluded from tab-order</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/0ssw9k/">Scrollable content can be reached with sequential focus navigation</a></li>
                </ul>
             </section><a class="button button-backtotop" href="#top"><span>
                   <svg focusable="false" aria-hidden="true" class="icon-arrow-up " viewBox="0 0 26 28">
@@ -574,13 +483,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -595,11 +503,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -621,13 +531,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -636,7 +546,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -657,8 +567,10 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+    <!--noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-      </noscript>
+      </noscript-->
    </body>
 </html>
