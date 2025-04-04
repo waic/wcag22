@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  2.5.6: Concurrent Input Mechanisms | WAI | W3C</title>
+      <title>解説書 達成基準 2.5.6: 入力メカニズムの共存 | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
-      <!-- 日本語訳されるまでの一時的なスクリプト -->
-      <script src="untranslated-note.js"></script>
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://waic.jp/translations/WCAG22/Understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -37,17 +35,17 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"><a href="input-modalities">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Input Modalities</a></li>
+                        </svg> ガイドライン: 入力モダリティ</a></li>
                   <li class="nav__item"><a href="target-size-enhanced">
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-left-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
-                        </svg>Previous SC: Target Size (Enhanced)</a></li>
-                  <li class="nav__item"><a href="dragging-movements">Next SC: Dragging Movements
+                        </svg>前: ターゲットのサイズ (高度)</a></li>
+                  <li class="nav__item"><a href="dragging-movements">次: ドラッグ動作
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -58,128 +56,98 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#resources">Related Resources</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
-                     <li><a href="#key-terms">Key Terms</a></li>
+                     <li><a href="#brief">要約</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#benefits">利点</a></li>
+                     <li><a href="#examples">事例</a></li>
+                     <li><a href="#resources">関連リソース</a></li>
+                     <li><a href="#techniques">テクニック</a></li>
+                     <li><a href="#key-terms">重要な用語</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				SC 2.5.6:</span>Concurrent Input Mechanisms (Level AAA)
+            <h1><span class="standalone-resource__type-of-guidance">解説書 
+                  				達成基準 2.5.6:</span>入力メカニズムの共存 (レベル AAA)
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>Web content does not restrict use of input modalities available on a platform except
-                     where the restriction is <a href="#dfn-essential">essential</a>, required to ensure the security of the content, or required to respect user settings.
+                  <p>プラットフォームで提供されている入力モダリティの使用を、ウェブコンテンツが制限しない。ただし、その制限が<a href="#dfn-essential">必要不可欠</a>な場合、コンテンツのセキュリティのために必要な場合、又は利用者による設定を尊重するうえで必要な場合は例外とする。
                   </p>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   			
-                  <dt>Goal</dt>
-                  <dd>Users can choose different ways of inputting content.</dd>
+                  <dt>目標</dt>
+                  <dd>利用者は、コンテンツを入力するための様々な方法を選択できる。</dd>
                   			
-                  <dt>What to do</dt>
-                  <dd>Do not prevent users from switching their mode of input.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>利用者が入力モードを切り替えるのを妨げない。</dd>
                   			
-                  <dt>Why it's important</dt>
-                  <dd>People may not be able to work using just one input method.</dd>
+                  <dt>なぜそれが重要か</dt>
+                  <dd>利用者は一つの入力方法だけでは作業できない場合がある。</dd>
                   		
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The intent of this Success Criterion is to ensure that people can use and switch between
-                  different modes of input when interacting with web content. Users may employ a variety
-                  of input mechanisms when interacting with web content. These may be a combination
-                  of mechanisms such as a keyboard or keyboard-like interfaces and pointer devices like
-                  a mouse, stylus or touchscreen.
+               <h2>意図</h2>
+               <p>この達成基準の意図は、人々がウェブコンテンツとやりとりするときに、入力の様々なモードを使用したり切り替えたりできるようにすることである。利用者はウェブコンテンツとやりとりするとき、多様な入力メカニズムを使うことができる。これらのメカニズムは、キーボード又はキーボードのようなインタフェース、及び、マウス又はスタイラスペンもしくはタッチスクリーンのようなポインタデバイスの、組み合わせであってもよい。
                </p>
-               <p>Even though a device may have a primary input mechanism, the user may choose to employ
-                  alternative input mechanisms when interacting with the device. For example, the primary
-                  mechanism for mobile phones and tablets is the touchscreen.  The user of these devices
-                  may choose to use a paired mouse or external keyboard as an alternative to using the
-                  touchscreen.
+               <p>デバイスが主たる入力メカニズムを備えていても、利用者はデバイスとやりとりするときに、代替の入力メカニズムの使用を選択してもよい。例えば、スマートフォン及びタブレットにおける主たる入力メカニズムはタッチスクリーンである。これらのデバイスの利用者は、タッチスクリーンを使用する代わりに、ペアリングされたマウス又は外付けキーボードを使用することを選択してもよい。
                </p>
-               <p>Users should be able to switch input mechanisms at any point should the user determine
-                  that certain tasks and interactions are more easily accomplished by using an alternative
-                  input mechanism. Content must not limit the user's interaction to any particular input
-                  mechanism unless the restriction is essential, or is required to ensure the security
-                  of the content or to respect user settings.
+               <p>特定のタスク及びインタラクションが代替の入力メカニズムを使用することでより簡単に遂行できると利用者が判断した場合、利用者はいつでも入力メカニズムを切り替えることができるべきである。コンテンツは、利用者によるインタラクションを、特定の入力メカニズムの使用に限定してはならない。ただし、その制限が必要不可欠である場合、すなわちコンテンツのセキュリティを確保する、又は利用者による設定を尊重する必要がある場合を除く。
                </p>
-               <p>Note: A touch-typing web application, which teaches users how to touch-type on a keyboard
-                  and/or measures their proficiency and speed, would be an example of an essential limitation
-                  to a particular input mechanism. 
+               <p>注記: 利用者がキーボード上でどのようにタッチタイピングするかを教える、及び／又はその習熟度及び速度を測定する、タッチタイピング練習ウェブアプリケーションは、特定の入力メカニズムに対する必要不可欠な制限の例である。
                </p>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>利点</h2>
                <ul>
                   					
-                  <li>Users can interact with web content with whichever input mechanism is preferred and
-                     available to them.
+                  <li>利用者は、好みの入力メカニズムを使用してウェブコンテンツとやりとりができる。
                   </li>
                   
-                  <li>Users may switch between input mechanisms when they desire or the circumstances require
-                     it.
+                  <li>利用者は、自らの意図又は状況の求めに応じて、入力メカニズムを切り替えることができる。
                   </li>
                   
-                  <li>Users are allowed to add and remove input mechanisms at any point, where supported
-                     by the operating system.
+                  <li>利用者は、オペレーティングシステムがサポートしていれば、任意で入力メカニズムを追加及び削除することができる。
                   </li>
                   				
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>事例</h2>
                <ul>
                   
-                  <li>A user with mobility impairment pairs a mouse and keyboard to her mobile phone with
-                     a touchscreen. The phone can thereafter be operated by those input devices and the
-                     content does not accept the touchscreen as the only input mechanism.
+                  <li>運動障害のある利用者は、マウス及びキーボードを、タッチスクリーン付きスマートフォンにペアリングする。これにより、スマートフォンはそれらの入力デバイスによっても操作することができるようになり、コンテンツはタッチスクリーンを唯一の入力メカニズムとして受け入れなくなる。
                   </li>
                   
-                  <li>On a touch-enabled laptop with coarse precision, people who have difficulty activating
-                     a small target because of hand tremors, limited dexterity or other reasons are still
-                     able to interact with content using their keyboard and trackpad.
+                  <li>精度の低いタッチ対応ノートパソコンでは、手の震えや身体運動の巧緻性の制限などの理由で小さなターゲットを動作させるのが困難な場合でも、キーボード及びトラックパッドを使用してコンテンツとやりとりすることができる。
                   </li>
                   
-                  <li>A user starts interacting with a page using a desktop keyboard, and then attaches
-                     a secondary touch-enabled monitor. Content can be operated using this newly added
-                     input mechanism and does not assume that the keyboard, the first input mechanism it
-                     detected, is the only one in use.
+                  <li>利用者がデスクトップのキーボードを使用してページとのやりとりを開始し、その後、タッチ対応モニターをセカンダリーモニターとして接続する。コンテンツは、この新たに追加された入力メカニズムを使用しても操作することができ、最初に検出された入力メカニズムであるキーボードのみが使用中であるとは想定していない。
                   </li>
                   
-                  <li>A speech input user navigates content using voice commands which translate to simulate
-                     mouse (and keyboard) commands. When talking with a colleague, however, the user turns
-                     speech recognition off and uses the mouse instead.
+                  <li>音声入力の利用者は、音声コマンドを使用して、マウス (及びキーボード) コマンドをシミュレーションするための変換をしてコンテンツをナビゲートする。ただし、同僚と話すときは、利用者は音声認識をオフにし、代わりにマウスを使用する。
                   </li>
                   
-                  <li>A user opens a menu with a mouse, and then navigates between the menu items with arrow
-                     keys.
+                  <li>利用者はマウスでメニューを開き、矢印キーでメニュー項目間を移動する。
                   </li>
                   
                </ul>
             </section>
             <section id="resources">
-               <h2>Related Resources</h2>
-               <p>Resources are for information purposes only, no endorsement implied.</p>
+               <h2>関連リソース</h2>
+               <p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p>
                <ul>
                   
                   <li><a href="https://w3c.github.io/pointerevents/">W3C Pointer Events - Level 2</a></li>
@@ -195,29 +163,24 @@
                </ul>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
+                  <h3>十分なテクニック</h3>
                   <ul>
                      
-                     <li>Only using high-level, input-agnostic event handlers, such as <code>focus</code>, <code>blur</code>, <code>click</code>, in Javascript (Potential future technique).
+                     <li>JavaScript において、<code>focus</code>、<code>blur</code>、<code>click</code>, といった高レベルの、特定の入力方法に依存しないイベントハンドラのみを使用する。(将来、テクニックに追加される可能性あり)
                      </li>
                      
-                     <li> Registering event handlers for keyboard/keyboard-like and pointer inputs simultaneously
-                        in Javascript; see <a href="https://w3c.github.io/pointerevents/#examples">Example 1 in Pointer Events Level 2</a> (Potential future technique)
+                     <li>Javascript において、キーボードもしくはキーボードのような入力、及びポインタ入力のためのイベントハンドラを、同時に登録する。<a href="https://w3c.github.io/pointerevents/#examples">Pointer Events Level 2 の EXAMPLE 1</a> (将来、テクニックに追加される可能性あり)
                      </li>
                      
                   </ul>
                </section>
                <section id="failure">
-                  <h3>Failures</h3>
-                  <p>The following are common mistakes that are considered failures of this Success Criterion
-                     by the WCAG Working Group.
+                  <h3>失敗例</h3>
+                  <p>以下に挙げるものは、WCAG ワーキンググループが達成基準の失敗例とみなした、よくある間違いである。
                   </p>
                   <ul>
                      
@@ -229,15 +192,14 @@
             <section id="key-terms">
                <details>
                   <summary>
-                     <h2>Key Terms</h2>
+                     <h2>重要な用語</h2>
                   </summary>
-                  <dt id="dfn-essential">essential</dt>
+                  <dt id="dfn-essential">必要不可欠 (essential)</dt>
                   <dd>
                      <definition xmlns="">
                         					
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">if removed, would fundamentally change the information or functionality of the content,
-                           <strong>and</strong> information and functionality cannot be achieved in another way that would conform
+                        <p xmlns="http://www.w3.org/1999/xhtml">もし取り除いてしまうと、コンテンツの情報又は機能を根本的に変えてしまい、<strong>かつ</strong>、適合する他の方法では情報及び機能を実現できない。
                            
                         </p>
                         				
@@ -255,13 +217,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -276,11 +237,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -302,13 +265,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -317,7 +280,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -338,7 +301,9 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+      <noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
       </noscript>
    </body>
