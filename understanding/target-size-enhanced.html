@@ -3,14 +3,14 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  2.5.5: Target Size (Enhanced) | WAI | W3C</title>
+      <title>解説書 達成基準 2.5.5: ターゲットのサイズ (高度) | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://waic.jp/translations/WCAG22/Understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -35,17 +35,17 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"><a href="input-modalities">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Input Modalities</a></li>
+                        </svg> ガイドライン: 入力モダリティ</a></li>
                   <li class="nav__item"><a href="motion-actuation">
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-left-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
-                        </svg>Previous SC: Motion Actuation</a></li>
-                  <li class="nav__item"><a href="concurrent-input-mechanisms">Next SC: Concurrent Input Mechanisms
+                        </svg>前: 動きによる起動</a></li>
+                  <li class="nav__item"><a href="concurrent-input-mechanisms">次: 入力メカニズムの共存
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -56,53 +56,49 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#resources">Related Resources</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
-                     <li><a href="#key-terms">Key Terms</a></li>
+                     <li><a href="#brief">要約</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#benefits">利点</a></li>
+                     <li><a href="#examples">事例</a></li>
+                     <li><a href="#resources">関連リソース</a></li>
+                     <li><a href="#techniques">テクニック</a></li>
+                     <li><a href="#key-terms">重要な用語</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/target-size.html">WCAG 2.1 解説書</a> ]</p></div>
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				SC 2.5.5:</span>Target Size (Enhanced) (Level AAA)
+            <h1><span class="standalone-resource__type-of-guidance">解説書 
+                  				達成基準 2.5.5:</span>ターゲットのサイズ (高度) (レベル AAA)
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>The size of the <a href="#dfn-target">target</a> for <a href="#dfn-pointer-input">pointer inputs</a> is at least 44 by 44 <a href="#dfn-css-pixel">CSS pixels</a> except when:
+                  <p><a href="#dfn-pointer-input">ポインタ入力</a>の<a href="#dfn-target">ターゲット</a>のサイズは、少なくとも 44 × 44 <a href="#dfn-css-pixel">CSS ピクセル</a>である。ただし、次の場合は除く:
                   </p>
                   <dl>
                      	                 
-                     <dt>Equivalent</dt> 
+                     <dt>同等</dt> 
                      
-                     <dd>The target is available through an equivalent link or control on the same page that
-                        is at least 44 by 44 CSS pixels;
+                     <dd>ターゲットと同等のリンク又はコントロールが同じページに 44 × 44 CSS ピクセル以上のサイズで存在する。
                      </dd>
                      	                 
-                     <dt>Inline</dt> 
+                     <dt>インライン</dt> 
                      
-                     <dd>The target is in a sentence or block of text;</dd>
+                     <dd>ターゲットが文中、又はテキストブロック内に存在する。</dd>
                      	                 
-                     <dt>User Agent Control</dt> 
+                     <dt>ユーザエージェントのコントロール</dt> 
                      
-                     <dd>The size of the target is determined by the user agent and is not modified by the
-                        author;
+                     <dd>ターゲットのサイズがユーザエージェントによって決定され、かつコンテンツ制作者によって変更されていない。
                      </dd>
                      	                 
-                     <dt>Essential</dt> 
+                     <dt>必要不可欠</dt> 
                      
-                     <dd>A particular presentation of the target is <a href="#dfn-essential">essential</a> to the information being conveyed.
+                     <dd>そのターゲットを特定の方法で提示することが、伝達される情報において<a href="#dfn-essential">必要不可欠</a>である。
                      </dd>
                      
                   </dl>
