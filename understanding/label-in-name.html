@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  2.5.3: Label in Name | WAI | W3C</title>
+      <title>解説書 達成基準 2.5.3: ラベルを含む名前 (name) | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
-      <!-- 日本語訳されるまでの一時的なスクリプト -->
-      <script src="untranslated-note.js"></script>
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://waic.jp/translations/WCAG22/Understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -37,17 +35,17 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"><a href="input-modalities">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Input Modalities</a></li>
+                        </svg> ガイドライン: 入力モダリティ</a></li>
                   <li class="nav__item"><a href="pointer-cancellation">
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-left-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
-                        </svg>Previous SC: Pointer Cancellation</a></li>
-                  <li class="nav__item"><a href="motion-actuation">Next SC: Motion Actuation
+                        </svg>前: ポインタのキャンセル</a></li>
+                  <li class="nav__item"><a href="motion-actuation">次: 動きによる起動
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -58,186 +56,119 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#resources">Related Resources</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
-                     <li><a href="#key-terms">Key Terms</a></li>
-                     <li><a href="#test-rules">Test Rules</a></li>
+                     <li><a href="#brief">要約</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#benefits">利点</a></li>
+                     <li><a href="#examples">事例</a></li>
+                     <li><a href="#resources">関連リソース</a></li>
+                     <li><a href="#techniques">テクニック</a></li>
+                     <li><a href="#key-terms">重要な用語</a></li>
+                     <li><a href="#test-rules">テストルール</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				SC 2.5.3:</span>Label in Name (Level A)
+            <h1><span class="standalone-resource__type-of-guidance">解説書 
+                  				達成基準 2.5.3:</span>ラベルを含む名前 (name) (レベル A)
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>For <a href="#dfn-user-interface-component">user interface components</a> with <a href="#dfn-label">labels</a> that include <a href="#dfn-text">text</a> or <a href="#dfn-image-of-text">images of text</a>, the <a href="#dfn-name">name</a> contains the text that is presented visually.
+                  <p><a href="#dfn-user-interface-component">ユーザインタフェース コンポーネント</a>が<a href="#dfn-text">テキスト</a>又は<a href="#dfn-image-of-text">文字画像</a>を含む<a href="#dfn-label">ラベル</a>を持つ場合、視覚的に提示されたテキストが<a href="#dfn-name">名前 (name) </a> に含まれている。
                   </p>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
-                     <p>A best practice is to have  the text of the label at the start of the name.</p>
+                     <p class="note-title marker">注記</p>
+                     <p>ベストプラクティスは、ラベルのテキストを名前 (name) の最初に使用することである。</p>
                   </div>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   			
-                  <dt>Goal</dt>
-                  <dd>The visual label for controls is a trigger for speech activation.</dd>
+                  <dt>目標</dt>
+                  <dd>コントロールの視覚的なラベルは、音声による起動のトリガーとなる。</dd>
                   			
-                  <dt>What to do</dt>
-                  <dd>Where practical, make the control’s text label and name match.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>可能な場合、コントロールのテキストラベルと名前とを一致させる。</dd>
                   			
-                  <dt>Why it's important</dt>
-                  <dd>People who operate with voice interaction use the visible labels in their commands.</dd>
+                  <dt>なぜそれが重要か</dt>
+                  <dd>声による操作を行う人々は、コマンドで視覚的なラベルを使用する。</dd>
                   		
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The intent of this Success Criterion is to ensure that the words which visually label
-                  a component are also the words associated with the component programmatically. This
-                  helps ensure that people with disabilities can rely on visible labels as a means to
-                  interact with the components.
+               <h2>意図</h2>
+               <p>この達成基準の意図は、コンポーネントに視覚的にラベルを付ける単語が、コンポーネントにプログラムにより関連付けられる単語でもあることを確実にすることである。これは、障害のある人がコンポーネントとやりとりする手段として可視ラベルを確実に信頼できるようにするのを助ける。
                </p>
-               <p>Most controls are accompanied by a visible text <strong>label</strong>. Those same controls have a programmatic <strong>name</strong>, also known as the <a href="https://www.w3.org/TR/accname-aam-1.1/">Accessible Name</a>. Users typically have a much better experience if the words and characters in the
-                  visible label of a control match or are contained within the accessible name. When
-                  these match, speech-input users (i.e., users of speech recognition applications) can
-                  navigate by speaking the visible text labels of components, such as menus, links,
-                  and buttons, that appear on the screen. Sighted users who use text-to-speech (e.g.,
-                  screen readers) will also have a better experience if the text they hear matches the
-                  text they see on the screen.
+               <p>ほとんどのコントロールは、可視のテキスト <strong>ラベル</strong>を伴う。この同じコントロールには、アクセシブルな名前 (<a href="https://www.w3.org/TR/accname-aam-1.1/">Accessible Name</a>) とも呼ばれるプログラムの<strong>名前</strong>がある。コントロールの可視ラベルの単語及び文字が一致する、又はアクセシブルな名前 (accessible name) に含まれている場合、利用者は一般に、はるかに優れた体験が得られる。これらが一致するとき、音声入力の利用者 (すなわち、音声認識アプリケーションの利用者) は、画面に表示されるメニュー、リンク、ボタンなどのコンポーネントの可視のテキストラベルを話すことによってナビゲートできる。テキスト読み上げ (スクリーンリーダーなど) を使用する視力のある利用者も、聞こえるテキストが画面に表示されるテキストと一致する場合に、よりよい体験が得られる。
                </p>
-               <p>Note that where a visible text label does not exist for a component, this Success
-                  Criterion does not apply to that component.
+               <p>コンポーネントに可視のテキストラベルが存在しない場合、この達成基準はそのコンポーネントには適用されないことに注意する。
                </p>
-               <p>Where text labels exist and are properly linked to the user interface components through
-                  established authoring practices, the label and name will normally match. When they
-                  don't match, speech-input users who attempt to use the visible text label as a means
-                  of navigation or selection (e.g., "move to Password") will be unsuccessful.  The speech-based
-                  navigation fails because the visible label spoken by the users does not match (or
-                  is not part of) the accessible name that is enabled as a speech-input command. In
-                  addition, when the accessible name is different from the visible label, it may function
-                  as a hidden command that can be accidentally activated by speech-input users.
+               <p>テキストラベルが存在し、確立されたオーサリングプラクティスを通じてユーザインタフェースコンポーネントに適切にリンクされている場合、ラベルと名前は通常一致する。それらが一致しない場合、ナビゲーション又は選択の手段として可視のテキストラベルを使用しようとする音声入力の利用者 (「パスワードに移動」など) は失敗する。利用者が話す可視ラベルが、音声入力コマンドとして有効であるアクセシブルな名前 (accessible name) と一致しない (又はその一部ではない) ため、音声ベースのナビゲーションは失敗する。さらに、アクセシブルな名前 (accessible name) が可視ラベルと異なる場合、音声入力の利用者によって誤って作動される可能性のある非表示のコマンドとして機能することがある。
                </p>
-               <p>Mismatches between visible labels and programmatic names for controls are even more
-                  of an issue for speech-input and text-to-speech users who also have cognitive challenges.
-                  Mismatches create an extra cognitive load for speech-input users, who must remember
-                  to say a speech command that is different from the visible label they see on a control.
-                  It also creates extra cognitive load for a text-to-speech user to absorb and understand
-                  speech output that does not match the visible label.
+               <p>コントロールの可視ラベルとプログラム名との間の不一致は、認知の問題も抱えている音声入力の利用者及びテキスト読み上げの利用者にとってさらに問題になる。不一致は、音声入力の利用者に余分な認知的負荷を引き起こす。その利用者は、コントロールに表示される可視ラベルとは異なる音声コマンドを言うことを忘れてはならない。また、テキスト読み上げの利用者が、可視ラベルと一致しない音声出力を吸収して理解するための追加の認知的負荷を引き起こす。
                </p>
-               <p>In order for the label text and accessible name to be matched, it is first necessary
-                  to determine which text on the screen should be considered a label for any given control.
-                  There are often multiple text strings in a user interface that may be relevant to
-                  a control. However, there are reasons why it is best to conservatively interpret the
-                  label as being only the text in close proximity.
+               <p>ラベルテキストとアクセシブルな名前 (accessible name) を一致させるには、まず画面上のどのテキストを与えられたコントロールのラベルと見なすかを決定する必要がある。多くの場合、ユーザインタフェースには、コントロールに関連する可能性のある複数のテキスト文字列がある。しかし、ラベルを近接したテキストのみであると保守的に解釈することが最良である理由がいくつか存在する。
                </p>
-               <p>Conventionally the label for user interface components is the adjacent text string.
-                  The typical positioning for left to right languages is:
+               <p>ユーザインタフェース コンポーネントの伝統的なラベルは隣接するテキスト文字列である。左から右への言語の一般的な配置は次のとおりである:
                </p>
                <ul>
-                  <li>immediately to the left of comboboxes, dropdown lists, text inputs, and other widgets
-                     (or in the absence of left-side labels, immediately above and aligned with the left
-                     edge of each input)
+                  <li>コンボボックス、ドロップダウンリスト、テキスト入力、及びその他のウィジェットのすぐ左 (又は、左側のラベルがない場合、各入力のすぐ上で左端に揃えられる)
                   </li>
                   
-                  <li>immediately to the right of checkboxes and radio buttons</li>
+                  <li>チェックボックス及びラジオボタンのすぐ右側</li>
                   
-                  <li>inside buttons and tabs or immediately below icons serving as buttons</li>
+                  <li>ボタン及びタブの内側、又はボタンとして機能するアイコンのすぐ下</li>
                   
                </ul>
-               <p>The rationale for some of these conventions is explained in <a href="https://www.w3.org/WAI/GL/2016/WD-WCAG20-TECHS-20160105/G162">G162: Positioning labels to maximize predictability of relationships</a>.
+               <p>これらの規則のいくつかの根本原理は、<a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G162">G162: Positioning labels to maximize predictability of relationships</a>で説明されている。
                   
                </p>
-               <p>It is important to bias towards treating only the adjacent text as a label because
-                  liberal interpretations of what constitutes a text label can jeopardize the value
-                  of this Success Criterion (SC) by lessening predictability. Isolating the label to
-                  the single string in close proximity to the component makes it easier for developers,
-                  testers, and end users to identify the label targeted for evaluation in this SC. Predictable
-                  interpretation of labeling allows users of speech recognition technologies to interact
-                  with the element via its conventionally positioned label, and allows users of screen
-                  reading technologies to enjoy consistency between the nearby visible label and the
-                  announced name of the component.
+               <p>テキストラベルを構成するものを自由に解釈すると、予測可能性の低下によりこの達成基準の価値が危険にさらされる可能性があるため、隣接するテキストのみをラベルとして扱うようにバイアスをかけることが重要である。コンポーネントに近接した単一の文字列にラベルを分離すると、開発者、テスター、およびエンドユーザがこの達成基準で評価の対象となるラベルを簡単に特定できるようになる。ラベル付けの予測可能な解釈により、音声認識技術の利用者は、伝統的な位置にあるラベルを通して要素とやりとりでき、画面読み上げ技術の利用者は、近くに表示されるラベルとコンポーネントの通知された名前との間の一貫性を得ることを可能にする。
                </p>
-               <p>Note that placeholder text within an input field is not considered an appropriate
-                  means of providing a label. The <a href="https://www.w3.org/TR/html52/sec-forms.html#the-placeholder-attribute">HTML5 specification</a> states <q>The placeholder attribute should not be used as an alternative to a &lt;label&gt;.</q> However, it is worth noting that "label" in that HTML5 statement is in code brackets
-                  and links to the <code>label</code> element. For the purposes of this Label in Name Success Criterion, "label" is not
-                  used in such a programmatic sense but is simply referring to a text string in close
-                  visual proximity to a component. As such, in the absence of any other nearby text
-                  string (as described in the preceding list), if an input contains placeholder text,
-                  such text may be a candidate for Label in Name. This is supported both through the
-                  accessible name calculation (discussed later) and from the practical sense that where
-                  a visible label is not otherwise provided, it is likely that a speech-input user may
-                  attempt to use the placeholder text value as a means of interacting with the input.
+               <p>入力フィールド内のプレースホルダーテキストは、ラベルを提供する適切な手段とは見なされないことに注意する。<a href="https://www.w3.org/TR/html52/sec-forms.html#the-placeholder-attribute">HTML5 仕様</a>では、<q>プレースホルダー属性を &lt;label&gt; の代わりに使用すべきでない</q>と記述されている。しかし、その HTML5 ステートメントの "ラベル" はコードブラケット内にあり、<code>label</code> 要素にリンクしていることに注意する。ラベルを含む名前 (name)の達成基準の目的のために、"ラベル" はそのようなプログラム的な意味で使用されないが、単にコンポーネントに視覚的に近接したテキスト文字列を指す。そのため、 (前述のリストで説明したように) 近くに他のテキスト文字列がない場合に、入力にプレースホルダーテキストが含まれているならば、そのようなテキストはラベルを含む名前 (name) の候補になることがある。これは、アクセシブルな名前の計算 (後で説明) と、可視ラベルが他に提供されない場合、音声入力の利用者が入力をともなうやりとりの手段としてプレースホルダーテキストの値を使用しようとする可能性があるという実際的な意味の両方でサポートされる。
                </p>
                <section id="text-labels-&#34;express-something-in-human-language&#34;">
                   
-                  <h3>Text labels "express something in human language"</h3>
+                  <h3>「自然言語で何かを表現している」テキストラベル</h3>
                   				
                   <section id="symbolic-text-characters">
                      
-                     <h4>Symbolic text characters</h4>
+                     <h4>記号的な文字</h4>
                      
-                     <p>For the purposes of this SC, text should not be considered a visible label if it is
-                        used in a symbolic manner, rather than directly <q>expressing something in human language</q> as per the definition of <a href="#dfn-text">text</a> in WCAG. For example, <a href="https://www.w3.org/TR/WCAG21/#images-of-text">1.4.5 Images of Text</a> describes considerations for "symbolic text characters." In the images of text example
-                        "B", "I", and "ABC" appear on icons in a text editor, where they are meant to symbolize
-                        the functions for Bold, Italics, and Spelling, respectively. In such a case, the accessible
-                        name should be the function the button serves (e.g., "Spell check" or "Check spelling"),
-                        not the visible symbolic characters. A similar text editor is shown in the figure
-                        below.
+                     <p>この達成基準のために、テキストは、WCAG の <a href="#dfn-text">テキスト</a>の定義に従って直接<q>自然言語で何かを表現しているもの</q>よりむしろ、記号的な方法で使用される場合、可視のラベルと見なされるべきでない。例えば、<a href="https://www.w3.org/TR/WCAG21/#images-of-text">1.4.5 文字画像</a>は、「記号的な文字」に関する考慮事項を説明している。文字画像の例では、「B」、「I」、及び「ABC」がテキストエディタのアイコンに表示される。これらは、それぞれ太字、斜体、およびスペルの機能を表すことを目的としている。そのような場合、アクセシブルな名前 (accessible name) は、表示されている記号的な文字ではなく、ボタンが提供する機能 (「スペルチェック」や「スペルをチェックする」など) とするべきである。同様のテキストエディタを次の図に示す。
                      </p>
                      
                      <figure id="figure-RTE-github">
-                        	<img alt="Icons for transforming text, including heading, bold, italic, quote, code, and link, along with icons for ordered and unordered lists and other controls" src="img/rich-text-editor-detail.png" />
+                        	<img alt="見出し、太字、斜体、引用、コード、リンクなどのテキストを変換するためのアイコン、順序付き及び順序なしのリスト並びにその他のコントロールのアイコン" src="img/rich-text-editor-detail.png" />
                         	
-                        <figcaption>Figure 1 A detail of the rich text editor in Github, showing a variety of unlabeled icons,
-                           including icons resembling text characters.
+                        <figcaption>図 1 Github のリッチテキストエディタの詳細。文字に似たアイコンなど、ラベルのないさまざまなアイコンが表示されている。
                         </figcaption>
                         
                      </figure>
                      
-                     <p>Likewise, where an author has used a greater-than symbol ("&gt;") to mimic the appearance
-                        of the right-facing arrow, the text does not convey something in human language. It
-                        is a symbol, in this scenario likely meant to mimic the icons used for a "Play" button
-                        or a "Next" arrow.
+                     <p>同様に、コンテンツ制作者が大なり記号 ("&gt;") を使用して右向きの矢印の外観を模倣した場合、テキストは自然言語で何も伝えない。これは記号であり、このシナリオでは、「再生」ボタン又は「次へ」矢印に使用されるアイコンを模倣することを意図した可能性がある。
                      </p>
                      
-                     <h4>Punctuation and capitalization</h4>
+                     <h4>句読点及び大文字の使用</h4>
                      				
                   </section>
                   				
                   <section id="">
                      
-                     <p>The use of punctuation and capitalization in labels <em>may</em> also be considered optional for the same reason. For example, the colon conventionally
-                        added at the end of input labels does not express something in human language, and
-                        capitals on the first letter of each word in a label do not normally alter the words'
-                        meaning. This is particularly relevant in the context of this SC, since it is primarily
-                        aimed at users of speech recognition; capitals and most punctuation are frequently
-                        ignored when a user speaks a label as a means of interacting with a control.
+                     <p>ラベルにおける句読点の使用及び大文字の使用も、同じ理由でオプションと見なされても<em>よい</em>。例えば、入力ラベルの最後に従来追加されていたコロンは自然言語では何も表現せず、そしてラベルの各単語の最初の文字を大文字にしても、通常は単語の意味は変わらない。これは、主に音声認識の利用者を対象としているため、この達成基準のコンテキストに特に関係がある。利用者がコントロールとやりとりする手段としてラベルを話すとき、大文字及びほとんどの句読点は頻繁に無視される。
                      </p>
                      
-                     <p>While it is certainly not an error to include the colon and capitalization in the
-                        accessible name, a computed name of "First name" should not be considered a failure
-                        of "First Name:".<br />
+                     <p>アクセシブルな名前 (accessible name) にコロン及び大文字を含めることは間違いなくエラーではないが、"First name" の計算された名前は、"First Name:" の失敗と見なされるべきではない。<br />
                         <label for="firstname">First Name: </label><input id="firstname" type="text" name="firstname" /><br />
-                        Likewise, "Next…" visibly shown on a button could have "Next" as the accessible name.
-                        When in doubt, where a meaningful visible label exists, match the string exactly for
-                        the accessible name.<br />
+                        同様に、ボタンに表示される "Next…" は、アクセシブルな名前 (accessible name) として "Next" を持つことができます。意味のある可視のラベルが存在するのか疑わしい場合、アクセシブルな名前 (accessible name) の文字列と正確に一致させる。<br />
                         <input type="submit" value="Next..." /></p>
                      				
                   </section>
@@ -245,23 +176,9 @@
                   <section id="mathematical-expressions-and-formulae">
                      
                      
-                     <h4>Mathematical expressions and formulae</h4>
+                     <h4>数式及び式</h4>
                      
-                     <p>Mathematical expressions are an exception to the previous subsection about symbolic
-                        characters. Math symbols can be used as labels; for example "11×3=33" and "A&gt;B" convey
-                        meaning. The label should not be overwritten in the accessible name, and substitutions
-                        of words where a formula is used should be avoided since there are multiple ways to
-                        express the same equation. For example, making the name "eleven multiplied by three
-                        is equivalent to thirty-three" might mean a user who said "eleven times three equals
-                        thirty-three" may not match. It is best to leave the formulas as used in the label
-                        and count on the user's familiarity with their speech software to achieve a match.
-                        Further, converting a mathematical formula label into an accessible name that is a
-                        spelled-out equivalent may create issues for translation. The name should match the
-                        label's formula text. Note that a consideration for authors is to use the proper symbol
-                        in the formula. For instance 11x3 (with a lower or upper case letter X), 11*3 (with
-                        the asterisk symbol), and 11×3 (with the <code>&amp;</code>times<code>;</code> symbol) are all easy for sighted users to interpret as meaning the same formula,
-                        but may not all be matched to "11 times 3" by the speech recognition software. The
-                        proper operator symbol (in this case the times symbol) should be used.<br />
+                     <p>数式は、記号文字に関する前のサブセクションの例外である。数学記号はラベルとして使用することができる。例えば、"11×3=33" 及び "A&gt;B" は意味を伝える。ラベルはアクセシブルな名前 (accessible name) で上書きすべきでなく、同じ方程式を表現する方法は複数あるため、式が使用されている単語の置換は避けるべきである。例えば、"11×3 は 33 に相当する" という名前 (name) を付けると、"11×3 は 33 に等しい" と言う利用者は一致しない可能性がある。ラベルで使用されている式をそのままにして、一致を達成するために利用者が音声ソフトウェアに精通していることを期待するのが最善である。さらに、数式のラベルを、スペルアウトされた同等のアクセシブルな名前 (accessible name) に変換すると、翻訳の問題が発生する可能性がある。名前 (name) は、ラベルの数式テキストと一致すべきである。コンテンツ制作者にとっての考慮事項は、数式で適切な記号を使用することであることに注意する。例えば、11x3 (小文字又は大文字のX)、11*3 (アスタリスク記号をもつ)、及び 11×3 (<code>&amp;</code>times<code>;</code> 記号をもつ) は全て、目の見える利用者にとって同じ式を意味するものとして解釈するのは簡単であるが、音声認識ソフトウェアによって全てが "11×3" に一致するとは限らない。適切な演算子記号 (この場合は乗算記号) を使用すべきである。<br />
                         
                         <input type="radio" name="equation" id="answer1" value="A&gt;B" /><label for="answer1">A&gt;B</label>
                         <input type="radio" name="equation" id="answer2" value="A=B" /><label for="answer2">A=B</label>
@@ -273,82 +190,61 @@
                <section id="accessible-name-and-description-computation-specification">
                   
                   
-                  <h3>Accessible Name and Description Computation specification</h3>
+                  <h3>Accessible Name and Description Computation 仕様</h3>
                   
-                  <p>It is important to understand how the accessible name is derived. The <a href="https://www.w3.org/TR/accname-1.1/">Accessible Name and Description Computation 1.1</a> and the <a href="https://w3c.github.io/html-aam/#accessible-name-and-description-computation">HTML Accessibility API Mappings 1.0</a> describe how the accessible name is computed, including which attributes are considered
-                     in its calculation, and in what order of preference. If a component has multiple possible
-                     attribute values that could be used for its accessible name, only the most preferred
-                     of those values will be computed. None of the other, less preferred values will be
-                     part of the name. For the most part, existing established programmatic relationships
-                     between labels and controls are reinforced by the specification.
+                  <p>アクセシブルな名前 (accessible name) がどのように派生するかを理解することが重要である。<a href="https://www.w3.org/TR/accname-1.1/">Accessible Name and Description Computation 1.1</a> 及び <a href="https://w3c.github.io/html-aam/#accessible-name-and-description-computation">HTML Accessibility API Mappings 1.0</a> は、アクセシブルな名前 (accessible name) の計算方法を説明する。これには、計算で考慮される属性や優先順位などが含まれる。コンポーネントに、アクセシブルな名前 (accessible name) に使用できる複数の属性値がある場合、それらの値の中で最も優先されるものだけが計算される。他のあまり好ましくない値は名前 (name) の一部にはならない。ほとんどの場合、ラベルとコントロールの間に確立された既存のプログラム上の関係が仕様によって強化されている。
                   </p>
                   
-                  <p>Other text displayed on the screen that is correctly coded to meet 1.3.1: Info and
-                     Relationships is <strong>not</strong> normally factored into the calculation for the accessible name of a UI component
-                     without author intervention (via ARIA labeling techniques). The most common of these
-                     are:
+                  <p>1.3.1: 情報及び関係性を満たすように正しくコーディングされた画面に表示されるその他のテキストは、通常、作成者の介入なしに（ARIAラベル付け手法を通して）UI コンポーネントのアクセシブルな名前 (accessible name) の計算に考慮<strong>されない</strong>。これらの中で最も一般的なものは次のとおり:
                   </p>
                   	
                   <ul>
                      		
-                     <li>headings and instructions</li>
+                     <li>見出し及び指示</li>
                      
-                     <li>group labels for sets of components (i.e., used with <code>legend</code>/<code>fieldset</code> or with role of <code>group</code> or <code>radiogroup</code>)
+                     <li>コンポーネントのセットのグループラベル (すなわち、<code>legend</code>/<code>fieldset</code> で使用される、又は <code>group</code> もしくは <code>radiogroup</code> の役割 (role) で使用される)
                      </li> 
                      
                   </ul>
                   
-                  <p>Such textual information may constitute part of the component's <em>description</em>. So from both a programmatic viewpoint, and from the conservative tactic of only
-                     considering a label to be "adjacent text," neither headings, instructions, nor group
-                     'labels' should normally be considered <strong>labels</strong> for the purpose of this Success Criterion.
+                  <p>そのようなテキスト情報は、コンポーネントの<em>説明</em>の一部を構成する場合がある。したがって、プログラムの観点からと、ラベルを「隣接するテキスト」と見なすという保守的な戦術の両方から、通常、見出し、指示、グループの「ラベル」のいずれも、この達成基準の目的の<strong>ラベル</strong>と見なされるべきではない。
                   </p>
                   
-                  <p>It is important to note that the specification allows authors to override the name
-                     calculated through native semantics. Both <code>aria-label</code> and <code>aria-labelledby</code> take precedence in the name calculation, overriding the visible text as the accessible
-                     name even when the visible text label is programmatically associated with the control.
-                     For this reason, when a visible label already exists, <code>aria-label</code> should be avoided or used carefully, and <code>aria-labelledby</code> should be used as a supplement with care.
+                  <p>この仕様では、コンテンツ制作者がネイティブセマンティクスによって計算された名前 (name) を上書きできることに注意することが重要である。名前 (name) の計算では、<code>aria-label</code> と <code>aria-labelledby</code> の両方が優先され、表示されるテキストラベルがプログラムでコントロールに関連付けられている場合でも、アクセシブルな名前 (accessible name) として表示されるテキストが上書きされる。このため、可視ラベルがすでに存在する場合、<code>aria-label</code> を避ける又は慎重に使用すべきであり、<code>aria-labelledby</code> は注意して補足として使用すべきである。
                   </p>
                   
-                  <p>Finally, <code>aria-describedby</code> is not included in the Accessible Name computation (instead it is part of the Accessible
-                     Description computation). By convention, text associated with a control through <code>aria-describedby</code> is announced immediately after the accessible name by screen readers. Therefore,
-                     the context of headings, instructions, and group labels can be provided through the
-                     accessible description to assist users of screen readers without affecting the experience
-                     of those who navigate using speech recognition software.
+                  <p>最後に、<code>aria-describedby</code> はアクセシブルな名前 (accessible name) 計算には含まれない（代わりに、アクセシブルな説明の計算の一部となる）。慣例により、<code>aria-describedby</code> によってコントロールに関連付けられたテキストは、スクリーンリーダーによってアクセシブルな名前 (accessible name) の直後に通知される。したがって、見出し、指示、及びグループラベルのコンテキストは、音声認識ソフトウェアを用いてナビゲートする利用者のエクスペリエンスに影響を与えることなく、スクリーンリーダーの利用者を支援するために、アクセシブルな説明を通して提供される。
                   </p>
                   			
                </section>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>利点</h2>
                <ul>
                   					
-                  <li>Speech-input users can directly activate controls on a page with fewer surprising
-                     changes of focus.
+                  <li>音声入力の利用者は、意図せずフォーカス位置が変更されてしまうことのない形で、直接、ページ上のコントロールを動作させることができる。
                   </li>
                   					
-                  <li>Text-to-speech users will have a better experience because the labels that they hear
-                     match the visible text labels that
-                     					they see on the screen.
+                  <li>テキスト読み上げツールの利用者は、聞き取ったラベルが画面上で目にした可視テキストラベルと一致するため、よりよい体験が得られる。
                   </li>
                   				
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>事例</h2>
                <ul>
                   				
-                  <li><strong>Accessible name matches visible label:</strong> The accessible name and visible label of a control match.
+                  <li><strong>アクセシブルな名前 (accessible name) が可視ラベルと一致する:</strong> アクセシブルな名前 (accessible name) とコントロールの可視ラベルが一致する。
                   </li>
                   				
-                  <li><strong>Accessible name starts with visible label:</strong> The accessible name "Search for a value" begins with the text of the visible label,
-                     "Search".
+                  <li><strong>アクセシブルな名前 (accessible name) が可視ラベルで始まる:</strong> アクセシブルな名前 (accessible name) "Search for a value" は、可視ラベルのテキスト "Search" で始まっている。
                   </li>
                   			
                </ul>
             </section>
             <section id="resources">
-               <h2>Related Resources</h2>
-               <p>Resources are for information purposes only, no endorsement implied.</p>
+               <h2>関連リソース</h2>
+               <p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p>
                <ul>
                   				
                   <li><a href="https://www.w3.org/TR/accname-aam-1.1/">Accessible Name and Description Computation</a></li>
@@ -358,14 +254,11 @@
                </ul>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
+                  <h3>十分なテクニック</h3>
                   <ul>
                      					
                      <li><a href="https://w3c.github.io/wcag/techniques/general/G208">G208: Including the text of the visible label as part of the accessible name</a></li>
@@ -375,42 +268,30 @@
                   </ul>
                </section>
                <section id="advisory">
-                  <h3>Advisory Techniques</h3>
-                  <p>Although not required for conformance, the following additional techniques should
-                     be considered in order to make content more accessible. Not all techniques can be
-                     used or would be effective in all situations.
-                  </p>
-                  <p>Although not required for conformance, the following additional techniques should
-                     be considered in order to make content more accessible. Not all techniques can be
-                     used or would be effective in all situations.
-                     
+                  <h3>参考テクニック</h3>
+                  <p>適合のために必須ではないが、コンテンツをよりアクセシブルにするために、次の追加のテクニックを検討することが望ましい。ただし、すべての状況において、すべてのテクニックが使用可能、又は効果的であるとは限らない。                     
                   </p>
                   <ul>
                      					
-                     <li><a href="https://www.w3.org/WAI/GL/2016/WD-WCAG20-TECHS-20160105/G162">G162: Positioning labels to maximize predictability of relationships</a></li>
+                     <li><a href="https://w3c.github.io/wcag/techniques/general/G162">G162: Positioning labels to maximize predictability of relationships</a></li>
                      					
-                     <li>If an icon has no accompanying text, consider using its hover text as its accessible
-                        name (Potential future technique)
+                     <li>アイコンに付随するテキストがない場合、アクセシブルな名前 (accessible name) としてそのホバーテキストを用いることを検討する。(将来、テクニックに追加される可能性あり)
                      </li>
                      				
                   </ul>
                </section>
                <section id="failure">
-                  <h3>Failures</h3>
-                  <p>The following are common mistakes that are considered failures of this Success Criterion
-                     by the WCAG Working Group.
+                  <h3>失敗例</h3>
+                  <p>以下に挙げるものは、WCAG ワーキンググループが達成基準の失敗例とみなした、よくある間違いである。
                   </p>
                   <ul>
                      					
                      <li><a href="https://w3c.github.io/wcag/techniques/failures/F96">F96: Failure due to the accessible name not containing the visible label text</a></li>
                      					
-                     <li>Accessible name contains the visible label text, but the words of the visible label
-                        are not in the same order as they are in the visible label text (Potential future
-                        technique)
+                     <li>アクセシブルな名前 (accessible name) が可視ラベルのテキストを含んでいるが、語順が可視ラベルのテキストと同一でない。(将来、失敗例に追加される可能性あり)
                      </li>
                      					
-                     <li>Accessible name contains the visible label text, but one or more other words are interspersed
-                        in the label (Potential future technique)
+                     <li>アクセシブルな名前 (accessible name) が可視ラベルのテキストを含んでいるが、一つ以上の語がラベルの中に挿入されている。(将来、失敗例に追加される可能性あり)
                      </li>
                      				
                   </ul>
@@ -419,63 +300,49 @@
             <section id="key-terms">
                <details>
                   <summary>
-                     <h2>Key Terms</h2>
+                     <h2>重要な用語</h2>
                   </summary>
-                  <dt id="dfn-ascii-art">ascii art</dt>
+                  <dt id="dfn-ascii-art">ASCII アート (ASCII art)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">picture created by a spatial arrangement of characters or glyphs (typically from the
-                           95 printable characters defined by ASCII)
+                        <p xmlns="http://www.w3.org/1999/xhtml">文字又はグリフの空間的配置によって作られた図画 (典型的には、ASCII で定義されている 95 の印字可能文字から作られる)。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-assistive-technology">assistive technology</dt>
+                  <dt id="dfn-assistive-technology">支援技術 (assistive technology)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">hardware and/or software that acts as a <a href="#dfn-user-agent">user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements
-                           of users with disabilities that go beyond those offered by mainstream user agents
+                        <p xmlns="http://www.w3.org/1999/xhtml">障害のある利用者の要件を満たすために、主流の<a href="#dfn-user-agent">ユーザエージェント</a>が提供する機能を超えた機能を提供するような、ユーザエージェントとして動作する、又は主流のユーザエージェントと共に動作するハードウェア及び／又はソフトウェア。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Functionality provided by assistive technology includes alternative presentations
-                              (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
-                              voice), additional navigation or orientation mechanisms, and content transformations
-                              (e.g., to make tables more accessible).
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術が提供する機能としては、代替の提示 (例: 合成音声や拡大表示したコンテンツ)、代替入力手法 (例: 音声認識)、付加的なナビゲーション又は位置確認のメカニズム、及びコンテンツ変換 (例: テーブルをよりアクセシブルにするもの) などを挙げることができる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Assistive technologies often communicate data and messages with mainstream user agents
-                              by using and monitoring APIs.
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術は、API を利用、監視することで、主流のユーザエージェントとデータやメッセージのやりとりをすることが多い。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The distinction between mainstream user agents and assistive technologies is not absolute.
-                              Many mainstream user agents provide some features to assist individuals with disabilities.
-                              The basic difference is that mainstream user agents target broad and diverse audiences
-                              that usually include people with and without disabilities. Assistive technologies
-                              target narrowly defined populations of users with specific disabilities. The assistance
-                              provided by an assistive technology is more specific and appropriate to the needs
-                              of its target users. The mainstream user agent may provide important functionality
-                              to assistive technologies like retrieving Web content from program objects or parsing
-                              markup into identifiable bundles.
+                           <p class="note-title marker">注記</p>
+                           <p>主流のユーザエージェントと支援技術との区別は、絶対的なものではない。多くの主流のユーザエージェントは、障害のある個人を支援する機能を提供している。基本的な差異は、主流のユーザエージェントが障害のある人もない人も含めて、広く多様な利用者を対象にしているのに対し、支援技術は、特定の障害のある利用者という、より狭く限られた人たちを対象にしているということである。支援技術により提供される支援は、対象とする利用者に特化した、よりニーズに適したものである。主流のユーザエージェントは、プログラムオブジェクトからのウェブコンテンツの抽出、マークアップの識別可能な構造への解釈といった、重要な機能を支援技術に対して提供する場合がある。
                               
                            </p>
                         </div>
@@ -483,8 +350,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Assistive technologies that are important in the context of this document include
-                              the following:
+                           <p>この文書の文脈において重要な支援技術としては、以下のものが挙げられる:
                               
                            </p>
                            
@@ -492,38 +358,30 @@
                            <ul>
                               
                               
-                              <li>screen magnifiers, and other visual reading assistants, which are used by people with
-                                 visual, perceptual and physical print disabilities to change text font, size, spacing,
-                                 color, synchronization with speech, etc. in order to improve the visual readability
-                                 of rendered text and images;
+                              <li>画面拡大ソフト及びその他の視覚的な表示に関する支援技術。視覚障害、知覚障害、及び読書困難などの障害のある人が、レンダリング後のテキスト及び画像の視覚的な読みやすさを改善するために、テキストのフォント、サイズ、間隔、色、音声との同期などを変更するのに使用している。
                                  
                               </li>
                               
                               
-                              <li>screen readers, which are used by people who are blind to read textual information
-                                 through synthesized speech or braille;
+                              <li>スクリーンリーダー。全盲の人がテキスト情報を合成音声あるいは点字で読み取るために使用している。
                                  
                               </li>
                               
                               
-                              <li>text-to-speech software, which is used by some people with cognitive, language, and
-                                 learning disabilities to convert text into synthetic speech;
+                              <li>音声変換ソフトウェア。認知障害、言語障害、及び学習障害のある人が、テキストを合成音声に変換するために使用している。
                                  
                               </li>
                               
                               
-                              <li>speech recognition software, which may be used by people who have some physical disabilities;</li>
+                              <li>音声認識ソフトウェア。何らかの身体障害のある利用者が使用することがある。</li>
                               
                               
-                              <li>alternative keyboards, which are used by people with certain physical disabilities
-                                 to simulate the keyboard (including alternate keyboards that use head pointers, single
-                                 switches, sip/puff and other special input devices.);
+                              <li>代替キーボード。特定の身体障害のある人がキーボード操作をシミュレートするのに使用している (ヘッドポインタ、シングルスイッチ、呼気・吸気スイッチ、及びその他の特別な入力デバイスを使った代替キーボードを含む)。
                                  
                               </li>
                               
                               
-                              <li>alternative pointing devices, which are used by people with certain physical disabilities
-                                 to simulate mouse pointing and button activations.
+                              <li>代替ポインティングデバイス。特定の身体障害のある人がマウスポインタとボタンの動きをシミュレートするのに使用している。
                                  
                               </li>
                               
@@ -534,32 +392,31 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-content">content</dt>
+                  <dt id="dfn-content">コンテンツ (content)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">information and sensory experience to be communicated to the user by means of a <a href="#dfn-user-agent">user agent</a>, including code or markup that defines the content's <a href="#dfn-structure">structure</a>, <a href="#dfn-presentation">presentation</a>, and interactions
+                        <p xmlns="http://www.w3.org/1999/xhtml">コンテンツの <a href="#dfn-structure">構造</a>、<a href="#dfn-presentation">提示</a>、及びインタラクションを定義するコード又はマークアップも含めて、<a href="#dfn-user-agent">ユーザエージェント</a>によって利用者に伝達される情報及び感覚的な体験。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-human-language">human language</dt>
+                  <dt id="dfn-human-language">自然言語 (human language)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">language that is spoken, written or signed (through visual or tactile means) to communicate
-                           with humans
+                        <p xmlns="http://www.w3.org/1999/xhtml">人間とコミュニケーションをとるために話される、書かれる、又は (視覚的もしくは触覚的な手段で) 手話にされる言語。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>See also <a href="#dfn-sign-language">sign language</a>.
+                           <p class="note-title marker">注記</p>
+                           <p><a href="#dfn-sign-language">手話</a>も参照。
                               
                            </p>
                         </div>
@@ -567,20 +424,19 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-image-of-text">image of text</dt>
+                  <dt id="dfn-image-of-text">文字画像 (image of text)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">text that has been rendered in a non-text form (e.g., an image) in order to achieve
-                           a particular visual effect
+                        <p xmlns="http://www.w3.org/1999/xhtml">特定の視覚的効果を得るために非テキスト形式 (例えば画像) でレンダリングされたテキスト
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>This does not include <a href="#dfn-text">text</a> that is part of a picture that contains significant other visual content.
+                           <p class="note-title marker">注記</p>
+                           <p><a href="#dfn-text">テキスト</a>以外の部分が重要な視覚的コンテンツである場合、画像に含まれるテキストは該当しない。
                               
                            </p>
                         </div>
@@ -588,80 +444,77 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A person's name on a nametag in a photograph.</p>
+                           <p>写真に写っている人の名札にある人名。</p>
                            
                         </aside>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-label">label</dt>
+                  <dt id="dfn-label">ラベル (label)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
                         <p xmlns="http://www.w3.org/1999/xhtml">
-                           <a href="#dfn-text">text</a> or other component with a <a href="#dfn-text-alternative">text alternative</a> that is presented to a user to identify a component within Web <a href="#dfn-content">content</a>
+                           <a href="#dfn-text">テキスト</a>、又は<a href="#dfn-text-alternative">テキストによる代替</a>を伴うコンポーネントで、ウェブ<a href="#dfn-content">コンテンツ</a>内のコンポーネントを識別するために利用者に提示されているもの。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>A label is presented to all users whereas the <a href="#dfn-name">name</a> may be hidden and only exposed by assistive technology. In many (but not all) cases
-                              the name and the label are the same.
+                           <p class="note-title marker">注記</p>
+                           <p><a href="#dfn-name">名前 (name)</a> は隠されていて、支援技術に対してだけ公開される場合がある一方で、ラベルはすべての利用者に提示される。多くの場合 (すべてではないが)、名前 (name) とラベルは同じである。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The term label is not limited to the label element in HTML.</p>
+                           <p class="note-title marker">注記</p>
+                           <p>ラベルという用語は、HTML における label 要素だけに限定されない。</p>
                         </div>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-name">name</dt>
+                  <dt id="dfn-name">名前 (name)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">text by which software can identify a component within Web content to the user</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ソフトウェアが、ウェブコンテンツのコンポーネントを利用者に識別させることができるテキスト。</p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The name may be hidden and only exposed by assistive technology, whereas a <a href="#dfn-label">label</a> is presented to all users. In many (but not all) cases, the label and the name are
-                              the same.
+                           <p class="note-title marker">注記</p>
+                           <p><a href="#dfn-label">ラベル</a>はすべての利用者に提示される一方で、名前 (name) は隠されていて、支援技術に対してだけ明らかにされる場合もある。多くの場合 (すべてではないが)、ラベルと名前 (name) は同じである。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>This is unrelated to the name attribute in HTML.</p>
+                           <p class="note-title marker">注記</p>
+                           <p>これは、HTML の name 属性とは関係がない。</p>
                         </div>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-non-text-content">non-text content</dt>
+                  <dt id="dfn-non-text-content">非テキストコンテンツ (non-text content)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">any content that is not a sequence of characters that can be <a href="#dfn-programmatically-determined">programmatically determined</a> or where the sequence is not expressing something in <a href="#dfn-human-language">human language</a>
+                        <p xmlns="http://www.w3.org/1999/xhtml"><a href="#dfn-programmatically-determined">プログラムによる解釈が可能</a>な文字の並びではないコンテンツ、又は文字の並びが<a href="#dfn-human-language">自然言語</a>においても何をも表現していないコンテンツ。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>This includes <a href="#dfn-ascii-art">ASCII Art</a> (which is a pattern of characters), emoticons, leetspeak (which uses character substitution),
-                              and images representing text
+                           <p class="note-title marker">注記</p>
+                           <p>Tこれには、 (文字による図画である) <a href="#dfn-ascii-art"> ASCII アート</a>、顔文字、 (文字を置き換える) リートスピーク、文字を表現している画像が含まれる。
                               
                            </p>
                         </div>
@@ -669,33 +522,31 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-presentation">presentation</dt>
+                  <dt id="dfn-presentation">提示 (presentation)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">rendering of the <a href="#dfn-content">content</a> in a form to be perceived by users
+                        <p xmlns="http://www.w3.org/1999/xhtml">利用者が知覚できる形式で<a href="#dfn-content">コンテンツ</a>をレンダリングすること。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-programmatically-determined">programmatically determined</dt>
+                  <dt id="dfn-programmatically-determined">プログラムによる解釈 (programmatically determined)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">determined by software from author-supplied data provided in a way that different
-                           <a href="#dfn-user-agent">user agents</a>, including <a href="#dfn-assistive-technology">assistive technologies</a>, can extract and present this information to users in different modalities
+                        <p xmlns="http://www.w3.org/1999/xhtml"><a href="#dfn-assistive-technology">支援技術</a>を含む様々な<a href="#dfn-user-agent">ユーザエージェント</a>が抽出でき、利用者に様々な感覚モダリティで提示できるような形のデータがコンテンツ制作者によって提供されたとき、そのデータがソフトウェアによって解釈されること。
                            
                         </p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Determined in a markup language from elements and attributes that are accessed directly
-                              by commonly available assistive technology.
+                           <p>マークアップ言語で、一般に入手可能な支援技術が直接アクセスできる要素と属性から解釈される。
                               
                            </p>
                            
@@ -704,9 +555,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Determined from technology-specific data structures in a non-markup language and exposed
-                              to assistive technology via an accessibility API that is supported by commonly available
-                              assistive technology.
+                           <p>非マークアップ言語の技術特有のデータ構造から解釈され、一般に入手可能な支援技術がサポートするアクセシビリティ API を通じて支援技術に提供される。
                               
                            </p>
                            
@@ -715,20 +564,19 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-sign-language">sign language</dt>
+                  <dt id="dfn-sign-language">手話 (sign language)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">a language using combinations of movements of the hands and arms, facial expressions,
-                           or body positions to convey meaning
+                        <p xmlns="http://www.w3.org/1999/xhtml">意味を伝えるために、手と腕の動き、顔の表情又は身体の姿勢の組み合わせを用いる言語。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-structure">structure</dt>
+                  <dt id="dfn-structure">構造 (structure)</dt>
                   <dd>
                      <definition xmlns="">
                         
@@ -736,12 +584,12 @@
                         <ol xmlns="http://www.w3.org/1999/xhtml">
                            
                            
-                           <li>The way the parts of a <a href="#dfn-web-page">Web page</a> are organized in relation to each other; and
+                           <li><a href="#dfn-web-page">ウェブページ</a>の各部を相互の関係性によりまとめる方法論。及び、
                               
                            </li>
                            
                            
-                           <li>The way a collection of <a href="#dfn-web-page">Web pages</a> is organized
+                           <li>一連の<a href="#dfn-web-page">ウェブページ</a>をまとめる方法論。
                               
                            </li>
                            
@@ -751,35 +599,32 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-text">text</dt>
+                  <dt id="dfn-text">テキスト (text)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">sequence of characters that can be <a href="#dfn-programmatically-determined">programmatically determined</a>, where the sequence is expressing something in <a href="#dfn-human-language">human language</a>
+                        <p xmlns="http://www.w3.org/1999/xhtml"><a href="#dfn-programmatically-determined">プログラムによる解釈</a>が可能な文字の並びで、<a href="#dfn-human-language">自然言語</a>で何かを表現しているもの。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-text-alternative">text alternative</dt>
+                  <dt id="dfn-text-alternative">テキストによる代替 (text alternative)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
                         <p xmlns="http://www.w3.org/1999/xhtml">
-                           <a href="#dfn-text">Text</a> that is programmatically associated with <a href="#dfn-non-text-content">non-text content</a> or referred to from text that is programmatically associated with non-text content.
-                           Programmatically associated text is text whose location can be programmatically determined
-                           from the non-text content.
+                           非テキストコンテンツとプログラムで関連付けられる<a href="#dfn-text">テキスト</a>。又は<a href="#dfn-non-text-content">non-text content</a>とプログラムで関連付けられるテキストから参照されるテキスト。プログラムで関連付けられたテキストとは、その場所を、非テキストコンテンツからプログラムによる解釈が可能なテキストである。
                            
                         </p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>An image of a chart is described in text in the paragraph after the chart. The short
-                              text alternative for the chart indicates that a description follows.
+                           <p>チャートの画像があり、その直後の段落にテキストによる説明がある。チャートに対する短いテキストによる代替で後に説明があることを示している。
                               
                            </p>
                            
@@ -787,8 +632,8 @@
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Refer to <a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance#text-alternatives">Understanding Text Alternatives</a> for more information.
+                           <p class="note-title marker">注記</p>
+                           <p>より詳細な情報は、<a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance#text-alternatives">Understanding Text Alternatives</a> を参照。
                               
                            </p>
                         </div>
@@ -796,17 +641,17 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-user-agent">user agent</dt>
+                  <dt id="dfn-user-agent">ユーザエージェント (user agent)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">any software that retrieves and presents Web content for users</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ウェブコンテンツを取得して利用者に提示するあらゆるソフトウェア。</p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technology">assistive technologies</a> — that help in retrieving, rendering, and interacting with Web content.
+                           <p>ウェブコンテンツの取得、レンダリング及びインタラクションを支援する、ウェブブラウザ、メディアプレーヤ、プラグイン、及びその他のプログラム (<a href="#dfn-assistive-technology"> 支援技術</a>も含む)。
                               
                            </p>
                            
@@ -815,40 +660,35 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-user-interface-component">user interface component</dt>
+                  <dt id="dfn-user-interface-component">ユーザインタフェース コンポーネント (user interface component)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">a part of the content that is perceived by users as a single control for a distinct
-                           function
+                        <p xmlns="http://www.w3.org/1999/xhtml">コンテンツの一部分で、特定の機能を実現するための単一のコントロールとして利用者が知覚するもの。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Multiple user interface components may be implemented as a single programmatic element.
-                              "Components" here is not tied to programming techniques, but rather to what the user
-                              perceives as separate controls.
+                           <p class="note-title marker">注記</p>
+                           <p>複数のユーザインタフェース コンポーネントが、単一のプログラム要素で実装されることもある。ここでいう「コンポーネント」は、プログラムの手法と結びついたものではなく、利用者が別々のコントロールとして知覚するものを指す。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>User interface components include form elements and links as well as components generated
-                              by scripts.
+                           <p class="note-title marker">注記</p>
+                           <p>ユーザインタフェース コンポーネントには、フォーム要素、リンクだけでなく、スクリプトで生成されるコンポーネントが含まれる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>What is meant by "component" or "user interface component" here is also sometimes
-                              called "user interface element".
+                           <p class="note-title marker">注記</p>
+                           <p>ここでの「コンポーネント」又は「ユーザインタフェース コンポーネント」は、「ユーザインタフェース要素」とも呼ばれる。
                               
                            </p>
                         </div>
@@ -856,9 +696,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>An applet has a "control" that can be used to move through content by line or page
-                              or random access. Since each of these would need to have a name and be settable independently,
-                              they would each be a "user interface component."
+                           <p>アプレットには、コンテンツ内を行単位、ページ単位、又はランダムアクセスで移動するために用いられる「コントロール」がある。これらには、いずれも名前 (name) を割り当て、個別に設定できるようにする必要があるため、それぞれが「ユーザインタフェース コンポーネント」となる。
                               
                            </p>
                            
@@ -867,30 +705,27 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-web-page">web page</dt>
+                  <dt id="dfn-web-page">ウェブページ (web page)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">a non-embedded resource obtained from a single URI using HTTP plus any other resources
-                           that are used in the rendering or intended to be rendered together with it by a <a href="#dfn-user-agent">user agent</a>
+                        <p xmlns="http://www.w3.org/1999/xhtml">単一の URI から HTTP で得た埋め込まれていないリソースに加え、レンダリングに使われる、又は<a href="#dfn-user-agent">ユーザエージェント</a>がこのリソースと一緒にレンダリングすることを意図しているその他のあらゆるリソースを合わせたもの。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Although any "other resources" would be rendered together with the primary resource,
-                              they would not necessarily be rendered simultaneously with each other.
+                           <p class="note-title marker">注記</p>
+                           <p>どのような「その他のリソース」も主たるリソースと一緒にレンダリングされるであろうが、これらのリソースが同時にレンダリングされるとは限らない。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>For the purposes of conformance with these guidelines, a resource must be "non-embedded"
-                              within the scope of conformance to be considered a Web page.
+                           <p class="note-title marker">注記</p>
+                           <p>このガイドラインの適合範囲に含まれる対象となるウェブページとみなされるためには、リソースが「埋め込まれていない」リソースでなければならない。
                               
                            </p>
                         </div>
@@ -898,17 +733,14 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A Web resource including all embedded images and media.</p>
+                           <p>単体のウェブリソースであり、埋め込まれている画像及びメディアのすべてを含んだもの。</p>
                            
                         </aside>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A Web mail program built using Asynchronous JavaScript and XML (AJAX). The program
-                              lives entirely at http://example.com/mail, but includes an inbox, a contacts area
-                              and a calendar. Links or buttons are provided that cause the inbox, contacts, or calendar
-                              to display, but do not change the URI of the page as a whole.
+                           <p>Asynchronous JavaScript and XML (AJAX) を用いたウェブメールのプログラム。そのプログラム全体は http://example.com/mail に存在しているが、受信トレイ、連絡先、カレンダーがある。受信トレイ、連絡先、又はカレンダーを表示するリンク又はボタンが提供されているが、全体としてページの URI は変更されない。
                               
                            </p>
                            
@@ -917,8 +749,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A customizable portal site, where users can choose content to display from a set of
-                              different content modules.
+                           <p>カスタマイズ可能なポータルサイトで、利用者が様々なコンテンツモジュールのセットから表示させるコンテンツを選択できるようなもの。
                               
                            </p>
                            
@@ -927,12 +758,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>When you enter "http://shopping.example.com/" in your browser, you enter a movie-like
-                              interactive shopping environment where you visually move around in a store dragging
-                              products off of the shelves around you and into a visual shopping cart in front of
-                              you. Clicking on a product causes it to be demonstrated with a specification sheet
-                              floating alongside. This might be a single-page Web site or just one page within a
-                              Web site.
+                           <p>ブラウザで "http://shopping.example.com/" へ行くと、映画のようなインタラクティブなショッピング環境になる。そこでは、視覚的に店内を移動して、店内の棚から商品をドラッグして、目の前にある視覚的な買物カゴに商品を入れる。商品をクリックすると、同時に仕様書が浮き上がるように表示される。これは 1 ページだけのウェブサイトかもしれないし、ウェブサイトの中のほんの 1 ページなのかもしれない。
                               
                            </p>
                            
@@ -944,11 +770,8 @@
                </details>
             </section>
             <section id="test-rules">
-               <h2>Test Rules</h2>
-               <p>The following are Test Rules for certain aspects of this Success Criterion. It is
-                  not necessary to use these particular Test Rules to check for conformance with WCAG,
-                  but they are defined and approved test methods. For information on using Test Rules,
-                  see <a href="understanding-act-rules.html">Understanding Test Rules for WCAG Success Criteria</a>.
+               <h2>テストルール</h2>
+               <p>以下は、この達成基準の特定の側面に関するテストルールである。この特定のルールを使用して WCAG に適合しているかどうかを確認する必要はないが、これらのルールは定義され、承認されたテスト方法である。テストルールの使用については、<a href="understanding-act-rules.html">WCAG 達成基準のテストルールを理解する</a>を参照のこと。
                </p>
                <ul>
                   <li><a href="/WAI/standards-guidelines/act/rules/2ee8b8/proposed/">Visible label is part of accessible name</a></li>
@@ -963,13 +786,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -984,11 +806,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -1010,13 +834,12 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
-         </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -1025,7 +848,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -1046,7 +869,9 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+      <noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
       </noscript>
    </body>
