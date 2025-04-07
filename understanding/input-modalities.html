@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Guideline  2.5: Input Modalities | WAI | W3C</title>
+      <title>解説書 ガイドライン 2.5: 入力モダリティ | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
-      <!-- 日本語訳されるまでの一時的なスクリプト -->
-      <script src="untranslated-note.js"></script>
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://waic.jp/translations/WCAG22/Understanding">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -37,13 +35,13 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"><a href="navigable">
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-left-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
-                        </svg>Previous Guideline: Navigable</a></li>
-                  <li class="nav__item"><a href="readable">Next Guideline: Readable
+                        </svg>前: ナビゲーション可能</a></li>
+                  <li class="nav__item"><a href="readable">次: 読み取り可能
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -54,65 +52,49 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#success-criteria">Success Criteria</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#success-criteria">達成基準</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				Guideline 2.5:</span>Input Modalities
+            <h1><span class="standalone-resource__type-of-guidance">解説書 
+                  				ガイドライン 2.5:</span>入力モダリティ
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Guideline </header>
+               <header class="box-h  box-h-icon">ガイドライン </header>
                <div class="box-i">
-                  <p>Make it easier for users to operate functionality through various inputs beyond keyboard.</p>
+                  <p>利用者がキーボード以外の様々な入力を通じて機能を操作しやすくすること。</p>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>All functionality should be accessible via pointer input devices, for example, via
-                  a mouse pointer, a finger interacting with a touch screen, an electronic pencil/stylus,
-                  or a laser pointer.
+               <h2>意図</h2>
+               <p>すべての機能は、ポインタ入力デバイス、例えばマウスポインタ、タッチスクリーンに作用する指、電子ペンシル/スタイラス、又はレーザーポインタを介して、アクセシブルであるべきである。
                </p>
-               <p>People operating pointer input devices may not be able to carry out timed or complex
-                  gestures. Examples are drag-and-drop gestures and on touch screens, swiping gestures,
-                  split taps, or long presses. This Guideline does not discourage the provision of complex
-                  and timed gestures by authors. However, where they are used, an alternative method
-                  of input should be provided to enable users with motor impairments to interact with
-                  content via single untimed pointer gestures.
+               <p>ポインタ入力デバイスを操作している人は、時間経過を伴うまたは複雑なジェスチャを実行できない場合がある。例えば、ドラッグ＆ドロップジェスチャや、タッチスクリーンにおけるスワイプジェスチャ、スプリットタップ、長押し、などである。本ガイドラインは、コンテンツ制作者による複雑で時間経過を伴うジェスチャの提供を妨げるものではない。しかしながら、それらのジェスチャが使用される場合、運動障害を有する利用者が時間経過を伴わない一本指のポインタジェスチャを介してコンテンツとやりとりすることを可能にするために、代替入力方法が提供されるべきである。
                </p>
-               <p>Often, people use devices that offer several input methods, for example, mouse input,
-                  touch input, keyboard input, and speech input. These should be supported concurrently
-                  as users may at any time swich preferred input methods due to situational circumstances,
-                  for example, the availability of a flat support for mouse operation, or situational
-                  impediments through motion or changes of ambient light.
+               <p>多くの場合、マウス入力、タッチ入力、キーボード入力、音声入力など、複数の入力方法を提供するデバイスが使用される。これらの入力方法は、例えばマウス操作のための平面の利用可能性や、環境光の動き又は変化による状況的障害などの事情に応じて、利用者がいつでも好ましい入力方法を切り替えることができるように、同時にサポートされるべきである。
                </p>
-               <p>A common requirement for pointer interaction is the ability of users to position the
-                  pointer over the target. With touch input, the pointer (the finger) is larger and
-                  less precise than a mouse cursor. For people with motor impairments, a larger target
-                  makes it easier to successfully position the pointer and activate the target.
+               <p>ポインタによるインタラクションの一般的な要件は、利用者がターゲット上にポインタを置くことができることである。タッチ入力では、ポインタ (指) はマウスカーソルよりも大きく、精度も低くなる。運動障害のある人の場合、ターゲットを大きくすると、ポインタを正しく置いてターゲットをアクティブにするのが簡単になる。
                </p>
             </section>
             <section id="success-criteria">
-               <h2>Success Criteria for this Guideline</h2>
+               <h2>このガイドラインの達成基準</h2>
                <ul>
-                  <li><a href="pointer-gestures">2.5.1 Pointer Gestures</a></li>
-                  <li><a href="pointer-cancellation">2.5.2 Pointer Cancellation</a></li>
-                  <li><a href="label-in-name">2.5.3 Label in Name</a></li>
-                  <li><a href="motion-actuation">2.5.4 Motion Actuation</a></li>
-                  <li><a href="target-size-enhanced">2.5.5 Target Size (Enhanced)</a></li>
-                  <li><a href="concurrent-input-mechanisms">2.5.6 Concurrent Input Mechanisms</a></li>
-                  <li><a href="dragging-movements">2.5.7 Dragging Movements</a></li>
-                  <li><a href="target-size-minimum">2.5.8 Target Size (Minimum)</a></li>
+                  <li><a href="pointer-gestures">2.5.1 ポインタのジェスチャ</a></li>
+                  <li><a href="pointer-cancellation">2.5.2 ポインタのキャンセル</a></li>
+                  <li><a href="label-in-name">2.5.3 ラベルを含む名前 (name)</a></li>
+                  <li><a href="motion-actuation">2.5.4 動きによる起動</a></li>
+                  <li><a href="target-size-enhanced">2.5.5 ターゲットのサイズ (高度)</a></li>
+                  <li><a href="concurrent-input-mechanisms">2.5.6 入力メカニズムの共存</a></li>
+                  <li><a href="dragging-movements">2.5.7 ドラッグ動作</a></li>
+                  <li><a href="target-size-minimum">2.5.8 ターゲットのサイズ (最低限)</a></li>
                </ul>
             </section><a class="button button-backtotop" href="#top"><span>
                   <svg focusable="false" aria-hidden="true" class="icon-arrow-up " viewBox="0 0 26 28">
@@ -124,13 +106,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -145,11 +126,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -171,13 +154,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -186,7 +169,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -207,7 +190,9 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+      <noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
       </noscript>
    </body>
