@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  2.2.6: Timeouts | WAI | W3C</title>
+      <title>解説書 達成基準 2.2.6: タイムアウト | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
-      <!-- 日本語訳されるまでの一時的なスクリプト -->
-      <script src="untranslated-note.js"></script>
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
@@ -37,16 +35,16 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"><a href="enough-time">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Enough Time</a></li>
+                        </svg>ガイドライン: 十分な時間</a></li>
                   <li class="nav__item"><a href="re-authenticating">
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-left-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
-                        </svg>Previous SC: Re-authenticating</a></li>
+                        </svg>前: 再認証</a></li>
                   <li class="nav__item"></li>
                </ul>
             </nav>
@@ -55,151 +53,107 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#resources">Related Resources</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
-                     <li><a href="#key-terms">Key Terms</a></li>
+                     <li><a href="#brief">要約</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#benefits">利点</a></li>
+                     <li><a href="#examples">事例</a></li>
+                     <li><a href="#resources">関連リソース</a></li>
+                     <li><a href="#techniques">テクニック</a></li>
+                     <li><a href="#key-terms">重要な用語</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				SC 2.2.6:</span>Timeouts (Level AAA)
+            <h1><span class="standalone-resource__type-of-guidance">解説書 
+                  				達成基準 2.2.6:</span>タイムアウト (レベル AAA)
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>Users are warned of the duration of any <a href="#dfn-user-inactivity">user inactivity</a> that could cause data loss, unless the data is preserved for more than 20 hours when
-                     the user does not take any actions.
+                  <p>データの損失を引き起こす恐れのある<a href="#dfn-user-inactivity">利用者の無操作</a>の残り時間が警告される。ただし、利用者が 20 時間以上何もしなくてもデータが保持される場合は、この限りではない。
+
                   </p>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
-                     <p>Privacy regulations may require explicit user consent before user identification has
-                        been authenticated and before user data is preserved. In cases where the user is a
-                        minor, explicit consent may not be solicited in most jurisdictions, countries or regions.
-                        Consultation with privacy professionals and legal counsel is advised when considering
-                        data preservation as an approach to satisfy this success criterion.
+                     <p class="note-title marker">注記</p>
+                     <p>プライバシー関連の規制により、利用者を認証する前や利用者のデータが保存される前に、利用者の明確な同意が必要になる可能性がある。利用者が未成年の場合、ほとんどの司法管轄、国又は地域で、利用者からの明示的な同意を要請することができない。この達成基準に適合するためのアプローチとしてデータの保存を検討する場合は、プライバシーの専門家や弁護士に相談するのが望ましい。
                      </p>
                   </div>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   				
-                  <dt>Goal</dt>
-                  <dd>Users do not lose data due to unknown timeouts.</dd>
+                  <dt>目標</dt>
+                  <dd>利用者が不意なタイムアウトによってデータを失わないようにする。</dd>
                   				
-                  <dt>Author task</dt>
-                  <dd>Tell users how long their session can be inactive before they may lose information.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>利用者が情報を失う可能性がある前に、セッションが非アクティブになるまでの時間を伝える。</dd>
                   				
-                  <dt>Why it's important</dt>
-                  <dd>People with disabilities may need more time to complete actions.</dd>
+                  <dt>なぜそれが重要か</dt>
+                  <dd>障害のある人は、行為を完了するのに、より長い時間を要する可能性がある。</dd>
                   			
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The intent of this Success Criterion is to ensure that when a timeout is used, users
-                  know what duration of inactivity will cause the page to time out and result in lost
-                  data. The use of timed events can present significant barriers for users with cognitive
-                  disabilities, as these users may require more time to read content or to perform functions,
-                  such as completing an online form.
+               <h2>意図</h2>
+               <p>この達成基準の意図は、タイムアウトが用いられるときに、どの程度の無操作時間によってページがタイムアウトしてデータが失われるのかを、利用者が確実に把握することである。認知障害のある利用者にとっては、コンテンツを閲覧したり、オンラインフォームを全て記入するなど機能を実行したりするのに時間がかかることがあるため、時間制限のあるイベントの使用は大きな障害となる可能性がある。
                </p>
-               <p>During the completion of an online process, such as to reserve a hotel room or purchase
-                  a plane ticket, a user with a cognitive impairment may become overwhelmed with lengthy
-                  instructions and data input required to complete the process. The user may not be
-                  able to complete the process in one sitting and may need to take a break. Users should
-                  be able to leave a process without losing their current place within the process,
-                  and without losing information that has already been entered. If users cannot take
-                  a break and check their work, many will often be unable to complete a task correctly.
+               <p>ホテルの部屋の予約や航空券の購入などのオンラインプロセスを完了するまでの間に、認知障害のある利用者は、プロセスを完了するために必要な長い指示及びデータ入力に圧倒されることがある。利用者は、一度にプロセスを完了することができず、休憩を取る必要がある場合がある。利用者は、プロセス内の現在位置を見失うことなく、かつ、すでに入力された情報を失うことなく、プロセスをそのままにできるようにすべきである。利用者が休憩を取ってから作業内容を確認できない場合、多くの利用者がタスクを正しく完了できなくなる。
                </p>
-               <p>This Success Criterion works in tandem with Success Criterion 2.2.1 Timing Adjustable,
-                  but is specifically focused on notification of timeouts related to user inactivity.
+               <p>この達成基準は、達成基準 2.2.1 タイミング調整可能 と連携して機能するが、特に利用者の無操作状態に関連するタイムアウトの通知に重点を置いている。
                </p>
-               <p>The best way to conform to this success criterion is to keep the user data for at
-                  least 20 hours. This enables the user with disabilities and the aging community to
-                  start and finish a task, taking breaks as needed. However, when it is not practical
-                  to save the user data the author must warn the user about the duration of inactivity
-                  which will result in a timeout. Timeouts should be displayed to the user once at the
-                  beginning of the related task or process and not at each step.
+               <p>この達成基準に適合するための最善の方法は、利用者が入力したデータを少なくとも 20 時間保持することである。これにより、障害のある利用者や高齢者は、必要に応じて休憩を取りながら、タスクを開始し終了することができる。しかし、利用者が入力したデータを保存することが現実的でない場合、コンテンツ制作者は、タイムアウトに至る無操作状態の残り時間について利用者に警告しなければならない。タイムアウトは、関連するタスク又はプロセスの開始時に 1 回だけ表示し、各ステップでは表示する必要はない。
                </p>
-               <p>This success criterion only applies to timeouts that are within the content provider's
-                  knowledge or control. For example, if the user closes a web browser or device and
-                  loses content in an open page that has not yet been submitted, the success criterion
-                  has not been violated.
+               <p>この達成基準は、コンテンツ提供者の関知又は制御の範囲内にあるタイムアウトにのみ適用される。例えば、利用者がウェブブラウザ又はデバイスを閉じて、それまで開いていたページの未送信のコンテンツを失った場合、達成基準に反していることにはならない。
                </p>
-               <p>Examples of privacy regulations mentioned in the Success Criterion note, and related
-                  compliance standards, are PCI DSS (Payment Card Industry Data Security Standard) and
-                  HIPAA (Health Insurance Portability and Accountability Act of 1996).
+               <p>達成基準の注記で言及されているプライバシー規制及び関連するコンプライアンス基準の例は、PCI DSS (Payment Card Industry Data Security Standard) 及び HIPAA (Health Insurance Portability and Accountability Act of 1996) である。
                </p>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
-               <p>This Success Criterion helps users by ensuring they are notified about timeouts related
-                  to inactivity.
+               <h2>利点</h2>
+               <p>この達成基準は、無操作に起因するタイムアウトが利用者に確実に通知されるようにすることで、利用者を支援する。
                </p>
-               <p>When a user knows how much time they are allowed for a task, they will know whether
-                  they can take a needed break and resume their work without needing to start again.
-                  This enables many users to complete tasks online that they otherwise could not do.
-                  If a situation exists where a timeout is necessary, the user is warned at the start
-                  of the task about the length of inactivity that would generate a timeout. The user can
-                  then decide if they can manage this task or not in the given time, or if they need
-                  to prepare materials in advance of starting a process. This will reduce the frustration
-                  of losing work due to a timeout.
+               <p>利用者がタスク実行に許されている残り時間を知っている場合、利用者は必要な休憩を取りつつ作業をやり直すことなく再開できるかどうかを知ることができる。これにより多くの利用者は、そうでなければ完了できなかったタスクをオンラインで完了できる。タイムアウトが必要な状況が存在する場合、タスクの開始時に、タイムアウトが発生する無操作時間の長さに関する警告が表示される。そして利用者は、指定された時間内にこのタスク実行を管理できるかどうか、又はプロセスを開始する前に資料を準備する必要があるかどうかを決定することができる。これにより、タイムアウトによる作業の損失に対するフラストレーションが軽減される。
                </p>
-               <p>This Success Criterion helps people with many different cognitive disabilities, including
-                  people with:
+               <p>この達成基準は、次のような様々な認知障害を持つ人に役立つ。
                </p>
                <ul>
                   				
-                  <li>language-related disabilities; </li>
+                  <li>言語に関連する障害</li>
                   				
-                  <li>memory-related disabilities; </li>
+                  <li>記憶に関連する障害</li>
                   				
-                  <li>focus-and-attention-related disabilities; and </li>
+                  <li>注意及び集中に関連する障害</li>
                   				
-                  <li>disabilities that affect executive function and decision making. </li>
+                  <li>物事の実行機能及び意思決定に影響を与える障害</li>
                   			
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>事例</h2>
                <ul>
                   				
-                  <li>While making a purchase on an e-commerce Web site, the information input by the user
-                     is stored for more than 20 hours. This helps ensure that if they need to stop working
-                     for a while that they are more likely to be able to continue the purchase when they
-                     return.
+                  <li>電子商取引サイトで商品を購入する際、利用者が入力した情報は 20 時間以上保存される。これにより、しばらく作業を中断する必要がある場合でも、戻ってきたときに購入を継続できる可能性が高くなる。
                   </li>
                   				
-                  <li>A web application allowing people to file tax returns provides a notice that the application
-                     will time out for security purposes. The notice indicates that a lack of activity
-                     for a continuous period of time that is greater than an hour will trigger initiate
-                     the time out process.
+                  <li>納税申告書の提出を可能にするウェブアプリケーションは、セキュリティ上の理由でアプリケーションがタイムアウトすることを通知する。この通知は、1 時間を超える連続した時間にわたって操作がない場合、タイムアウトプロセスが開始されることを示している。
                   </li>
                   				
-                  <li>An online contact form does not implement any type of time out process. Information
-                     entered into the contact form can be submitted at any time and would only be lost
-                     if the user closes their browser window.
+                  <li>オンラインの問い合わせフォームには、タイムアウト処理は実装されていない。問い合わせフォームに入力された情報はいつでも送信でき、情報が失われるのは利用者がブラウザウィンドウを閉じた場合のみである。
                   </li>
                   			
                </ul>
             </section>
             <section id="resources">
-               <h2>Related Resources</h2>
-               <p>Resources are for information purposes only, no endorsement implied.</p>
+               <h2>関連リソース</h2>
+               <p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p>
                <ul>
                   
                   <li><a href="https://rawgit.com/w3c/coga/master/gap-analysis/table.html">User Needs Table 3: Entering data, error prevention &amp; recovery</a></li>
@@ -209,21 +163,18 @@
                </ul>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
+                  <h3>十分なテクニック</h3>
                   <ul>
                      					
-                     <li>Setting a session timeout to occur following at least 20 hours of inactivity.</li>
+                     <li>セッションタイムアウトは、無操作状態が少なくとも 20 時間続く場合に発生するように設定する。</li>
                      					
-                     <li>Store user data for more than 20 hours.</li>
+                     <li>利用者が入力したデータを 20 時間以上保持する。</li>
                      					
-                     <li>Provide a warning of the duration of user inactivity at the start of a process.</li>
+                     <li>プロセスの開始時に、利用者の無操作時間についての警告を提示する。</li>
                      				
                   </ul>
                </section>
@@ -231,15 +182,15 @@
             <section id="key-terms">
                <details>
                   <summary>
-                     <h2>Key Terms</h2>
+                     <h2>重要な用語</h2>
                   </summary>
-                  <dt id="dfn-user-inactivity">user inactivity</dt>
+                  <dt id="dfn-user-inactivity">利用者の無操作 (user inactivity)</dt>
                   <dd>
                      <definition xmlns="">
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">any continuous period of time where no user actions occur</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">利用者がいかなる操作も行わない時間が続くこと。</p>
                         	        
-                        <p xmlns="http://www.w3.org/1999/xhtml">The method of tracking will be determined by the web site or application.</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">そのトラッキングの方法は、ウェブサイトやアプリケーションによって決定される。</p>
                         
                      </definition>
                   </dd>
@@ -254,13 +205,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -275,11 +225,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -301,13 +253,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -316,7 +268,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -337,8 +289,10 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+    <!--noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-      </noscript>
+      </noscript-->
    </body>
 </html>
