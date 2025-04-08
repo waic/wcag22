@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Guideline  2.3: Seizures and Physical Reactions | WAI | W3C</title>
+      <title>解説書 ガイドライン 2.3: 発作と身体的反応 | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
-      <!-- 日本語訳されるまでの一時的なスクリプト -->
-      <script src="untranslated-note.js"></script>
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://waic.jp/translations/WCAG22/Understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -37,13 +35,13 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"><a href="enough-time">
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-left-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
-                        </svg>Previous Guideline: Enough Time</a></li>
-                  <li class="nav__item"><a href="navigable">Next Guideline: Navigable
+                        </svg>前: 十分な時間</a></li>
+                  <li class="nav__item"><a href="navigable">次: ナビゲーション可能
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -54,59 +52,45 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#success-criteria">Success Criteria</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#success-criteria">達成基準</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				Guideline 2.3:</span>Seizures and Physical Reactions
+            <h1><span class="standalone-resource__type-of-guidance">解説書 
+                  				ガイドライン 2.3:</span>発作と身体的反応
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Guideline </header>
+               <header class="box-h  box-h-icon">ガイドライン</header>
                <div class="box-i">
-                  <p>Do not design content in a way that is known to cause seizures or physical reactions.</p>
+                  <p>発作や身体的反応を引き起こすようなコンテンツを設計しないこと。</p>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section xmlns:wcag="https://www.w3.org/WAI/GL/" id="intent">
-               <h2>Intent</h2>
-               <p>Some people with seizure disorders can have a seizure triggered by flashing visual
-                  content. Most people are unaware that they have this disorder until it strikes. In
-                  1997, a cartoon on television in Japan sent over 700 children to the hospital, including
-                  about 500 who had seizures. Warnings do not work well because they are often  missed,
-                  especially by children
-                  who may in fact not be able to read them.
+               <h2>意図</h2>
+               <p>発作性障害のある利用者は、閃光を放つ視覚的なコンテンツによって発作を引き起こすことがある。ほとんどの利用者は、発作に襲われるまでは自分がこの障害を持っていることに気づかない。1997 年に、日本でテレビのアニメ番組が 700 人以上の子どもたちを病院に搬送させる事態を招き、そのうち約 500 人が発作を引き起こした。特に、警告を実際に読むことができない子どもの利用者に警告はよく見逃されるので、その警告はあまり効果がない。
                   
                </p>
-               <p>The objective of this guideline is to ensure that content that is marked as conforming
-                  to WCAG 2.0 avoids the types of flash that are most likely to cause seizure when viewed
-                  even for a second or two.
+               <p>このガイドラインの目的は、WCAG 2.2 に適合しているとされるコンテンツが、1 ～ 2 秒間であっても発作を引き起こす可能性が最も高い閃光の種類を避けることである。
                   
                </p>
             </section>
             <section xmlns:wcag="https://www.w3.org/WAI/GL/" id="advisory">
-               <h2>Advisory Techniques</h2>
-               <p>Specific techniques for meeting each Success Criterion for this guideline are listed
-                  in the understanding sections for each Success Criterion (listed below). If there
-                  are techniques, however, for addressing this guideline that do not fall under any
-                  of the success criteria, they are listed here. These techniques are not required or
-                  sufficient for meeting any success criteria, but can make certain types of Web content
-                  more accessible to more people.
+               <h2>参考テクニック</h2>
+               <p>このガイドラインにある各達成基準を満たすためのテクニックは、この後に達成基準ごとに挙げられている。しかし、このガイドラインに対処するためのテクニックがどの達成基準にも該当しない場合は、ここで挙げている。そういったテクニックは、どの達成基準を満たす上でも必須ではないし、十分でもないが、ウェブコンテンツの種類によってはより多くの利用者にとってよりアクセシブルにすることができるものである。
                </p>
                <ul>
                   
                   
                   <li>
-                     Ensuring that content does not violate spatial pattern thresholds (future link)
+                     コンテンツは空間分布の閾値を超えないことを保証する (リンク追加予定)
                      
                      
                   </li>
@@ -115,11 +99,11 @@
                </ul>
             </section>
             <section id="success-criteria">
-               <h2>Success Criteria for this Guideline</h2>
+               <h2>このガイドラインの達成基準</h2>
                <ul>
-                  <li><a href="three-flashes-or-below-threshold">2.3.1 Three Flashes or Below Threshold</a></li>
-                  <li><a href="three-flashes">2.3.2 Three Flashes</a></li>
-                  <li><a href="animation-from-interactions">2.3.3 Animation from Interactions</a></li>
+                  <li><a href="three-flashes-or-below-threshold">2.3.1 3 回の閃光、又は閾値以下</a></li>
+                  <li><a href="three-flashes">2.3.2 3 回の閃光</a></li>
+                  <li><a href="animation-from-interactions">2.3.3 インタラクションによるアニメーション</a></li>
                </ul>
             </section><a class="button button-backtotop" href="#top"><span>
                   <svg focusable="false" aria-hidden="true" class="icon-arrow-up " viewBox="0 0 26 28">
@@ -131,13 +115,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -152,11 +135,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -178,13 +163,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -193,7 +178,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -214,8 +199,10 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+    <!--noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-      </noscript>
+      </noscript-->
    </body>
 </html>
