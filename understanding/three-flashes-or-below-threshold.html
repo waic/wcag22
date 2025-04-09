@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  2.3.1: Three Flashes or Below Threshold | WAI | W3C</title>
+      <title>解説書 達成基準 2.3.1: 3 回の閃光、又は閾値以下 | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
-      <!-- 日本語訳されるまでの一時的なスクリプト -->
-      <script src="untranslated-note.js"></script>
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://waic.jp/translations/WCAG22/Understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -37,14 +35,14 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"><a href="seizures-and-physical-reactions">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Seizures and Physical Reactions</a></li>
+                        </svg>ガイドライン: 発作と身体的反応</a></li>
                   <li class="nav__item"></li>
-                  <li class="nav__item"><a href="three-flashes">Next SC: Three Flashes
+                  <li class="nav__item"><a href="three-flashes">次: 3 回の閃光
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -55,40 +53,35 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#resources">Related Resources</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
-                     <li><a href="#key-terms">Key Terms</a></li>
+                     <li><a href="#brief">要約</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#benefits">利点</a></li>
+                     <li><a href="#examples">事例</a></li>
+                     <li><a href="#resources">関連リソース</a></li>
+                     <li><a href="#techniques">テクニック</a></li>
+                     <li><a href="#key-terms">重要な用語</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				SC 2.3.1:</span>Three Flashes or Below Threshold (Level A)
+            <h1><span class="standalone-resource__type-of-guidance">解説書 
+                  				達成基準 2.3.1:</span>3 回の閃光、又は閾値以下 (レベル A)
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
                   <p>
-                     <a href="#dfn-web-page">Web pages</a> do not contain anything that flashes more than three times in any one second period,
-                     or the <a href="#dfn-flash">flash</a> is below the <a href="#dfn-general-flash-and-red-flash-thresholds">general flash and red flash thresholds</a>.
+                     <a href="#dfn-web-page">ウェブページ</a>には、どの 1 秒間においても 3 回を超える閃光を放つものがない、又は<a href="#dfn-flash">閃光</a>が<a href="#dfn-general-flash-and-red-flash-thresholds">一般閃光閾値及び赤色閃光閾値</a>を下回っている。
                      
                   </p>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
-                     <p>Since any content that does not meet this success criterion can interfere with a user's
-                        ability to use the whole page, all content on the Web page (whether it is used to
-                        meet other success criteria or not) must meet this success criterion. See <a href="#cc5">Conformance Requirement 5: Non-Interference</a>.
+                     <p class="note-title marker">注記</p>
+                     <p>この達成基準を満たさないコンテンツでは、利用者がそのウェブページ全体を使用できない恐れがあるため、ウェブページ上のすべてのコンテンツは他の達成基準を満たすために用いられているか否かにかかわらず、この達成基準を満たさなければならない。<a href="https://waic.jp/translations/WCAG22/#cc5">適合要件 5: 非干渉</a>を参照。
                         
                      </p>
                   </div>
@@ -96,128 +89,71 @@
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   
-                  <dt>Goal</dt>
-                  <dd>Content does not trigger seizures.</dd>
+                  <dt>目標</dt>
+                  <dd>コンテンツが発作を引き起こさないようにする。</dd>
                   
-                  <dt>What to do</dt>
-                  <dd>Avoid content that flashes, or keep it under thresholds.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>コンテンツが閃光を放つのを避ける、又は閾値以下に抑える。</dd>
                   
-                  <dt>Why it's important</dt>
-                  <dd>Flashing content can cause migraines, dizziness, nausea, and seizures.</dd> 
+                  <dt>なぜそれが重要か</dt>
+                  <dd>閃光を放つコンテンツは、偏頭痛、めまい、吐き気、発作を引き起こす可能性がある。</dd> 
                   
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The intent of this Success Criterion is to allow users to access the full content
-                  of a site without inducing seizures due to photosensitivity.
+               <h2>意図</h2>
+               <p>この達成基準の意図は、利用者が光感受性による発作を引き起こすことなく、サイト上のすべてのコンテンツを利用できるようにすることである。
                   
                </p>
-               <p>Individuals who have photosensitive seizure disorders can have a seizure triggered
-                  by content that flashes at certain frequencies for more than a few flashes. People
-                  are even more sensitive to red flashing than to other colors, so a special test is
-                  provided for saturated red flashing. These guidelines were originally based on guidelines
-                  for
-                  the broadcasting industry as adapted for desktop monitors, where content is viewed
-                  from a closer distance (using a larger angle of vision).
+               <p>光感受性による発作性障害のある人は、特定の周波数で数回以上の閃光を放つコンテンツによって発作を引き起こす恐れがある。人間は他の色よりも赤色の閃光に対してさらに敏感であるため、彩度の高い赤色の閃光に対して特別な試験方法が提供されている。このガイドラインは、もともと放送業界向けであったガイドラインに基づいたもので、より近い距離から (より大きな視野角で) コンテンツを見るデスクトップモニターに適合させたものである。
                   
                </p>
-               <p>Flashing can be caused by the display, the computer rendering the image or by the
-                  content being rendered. The author has no control of the first two. They can be addressed
-                  by the design and speed of the display and computer. The intent of this criterion
-                  is to ensure that flicker that violates the flash thresholds is not caused by the
-                  content itself. For example, the content could contain a video clip or animated image
-                  of a series of strobe flashes, or close-ups of rapid-fire explosions.
+               <p>閃光は、ディスプレイ、画像をレンダリングするコンピュータ、又はレンダリングされたコンテンツによって、発生する可能性がある。コンテンツ制作者には、最初の二つを制御することはできない。それらは、ディスプレイ及びコンピュータの設計及び速度によって対処される。この達成基準の意図は、コンテンツ自体が閃光閾値に違反する明滅を引き起こさないようにすることである。例えばコンテンツには、連続するストロボの閃光又は連射による爆発のクローズアップのある、映像のクリップ又はアニメーション画像が含まれる可能性がある。
                   
                   
                </p>
-               <p>This Success Criterion replaces a much more restrictive criterion in WCAG 1.0 that
-                  did not allow any flashing (even of a single pixel) within a broad frequency range
-                  (3 to 50 Hz). This Success Criterion is based on existing specifications in use in
-                  the UK and by others for television broadcast and has been adapted for computer display
-                  viewing. In WCAG 2.0, a 1024 x 768 screen was used as the reference screen resolution
-                  for the
-                  evaluation. The 341 x 256 pixel block represents a 10 degree viewport at a typical
-                  viewing distance. (The 10 degree field is taken from the original specifications and
-                  represents the central vision portion of the eye, where people are most susceptible
-                  to photo stimuli.)
+               <p>この達成基準は、広い周波数帯域 (3～50 ヘルツ) 内のあらゆる閃光 (1 ピクセルでさえも) を許容しなかった、はるかに厳格な WCAG 1.0 の基準を置き換えるものである。この達成基準は、英国及び諸国でテレビ放送向けに用いられている既存の仕様に基づいており、コンピュータディスプレイでの表示に調整されている。WCAG 2.0 では、1024 x 768 ピクセルの画面を評価の基準となる画面解像度として用いた。341 x 256 ピクセルの矩形が、典型的な視聴距離で視野角 10 度のビューポートに相当する (10 度の視野角は、原仕様から取り出した数字で、人間が光の刺激に対して最も敏感である、眼の中心視野に相当する)。
                   
                </p>
-               <p>With the proliferation of devices of varying screen sizes (from small hand-helds to
-                  large living room displays), as well as the adoption of <a href="https://www.w3.org/TR/WCAG21/#dfn-css-pixels">CSS pixels</a> as a density-independent unit of measurement, the prior assessment criteria may seem
-                  outdated. However, an image of a consistent size uses up relatively the same percentage
-                  of a user's visual field on any device. On a large screen, the image takes up less
-                  size, but the large screen takes up a larger part of the visual field. On a mobile
-                  screen, the image may take up most or all of the screen; however, the mobile screen
-                  itself takes up a smaller portion of the user's visual field. So the same dimension
-                  of the flashing content, represented in CSS pixels can still provide a consistent
-                  means of assessment. Substituting CSS pixels for the original pixel block means that
-                  the combined area of flashing becomes 341 x 256 CSS pixels, or a flashing area of
-                  87,296 CSS pixels.
+               <p>さまざまな画面サイズのデバイス (小型の携帯端末から大型のリビングルームのディスプレイまで) の急増と、密度に依存しない測定単位としての <a href="https://waic.jp/translations/WCAG22/#dfn-css-pixels">CSS ピクセル</a>の採用により、以前の評価基準は時代遅れに見えるかもしれない。しかし、一貫した大きさの画像は、どのようなデバイスでも利用者の視野に占める割合は相対的に同じである。大画面の場合、画像のサイズは小さくなるが、大画面は視野の大部分を占める。モバイル画面では、画像は画面のほとんど又はすべてを占めるかもしれないが、モバイル画面自体が利用者の視野に占める割合は小さい。そのため、CSS ピクセルで表現される、閃光するコンテンツの同じ寸法は、一貫した評価手段を提供することができる。CSS ピクセルを元のピクセルブロックに置き換えると、閃光の合計領域は 341 × 256 CSS ピクセル、つまり 87,296 CSS ピクセルの閃光領域となる。
                </p>
-               <p>Content should be analyzed at the largest scale at which a user may view the content,
-                  and at the standard zoom level of the user agent. For example, with a video that may
-                  play in an area of a web page and also at full screen, the video should be analyzed
-                  for risks at full screen.
+               <p>コンテンツは、利用者がコンテンツを見ることができる最大のスケール、及びユーザエージェントの標準的なズームレベルで、分析するべきである。例えば、ウェブページのある領域、及びフルスクリーンで再生される可能性のある映像では、フルスクリーンでのリスクを分析するべきである。
                </p>
-               <p>Where video content is provided in color spaces other than sRGB, the version provided
-                  with the highest dynamic range should be tested. In such cases the industry standard
-                  definition of a general flash is a change in luminance of 20 cd/m2 or more where the
-                  darker image is below 160 cd/m2. (<a href="https://www.itu.int/rec/R-REC-BT.1702/">ITU-R BT.1702</a>.) This is applicable for standard dynamic range (SDR) and high dynamic range (HDR)
-                  content. For HDR content when the darker state is 160 cd/m2 or more, a general flash
-                  is one where the Michelson contrast is 1/17 or greater — where the Michelson contrast
-                  is calculated as (LHigh - LLow) / (LHigh + LLow), and where LHigh and LLow are the
-                  luminance of the high and low luminance states, respectively.
+               <p>映像コンテンツが sRGB 以外の色空間で提供される場合、最も高いダイナミックレンジで提供されるバージョンをテストする必要がある。このような場合、業界標準の一般閃光の定義は、暗い方の画像が 160 cd/m2 未満である場合に、20 cd/m2 以上の輝度変化である (<a href="https://www.itu.int/rec/R-REC-BT.1702/">ITU-R BT.1702</a>)。これは、標準ダイナミックレンジ (SDR) 及びハイダイナミックレンジ (HDR) コンテンツに適用される。暗い状態が 160 cd/m2 以上の HDR コンテンツの場合、一般閃光は、マイケルソンコントラストが 1/17 以上のものである。マイケルソンコントラストは (LHigh - LLow) / (LHigh + LLow) で計算され、LHigh 及び LLowはそれぞれ、高輝度と低輝度の状態である。
                </p>
-               <p>For short clips that might be looped (such as GIF animations), the content should
-                  be analyzed while looping. 
+               <p>ループする可能性のある短いクリップ (GIF アニメーションなど) の場合、ループしながらコンテンツを分析する必要がある。
                </p>
                <div class="note">
-                  <p class="note-title marker">Note</p>
-                  <p>The specification cannot account for the actual viewing distance that a person chooses.
-                     Users that are closer to their screens than the idealized viewing distance will be
-                     affected by flashing areas that normatively pass. The same problem applies to users
-                     who rely on zoom or screen magnification. Conversely, users who are further away from
-                     the screen than the idealized distance should be able to tolerate flashing areas that
-                     are larger than the threshold.
+                  <p class="note-title marker">注記</p>
+                  <p>仕様では、人が選択する実際の視聴距離を考慮することはできない。理想的な視聴距離よりも画面に近い利用者は、規範的に適合する閃光領域の影響を受けることになる。同じ問題は、ズームや画面拡大に依存する利用者にも当てはまる。逆に、理想的な距離よりも画面から離れている利用者は、閾値よりも大きな閃光領域を許容できるはずである。
                   </p>
                </div>
-               <p>The combined area of flashes occurring concurrently and contiguously means the total
-                  area that is actually flashing at the same time. It is calculated by adding up the
-                  contiguous area that is flashing simultaneously within any 10 degree angle of view.
+               <p>同時に、かつ隣接して存在する閃光を組み合わせた領域は、実質的には同時に閃光を放っている全領域を意味する。その領域は、任意の視角 10 度以内で同時に閃光を放っている隣接した領域を合計して算出される。
                   
                </p>
                <div class="note">
-                  <p class="note-title marker">Note</p>
+                  <p class="note-title marker">注記</p>
                   <div>
                      
                      
-                     <p>The terms "blinking" and "flashing" can sometimes refer to the same content.</p>
+                     <p>「点滅」と「閃光」は、同じコンテンツを指すこともある。</p>
                      
                      
                      <ul>
                         
                         
-                        <li>"Blinking" refers to content that causes a distraction problem. Blinking can be allowed
-                           for a short time as long as it stops (or can be stopped)
-                           
+                        <li>「点滅」は、利用者の注意を散漫にさせる問題を引き起こすコンテンツを指す。点滅は、その点滅が停止する (又は停止させることができる) 限り、短時間であれば許容できる。
                         </li>
                         
                         
-                        <li>"Flashing" refers to content that can trigger a seizure (if it is more than 3 per
-                           second and large and bright enough). This cannot be allowed even for a second or it
-                           could cause a seizure. And turning the flash off is also not an option since the seizure
-                           could occur faster than most users could turn it off.
-                           
+                        <li>「閃光」は、(1 秒間に 3 回よりも多く、大きさ及び明るさが十分な場合に) 光感受性発作を引き起こす恐れのあるコンテンツを指す。これは、たとえ 1 秒間だけであったとしても許容されず、さもなければ光感受性発作を引き起こす恐れがある。そして、光感受性発作は利用者が閃光を停止するよりも速く発生する恐れがあるため、閃光を停止させることも選択肢にはならない。
                         </li>
                         
                         
-                        <li>Blinking usually does not occur at speeds of 3 per second or more, but it can. If
-                           blinking occurs faster than 3 per second, it would also be considered a flash.
-                           
+                        <li>通常、点滅は 1 秒間に 3 回以上の速度で起こらないが、その可能性はある。点滅が 1 秒間に 3 回を超える速さで起こる場合、これはまた閃光とみなされるであろう。
                         </li>
                         
                         
@@ -227,16 +163,13 @@
                   </div>
                </div>
                <div class="note">
-                  <p class="note-title marker">Note</p>
+                  <p class="note-title marker">注記</p>
                   <div>
                      
-                     <p>The new (in WCAG 2.2) working definition in the field for <strong>"pair of opposing transitions involving a saturated red"</strong> is a pair of opposing transitions where, one transition is either to or from a state
-                        with a value R/(R + G + B) that is greater than or equal to 0.8, and the difference
-                        between states is more than 0.2 (unitless) in the CIE 1976 UCS chromaticity diagram.
-                        [ISO 9241-391] 
+                     <p>この分野における<strong>「彩度の高い赤色を含む相反する遷移の組合せ」</strong> の新しい (WCAG 2.2 における) 実用的定義は、一方の遷移が、R / (R＋G＋B) の値が 0.8 以上の状態への遷移、又はその状態からの遷移であり、かつ、状態間の差が、CIE 1976 UCS 色度図において0.2 (単位なし) 以上である、相反する遷移の組合せである。[ISO 9241-391]
                      </p>
                      
-                     <p>The chromaticity difference is calculated as:</p>
+                     <p>色度差は次のように計算される。</p>
                      
                      <ul>
                         
@@ -244,9 +177,7 @@
                         
                      </ul>
                      
-                     <p>where u'1 and v'1 are chromaticity coordinates of State 1 and u'2 and v'2 are chromaticity
-                        coordinates of State 2. The 1976 UCS chromaticity coordinates of u' and v' are calculated
-                        as:
+                     <p>ここでいう u'1 及び v'1 は状態 1 の色度座標であり、u'2 及び v'2 は状態 2 の色度座標である。u' 及び v' の1976 UCS 色度座標は次のように計算される。
                      </p>
                      
                      <ul>
@@ -257,8 +188,7 @@
                         
                      </ul>
                      
-                     <p>where X, Y, and Z are the tristimulus values of a color in the CIE XYZ colorspace,
-                        which can be calculated as:
+                     <p>ここでいう X、Y、及び Z は CIE XYZ 色空間における色の三刺激値であり、次のように計算できる。
                      </p>
                      
                      <ul>
@@ -271,22 +201,18 @@
                         
                      </ul>
                      
-                     <p>where R, G, &amp; B are values that range from 0-1 as specified in “relative luminance”
-                        definition. 
+                     <p>ここでいう R、G、及び B は、「相対輝度」の定義で規定されている 0～1 の範囲の値である。
                      </p>
                      
                   </div>
                </div>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>利点</h2>
                <ul>
                   
                   
-                  <li>Individuals who have seizures when viewing flashing material will be able to view
-                     all of the material on a site without having a seizure and without having to miss
-                     the full experience of the content by being limited to text alternatives. This includes
-                     people with photosensitive epilepsy as well as other photosensitive seizure disorders.
+                  <li>閃光を放つコンテンツを閲覧している際に発作を起こす可能性のある利用者が、発作を起こすことなく、そしてテキストによる代替では限定されてしまうようなコンテンツの完全な体験を逃すことなく、サイト上のすべてのコンテンツを閲覧することが可能になる。これには、光感受性てんかん及び光感受性による発作性障害のある利用者も含まれる。
                      
                   </li>
                   
@@ -294,21 +220,19 @@
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>事例</h2>
                <ul>
                   
                   
                   <li>
-                     A Web site has video of muzzle flash of machine gun fire, but limits the size of the
-                     flashing image to a small portion of the screen below the flash threshold size.
+                     ウェブサイトには、閃光を放つ機関銃の銃火の映像があるが、閃光を発する画像のサイズは閃光閾値のサイズを下回る画面のほんの一部に限定している。
                      
                      
                      
                   </li>
                   
                   
-                  <li>A movie with a scene involving very bright lightning flashes is edited so that the
-                     lightning only flashes three times in any one second period. 
+                  <li>非常に明るい稲妻の閃光のシーンがある映画は、稲妻が任意の 1 秒間に 3 回しか閃光を放たないように編集されている。
                      
                      
                      
@@ -318,8 +242,8 @@
                </ul>
             </section>
             <section id="resources">
-               <h2>Related Resources</h2>
-               <p>Resources are for information purposes only, no endorsement implied.</p>
+               <h2>関連リソース</h2>
+               <p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p>
                <ul>
                   
                   
@@ -366,14 +290,11 @@
                </ul>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
+                  <h3>十分なテクニック</h3>
                   <ul>
                      
                      
@@ -409,50 +330,37 @@
             <section id="key-terms">
                <details>
                   <summary>
-                     <h2>Key Terms</h2>
+                     <h2>重要な用語</h2>
                   </summary>
-                  <dt id="dfn-assistive-technology">assistive technology</dt>
+                  <dt id="dfn-assistive-technology">支援技術 (assistive technology)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">hardware and/or software that acts as a <a href="#dfn-user-agent">user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements
-                           of users with disabilities that go beyond those offered by mainstream user agents
+                        <p xmlns="http://www.w3.org/1999/xhtml">障害のある利用者の要件を満たすために、主流の<a href="#dfn-user-agent">ユーザエージェント</a>が提供する機能を超えた機能を提供するような、ユーザエージェントとして動作する、又は主流のユーザエージェントと共に動作するハードウェア及び／又はソフトウェア。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Functionality provided by assistive technology includes alternative presentations
-                              (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
-                              voice), additional navigation or orientation mechanisms, and content transformations
-                              (e.g., to make tables more accessible).
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術が提供する機能としては、代替の提示 (例: 合成音声や拡大表示したコンテンツ)、代替入力手法 (例: 音声認識)、付加的なナビゲーション又は位置確認のメカニズム、及びコンテンツ変換 (例: テーブルをよりアクセシブルにするもの) などを挙げることができる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Assistive technologies often communicate data and messages with mainstream user agents
-                              by using and monitoring APIs.
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術は、API を利用、監視することで、主流のユーザエージェントとデータやメッセージのやりとりをすることが多い。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The distinction between mainstream user agents and assistive technologies is not absolute.
-                              Many mainstream user agents provide some features to assist individuals with disabilities.
-                              The basic difference is that mainstream user agents target broad and diverse audiences
-                              that usually include people with and without disabilities. Assistive technologies
-                              target narrowly defined populations of users with specific disabilities. The assistance
-                              provided by an assistive technology is more specific and appropriate to the needs
-                              of its target users. The mainstream user agent may provide important functionality
-                              to assistive technologies like retrieving Web content from program objects or parsing
-                              markup into identifiable bundles.
+                           <p class="note-title marker">注記</p>
+                           <p>主流のユーザエージェントと支援技術との区別は、絶対的なものではない。多くの主流のユーザエージェントは、障害のある個人を支援する機能を提供している。基本的な差異は、主流のユーザエージェントが障害のある人もない人も含めて、広く多様な利用者を対象にしているのに対し、支援技術は、特定の障害のある利用者という、より狭く限られた人たちを対象にしているということである。支援技術により提供される支援は、対象とする利用者に特化した、よりニーズに適したものである。主流のユーザエージェントは、プログラムオブジェクトからのウェブコンテンツの抽出、マークアップの識別可能な構造への解釈といった、重要な機能を支援技術に対して提供する場合がある。
                               
                            </p>
                         </div>
@@ -460,8 +368,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Assistive technologies that are important in the context of this document include
-                              the following:
+                           <p>この文書の文脈において重要な支援技術としては、以下のものが挙げられる:
                               
                            </p>
                            
@@ -469,38 +376,29 @@
                            <ul>
                               
                               
-                              <li>screen magnifiers, and other visual reading assistants, which are used by people with
-                                 visual, perceptual and physical print disabilities to change text font, size, spacing,
-                                 color, synchronization with speech, etc. in order to improve the visual readability
-                                 of rendered text and images;
+                              <li>画面拡大ソフト及びその他の視覚的な表示に関する支援技術。視覚障害、知覚障害、及び読書困難などの障害のある人が、レンダリング後のテキスト及び画像の視覚的な読みやすさを改善するために、テキストのフォント、サイズ、間隔、色、音声との同期などを変更するのに使用している。                                 
+                              </li>
+                              
+                              
+                              <li>スクリーンリーダー。全盲の人がテキスト情報を合成音声あるいは点字で読み取るために使用している。
                                  
                               </li>
                               
                               
-                              <li>screen readers, which are used by people who are blind to read textual information
-                                 through synthesized speech or braille;
+                              <li>音声変換ソフトウェア。認知障害、言語障害、及び学習障害のある人が、テキストを合成音声に変換するために使用している。
                                  
                               </li>
                               
                               
-                              <li>text-to-speech software, which is used by some people with cognitive, language, and
-                                 learning disabilities to convert text into synthetic speech;
+                              <li>音声認識ソフトウェア。何らかの身体障害のある利用者が使用することがある。</li>
+                              
+                              
+                              <li>代替キーボード。特定の身体障害のある人がキーボード操作をシミュレートするのに使用している (ヘッドポインタ、シングルスイッチ、呼気・吸気スイッチ、及びその他の特別な入力デバイスを使った代替キーボードを含む)。
                                  
                               </li>
                               
                               
-                              <li>speech recognition software, which may be used by people who have some physical disabilities;</li>
-                              
-                              
-                              <li>alternative keyboards, which are used by people with certain physical disabilities
-                                 to simulate the keyboard (including alternate keyboards that use head pointers, single
-                                 switches, sip/puff and other special input devices.);
-                                 
-                              </li>
-                              
-                              
-                              <li>alternative pointing devices, which are used by people with certain physical disabilities
-                                 to simulate mouse pointing and button activations.
+                              <li>代替ポインティングデバイス。特定の身体障害のある人がマウスポインタとボタンの動きをシミュレートするのに使用している。
                                  
                               </li>
                               
@@ -511,18 +409,17 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-blinking">blinking</dt>
+                  <dt id="dfn-blinking">点滅 (blinking)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">switch back and forth between two visual states in a way that is meant to draw attention</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">注意を引く意図で、二つの視覚的な状態を交互に切り替えること。</p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>See also <a href="#dfn-flash">flash</a>. It is possible for something to be large enough and blink brightly enough at the
-                              right frequency to be also classified as a flash.
+                           <p class="note-title marker">注記</p>
+                           <p><a href="#dfn-flash">閃光</a>も参照。ある程度の面積をもち、ある程度の明るさ、特定の頻度で点滅するものは、閃光に分類されることもありうる。
                               
                            </p>
                         </div>
@@ -530,28 +427,27 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-flash">flash</dt>
+                  <dt id="dfn-flash">閃光 (flash)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">a pair of opposing changes in <a href="#dfn-relative-luminance">relative luminance</a> that can cause seizures in some people if it is large enough and in the right frequency
-                           range
+                        <p xmlns="http://www.w3.org/1999/xhtml"><a href="#dfn-relative-luminance">相対輝度</a>の相反する変化の組合せで、十分な広さを持ち、かつ特定の頻度の場合に、一部の人に発作を誘発する恐れがあるもの。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>See <a href="#dfn-general-flash-and-red-flash-thresholds">general flash and red flash thresholds</a> for information about types of flash that are not allowed.
+                           <p class="note-title marker">注記</p>
+                           <p>許容されない閃光の種類に関する情報は、<a href="#dfn-general-flash-and-red-flash-thresholds">一般閃光閾値及び赤色閃光閾値</a>を参照。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>See also <a href="#dfn-blinking">blinking</a>.
+                           <p class="note-title marker">注記</p>
+                           <p><a href="#dfn-blinking">点滅</a>も参照。
                               
                            </p>
                         </div>
@@ -559,12 +455,12 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-general-flash-and-red-flash-thresholds">general flash and red flash thresholds</dt>
+                  <dt id="dfn-general-flash-and-red-flash-thresholds">一般閃光閾値及び赤色閃光閾値 (general flash and red flash thresholds)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">a <a href="#dfn-flash">flash</a> or rapidly changing image sequence is below the threshold (i.e., content <strong>passes</strong>) if any of the following are true:
+                        <p xmlns="http://www.w3.org/1999/xhtml">次のいずれかに該当する場合、<a href="#dfn-flash">閃光</a>、又は急速に変化する映像シーケンスは、閾値を下回っている (すなわち、コンテンツは基準を<strong>満たしている</strong>) ことになる:
                            
                         </p>
                         
@@ -572,14 +468,12 @@
                         <ol xmlns="http://www.w3.org/1999/xhtml">
                            
                            
-                           <li>there are no more than three <strong>general flashes</strong> and / or no more than three <strong>red flashes</strong> within any one-second period; or
+                           <li>あらゆる 1 秒間において、<strong>一般閃光</strong>及び／もしくは<strong>赤色閃光</strong>は 3 回以下である。又は、
                               
                            </li>
                            
                            
-                           <li>the combined area of flashes occurring concurrently occupies no more than a total
-                              of .006 steradians within any 10 degree visual field on the screen (25% of any 10
-                              degree visual field on the screen) at typical viewing distance
+                           <li>典型的な閲覧距離で、同時に発生する閃光の領域の合計が、画面上のどの視野 10 度内で、合計 0.006 ステラジアン (画面上の視野 10 度の 25％) よりも多くを占めていない。
                               
                            </li>
                            
@@ -587,21 +481,18 @@
                         </ol>
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">where:</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ここで:</p>
                         
                         
                         <ul xmlns="http://www.w3.org/1999/xhtml">
                            
                            
-                           <li>A <strong>general flash</strong> is defined as a pair of opposing changes in <a href="#dfn-relative-luminance">relative luminance</a> of 10% or more of the maximum relative luminance (1.0) where the relative luminance
-                              of
-                              the darker image is below 0.80; and where "a pair of opposing changes" is an increase
-                              followed by a decrease, or a decrease followed by an increase, and
+                           <li><strong>一般閃光</strong>とは、<a href="#dfn-relative-luminance">相対輝度</a>の相反する変化が相対輝度の最大値 (1.0) の 10％以上となる組合せであり、暗いほうの映像の相対輝度が 0.80 未満であるもの、として定義される。ここでいう「相反する変化の組合せ」とは、増加した後に減少する、又は減少した後に増加するものである。そして、
                               
                            </li>
                            
                            
-                           <li>A <strong>red flash</strong> is defined as any pair of opposing transitions involving a saturated red
+                           <li><strong>赤色閃光</strong>は、彩度の高い赤色を含んだ相反する遷移として定義される。
                               
                            </li>
                            
@@ -610,78 +501,58 @@
                         
                         
                         <p xmlns="http://www.w3.org/1999/xhtml">
-                           <em>Exception:</em> Flashing that is a fine, balanced, pattern such as white noise or an alternating
-                           checkerboard pattern with "squares" smaller than 0.1 degree (of visual field at typical
-                           viewing distance) on a side does not violate the thresholds.
+                           <em>例外:</em> ホワイトノイズや、1 辺が (典型的な閲覧距離における視野の) 0.1 度未満の市松模様のような細かくバランスの取れた閃光は、閾値を超えることにはならない。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>For general software or Web content, using a 341 x 256 pixel rectangle anywhere on
-                              the displayed screen area when the content is viewed at 1024 x 768 pixels will provide
-                              a good estimate of a 10 degree visual field for standard screen sizes and viewing
-                              distances (e.g., 15-17 inch screen at 22-26 inches). This resolution of 75 - 85 ppi
-                              is known to be lower, and thus more conservative than the nominal CSS pixel resolution
-                              of 96 ppi in CSS specifications. Higher resolutions displays showing the same rendering
-                              of the content yield smaller and safer images so it is lower resolutions that are
-                              used to define the thresholds.
+                           <p class="note-title marker">注記</p>
+                           <p>一般的なソフトウェア又はウェブコンテンツの場合、コンテンツを 1024 × 768 ピクセルで表示したときに画面上の任意の場所で 341 × 256 ピクセルの矩形を使用すると、標準的な画面サイズ及び視聴距離 (例: 15～17 インチの画面を 22～26 インチの距離で視聴) における視野 10 度の適切な見積もりとなる。この 75～85 ppi という解像度は、CSS 仕様の規定ピクセル解像度である 96 ppi よりも低いことが知られており、したがってより保守的である。高解像度のディスプレイでは、同じコンテンツのレンダリングを表示するとより小さく安全な画像が得られるため、閾値の定義には低めの解像度を使用している。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>A transition is the change in relative luminance (or relative luminance/color for
-                              red flashing) between adjacent peaks and valleys in a plot of relative luminance (or
-                              relative luminance/color for red flashing) measurement against time. A flash consists
-                              of two opposing transitions.
+                           <p class="note-title marker">注記</p>
+                           <p>遷移とは、相対輝度 (赤色閃光の相対輝度/色) の計測値を時間軸でプロットしたときの隣接する山と谷の間の相対輝度 (赤色閃光の相対輝度/色) の変化である。閃光は、2 つの相反する遷移で構成される。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The new working definition in the field for <strong>"pair of opposing transitions involving a saturated red"</strong> (from WCAG 2.2) is a pair of opposing transitions where, one transition is either
-                              to or from a state with a value R/(R + G + B) that is greater than or equal to 0.8,
-                              and the difference between states is more than 0.2 (unitless) in the CIE 1976 UCS
-                              chromaticity diagram. [[ISO_9241-391]] 
+                           <p class="note-title marker">注記</p>
+                           <p>この分野における「<strong>彩度の高い赤色を含む相反する遷移の組合せ</strong>」 の (WCAG 2.2 からの) 新しい実用的定義は、一方の遷移が、R / (R＋G＋B) の値が 0.8 以上の状態への遷移、又はその状態からの遷移であり、かつ、状態間の差が、CIE 1976 UCS 色度図において0.2 (単位なし) 以上である、相反する遷移の組合せである。 [ISO_9241-391]
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Tools are available that will carry out analysis from video screen capture. However,
-                              no tool is necessary to evaluate for this condition if flashing is less than or equal
-                              to 3 flashes in any one second. Content automatically passes (see #1 and #2 above).
-                              
+                           <p class="note-title marker">注記</p>
+                           <p>ビデオの画面キャプチャから分析を行うツールを利用できる。しかし、閃光があらゆる 1 秒間の間隔において 3 回以下であれば、ツールでこの条件を満たしているかどうかを確認する必要はない。コンテンツは自動的に条件を満たすことになる (上記 1.及び 2.を参照)。
                            </p>
                         </div>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-relative-luminance">relative luminance</dt>
+                  <dt id="dfn-relative-luminance">相対輝度 (relative luminance)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">the relative brightness of any point in a colorspace, normalized to 0 for darkest
-                           black and 1 for lightest white
+                        <p xmlns="http://www.w3.org/1999/xhtml">最も暗い黒を 0 に、最も明るい白を 1 に正規化した色空間内の任意の点の相対的な明るさ。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">注記</p>
                            <div>
                               
-                              <p>For the sRGB colorspace, the relative luminance of a color is defined as L = 0.2126
-                                 * <strong>R</strong> + 0.7152 * <strong>G</strong> + 0.0722 * <strong>B</strong> where <strong>R</strong>, <strong>G</strong> and <strong>B</strong> are defined as:
+                              <p>sRGB 色空間においては、色の相対輝度は、L = 0.2126 * <strong>R</strong> + 0.7152 * <strong>G</strong> + 0.0722 * <strong>B</strong> と定義されており、<strong>R</strong>、<strong>G</strong> 及び <strong>B</strong> は以下のように定義される:
                                  
                               </p>
                               
@@ -689,17 +560,17 @@
                               <ul>
                                  
                                  
-                                 <li>if RsRGB &lt;= 0.04045 then <strong>R</strong> = RsRGB/12.92 else <strong>R</strong> = ((RsRGB+0.055)/1.055) ^ 2.4
+                                 <li>RsRGB <= 0.04045 の場合 <strong>R</strong> = RsRGB/12.92、そうでない場合 <strong>R</strong> = ((RsRGB+0.055)/1.055) ^ 2.4
                                     
                                  </li>
                                  
                                  
-                                 <li>if GsRGB &lt;= 0.04045 then <strong>G</strong> = GsRGB/12.92 else <strong>G</strong> = ((GsRGB+0.055)/1.055) ^ 2.4
+                                 <li>GsRGB <= 0.04045 の場合 <strong>G</strong> = GsRGB/12.92、そうでない場合 <strong>G</strong> = ((GsRGB+0.055)/1.055) ^ 2.4
                                     
                                  </li>
                                  
                                  
-                                 <li>if BsRGB &lt;= 0.04045 then <strong>B</strong> = BsRGB/12.92 else <strong>B</strong> = ((BsRGB+0.055)/1.055) ^ 2.4
+                                 <li>BsRGB <= 0.04045 の場合 <strong>B</strong> = BsRGB/12.92、そうでない場合 <strong>B</strong> = ((BsRGB+0.055)/1.055) ^ 2.4
                                     
                                  </li>
                                  
@@ -707,7 +578,7 @@
                               </ul>
                               
                               
-                              <p>and RsRGB, GsRGB, and BsRGB are defined as:</p>
+                              <p>そして、RsRGB、GsRGB、及び BsRGB は、次のように定義される:</p>
                               
                               
                               <ul>
@@ -725,8 +596,7 @@
                               </ul>
                               
                               
-                              <p>The "^" character is the exponentiation operator. (Formula taken from 
-                                 [[SRGB]].)
+                              <p>^ という記号は、指数演算子である (計算式は、[SRGB] を参考にしている)。
                                  
                               </p>
                               
@@ -736,46 +606,39 @@
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Before May 2021 the value of 0.04045 in the definition was different (0.03928). It
-                              was taken from an older version of the specification and has been updated. It has
-                              no practical effect on the calculations in the context of these guidelines.
+                           <p class="note-title marker">注記</p>
+                           <p>2021 年 5 月以前は、定義にある 0.04045 の値が異なっていた (0.03928)。これは、古いバージョンの仕様から取り込んだものであり、現在は更新されている。本ガイドラインの文脈における計算には、実質的な影響はない。
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Almost all systems used today to view Web content assume sRGB encoding. Unless it
-                              is known that another color space will be used to process and display the content,
-                              authors should evaluate using sRGB colorspace. If using other color spaces, see <a href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum">Understanding Success Criterion 1.4.3</a>.
+                           <p class="note-title marker">注記</p>
+                           <p>ウェブコンテンツを閲覧するのに今日用いられているほとんどすべてのシステムは、sRGB 符号化を前提としている。コンテンツを処理して表示するのに別の色空間が用いられている事が分かっているのでない限り、コンテンツ制作者は sRGB 色空間を用いて検証するべきである。もしその他の色空間を用いるのであれば、<a href="contrast-minimum">達成基準 1.4.3</a> を参照。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>If dithering occurs after delivery, then the source color value is used. For colors
-                              that are dithered at the source, the average values of the colors that are dithered
-                              should be used (average R, average G, and average B).
+                           <p class="note-title marker">注記</p>
+                           <p>表示時にディザリングが発生する場合は、元の色の値が用いられる。元々ディザリングがかけられている色については、用いられている色の平均値を用いるべきである (R の平均値、G の平均値、及び B の平均値)。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Tools are available that automatically do the calculations when testing contrast and
-                              flash.
+                           <p class="note-title marker">注記</p>
+                           <p>コントラストと閃光を検証する際に、この計算を自動で行うツールが利用できる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>A <a href="relative-luminance.html">separate page giving the relative luminance definition using MathML</a> to display the formulas is available.
+                           <p class="note-title marker">注記</p>
+                           <p><a href="https://www.w3.org/TR/WCAG22/relative-luminance.html">MathML を用いて相対輝度の定義を与える別のページ</a>でもこの計算式を表示できる。
                               
                            </p>
                         </div>
@@ -783,17 +646,17 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-user-agent">user agent</dt>
+                  <dt id="dfn-user-agent">ユーザエージェント (user agent)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">any software that retrieves and presents Web content for users</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ウェブコンテンツを取得して利用者に提示するあらゆるソフトウェア。</p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technology">assistive technologies</a> — that help in retrieving, rendering, and interacting with Web content.
+                           <p>ウェブコンテンツの取得、レンダリング及びインタラクションを支援する、ウェブブラウザ、メディアプレーヤ、プラグイン、及びその他のプログラム (<a href="#dfn-assistive-technology">支援技術</a>も含む)。
                               
                            </p>
                            
@@ -802,48 +665,41 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-web-page">web page</dt>
+                  <dt id="dfn-web-page">ウェブページ (web page)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">a non-embedded resource obtained from a single URI using HTTP plus any other resources
-                           that are used in the rendering or intended to be rendered together with it by a <a href="#dfn-user-agent">user agent</a>
+                        <p xmlns="http://www.w3.org/1999/xhtml">単一の URI から HTTP で得た埋め込まれていないリソースに加え、レンダリングに使われる、又は<a href="#dfn-user-agent">ユーザエージェント</a>がこのリソースと一緒にレンダリングすることを意図しているその他のあらゆるリソースを合わせたもの。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Although any "other resources" would be rendered together with the primary resource,
-                              they would not necessarily be rendered simultaneously with each other.
+                           <p class="note-title marker">注記</p>
+                           <p>どのような「その他のリソース」も主たるリソースと一緒にレンダリングされるであろうが、これらのリソースが同時にレンダリングされるとは限らない。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>For the purposes of conformance with these guidelines, a resource must be "non-embedded"
-                              within the scope of conformance to be considered a Web page.
-                              
+                           <p class="note-title marker">注記</p>
+                           <p>このガイドラインの適合範囲に含まれる対象となるウェブページとみなされるためには、リソースが「埋め込まれていない」リソースでなければならない。
                            </p>
                         </div>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A Web resource including all embedded images and media.</p>
+                           <p>単体のウェブリソースであり、埋め込まれている画像及びメディアのすべてを含んだもの。</p>
                            
                         </aside>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A Web mail program built using Asynchronous JavaScript and XML (AJAX). The program
-                              lives entirely at http://example.com/mail, but includes an inbox, a contacts area
-                              and a calendar. Links or buttons are provided that cause the inbox, contacts, or calendar
-                              to display, but do not change the URI of the page as a whole.
+                           <p>Asynchronous JavaScript and XML (AJAX) を用いたウェブメールのプログラム。そのプログラム全体は http://example.com/mail に存在しているが、受信トレイ、連絡先、カレンダーがある。受信トレイ、連絡先、又はカレンダーを表示するリンク又はボタンが提供されているが、全体としてページの URI は変更されない。
                               
                            </p>
                            
@@ -852,8 +708,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A customizable portal site, where users can choose content to display from a set of
-                              different content modules.
+                           <p>カスタマイズ可能なポータルサイトで、利用者が様々なコンテンツモジュールのセットから表示させるコンテンツを選択できるようなもの。
                               
                            </p>
                            
@@ -862,12 +717,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>When you enter "http://shopping.example.com/" in your browser, you enter a movie-like
-                              interactive shopping environment where you visually move around in a store dragging
-                              products off of the shelves around you and into a visual shopping cart in front of
-                              you. Clicking on a product causes it to be demonstrated with a specification sheet
-                              floating alongside. This might be a single-page Web site or just one page within a
-                              Web site.
+                           <p>ブラウザで "http://shopping.example.com/" へ行くと、映画のようなインタラクティブなショッピング環境になる。そこでは、視覚的に店内を移動して、店内の棚から商品をドラッグして、目の前にある視覚的な買物カゴに商品を入れる。商品をクリックすると、同時に仕様書が浮き上がるように表示される。これは 1 ページだけのウェブサイトかもしれないし、ウェブサイトの中のほんの 1 ページなのかもしれない
                               
                            </p>
                            
@@ -887,13 +737,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -908,11 +757,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -934,13 +785,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -949,7 +800,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -970,8 +821,10 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+    <!--noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-      </noscript>
+      </noscript-->
    </body>
 </html>
