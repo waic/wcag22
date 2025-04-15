@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  2.4.4: Link Purpose (In Context) | WAI | W3C</title>
+      <title>解説書 達成基準 2.4.4: リンクの目的 (コンテキスト内) | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
-      <!-- 日本語訳されるまでの一時的なスクリプト -->
-      <script src="untranslated-note.js"></script>
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://waic.jp/translations/WCAG22/Understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -37,17 +35,17 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"><a href="navigable">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Navigable</a></li>
+                        </svg>ガイドライン: ナビゲーション可能</a></li>
                   <li class="nav__item"><a href="focus-order">
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-left-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
-                        </svg>Previous SC: Focus Order</a></li>
-                  <li class="nav__item"><a href="multiple-ways">Next SC: Multiple Ways
+                        </svg>前: フォーカス順序</a></li>
+                  <li class="nav__item"><a href="multiple-ways">次: 複数の手段
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -58,165 +56,109 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#resources">Related Resources</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
-                     <li><a href="#key-terms">Key Terms</a></li>
-                     <li><a href="#test-rules">Test Rules</a></li>
+                     <li><a href="#brief">要約</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#benefits">利点</a></li>
+                     <li><a href="#examples">事例</a></li>
+                     <li><a href="#resources">関連リソース</a></li>
+                     <li><a href="#techniques">テクニック</a></li>
+                     <li><a href="#key-terms">重要な用語</a></li>
+                     <li><a href="#test-rules">テストルール</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				SC 2.4.4:</span>Link Purpose (In Context) (Level A)
+            <h1><span class="standalone-resource__type-of-guidance">解説書 
+                  				達成基準 2.4.4:</span>リンクの目的 (コンテキスト内) (レベル A)
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>The <a href="#dfn-link-purpose">purpose of each link</a> can be determined from the link text alone or from the link text together with its
-                     <a href="#dfn-programmatically-determined-link-context">programmatically determined link context</a>, except where the purpose of the link would be <a href="#dfn-ambiguous-to-users-in-general">ambiguous to users in general</a>.
+                  <p><a href="#dfn-link-purpose">それぞれのリンクの目的</a>が、リンクのテキスト単独で、又はリンクのテキストと<a href="#dfn-programmatically-determined-link-context">プログラムによる解釈が可能なリンクのコンテキスト</a>から判断できる。ただし、リンクの目的が<a href="#dfn-ambiguous-to-users-in-general">ほとんどの利用者にとって曖昧</a>な場合は除く。
                      
                   </p>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   
-                  <dt>Goal</dt>
-                  <dd>Users understand what each link will do.</dd>
+                  <dt>目標</dt>
+                  <dd>それぞれのリンクが何をするのかを、利用者が理解できるようにする。</dd>
                   
-                  <dt>What to do</dt>
-                  <dd>Provide descriptive names or context for all links.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>すべてのリンクに対して、説明的な名前又はコンテキストを提供する。</dd>
                   
-                  <dt>Why it's important</dt>
-                  <dd>People with visual and cognitive disabilities can navigate more easily.</dd> 
+                  <dt>なぜそれが重要か</dt>
+                  <dd>視覚障害及び認知障害のある人々にとって、より容易にナビゲートすることが可能になる。</dd> 
                   
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The intent of this Success Criterion is to help users understand the purpose of each
-                  link so they can decide whether they want to follow the link. Whenever possible, provide
-                  link text that identifies the purpose of the link without needing additional context.
-                  Assistive technology has the ability to provide users with a list of links that are
-                  on the Web page. Link text that is as meaningful as possible will aid users who want
-                  to choose from this list of links. Meaningful link text also helps those who wish
-                  to tab from link to link. Meaningful links help users choose which links to follow
-                  without requiring complicated strategies to understand the page.
+               <h2>意図</h2>
+               <p>この達成基準の意図は、利用者がリンクを辿りたいかどうか決めることができるように、各リンクの目的を理解することを助けることである。可能な限りいつでも、追加のコンテキストを必要とせずに、リンクの目的を特定するリンクテキストを提供すること。支援技術は、ウェブページにあるリンクの一覧を利用者に提供することができる。可能な限り意味を持たせたリンクテキストは、このリンクの一覧から選択したい利用者の助けとなる。意味のあるリンクテキストはまた、リンクからリンクへと Tab キーで移動したい利用者にとっても役に立つ。意味のあるリンクは、ページを理解するために複雑な戦略を必要とせずに利用者が辿るリンクを選択するのに役立つ。
                   
                </p>
-               <p>The text of, or associated with, the link is intended to describe the purpose of the
-                  link. In cases where the link takes one to a document or a web application, the name
-                  of the document or web application would be sufficient to describe the purpose of
-                  the link (which is to take you to the document or web application). Note that it is
-                  not required to use the name of the document or web application; other things may
-                  also describe the purpose of the link. 
+               <p>リンクのテキスト又はリンクに関連付けられたテキストは、リンクの目的を説明することを意図している。リンクが利用者を文書又はウェブアプリケーションへ導く場合、その文書又はウェブアプリケーションの名前は、リンクの目的 (その文書又はウェブアプリケーションに導くためのもの) を説明するものとして十分であろう。文書又はウェブアプリケーションの名前を使用することが必須ではないことに注意すること。他のものも、リンクの目的を説明することがある。
                   
                </p>
-               <p>
-                  
-                  <a href="page-titled" class="understanding">Success Criterion 2.4.2</a> deals with the titles of pages. Here also, the name of a document or web application
-                  being presented on the page would be sufficient to describe the purpose of the page.
-                  Having the link and the title agree, or be very similar, is good practice and provides
-                  continuity between the link 'clicked on' and the web page that the user lands on.
+               <p><a href="page-titled" class="understanding">達成基準 2.4.2</a> は、ページのタイトルを取り扱っている。ここでもまた、ページに表示されている文書又はウェブアプリケーションの名前は、ページの目的を説明するのに十分であろう。リンクとタイトルが一致する又は極めて似ていることは、グッドプラクティスであり、リンクの「クリック」と利用者が着地するウェブページとの間の連続性を提供する。
                   
                   
                </p>
-               <p>In some situations, authors may want to provide part of the description of the link
-                  in logically related text that provides the context for the link. In this case the
-                  user should be able to identify the purpose of the link without moving focus from
-                  the link. In other words, they can arrive on a link and find out more about it without
-                  losing their place. This can be achieved by putting the description of the link in
-                  the same sentence, paragraph, list item, or table cell as the link, or in the table
-                  header cell for a link in a data table, because these are directly associated with
-                  the link itself. Alternatively, authors may choose to use an ARIA technique to associate
-                  additional
-                  text on the page with the link.
+               <p>場合によっては、コンテンツ制作者は、リンクのコンテキストを提供する論理的に関係のあるテキストの中でリンクの説明の一部を提供したいことがある。この場合、利用者は、リンクからフォーカスを移動させずに、そのリンクの目的を特定できることが望ましい。言い換えれば、利用者はあるリンクに到達でき、その位置を失うことなく、リンクに関してさらに調べることができる。これは、リンク自体と直接関連付けられているため、リンクと同じ文、段落、リスト項目、又はテーブルのセル、又はデータテーブル内にあるリンクのテーブル見出しセル、リンクの説明を配置することで達成可能である。あるいは、コンテンツ制作者は、ARIA技術を用いてページ上の追加テキストをリンクに関連付けてもよい。
                   
                </p>
-               <p>This context will be most usable if it precedes the link. (For instance, if you must
-                  use ambiguous link text, it is better to put it at the end of the sentence that describes
-                  its destination, rather than putting the ambiguous phrase at the beginning of the
-                  sentence.) If the description follows the link, there can be confusion and difficulty
-                  for screen reader users who are reading through the page in order (top to bottom).
+               <p>このコンテキストは、リンクの前にある場合に、最も有用だろう (例えば、曖昧なリンクテキストを使わなければならない場合、その曖昧なリンクテキストを文の初めに置くよりも、リンク先を説明する文の最後に置くほうがよい)。説明がリンクの後に続く場合、ページを (上から下へ) 順に読んでいるスクリーンリーダーの利用者に対して混乱及び困難が存在する可能性がある。
                   
                   
                </p>
-               <p>It is a best practice for links with the same destination to have consistent text
-                  (and this is a requirement per 
-                  <a href="consistent-identification" class="guideline">Success Criterion 3.2.4</a> for pages in a set). It is also a best practice for links with different purposes
-                  and destinations to have different link text.
+               <p>同じ宛先のリンクには一貫したテキストがあることがベストプラクティスとなる（そしてこれは、一式内のページに対して<a href="consistent-identification" class="guideline">達成基準 3.2.4</a> により要件となる）。さまざまな目的や宛先を持つリンクが異なるテキストを持つこともベストプラクティスとなる。
                   
                </p>
-               <p>A best practice for links to <a href="#dfn-conforming-alternate-version">conforming alternate versions</a> is to ensure that the link text to the conforming alternate version indicates in
-                  link text that the page it leads to represents the more accessible version. This information
-                  may also be provided in text - the goal is to ensure that the end user knows what
-                  the purpose of the link is. 
+               <p><a href="#dfn-conforming-alternate-version">適合している代替版</a>へのリンクにおけるベストプラクティスは、その適合している代替版へのリンクテキストが、リンク先のページがよりアクセシブルなバージョンであることをリンクテキストの中で示すことである。リンクの目的が何であるかをエンドユーザが確実に理解できるようにすることがゴールなので、この情報はテキストで提供されることもある。
                </p>
-               <p>The Success Criterion includes an exception for links for which the purpose of the
-                  link cannot be determined from the information on the Web page. In this situation,
-                  the person with the disability is not at a disadvantage; there is no additional context
-                  available to understand the link purpose. However, whatever amount of context is available
-                  on the Web page that can be used to interpret the purpose of the link must be made
-                  available in the link text or programmatically associated with the link to satisfy
-                  the Success Criterion.
+               <p>この達成基準には、リンクの目的をウェブページ上にある情報からは判断できないリンクに対して例外が認められている。そのような状況では、障害のある利用者が不利な立場にあるわけではない。リンクの目的を理解するために追加入手可能な文脈が一切ないのである。しかし、リンクの目的を解釈するために使用できるウェブページ上で利用可能ないかなるコンテキストの量であっても、達成基準を満たすためのリンクテキストで利用可能にされる、又はリンクとプログラム的に関連付けられなければならない。
                   
                </p>
                <div class="note">
-                  <p class="note-title marker">Note</p>
+                  <p class="note-title marker">注記</p>
                   <div>
                      
                      
-                     <p>There may be situations where the purpose of the link is is supposed to be unknown
-                        or obscured. For instance, a game may have links identified only as door #1, door
-                        #2, and door #3. This link text would be sufficient because the purpose of the links
-                        is to create suspense for all users.
+                     <p>リンクの目的が不明又は曖昧になることが想定できる状況もありえる。例えば、ゲームにはドア 1、ドア 2、そしてドア 3 としてのみ識別されるリンクがあるかもしれない。リンクの目的がすべての利用者に対するサスペンスを引き起こすことにあるので、このリンクテキストは十分である。
                         
                      </p>
                      
                      
                   </div>
                </div>
-               <p>See also 
-                  <a href="link-purpose-link-only">2.4.9: Link Purpose (Link Only)</a>.
+               <p><a href="link-purpose-link-only">達成基準 2.4.9: リンクの目的 (リンクのみ)</a> を併せて参照のこと。
                   
                </p>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>利点</h2>
                <ul>
                   
                   
-                  <li>This Success Criterion helps people with motion impairment by letting them skip links
-                     that they are not interested in, avoiding the keystrokes needed to visit the referenced
-                     content and then returning to the current content.
+                  <li>この達成基準は、関心のないリンクをスキップし、参照されたコンテンツを訪問し現在のコンテンツに戻るために必要なキーストロークを回避することで運動障害のある人を支援する。
                      
                   </li>
                   
                   
-                  <li>People with cognitive limitations will not become disoriented by multiple means of
-                     navigation to and from content they are not interested in.
+                  <li>認知に制約のある人が、関心のないコンテンツへのナビゲーションの複数手段によって混乱することがなくなる。
                      
                   </li>
                   
                   
-                  <li>
-                     People with visual disabilities will be able to determine the purpose of a link by
-                     exploring the link's context. 
-                     
-                     
+                  <li>視覚障害のある人が、リンクの文脈を探ることによって、リンクの目的を判断できるようになる。
                      
                   </li>
                   
@@ -224,49 +166,39 @@
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>事例</h2>
                <dl>
                   
-                  <dt>A link contains text that gives a description of the information at that URI</dt>
+                  <dt>リンクがリンク先の URI にある情報を説明するテキストを含んでいる</dt>
                   
-                  <dd>A page contains the sentence "There was much bloodshed during the Medieval period
-                     of history." Where "Medieval period of history" is a link.
+                  <dd>あるページに、「中世の歴史には大量の虐殺があった」という文がある。ここで「中世の歴史」がリンクになっている。
                   </dd>
                   
-                  <dt>A link is preceded by a text description of the information at that URI</dt>
+                  <dt>リンクの前にリンク先の URI にある情報のテキストによる説明がある</dt>
                   
-                  <dd>A page contains the sentence "Learn more about the Government of Ireland's Commission
-                     on Electronic Voting at Go Vote!" where "Go Vote!" is a link.
+                  <dd>あるページに、「アイルランド政府の電子選挙委員会に関する詳細を投票に行こう！で見る」という文がある。ここで、「投票に行こう！」がリンクである。
                   </dd>
                   
-                  <dt>Both an icon and text are included in the same link</dt>
+                  <dt>アイコンとテキストの両方が同じリンク内にある</dt>
                   
-                  <dd>An icon of a voting machine and the text "Government of Ireland's Commission of Electronic
-                     Voting" are combined to make a single link. The alt text for the icon is null, since
-                     the purpose of the link is already described by the text of the link next to the icon.
+                  <dd>自動投票機のアイコンと「アイルランド政府の電子選挙委員会」というテキストが、一つのリンクになっている。リンクの目的がアイコンの隣にあるリンクのテキストで説明されているので、そのアイコンの代替テキストは空である。
                   </dd>
                   
-                  <dt>A list of book titles</dt>
+                  <dt>書籍名のリスト</dt>
                   
-                  <dd>A list of books is available in three formats: HTML, PDF, and mp3 (a recording of
-                     a person reading the book). To avoid hearing the title of each book three times (once
-                     for each format), the first link for each book is the title of the book, the second
-                     link says "PDF" and the third says, "mp3."
+                  <dd>リストにある書籍が、HTML、PDF、そして mp3 (人が本を読み上げているのを録音したもの) の三つのフォーマットで利用可能である。各書籍のタイトルを 3 回 (フォーマットごとに 1 回) 聞かないですむように、各書籍の最初のリンクは書籍のタイトル、二つめのリンクは「PDF」、三つめのリンクは「mp3」となっている。
                   </dd>
                   
-                  <dt>News article summaries</dt>
+                  <dt>ニュース記事の要約</dt>
                   
-                  <dd>A Web page contains a collection of news articles. The main page lists the first few
-                     sentences of each article, followed by a "Read more" link. A screen reader command
-                     to read the current paragraph provides the context to interpret the purpose of the
-                     link.
+                  <dd>あるウェブサイトには、ニュース記事のコレクションが含まれている。メインページでは、各記事の最初の部分が少し表示され、その後に「続きを読む」というリンクがある。現在の段落を読みあげるスクリーンリーダーのコマンドは、リンクの目的を解釈するためのコンテキストを提供する。
                   </dd>
                   
                </dl>
             </section>
             <section id="resources">
-               <h2>Related Resources</h2>
-               <p>Resources are for information purposes only, no endorsement implied.</p>
+               <h2>関連リソース</h2>
+               <p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p>
                <ul>
                   
                   
@@ -297,14 +229,11 @@
                </ul>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
+                  <h3>十分なテクニック</h3>
                   <ul>
                      
                      
@@ -336,7 +265,7 @@
                      <li>
                         
                         
-                        <p>Allowing the user to choose short or long link text using one of the techniques below:</p>
+                        <p>次のテクニックの一つを用いて、利用者が短めのリンクテキスト又は長めのリンクテキストを選べるようにする:</p>
                         
                         
                         <ul>
@@ -384,8 +313,7 @@
                      <li>
                         
                         
-                        <p>Providing a supplemental description of the purpose of a link using one of the following
-                           techniques:
+                        <p>次のテクニックの一つを用いて、リンクの目的を補足説明する:
                            
                         </p>
                         
@@ -419,8 +347,7 @@
                         
                         
                         <p>
-                           Identifying the purpose of a link using link text combined with programmatically determined
-                           link context using one of the following techniques:
+                           次に挙げるテクニックの一つを用いて、プログラムによる解釈されるリンクのコンテキストと一緒にリンクの目的を特定する:
                            
                            
                         </p>
@@ -493,7 +420,7 @@
                            
                            <a class="general" href="https://w3c.github.io/wcag/techniques/general/G91">G91: Providing link text that describes the purpose of a link</a> 
                            
-                           <strong>AND</strong> Semantically indicating links using one of the following techniques:
+                           <strong>かつ</strong>、次のテクニックの一つを用いて、セマンティックにリンクを示す:
                            
                         </p>
                         
@@ -527,10 +454,8 @@
                   </ul>
                </section>
                <section id="advisory">
-                  <h3>Advisory Techniques</h3>
-                  <p>Although not required for conformance, the following additional techniques should
-                     be considered in order to make content more accessible. Not all techniques can be
-                     used or would be effective in all situations.
+                  <h3>考テクニック</h3>
+                  <p>適合のために必須ではないが、コンテンツをよりアクセシブルにするために、次の追加のテクニックを検討することが望ましい。ただし、すべての状況において、すべてのテクニックが使用可能、又は効果的であるとは限らない。
                   </p>
                   <ul>
                      
@@ -563,9 +488,8 @@
                   </ul>
                </section>
                <section id="failure">
-                  <h3>Failures</h3>
-                  <p>The following are common mistakes that are considered failures of this Success Criterion
-                     by the WCAG Working Group.
+                  <h3>失敗例</h3>
+                  <p>以下に挙げるものは、WCAG ワーキンググループが達成基準の失敗例とみなした、よくある間違いである。
                   </p>
                   <ul>
                      
@@ -594,21 +518,19 @@
             <section id="key-terms">
                <details>
                   <summary>
-                     <h2>Key Terms</h2>
+                     <h2>重要な用語</h2>
                   </summary>
-                  <dt id="dfn-accessibility-supported">accessibility supported</dt>
+                  <dt id="dfn-accessibility-supported">アクセシビリティ サポーテッド (accessibility supported)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">supported by users' <a href="#dfn-assistive-technology">assistive technologies</a> as well as the accessibility features in browsers and other <a href="#dfn-user-agent">user agents</a>
+                        <p xmlns="http://www.w3.org/1999/xhtml">利用者の<a href="#dfn-assistive-technology">支援技術</a>だけでなく、ブラウザ及びその他の<a href="#dfn-user-agent">ユーザエージェント</a>にあるアクセシビリティ機能でサポートされていること。
                            
                         </p>
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">To qualify as an accessibility-supported use of a Web content technology (or feature
-                           of a technology), both 1 and 2 must be satisfied for a Web content technology (or
-                           feature):
+                        <p xmlns="http://www.w3.org/1999/xhtml">あるウェブコンテンツ技術 (又は、ある技術の機能) のアクセシビリティ サポーテッドな使用方法とみなされるためには、そのウェブコンテンツ技術 (又は機能) について、次の 1.と 2.の両方が満たされていなければならない:
                            
                         </p>
                         
@@ -620,14 +542,13 @@
                               
                               
                               <p>
-                                 <strong>The way that the <a href="#dfn-technology">Web content technology</a> is used must be supported by users' assistive technology (AT). </strong> This means that the way that the technology is used has been tested for interoperability
-                                 with users' assistive technology in the <a href="#dfn-human-language">human language(s)</a> of the content,
+                                 <strong>その<a href="#dfn-technology">ウェブコンテンツ技術</a>の使用方法が、利用者の支援技術によりサポートされていなければならない。</strong> これは、その技術の使用方法が、そのコンテンツの<a href="#dfn-human-language">自然言語</a>における利用者の支援技術との相互運用性について検証されていることを意味する。
                                  
                               </p>
                               
                               
                               <p>
-                                 <strong>AND</strong>
+                                 <strong>かつ</strong>
                                  
                               </p>
                               
@@ -639,8 +560,7 @@
                               
                               
                               <p>
-                                 <strong>The Web content technology must have accessibility-supported user agents that are
-                                    available to users. </strong> This means that at least one of the following four statements is true:
+                                 <strong>そのウェブコンテンツ技術には、利用者が入手できるアクセシビリティ サポーテッドなユーザエージェントがなければならない。</strong> これは、次の四つのうち少なくとも一つを満たしていることを意味する:
                                  
                               </p>
                               
@@ -651,14 +571,13 @@
                                  <li>
                                     
                                     
-                                    <p>The technology is supported natively in widely-distributed user agents that are also
-                                       accessibility supported (such as HTML and CSS);
+                                    <p>その技術が、広く配布されているアクセシビリティ サポーテッドなユーザエージェントに標準でサポートされている (HTML、CSS など)。
                                        
                                     </p>
                                     
                                     
                                     <p>
-                                       <strong>OR</strong>
+                                       <strong>又は、</strong>
                                        
                                     </p>
                                     
@@ -667,14 +586,13 @@
                                  
                                  <li>
                                     
-                                    <p>The technology is supported in a widely-distributed plug-in that is also accessibility
-                                       supported;
+                                    <p>その技術が、広く配布されているアクセシビリティ サポーテッドなプラグインでサポートされている。
                                        
                                     </p>
                                     
                                     
                                     <p>
-                                       <strong>OR</strong>
+                                       <strong>又は、</strong>
                                        
                                     </p>
                                     
@@ -683,15 +601,13 @@
                                  
                                  <li>
                                     
-                                    <p>The content is available in a closed environment, such as a university or corporate
-                                       network, where the user agent required by the technology and used by the organization
-                                       is also accessibility supported;
+                                    <p>そのコンテンツが、大学、企業内ネットワークのような閉じた環境で利用できるものである。この環境で、その技術に必要とされていて、その組織で使用されているユーザエージェントがアクセシビリティ サポーテッドである。
                                        
                                     </p>
                                     
                                     
                                     <p>
-                                       <strong>OR</strong>
+                                       <strong>又は、</strong>
                                        
                                     </p>
                                     
@@ -700,8 +616,7 @@
                                  
                                  <li>
                                     
-                                    <p>The user agent(s) that support the technology are accessibility supported and are
-                                       available for download or purchase in a way that:
+                                    <p>その技術をサポートするユーザエージェントが、アクセシビリティ サポーテッドであって、次の方法でダウンロード又は購入できる:
                                        
                                     </p>
                                     
@@ -709,14 +624,13 @@
                                     <ul>
                                        
                                        
-                                       <li>does not cost a person with a disability any more than a person without a disability
-                                          <strong>and</strong>
+                                       <li>障害のある人の費用が、障害のない人の費用を上回ることがなく、
+                                          <strong>かつ、</strong>
                                           
                                        </li>
                                        
                                        
-                                       <li>is as easy to find and obtain for a person with a disability as it is for a person
-                                          without disabilities.
+                                       <li>障害のある人も、障害のない人と同程度に容易に探して入手できる。
                                           
                                        </li>
                                        
@@ -737,79 +651,60 @@
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The Accessibility Guidelines Working Group and the W3C do not specify which or how
-                              much support by assistive
-                              technologies there must be for a particular use of a Web technology in order for it
-                              to be classified as accessibility supported. (See <a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance#support-level">Level of Assistive Technology Support Needed for "Accessibility Support"</a>.)
+                           <p class="note-title marker">注記</p>
+                           <p>Accessibility Guidelines Working Group 及び W3C は、あるウェブ技術の特定の使用方法がアクセシビリティ サポーテッドであると分類するために、どの支援技術によるどれだけのサポートが必要なのかを定めない (<a href="https://waic.jp/translations/WCAG22/Understanding/conformance.html#support-level">「アクセシビリティ サポーテッド」とするのに必要な支援技術によるサポートのレベル</a> を参照)。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Web technologies can be used in ways that are not accessibility supported as long
-                              as they are not <a href="#dfn-relied-upon">relied upon</a> and the page as a whole meets the conformance requirements, including <a href="#cc4">Conformance Requirement 4</a> and <a href="#cc5">Conformance Requirement 5</a>.
+                           <p class="note-title marker">注記</p>
+                           <p>そのウェブ技術に<a href="#dfn-relied-upon">依存</a>しておらず、<a href="https://waic.jp/translations/WCAG22/#cc4">適合要件 4</a> 及び<a href="https://waic.jp/translations/WCAG22/#cc5">適合要件 5</a> が満たしている場合は、そのウェブ技術をアクセシビリティ サポーテッドではない方法で用いることができる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>When a <a href="#dfn-technology">Web Technology</a> is used in a way that is "accessibility supported," it does not imply that the entire
-                              technology or all uses of the technology are supported. Most technologies, including
-                              HTML, lack support for at least one feature or use. Pages conform to WCAG only if
-                              the uses of the technology that are accessibility supported can be relied upon to
-                              meet WCAG requirements.
+                           <p class="note-title marker">注記</p>
+                           <p><a href="#dfn-technology">ウェブ技術</a>がアクセシビリティ サポーテッドな方法で用いられている場合、その技術全体、又はその技術の使用方法すべてがアクセシビリティ サポーテッドであるということを暗に示すわけではない。ほとんどの技術は、HTML を含めてアクセシビリティ サポーテッドではない機能、又は使用方法が少なくとも一つある。ウェブページが WCAG に適合するのは、依存する技術のアクセシビリティ サポーテッドな使用方法を用いて WCAG の要件を満たしている場合だけである。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>When citing Web content technologies that have multiple versions, the version(s) supported
-                              should be specified.
+                           <p class="note-title marker">注記</p>
+                           <p>複数のバージョンを有するウェブコンテンツ技術を挙げる際は、アクセシビリティ サポーテッドなバージョンを特定すべきである。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>One way for authors to locate uses of a technology that are accessibility supported
-                              would be to consult compilations of uses that are documented to be accessibility supported.
-                              (See <a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance#documented-lists">Understanding Accessibility-Supported Web Technology Uses</a>.) Authors, companies, technology vendors, or others may document accessibility-supported
-                              ways of using Web content technologies. However, all ways of using technologies in
-                              the documentation would need to meet the definition of accessibility-supported Web
-                              content technologies above.
-                              
+                           <p class="note-title marker">注記</p>
+                           <p>コンテンツ制作者が技術のアクセシビリティ サポーテッドな使用方法を見つける方法の一つは、アクセシビリティ サポーテッドであることが文書化されている使用方法の資料を参照することである (<a href="https://waic.jp/translations/WCAG22/Understanding/conformance.html#documented-lists">ウェブ技術のアクセシビリティ サポーテッドな使用法を理解する</a> を参照)。コンテンツ制作者、企業、技術ベンダー、又はその他の者が、ウェブコンテンツ技術のアクセシビリティ サポーテッドな使用方法を文書化してもよい。しかし、文書中の技術の使用方法はすべて、上記のアクセシビリティ サポーテッドなウェブコンテンツ技術の定義を満たしている必要がある。
+
                            </p>
                         </div>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-ambiguous-to-users-in-general">ambiguous to users in general</dt>
+                  <dt id="dfn-ambiguous-to-users-in-general">ほとんどの利用者にとって曖昧 (ambiguous to users in general)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">the purpose cannot be determined from the link and all information of the Web page
-                           presented to the user simultaneously with the link (i.e., readers without disabilities
-                           would not know what a link would do until they activated it)
+                        <p xmlns="http://www.w3.org/1999/xhtml">リンク、及びリンクと同時に利用者に提供されているウェブページのどの情報からも、そのリンクの目的を判断できない (すなわち、障害がない閲覧者でも、そのリンクを動作させるまで、そのリンクが何をするのか分からない)。
                            
                         </p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>The word guava in the following sentence "One of the notable exports is guava" is
-                              a link. The link could lead to a definition of guava, a chart listing the quantity
-                              of guava exported or a photograph of people harvesting guava. Until the link is activated,
-                              all readers are unsure and the person with a disability is not at any disadvantage.
+                           <p>「注目すべき輸出品のひとつはグァバです」という文中にある「グァバ」という単語がリンクになっている。そのリンク先は、グァバの定義、グァバの輸出量を挙げる図表、又はグァバを収穫している人々の写真のいずれにもなり得る。リンクを動作させるまで、すべての利用者が確信を持てないため、障害のある人が不利な立場に置かれることはない。
                               
                            </p>
                            
@@ -818,48 +713,35 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-assistive-technology">assistive technology</dt>
+                  <dt id="dfn-assistive-technology">支援技術 (assistive technology)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">hardware and/or software that acts as a <a href="#dfn-user-agent">user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements
-                           of users with disabilities that go beyond those offered by mainstream user agents
+                        <p xmlns="http://www.w3.org/1999/xhtml">障害のある利用者の要件を満たすために、主流の<a href="#dfn-user-agent">ユーザエージェント</a>が提供する機能を超えた機能を提供するような、ユーザエージェントとして動作する、又は主流のユーザエージェントと共に動作するハードウェア及び／又はソフトウェア。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Functionality provided by assistive technology includes alternative presentations
-                              (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
-                              voice), additional navigation or orientation mechanisms, and content transformations
-                              (e.g., to make tables more accessible).
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術が提供する機能としては、代替の提示 (例: 合成音声や拡大表示したコンテンツ)、代替入力手法 (例: 音声認識)、付加的なナビゲーション又は位置確認のメカニズム、及びコンテンツ変換 (例: テーブルをよりアクセシブルにするもの) などを挙げることができる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Assistive technologies often communicate data and messages with mainstream user agents
-                              by using and monitoring APIs.
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術は、API を利用、監視することで、主流のユーザエージェントとデータやメッセージのやりとりをすることが多い。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The distinction between mainstream user agents and assistive technologies is not absolute.
-                              Many mainstream user agents provide some features to assist individuals with disabilities.
-                              The basic difference is that mainstream user agents target broad and diverse audiences
-                              that usually include people with and without disabilities. Assistive technologies
-                              target narrowly defined populations of users with specific disabilities. The assistance
-                              provided by an assistive technology is more specific and appropriate to the needs
-                              of its target users. The mainstream user agent may provide important functionality
-                              to assistive technologies like retrieving Web content from program objects or parsing
-                              markup into identifiable bundles.
+                           <p class="note-title marker">注記</p>
+                           <p>主流のユーザエージェントと支援技術との区別は、絶対的なものではない。多くの主流のユーザエージェントは、障害のある個人を支援する機能を提供している。基本的な差異は、主流のユーザエージェントが障害のある人もない人も含めて、広く多様な利用者を対象にしているのに対し、支援技術は、特定の障害のある利用者という、より狭く限られた人たちを対象にしているということである。支援技術により提供される支援は、対象とする利用者に特化した、よりニーズに適したものである。主流のユーザエージェントは、プログラムオブジェクトからのウェブコンテンツの抽出、マークアップの識別可能な構造への解釈といった、重要な機能を支援技術に対して提供する場合がある。
                               
                            </p>
                         </div>
@@ -867,8 +749,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Assistive technologies that are important in the context of this document include
-                              the following:
+                           <p>この文書の文脈において重要な支援技術としては、以下のものが挙げられる:
                               
                            </p>
                            
@@ -876,38 +757,30 @@
                            <ul>
                               
                               
-                              <li>screen magnifiers, and other visual reading assistants, which are used by people with
-                                 visual, perceptual and physical print disabilities to change text font, size, spacing,
-                                 color, synchronization with speech, etc. in order to improve the visual readability
-                                 of rendered text and images;
+                              <li>画面拡大ソフト及びその他の視覚的な表示に関する支援技術。視覚障害、知覚障害、及び読書困難などの障害のある人が、レンダリング後のテキスト及び画像の視覚的な読みやすさを改善するために、テキストのフォント、サイズ、間隔、色、音声との同期などを変更するのに使用している。
                                  
                               </li>
                               
                               
-                              <li>screen readers, which are used by people who are blind to read textual information
-                                 through synthesized speech or braille;
+                              <li>スクリーンリーダー。全盲の人がテキスト情報を合成音声あるいは点字で読み取るために使用している。
                                  
                               </li>
                               
                               
-                              <li>text-to-speech software, which is used by some people with cognitive, language, and
-                                 learning disabilities to convert text into synthetic speech;
+                              <li>音声変換ソフトウェア。認知障害、言語障害、及び学習障害のある人が、テキストを合成音声に変換するために使用している。
                                  
                               </li>
                               
                               
-                              <li>speech recognition software, which may be used by people who have some physical disabilities;</li>
+                              <li>音声認識ソフトウェア。何らかの身体障害のある利用者が使用することがある。</li>
                               
                               
-                              <li>alternative keyboards, which are used by people with certain physical disabilities
-                                 to simulate the keyboard (including alternate keyboards that use head pointers, single
-                                 switches, sip/puff and other special input devices.);
+                              <li>代替キーボード。特定の身体障害のある人がキーボード操作をシミュレートするのに使用している (ヘッドポインタ、シングルスイッチ、呼気・吸気スイッチ、及びその他の特別な入力デバイスを使った代替キーボードを含む)。
                                  
                               </li>
                               
                               
-                              <li>alternative pointing devices, which are used by people with certain physical disabilities
-                                 to simulate mouse pointing and button activations.
+                              <li>代替ポインティングデバイス。特定の身体障害のある人がマウスポインタとボタンの動きをシミュレートするのに使用している。
                                  
                               </li>
                               
@@ -918,57 +791,55 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-conformance">conformance</dt>
+                  <dt id="dfn-conformance">適合 (conformance)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">satisfying all the requirements of a given standard, guideline or specification</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">与えられた規格、ガイドライン、又は仕様のすべての要件を満たすこと。</p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-conforming-alternate-version">conforming alternate version</dt>
+                  <dt id="dfn-conforming-alternate-version">適合している代替版 (conforming alternate version)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">version that</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">以下の事項を満たす版のことを指す:</p>
                         
                         
                         <ol xmlns="http://www.w3.org/1999/xhtml">
                            
                            
-                           <li>conforms at the designated level, and</li>
+                           <li>指定されたレベルで適合しており、かつ</li>
                            
                            
-                           <li>provides all of the same information and <a href="#dfn-functionality">functionality</a> in the same <a href="#dfn-human-language">human language</a>, and
+                           <li>同じ<a href="#dfn-functionality">情報</a>及び機能のすべてを同一の<a href="#dfn-human-language">自然言語</a>で提供しており、かつ
                               
                            </li>
                            
                            
-                           <li>is as up to date as the non-conforming content, and</li>
+                           <li>不適合コンテンツと同時に更新されていて、かつ</li>
                            
                            
                            <li>
                               
-                              <p>for which at least one of the following is true:</p>
+                              <p>以下に挙げる事項のうち少なくとも一つを満たしていること:</p>
                               
                               
                               <ol>
                                  
                                  
-                                 <li>the conforming version can be reached from the non-conforming page via an <a href="#dfn-accessibility-supported">accessibility-supported</a>
-                                    <a href="#dfn-mechanism">mechanism</a>, or
+                                 <li><a href="#dfn-accessibility-supported">アクセシビリティ サポーテッド</a>な<a href="#dfn-mechanism">メカニズム</a>を用いて、不適合ページから適合版へ到達できる。もしくは、
                                     
                                  </li>
                                  
                                  
-                                 <li>the non-conforming version can only be reached from the conforming version, or</li>
+                                 <li>不適合版に到達できるのは、適合版からのみである。</li>
                                  
                                  
-                                 <li>the non-conforming version can only be reached from a conforming page that also provides
-                                    a mechanism to reach the conforming version
+                                 <li>不適合版に到達できるのは、適合版に到達するメカニズムも提供している適合ページからのみである。
                                     
                                  </li>
                                  
@@ -983,186 +854,171 @@
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>In this definition, "can only be reached" means that there is some mechanism, such
-                              as a conditional redirect, that prevents a user from "reaching" (loading) the non-conforming
-                              page unless the user had just come from the conforming version.
+                           <p class="note-title marker">注記</p>
+                           <p>この定義において、「到達できるのは……からのみ」とは、利用者が適合版から来ていない限り、不適合ページに「到達する」 (読み込む) のを防ぐ条件付きリダイレクトのような何らかのメカニズムがある、ということを意味する。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The alternate version does not need to be matched page for page with the original
-                              (e.g., the conforming alternate version may consist of multiple pages).
+                           <p class="note-title marker">注記</p>
+                           <p>代替版は、元のページと一対一で対応している必要はない (例えば、適合している代替版は複数のページであってもよい)。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>If multiple language versions are available, then conforming alternate versions are
-                              required for each language offered.
+                           <p class="note-title marker">注記</p>
+                           <p>複数の言語版が利用できる場合、各言語版に対して、適合している代替版を提供する必要がある。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Alternate versions may be provided to accommodate different technology environments
-                              or user groups. Each version should be as conformant as possible. One version would
-                              need to be fully conformant in order to meet <a href="#cc1">conformance requirement 1</a>.
+                           <p class="note-title marker">注記</p>
+                           <p>異なる技術環境又は利用者層に対応するために、代替版が提供される場合がある。それぞれの版は、可能な限り適合させるべきである。<a href="https://waic.jp/translations/WCAG22/#cc1">適合要件 1</a> を満たすためには、一つの版が完全に適合している必要がある。
+
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The conforming alternative version does not need to reside within the scope of conformance,
-                              or even on the same Web site, as long as it is as freely available as the non-conforming
-                              version.
+                           <p class="note-title marker">注記</p>
+                           <p>適合している代替版は、不適合版と同様に自由に利用可能である限り、適合宣言の範囲内に存在する必要はなく、同じウェブサイト上に存在する必要もない。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Alternate versions should not be confused with <a href="#dfn-supplemental-content">supplementary content</a>, which support the original page and enhance comprehension.
+                           <p class="note-title marker">注記</p>
+                           <p>代替版は、元のページを補助して理解を高める<a href="#dfn-supplemental-content">補足コンテンツ</a>と混同されないようにすべきである。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Setting user preferences within the content to produce a conforming version is an
-                              acceptable mechanism for reaching another version as long as the method used to set
-                              the preferences is accessibility supported.
+                           <p class="note-title marker">注記</p>
+                           <p>コンテンツ内で利用者が設定を行うことで適合版が作り出される仕組みは、その利用者の設定に用いられている手法がアクセシビリティ サポーテッドであるかぎり、代替版への到達メカニズムとして条件を満たしているといえる。
                               
                            </p>
                         </div>
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">See <a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance#conforming-alt-versions">Understanding Conforming Alternate Versions</a>
+                        <p xmlns="http://www.w3.org/1999/xhtml"><a href="https://www.w3.org/WAI/WCAG22/Understanding/conformance#conforming-alt-versions">適合している代替版を理解する</a> を参照。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-content">content</dt>
+                  <dt id="dfn-content">コンテンツ (content)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">information and sensory experience to be communicated to the user by means of a <a href="#dfn-user-agent">user agent</a>, including code or markup that defines the content's <a href="#dfn-structure">structure</a>, <a href="#dfn-presentation">presentation</a>, and interactions
+                        <p xmlns="http://www.w3.org/1999/xhtml">コンテンツの<a href="#dfn-structure">構造</a>、<a href="#dfn-presentation">提示</a>、及びインタラクションを定義するコード又はマークアップも含めて、<a href="#dfn-user-agent">ユーザエージェント</a>によって利用者に伝達される情報及び感覚的な体験。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-functionality">functionality</dt>
+                  <dt id="dfn-functionality">機能 (functionality)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
                         <p xmlns="http://www.w3.org/1999/xhtml">
-                           <a href="#dfn-process">processes</a> and outcomes achievable through user action
-                           
+                           利用者の操作により実現可能な<a href="#dfn-process">プロセス</a>及び結果。
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-human-language">human language</dt>
+                  <dt id="dfn-human-language">自然言語 (human language)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">language that is spoken, written or signed (through visual or tactile means) to communicate
-                           with humans
+                        <p xmlns="http://www.w3.org/1999/xhtml">人間とコミュニケーションをとるために話される、書かれる、又は (視覚的もしくは触覚的な手段で) 手話にされる言語。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>See also <a href="#dfn-sign-language">sign language</a>.
-                              
+                           <p class="note-title marker">注記</p>
+                           <p><a href="#dfn-sign-language">手話</a>も参照。
                            </p>
                         </div>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-link-purpose">link purpose</dt>
+                  <dt id="dfn-link-purpose">リンクの目的 (link purpose)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">nature of the result obtained by activating a hyperlink</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ハイパーリンクを動作させたときに得られる結果の本質。</p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-mechanism">mechanism</dt>
+                  <dt id="dfn-mechanism">メカニズム (mechanism)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
                         <p xmlns="http://www.w3.org/1999/xhtml">
-                           <a href="#dfn-process">process</a> or technique for achieving a result
+                           結果を得るための<a href="#dfn-process">プロセス</a>又は手法。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The mechanism may be explicitly provided in the content, or may be <a href="#dfn-relied-upon">relied upon</a> to be provided by either the platform or by <a href="#dfn-user-agent">user agents</a>, including <a href="#dfn-assistive-technology">assistive technologies</a>.
-                              
+                           <p class="note-title marker">注記</p>
+                           <p>メカニズムは、コンテンツ内で明示的に提供されることもあれば、プラットフォーム又は<a href="#dfn-assistive-technology">支援技術</a>を含む<a href="#dfn-user-agent">ユーザエージェント</a>で提供されるものに<a href="#dfn-relied-upon">依存</a>することもある。
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The mechanism needs to meet all success criteria for the conformance level claimed.</p>
+                           <p class="note-title marker">注記</p>
+                           <p>メカニズムは、宣言する適合レベルのすべての達成基準を満たしている必要がある。</p>
                         </div>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-presentation">presentation</dt>
+                  <dt id="dfn-presentation">提示 (presentation)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">rendering of the <a href="#dfn-content">content</a> in a form to be perceived by users
+                        <p xmlns="http://www.w3.org/1999/xhtml">利用者が知覚できる形式で<a href="#dfn-content">コンテンツ</a>をレンダリングすること。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-process">process</dt>
+                  <dt id="dfn-process">プロセス (process)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">series of user actions where each action is required in order to complete an activity</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ある活動を完了させるために必要な利用者の一連の動作。</p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Successful use of a series of Web pages on a shopping site requires users to view
-                              alternative products, prices and offers, select products, submit an order, provide
-                              shipping information and provide payment information.
+                           <p>ショッピングサイト上の一連のウェブページで目的を果たすためには、利用者が選択肢となりうる製品、価格及び内容を閲覧した後、製品を選択して発注し、配送先情報及び支払情報を提供する必要がある。
                               
                            </p>
                            
@@ -1171,8 +1027,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>An account registration page requires successful completion of a <a href="https://www.w3.org/TR/turingtest/">Turing test</a> before
-                              the registration form can be accessed.
+                           <p>アカウント登録ページでは、登録フォームにアクセスする前に<a href="https://www.w3.org/TR/turingtest/">チューリングテスト</a>に成功する必要がある。
                               
                            </p>
                            
@@ -1181,21 +1036,19 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-programmatically-determined">programmatically determined</dt>
+                  <dt id="dfn-programmatically-determined">プログラムによる解釈 (programmatically determined)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">determined by software from author-supplied data provided in a way that different
-                           <a href="#dfn-user-agent">user agents</a>, including <a href="#dfn-assistive-technology">assistive technologies</a>, can extract and present this information to users in different modalities
+                        <p xmlns="http://www.w3.org/1999/xhtml"><a href="#dfn-assistive-technology">支援技術</a>を含む様々な<a href="#dfn-user-agent">ユーザエージェント</a>が抽出でき、利用者に様々な感覚モダリティで提示できるような形のデータがコンテンツ制作者によって提供されたとき、そのデータがソフトウェアによって解釈されること。
                            
                         </p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Determined in a markup language from elements and attributes that are accessed directly
-                              by commonly available assistive technology.
+                           <p>マークアップ言語で、一般に入手可能な支援技術が直接アクセスできる要素と属性から解釈される。
                               
                            </p>
                            
@@ -1204,9 +1057,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Determined from technology-specific data structures in a non-markup language and exposed
-                              to assistive technology via an accessibility API that is supported by commonly available
-                              assistive technology.
+                           <p>非マークアップ言語の技術特有のデータ構造から解釈され、一般に入手可能な支援技術がサポートするアクセシビリティ API を通じて支援技術に提供される。
                               
                            </p>
                            
@@ -1215,21 +1066,19 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-programmatically-determined-link-context">programmatically determined link context</dt>
+                  <dt id="dfn-programmatically-determined-link-context">プログラムによる解釈が可能なリンクのコンテキスト (programmatically determined link context)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">additional information that can be <a href="#dfn-programmatically-determined">programmatically determined</a> from <a href="#dfn-relationships">relationships</a> with a link, combined with the link text, and presented to users in different modalities
+                        <p xmlns="http://www.w3.org/1999/xhtml">リンクとの<a href="#dfn-relationships">関係性</a>から<a href="#dfn-programmatically-determined">プログラムによる解釈</a>が可能であり、リンクテキストと結びつけることができ、様々な感覚モダリティで利用者に提示することができる付加的情報。
                            
                         </p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>In HTML, information that is programmatically determinable from a link in English
-                              includes text that is in the same paragraph, list, or table cell as the link or in
-                              a table header cell that is associated with the table cell that contains the link.
+                           <p>HTML において、英語で書かれたリンクからプログラムによる解釈が可能な情報には、そのリンクと同じ段落、リスト、もしくはテーブルのセル内にあるテキスト、又はテーブル内のリンクを含むセルに関連付けられたヘッダーセル内のテキストが挙げられる。
                               
                            </p>
                            
@@ -1237,9 +1086,8 @@
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Since screen readers interpret punctuation, they can also provide the context from
-                              the current sentence, when the focus is on a link in that sentence.
+                           <p class="note-title marker">注記</p>
+                           <p>スクリーンリーダーは句読点を解釈するので、フォーカスが文中のリンクにある場合は、その文からコンテキストを提供することも可能である。
                               
                            </p>
                         </div>
@@ -1247,42 +1095,40 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-relationships">relationships</dt>
+                  <dt id="dfn-relationships">関係性 (relationships)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">meaningful associations between distinct pieces of content</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">コンテンツの異なる部分間における意味のあるつながり。</p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-relied-upon">relied upon</dt>
+                  <dt id="dfn-relied-upon">依存されている (relied upon)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">the content would not <a href="#dfn-conformance">conform</a> if that <a href="#dfn-technology">technology</a> is turned off or is not supported
+                        <p xmlns="http://www.w3.org/1999/xhtml">その<a href="#dfn-technology">技術</a>が無効になっている場合、又はサポートされていない場合に、コンテンツが<a href="#dfn-conformance">適合</a>できないこと。
+                        </p>
+                        
+                        
+                     </definition>
+                  </dd>
+                  <dt id="dfn-sign-language">手話 (sign language)</dt>
+                  <dd>
+                     <definition xmlns="">
+                        
+                        
+                        <p xmlns="http://www.w3.org/1999/xhtml">意味を伝えるために、手と腕の動き、顔の表情又は身体の姿勢の組み合わせを用いる言語。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-sign-language">sign language</dt>
-                  <dd>
-                     <definition xmlns="">
-                        
-                        
-                        <p xmlns="http://www.w3.org/1999/xhtml">a language using combinations of movements of the hands and arms, facial expressions,
-                           or body positions to convey meaning
-                           
-                        </p>
-                        
-                        
-                     </definition>
-                  </dd>
-                  <dt id="dfn-structure">structure</dt>
+                  <dt id="dfn-structure">構造 (structure)</dt>
                   <dd>
                      <definition xmlns="">
                         
@@ -1290,12 +1136,12 @@
                         <ol xmlns="http://www.w3.org/1999/xhtml">
                            
                            
-                           <li>The way the parts of a <a href="#dfn-web-page">Web page</a> are organized in relation to each other; and
+                           <li><a href="#dfn-web-page">ウェブページ</a>の各部を相互の関係性によりまとめる方法論。及び、
                               
                            </li>
                            
                            
-                           <li>The way a collection of <a href="#dfn-web-page">Web pages</a> is organized
+                           <li>一連の<a href="#dfn-web-page">ウェブページ</a>をまとめる方法論。
                               
                            </li>
                            
@@ -1305,19 +1151,19 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-supplemental-content">supplemental content</dt>
+                  <dt id="dfn-supplemental-content">補足コンテンツ (supplemental content)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">additional <a href="#dfn-content">content</a> that illustrates or clarifies the primary content
+                        <p xmlns="http://www.w3.org/1999/xhtml">元の<a href="#dfn-content">コンテンツ</a> を説明、又はより明確にするために付加されたコンテンツ。
                            
                         </p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>An audio version of a <a href="#dfn-web-page">Web page</a>.
+                           <p><a href="#dfn-web-page">ウェブページ</a>の音声版。
                               
                            </p>
                            
@@ -1326,7 +1172,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>An illustration of a complex <a href="#dfn-process">process</a>.
+                           <p>複雑な<a href="#dfn-process">プロセス</a>を示したイラスト。
                               
                            </p>
                            
@@ -1335,8 +1181,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A paragraph summarizing the major outcomes and recommendations made in a research
-                              study.
+                           <p>調査研究でなされた主要な成果及び提言を要約する段落。
                               
                            </p>
                            
@@ -1345,32 +1190,28 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-technology">technology</dt>
+                  <dt id="dfn-technology">技術 (technology)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
                         <p xmlns="http://www.w3.org/1999/xhtml">
-                           <a href="#dfn-mechanism">mechanism</a> for encoding instructions to be rendered, played or executed by <a href="#dfn-user-agent">user agents</a>
+                           <a href="#dfn-user-agent">ユーザエージェント</a>がどのようにレンダリング、再生、又は実行するかを符号化する<a href="#dfn-mechanism">メカニズム</a>。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>As used in these guidelines "Web Technology" and the word "technology" (when used
-                              alone) both refer to Web Content Technologies.
+                           <p class="note-title marker">注記</p>
+                           <p>このガイドラインで用いられている「ウェブ技術」及び (単独で用いられている) 「技術」という用語は、どちらもウェブコンテンツ技術を指す。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Web content technologies may include markup languages, data formats, or programming
-                              languages that authors may use alone or in combination to create end-user experiences
-                              that range from static Web pages to synchronized media presentations to dynamic Web
-                              applications.
+                           <p class="note-title marker">注記</p>
+                           <p>ウェブコンテンツ技術には、マークアップ言語、データ形式、及びプログラム言語などがあり、これらをコンテンツ制作者が単独で、又は組み合わせて用いることによって、静的なウェブページや同期したメディアによる提示、さらには動的なウェブアプリケーションに至るまでの様々なエンドユーザ体験を作ることができる。
                               
                            </p>
                         </div>
@@ -1378,8 +1219,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Some common examples of Web content technologies include HTML, CSS, SVG, PNG, PDF,
-                              Flash, and JavaScript.
+                           <p>ウェブコンテンツ技術のよくある事例としては、HTML、CSS、SVG、PNG、PDF、Flash、JavaScript などがある。
                               
                            </p>
                            
@@ -1388,17 +1228,17 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-user-agent">user agent</dt>
+                  <dt id="dfn-user-agent">ユーザエージェント (user agent)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">any software that retrieves and presents Web content for users</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ウェブコンテンツを取得して利用者に提示するあらゆるソフトウェア。</p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technology">assistive technologies</a> — that help in retrieving, rendering, and interacting with Web content.
+                           <p>ウェブコンテンツの取得、レンダリング及びインタラクションを支援する、ウェブブラウザ、メディアプレーヤ、プラグイン、及びその他のプログラム (<a href="#dfn-assistive-technology">支援技術</a>も含む)。
                               
                            </p>
                            
@@ -1407,30 +1247,27 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-web-page">web page</dt>
+                  <dt id="dfn-web-page">ウェブページ (web page)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">a non-embedded resource obtained from a single URI using HTTP plus any other resources
-                           that are used in the rendering or intended to be rendered together with it by a <a href="#dfn-user-agent">user agent</a>
+                        <p xmlns="http://www.w3.org/1999/xhtml">単一の URI から HTTP で得た埋め込まれていないリソースに加え、レンダリングに使われる、又は<a href="#dfn-user-agent">ユーザエージェント</a>がこのリソースと一緒にレンダリングすることを意図しているその他のあらゆるリソースを合わせたもの。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Although any "other resources" would be rendered together with the primary resource,
-                              they would not necessarily be rendered simultaneously with each other.
+                           <p class="note-title marker">注記</p>
+                           <p>どのような「その他のリソース」も主たるリソースと一緒にレンダリングされるであろうが、これらのリソースが同時にレンダリングされるとは限らない。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>For the purposes of conformance with these guidelines, a resource must be "non-embedded"
-                              within the scope of conformance to be considered a Web page.
+                           <p class="note-title marker">注記</p>
+                           <p>このガイドラインの適合範囲に含まれる対象となるウェブページとみなされるためには、リソースが「埋め込まれていない」リソースでなければならない。
                               
                            </p>
                         </div>
@@ -1438,17 +1275,14 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A Web resource including all embedded images and media.</p>
+                           <p>単体のウェブリソースであり、埋め込まれている画像及びメディアのすべてを含んだもの。</p>
                            
                         </aside>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A Web mail program built using Asynchronous JavaScript and XML (AJAX). The program
-                              lives entirely at http://example.com/mail, but includes an inbox, a contacts area
-                              and a calendar. Links or buttons are provided that cause the inbox, contacts, or calendar
-                              to display, but do not change the URI of the page as a whole.
+                           <p>Asynchronous JavaScript and XML (AJAX) を用いたウェブメールのプログラム。そのプログラム全体は http://example.com/mail に存在しているが、受信トレイ、連絡先、カレンダーがある。受信トレイ、連絡先、又はカレンダーを表示するリンク又はボタンが提供されているが、全体としてページの URI は変更されない。
                               
                            </p>
                            
@@ -1457,8 +1291,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A customizable portal site, where users can choose content to display from a set of
-                              different content modules.
+                           <p>カスタマイズ可能なポータルサイトで、利用者が様々なコンテンツモジュールのセットから表示させるコンテンツを選択できるようなもの。
                               
                            </p>
                            
@@ -1467,12 +1300,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>When you enter "http://shopping.example.com/" in your browser, you enter a movie-like
-                              interactive shopping environment where you visually move around in a store dragging
-                              products off of the shelves around you and into a visual shopping cart in front of
-                              you. Clicking on a product causes it to be demonstrated with a specification sheet
-                              floating alongside. This might be a single-page Web site or just one page within a
-                              Web site.
+                           <p>ブラウザで "http://shopping.example.com/" へ行くと、映画のようなインタラクティブなショッピング環境になる。そこでは、視覚的に店内を移動して、店内の棚から商品をドラッグして、目の前にある視覚的な買物カゴに商品を入れる。商品をクリックすると、同時に仕様書が浮き上がるように表示される。これは 1 ページだけのウェブサイトかもしれないし、ウェブサイトの中のほんの 1 ページなのかもしれない。
                               
                            </p>
                            
@@ -1484,16 +1312,13 @@
                </details>
             </section>
             <section id="test-rules">
-               <h2>Test Rules</h2>
-               <p>The following are Test Rules for certain aspects of this Success Criterion. It is
-                  not necessary to use these particular Test Rules to check for conformance with WCAG,
-                  but they are defined and approved test methods. For information on using Test Rules,
-                  see <a href="understanding-act-rules.html">Understanding Test Rules for WCAG Success Criteria</a>.
+               <h2>テストルール</h2>
+               <p>以下は、この達成基準の特定の側面に関するテストルールである。この特定のルールを使用して WCAG に適合しているかどうかを確認する必要はないが、これらのルールは定義され、承認されたテスト方法である。テストルールの使用については、<a href="understanding-act-rules.html">WCAG 達成基準のテストルールを理解する</a>を参照のこと。
                </p>
                <ul>
-                  <li><a href="/WAI/standards-guidelines/act/rules/c487ae/">Link has non-empty accessible name</a></li>
-                  <li><a href="/WAI/standards-guidelines/act/rules/5effbb/proposed/">Link in context is descriptive</a></li>
-                  <li><a href="/WAI/standards-guidelines/act/rules/fd3a94/proposed/">Links with identical accessible names and same context serve equivalent purpose</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/c487ae/">Link has non-empty accessible name</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/5effbb/proposed/">Link in context is descriptive</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/fd3a94/proposed/">Links with identical accessible names and same context serve equivalent purpose</a></li>
                </ul>
             </section><a class="button button-backtotop" href="#top"><span>
                   <svg focusable="false" aria-hidden="true" class="icon-arrow-up " viewBox="0 0 26 28">
@@ -1505,13 +1330,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -1526,11 +1350,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -1552,13 +1378,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -1567,7 +1393,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -1588,8 +1414,10 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+    <!--noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-      </noscript>
+      </noscript-->
    </body>
 </html>
