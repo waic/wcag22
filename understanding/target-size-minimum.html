@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  2.5.8: Target Size (Minimum) | WAI | W3C</title>
+      <title>解説書 達成基準 2.5.8: ターゲットのサイズ (最低限) | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -35,16 +35,16 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"><a href="input-modalities">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Input Modalities</a></li>
+                        </svg> ガイドライン: 入力モダリティ</a></li>
                   <li class="nav__item"><a href="dragging-movements">
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-left-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
-                        </svg>Previous SC: Dragging Movements</a></li>
+                        </svg>前: ドラッグ動作</a></li>
                   <li class="nav__item"></li>
                </ul>
             </nav>
@@ -53,159 +53,115 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#resources">Related Resources</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
-                     <li><a href="#key-terms">Key Terms</a></li>
+                     <li><a href="#brief">要約</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#benefits">利点</a></li>
+                     <li><a href="#examples">事例</a></li>
+                     <li><a href="#resources">関連リソース</a></li>
+                     <li><a href="#techniques">テクニック</a></li>
+                     <li><a href="#key-terms">重要な用語</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				SC 2.5.8:</span>Target Size (Minimum) (Level AA)
+            <h1><span class="standalone-resource__type-of-guidance">解説書 
+                  				達成基準 2.5.8:</span>ターゲットのサイズ (最低限) (レベル AA)
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>The size of the <a href="#dfn-target">target</a> for <a href="#dfn-pointer-input">pointer inputs</a> is at least 24 by 24 <a href="#dfn-css-pixel">CSS pixels</a>, except where:
+                  <p><a href="#dfn-pointer-input">ポインタ入力</a>の<a href="#dfn-target">ターゲット</a>のサイズは、少なくとも 24 × 24 <a href="#dfn-css-pixel">CSS ピクセル</a>である。ただし、次の場合は除く:
                   </p>
                   <ul>
                      
                      <li>
-                        <strong>Spacing:</strong> Undersized targets (those less than 24 by 24 CSS pixels) are positioned so that if
-                        a 24 CSS pixel diameter circle is centered on the <a href="#dfn-minimum-bounding-box">bounding box</a> of each, the circles do not intersect another target or the circle for another undersized
-                        target;
+                        <strong>間隔:</strong> 複数の小さなターゲット (24 × 24 CSS ピクセル未満のもの) が配置されており、それぞれの<a href="#dfn-minimum-bounding-box">境界ボックス</a>の中心に直径 24 CSS ピクセルの円があるとした場合に、その円が別のターゲットと重なる、又は別の小さなターゲットの円と重なることがない。
                      </li>
                      
                      <li>
-                        <strong>Equivalent:</strong> The function can be achieved through a different control on the same page that meets
-                        this criterion;
+                        <strong>同等:</strong> その機能は、この達成基準を満たす同一ページ上の別のコントロールを通じて達成できる。
                      </li>
                      
                      <li>
-                        <strong>Inline:</strong> The target is in a sentence or its size is otherwise constrained by the line-height
-                        of non-target text;
+                        <strong>インライン:</strong> ターゲットが文中に存在する、又は、そのサイズがターゲット以外のテキストに対する行の高さによって制約されている。
                      </li>
                      
                      <li>
-                        <strong>User agent control:</strong> The size of the target is determined by the <a href="#dfn-user-agent">user agent</a> and is not modified by the author;
+                        <strong>ユーザエージェントのコントロール:</strong> ターゲットのサイズが<a href="#dfn-user-agent">ユーザエージェント</a>によって決定され、かつコンテンツ制作者によって変更されていない。
                      </li>
                      
                      <li>
-                        <strong>Essential:</strong> A particular <a href="#dfn-presentation">presentation</a> of the target is <a href="#dfn-essential">essential</a> or is legally required for the information being conveyed.
+                        <strong>必要不可欠:</strong> そのターゲットを特定の方法で <a href="#dfn-presentation">提示</a>することが、<a href="#dfn-essential">必要不可欠</a>である、又は伝達される情報に対して法的に要求されている。
                      </li>
                      
                   </ul>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
-                     <p>Targets that allow for values to be selected spatially based on position within the
-                        target are considered one target for the purpose of the success criterion. Examples
-                        include sliders, color pickers displaying a gradient of colors, or editable areas
-                        where you position the cursor.
+                     <p class="note-title marker">注記</p>
+                     <p>ターゲット内の位置に基づいて空間的に値を選択できるターゲットは、この達成基準の目的上、一つのターゲットとみなされる。例としては、スライダー、色のグラデーションを表示するカラーピッカー、カーソルを置いた位置を編集できる領域などがある。
                      </p>
                   </div>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
-                     <p>For inline targets the line-height should be interpreted as perpendicular to the flow
-                        of text. For example, in a language displayed vertically, the line-height would be
-                        horizontal.
+                     <p class="note-title marker">注記 </p>
+                     <p>インラインのターゲットの場合、行の高さはテキストのフローに対して垂直方向として解釈されるべきである。例えば、縦書きで表示される言語では、行の高さは水平方向となる。
                      </p>
                   </div>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   
-                  <dt>Goal</dt>
-                  <dd>Make controls easier to activate.</dd>
+                  <dt>目標</dt>
+                  <dd>コントロールを作動しやすくする。</dd>
                   
-                  <dt>What to do</dt>
-                  <dd>Ensure targets meet a minimum size or have sufficient spacing around them.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>ターゲットが最低限のサイズを満たしている、又はターゲットの周囲に十分な間隔があることを確認する。</dd>
                   
-                  <dt>Why it's important</dt>
-                  <dd>Some people with physical impairments cannot click small buttons that are close together.</dd>
+                  <dt>なぜそれが重要か</dt>
+                  <dd>身体障害のある人の中には、互いに近接している小さなボタン群をクリックできない人もいる。</dd>
                   
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The intent of this Success Criterion is to help ensure targets can be easily activated
-                  without accidentally activating an adjacent target.  Users with dexterity limitations
-                  and those who have difficulty with fine motor movement find it difficult to accurately
-                  activate small targets when there are other targets that are too close.  Providing
-                  sufficient size, or sufficient spacing between targets, will reduce the likelihood
-                  of accidentally activating the wrong control.
+               <h2>意図</h2>
+               <p>この達成基準の目的は、隣接するターゲットを誤って作動させることなく、ターゲットを容易に作動できるようにするのを保証することである。巧緻性に限界がある利用者、及び細かい運動が困難な利用者は、別のターゲットが近すぎると、小さなターゲットを正確に作動させることが困難になる。十分なサイズ、又はターゲット間に十分な間隔を設けることで、間違ったコントロールが誤って作動する可能性が低くなる。
                </p>
-               <p>Disabilities addressed by this requirement include hand tremors, spasticity, and quadriplegia.
-                  Some people with disabilities use specialized input devices instead of a computer
-                  mouse or trackpad.  Typically these types of input device do not provide as much accuracy
-                  as mainstream pointing devices.  Meeting this requirement also ensures that touchscreen
-                  interfaces are easier to use.
+               <p>この要件で扱われる障害には、手の震え、痙縮、四肢麻痺などがある。障害のある人の中には、コンピュータのマウス又はトラックパッドの代わりに特殊な入力デバイスを使用している人もいる。通常、これらのタイプの入力デバイスは、主流のポインティングデバイスほどの精度を提供しない。この要件を満たすことで、タッチスクリーンインタフェースもより容易に使用できることも保証される。
                </p>
                <div class="note">
-                  <p class="note-title marker">Note</p>
-                  <p>This Success Criterion defines a <em>minimum size</em> and, if this can't be met, a <em>minimum spacing</em>. It is still possible to have very small, and difficult to activate, targets and
-                     meet the requirements of this Success Criterion, provided that the targets don't have
-                     any adjacent targets that are too close. However, using larger target sizes will help
-                     many people use targets more easily. <em>As a best practice</em> it is recommended to at least meet the <em>minimum size</em> requirement of the Success Criterion, regardless of spacing. For important links/controls,
-                     consider aiming for the stricter <a href="target-size-enhanced.html">2.5.5 Target Size (Enhanced)</a>.
+                  <p class="note-title marker">注記</p>
+                  <p>この達成基準では、<em>最小サイズ</em>を定義し、これを満たせない場合の<em>最小間隔</em>を定義する。ターゲットが非常に小さく、作動が難しくとも、隣接するターゲットが近すぎなければ、この達成基準の要件を満たすことは可能である。ただし、より大きなターゲットサイズを使用することで、多くの人がより簡単にターゲットを使用できるようになる。<em>ベストプラクティス</em>として、間隔に関係なく、少なくとも達成基準の<em>最小サイズ</em>要件を満たすことが推奨される。重要なリンク/コントロールについては、より厳密な <a href="target-size-enhanced.html">2.5.5 ターゲットのサイズ (高度)</a> を目指すことを検討されたい。
                   </p>
                </div>
                <section id="exceptions">
                   
-                  <h3>Exceptions</h3>
+                  <h3>例外</h3>
                   
-                  <p>The requirement is for targets to be at least 24 by 24 CSS pixels in size. There are
-                     five exceptions:
+                  <p>要件は、ターゲットのサイズが少なくとも 24 x 24 CSS ピクセルであることである。例外が五つある:
                   </p>
                   
                   
                   <ul>
                      
-                     <li><strong>Spacing:</strong> Undersized targets (those less than 24 by 24 CSS pixels) are positioned so that if
-                        a 24 CSS pixel diameter circle is centered on the <a href="#dfn-minimum-bounding-box">bounding box</a> of each, the circles do not intersect another target or the circle for another undersized
-                        target.
+                     <li><strong>間隔:</strong> 複数の小さなターゲット (24 × 24 CSS ピクセル未満のもの) が配置されており、それぞれの<a href="#dfn-minimum-bounding-box">境界ボックス</a>の中心に直径 24 CSS ピクセルの円があるとした場合に、その円が別のターゲットと重なる、又は別の小さなターゲットの円と重なることがない。
                      </li>
                      
-                     <li><strong>Equivalent:</strong> In cases where a target does not have a size equivalent to 24 by 24 CSS pixels, but
-                        there is another control that can achieve the underlying function that <em>does</em> meet the minimum size, the target can be excepted based on the "Equivalent" exception.
+                     <li><strong>同等:</strong> ターゲットが 24 × 24 CSS ピクセルに相当するサイズを持たないが、その基本的な機能を達成できる別のコントロールが、この達成基準の要件を<em>満たす</em>場合は、「同等」の例外に基づいてそのターゲットを除外できる。
                      </li>
                      
-                     <li><strong>Inline:</strong> The Success Criterion does not apply to inline targets in sentences, or where the
-                        size of the target is constrained by the line-height of non-target text. This exception
-                        is allowed because text reflow based on viewport size makes it impossible for authors
-                        to anticipate where links may be positioned relative to one another. When multiple
-                        links are embedded in blocks of texts in smaller text sizes, guaranteeing that undersized
-                        links in adjacent lines of text fulfill the spacing exception (their 24 CSS pixel
-                        diameter circle don't intersect any other links or their circles) would require a
-                        large line height which can be undesirable in many design contexts.
+                     <li><strong>インライン:</strong> 達成基準は、文中のインラインのターゲット、又は、ターゲットのサイズがターゲット以外のテキストの行の高さによって制約されている場合には適用されない。この例外が認められるのは、ビューポートサイズに基づいてテキストをリフローすると、リンクが互いに対してどこに配置されるかをコンテンツ制作者が予測することが不可能になるためである。複数のリンクがより小さなテキストサイズのテキストブロックに埋め込まれている場合、隣接するテキスト行の小さなリンクが間隔の例外を満たす (直径 24 CSS ピクセルの円が他のリンク又は別の小さなターゲットの円と交差しない) ことを保証するには、大きな行の高さが必要になる。これは、多くの設計の状況において望ましくない可能性がある。
                      </li>
                      
-                     <li><strong>User agent control:</strong> Browsers have default renderings of some controls, such as the days of the month
-                        calendar in an <code>&lt;input type="date"&gt;</code>. As long as the author has not modified the user agent default, the target size for
-                        a <q>User agent control</q> is excepted.
+                     <li><strong>ユーザエージェントのコントロール:</strong> ブラウザには、<code>&lt;input type="date"&gt;</code>の日付カレンダーのように、いくつかのコントロールのデフォルトのレンダリングがある。コンテンツ制作者がユーザエージェントのデフォルトを変更していない限り、<q>ユーザエージェントのコントロール</q>のターゲットのサイズは除外される。
                      </li>
                      
-                     <li><strong>Essential:</strong> If the size and spacing of the targets is fundamental to the information being conveyed,
-                        the <q>Essential</q> exception applies. For example, in digital maps, the position of pins is analogous
-                        to the position of places shown on the map. If there are many pins close together,
-                        the spacing between pins and neighboring pins will often be below 24 CSS pixels. It
-                        is essential to show the pins at the correct map location, therefore the Essential
-                        exception applies. A similar example is an interactive data visualization where targets
-                        are necessarily dense. Another example is where jurisdictions legally require online
-                        forms to replicate paper forms, which can impose constraints on the size of targets.
-                        In such jurisdictions, any legal requirement to replicate small targets can be considered
-                        essential. When the essential exception is applicable, authors are strongly encouraged
-                        to provide equivalent functionality through alternative means to the extent practical.
+                     <li><strong>必要不可欠:</strong> ターゲットのサイズ及び間隔が、伝達される情報にとって必須である場合、<q>必要不可欠</q>の例外が適用される。例えば、デジタル地図では、ピンの位置は地図上に表示される場所の位置に対応する。多数のピンが近接している場合、ピンと隣接するピンとの間隔は、多くの場合 24 CSS ピクセル未満になる。地図上の正しい位置にピンを表示することが必要不可欠であるため、必要不可欠の例外が適用される。同様の例としては、ターゲットが必然的に密集する対話型データ視覚化がある。別の例としては、自治体が紙のフォームを複製するためにオンラインフォームを法的に義務付けている場合があり、これによりターゲットのサイズに制限が課される可能性がある。そのような自治体では、小さなターゲットを複製するための法的要件が必要不可欠であるとみなすことができる。必要不可欠の例外が適用される場合、コンテンツ制作者は、実用的な範囲で代替手段を通じて同等の機能を提供することが強く推奨される。
+
                      </li>
                      
                   </ul>
@@ -213,316 +169,223 @@
                </section>
                <section id="size-requirement">
                   
-                  <h3>Size requirement</h3>
+                  <h3>サイズ要件</h3>
                   
                   
-                  <p>For a target to be "at least 24 by 24 CSS pixels", it must be possible to draw a solid
-                     24 by 24 CSS pixel square, aligned to the horizontal and vertical axis such that the
-                     square is completely within the target (does not extend outside the target's area).
+                  <p>ターゲットを「少なくとも 24 × 24 CSS ピクセル」にするためには、正方形が完全にターゲットの内部に収まるように (ターゲットの領域外に広がらないように) 水平軸及び垂直軸に向きを揃えて、24 × 24 CSS ピクセルの実線の正方形を描画できなければならない。
                   </p>
                   
                   
                   <figure id="target-size-basic">
-                     <img src="img/target-size-basic.svg" width="180" height="75" alt="Three square boxes next to each other, each with a height and width of 24px" />
+                     <img src="img/target-size-basic.svg" width="180" height="75" alt="三つの正方形のボックスが隣り合っており、それぞれの高さ及び幅が 24px である。" />
                      
-                     <figcaption>Figure 1 Where targets are a 24 by 24px square (and larger is better), they meet the size requirement
-                        of the criterion and pass (image shown to scale - <a href="img/target-size-basic.svg">see the scalable original version</a>)
+                     <figcaption>図 1 ターゲットが 24 × 24 ピクセルの正方形 (大きいほど良い) の場合、達成基準のサイズ要件を満たし、合格する (画像は実寸表示 - <a href="img/target-size-basic.svg">拡大縮小可能なオリジナルバージョンを参照</a>)
                      </figcaption>
                      
                   </figure>
                   
                   
-                  <p>The 24 by 24px square has to be aligned with the page, although the target itself
-                     could be skewed.
+                  <p>ターゲット自体が歪んでいても、24 × 24 ピクセルの正方形はページと向きを揃える必要がある。
                   </p>
                   
                   
                   <figure id="target-size-skewed">
-                     <img src="img/target-size-skewed.svg" width="130" height="120" alt="A skewed rectangle that includes a 24 by 24px square within it." />
+                     <img src="img/target-size-skewed.svg" width="130" height="120" alt="内部に 24 × 24px の正方形を含む傾斜した矩形。" />
                      
-                     <figcaption>Figure 2 So long as there is a solid 24 by 24px square within the target, it meets the size
-                        requirement of the criterion and passes (image shown to scale - <a href="img/target-size-skewed.svg">see the scalable original version</a>)
+                     <figcaption>図 2 ターゲット内に 24 x 24 ピクセルの正方形が存在する限り、達成基準のサイズ要件を満たし、合格する (画像は実寸表示 - <a href="img/target-size-skewed.svg">拡大縮小可能なオリジナルバージョンを参照</a>)
                      </figcaption>
                      
                   </figure>
                   
                   
-                  <p>If a target is not large enough to allow for a 24 by 24px square to be drawn inside
-                     it, it is considered <em>undersized</em>, and does not pass the size requirement of the Success Criterion. However, if it
-                     has sufficient space around it without adjacent targets, it may still pass the criterion
-                     thanks to the spacing exception (below).
+                  <p>ターゲットが内部に 24 × 24 ピクセルの正方形を描画するのに十分な大きさでない場合、そのターゲットはサイズが<em>小さい</em>とみなされ、達成基準のサイズ要件に合格しない。しかし、隣接するターゲットがなく、周囲に十分な間隔がある場合、間隔の例外 (下記) により達成基準に合格する場合がある。
                   </p>
                   
                   
                   <figure id="target-size-undersized-rounded">
-                     <img src="img/target-size-undersized-rounded.svg" width="250" height="105" alt="A circle with a diameter of 24px, but not filling up a 24px square." />
+                     <img src="img/target-size-undersized-rounded.svg" width="250" height="105" alt="直径 24px の円形を埋めているが、24px の正方形を埋めていない。" />
                      
-                     <figcaption>Figure 3 The rounded corners do not leave sufficient space to draw a 24 by 24px square inside
-                        the target, making the target <em>undersized</em>. Depending on the spacing to other targets, it may still pass if it has sufficient
-                        clearance (image shown at 1:1 and 2:1 scale - <a href="img/target-size-undersized-rounded.svg">see the scalable original version</a>)
+                     <figcaption>図 3 角が丸くなっているため、ターゲット内に 24 × 24 ピクセルの正方形を描画するのに十分な面積が残されておらず、<em>小さな</em>ターゲットとなる。他のターゲットとの間隔に依存して、十分な間隔がある場合に合格する場合がある (画像は 1:1 及び 2:1 のスケールで示されている - <a href="img/target-size-undersized-rounded.svg">拡大縮小可能なオリジナルバージョンを参照</a>)
                      </figcaption>
                      
                   </figure>
                   
                   
-                  <p>The requirement is independent of the zoom factor of the page; when users zoom in
-                     the CSS pixel size of elements does not change. This means that authors cannot meet
-                     it by claiming that the target will have enough spacing or sufficient size if the
-                     user zooms into the page.
+                  <p>この要件は、ページのズーム率とは無関係である。利用者がズームインしても、要素の CSS ピクセルサイズは変わらない。これは、利用者がページをズームインした場合に、ターゲットに十分な間隔及び十分なサイズがあると主張しても、コンテンツ制作者がこの要件を満たすことはできないことを意味する。
                   </p>
                   
                   
-                  <p>The requirement does not apply to targets while they are obscured by content displayed
-                     as a result of a user interaction or scripted behavior of content, for example:
+                  <p>この要件は、利用者のインタラクション又はコンテンツのスクリプト化された動作の結果として表示されるコンテンツによって隠されているターゲットには適用されない。例えば:
                   </p>
                   
                   
                   <ul>
                      
-                     <li>interacting with a combobox shows a dropdown list of suggestions</li>
+                     <li>コンボボックスを操作すると、候補のドロップダウンリストが表示される</li>
                      
-                     <li>activating a button displays a modal dialog</li>
+                     <li>ボタンをアクティブにするとモーダルダイアログが表示される</li>
                      
-                     <li>content displays a cookie banner after page load</li>
+                     <li>ページの読み込み後にコンテンツにクッキーバナーが表示される</li>
                      
-                     <li>content displays a "Take a survey" dialog after some period of user inactivity</li>
+                     <li>利用者が一定時間操作をしなかった後に、コンテンツに「アンケートに参加する」ダイアログが表示される</li>
                      
                   </ul>    
                   
-                  <p>The requirement does however apply to targets in any new content that appears on top
-                     of other content.
+                  <p>ただし、この要件は、他のコンテンツの上に表示される新しいコンテンツ内のターゲットに適用される。
                   </p>
                   
                   
-                  <p>While the Success Criterion primarily helps touch users by providing target sizing
-                     to prevent accidental triggering of adjacent targets, it is also useful for mouse
-                     or pen users. It reduces the chances of erroneous activation due to either a tremor
-                     or reduced precision, whether because of reduced fine motor control or input imprecision.
+                  <p>達成基準は主に、隣接するターゲットの誤作動を防ぐためにターゲットサイズを提供することでタッチの利用者を支援するが、マウス又はペンの利用者にも役立つ。これは、細かい運動制御の低下又は入力の不正確さによる、震え又は正確さの低下による誤作動の可能性を減らす。
                   </p>
                   
                   
                </section>
                <section id="spacing">
                   
-                  <h3>Spacing</h3>
+                  <h3>間隔</h3>
                   
                   
-                  <p>When the minimum size for a target is not met, spacing can at least improve the user
-                     experience. There is less chance of accidentally activating a neighboring target if
-                     a target is not immediately adjacent to another. Touchscreen devices and user agents
-                     generally have internal heuristics to identify which link or control is closest to
-                     a user's touch interaction - this means that sufficient spacing between targets can
-                     work as effectively as a larger target size itself.
+                  <p>ターゲットの最小サイズが満たされていない場合、少なくとも間隔を空けることでユーザ体験を改善できる。ターゲットが別のターゲットに直接に隣接していない場合、隣接するターゲットを誤作動する可能性は低くなる。一般に、タッチスクリーンデバイス及びユーザエージェントは、どのリンク又はコントロールが利用者のタッチ操作に最も近いかを特定するための内部ヒューリスティックがある。これは、ターゲット間の十分な間隔が、ターゲットのサイズ自体を大きくするのと同じくらい効果的に機能できることを意味する。
                   </p>
                   
                   
-                  <p>When a target is smaller than 24 by 24 CSS pixels, it is <em>undersized</em>. In this case, we check if it at least has sufficient <em>spacing</em> by drawing a 24 CSS pixel diameter circle over the undersized target, centered on
-                     the target's <a href="#dfn-minimum-bounding-box">bounding box</a>. For rectangular targets, the bounding box coincides with the target itself – thus,
-                     the circle is placed on the center of the target. If the target is <em>not</em> rectangular – for instance, if the target is clipped, has rounded corners, or if
-                     it's a more complex clickable SVG shape – we need to first determine the bounding
-                     box, and then find the box's center. Note that for concave shapes, the center of the
-                     bounding box may be outside of the target itself. Now, we center the circle on the
-                     center of the bounding box.
+                  <p>ターゲットが 24 × 24 CSS ピクセルより小さい場合、<em>小さな</em>ターゲットである。この場合、ターゲットの境界ボックスを中心として、小さなターゲットの上に直径 24 CSS ピクセルの円を描画することで、少なくとも十分な<em>間隔</em>があるかどうかを確認する。矩形のターゲットの場合、<a href="#dfn-minimum-bounding-box">境界ボックス</a>はターゲット自体と一致する。つまり、円はターゲットの中心に配置される。ターゲットが矩形でない場合、例えば、ターゲットが切り取られている、角が丸い、又はより複雑なクリック可能な SVG 形状である場合、まず境界ボックスを決定し、次にボックスの中心を見つける必要がある。凹多角形の場合、境界ボックスの中心がターゲット自体の外側にある可能性があることに注意する。ここで、円を境界ボックスの中心に配置する。
                   </p>
                   
                   
                   <figure id="target-size-bounding-boxes">
-                     <img src="img/target-size-bounding-boxes.svg" width="395" height="100" alt="Three undersized targets - a square target, a convex target, and a concave target; the concave and convex targets have a bounding box around them; all three targets have a 24 CSS pixel circle centered on the center of their bounding box" />
+                     <img src="img/target-size-bounding-boxes.svg" width="395" height="100" alt="正方形のターゲット、凸多角形のターゲット、凹多角形のターゲットの三つの小さなターゲット。凹多角形及び凸多角形のターゲットの周囲には境界ボックスがある。三つのターゲット全てに、境界ボックスの中心に 24 CSS ピクセルの円がある。" />
                      
-                     <figcaption>Figure 4 For a square/rectangular target, the 24 CSS pixel diameter circle is centered on the
-                        target itself. For convex and concave targets, it is centered on the bounding box
-                        of the shape. Note the concave target, where in this case the center of the bounding
-                        box is outside of the actual target (image shown to scale - <a href="img/target-size-bounding-boxes.svg">see the scalable original version</a>)
+                     <figcaption>図 4 正方形/長方形のターゲットの場合、24 CSS ピクセルの直径の円はターゲット自体の中心にある。凸多角形及び凹多角形のターゲットの場合、形状の境界ボックスの中心に配置される。凹多角形のターゲットに注目すると、この場合、境界ボックスの中心は実際のターゲットの外側にある。 (画像は実寸表示 - <a href="img/target-size-bounding-boxes.svg">拡大縮小可能なオリジナルバージョンを参照</a>)
                      </figcaption>
                      
                   </figure>
                   
                   
-                  <p>We repeat this process for all adjacent undersized targets. To determine if an undersized
-                     target has sufficient spacing (to pass this Success Criterion's spacing exception),
-                     we check that the 24 CSS pixel diameter circle of the target does not intersect another
-                     target or the circle of any other adjacent undersized targets.
+                  <p>全ての隣接する小さなターゲットに対してこのプロセスを繰り返す。小さなターゲットに十分な間隔があるかどうかを判断するため (この達成基準の間隔の例外を合格するため) には、ターゲットの直径 24 CSS ピクセルの円が、別のターゲット又は隣接する他の小さなターゲットの円と重ならないことを確認する。
                   </p>
                   
                   
-                  <p>The following example shows three versions of a horizontal row of six icon-based buttons.
-                     In the top row, the dimensions of each target are 24 by 24 CSS pixels, passing this
-                     Success Criterion. In the second row, the same targets are only 20 by 20 CSS pixels,
-                     but have a 4 CSS pixel space between them – as the target size is below 24 by 24 CSS
-                     pixels, these need to be evaluated against the Success Criterion's spacing exception,
-                     and they pass. In the last row, the targets are again 20 by 20 CSS pixels, but have
-                     no space between them – these fail the spacing exception, because when drawing the
-                     24 CSS pixel diameter circles over the targets, the circles intersect.
+                  <p>次の例は、六つのアイコンベースのボタンが水平方向に並んだ三つのバージョンを示している。一番上の行では、各ターゲットのサイズは 24 × 24 CSS ピクセルであり、この達成基準を満たしている。2 行目では、同じターゲットは 20 × 20 CSS ピクセルしかないが、それらターゲットの間には 4 CSS ピクセルの間隔がある。ターゲットのサイズが 24 x 24 CSS ピクセル未満であるため、これらは達成基準の間隔の例外に対して評価する必要があり、そして合格する。最後の行では、ターゲットは再び 20 × 20 CSS ピクセルであるが、それらターゲットの間に間隔は存在しない。これらのターゲット上に直径 24 CSS ピクセルの円を描画すると、円が重なるため、これらのターゲットは間隔の例外に失敗する。
                   </p>
                   
                   
                   <figure id="target-spacing-toolbar">
-                     <img src="img/target-spacing-toolbar.svg" width="560" height="265" alt="The first toolbar's targets have a dimension of 24 by 24 CSS pixels, so pass. The second toolbar, with smaller targets, shows 24 CSS pixel circles drawn on each target for assessment. The circles do not intersect and so the targets have enough space to pass. The third toolbar shows similar circles on the targets, but the circles intersect due to the lack of spacing between targets, so the toolbar fails." />
+                     <img src="img/target-spacing-toolbar.svg" width="560" height="265" alt="1 行目のツールバーのターゲットの寸法は 24 x 24 CSS ピクセルなので合格となる。ターゲットが小さい 2 行目のツールバーには、評価用に各ターゲットに 24 CSS ピクセルの円が描画されている。円は重ならないため、ターゲットには合格するのに十分な間隔がある。3 行目のツールバーにはターゲットに同様の円が表示されているが、ターゲット間の間隔が不足しているために円が重なり、ツールバーは失敗となる。" />
                      
-                     <figcaption>Figure 5 Three rows of targets, illustrating two ways of meeting this Success Criterion and
-                        one way of failing it (image shown to scale - <a href="img/target-spacing-toolbar.svg">see the scalable original version</a>)
+                     <figcaption>図 5 この達成基準を満たす二つの方法及び失敗する一つの方法を説明する、3 行のターゲット (画像は実寸表示 - <a href="img/target-spacing-toolbar.svg">拡大縮小可能なオリジナルバージョンを参照</a>)
                      </figcaption>
                      
                   </figure>
                   
-                  <p>The next two illustrations show sets of buttons which are only 16 CSS pixels tall.
-                     In the first set, there are no targets immediately above or below the buttons, so
-                     they pass. In the second illustration, there are further buttons, and they have been
-                     stacked on top of one another, resulting in a fail.
+                  <p>次の二つの図は、高さが 16 CSS ピクセルしかないボタンのセットを示している。最初のセットでは、ボタンの上下にターゲットがないため、合格する。2 番目の図では、さらにボタンがあり、それらボタンが積み重ねられているため、失敗する。
                   </p>
                   
                   <figure id="target-text-buttons-one-row">
-                     <img src="img/target-text-buttons-single-row.svg" width="785" height="105" alt="A row of buttons which are more than 44px wide and 16 CSS pixels high. There are no close targets above or below. The buttons are overlaid with the 24 CSS pixel diameter circles, and do not intersect each other nor any other targets." />
+                     <img src="img/target-text-buttons-single-row.svg" width="785" height="105" alt="幅 44px を超え、高さ 16 CSS ピクセルのボタンの行。上下に近いターゲットは存在しない。ボタンには直径 24 CSS ピクセルの円が描かれ、互いに重ならず、他のターゲットとも重ならない。" />
                      
-                     <figcaption>Figure 6 While the height of the targets is only 16 CSS pixels, the lack of adjacent targets
-                        above and below means that the targets pass this Success Criterion (image shown to
-                        scale - <a href="img/target-text-buttons-single-row.svg">see the scalable original version</a>)
+                     <figcaption>図 6 ターゲットの高さは 16 CSS ピクセルしかないが、上下に隣接するターゲットがないことは、ターゲットがこの達成基準を満たしていることを意味する (画像は実寸表示 - <a href="img/target-text-buttons-single-row.svg">拡大縮小可能なオリジナルバージョンを参照</a>)
                      </figcaption>
                      
                   </figure>
                   
                   
                   <figure id="target-text-buttons-two-rows">
-                     <img src="img/target-text-buttons-two-rows.svg" width="785" height="105" alt="Two rows of buttons only 16 CSS pixels high, with no spacing between them. The buttons are overlaid with the 24 CSS pixel diameter circles, and all the circles either overlap another circle, or another target." />
+                     <img src="img/target-text-buttons-two-rows.svg" width="785" height="105" alt="16 CSS ピクセルの高さしかないボタンが、間隔を空けずに 2 行に並んでいる。ボタンには 直径 24 CSS ピクセルの円が描かれ、全ての円は別の円又は別のターゲットと重なっている。" />
                      
-                     <figcaption>Figure 7 Two rows of buttons, both with a height of only 16 CSS pixels. The rows are close,
-                        with only a 1 CSS pixel gap between them, which means that the 24 CSS pixel spacing
-                        circles of the targets in one row will intersect the targets (and their circles, depending
-                        on their respective widths) in the other line, thus failing the Success Criterion
-                        (image shown to scale - <a href="img/target-text-buttons-two-rows.svg">see the scalable original version</a>)
+                     <figcaption>図 7 どちらも高さが 16 CSS ピクセルしかない、2 行のボタン。行は近接しており、行の間には 1 CSS ピクセルの隙間しかない。これは、一方の行のターゲットの 24 CSS ピクセル間隔の円が、もう一方の行のターゲット (及びそれぞれの幅に応じた円) と重なることを意味する。したがって、達成基準に失敗する
+                        (画像は実寸表示 - <a href="img/target-text-buttons-two-rows.svg">拡大縮小可能なオリジナルバージョンを参照</a>)
                      </figcaption>
                      
                   </figure>
                   
-                  <p>The following two illustrations show how menu items can be adjusted to properly meet
-                     this requirement. In the first illustration, the <q>About us</q> menu has been activated, showing that each of the menu item targets (text and padding)
-                     has a 24 CSS pixel height. In the second illustration, the same menu is expanded,
-                     but the menu items only achieve 18 CSS pixels in height.
+                  <p>次の二つの図は、この要件を適切に満たすためにメニュー項目を調整する方法を示している。最初の図では、<q>About us</q> メニューがアクティブになっており、各メニュー項目のターゲット (テキスト及びパディング) の高さが 24 CSS ピクセルであることが示されている。2 番目の図では、同じメニューが展開されているが、メニュー項目の高さは 18 CSS ピクセルしかない。
                   </p>
                   
                   <figure id="target-dropdown">
-                     <img src="img/target-dropdown.svg" width="690" height="210" alt="Two examples of a dropdown menu - a pass example with menu items 24 CSS pixels high, and a fail example with menu items only 18 CSS pixels high. One item has a 24 CSS pixel diameter circle which intersects adjacent targets." />
+                     <img src="img/target-dropdown.svg" width="690" height="210" alt="ドロップダウンメニューの二つの例 - メニュー項目の高さが 24 CSS ピクセルの合格例と、メニュー項目の高さが 18 CSS ピクセルしかない失敗例。一つの項目には、隣接するターゲットと重なる直径 24 CSS ピクセルの円がある。" />
                      
-                     <figcaption>Figure 8 The menu items with a height of 24 CSS pixels pass. For the menu items that are only
-                        18 CSS pixels high, the 24 CSS pixel spacing circles of the targets in one row will
-                        intersect the adjacent menu item targets and circles, and fail (image shown to scale
-                        - <a href="img/target-dropdown.svg">see the scalable original version</a>)
+                     <figcaption>図 8 高さ 24 CSS ピクセルのメニュー項目は合格する。高さが 18 CSS ピクセルしかないメニュー項目の場合、1 行内のターゲットの 24 CSS ピクセル間隔の円は、隣接するメニュー項目のターゲット及び円と重なり、失敗する (画像は実寸表示 - <a href="img/target-dropdown.svg">拡大縮小可能なオリジナルバージョンを参照</a>)
                      </figcaption>
                      
                   </figure>
                   
                   
-                  <p>The following example has one large target (an image that links to a new page related
-                     to that image) and a very small second target (a control with a magnifier icon, to
-                     open a zoomed-in preview, possibly in a modal, of the image itself). In the top row,
-                     the small target overlaps - or, to be more technically accurate, clips - the large
-                     target. The small target itself has a size of 24 by 24 CSS pixels, so passes. In the
-                     second row, we see that if the second target is any smaller – in this case 16 by 16
-                     CSS pixels – it fails the criterion, as the circle with a 24 CSS pixel diameter we
-                     draw over the small target will intersect the large target itself.
+                  <p>次の例では、一つの大きなターゲット (その画像に関連する新しいページにリンクする画像) 及び、非常に小さなもう一つのターゲット (おそらくモーダルで、画像自身の拡大プレビューを開くための、虫めがねアイコンの付いたコントロール) がある。一番上の行では、小さなターゲットが大きなターゲットと重なっている (より正確に言えば、切り取られている)。小さなターゲット自体のサイズは 24 × 24 CSS ピクセルであるため、合格する。2 行目では、もう一つのターゲットがより小さい場合 (この場合は 16 × 16 CSS ピクセル)、小さなターゲット上に描画した直径 24 CSS ピクセルの円が大きいターゲッ自体と重なるため、基準に失敗する。
                   </p>
                   
                   
                   <figure id="target-large-small-clipping">
-                     <img src="img/target-large-small-clipping.svg" width="460" height="320" alt="Two rows showing a small target clipping a large target" />
+                     <img src="img/target-large-small-clipping.svg" width="460" height="320" alt="小さなターゲットが大きなターゲットを切り取っている様子の 2 行" />
                      
-                     <figcaption>Figure 9 The 24 by 24 CSS pixel small target passes, while the 16 by 16 CSS pixel small target
-                        fails, since the 24 CSS pixel diameter circle used for undersized targets intersect
-                        the large target (image shown to scale - <a href="img/target-large-small-clipping.svg">see the scalable original version</a>)
+                     <figcaption>図 9 24 × 24 CSS ピクセルの小さなターゲットは合格するが、16 × 16 CSS ピクセルの小さなターゲットは失敗する。これは、小さなターゲットに使用される直径 24 CSS ピクセルの円が大きいターゲットと重なるためである (画像は実寸表示 - <a href="img/target-large-small-clipping.svg">拡大縮小可能なオリジナルバージョンを参照</a>)
                      </figcaption>
                      
                   </figure>
                   
                   
-                  <p>In the following example, we have the same two targets – a large target and a small
-                     target. This time, the small target touches/abuts the large target. If the small target
-                     is smaller than 24 by 24 CSS pixels, the circle with a 24 CSS pixel diameter we draw
-                     over the small target will intersect the large target itself, failing the requirement.
-                     The undersized target must be spaced further away from the large target until its
-                     circle doesn't intersect the large target.
+                  <p>次の例では、同じ二つのターゲット (大きなターゲット及び小さなターゲット) がある。今回は、小さなターゲットが大きなターゲットに接触／隣接する。小さなターゲットが 24 × 24 CSS ピクセルよりも小さい場合、小さなターゲット上に描画した直径 24 CSS ピクセルの円は大きなターゲット自体と重なり、要件に失敗する。小さなターゲットは、その小さなターゲットの円が大きなターゲットと重ならなくなるまで、大きなターゲットからさらに離さなければならない。
                   </p>
                   
                   
                   <figure id="target-large-small-touching">
-                     <img src="img/target-large-small-touching.svg" width="460" height="320" alt="Two rows showing a small target and a large target touching/abutting" />
+                     <img src="img/target-large-small-touching.svg" width="460" height="320" alt="小さなターゲットと大きなターゲットが接触している/隣接している様子の 2 行" />
                      
-                     <figcaption>Figure 10 In the first row, the 16 by 16 CSS pixel target touching/abutting the large target
-                        fails, as its 24 CSS pixel diameter circle used for undersized targets intersects
-                        the large target. In the second row we see that the only way the undersized target
-                        can pass is by adding a 4 CSS pixel spacing gap between the targets (image shown to
-                        scale - <a href="img/target-large-small-touching.svg">see the scalable original version</a>)
+                     <figcaption>図 10 最初の行では、小さなターゲットに使用される直径 24 CSS ピクセルの円が大きなターゲットと重なるため、大きなターゲットに接触／隣接する 16 x 16 CSS ピクセルのターゲットは失敗する。2 行目では、小さなターゲットが合格できる唯一の方法は、ターゲットの間に 4 CSS ピクセルの隙間を追加することであることがわかる (画像は実寸表示 - <a href="img/target-large-small-touching.svg">拡大縮小可能なオリジナルバージョンを参照</a>)
                      </figcaption>
                      
                   </figure>
                   
                   
                   <div class="note">
-                     <p class="note-title marker">Note</p>
-                     <p>Users with different disabilities have different needs for control sizes. It can be
-                        beneficial to provide an option to increase the active target area without increasing
-                        the visible target size. Another option is to provide a mechanism to control the density
-                        of layout and thereby change target size or spacing, or both. This can be beneficial
-                        for a wide range of users. For example, users with visual field loss may prefer a
-                        more condensed layout with smaller sized controls while users with other forms of
-                        low vision may prefer large controls.
+                     <p class="note-title marker">注記</p>
+                     <p>異なる障害のある利用者は、コントロールのサイズに対するニーズも異なる。可視のターゲットのサイズを増やすことなく、アクティブなターゲット領域を増やすオプションを提供すると有益な可能性がある。もう一つのオプションは、レイアウトの密度を制御し、それによってターゲットのサイズもしくは間隔、又はその両方を変更するメカニズムを提供することである。これは幅広い利用者にとって有益な可能性がある。例えば、視野損失のある利用者は、より小さなサイズのコントロールを備えた、より圧縮されたレイアウトを好む場合がある一方で、他の形態のロービジョンの利用者は、大きなコントロールを好む場合がある。
                      </p>
                   </div>
                   
                </section>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
-               <p>Having targets with sufficient size - or at least sufficient target spacing - can
-                  help all users who may have difficulty in confidently targeting or operating small
-                  controls. Users who benefit include, but are not limited to:
+               <h2>利点</h2>
+               <p>十分なサイズのターゲット (又は少なくとも十分なターゲットの間隔) を持つことは、小さなコントロールを自信を持ってターゲットにする又は操作することが困難な全ての利用者を助けることができる。メリットを受ける利用者には次が含まれるが、これらに限定されない:
                </p>
                <ul>
                   
-                  <li>People who use a mobile device where the touch screen is the primary mode of interaction;</li>
+                  <li>タッチスクリーンが主な操作方法であるモバイルデバイスを使用する人々。</li>
                   
-                  <li>People using mouse, stylus or touch input who have mobility impairments such as hand
-                     tremors;
+                  <li>マウス、スタイラスペン、又はタッチ入力を使用する、手の震えなどの運動障害のある人。
                   </li>
                   
-                  <li>People using a device in environments where they are exposed to shaking such as public
-                     transportation;
+                  <li>公共交通機関など、揺れにさらされる環境でデバイスを使用する人々。
                   </li>
                   
-                  <li>Mouse users who have difficulty with fine motor movements;</li>
+                  <li>細かい運動が困難なマウスの利用者。</li>
                   
-                  <li>People who access a device using one hand;</li>
+                  <li>片手でデバイスにアクセスする人々。</li>
                   
-                  <li>People with large fingers, or who are operating the device with only a part of their
-                     finger or knuckle.
+                  <li>指が大きい人々、又は指もしくは関節の一部だけでデバイスを操作している人々。
                   </li>
                   
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>事例</h2>
                <ul>
                   
-                  <li>Three buttons are on-screen and the target size of each button is 24 by 24 CSS pixels.
-                     Since the target size itself is 24 by 24 CSS pixels, no additional spacing is required,
-                     the Success Criterion passes.
+                  <li>画面上に三つのボタンがあり、各ボタンのターゲットのサイズは 24 × 24 CSS ピクセルである。ターゲットのサイズ自体が 24 × 24 CSS ピクセルであるため、追加の間隔は必要なく、達成基準に合格する。
                   </li>
                   
-                  <li>A row of buttons, each of which has a horizontal width of more than 24 CSS pixels,
-                     a height of only 20 CSS pixels, and vertical margin of 4 CSS pixels above and below
-                     the row of buttons. Since there is sufficient spacing both above and below the row
-                     of buttons, the Success Criterion passes.
+                  <li>ボタンの行で、各ボタンの水平方向の幅が 24 CSS ピクセルを超え、高さが 20 CSS ピクセルしかなく、ボタンの行の上下に 4 CSS ピクセルの垂直方向のマージンがある。ボタンの行の上下に十分な間隔があるため、達成基準に合格する。
                   </li>
                   
-                  <li>Links within a paragraph of text have varying target dimensions. Links within paragraphs
-                     of text do not need to meet the 24 by 24 CSS pixels requirements, so the Success Criterion
-                     passes.
+                  <li>テキストの段落内のリンクには、さまざまなターゲットの寸法がある。テキストの段落内のリンクは 24 x 24 CSS ピクセルの要件を満たす必要がないため、達成基準に合格する。
                   </li>
                   
                </ul>
             </section>
             <section id="resources">
-               <h2>Related Resources</h2>
-               <p>Resources are for information purposes only, no endorsement implied.</p>
+               <h2>関連リソース</h2>
+               <p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p>
                <ul>
                   
                   <li><a href="https://dl.acm.org/doi/10.1145/1152215.1152260">Target size study for one-handed thumb use on small touchscreen devices</a></li>
@@ -530,14 +393,11 @@
                </ul>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
+                  <h3>十分なテクニック</h3>
                   <ol>
                      
                      <li>
@@ -551,50 +411,37 @@
             <section id="key-terms">
                <details>
                   <summary>
-                     <h2>Key Terms</h2>
+                     <h2>重要な用語</h2>
                   </summary>
-                  <dt id="dfn-assistive-technology">assistive technology</dt>
+                  <dt id="dfn-assistive-technology">支援技術 (assistive technology)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">hardware and/or software that acts as a <a href="#dfn-user-agent">user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements
-                           of users with disabilities that go beyond those offered by mainstream user agents
+                        <p xmlns="http://www.w3.org/1999/xhtml">障害のある利用者の要件を満たすために、主流の<a href="#dfn-user-agent">ユーザエージェント</a>が提供する機能を超えた機能を提供するような、ユーザエージェントとして動作する、又は主流のユーザエージェントと共に動作するハードウェア及び／又はソフトウェア。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Functionality provided by assistive technology includes alternative presentations
-                              (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
-                              voice), additional navigation or orientation mechanisms, and content transformations
-                              (e.g., to make tables more accessible).
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術が提供する機能としては、代替の提示 (例: 合成音声や拡大表示したコンテンツ)、代替入力手法 (例: 音声認識)、付加的なナビゲーション又は位置確認のメカニズム、及びコンテンツ変換 (例: テーブルをよりアクセシブルにするもの) などを挙げることができる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Assistive technologies often communicate data and messages with mainstream user agents
-                              by using and monitoring APIs.
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術は、API を利用、監視することで、主流のユーザエージェントとデータやメッセージのやりとりをすることが多い。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The distinction between mainstream user agents and assistive technologies is not absolute.
-                              Many mainstream user agents provide some features to assist individuals with disabilities.
-                              The basic difference is that mainstream user agents target broad and diverse audiences
-                              that usually include people with and without disabilities. Assistive technologies
-                              target narrowly defined populations of users with specific disabilities. The assistance
-                              provided by an assistive technology is more specific and appropriate to the needs
-                              of its target users. The mainstream user agent may provide important functionality
-                              to assistive technologies like retrieving Web content from program objects or parsing
-                              markup into identifiable bundles.
+                           <p class="note-title marker">注記</p>
+                           <p>主流のユーザエージェントと支援技術との区別は、絶対的なものではない。多くの主流のユーザエージェントは、障害のある個人を支援する機能を提供している。基本的な差異は、主流のユーザエージェントが障害のある人もない人も含めて、広く多様な利用者を対象にしているのに対し、支援技術は、特定の障害のある利用者という、より狭く限られた人たちを対象にしているということである。支援技術により提供される支援は、対象とする利用者に特化した、よりニーズに適したものである。主流のユーザエージェントは、プログラムオブジェクトからのウェブコンテンツの抽出、マークアップの識別可能な構造への解釈といった、重要な機能を支援技術に対して提供する場合がある。
                               
                            </p>
                         </div>
@@ -602,8 +449,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Assistive technologies that are important in the context of this document include
-                              the following:
+                           <p>この文書の文脈において重要な支援技術としては、以下のものが挙げられる:
                               
                            </p>
                            
@@ -611,38 +457,30 @@
                            <ul>
                               
                               
-                              <li>screen magnifiers, and other visual reading assistants, which are used by people with
-                                 visual, perceptual and physical print disabilities to change text font, size, spacing,
-                                 color, synchronization with speech, etc. in order to improve the visual readability
-                                 of rendered text and images;
+                              <li>画面拡大ソフト及びその他の視覚的な表示に関する支援技術。視覚障害、知覚障害、及び読書困難などの障害のある人が、レンダリング後のテキスト及び画像の視覚的な読みやすさを改善するために、テキストのフォント、サイズ、間隔、色、音声との同期などを変更するのに使用している。
                                  
                               </li>
                               
                               
-                              <li>screen readers, which are used by people who are blind to read textual information
-                                 through synthesized speech or braille;
+                              <li>スクリーンリーダー。全盲の人がテキスト情報を合成音声あるいは点字で読み取るために使用している。
                                  
                               </li>
                               
                               
-                              <li>text-to-speech software, which is used by some people with cognitive, language, and
-                                 learning disabilities to convert text into synthetic speech;
+                              <li>音声変換ソフトウェア。認知障害、言語障害、及び学習障害のある人が、テキストを合成音声に変換するために使用している。
                                  
                               </li>
                               
                               
-                              <li>speech recognition software, which may be used by people who have some physical disabilities;</li>
+                              <li>音声認識ソフトウェア。何らかの身体障害のある利用者が使用することがある。</li>
                               
                               
-                              <li>alternative keyboards, which are used by people with certain physical disabilities
-                                 to simulate the keyboard (including alternate keyboards that use head pointers, single
-                                 switches, sip/puff and other special input devices.);
+                              <li>代替キーボード。特定の身体障害のある人がキーボード操作をシミュレートするのに使用している (ヘッドポインタ、シングルスイッチ、呼気・吸気スイッチ、及びその他の特別な入力デバイスを使った代替キーボードを含む)。
                                  
                               </li>
                               
                               
-                              <li>alternative pointing devices, which are used by people with certain physical disabilities
-                                 to simulate mouse pointing and button activations.
+                              <li>代替ポインティングデバイス。特定の身体障害のある人がマウスポインタとボタンの動きをシミュレートするのに使用している。
                                  
                               </li>
                               
@@ -653,97 +491,86 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-content">content</dt>
+                  <dt id="dfn-content">コンテンツ (content)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">information and sensory experience to be communicated to the user by means of a <a href="#dfn-user-agent">user agent</a>, including code or markup that defines the content's <a href="#dfn-structure">structure</a>, <a href="#dfn-presentation">presentation</a>, and interactions
+                        <p xmlns="http://www.w3.org/1999/xhtml">コンテンツの<a href="#dfn-structure">構造</a>、<a href="#dfn-presentation">提示</a>及びインタラクションを定義するコード又はマークアップも含めて、<a href="#dfn-user-agent">ユーザエージェント</a>によって利用者に伝達される情報及び感覚的な体験。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-css-pixel">css pixel</dt>
+                  <dt id="dfn-css-pixel">CSS ピクセル (css pixel)</dt>
                   <dd>
                      <definition xmlns="">
                         					
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">visual angle of about 0.0213 degrees</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">約 0.0213 度の視野角。</p>
                         					
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">A CSS pixel is the canonical unit of measure for all lengths and measurements in CSS.
-                           This unit is density-independent, and distinct from actual hardware pixels present
-                           in a display. User agents and operating systems should ensure that a CSS pixel is
-                           set as closely as possible to the <a href="https://www.w3.org/TR/css3-values/#reference-pixel">CSS Values and Units Module Level 3 reference pixel</a> [[css3-values]], which takes into account the physical dimensions of the display
-                           and the assumed viewing distance (factors that cannot be determined by content authors).
+                        <p xmlns="http://www.w3.org/1999/xhtml">CSS ピクセルは、CSS におけるすべての長さ及び測定のための規範的な測定単位である。この単位は密度非依存で、ディスプレイに存在する実際のハードウェアピクセルとは異なる。ユーザエージェント及びオペレーティングシステムは CSS ピクセルが、ディスプレイの物理的な寸法と予想される視距離 (コンテンツ制作者は決定できない要因) を考慮した <a href="https://www.w3.org/TR/css3-values/#reference-pixel">CSS Values and Units Module Level 3 reference pixel</a> [[css3-values]] にできるだけ沿うように設定されていることを確認すべきである。
                            
                         </p>
                         				
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-essential">essential</dt>
+                  <dt id="dfn-essential">必要不可欠 (essential)</dt>
                   <dd>
                      <definition xmlns="">
                         					
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">if removed, would fundamentally change the information or functionality of the content,
-                           <strong>and</strong> information and functionality cannot be achieved in another way that would conform
+                        <p xmlns="http://www.w3.org/1999/xhtml">もし取り除いてしまうと、コンテンツの情報又は機能を根本的に変えてしまい、<strong>かつ、</strong>適合する他の方法では情報及び機能を実現できない。
                            
                         </p>
                         				
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-minimum-bounding-box">minimum bounding box</dt>
+                  <dt id="dfn-minimum-bounding-box">最小境界ボックス (minimum bounding box)</dt>
                   <dd>
                      <definition xmlns="">
                         	        	
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">the smallest enclosing rectangle aligned to the horizontal axis within which all the
-                           points of a shape lie. For components which wrap onto multiple lines as part of a
-                           sentence or block of text (such as hypertext links), the bounding box is based on
-                           how the component would appear on a single line.
+                        <p xmlns="http://www.w3.org/1999/xhtml">ある図形の全ての点が入る、水平軸と平行に配置された最小包囲矩形。文又はテキストブロックの一部として、複数行に折り返されるコンポーネント (ハイパーテキストのリンクなど) の場合、境界ボックスは、そのコンポーネントが単一行でどのような外観になるかに基づく。
                         </p>
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-pointer-input">pointer input</dt>
+                  <dt id="dfn-pointer-input">ポインタ入力 (pointer input)</dt>
                   <dd>
                      <definition xmlns="">
                         					
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">input from a device that can target a specific coordinate (or set of coordinates)
-                           on a screen,
-                           such as a mouse, pen, or touch contact
+                        <p xmlns="http://www.w3.org/1999/xhtml">マウス、ペン、タッチ接触のように、画面上の特定の座標 (又は複数の座標群) をターゲットにできるデバイスからの入力。
                            
                         </p>
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>See the <a href="https://www.w3.org/TR/pointerevents/#dfn-pointer">Pointer Events
-                                 definition for "pointer"</a> [[pointerevents]].
+                           <p class="note-title marker">注記</p>
+                           <p>See the <a href="https://www.w3.org/TR/pointerevents/#dfn-pointer">Pointer Events の「pointer」の定義</a> [[pointerevents]]。
                            </p>
                         </div>
                         				
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-presentation">presentation</dt>
+                  <dt id="dfn-presentation">提示 (presentation)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">rendering of the <a href="#dfn-content">content</a> in a form to be perceived by users
+                        <p xmlns="http://www.w3.org/1999/xhtml">利用者が知覚できる形式で<a href="#dfn-content">コンテンツ</a>をレンダリングすること。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-structure">structure</dt>
+                  <dt id="dfn-structure">構造 (structure)</dt>
                   <dd>
                      <definition xmlns="">
                         
@@ -751,12 +578,12 @@
                         <ol xmlns="http://www.w3.org/1999/xhtml">
                            
                            
-                           <li>The way the parts of a <a href="#dfn-web-page">Web page</a> are organized in relation to each other; and
+                           <li><a href="#dfn-web-page">ウェブページ</a>の各部を相互の関係性によりまとめる方法論。及び、
                               
                            </li>
                            
                            
-                           <li>The way a collection of <a href="#dfn-web-page">Web pages</a> is organized
+                           <li>一連の<a href="#dfn-web-page">ウェブページ</a>をまとめる方法論。
                               
                            </li>
                            
@@ -766,37 +593,34 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-target">target</dt>
+                  <dt id="dfn-target">ターゲット (target)</dt>
                   <dd>
                      <definition xmlns="">
                         					
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">region of the display that will accept a pointer action, such as the interactive area
-                           of a user interface component
+                        <p xmlns="http://www.w3.org/1999/xhtml">ユーザインタフェース コンポーネントのインタラクティブな領域のような、ポインタアクションを受け入れるディスプレイの領域
                         </p> 
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>If two or more targets are overlapping, the overlapping area should not be included
-                              in the measurement of the target size, except when the overlapping targets perform
-                              the same action or open the same page.
+                           <p class="note-title marker">注記</p>
+                           <p>二つ以上のターゲットが重なっている場合、重なっているターゲットが同じアクションを実行する、又は同じページを開く場合を除いて、重なっている領域をターゲットサイズの計算に含めるべきではない。
                            </p>
                         </div>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-user-agent">user agent</dt>
+                  <dt id="dfn-user-agent">ユーザエージェント (user agent)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">any software that retrieves and presents Web content for users</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ウェブコンテンツを取得して利用者に提示するあらゆるソフトウェア。</p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technology">assistive technologies</a> — that help in retrieving, rendering, and interacting with Web content.
+                           <p>ウェブコンテンツの取得、レンダリング及びインタラクションを支援する、ウェブブラウザ、メディアプレーヤ、プラグイン、及びその他のプログラム (<a href="#dfn-assistive-technology">支援技術</a>も含む)。
                               
                            </p>
                            
@@ -805,30 +629,27 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-web-page">web page</dt>
+                  <dt id="dfn-web-page">ウェブページ (web page)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">a non-embedded resource obtained from a single URI using HTTP plus any other resources
-                           that are used in the rendering or intended to be rendered together with it by a <a href="#dfn-user-agent">user agent</a>
+                        <p xmlns="http://www.w3.org/1999/xhtml">単一の URI から HTTP で得た埋め込まれていないリソースに加え、レンダリングに使われる、又は<a href="#dfn-user-agent">ユーザエージェント</a>がこのリソースと一緒にレンダリングすることを意図しているその他のあらゆるリソースを合わせたもの。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Although any "other resources" would be rendered together with the primary resource,
-                              they would not necessarily be rendered simultaneously with each other.
+                           <p class="note-title marker">注記</p>
+                           <p>どのような「その他のリソース」も主たるリソースと一緒にレンダリングされるであろうが、これらのリソースが同時にレンダリングされるとは限らない。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>For the purposes of conformance with these guidelines, a resource must be "non-embedded"
-                              within the scope of conformance to be considered a Web page.
+                           <p class="note-title marker">注記</p>
+                           <p>このガイドラインの適合範囲に含まれる対象となるウェブページとみなされるためには、リソースが「埋め込まれていない」リソースでなければならない。
                               
                            </p>
                         </div>
@@ -836,17 +657,14 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A Web resource including all embedded images and media.</p>
+                           <p>単体のウェブリソースであり、埋め込まれている画像及びメディアのすべてを含んだもの。</p>
                            
                         </aside>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A Web mail program built using Asynchronous JavaScript and XML (AJAX). The program
-                              lives entirely at http://example.com/mail, but includes an inbox, a contacts area
-                              and a calendar. Links or buttons are provided that cause the inbox, contacts, or calendar
-                              to display, but do not change the URI of the page as a whole.
+                           <p>Asynchronous JavaScript and XML (AJAX) を用いたウェブメールのプログラム。そのプログラム全体は http://example.com/mail に存在しているが、受信トレイ、連絡先、カレンダーがある。受信トレイ、連絡先、又はカレンダーを表示するリンク又はボタンが提供されているが、全体としてページの URI は変更されない。
                               
                            </p>
                            
@@ -855,8 +673,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A customizable portal site, where users can choose content to display from a set of
-                              different content modules.
+                           <p>カスタマイズ可能なポータルサイトで、利用者が様々なコンテンツモジュールのセットから表示させるコンテンツを選択できるようなもの。
                               
                            </p>
                            
@@ -865,12 +682,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>When you enter "http://shopping.example.com/" in your browser, you enter a movie-like
-                              interactive shopping environment where you visually move around in a store dragging
-                              products off of the shelves around you and into a visual shopping cart in front of
-                              you. Clicking on a product causes it to be demonstrated with a specification sheet
-                              floating alongside. This might be a single-page Web site or just one page within a
-                              Web site.
+                           <p>ブラウザで "http://shopping.example.com/" へ行くと、映画のようなインタラクティブなショッピング環境になる。そこでは、視覚的に店内を移動して、店内の棚から商品をドラッグして、目の前にある視覚的な買物カゴに商品を入れる。商品をクリックすると、同時に仕様書が浮き上がるように表示される。これは 1 ページだけのウェブサイトかもしれないし、ウェブサイトの中のほんの 1 ページなのかもしれない。
                               
                            </p>
                            
@@ -890,13 +702,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -911,11 +722,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -937,13 +750,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -952,7 +765,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -973,8 +786,10 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+    <!--noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-      </noscript>
+      </noscript-->
    </body>
 </html>
