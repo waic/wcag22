@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  1.3.4: Orientation | WAI | W3C</title>
+      <title>解説書 達成基準 1.3.4: 表示の向き | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
-      <!-- 日本語訳されるまでの一時的なスクリプト -->
-      <script src="untranslated-note.js"></script>
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://waic.jp/translations/WCAG22/Understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -37,17 +35,17 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"><a href="adaptable">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Adaptable</a></li>
+                        </svg>ガイドライン: 適応可能</a></li>
                   <li class="nav__item"><a href="sensory-characteristics">
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-left-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
-                        </svg>Previous SC: Sensory Characteristics</a></li>
-                  <li class="nav__item"><a href="identify-input-purpose">Next SC: Identify Input Purpose
+                        </svg>前: 感覚的な特徴</a></li>
+                  <li class="nav__item"><a href="identify-input-purpose">次: 入力目的の特定
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -58,155 +56,112 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#resources">Related Resources</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
-                     <li><a href="#key-terms">Key Terms</a></li>
-                     <li><a href="#test-rules">Test Rules</a></li>
+                     <li><a href="#brief">要約</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#benefits">利点</a></li>
+                     <li><a href="#examples">事例</a></li>
+                     <li><a href="#resources">関連リソース</a></li>
+                     <li><a href="#techniques">テクニック</a></li>
+                     <li><a href="#key-terms">重要な用語</a></li>
+                     <li><a href="#test-rules">テストルール</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				SC 1.3.4:</span>Orientation (Level AA)
+            <h1><span class="standalone-resource__type-of-guidance">解説書 
+                  				達成基準 1.3.4:</span>表示の向き (レベル AA)
+
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>Content does not restrict its view and operation to a single display orientation,
-                     such as portrait or landscape, unless a specific display orientation is <a href="#dfn-essential">essential</a>.
+                  <p>コンテンツは、その表示及び操作を、縦向き (portrait) 又は横向き (landscape) のような単一のディスプレイの向きに制限しない。ただし、特定のディスプレイの向きが<a href="#dfn-essential">必要不可欠</a>な場合は除く。
                   </p>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
-                     <p>Examples where a particular display orientation may be essential are a bank check,
-                        a piano application, slides for a projector or television, or virtual reality content
-                        where content is not necessarily restricted to landscape or portrait display orientation.
+                     <p class="note-title marker">注記</p>
+                     <p>特定のディスプレイの向きが必要不可欠となり得る例としては、銀行の小切手、ピアノのアプリケーション、プロジェクターもしくはテレビ向けのスライド、又はコンテンツが必ずしも横向き (landscape) もしくは縦向き (portrait) のディスプレイの向きに制限されないバーチャルリアリティのコンテンツが挙げられる。
                      </p>
                   </div>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   				
-                  <dt>Goal</dt>
-                  <dd>Devices can be used in any orientation.</dd>
+                  <dt>目標</dt>
+                  <dd>デバイスがどの向きであっても使用できる。</dd>
                   				
-                  <dt>What to do</dt>
-                  <dd>Don't lock content to either portrait or landscape presentation.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>コンテンツを、縦向き (portrait) 又は横向き (landscape) のいずれかの提示に固定しない。</dd>
                   				
-                  <dt>Why it's important</dt>
-                  <dd>Wheelchair users and others may have devices mounted in a fixed orientation.</dd>
+                  <dt>なぜそれが重要か</dt>
+                  <dd>車椅子の利用者などは、固定された向きでデバイスが取り付けられている可能性がある。</dd>
                   			
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The intent of this Success Criterion is to ensure that content displays in the orientation
-                  (portrait or landscape) preferred by the user. Some websites and applications automatically
-                  set and restrict the screen to a particular display orientation and expect
-                  			that users will respond by rotating their device to match, but this can create
-                  problems. Some users have their devices mounted
-                  			in a fixed orientation (e.g. on the arm of a power wheelchair). Therefore, websites
-                  and applications need to support both orientations
-                  			by not restricting the orientation. Changes in content or functionality due to
-                  the size of display are not covered by this criterion which is focused on restrictions
-                  of orientation.
+               <h2>意図</h2>
+               <p>この達成基準の意図は、コンテンツがユーザーの好みの向き (縦向き又は横向き) で表示されるようにすることである。ウェブサイトやアプリケーションの中には、自動的に画面を特定の表示方向に制限し利用者がデバイスを適応するように回転させることを期待するものがあり、これにより問題が生じる可能性がある。利用者の中には、 (例えば電動車椅子の腕に) 固定された向きでデバイスを取り付けている。したがって、ウェブサイトやアプリケーションは向きを制限せず両方の向きをサポートする必要がある。ディスプレイのサイズによるコンテンツ又は機能の変更は、向きの制限に焦点を当てているこの達成基準では対象としていない。
                </p>
-               <p>Historically, devices tended to have a fixed-orientation display, and all content
-                  was created to match that display orientation. Today, most handhelds and many other
-                  devices (e.g., monitors) have a hardware-level ability to dynamically adjust default
-                  display orientation based on sensor information. The goal of this Success Criterion
-                  is that authors should never restrict content's orientation, thus ensuring that it
-                  always match the device display orientation.
+               <p>歴史的に、デバイスは固定の向きのディスプレイを持つ傾向があり、全てのコンテンツはディスプレイの向きに合わせて制作されてきた。今日では、ほとんどの携帯情報端末及びその他多くのデバイス (モニターなど) はセンサー情報に基づいてデフォルトのディスプレイの向きを動的に調整するハードウェアレベルの機能を備えている。この達成基準の目的は、コンテンツ制作者がコンテンツの向きを決して制限しないことで、コンテンツが常にデバイスのディスプレイの向きに一致することを保証することである。
                </p>
-               <p>It is important to distinguish between an author's responsibility not to restrict
-                  content to a specific orientation, and device-specific settings governing the locking
-                  of display orientation.
+               <p>コンテンツを特定の向きに制限しないという制作者の責任と、ディスプレイの向きの固定を調整するデバイス固有の設定とを区別することが重要である。
                </p>
-               <p>Many hand-held devices offer a mechanical switch or a system setting (or both) to
-                  allow the user to lock the device display to a specific orientation. Where a user
-                  decides to lock their entire device to an orientation, all applications are expected
-                  to pick up that setting and to display content accordingly.
+               <p>多くの携帯情報端末は、利用者がディスプレイを特定の向きに固定することを可能にするために、機械的なスイッチ又はシステム設定 (又はその両方) を提供している。利用者がデバイス全体の向きを固定した場合、全てのアプリケーションはその設定を取得し、向きに応じてコンテンツを表示することが期待される。
                </p>
-               <p>This Success Criterion complements device "lock orientation" settings. A web page
-                  that does not restrict its display orientation will always support the system-level
-                  orientation setting, since the system setting is picked up by the user agent. Alternatively,
-                  where a device-level orientation lock is not in place, the user agent should display
-                  the page according to the orientation of the device (either its default, or the current
-                  orientation determined by any device sensors).
+               <p>この達成基準は、デバイスの「向きを固定する」設定を補完するものである。システム設定はユーザエージェントによって選択されるため、ディスプレイの向きを制限しないウェブページは常にシステムレベルの表示設定をサポートする。あるいは、デバイスレベルの向き固定が設定されていない場合、ユーザエージェントはデバイスの向き (デフォルト、又は任意のデバイスセンサーによって特定された現在の向きのいずれか) によってページを表示するべきである。
                </p>
-               <p>The exception for things considered essential is aimed at situations where the content
-                  would only be understood in a particular orientation, or where the technology restricts
-                  the possible orientations. If content is aimed at a specific environment which is
-                  only available in one orientation (such as a television) then the content can restrict
-                  the orientation. Technologies such as virtual reality use screens within goggles that
-                  cannot change orientation relative to the user's eyes.
+               <p>必要不可欠と見なされるものの例外は、コンテンツが特定の方向でのみ理解される状況、又は技術が可能な表示の向きを制限する状況を対象としている。コンテンツが一つの表示の向きでのみ利用可能な特定の環境 (テレビなど) を対象としている場合、コンテンツは表示の向きを制限する可能性がある。バーチャルリアリティなどの技術は、利用者の目に対して表示の向きを変えることができないゴーグル内部で画面を使用する。
                </p>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>利点</h2>
                <ul>
                   					
-                  <li>Users with dexterity impairments, who have a mounted device will be able to use the
-                     content in their fixed orientation.
+                  <li>固定したデバイスを持つ巧緻性障害の利用者が、自分の決めた向きでコンテンツを利用できる。
                   </li>
                   					
-                  <li>Users with low-vision will be able to view content in the orientation that works best
-                     for them, for example to increase the text size by viewing content in landscape.
+                  <li>ロービジョンの利用者が、横長のコンテンツを見るときにテキストサイズを大きくするなど、自分に最適な向きでコンテンツを見ることができる。
                   </li>
                   				
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>事例</h2>
                <ul>
                   				
-                  <li><strong>Example 1: Online video site</strong><br />
-                     				A video is shown in either portrait or in landscape based on the user's chosen
-                     orientation.
+                  <li><strong>事例 1: オンライン映像サイト</strong><br />
+                     				利用者が選択した向きに基づいて、映像が縦向き又は横向きに表示される。
                   </li>
                   				
-                  <li><strong>Example 2: Messaging website</strong><br />
-                     				A messaging website can display messages in both portrait and landscape orientations.
+                  <li><strong>事例 2: メッセージングウェブサイト</strong><br />
+                     				メッセージングウェブサイトは縦向きと横向きの両方でメッセージを表示できる。
                      
                   </li>
                   				
-                  <li><strong>Example 3: eReader web app</strong><br />
-                     				An eReader web app can display the contents of a book in both portrait and landscape
-                     orientation.
+                  <li><strong>事例 3: 電子書籍ウェブアプリ</strong><br />
+                     				電子書籍ウェブアプリは縦向きと横向きの両方で本の内容を表示できる。
                   </li>
                   				
-                  <li><strong>Example 4: Check deposit in banking app</strong><br />
-                     				An example where orientation is essential could be a banking app that requires
-                     the device be in landscape mode to easily and accurately capture an image of a check
-                     for deposit. These paper forms are typically about twice as wide as they are high.
+                  <li><strong>事例 4: 銀行アプリで預金を確認する</strong><br />
+                     				向きが必要不可欠な例としては、預金小切手の画像を簡単かつ正確に読み取るために、ランドスケープモードにする必要がある銀行アプリがある。これらの紙の形は、通常高さの約二倍の幅がある。
                   </li>
                   				
-                  <li><strong>Example 5: Piano app</strong><br />
-                     				An example where orientation is essential could be a piano app that requires the
-                     device to be in landscape mode to allow room for enough of the piano keys to be functionally
-                     usable. Since a piano app is emulating a physical piano keyboard that needs to retain
-                     relative physical characteristics between keys, either too few keys would be available,
-                     or the keys would be much too narrow.
+                  <li><strong>事例 5: ピアノアプリ</strong><br />
+                     				向きが必要不可欠な例としては、ピアノの鍵を十分に機能的に使用できるスペースを確保するために、ランドスケープモードにする必要があるピアノアプリがある。ピアノアプリは、鍵の間の物理的な特徴を保持する必要がある物理的なピアノの鍵盤を模しているため、使用できる鍵が少なすぎるか、鍵が狭くなりすぎるかのいずれかになる。
                   </li>
                   			
                </ul>
             </section>
             <section id="resources">
-               <h2>Related Resources</h2>
-               <p>Resources are for information purposes only, no endorsement implied.</p>
+               <h2>関連リソース</h2>
+               <p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p>
                <ul>
                   				
                   <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model/Managing_screen_orientation">Managing Screen Orientation</a></li>
@@ -226,47 +181,41 @@
                </ul>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
+                  <h3>十分なテクニック</h3>
                   <ul>
                      			
-                     <li><a href="https://w3c.github.io/wcag/techniques/general/G214">G214: Using a control to allow access to content in different orientations which is otherwise
-                           restricted</a></li>
+                     <li><a href="https://w3c.github.io/wcag/techniques/general/G214">G214: Using a control to allow access to content in different orientations which is otherwise restricted</a></li>
                      				
                   </ul>
                </section>
                <section id="failure">
-                  <h3>Failures</h3>
-                  <p>The following are common mistakes that are considered failures of this Success Criterion
-                     by the WCAG Working Group.
+                  <h3>失敗例</h3>
+                  <p>以下に挙げるものは、WCAG ワーキンググループが達成基準の失敗例とみなした、よくある間違いである。
                   </p>
                   <ul>
-                     					
-                     <li><a href="https://w3c.github.io/wcag/techniques/failures/F97">F97: Failure due to locking the orientation to landscape or portrait view</a></li>
-                     					
-                     <li><a href="https://w3c.github.io/wcag/techniques/failures/F100">F100: Failure of Success Criterion 1.3.4 due to showing a message asking to reorient device</a></li>
-                     				
-                  </ul>
+                  					
+                  <li><a href="https://w3c.github.io/wcag/techniques/failures/F97">F97: Failure due to locking the orientation to landscape or portrait view</a></li>
+
+                  <li><a href="https://w3c.github.io/wcag/techniques/failures/F100">F100: Failure of Success Criterion 1.3.4 due to showing a message asking to reorient device</a></li>
+                  				
+               </ul>
                </section>
             </section>
             <section id="key-terms">
                <details>
                   <summary>
-                     <h2>Key Terms</h2>
+                     <h2>重要な用語</h2>
                   </summary>
-                  <dt id="dfn-essential">essential</dt>
+                  <dt id="dfn-essential">必要不可欠 (essential)</dt>
                   <dd>
                      <definition xmlns="">
                         					
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">if removed, would fundamentally change the information or functionality of the content,
-                           <strong>and</strong> information and functionality cannot be achieved in another way that would conform
+                        <p xmlns="http://www.w3.org/1999/xhtml">もし取り除いてしまうと、コンテンツの情報又は機能を根本的に変えてしまい、<strong>かつ</strong>、適合する他の方法では情報及び機能を実現できない。
                            
                         </p>
                         				
@@ -276,14 +225,11 @@
                </details>
             </section>
             <section id="test-rules">
-               <h2>Test Rules</h2>
-               <p>The following are Test Rules for certain aspects of this Success Criterion. It is
-                  not necessary to use these particular Test Rules to check for conformance with WCAG,
-                  but they are defined and approved test methods. For information on using Test Rules,
-                  see <a href="understanding-act-rules.html">Understanding Test Rules for WCAG Success Criteria</a>.
+               <h2>テストルール</h2>
+               <p>以下は、この達成基準の特定の側面に関するテストルールである。この特定のルールを使用して WCAG に適合しているかどうかを確認する必要はないが、これらのルールは定義され、承認されたテスト方法である。テストルールの使用については、<a href="understanding-act-rules.html">WCAG 達成基準のテストルールを理解する</a>を参照のこと。
                </p>
                <ul>
-                  <li><a href="/WAI/standards-guidelines/act/rules/b33eff/proposed/">Orientation of the page is not restricted using CSS transforms</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/">Orientation of the page is not restricted using CSS transforms</a></li>
                </ul>
             </section><a class="button button-backtotop" href="#top"><span>
                   <svg focusable="false" aria-hidden="true" class="icon-arrow-up " viewBox="0 0 26 28">
@@ -295,13 +241,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -316,11 +261,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -342,13 +289,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -357,7 +304,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -378,8 +325,10 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+    <!--noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-      </noscript>
+      </noscript-->
    </body>
 </html>
