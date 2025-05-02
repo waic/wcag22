@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Guideline  1.2: Time-based Media | WAI | W3C</title>
+      <title>解説書 ガイドライン 1.2: 時間依存メディア | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
-      <!-- 日本語訳されるまでの一時的なスクリプト -->
-      <script src="untranslated-note.js"></script>
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://waic.jp/translations/WCAG22/Understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -36,14 +34,13 @@
          <div class="nav">
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
-                  <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                  <li class="nav__item"><a href=".">目次
                         							</a></li>
-                  <li class="nav__item"><a href="text-alternatives">
+                  <li class="nav__item"><a href="text-alternatives.html">
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-left-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
-                        </svg>Previous Guideline: Text Alternatives</a></li>
-                  <li class="nav__item"><a href="adaptable">Next Guideline: Adaptable
+                        </svg>前: テキストによる代替</a></li>
+                  <li class="nav__item"><a href="adaptable.html">次: 適応可能
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -54,120 +51,88 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#success-criteria">Success Criteria</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#success-criteria">達成基準</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				Guideline 1.2:</span>Time-based Media
+            <h1><span class="standalone-resource__type-of-guidance">解説書 ガイドライン1.2:</span>時間依存メディア
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Guideline </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>Provide alternatives for time-based media.</p>
+                  <p>時間依存メディアには代替コンテンツを提供すること。</p>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The purpose of this guideline is to provide access to time-based and synchronized
-                  media.This includes media that is:
+               <h2>意図</h2>
+               <p>このガイドラインの目的は、時間の経過に伴って変化する、同期したメディアへのアクセスを提供することである。具体的には、次のようなメディアがある:
                   
                </p>
                <ul>
                   
                   
-                  <li>audio-only</li>
+                  <li>音声しか含まない</li>
                   
                   
-                  <li>video-only </li>
+                  <li>映像しか含まない </li>
                   
                   
-                  <li>audio-video </li>
+                  <li>音声と映像を含む </li>
                   
                   
-                  <li>audio and/or video combined with interaction </li>
+                  <li>インタラクションを組み合わせた音声と映像、又は音声あるいは映像のどちらかを含む </li>
                   
                   
                </ul>
-               <p>To make it easy for authors to quickly determine which success criteria apply to their
-                  content, the type of media each success criterion applies to is included in its short
-                  name. 
+               <p>コンテンツ制作者が、そのコンテンツにはどの達成基準が適用されるのかを素早く容易に判断できるように、各達成基準が適用されるメディアの種類をその簡潔な名前で示している。 
                   
                </p>
-               <p>For 
-                  <strong>audio-only</strong> or 
-                  <strong>video-only</strong> media, you only need to apply the success criteria that say "
-                  <strong>audio-only</strong>" or "
-                  <strong>video-only</strong>" in their short name. If your media is not 
-                  <strong>audio-only</strong> or 
-                  <strong>video-only</strong>, then all the rest of the success criteria apply.
+               <p><strong>音声しか含まない</strong>メディア又は<strong>映像しか含まない</strong>メディアに対しては、達成基準の名前に「<strong>音声しか含まない</strong>」又は「<strong>映像しか含まない</strong>」とあるものを適用するだけでよい。そのメディアが、<strong>音声しか含まない</strong>メディア又は<strong>映像しか含まない</strong>メディアではない場合、残りの達成基準すべてが適用される。
                   
                </p>
-               <p>Media can also be 
-                  <strong>live</strong> or 
-                  <strong>prerecorded</strong>. Each of the success criterion short names clearly tells you if the success criterion
-                  applies to 
-                  <strong>live</strong> or 
-                  <strong>prerecorded</strong> media. 
+               <p>そして、メディアは、<strong>ライブ</strong>又は<strong>収録済</strong>のどちらかである。その達成基準が<strong>ライブ</strong>又は<strong>収録済</strong>のどちらのメディアに適用されるのかが、各達成基準の簡潔な名前ではっきりと分かるようになっている。 
                   
                </p>
                <p>
-                  Synchronized media is defined in the glossary as:
+                  同期したメディアは、用語集で次のように定義されている:
                   
                </p>
                <p id="copysynchronizedmediadef"></p>
-               <p>Note that an audio file accompanied by interaction is covered here, as is a video-only
-                  file that involves interaction. These are covered because interaction must take place
-                  at a particular time. Having a text transcript that said, "for more information, click
-                  now," would not be very helpful since the reader would have no idea when the audio
-                  said, "now." As a result, synchronized captions would be needed.
+               <p>インタラクションに付随する音声ファイルは、インタラクションを伴う映像しか含まないファイルと同様に、このガイドラインの対象であることに留意されたい。これらが対象となっているのは、インタラクションが特定のタイミングで発生しなければならないからである。例えば、「より多くの情報を知るためには、今、クリックしてください」というトランスクリプトをつけるのは、全く役に立たない。なぜなら、利用者にはその音声がどのタイミングで「今」と言ったのかが分からないからである。そのため、同期したキャプションが必要となる。
                   
                </p>
-               <p>Sometimes, there is so much dialogue that audio description cannot fit into existing
-                  pauses in the dialogue. The option at Level A to provide an alternative for time-based
-                  media instead of audio description for synchronized media would allow access to all
-                  of the information in the synchronized media. This option also allows access to the
-                  visual information in non-visual form when audio description is not provided for some
-                  other reason. 
+               <p>時には、音声解説を発話内にある合間にぴったり収めることができないくらい沢山の発話があることがある。同期したメディアの音声解説ではなく、時間の経過に伴って変化するメディアの代替を提供するレベル A での選択肢は、同期したメディアにあるすべての情報へのアクセスを可能にすることである。また、この選択肢は、何らかの理由で音声解説が提供されていないとき、視覚的でない形態での視覚的な情報へのアクセスも可能にする。 
                   
                </p>
-               <p>For synchronized media that includes interaction, interactive elements (for example
-                  links) could be embedded in the alternative for time-based media. 
+               <p>インタラクションを伴う同期したメディアの場合、時間の経過に伴って変化するメディアの代替の中にインタラクティブな要素（例えば、リンク）を埋め込むことが可能である。 
                   
                </p>
-               <p>This guideline also includes (at Level AAA) sign language interpretation for synchronized
-                  media as well as an approach called extended audio description. In extended audio
-                  description, the video is frozen periodically to allow more audio description to take
-                  place than is possible in the existing pauses in the dialogue. This is a case where
-                  higher-level Success Criteria build upon the requirements of lower-level Success Criterion
-                  with the intention of having cumulative, progressively stronger, requirements. 
+               <p>また、このガイドラインには、(レベル AAA で) 同期したメディアへの手話通訳というアプローチの他に、拡張した音声解説と呼ばれるアプローチがある。拡張した音声解説では、映像を一時的に停止させて、実際に存在する発話の合間で可能な量よりも多くの音声解説を提供することができる。これは、要件を積み上げていくようにして徐々に強めていくという意図があって、低いレベルの達成基準の上にそれよりも高いレベルの達成基準を設けている一例である。 
                   
                   
                   
                </p>
             </section>
             <section id="success-criteria">
-               <h2>Success Criteria for this Guideline</h2>
+               <h2>このガイドラインの達成基準</h2>
                <ul>
-                  <li><a href="audio-only-and-video-only-prerecorded">1.2.1 Audio-only and Video-only (Prerecorded)</a></li>
-                  <li><a href="captions-prerecorded">1.2.2 Captions (Prerecorded)</a></li>
-                  <li><a href="audio-description-or-media-alternative-prerecorded">1.2.3 Audio Description or Media Alternative (Prerecorded)</a></li>
-                  <li><a href="captions-live">1.2.4 Captions (Live)</a></li>
-                  <li><a href="audio-description-prerecorded">1.2.5 Audio Description (Prerecorded)</a></li>
-                  <li><a href="sign-language-prerecorded">1.2.6 Sign Language (Prerecorded)</a></li>
-                  <li><a href="extended-audio-description-prerecorded">1.2.7 Extended Audio Description (Prerecorded)</a></li>
-                  <li><a href="media-alternative-prerecorded">1.2.8 Media Alternative (Prerecorded)</a></li>
-                  <li><a href="audio-only-live">1.2.9 Audio-only (Live)</a></li>
+                  <li><a href="audio-only-and-video-only-prerecorded.html">1.2.1音声のみ及び映像のみ (収録済)</a></li>
+                  <li><a href="captions-prerecorded.html">1.2.2キャプション (収録済)</a></li>
+                  <li><a href="audio-description-or-media-alternative-prerecorded.html">1.2.3音声解説、又はメディアに対する代替 (収録済)</a></li>
+                  <li><a href="captions-live.html">1.2.4キャプション (ライブ)</a></li>
+                  <li><a href="audio-description-prerecorded.html">1.2.5音声解説 (収録済)</a></li>
+                  <li><a href="sign-language-prerecorded.html">1.2.6手話 (収録済)</a></li>
+                  <li><a href="extended-audio-description-prerecorded.html">1.2.7拡張音声解説 (収録済)</a></li>
+                  <li><a href="media-alternative-prerecorded.html">1.2.8メディアに対する代替 (収録済)</a></li>
+                  <li><a href="audio-only-live.html">1.2.9音声のみ (ライブ)</a></li>
                </ul>
             </section><a class="button button-backtotop" href="#top"><span>
                   <svg focusable="false" aria-hidden="true" class="icon-arrow-up " viewBox="0 0 26 28">
@@ -179,13 +144,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -200,11 +164,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -226,13 +192,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -241,7 +207,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -262,8 +228,10 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+    <!--noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-      </noscript>
+      </noscript-->
    </body>
 </html>
