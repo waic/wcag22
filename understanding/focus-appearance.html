@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  2.4.13: Focus Appearance | WAI | W3C</title>
+      <title>解説書 達成基準 2.4.13: フォーカスの外観 | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -35,16 +35,16 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"><a href="navigable">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Navigable</a></li>
+                        </svg>  ガイドライン: ナビゲーション可能</a></li>
                   <li class="nav__item"><a href="focus-not-obscured-enhanced">
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-left-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
-                        </svg>Previous SC: Focus Not Obscured (Enhanced)</a></li>
+                        </svg>前: 隠されないフォーカス (高度)</a></li>
                   <li class="nav__item"></li>
                </ul>
             </nav>
@@ -53,119 +53,103 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#resources">Related Resources</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
-                     <li><a href="#key-terms">Key Terms</a></li>
+                     <li><a href="#brief">要約</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#benefits">利点</a></li>
+                     <li><a href="#examples">事例</a></li>
+                     <li><a href="#resources">関連リソース</a></li>
+                     <li><a href="#techniques">テクニック</a></li>
+                     <li><a href="#key-terms">重要な用語</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				SC 2.4.13:</span>Focus Appearance (Level AAA)
+            <h1><span class="standalone-resource__type-of-guidance">解説書 
+                  				達成基準 2.4.13:</span>フォーカスの外観 (レベル AAA)
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>When the keyboard <a href="#dfn-focus-indicator">focus indicator</a> is visible, an area of the focus indicator meets all the following:
+                  <p>キーボードの<a href="#dfn-focus-indicator">フォーカスインジケータ</a>が視覚的に表示される場合、フォーカスインジケータの領域が以下の全てを満たす。
                   </p>
                   <ul>
                      
-                     <li>is at least as large as the area of a 2 <a href="#dfn-css-pixel">CSS pixel</a> thick <a href="#dfn-perimeter">perimeter</a> of the unfocused component or sub-component, and
+                     <li>フォーカスされていないコンポーネント又はサブコンポーネントの、太さ 2 <a href="#dfn-css-pixel">CSS ピクセル</a>の<a href="#dfn-perimeter">外周</a>の領域と同等以上の大きさである。かつ、
                      </li>
                      
-                     <li>has a contrast ratio of at least 3:1 between the same pixels in the focused and unfocused
-                        states.
+                     <li>フォーカスされている状態とフォーカスされていない状態との間で、同一ピクセルに少なくとも 3:1 のコントラスト比がある。
                      </li>
                      
                   </ul>
-                  <p>Exceptions:</p>
+                  <p>例外:</p>
                   <ul>
                      
-                     <li>The focus indicator is determined by the <a href="#dfn-user-agent">user agent</a> and cannot be adjusted by the author, or
+                     <li>フォーカスインジケータが<a href="#dfn-user-agent">ユーザエージェント</a>によって決定され、かつコンテンツ制作者が調整できない場合。又は、
                      </li>
                      
-                     <li>The focus indicator and the indicator's background color are not modified by the author.</li>
+                     <li>コンテンツ制作者がフォーカスインジケータ及びそのインジケータの背景色を変更していない場合。</li>
                      
                   </ul>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
-                     <p>What is perceived as the user interface component or sub-component (to determine enclosure
-                        or size) depends on its visual <a href="#dfn-presentation">presentation</a>. The visual presentation includes the component's visible <a href="#dfn-content">content</a>, border, and component-specific background. It does not include shadow and glow effects
-                        outside the component's content, background, or border.
+                     <p class="note-title marker">注記</p>
+                     <p>ユーザインタフェースコンポーネント又はサブコンポーネントとして認識されるもの (輪郭又は大きさを決定づけるもの) は、その視覚的<a href="#dfn-presentation">提示</a>に依存する。視覚的提示には、コンポーネントの可視<a href="#dfn-content">コンテンツ</a>、ボーダー、及びコンポーネント固有の背景が含まれる。コンポーネントのコンテンツ、背景、又はボーダーの外側にある、影及びグロー効果は含まれない。
                      </p>
                   </div>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
-                     <p>Examples of sub-components that may receive a focus indicator are menu items in an
-                        opened drop-down menu, or focusable cells in a grid.
+                     <p class="note-title marker">注記</p>
+                     <p>フォーカスインジケータを受け取ることができるサブコンポーネントの例としては、開いたドロップダウンメニューのメニュー項目、グリッド内のフォーカス可能なセルなどがある。
                      </p>
                   </div>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
-                     <p>Contrast calculations can be based on colors defined within the <a href="#dfn-technology">technology</a> (such as HTML, CSS and SVG). Pixels modified by user agent resolution enhancements
-                        and anti-aliasing can be ignored.
+                     <p class="note-title marker">注記</p>
+                     <p>コントラストは、(HTML、CSS、及び SVG のような) <a href="#dfn-technology">技術</a>の中で定義された色を基に計算できる。その際、ユーザエージェントの高解像度化及びアンチエイリアスによって変更されたピクセルは無視できる。
                      </p>
                   </div>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   
-                  <dt>Goal</dt>
-                  <dd>Make it easier to spot the keyboard focus.</dd>
+                  <dt>目標</dt>
+                  <dd>キーボードフォーカスを見つけやすくする。</dd>
                   
-                  <dt>What to do</dt>
-                  <dd>Use a focus indicator of sufficient size and contrast.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>十分な大きさ及びコントラストのフォーカスインジケータを使用する。</dd>
                   
-                  <dt>Why it's important</dt>
-                  <dd>Many people can't see small changes in visual appearance, including older people.</dd>
+                  <dt>なぜそれが重要か</dt>
+                  <dd>高齢者を含め、多くの人は見た目の小さな変化に気づかない。</dd>
                   
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The purpose of this Success Criterion is to ensure a keyboard focus indicator is clearly
-                  visible and discernible. Focus Appearance is closely related to <a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html">2.4.7 Focus Visible</a> and <a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html">1.4.11 Non-text Contrast</a>. Focus Visible requires that a visible focus indicator exists while a component has
-                  keyboard focus; Focus Appearance defines a minimum level of visibility. Where Non-text
-                  Contrast requires a component to have adequate contrast against the background in
-                  each of its states, Focus Appearance requires sufficient contrast for the focus indicator
-                  itself.
+               <h2>意図</h2>
+               <p>この達成基準の意図は、キーボードフォーカスインジケータが明確に表示され、識別できるようにすることである。フォーカスの外観は、<a href="focus-visible.html">2.4.7 フォーカスの可視化</a>及び <a href="non-text-contrast.html">1.4.11 非テキストのコントラスト</a>と密接に関連している。フォーカスの可視化では、コンポーネントにキーボードフォーカスがある間に、可視のフォーカスインジケータを必要とする。フォーカスの外観は、可視性の最小レベルを定義する。非テキストのコントラストでは、各状態のコンポーネントが背景に対して十分なコントラストを持つことを要求するが、フォーカスの外観では、フォーカスインジケータ自体に十分なコントラストを必要とする。
                </p>
-               <p>For sighted people with mobility impairments who use a keyboard or a device that utilizes
-                  the <a href="https://www.w3.org/TR/WCAG22/#dfn-keyboard-interface">keyboard interface</a> (such as a switch or voice input), knowing the current point of focus is very important.
-                  Visible focus must also meet the needs of users with low vision, who may also rely
-                  on the keyboard.
+               <p>キーボード又は<a href="#dfn-keyboard-interface">キーボードインタフェース</a>を利用するデバイス (スイッチ、音声入力など) を使用する、運動障害のある目の見える人にとって、フォーカスの現在地を知ることは非常に重要である。可視フォーカスは、キーボードに依存する可能性があるロービジョンの利用者のニーズも満たさなければならない。
                </p>
-               <p>A keyboard focus indicator can take different forms. This Success Criterion encourages
-                  the use of a solid outline around the focused user interface component, but allows
-                  other types of indicators that are at least as large.
+               <p>キーボードフォーカスインジケータはさまざまな形態をとることができる。この達成基準は、フォーカスを当てたユーザインタフェース コンポーネントの周囲に実線のアウトラインを使用することを勧めるが、同等以上の大きさの他の種類のインジケータを使用することを許している。
                </p>
-               <p>This Understanding document will elaborate on the minimum area requirement, color
-                  contrast requirements, and finally list some user agent exceptions.
+               <p>この解説書では、最小領域の要件、色のコントラスト要件について詳しく説明し、最後にいくつかのユーザエージェントの例外を挙げる。
                </p>
                <section id="minimum-area">
                   
-                  <h3>Minimum area</h3>
+                  <h3>最小面積</h3>
                   
                   
-                  <p>The first part of the Success Criterion specifies a minimum area for the focus indicator:</p>
+                  <p>達成基準の一番目の項目では、フォーカスインジケータの最小面積を規定する:</p>
                   
                   
                   <blockquote>
                      
                      <ul>
                         
-                        <li>is at least as large as the area of a 2 <a href="#dfn-css-pixel">CSS pixel</a> thick <a href="#dfn-perimeter">perimeter</a> of the unfocused component or sub-component
+                        <li>フォーカスされていないコンポーネント又はサブコンポーネントの、太さ 2 <a href="#dfn-css-pixel">CSS ピクセル</a>の<a href="#dfn-perimeter">外周</a>の面積と同等以上の大きさである
                         </li>
                         
                      </ul>
@@ -173,23 +157,18 @@
                   </blockquote>
                   
                   
-                  <p>This only specifies a minimum area for the focus indicator. It does not require that
-                     the focus indicator literally be a 2 CSS pixel thick outline, only that the indicator
-                     be at least that large.
+                  <p>これは、フォーカスインジケータの最小面積を規定するだけである。フォーカスインジケータが文字通り 2 CSS ピクセルの太さのアウトラインである必要はなく、インジケータがそれと同等以上の大きさであればよいだけである。
                   </p>
                   
                   
-                  <p>However, the simplest way to meet the size requirement is to use a focus indicator
-                     which <em>is</em> a solid 2 CSS pixel thick perimeter.
+                  <p>ただし、サイズ要件を満たす最も簡単な方法は、太さ 2 CSS ピクセルの実線の外周<em>である</em>フォーカスインジケータを使用することである。
                   </p>
                   
                   
                   <div class="note">
-                     <p class="note-title marker">Note</p>
-                     <p>A <a href="#dfn-css-pixel">CSS pixel</a> is what developers use in CSS declarations like “width: 200px”. It is device-independent
-                        and not to be confused with device pixels which vary depending on the physical pixel
-                        density. <br />
-                        The rest of this document notates CSS pixels as “px”.
+                     <p class="note-title marker">注記</p>
+                     <p>A <a href="#dfn-css-pixel">CSS ピクセル</a>は、開発者が "width: 200px" のような CSS 宣言で使用するものである。これはデバイスに依存しないものであり、物理的なピクセル密度に応じて変化するデバイスピクセルと混同しないように注意すること。 <br />
+                        この文書の残りの部分では、CSS ピクセルを“px”と表記する。
                         
                      </p>
                   </div>
@@ -197,139 +176,117 @@
                   
                   <section id="area-solid-outline">
                      
-                     <h4>Using a solid outline</h4>
+                     <h4>実線のアウトラインを使用する</h4>
                      
                      
-                     <p>The easiest and most common way to meet this requirement is to use a solid outline
-                        around the component. The outline must be at least 2px thick. The following illustration
-                        shows a <strong>minimally</strong> thick focus indicator, where a 2px thick band of white pixels making up the page
-                        background around an example button have been altered to black.
+                     <p>この要件を満たす最も容易かつ一般的な方法は、コンポーネントの周囲に実線のアウトラインを使用することである。アウトラインは 2px 以上の太さでなければならない。次の図は、<strong>最小限の</strong>太さのフォーカスインジケータを示している。ここでは、サンプルボタンの周囲のページ背景を構成する白い 2 ピクセル幅の帯状の部分が、黒に変更されている。
                      </p>
                      
                      
                      <figure id="focus-indicator-basic">
-                        <img src="img/focus-indicator-basic.png" alt="2 blue buttons with a dark 2 pixel thick offset focus rectangle around the second" />
+                        <img src="img/focus-indicator-basic.png" alt="二つの青いボタンと、2 番目のボタンを囲む暗い 2 ピクセルの太さのオフセットのフォーカスの矩形" />
                         
-                        <figcaption>Figure 1 Passes: The focus indicator is a solid 2px thick outline.</figcaption>
+                        <figcaption>図 1 合格: フォーカスインジケータは太さ2pxの実線のアウトラインである。</figcaption>
                         
                      </figure>
                      
                      
-                     <p>For non-rectangular components, the "perimeter" definition allows authors to use either
-                        of the following types of outline:
+                     <p>矩形以外のコンポーネントの場合、「外周」の定義では、コンテンツ制作者は次のどちらの種類のアウトラインを使ってもよい:
                      </p>
                      
                      
                      <ul>
                         
-                        <li>a line which solidly encloses a shape, or</li>
+                        <li>図形を囲む実線、又は</li>
                         
-                        <li>a line which solidly encloses the <a href="#dfn-minimum-bounding-box">minimum bounding box</a> of a shape
+                        <li>図形の<a href="#dfn-minimum-bounding-box">最小境界ボックス</a>を囲む実線
                         </li>
                         
                      </ul>
                      
                      
-                     <p>For example, a star-shaped button may use either a focus indicator that follows the
-                        shape of the star or a focus indicator that follows the bounding box of the star.
-                        In the following examples, the same three stars have already been selected, and focus
-                        is on the third star. The first example uses a focus indicator which matches the star
-                        shape of the focused star. The second uses a rectangular indicator.
+                     <p>例えば、星形のボタンでは、星の形に沿ったフォーカスインジケータを用いてよく、又は星の境界ボックスに沿ったフォーカスインジケータを用いてもよい。次の例では、同じ 3 つの星がすでに選択されており、フォーカスは 3 番目の星に存在する。最初の例では、フォーカスしている星の形に合わせたフォーカスインジケータを用いている。2 番目は矩形のインジケータを用いている。
                      </p>
                      
                      
                      <figure id="focus-outline-solid">
-                        <img src="img/focus-indicator-solid-outline.svg" alt="Three of 5 stars are selected with a solid-line focus indicator in the shape of a star outlining the third" />
+                        <img src="img/focus-indicator-solid-outline.svg" alt="五つの星のうち三つが選択され、3 番目の星のアウトラインとして星形の実線のフォーカスインジケータが表示されている。" />
                         
-                        <figcaption>Figure 2 Passes: a solid outline indicator surrounds the third of five stars.</figcaption>
+                        <figcaption>図 2 合格: 実線のアウトラインインジケータが五つの星のうち三つ目を囲んでいる。</figcaption>
                         
                      </figure>
                      
                      
                      <figure id="focus-border-solid">
-                        <img src="img/focus-indicator-solid-border.svg" alt="3 of 5 stars are selected with a solid-line rectangular focus indicator around the third" />
+                        <img src="img/focus-indicator-solid-border.svg" alt="五つの星の三つが選択され、3 番目の星の周りに実線の矩形のフォーカスインジケータが表示されている。" />
                         
-                        <figcaption>Figure 3 Passes: a solidly bound focus rectangle encloses the third of five stars.</figcaption>
+                        <figcaption>図 3 合格: 実線の境界フォーカス矩形が五つの星のうち三つ目を囲んでいる。</figcaption>
                         
                      </figure>
                      
                      
-                     <p>Offsetting indicators slightly from the focused component, as in the examples above,
-                        is not required to meet the minimum area requirement of the success criterion, but
-                        it can help make indicators more visible. In CSS, the <code>outline</code> and <code>outline-offset</code> properties are commonly used to achieve this.
+                     <p>上記の例のように、インジケータをフォーカスコンポーネントから少しずらすことは、達成基準の最小面積の要件を満たすために必要ではないが、インジケータをより見やすくするのに役立つ。CSS では一般的に、<code>outline</code> 及び <code>outline-offset</code> プロパティを使用して実現される。
                      </p>
                      
                      
-                     <p>The smallest possible 2 CSS pixel thick indicator that is still a "perimeter" is a
-                        solid line that appears inside the component against the component's outer edge, for
-                        example by using a CSS <code>border</code> property. Indicators that are inset further within the component (not directly against
-                        the component's outer edge) need to be thicker than 2 CSS pixels to meet the minimum
-                        size requirement.
+                     <p>「外周」の定義を満たす最小の 2 CSS ピクセルの太さのインジケータは、例えば CSS の<code>border</code> プロパティを使うことで、コンポーネントの外辺に沿ってコンポーネントの内側に現れる実線である。(コンポーネントの外辺に直接沿うのではなく) コンポーネントのさらに内側に挿入されるインジケータは、最小サイズの要件を満たすためには 2 CSS ピクセルより太くする必要がある。
                      </p>
                      
                      
                      <figure id="focus-offsets">
-                        <img src="img/focus-indicator-offset-types.png" alt="a button along with 4 examples of different 2px solid focus indicators for it: offset outside the component, an outline around the boundary of the component, a border inside the boundary of the component, and inset inside the component" />
+                        <img src="img/focus-indicator-offset-types.png" alt="ボタンと、対応する四つの 2px の実線のフォーカスインジケータの例: コンポーネントの外側のオフセット、コンポーネントの境界の周りのアウトライン、コンポーネントの境界の内側のボーダー、コンポーネントの内側のインセット" />
                         
-                        <figcaption>Figure 4 All four of these example focus indicators are 2px solid lines. The "outset", "outline",
-                           and "border" indicators pass. The "inset" indicator does not meet the minimum area
-                           requirement and fails; it would need to be at least 3px thick to pass.
+                        <figcaption>図 4 フォーカスインジケータのこれら四つの例は全て 2px の実線である。"outset"、"outline"及び"border" のインジケータは合格する。"inset" のインジケータは最小面積の要件を満たさないため不合格となる。
                         </figcaption>
                         
                      </figure>
                      
                      
-                     <p>Note that different Non-text Contrast requirements may apply depending on whether
-                        the focus indicator is offset from, inset into, or against the edge of the component.
-                        See the <a href="#relationship-with-non-text-contrast">Relationship with Non-text Contrast</a> section below.
+                     <p>フォーカスインジケータがコンポーネントの縁から外側に離れているか、内側に入り込んでいるか、接しているかによって、異なる非テキストのコントラストの要件が適用される可能性があることに注意する。下記の<a href="#relationship-with-non-text-contrast">非テキストのコントラストとの関係</a>を参照
                      </p>
                      
                   </section>
                   
                   <section id="area-other-indicator-shapes">
                      
-                     <h4>Other indicator shapes</h4>
+                     <h4>その他のインジケータの形状</h4>
                      
                      
-                     <p>This Success Criterion does not require that focus indicators be solid outlines. Other
-                        shapes may be used so long as they meet the minimum area requirement.
+                     <p>この達成基準は、フォーカスインジケータが実線のアウトラインであることを要求していない。最小面積の要件を満たす限り、他​​の形状を使用してもよい。
                      </p>
                      
                      
-                     <p>The minimum area of the focus indicator for a control is the area of a 2 CSS pixel
-                        thick perimeter of the control (or its minimum bounding box) in the control's unfocused
-                        state. For example, if a control is a rectangle 90px wide and 30px tall, the area
-                        of a 2 CSS pixel thick perimeter is difference between the areas of:
+                     <p>コントロールのフォーカスインジケータの最小面積は、コントロールがフォーカスされていない状態において、そのコントロール (又はその最小境界ボックス) の 2 CSS ピクセルの太さの外周の面積である。例えば、コントロールが幅 90 ピクセル、高さ 30 ピクセルの矩形の場合、2 CSS ピクセルの太さの外周の面積は、次の面積の差になる:
                      </p>
                      
                      
                      <ul>
                         
-                        <li>A 92px by 32px rectangle (1px larger on all sides), and</li>
+                        <li>92px × 32px の矩形 (全ての辺で 1px 大きい)、及び</li>
                         
-                        <li>A 88px by 28px rectangle (1px smaller on all sides)</li>
+                        <li>88px × 28px の矩形 (全ての辺で 1px 小さい)</li>
                         
                      </ul>
                      
                      
-                     <p>This results in a minimum area of (92px * 32px) - (88px * 28px) = 480px<sup>2</sup>.
+                     <p>これにより、最小面積は (92px * 32px) - (88px * 28px) = 480px<sup>2</sup> になる。
                      </p>
                      
                      
-                     <p>Some general formulas for 2 CSS pixel thick perimeters of common shapes are:</p>
+                     <p>一般的な形状の 2 CSS ピクセルの太さの外周を表す一般式は次のとおりである:</p>
                      
                      
                      <dl>
                         
-                        <dt>Rectangle with width <em>w</em> and height <em>h</em></dt>
+                        <dt>幅 <em>w</em> 及び高さ <em>h</em> の矩形</dt>
                         
                         <dd>4<em>h</em> + 4<em>w</em></dd>
                         
-                        <dt>Circle with radius <em>r</em></dt>
+                        <dt>半径 <em>r</em> の円</dt>
                         
                         <dd>4𝜋<em>r</em></dd>
                         
-                        <dt>Rounded rectangle with width <em>w</em>, height <em>h</em>, and border radius <em>r</em></dt>
+                        <dt>幅 <em>w</em>、高さ <em>h</em>、及び境界半径 <em>r</em> の角丸の矩形</dt>
                         
                         <dd>4<em>h</em> + 4<em>w</em> - (16 - 4𝜋)<em>r</em></dd>
                         
@@ -337,68 +294,49 @@
                      
                      
                      <div class="note">
-                        <p class="note-title marker">Note</p>
-                        <p>If you need to use complex mathematics to work out if a focus indicator is large enough,
-                           it is probably a sign that you should use a larger indicator instead. The bigger the
-                           visible change when an item receives focus, the easier it is for someone to see.
+                        <p class="note-title marker">注記</p>
+                        <p>フォーカスインジケータが十分に大きいかどうかを判断するために複雑な計算を使用する必要がある場合、おそらく、代わりにより大きなインジケータを使用すべきであるという合図である。項目にフォーカスが当たったときに目に見える変化が大きいほど、見やすくなる。
                         </p>
                      </div>
                      
                      
-                     <p>The following 2 examples use a 90px wide by 30px tall button, with a minimum area
-                        requirement of 480px<sup>2</sup>:
+                     <p>次の 2 つの例では、幅 90px、高さ 30pxのボタンを使用しており、最小面積の要件は 480px<sup>2</sup> である:
                      </p>
                      
                      
                      <figure id="focus-indicator-custom-shapes-inset">
-                        <img src="img/focus-indicator-custom-shapes-inset.png" alt="Three 90 by 30 pixel buttons. The middle button has a focus indicator which is a 3px thick outline inset by 3px inside the button" />
+                        <img src="img/focus-indicator-custom-shapes-inset.png" alt="90 × 30 ピクセルの三つのボタン。中央のボタンにはフォーカスインジケータがあり、ボタンの 3px 内側に太さ 3pxのアウトラインがある。" />
                         
-                        <figcaption>Figure 5 Passes: the inner outline is inset slightly from the outer edge of the component,
-                           but compensates for this by being 3px thick. It has an area of 612px<sup>2</sup>, which exceeds the 480px<sup>2</sup> minimum.
+                        <figcaption>図 5 合格: 内側のアウトラインはコンポーネントの外辺の端からわずかに内側にあるが、太さを 3 ピクセルにすることで面積を補っている。面積は 612px<sup>2</sup>  で、最小値 480px<sup>2</sup> を超えている。
                         </figcaption>
                         
                      </figure>
                      
                      
                      <figure id="focus-indicator-custom-shapes-side-highlights">
-                        <img src="img/focus-indicator-custom-shapes-side-highlights.png" alt="Three 90 by 30 pixel buttons. The middle button has a focus indicator which is two rectangles inside the button, one on either side" />
+                        <img src="img/focus-indicator-custom-shapes-side-highlights.png" alt="90 × 30 ピクセルの三つのボタン。中央のボタンにはフォーカスインジケータがあり、ボタンの内側に二つの矩形が左右に一つずつある。" />
                         
-                        <figcaption>Figure 6 Passes: the indicator rectangles on either side of the focused button are each 9px
-                           wide by 28px tall. In total, they are 504px<sup>2</sup>, which just barely meets the 480px<sup>2</sup> minimum.
+                        <figcaption>図 6 合格: フォーカスのあるボタンの両側にあるインジケータの矩形は、それぞれ幅 9px 、高さ 28px である。合計は 504px<sup>2</sup> で、かろうじて最小値 480px2<sup>2</sup> を満たしている。
                         </figcaption>
                         
                      </figure>
                      
                      
                      <div class="note">
-                        <p class="note-title marker">Note</p>
-                        <p>Prefer using focus indicator techniques that scale with both the width and height
-                           of the focused control. Otherwise, if controls change size across different variations
-                           of a page (for example, in a responsive design), the indicator might meet the area
-                           requirement in some variations but not others. For example, in the above figure, if
-                           the width of the two highlight rectangles did not scale as the button grew wider,
-                           it would stop meeting the minimum area requirement if the button needed to grow any
-                           wider to accomodate a longer button label.
+                        <p class="note-title marker">注記</p>
+                        <p>フォーカスされたコントロールの幅と高さの両方に応じて拡大縮小するフォーカスインジケーターのテクニックを使用するのが望ましい。もしそうでなければ、ページのさまざまなバリエーション (レスポンシブデザインなど) でコントロールのサイズが変更される場合、インジケータは一部のバリエーションでは領域要件を満たすが、他のバリエーションでは満たさない可能性がある。例えば、上記の図で、もしボタンの幅が広くなるにつれて二つのハイライトの矩形の幅が拡大縮小されなかったら、より長いボタンラベルに対応するためにボタンの幅をさらに広げる必要がある場合に、最小面積の要件を満たさなくなるだろう。
                         </p>
                      </div>
                      
                      
-                     <p>Another way of achieving the area requirement is to alter the appearance of the entire
-                        component, for instance by changing its color – provided that the new color has a
-                        contrast ratio of at least 3:1 against the original color. This can be effective in
-                        a set of closely placed buttons. The following example demonstrates this with 5 rating
-                        stars; the center star is filled in with a darker color to indicate focus. However,
-                        it is much more difficult to detect such a focus indicator when components are not
-                        near each other and so cannot be easily compared. For users using magnification, even
-                        components relatively close together may be difficult to compare, so it is not considered
-                        a best practice.
+                     <p>面積の要件を達成するもう一つの方法は、コンポーネント全体の外観を変更することである。例えば、色を変更して、新しい色が元の色に対して少なくとも 3:1 のコントラスト比を持つようにする方法がある。これは、近接して配置されたボタンのセットで効果的である。次の例は、五つの星の評価を使用してこれを示す。中央の星は、フォーカスを示すために濃い色で塗りつぶされている。ただし、コンポーネントが互いに近くになく、簡単に比較できない場合、このようなフォーカスインジケーターを検出することははるかに困難になる。拡大鏡を使用する利用者にとって、比較的近いコンポーネントであっても比較するのが難しい場合があるため、これはベストプラクティスとは見なされない。
                      </p>
                      
                      
                      <figure id="focus-indicator-whole-star">
-                        <img src="img/focus-indicator-whole-star.svg" alt="3 of 5 stars are selected with the whole third star altered in color to indicate focus" />
+                        <img src="img/focus-indicator-whole-star.svg" alt="五つの星のうち三つが選択ばれ、フォーカスを示すために三つ目の星全体の色が変更されている" />
                         
-                        <figcaption>Figure 7 Passes: a color change applies to the whole third star to indicate focus.</figcaption>
+                        <figcaption>図 7 合格: 色の変化が 3 番目の星全体に適用され、フォーカスが当たっていることを示す。</figcaption>
                         
                      </figure>
                      
@@ -406,36 +344,25 @@
                   
                   <section id="area-inline-links">
                      
-                     <h4>Inline links</h4>
+                     <h4>インラインリンク</h4>
                      
-                     <p>If an inline link is broken over multiple lines, some methods of creating a focus
-                        indicator create different results by browsers. CSS <code>outline</code> separately surrounds each part of a link that breaks across multiple lines. It is
-                        by far the most common CSS technique for focus indication, and produces a result that
-                        satisfies the minimum bounding box definition since each part is solidly bound. CSS
-                        <code>border</code> will split the perimeter across the parts of the link, which results in an unenclosed
-                        border for each line of the link. The minimum bounding box definition states that
-                        link focus can be assessed as if the link was all on one line, so a 2px thick border
-                        is also considered to meet the minimum area requirement. Therefore, where the contrast
-                        requirements are met, each of these methods can produce a sufficient focus indicator.
+                     <p>インラインリンクが複数行に分割される場合、フォーカスインジケータの作成方法によっては、ブラウザによって異なる結果が生成されることがある。CSS <code>outline</code> は、複数行に分割されるリンクの各部分を別々に囲む。これは、フォーカス表示のための最も一般的な CSS 技術であり、各部分が切れ目なく囲まれるため、最小境界ボックスの定義を満たす結果が得られる。CSS <code>border</code> は、リンクの各部分にまたがった外周を分割し、これはリンクの各行には囲まれていないボーダーをもたらす。最小境界ボックスの定義では、リンクのフォーカスはあたかもリンクがすべて 1 行にあるかのように評価できるとされているため、太さ 2px のボーダーも最小面積の要件を満たすと見なされる。したがって、コントラストの要件が満たされている場合、これらの方法はそれぞれ十分なフォーカスインジケータを生成できる。
                      </p>
                      
                      
                      <figure id="focus-indicator-inline-link-outline">
-                        <img src="img/focus-inline-link-outline.png" alt="A paragraph of text containing a link broken over two lines. The red focus indicator is a complete rectangle around each part of the link." />
+                        <img src="img/focus-inline-link-outline.png" alt="2行にまたがるリンクを含むテキストの段落。赤いフォーカスインジケータは、リンクの各部分を囲む完全な矩形である。" />
                         
-                        <figcaption>Figure 8 Passes: the CSS <code>outline</code> property solidly bounds each part of the link completely, so it meets the definition
-                           of a perimeter.
+                        <figcaption>図 8 合格: CSS <code>outline</code> プロパティはリンクの各部分を完全に実線で囲んでいるので、外周の定義を満たしている。
                         </figcaption>
                         
                      </figure>
                      
                      
                      <figure id="focus-indicator-inline-link">
-                        <img src="img/focus-inline-link.png" alt="A paragraph of text containing a link broken over two lines. The red focus indicator has a gap on the right of one part of the link, and on the left of the other part of the link." />
+                        <img src="img/focus-inline-link.png" alt="赤いフォーカスインジケータは、リンクの一方の部分の右側に、もう一方の部分の左側に切れ目がある。" />
                         
-                        <figcaption>Figure 9 Passes: Although the CSS <code>border</code> on a multi-line link does not enclose the separate parts of the link, the minimum
-                           bounding box definition allows it to be assessed as if it was on a single line, so
-                           it also qualifies as a perimeter.
+                        <figcaption>図 9 合格: 複数行のリンクの CSS <code>border</code> はリンクの別々の部分を囲んでいないが、最小境界ボックスの定義は、あたかも 1 行であるかのように評価できるため、外周として適切である。
                         </figcaption>
                         
                      </figure>
@@ -445,11 +372,10 @@
                </section>
                <section id="change-of-contrast">
                   
-                  <h3>Change of contrast</h3>
+                  <h3>コントラストの変化</h3>
                   
                   
-                  <p>The second part of the Success Criterion's indicator requirements states that an area
-                     of the indicator:
+                  <p>達成基準のインジケータ要件の 2 番目の部分では、インジケータの領域について次のように述べている:
                   </p>
                   
                   
@@ -457,8 +383,7 @@
                      
                      <ul>
                         
-                        <li>has a contrast ratio of at least 3:1 between the same pixels in the focused and unfocused
-                           states
+                        <li>フォーカスされている状態とフォーカスされていない状態との間で、同一ピクセルに少なくとも 3:1 のコントラスト比がある。
                         </li>
                         
                      </ul>
@@ -466,78 +391,60 @@
                   </blockquote>
                   
                   
-                  <p>This requirement measures the change of contrast between the same pixels in different
-                     states. This is different from the Text Contrast and Non-text Contrast Success Criteria,
-                     which measure the contrast between different adjacent pixels in a single state at
-                     a time.
+                  <p>この要件は、異なる状態における同一ピクセル間のコントラストの変化を測定する。これは、同時にある一つの状態において、隣接する異なるピクセル間のコントラストを測定する、テキストのコントラスト及び非テキストのコントラストの達成基準とは異なる。
                   </p>
                   
                   
-                  <p>3:1 is the <strong>minimum</strong> allowable change-of-contrast ratio, but the greater the change of contrast between
-                     states, the easier it is for users to see the focus indicator. Authors are encouraged
-                     to make the change-of-contrast ratio as great as possible.
+                  <p>3:1 は許容される<strong>最低限の</strong>コントラスト比の変化であるが、状態間のコントラストの変化が大きいほど、利用者はフォーカスインジケータに気付きやすくなる。コンテンツ制作者には、コントラスト比の変化をできるだけ大きくすることを勧める。
                   </p>
                   
                   
-                  <p>The following illustration shows a <strong>minimally</strong> contrasting focus indicator, where some of the white pixels making up the page background
-                     have been altered to a mid-grey that has a 3:1 contrast ratio with the original white.
-                     Authors are encouraged to exceed the minimum focus appearance. For instance, the dark
-                     blue lines in figures 2 and 3 are much more visible.
+                  <p>次の図は、コントラストを<strong>最低限に</strong>したフォーカスインジケータを示している。ここでは、ページの背景を構成する白のピクセルの一部が、元の白と 3:1 のコントラスト比を持つミドルグレーに変更されている。コンテンツ制作者には、フォーカスの外観を最低値よりも目立つように設定することを勧める。例えば、図 2 及び 図 3の濃い青の線は、より目立つようになっている。
                   </p>
                   
                   
                   <figure id="focus-indicator-star-with-light-focus">
-                     <img src="img/focus-indicator-star-with-light-focus.svg" alt="Two orange-yellow five-pointed stars, one with a mid-gray focus rectangle" />
+                     <img src="img/focus-indicator-star-with-light-focus.svg" alt="黄色がかったオレンジ色の五芒星が二つあり、一つはミッドグレーのフォーカス矩形がある" />
                      
-                     <figcaption>Figure 10  Passes: Two buttons in the shape of a star, with the second surrounded by a focus
-                        indicator whose pixels contrast 3:1 between focused (light grey) and unfocused (white)
-                        states.
+                     <figcaption>図 10 合格: 星の形の二つのボタン。2 番目のボタンは、フォーカスインジケータで囲まれている。このインジケータのピクセルは、フォーカスが当たっている状態 (ライトグレー) とフォーカスが当たっていない状態 (白) とで 3:1 のコントラスト比になっている。
                      </figcaption>
                      
                   </figure>
                   
                   
-                  <p>When a component changes to include a focus indicator, that change can be measured
-                     as a change of color contrast. For example, if a yellow outline is added to a button
-                     on a blue background, the change of color is from blue to yellow. This change can
-                     be measured whether the focus indicator is on the background around the component,
-                     or the background within the component.
+                  <p>コンポーネントが変化してフォーカスインジケータが含まれるようになる場合、その変化は色のコントラストの変化として測定できる。例えば、黄色のアウトラインが青い背景のボタンに追加された場合、色の変化は青から黄色になる。この変化は、フォーカスインジケータがコンポーネントの周囲の背景にあっても、コンポーネント内部の背景にあっても測定できる。
                   </p>
                   
                   
                   <figure id="focus-indicator-innerline-2">
-                     <img src="img/focus-indicator-innerline.png" alt="Three dark blue buttons on a white background. The middle button has a yellow inner border." width="284" />
+                     <img src="img/focus-indicator-innerline.png" alt="白い背景に紺色のボタンが三つ。中央のボタンの内側のボーダーは黄色である。" width="284" />
                      
-                     <figcaption>Figure 11  Passes: adding a yellow outline to a link is a change of color from blue to yellow.
-                        That change has a contrast ratio of 12:1.
+                     <figcaption>図 11 合格: 黄色のアウトラインをリンクに追加しており、色が青から黄色に変わる。この変化のコントラスト比は 12:1 である。
                      </figcaption>
                      
                   </figure>
                   
                   
-                  <p>If a control receiving focus changes its background (fill color) to a color that contrasts
-                     less than 3:1 with the original background, that would not pass the change of contrast.
+                  <p>フォーカスを受け取るコントロールの背景 (塗りつぶしの色) が、元の背景とのコントラストが 3:1 未満の色に変化する場合、コントラストの変化は合格しない。
                   </p>
                   
                   
                   <figure id="focus-indicator-background">
-                     <img src="img/focus-indicator-background.png" alt="Three black buttons with a dark background. The middle button has a dark grey background." width="250" />
+                     <img src="img/focus-indicator-background.png" alt="暗い背景の三つの黒いボタン。中央のボタンは濃い灰色の背景。" width="250" />
                      
-                     <figcaption>Figure 12  Fails: the second link has a dark-grey (#555) which <strong>fails</strong> this Success Criterion because the change from black-background to dark-grey background
-                        does not meet 3:1.
+                     <figcaption>図 12 失敗: 2番目のリンクは濃い灰色 (#555) で、この達成基準に<strong>失敗する</strong>。これは、黒い背景から濃い灰色の背景への変化が 3:1 を満たさないためである。
                      </figcaption>
                      
                   </figure>
                   
                   
-                  <p>If the background change is sufficient, it is a method of passing the criterion.</p>
+                  <p>背景の変化が十分である場合、それは基準を満たす方法である。</p>
                   
                   
                   <figure id="focus-indicator-background-passing">
-                     <img src="img/focus-indicator-background-passing.png" alt="Three black buttons with a dark border and two have a dark background. The middle button has a white background." width="250" />
+                     <img src="img/focus-indicator-background-passing.png" alt="暗い色のボーダーを持つ黒いボタンが三つあり、二つは背景も暗い。中央のボタンは背景が白である。" width="250" />
                      
-                     <figcaption>Figure 13  Passes: the second link has a white background (#fff) which <strong>passes</strong> this Success Criterion because the change from black-background to white-background
-                        meets 3:1.
+                     <figcaption>図 13 合格: 2 番目のリンクは白い背景 (#fff) を持ち、黒い背景から白い背景への変化が 3:1 を満たすため、この達成基準に<strong>合格</strong>する。
                      </figcaption>
                      
                   </figure>
@@ -545,40 +452,32 @@
                   
                   <section id="change-of-contrast-partial">
                      
-                     <h4>Partially contrasting indicators</h4>
+                     <h4>部分的にコントラストを変化させるインジケータ</h4>
                      
                      
-                     <p>It is not necessary for the <em>entire</em> focus indicator to have a 3:1 change of contrast. It is sufficient for just a part
-                        of the indicator to meet the change of contrast requirement, so long as the contrasting
-                        part of the indicator meets the minimum area requirement.
+                     <p>フォーカスインジケータ<em>全体</em>が 3:1 のコントラスト変化を持つ必要はない。コントラストの変化の要件を満たすのがインジケータの一部だけであっても、その部分が最小面積の要件を満たしさえすれば、十分である。
                      </p>
                      
                      
                      <figure id="focus-indicator-two-color-thick">
-                        <img src="img/focus-indicator-two-color-thick.png" alt="A button whose focus indicator is two nested outlines: an inner 2px thick light gray outline with low contrast against the background, and an outer 2px thick black outline with high contrast" />
+                        <img src="img/focus-indicator-two-color-thick.png" alt="フォーカスインジケータが二つのネストされたアウトラインを持つボタン: 内側の太さ 2px の薄いグレーのアウトラインは背景に対して低コントラストで、外側の太さ 2px の黒のアウトラインは高コントラスト" />
                         
-                        <figcaption>Figure 14 Passes: The black part of the indicator meets 3:1 contrast with the white background,
-                           but the gray part does not. The black part is 2px thick, so it meets the minimum area
-                           requirement on its own and the gray part can be ignored.
+                        <figcaption>図 14 合格： インジケータの黒い部分は白い背景と 3:1 のコントラストを満たしているが、グレーの部分は満たしていない。黒い部分は 2px の太さなので、それだけで最小面積の要件を満たし、グレーの部分は無視できる。
                         </figcaption>
                         
                      </figure>
                      
                      
                      <figure id="focus-indicator-two-color-thick">
-                        <img src="img/focus-indicator-two-color-thin.png" alt="A button whose focus indicator is two nested outlines: an inner 1px thick light gray outline with low contrast against the background, and an outer 1px thick black outline with high contrast" />
+                        <img src="img/focus-indicator-two-color-thin.png" alt="フォーカスインジケータが二つのネストされたアウトラインを持つボタン: 内側の太さ 1px の薄いグレーのアウトラインは背景に対して低コントラストで、外側の太さ 1px の黒いアウトラインは高コントラスト" />
                         
-                        <figcaption>Figure 15 Fails: The indicator as a whole is 2px thick, but the part of it that has sufficient
-                           change-of-contrast is only 1px thick. The part of the indicator with sufficient change-of-contrast
-                           does not meet the minimum area requirement.
+                        <figcaption>図 15 失敗： インジケータ全体は 2px の太さであるが、十分なコントラストの変化がある部分は 1px の太さしかない。十分なコントラストの変化を持つインジケータの部分は、最小面積の要件を満たしていない。
                         </figcaption>
                         
                      </figure>
                      
                      
-                     <p>When calculating whether a focus indicator meets the minimum area requirement, only
-                        the part of the indicator which meets the change-of-contrast requirement should be
-                        included in the calculation.
+                     <p>フォーカスインジケータが最小面積の要件を満たすかどうかを計算する場合、コントラストの変化の要件を満たすインジケータの部分のみを計算に含めるべきである。
                      </p>
                      
                   </section>
@@ -586,70 +485,51 @@
                   
                   <section id="change-of-contrast-gradients">
                      
-                     <h4>Gradients</h4>
+                     <h4>グラデーション</h4>
                      
                      
-                     <p>If a focus indicator has a gradient, the principle is to measure the contrast of the
-                        changed area, and ignore any part of the gradient which has less than a 3:1 change-of-contrast
-                        ratio.
+                     <p>フォーカスインジケータにグラデーションがある場合、原則は、変化した部分のコントラストを測定し、コントラストの変化の比率が 3:1 未満のグラデーションの部分を無視することである。
                      </p>
                      
                      
                      <figure id="focus-indicator-box-shadow">
-                        <img src="img/focus-indicator-box-shadow.png" alt="Three buttons, the middle with a heavy drop-shadow indicating focus." />
+                        <img src="img/focus-indicator-box-shadow.png" alt="三つのボタン、中央はフォーカスを示す濃いドロップシャドウが付いている。" />
                         
-                        <figcaption>Figure 16 When a gradient is used on a focus indicator, the measure of surface area should only
-                           include the area that has changed enough to meet the 3:1 contrast ratio.
+                        <figcaption>図 16 フォーカスインジケータにグラデーションが使用されている場合、表面積の測定は、3:1のコントラスト比を満たすのに十分な変化をした部分のみを含むべきである。
                         </figcaption>
                         
                      </figure>
                      
                      
-                     <p>If you eliminate the area which has less than 3:1 change-of-contrast, you can calculate
-                        the area of the remaining parts of the indicator to determine whether the indicator
-                        meets the minimum area requirement.
+                     <p>コントラストの変化が 3:1 未満の部分を除外する場合、インジケータの残りの部分の面積を計算し、インジケータが最小面積の要件を満たしているかどうかを判断できる。
                      </p>
                      
                      
                      <figure id="focus-indicator-box-shadow-only">
-                        <img src="img/focus-indicator-box-shadow-only.png" alt="The middle button with the drop-shadow included, but the subtle grey areas removed to only show the contrasting area." />
+                        <img src="img/focus-indicator-box-shadow-only.png" alt="ドロップシャドウが含まれる先ほどの中央のボタンであるが、淡いグレーの領域が削除され、コントラストの強い領域のみが表示されている。" />
                         
-                        <figcaption>Figure 17 Passes: the same focused button with the non-contrasting areas removed. The contrasting
-                           area is 6px thick along most of the bottom edge and 3-4px thick on the left and right
-                           edges, which is enough to meet the minimum area requirement.
+                        <figcaption>図 17 合格: 同じフォーカスの当たったボタンから非コントラスト領域を削除したもの。コントラスト領域は、下辺の大部分で 6px の太さ、左右の辺で 3-4px の太さであり、最小面積の要件を満たすのに十分である。
                         </figcaption>
                         
                      </figure>
                      
                      
                      <div class="note">
-                        <p class="note-title marker">Note</p>
-                        <p>Some of the examples in this document are screen-captured images of elements. Due
-                           to loss of resolution in these images, the actual pixel color may not match the original.
-                           As such, they are intended to be used for illustrative purposes, and should not be
-                           inspected on a pixel-by-pixel basis for sufficient contrast.
+                        <p class="note-title marker">注記</p>
+                        <p>この文書の例のいくつかは、要素のスクリーンキャプチャ画像である。これらの画像は解像度が低下しているため、実際のピクセルの色はオリジナルと一致しない場合がある。そのため、これらの画像は説明の目的で使用することを意図しており、十分なコントラストがあるかどうかをピクセルごとに検査するべきではない。
                         </p>
                      </div>
                      
                      
-                     <p>Some designs have pages with a non-solid background image covering the whole (or part)
-                        of the page or make use of parallax scrolling effects which result in a near-infinite
-                        number of color combinations if a page is scrolled and/or changes are made to the
-                        viewport size.
+                     <p>デザインによっては、ページ全体 (もしくは一部) をベタ塗りでない背景画像が覆っているページ又は、パララックススクロール効果を利用しているページがあり、ページをスクロール及び／又はビューポートのサイズを変更する場合、色の組み合わせがほぼ無限に近くなる。
                      </p>
                      
                      
-                     <p>If the contrast of background colors that change are close enough to need to be tested
-                        for each combination then they would likely not meet the user need of people with
-                        low vision in certain scroll combinations and would likely fail in certain combinations
-                        as well. In these cases it would be an easy solution to use a <a href="https://www.w3.org/WAI/WCAG22/Techniques/css/C40">two-color focus indicator</a> or some other mechanism to indicate focus such as a solid box with a border to guarantee
-                        there is sufficient contrast across variations of background images or background
-                        gradients.
+                     <p>変化する背景色のコントラストが組み合わせごとにテストが必要なほど近い場合、特定のスクロールの組み合わせではロービジョンの人々のユーザーニーズを満たさない可能性が高く、特定の組み合わせで失敗する可能性が高くなる。このような場合は、<a href="https://www.w3.org/WAI/WCAG22/Techniques/css/C40">2 色のフォーカスインジケータ</a>、又は背景画像もしくは背景グラデーションのバリエーションに十分なコントラストがあることを保証するためのボーダー付きのベタ塗りボックスのような、フォーカスを示す他のメカニズムを使用するのが簡単な解決策である。
                      </p>
                      
                      
-                     <p>It is possible to use visual patterns such as strips switching places to disguise
-                        a change of focus indicator. However, this is not considered a visible indicator.
+                     <p>短冊が入れ替わるような視覚的なパターンを使って、フォーカスインジケータの変化のように見せかけることも可能である。しかし、これは可視のインジケータとはみなされない。
                      </p>
                      
                   </section>
@@ -657,286 +537,214 @@
                </section>
                <section id="relationship-with-non-text-contrast">
                   
-                  <h3>Relationship with Non-text Contrast</h3>
+                  <h3>非テキストのコントラストとの関係</h3>
                   
                   
-                  <p>Focus indicators are visual information required to identify a state of a user interface
-                     component. That means that they are subject to <a href="non-text-contrast" class="sc">1.4.11 Non-text Contrast</a>, in addition to 2.4.13 Focus Appearance.
+                  <p>フォーカスインジケータは、ユーザインタフェース コンポーネントの状態を特定するために必要な視覚情報である。つまり、2.4.13 フォーカスの外観に加え、<a href="non-text-contrast" class="sc">1.4.11 非テキストのコントラスト</a>が適用される。
                   </p>
                   
                   
-                  <p>In combination with <a href="focus-visible">2.4.7 Focus Visible</a>, <a href="non-text-contrast" class="sc">1.4.11 Non-text Contrast</a> requires that the visual focus indicator for a component must have sufficient contrast
-                     against the adjacent colors when the component is focused, except where the appearance
-                     of the component is determined by the user agent and not modified by the author.
+                  <p><a href="focus-visible">2.4.7 フォーカスの可視化</a>と組み合わせると、<a href="non-text-contrast" class="sc">1.4.11 非テキストのコントラスト</a>の要求は、コンポーネントにフォーカスが当たったときに、コンポーネントの視覚的なフォーカスインジケータは、隣接する色に対して十分なコントラストを持たなければならない、ただし、コンポーネントの見た目がユーザエージェントによって提示されていてコンテンツ制作者が変更していない場合は除く、となる。
                   </p>
                   
                   
-                  <p>The difference between the contrast requirements in Focus Appearance and Non-text
-                     Contrast is:
+                  <p>フォーカスの外観と非テキストのコントラスト要件の違いは、次のとおり:
                   </p>
                   
                   
                   <ul>
                      
-                     <li>Focus Appearance requires that focus indicators have a <em>change of contrast</em> between focused and non-focused states.
+                     <li>フォーカスの外観は、フォーカスインジケータが、フォーカスされた状態とフォーカスされていない状態の間で<em>コントラストが変化する</em>ことを要求する。
                      </li>
                      
-                     <li>Non-text Contrast requires that focus indicators have <em>adjacent contrast</em> between the indicator (in the focused state) and adjacent non-indicator colors.
+                     <li>非テキストのコントラストでは、フォーカスインジケータは、そのインジケータ (フォーカス状態) と隣接する非インジケータ色との間に<em>隣接コントラスト</em>を持つことが必要である。
                      </li>
                      
                   </ul>
                   
                   
                   <figure id="non-text-contrast-fail-focus-appearance-pass">
-                     <img src="img/focus-indicator-good-change-bad-adjacent.png" alt="A light blue button with a 3px thick border. The border is black in the unfocused state and light gray in the focused state." />
+                     <img src="img/focus-indicator-good-change-bad-adjacent.png" alt="太さ 3px のボーターを持つ水色のボタン。ボーターは、フォーカスされていない状態では黒で、フォーカスされている状態では薄いグレーになる。" />
                      
-                     <figcaption>Figure 18 This example passes Focus Appearance but fails Non-text Contrast; there is insufficient
-                        <em>adjacent contrast</em> between the focus indicator and the adjacent colors.
+                     <figcaption>図 18 この例は、フォーカスの外観には合格しているが、非テキストのコントラストには不合格である。フォーカスインジケータと隣接する色の間の<em>隣接コントラスト</em>が不十分である。
                      </figcaption>
                      
                   </figure>
                   
                   
                   <figure id="non-text-contrast-pass-focus-appearance-fail">
-                     <img src="img/focus-indicator-good-adjacent-bad-change.png" alt="A light blue button with a 3px thick border. The border is black in the unfocused state and dark gray in the focused state." />
+                     <img src="img/focus-indicator-good-adjacent-bad-change.png" alt="太さ 3px のボーターを持つ水色のボタン。ボーターは、フォーカスされていない状態では黒で、フォーカスされている状態では濃いグレーになる。" />
                      
-                     <figcaption>Figure 19 This example passes Non-text Contrast but fails Focus Appearance; there is insufficient
-                        <em>change of contrast</em> between the focused and unfocused states.
+                     <figcaption>図 19 この例は、非テキストのコントラストには合格しているが、フォーカスの外観には不合格である。フォーカスされた状態とフォーカスされていない状態との間の<em>コントラストの変化</em>が不十分である。
                      </figcaption>
                      
                   </figure>
                   
                   
-                  <p>Additionally, Non-text Contrast does not establish any size requirement and has slightly
-                     different rules for when exceptions are allowed.
+                  <p>さらに、非テキストのコントラストではサイズ要件が設けられておらず、例外が認められる場合のルールも若干異なる。
                   </p>
                   
                   
-                  <p>See the Relationship with Focus Visible section of <a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html">Understanding 1.4.11 Non-text Contrast</a> for more details and examples.
+                  <p>詳細と例については<a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html">解説書 1.4.11 非テキストのコントラスト</a>のフォーカスの可視化との関係性の節を参照。
                   </p>
                   
                </section>
                <section id="keyboard-focus">
                   
-                  <h3>Component keyboard focus</h3>
+                  <h3>コンポーネントのキーボードフォーカス</h3>
                   
-                  <p>The preamble to this Success Criterion is "When a user interface component has keyboard
-                     focus..." The <em>keyboard focus</em> is the point of interaction for someone using a keyboard. For environments with a
-                     keyboard-operable interface, the keyboard focus can be moved around the interface
-                     in order to interact with different components. Whichever component is being interacted
-                     with has focus.
+                  <p>この達成基準の前文は、「キーボードのフォーカスインジケータが視覚的に表示される場合…」である。<em>キーボードフォーカス</em>は、キーボードを使用する人にとってインタラクションのポイントである。キーボードで操作可能なインタフェースのある環境では、様々なコンポーネントを操作するために、キーボードフォーカスをインタフェース内で移動させることができる。操作しているどのコンポーネントにもフォーカスがある。
                   </p>
                   
                   
-                  <p>WCAG defines <em>user interface component</em> as "a part of the content that is perceived by users as a single control for a distinct
-                     function." Because different users may perceive controls differently, there is a potential
-                     for some variation when interpreting what constitutes both a <em>single control</em> and a <em>distinct function</em>. This is particularly the case when something visually presents in a way that may
-                     differ from how it is programmatically created under the covers. Where there is not
-                     a native HTML component upon which to base designs, there can be great variations
-                     in how the components and their focus indicators are portrayed. Further, some components
-                     have sub-components that can take focus, such as the menu items on a menu.
+                  <p>WCAG は、<em>ユーザインタフェース コンポーネント</em>を「コンテンツの一部分で、特定の機能を実現するための単一のコントロールとして利用者が知覚するもの。」と定義している。利用者によってコントロールの捉え方が異なる場合があるため、何が<em>単一のコントロール</em>と<em>特定の機能</em>の両方を構成するかを解釈するときに、多少の差異が生じる可能性がある。これは、視覚的に表示されるものが、その裏側でプログラムによって作成される方法とは異なる場合に、特に当てはまる。設計のベースとなるネイティブ HTML コンポーネントがない場合、コンポーネントとそのフォーカスインジケータの描かれ方には、大きなバリエーションがある可能性がある。さらに、メニューにおけるメニュー項目など、いくつかのコンポーネントは、フォーカスを取得できるサブコンポーネントを持っている。
                   </p>
                   
                   
-                  <p>Nonetheless, consistent results from different testers were obtained for this Success
-                     Criterion by using the focus indicator itself as the gauge of what constitutes the
-                     component being interacted with. For complex components, the three typical focus indicators
-                     are as follows:
+                  <p>それにもかかわらず、この達成基準では、フォーカスインジケータそのものを、操作されるコンポーネントを構成するものの基準として使用することで、様々なテスターから一貫した結果が得られた。複合的なコンポーネントの場合、典型的なフォーカスインジケータは次の三つである:
                   </p>
                   
                   
                   <ul>
                      
-                     <li>Focus indicator around only the whole component</li>
+                     <li>コンポーネント全体を囲むフォーカスインジケータ</li>
                      
-                     <li>Focus indicators around both the component and subcomponent</li>
+                     <li>コンポーネントとサブコンポーネントの両方を囲むフォーカスインジケータ</li>
                      
-                     <li>Focus indicator around only the subcomponent</li>
+                     <li>サブコンポーネントのみを囲むフォーカスインジケータ</li>
                      
                   </ul>
                   
                   
-                  <p>Each of these will be discussed, using a tablist as a familiar complex component.</p>
+                  <p>これらのそれぞれについて、よく知られている複合的なコンポーネントとしてタブリストを用いて説明する。</p>
                   
                   
-                  <h3>Focus indicator around only the whole component</h3>
+                  <h3>コンポーネント全体を囲むフォーカスインジケータ</h3>
                   
                   <figure id="component-complex-whole">
-                     <img src="img/component-complex-whole.png" alt="Three tab buttons shown with a dark blue rectangle around all three tab buttons." />
+                     <img src="img/component-complex-whole.png" alt="三つのタブボタンの全てを囲む濃い青色の矩形が表示されている。" />
                      
-                     <figcaption>Figure 20  A tablist with a focus indicator around only the whole.</figcaption>
+                     <figcaption>図 20 全体だけにフォーカスインジケータを表示したタブリスト。</figcaption>
                      
                   </figure>    
                   
                   
-                  <p>When the focus indicator is shown only around the whole tablist, the user is guided
-                     to considering the tablist as a single user component. The tab items within it are
-                     visually distinguished between selected and unselected states (and visual indicators
-                     of selection state must meet the criteria given in <a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html">1.4.11 Non-text Contrast</a>).
+                  <p>タブリスト全体にだけフォーカスインジケータが表示されている場合、利用者はタブリストを一つのユーザコンポーネントとして考えるように誘導される。その中のタブ項目は、選択状態と非選択状態が視覚的に区別される (そして選択状態の視覚的インジケータは、<a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html">1.4.11 非テキストのコントラスト</a>で示された基準を満たなければならない)。
                   </p>
                   
                   
-                  <p>Having a focus indicator <em>only</em> around the whole is possible where there is no need to have a selected sub-component
-                     while another sub-component has focus. For a tablist which synchronizes its tab panel
-                     content with whatever tab is active, only one tab item can be selected at a time,
-                     and since whatever tab is selected is considered active, a separate focus indicator
-                     is redundant.
+                  <p>別のサブコンポーネントにフォーカスがあるときに、選択されたサブコンポーネントを持つ必要がない場合、全体の周囲に<em>だけ</em>フォーカスインジケータを持つことが可能である。タブパネルの内容をアクティブなタブと同期させるタブリストの場合、一度に選択できるタブ項目は一つだけであり、どのタブが選択されていてもアクティブとみなされるため、別のフォーカスインジケータは冗長である。
                   </p>
                   
                   
-                  <p>Result: the group focus indicator must meet the requirements of this Success Criterion.</p>
+                  <p>結果: グループフォーカスインジケータは、この達成基準の要件を満たさなければならない。</p>
                   
                   
-                  <p>A <a href="https://codesandbox.io/s/practical-cori-nl4pld?file=/index.html">radio button group</a> and a <a href="https://www.w3.org/WAI/ARIA/apg/example-index/slider/slider-rating.html">star-rating widget</a>, which each use only a whole-component focus indicator, provide working examples
-                     of different complex components that pass the primary requirements of this Success
-                     Criterion. In the star ratings example, users can increment the rating by 1/2 stars.
-                     Not only is a focus indicator for each 1/2 star unnecessary, but it would actually
-                     be difficult to achieve without making the interaction confusing.
+                  <p><a href="https://codesandbox.io/s/practical-cori-nl4pld?file=/index.html">ラジオボタングループ</a> 及び<a href="https://www.w3.org/WAI/ARIA/apg/example-index/slider/slider-rating.html">星評価ウィジェット</a>は、それぞれコンポーネント全体のフォーカスインジケータだけを使用しており、この達成基準の主要な要件を満たす異なる複合的なコンポーネントの実用的な例を提供する。星評価の例では、利用者は星を 1/2 ずつ増やすことができる。各 1/2 星のためのフォーカスインジケータは不要であるだけでなく、インタラクションを混乱させることなく達成することも実際には難しいだろう。
                   </p>
                   
                   
-                  <h3>Focus indicators around both the component and subcomponent</h3>
+                  <h3>コンポーネントとサブコンポーネントの両方を囲むフォーカスインジケータ</h3>
                   
                   
                   <figure id="component-complex-both">
-                     <img src="img/component-complex-both.png" alt="Three tab buttons shown with a dark blue rectangle around all three tab buttons, the first tab button also has a dark outline as well as a blue bar indicating it is selected." />
+                     <img src="img/component-complex-both.png" alt="三つのタブボタンの全てを囲む濃い青色の矩形が表示されている。最初のタブボタンは濃いアウトラインがあり、選択されていることを示す青い横棒も表示されている。" />
                      <br />
-                     <img src="img/component-complex-both-unselected.png" alt="The same tab list showing except the first tab is selected, but the second has the focus outline." />
+                     <img src="img/component-complex-both-unselected.png" alt="最初のタブが選択されていること以外は同じタブリストが表示されているが、二つめのタブにはフォーカスアウトラインがある。" />
                      
-                     <figcaption>Figure 21  The same tablist in two states. In the first, focus is around both the tablist and
-                        the currently selected tab; in the second, focus is around both the tablist and an
-                        unselected tab.
+                     <figcaption>図 21 二つの状態の同じタブリスト。1 つ目の状態では、タブリストと現在選択されているタブの両方にフォーカスがある。2 つ目の状態では、タブリストと選択されていないタブの両方にフォーカスがある。
                      </figcaption>
                      
                   </figure>    
                   
                   
-                  <p>For a tablist which does not keep its tab panel content synchronized with whatever
-                     tab is selected, there needs to be a focus indicator for the tab item subcomponent.
-                     This is because the tab item with focus may be different than the selected item.
+                  <p>タブパネルのコンテンツが選択されたタブと同期していないタブリストの場合、タブ項目のサブコンポーネントにフォーカスインジケータが必要となる。これは、フォーカスを持つタブ項目が選択された項目と異なる場合があるためである。
                   </p>
                   
-                  <p>The user can navigate to the tablist, which in this implementation has a focus rectangle
-                     around the whole tablist as well as one around a tab item (conventionally the item
-                     that is currently selected). The focus around the whole is helpful in cueing a keyboard
-                     user that this is a complex component that has its own interaction. The user can then
-                     move focus between the unselected and selected tab items -- each of which in turn
-                     has its own focus indicator -- before activating one, which then makes it selected
-                     as well as focused, and updates the tab panel to match.
+                  <p>利用者はタブリストにナビゲートできる。この実装では、タブリスト全体だけでなく、タブ項目 (慣習的に、現在選択されている項目) の周囲にもフォーカス矩形がある。全体を囲むフォーカスは、キーボードの利用者に、これが独自のインタラクションを持つ複合的なコンポーネントであることを知らせるのに役立つ。利用者は、選択されていないタブ項目と選択されたタブ項目の間でフォーカスを移動でき——タブそれぞれ自体が順にフォーカスインジケーターを持ち——、その後、一つのタブ項目をアクティブにすると、そのタブ項目が選択状態になると同時にフォーカスが当たり、タブパネルがそれに対応する形に更新される。
                   </p>
                   
-                  <p>In this scenario, either the group focus indicator or the sub-component indicator
-                     must meet the requirements of this Success Criterion. To avoid being overly prescriptive,
-                     the Success Criterion allows authors to choose which makes the most sense. Generally,
-                     if a sub-component focus is necessary, it should be assessed instead of the group
-                     indicator.
+                  <p>このシナリオでは、グループフォーカスインジケータ又はサブコンポーネントインジケータのいずれかが、この達成基準の要件を満たさなければならない。過度に規範的にならないように、この達成基準では、コンテンツ制作者が最も適切なものを選択できるようにしている。一般に、サブコンポーネントフォーカスが必要な場合、グループインジケータの代わりにサブコンポーネントフォーカスを評価すべきである。
                   </p>
                   
                   
-                  <p>Result: the focus indicator for the tab item meets the requirements of this Success
-                     Criterion. The tablist focus indicator does not need to meet the requirements.
+                  <p>結果: タブ項目のフォーカスインジケータは、この達成基準の要件を満たしている。タブリストのフォーカスインジケータは、要件を満たす必要はない。
                   </p>
                   
                   
-                  <p>A <a href="https://www.w3.org/WAI/ARIA/apg/example-index/slider/slider-color-viewer.html">slider to pick colors</a> provides a working example of a different complex component that predominantly shows
-                     focus for the subcomponent. In this case, the thumb slider sub-component has a focus
-                     indicator of sufficient size and contrast to pass the sufficient area calculation.
-                     There is also a subtle focus around the whole slider component, but it does not need
-                     to be assessed to pass this Success Criterion.
+                  <p><a href="https://www.w3.org/WAI/ARIA/apg/example-index/slider/slider-color-viewer.html">色を選択するスライダー</a>は、主にサブコンポーネントのフォーカスを表示する別の複合的なコンポーネントの実例を提供する。この場合、つまみのスライダーサブコンポーネントには、十分な領域の計算に合格するのに十分なサイズ及びコントラストのフォーカスインジケータがある。スライダーコンポーネント全体の周囲にもかすかなフォーカスがあるが、この達成基準に合格するために評価する必要はない。
                   </p>
                   
                   
-                  <h3>Focus indicator around only the subcomponent</h3>
+                  <h3>サブコンポーネントだけを囲むフォーカスインジケータ</h3>
                   
                   
                   <figure id="component-complex-sub">
-                     <img src="img/component-complex-sub.png" alt="Three tab buttons shown and the first button has a dark outline." />
+                     <img src="img/component-complex-sub.png" alt="三つのタブボタンが表示され、最初のボタンには濃いアウトラインがある。" />
                      
-                     <figcaption>Figure 22  The same tabs as in the prior set, but the focus indicator around the whole is removed.</figcaption>
+                     <figcaption>図 22 前のセットと同じタブであるが、全体を囲むフォーカスインジケータは除去されている。</figcaption>
                      
                   </figure>   
                   
                   
-                  <p>The same unsynchronized tablist can also be implemented as something which only shows
-                     focus on the tab items and not on the whole. The behaviour is the same as in the prior
-                     example, but there is never a focus indicator placed around the tablist. This interaction
-                     is acceptable, but it is not best practice since it demands more understanding from
-                     the user with less information. For example, some visual cues for the tablist and
-                     tab items (and tab panel) may not be clear. As well, keyboard users may not initially
-                     understand the expected keyboard interaction.
+                  <p>同じ非同期タブリストは、全体にフォーカスを表示せず、タブ項目だけにフォーカスを表示するものとして実装することもできる。動作は前の例と同じであるが、タブリストの周りにフォーカスインジケータが配置されることはない。このインタラクションは受け入れられるが、少ない情報で利用者に多くの理解を求めるため、ベストプラクティスではない。例えば、タブリスト並びにタブ項目 (及びタブパネル) の一部の視覚的な手がかりが明確でない場合がある。また、キーボードの利用者は、期待されるキーボードインタラクションを最初は理解できないかもしれない。
                   </p>
                   
                   
-                  <p>Result: the focus indicator for the tab item must meet the requirements of this Success
-                     Criterion, judging focus with both selected and unselected tab items.
+                  <p>結果: タブ項目のフォーカスインジケータは、タブ項目が選択されている場合と選択されていない場合の両方においてフォーカスを評価し、この達成基準の要件を満たさなければならない。
                   </p>
                   
                   
-                  <p>A <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tab_role#example"> functional example of sub-component-only tab focus</a> has an indicator that is large enough (at least four times the shortest side) with
-                     sufficient contrast to pass the focus area language of this Success Criterion.
+                  <p><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tab_role#example">サブコンポーネントだけのタブフォーカスの機能的な例</a>は、この達成基準のフォーカス面積の説明に合致するのに十分な大きさ (少なくとも最短辺の 4 倍以上) 及び十分なコントラストのインジケータがある。
                   </p>
                   
                   
-                  <h3>Where something with focus is not a user interface component</h3>
+                  <h3>フォーカスを持つものがユーザインタフェース コンポーネントではない場合</h3>
                   
-                  <p>Some pages contain very large editing regions, such as web implementations of word
-                     processors and code editors. Unlike a <code>textarea</code> element, which is a user interface component, these large editing regions do not
-                     typically meet the definition of <a href="https://w3c.github.io/wcag/guidelines/22/#dfn-user-interface-components">user interface components</a>; they are not "perceived by users as a single control for a distinct function." Providing
-                     focus indicators around such editing regions may still be beneficial to some; however,
-                     where the region is not perceived as a single control, it is not covered by this Success
-                     Criterion. The web page will still need to provide a insertion point (caret indicator)
-                     in such editing regions in order to meet the requirements of <a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html">2.4.7 Focus Visible</a>.
+                  <p>一部のページには、ワードプロセッサ、コードエディタのウェブ実装など、非常に大きな編集領域を含むものがある。ユーザインタフェース コンポーネントである <code>textarea</code> 要素とは異なり、これらの大きな編集領域は一般的に、<a href="https://waic.jp/translations/WCAG22/#dfn-user-interface-components">ユーザインタフェース コンポーネント</a>の定義を満たさない。つまり、「利用者が特定の機能の単一のコントロールとして認識する」ことはない。そのような編集領域の周りにフォーカスインジケータを表示することは、一部の人にとっては有益かもしれないが、領域が単一のコントロールとして認識されない場合は、この達成基準の対象にはならない。ウェブページは、<a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html">2.4.7 フォーカスの可視化</a>の要件を満たすために、そのような編集領域に挿入位置 (キャレットインジケータ) を提供する必要がある。
                   </p>
                   
                   
-                  <p>Some non-operable elements can take focus (such as a heading element that is the target
-                     of a skip link). However, the preamble of this Success Criterion refers to user interface
-                     components; it is only when the element with focus is operable by keyboard that this
-                     Success Criterion applies.
+                  <p>操作できない要素の中には、フォーカスを取得できるものもある (スキップリンクのターゲットである見出し要素など)。ただし、この達成基準の前文はユーザインタフェース コンポーネントについて言及しており、この達成基準が適用されるのは、フォーカスを持つ要素がキーボードで操作可能なときだけである。
                   </p>
                   
                </section>
                <section id="exceptions">
                   
-                  <h3>Exceptions</h3>
+                  <h3>例外</h3>
                   
                   
-                  <p>There are two situations where the focus appearance does not need to be assessed:</p>
+                  <p>フォーカスの外観を評価する必要がない状況が二つある:</p>
                   
                   
                   <ul>
                      
-                     <li>the focus indicator cannot be adjusted by the author</li>
+                     <li>フォーカスインジケータをコンテンツ制作者が調整できない</li>
                      
-                     <li>the author has not modified the effects of the user agent default</li>
+                     <li>コンテンツ制作者がユーザエージェントのデフォルトの効果を変更していない</li>
                      
                   </ul>
                   
                   
                   <section id="exception-cannot-adjust">
                      
-                     <h4>First exception: the focus indicator cannot be adjusted by the author</h4>
+                     <h4>1 番目の例外: フォーカスインジケータをコンテンツ制作者が調整できない</h4>
                      
                      
                      <blockquote>
-                        <p>The focus indicator is determined by the user agent and cannot be adjusted by the
-                           author
+                        <p>フォーカスインジケータがユーザエージェントによって決定され、かつコンテンツ制作者が調整できない場合
                         </p>
                      </blockquote>
                      
                      
-                     <p>Some components or technologies may not allow the author to adjust the focus indicator.
-                        This is the case with HTML <code>select</code> elements (both single and multi-select), where the visual treatments for selection
-                        and focus cannot be adjusted by the author. In this case the Success Criterion does
-                        not apply.
+                     <p>コンポーネント又は技術によっては、コンテンツ制作者がフォーカスインジケータを調整できない場合がある。HTML の <code>select</code> 要素 (単一選択と複数選択の両方) は、選択状態及びフォーカスの視覚的な処理をコンテンツ制作者が調整できない場合にあたる。この場合、達成基準は適用されない。
                      </p>
                      
                      
                      <figure id="country-select">
-                        <img src="img/focus-indicator-select.png" alt="A country select element with Afghanistan selected and Albani with focus" />
+                        <img src="img/focus-indicator-select.png" alt="Afghanistan が選択され、Albania がフォーカスされている、国の select 要素" />
                         
-                        <figcaption>Figure 23 Passes: The user agent's default <code>select</code> element presentation cannot be modified by the author, so it passes regardless of
-                           the quality of the focus indicator
+                        <figcaption>図 23 合格: ユーザエージェントのデフォルトの <code>select</code> 要素の表示はコンテンツ制作者が変更できないため、フォーカスインジケータの品質に関係なく合格となる
                         </figcaption>
                         
                      </figure>  
@@ -946,72 +754,47 @@
                   
                   <section id="exception-default">
                      
-                     <h4>Second exception: the default indicator and background are not modified</h4>
+                     <h4>2 番目の例外: デフォルトのインジケータ及び背景は変更されていない</h4>
                      
                      
                      <blockquote>
-                        <p>The focus indicator and the indicator's background color are not modified by the author</p>
+                        <p>コンテンツ制作者がフォーカスインジケータ及びそのインジケータの背景色を変更していない場合</p>
                      </blockquote>
                      
                      
-                     <p>If the focus indicator and the background behind the focus indicator are not modified
-                        by the author, the Success Criterion does not apply.
+                     <p>フォーカスインジケータ及びフォーカスインジケーターの背後にある背景がコンテンツ制作者によって変更されていない場合、この達成基準は適用されない。
                      </p>
                      
                      
-                     <p>The intent of this exception is to reduce burden on authors by allowing them to rely
-                        on the default indicators provided by user agents (browsers). If all user agents provided
-                        good focus indicators, authors would be able to concentrate efforts on other accessibility
-                        considerations. Unfortunately, browser default focus indicators vary by component,
-                        browser, and across devices and operating systems, and the default focus indicators
-                        in some browsers can be difficult to see (such as a 1px dotted outline). For this
-                        reason, most authors override browser defaults in order to overcome these deficiencies
-                        and create a more uniform user experience, regardless of browser.
+                     <p>この例外の意図は、ユーザエージェント (ブラウザ) が提供するデフォルトのインジケータに頼れるようにすることで、コンテンツ制作者の負担を軽減することである。もし全てのユーザエージェントが適切なフォーカスインジケータを提供したならば、コンテンツ制作者は他のアクセシビリティの考慮事項に集中できるだろう。残念ながら、ブラウザのデフォルトのフォーカスインジケータはコンポーネント、ブラウザ、デバイス、オペレーティングシステムによって異なり、一部のブラウザのデフォルトのフォーカスインジケータは見にくい場合がある (1px の点線のアウトラインなど)。このため、ほとんどのコンテンツ制作者は、これらの欠点を克服し、ブラウザに関係なくより均一なユーザエクスペリエンスを実現するために、ブラウザのデフォルトを上書きする。
                      </p>
                      
                      
-                     <p>Some browser makers are improving their default focus indicators to make them more
-                        visible. As more browsers adopt defaults that meet the primary bullets of this Success
-                        Criterion, authors will be able to achieve improved focus indicators without customization.
+                     <p>一部のブラウザーメーカーは、デフォルトのフォーカスインジケータをより見やすくする改善をしている。この達成基準の主要な箇条書きを満たすデフォルトを採用するブラウザーが増えるにつれて、コンテンツ制作者はカスタマイズすることなく、改善されたフォーカスインジケータを得ることができるようになるだろう。
                      </p>
                      
                      
-                     <h4>Modifying the focus indicator background</h4>
+                     <h4>フォーカスインジケータの背景の変更</h4>
                      
                      
-                     <p>Browser default focus indicators can be made <em>more</em> difficult to see if the author modifies the pixels directly adjacent to the indicator
-                        (commonly referred to as its background), such as by positioning a component on top
-                        of an image or gradient background, or altering the page's default white background
-                        color, for instance using a blue background in combination with a browser's blue default
-                        indicator. For this reason, where the author alters the pixels directly adjacent to
-                        the default focus indicator, the user agent exception does not apply, and the author
-                        will need to verify they meet the size and contrast requirements of this Success Criterion.
+                     <p>コンテンツ制作者が、画像もしくはグラデーションの背景の上にコンポーネントを配置するなど、インジケータの直接に隣接するピクセル (一般に背景と呼ばれる) を変更する、又はページのデフォルトの白い背景色を変更 (例えば、青い背景とブラウザの青いデフォルトのインジケータを組み合わせて使用​​) すると、ブラウザのデフォルトのフォーカスインジケータが<em>より</em>見えにくくなる可能性がある。このため、コンテンツ制作者がデフォルトのフォーカスインジケータの直接に隣接するピクセルを変更する場合、ユーザエージェントの例外は適用されず、コンテンツ制作者は、この達成基準のサイズ及びコントラストの要件を満たしていることを確認する必要がある。
                      </p>
                      
                      <div class="note">
-                        <p class="note-title marker">Note</p>
-                        <p>Altering the <code>body</code> element's <code>background-color</code> attribute <em>is</em> one way of altering the pixels directly adjacent to the indicator in most implementations.
-                           However, specifying a value of white (<code>#FFFFFF</code>) does not nullify this exception since, as established in the third note of the <a href="https://www.w3.org/TR/WCAG22/#dfn-contrast-ratio">contrast ratio definition</a>, the default ("unspecified") color is assumed to be white.
+                        <p class="note-title marker">注記</p>
+                        <p><code>body</code> 要素の <code>background-color</code> 属性を変更することは、ほとんどの実装でインジケータの直接に隣接するピクセルを変更する方法の一つ<em>である</em>。しかし、白 (<code>#FFFFFF</code>) の値を指定しても、<a href="https://waic.jp/translations/WCAG22/#dfn-contrast-ratio">コントラスト比の定義</a>の 3 番目の注記で認められているように、デフォルトの ("未指定の") 色は白であると仮定されるため、この例外は無効にならない。
                         </p>
                      </div>
                      
                      
-                     <p>As well, if the browser provides an indicator <em>within</em> a component by default, then authors can potentially reduce the visibility by changing
-                        the component color (which in such a scenario is the background color for the focus
-                        indicator). For example, if the default indicator on a button uses a colored inner
-                        border, authors can negatively affect the focus appearance by making the button or
-                        its unfocused border color a similar-luminosity color. For this reason, this user
-                        agent exception can only be met if the author both does not modify the default focus
-                        indicator <em>and</em> does not modify its background.
+                     <p>同様に、ブラウザがデフォルトでコンポーネント<em>内に</em>インジケータを提供する場合、コンテンツ制作者はコンポーネントの色 (そのようなシナリオではフォーカスインジケータの背景色) を変更することで可視性が低下する可能性がある。例えば、ボタンのデフォルトのインジケータが色付きの内側のボーダーを使用している場合、コンテンツ制作者がそのボタン又はそのフォーカスされていないボーダーの色をよく似た輝度の色にすることで、フォーカスの外観に悪影響を与える可能性がある。このため、このユーザエージェントの例外は、コンテンツ制作者がデフォルトのフォーカスインジケータを変更<em>せず</em>、その背景も変更しない場合にのみ満たされる。
                      </p>
                      
                      
                      <figure id="focus-indicator-browser-defaults-modified-background">
-                        <img src="img/focus-indicator-browser-defaults-modified-background.png" alt="A button with an author-customized blue border which looks very similar to the blue border used by a user agent default focus indicator" />
+                        <img src="img/focus-indicator-browser-defaults-modified-background.png" alt="コンテンツ制作者がカスタマイズした青いボーターを持つボタン。ユーザエージェントのデフォルトのフォーカスインジケータで使用される青いボーダーに非常によく似ている。" />
                         
-                        <figcaption>Figure 24 Fails: The middle button is focused using a browser's default focus indicator, but
-                           it is very difficult to tell which button is focused because the custom blue border
-                           on the unfocused button uses a similar color.
+                        <figcaption>図 24 失敗: ブラウザのデフォルトのフォーカスインジケータを使用して中央のボタンにフォーカスが当てられているが、フォーカスされていないボタンのカスタムの青いボーダーが同系色を使用しているため、どのボタンにフォーカスが当てられているかを見分けるのは非常に困難である。
                         </figcaption>
                         
                      </figure>
@@ -1021,45 +804,38 @@
                </section>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>利点</h2>
                <ul>
                   
-                  <li>This Success Criterion helps anyone who relies on the keyboard to operate the page,
-                     by letting them visually determine the component on which keyboard operations will
-                     interact at any point in time.
+                  <li>この達成基準は、キーボード操作が相互作用するコンポーネントがどれであるかをいかなる時も視覚的に判断できるようにすることで、ページの操作をキーボードに依存する人を手助けする。
                   </li>
                   
-                  <li>People with attention limitations, short term memory limitations, or limitations in
-                     executive processes benefit by being able to discover where the focus is located.
+                  <li>注意力、短期記憶、又は実行プロセスの制限のある人は、フォーカスがどこにあるかを発見できることで利益を受ける。
                   </li>
                   
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>事例</h2>
                <ul>
                   
-                  <li>When links receive focus, an outline is displayed around the link that contrasts with
-                     the background adjacent to the link.
+                  <li>リンクがフォーカスを受け取ると、そのリンクの周囲に、リンクに隣接する背景とコントラストのあるアウトラインが表示される。
                   </li>
                   
-                  <li>When buttons receive focus, an outline is displayed within the button (around the
-                     text) that contrasts with the button's background.
+                  <li>ボタンがフォーカスを受け取ると、そのボタン内 (テキストの周囲) に、ボタンの背景とコントラストのあるアウトラインが表示される。
                   </li>
                   
-                  <li>When text fields receive focus, an outline is displayed around the field, indicating
-                     that the input has focus.
+                  <li>テキストフィールドがフォーカスを受け取ると、そのフィールドの周囲にアウトラインが表示され、その入力欄にフォーカスがあることを示す。
                   </li>  
                   
-                  <li>When radio buttons receive focus, an outline is displayed around the control, indicating
-                     that the input has focus.
+                  <li>ラジオボタンがフォーカスを受け取ると、そのコントロールの周囲にアウトラインが表示され、その入力欄にフォーカスがあることを示す。
                   </li>        
                   
                </ul>
             </section>
             <section id="resources">
-               <h2>Related Resources</h2>
-               <p>Resources are for information purposes only, no endorsement implied.</p>
+               <h2>関連リソース</h2>
+               <p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p>
                <ul>
                   
                   <li><a href="https://www.sarasoueidan.com/blog/focus-indicators/">A guide to designing accessible focus indicators</a> by Sara Soueidan
@@ -1075,14 +851,11 @@
                </ul>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
+                  <h3>十分なテクニック</h3>
                   <ol>
                      
                      <li>
@@ -1103,9 +876,8 @@
                   </ol>
                </section>
                <section id="failure">
-                  <h3>Failures</h3>
-                  <p>The following are common mistakes that are considered failures of this Success Criterion
-                     by the WCAG Working Group.
+                  <h3>失敗</h3>
+                  <p>次に挙げるものは、WCAG ワーキンググループが達成基準の失敗例とみなした、よくある間違いである。
                   </p>
                   <ol>
                      
@@ -1120,50 +892,39 @@
             <section id="key-terms">
                <details>
                   <summary>
-                     <h2>Key Terms</h2>
+                     <h2>重要な用語</h2>
                   </summary>
-                  <dt id="dfn-assistive-technology">assistive technology</dt>
+                  <dt id="dfn-assistive-technology">支援技術 (assistive technology)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">hardware and/or software that acts as a <a href="#dfn-user-agent">user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements
-                           of users with disabilities that go beyond those offered by mainstream user agents
+                        <p xmlns="http://www.w3.org/1999/xhtml"> 障害のある利用者の要件を満たすために、主流の<a href="#dfn-user-agent">ユーザエージェント</a>が提供する機能を超えた機能を提供するような、ユーザエージェントとして動作する、又は主流のユーザエージェントと共に動作するハードウェア及び／又はソフトウェア。
+
+
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Functionality provided by assistive technology includes alternative presentations
-                              (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
-                              voice), additional navigation or orientation mechanisms, and content transformations
-                              (e.g., to make tables more accessible).
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術が提供する機能としては、代替の提示 (例: 合成音声や拡大表示したコンテンツ)、代替入力手法 (例: 音声認識)、付加的なナビゲーション又は位置確認のメカニズム、及びコンテンツ変換 (例: テーブルをよりアクセシブルにするもの) などを挙げることができる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Assistive technologies often communicate data and messages with mainstream user agents
-                              by using and monitoring APIs.
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術は、API を利用、監視することで、主流のユーザエージェントとデータやメッセージのやりとりをすることが多い。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The distinction between mainstream user agents and assistive technologies is not absolute.
-                              Many mainstream user agents provide some features to assist individuals with disabilities.
-                              The basic difference is that mainstream user agents target broad and diverse audiences
-                              that usually include people with and without disabilities. Assistive technologies
-                              target narrowly defined populations of users with specific disabilities. The assistance
-                              provided by an assistive technology is more specific and appropriate to the needs
-                              of its target users. The mainstream user agent may provide important functionality
-                              to assistive technologies like retrieving Web content from program objects or parsing
-                              markup into identifiable bundles.
+                           <p class="note-title marker">注記</p>
+                           <p>主流のユーザエージェントと支援技術との区別は、絶対的なものではない。多くの主流のユーザエージェントは、障害のある個人を支援する機能を提供している。基本的な差異は、主流のユーザエージェントが障害のある人もない人も含めて、広く多様な利用者を対象にしているのに対し、支援技術は、特定の障害のある利用者という、より狭く限られた人たちを対象にしているということである。支援技術により提供される支援は、対象とする利用者に特化した、よりニーズに適したものである。主流のユーザエージェントは、プログラムオブジェクトからのウェブコンテンツの抽出、マークアップの識別可能な構造への解釈といった、重要な機能を支援技術に対して提供する場合がある。
                               
                            </p>
                         </div>
@@ -1171,8 +932,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Assistive technologies that are important in the context of this document include
-                              the following:
+                           <p>この文書の文脈において重要な支援技術としては、以下のものが挙げられる:
                               
                            </p>
                            
@@ -1180,38 +940,30 @@
                            <ul>
                               
                               
-                              <li>screen magnifiers, and other visual reading assistants, which are used by people with
-                                 visual, perceptual and physical print disabilities to change text font, size, spacing,
-                                 color, synchronization with speech, etc. in order to improve the visual readability
-                                 of rendered text and images;
+                              <li>画面拡大ソフト及びその他の視覚的な表示に関する支援技術。視覚障害、知覚障害、及び読書困難などの障害のある人が、レンダリング後のテキスト及び画像の視覚的な読みやすさを改善するために、テキストのフォント、サイズ、間隔、色、音声との同期などを変更するのに使用している。
                                  
                               </li>
                               
                               
-                              <li>screen readers, which are used by people who are blind to read textual information
-                                 through synthesized speech or braille;
+                              <li>スクリーンリーダー。全盲の人がテキスト情報を合成音声あるいは点字で読み取るために使用している。
                                  
                               </li>
                               
                               
-                              <li>text-to-speech software, which is used by some people with cognitive, language, and
-                                 learning disabilities to convert text into synthetic speech;
+                              <li>音声変換ソフトウェア。認知障害、言語障害、及び学習障害のある人が、テキストを合成音声に変換するために使用している。
                                  
                               </li>
                               
                               
-                              <li>speech recognition software, which may be used by people who have some physical disabilities;</li>
+                              <li>音声認識ソフトウェア。何らかの身体障害のある利用者が使用することがある。</li>
                               
                               
-                              <li>alternative keyboards, which are used by people with certain physical disabilities
-                                 to simulate the keyboard (including alternate keyboards that use head pointers, single
-                                 switches, sip/puff and other special input devices.);
+                              <li>代替キーボード。特定の身体障害のある人がキーボード操作をシミュレートするのに使用している (ヘッドポインタ、シングルスイッチ、呼気・吸気スイッチ、及びその他の特別な入力デバイスを使った代替キーボードを含む)。
                                  
                               </li>
                               
                               
-                              <li>alternative pointing devices, which are used by people with certain physical disabilities
-                                 to simulate mouse pointing and button activations.
+                              <li>代替ポインティングデバイス。特定の身体障害のある人がマウスポインタとボタンの動きをシミュレートするのに使用している。
                                  
                               </li>
                               
@@ -1222,54 +974,50 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-conformance">conformance</dt>
+                  <dt id="dfn-conformance">適合 (conformance)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">satisfying all the requirements of a given standard, guideline or specification</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">与えられた規格、ガイドライン、又は仕様のすべての要件を満たすこと。</p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-content">content</dt>
+                  <dt id="dfn-content">コンテンツ (content)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">information and sensory experience to be communicated to the user by means of a <a href="#dfn-user-agent">user agent</a>, including code or markup that defines the content's <a href="#dfn-structure">structure</a>, <a href="#dfn-presentation">presentation</a>, and interactions
+                        <p xmlns="http://www.w3.org/1999/xhtml">コンテンツの<a href="#dfn-structure">構造</a>、<a href="#dfn-presentation">提示</a>、及びインタラクションを定義するコード又はマークアップも含めて、<a href="#dfn-user-agent">user agent</a>ユーザエージェントによって利用者に伝達される情報及び感覚的な体験。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-css-pixel">css pixel</dt>
+                  <dt id="dfn-css-pixel">CSS ピクセル (CSS pixel)</dt>
                   <dd>
                      <definition xmlns="">
                         					
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">visual angle of about 0.0213 degrees</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">約 0.0213 度の視野角。</p>
                         					
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">A CSS pixel is the canonical unit of measure for all lengths and measurements in CSS.
-                           This unit is density-independent, and distinct from actual hardware pixels present
-                           in a display. User agents and operating systems should ensure that a CSS pixel is
-                           set as closely as possible to the <a href="https://www.w3.org/TR/css3-values/#reference-pixel">CSS Values and Units Module Level 3 reference pixel</a> [[css3-values]], which takes into account the physical dimensions of the display
-                           and the assumed viewing distance (factors that cannot be determined by content authors).
+                        <p xmlns="http://www.w3.org/1999/xhtml">CSS ピクセルは、CSS におけるすべての長さ及び測定のための規範的な測定単位である。この単位は密度非依存で、ディスプレイに存在する実際のハードウェアピクセルとは異なる。ユーザエージェント及びオペレーティングシステムは CSS ピクセルが、ディスプレイの物理的な寸法と予想される視距離 (コンテンツ制作者は決定できない要因) を考慮した <a href="https://www.w3.org/TR/css3-values/#reference-pixel">CSS Values and Units Module Level 3 reference pixel</a> [css3-values] にできるだけ沿うように設定されていることを確認すべきである。
                            
                         </p>
                         				
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-focus-indicator">focus indicator</dt>
+                  <dt id="dfn-focus-indicator">フォーカスインジケータ (focus indicator)</dt>
                   <dd>
                      <definition xmlns="">
                         	        	
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">pixels that are changed to visually indicate when a <a href="#dfn-user-interface-component">user interface component</a> is in a focused <a href="#dfn-state">state</a>
+                        <p xmlns="http://www.w3.org/1999/xhtml"><a href="#dfn-user-interface-component">ユーザインタフェース コンポーネント</a>がフォーカス状態にあることを視覚的に示すために変更されるピクセル群 is in a focused <a href="#dfn-state">state</a>
                            
                            
                         </p>
@@ -1277,89 +1025,83 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-mechanism">mechanism</dt>
+                  <dt id="dfn-mechanism">メカニズム (mechanism)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
                         <p xmlns="http://www.w3.org/1999/xhtml">
-                           <a href="#dfn-process">process</a> or technique for achieving a result
+                           結果を得るための<a href="#dfn-process">プロセス</a>又は手法。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The mechanism may be explicitly provided in the content, or may be <a href="#dfn-relied-upon">relied upon</a> to be provided by either the platform or by <a href="#dfn-user-agent">user agents</a>, including <a href="#dfn-assistive-technology">assistive technologies</a>.
+                           <p class="note-title marker">注記</p>
+                           <p>メカニズムは、コンテンツ内で明示的に提供されることもあれば、プラットフォーム又は<a href="#dfn-assistive-technology">支援技術</a>を含む<a href="#dfn-user-agent">ユーザエージェント</a>で提供されるものに<a href="#dfn-relied-upon">依存</a>することもある。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The mechanism needs to meet all success criteria for the conformance level claimed.</p>
+                           <p class="note-title marker">注記</p>
+                           <p>メカニズムは、宣言する適合レベルのすべての達成基準を満たしている必要がある。</p>
                         </div>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-minimum-bounding-box">minimum bounding box</dt>
+                  <dt id="dfn-minimum-bounding-box">最小境界ボックス (minimum bounding box)</dt>
                   <dd>
                      <definition xmlns="">
                         	        	
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">the smallest enclosing rectangle aligned to the horizontal axis within which all the
-                           points of a shape lie. For components which wrap onto multiple lines as part of a
-                           sentence or block of text (such as hypertext links), the bounding box is based on
-                           how the component would appear on a single line.
+                        <p xmlns="http://www.w3.org/1999/xhtml">ある図形の全ての点が入る、水平軸と平行に配置された最小包囲矩形。文又はテキストブロックの一部として、複数行に折り返されるコンポーネント (ハイパーテキストのリンクなど) の場合、境界ボックスは、そのコンポーネントが単一行でどのような外観になるかに基づく。
                         </p>
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-perimeter">perimeter</dt>
+                  <dt id="dfn-perimeter">外周 (perimeter)</dt>
                   <dd>
                      <definition xmlns="">
                         	        	
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">continuous line forming the boundary of a shape not including shared pixels, or the
-                           <a href="#dfn-minimum-bounding-box">minimum bounding box</a>, whichever is shortest.
+                        <p xmlns="http://www.w3.org/1999/xhtml">共有するピクセルを含まない図形の境界を形成する実線、又は<a href="#dfn-minimum-bounding-box">最小境界ボックス</a>の、いずれか短い方。
                         </p>
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>The perimeter calculation for a 2 CSS pixel perimeter around a rectangle is 4<em>h</em>+4<em>w</em>, where <em>h</em> is the height and <em>w</em> is the width. For a 2 CSS pixel perimeter around a circle it is 4𝜋<em>r</em>.
+                           <p>矩形を囲む 2 CSS ピクセルの外周の算出方法は、4<em>h</em>+4<em>w</em> である。ここで、<em>h</em> は高さを、<em>w</em> は横幅を表す。円を囲む 2 CSS ピクセルの外周の場合は、4𝜋<em>r</em> である。
                            </p>
                            
                         </aside>
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-presentation">presentation</dt>
+                  <dt id="dfn-presentation">提示 (presentation)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">rendering of the <a href="#dfn-content">content</a> in a form to be perceived by users
+                        <p xmlns="http://www.w3.org/1999/xhtml">利用者が知覚できる形式で<a href="#dfn-content">コンテンツ</a>をレンダリングすること。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-process">process</dt>
+                  <dt id="dfn-process">プロセス (process)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">series of user actions where each action is required in order to complete an activity</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ある活動を完了させるために必要な利用者の一連の動作。</p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Successful use of a series of Web pages on a shopping site requires users to view
-                              alternative products, prices and offers, select products, submit an order, provide
-                              shipping information and provide payment information.
+                           <p>ショッピングサイト上の一連のウェブページで目的を果たすためには、利用者が選択肢となりうる製品、価格及び内容を閲覧した後、製品を選択して発注し、配送先情報及び支払情報を提供する必要がある。
                               
                            </p>
                            
@@ -1368,8 +1110,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>An account registration page requires successful completion of a <a href="https://www.w3.org/TR/turingtest/">Turing test</a> before
-                              the registration form can be accessed.
+                           <p>アカウント登録ページでは、登録フォームにアクセスする前に<a href="https://www.w3.org/TR/turingtest/">チューリングテスト</a>に成功する必要がある。
                               
                            </p>
                            
@@ -1378,35 +1119,32 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-relied-upon">relied upon</dt>
+                  <dt id="dfn-relied-upon">依存されている (relied upon)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">the content would not <a href="#dfn-conformance">conform</a> if that <a href="#dfn-technology">technology</a> is turned off or is not supported
+                        <p xmlns="http://www.w3.org/1999/xhtml">その<a href="#dfn-technology">技術</a>が無効になっている場合、又はサポートされていない場合に、コンテンツが<a href="#dfn-conformance">適合</a>できないこと。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-state">state</dt>
+                  <dt id="dfn-state">状態 (state)</dt>
                   <dd>
                      <definition xmlns="">
                         					
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">dynamic property expressing characteristics of a user interface component that may
-                           change in response to user action or automated processes
+                        <p xmlns="http://www.w3.org/1999/xhtml">利用者のアクション又は自動プロセスに応答して変化し得るユーザインタフェースコンポーネントの特性を表現する動的プロパティ。
                         </p>
                         	        
-                        <p xmlns="http://www.w3.org/1999/xhtml">States do not affect the nature of the component, but represent data associated with
-                           the component or user interaction possibilities. Examples include focus, hover, select,
-                           press, check, visited/unvisited, and expand/collapse.
+                        <p xmlns="http://www.w3.org/1999/xhtml">状態はコンポーネントの本質に影響を与えないが、コンポーネント又はインタラクションの変化の候補に関連付けられているデータを表す。例えば、フォーカス、ホバー、選択、プレス、チェック、訪問済・未訪問、展開・折りたたみが挙げられる。
                         </p>
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-structure">structure</dt>
+                  <dt id="dfn-structure">構造 (structure)</dt>
                   <dd>
                      <definition xmlns="">
                         
@@ -1414,12 +1152,12 @@
                         <ol xmlns="http://www.w3.org/1999/xhtml">
                            
                            
-                           <li>The way the parts of a <a href="#dfn-web-page">Web page</a> are organized in relation to each other; and
+                           <li><a href="#dfn-web-page">ウェブページ</a>の各部を相互の関係性によりまとめる方法論。及び、
                               
                            </li>
                            
                            
-                           <li>The way a collection of <a href="#dfn-web-page">Web pages</a> is organized
+                           <li>一連の<a href="#dfn-web-page">ウェブページ</a>をまとめる方法論。
                               
                            </li>
                            
@@ -1429,32 +1167,28 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-technology">technology</dt>
+                  <dt id="dfn-technology">技術 (technology)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
                         <p xmlns="http://www.w3.org/1999/xhtml">
-                           <a href="#dfn-mechanism">mechanism</a> for encoding instructions to be rendered, played or executed by <a href="#dfn-user-agent">user agents</a>
+                            <a href="#dfn-user-agent">ユーザエージェント</a>がどのようにレンダリング、再生、又は実行するかを符号化する<a href="#dfn-mechanism">メカニズム</a>。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>As used in these guidelines "Web Technology" and the word "technology" (when used
-                              alone) both refer to Web Content Technologies.
+                           <p class="note-title marker">注記</p>
+                           <p>このガイドラインで用いられている「ウェブ技術」及び (単独で用いられている) 「技術」という用語は、どちらもウェブコンテンツ技術を指す。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Web content technologies may include markup languages, data formats, or programming
-                              languages that authors may use alone or in combination to create end-user experiences
-                              that range from static Web pages to synchronized media presentations to dynamic Web
-                              applications.
+                           <p class="note-title marker">注記</p>
+                           <p>ウェブコンテンツ技術には、マークアップ言語、データ形式、及びプログラム言語などがあり、これらをコンテンツ制作者が単独で、又は組み合わせて用いることによって、静的なウェブページや同期したメディアによる提示、さらには動的なウェブアプリケーションに至るまでの様々なエンドユーザ体験を作ることができる。
                               
                            </p>
                         </div>
@@ -1462,8 +1196,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Some common examples of Web content technologies include HTML, CSS, SVG, PNG, PDF,
-                              Flash, and JavaScript.
+                           <p>ウェブコンテンツ技術のよくある事例としては、HTML、CSS、SVG、PNG、PDF、Flash、 JavaScript などがある。
                               
                            </p>
                            
@@ -1472,17 +1205,17 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-user-agent">user agent</dt>
+                  <dt id="dfn-user-agent">ユーザエージェント (user agent)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">any software that retrieves and presents Web content for users</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ウェブコンテンツを取得して利用者に提示するあらゆるソフトウェア。</p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technology">assistive technologies</a> — that help in retrieving, rendering, and interacting with Web content.
+                           <p>ウェブコンテンツの取得、レンダリング及びインタラクションを支援する、ウェブブラウザ、メディアプレーヤ、プラグイン、及びその他のプログラム (<a href="#dfn-assistive-technology">支援技術</a>も含む)。
                               
                            </p>
                            
@@ -1491,40 +1224,35 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-user-interface-component">user interface component</dt>
+                  <dt id="dfn-user-interface-component">ユーザインタフェース コンポーネント (user interface component)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">a part of the content that is perceived by users as a single control for a distinct
-                           function
+                        <p xmlns="http://www.w3.org/1999/xhtml">コンテンツの一部分で、特定の機能を実現するための単一のコントロールとして利用者が知覚するもの。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Multiple user interface components may be implemented as a single programmatic element.
-                              "Components" here is not tied to programming techniques, but rather to what the user
-                              perceives as separate controls.
+                           <p class="note-title marker">注記</p>
+                           <p>複数のユーザインタフェース コンポーネントが、単一のプログラム要素で実装されることもある。ここでいう「コンポーネント」は、プログラムの手法と結びついたものではなく、利用者が別々のコントロールとして知覚するものを指す。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>User interface components include form elements and links as well as components generated
-                              by scripts.
+                           <p class="note-title marker">注記</p>
+                           <p>ユーザインタフェース コンポーネントには、フォーム要素、リンクだけでなく、スクリプトで生成されるコンポーネントが含まれる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>What is meant by "component" or "user interface component" here is also sometimes
-                              called "user interface element".
+                           <p class="note-title marker">注記</p>
+                           <p>ここでの「コンポーネント」又は「ユーザインタフェース コンポーネント」は、「ユーザインターフェース要素」とも呼ばれる。
                               
                            </p>
                         </div>
@@ -1532,9 +1260,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>An applet has a "control" that can be used to move through content by line or page
-                              or random access. Since each of these would need to have a name and be settable independently,
-                              they would each be a "user interface component."
+                           <p>アプレットには、コンテンツ内を行単位、ページ単位、又はランダムアクセスで移動するために用いられる「コントロール」がある。これらには、いずれも名前 (name) を割り当て、個別に設定できるようにする必要があるため、それぞれが「ユーザインタフェース コンポーネント」となる。
                               
                            </p>
                            
@@ -1543,30 +1269,27 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-web-page">web page</dt>
+                  <dt id="dfn-web-page">ウェブページ (Web page)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">a non-embedded resource obtained from a single URI using HTTP plus any other resources
-                           that are used in the rendering or intended to be rendered together with it by a <a href="#dfn-user-agent">user agent</a>
+                        <p xmlns="http://www.w3.org/1999/xhtml">単一の URI から HTTP で得た埋め込まれていないリソースに加え、レンダリングに使われる、又は<a href="#dfn-user-agent">ユーザエージェント</a>がこのリソースと一緒にレンダリングすることを意図しているその他のあらゆるリソースを合わせたもの。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Although any "other resources" would be rendered together with the primary resource,
-                              they would not necessarily be rendered simultaneously with each other.
+                           <p class="note-title marker">注記</p>
+                           <p>どのような「その他のリソース」も主たるリソースと一緒にレンダリングされるであろうが、これらのリソースが同時にレンダリングされるとは限らない。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>For the purposes of conformance with these guidelines, a resource must be "non-embedded"
-                              within the scope of conformance to be considered a Web page.
+                           <p class="note-title marker">注記</p>
+                           <p>このガイドラインの適合範囲に含まれる対象となるウェブページとみなされるためには、リソースが「埋め込まれていない」リソースでなければならない。
                               
                            </p>
                         </div>
@@ -1574,17 +1297,14 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A Web resource including all embedded images and media.</p>
+                           <p>単体のウェブリソースであり、埋め込まれている画像及びメディアのすべてを含んだもの。</p>
                            
                         </aside>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A Web mail program built using Asynchronous JavaScript and XML (AJAX). The program
-                              lives entirely at http://example.com/mail, but includes an inbox, a contacts area
-                              and a calendar. Links or buttons are provided that cause the inbox, contacts, or calendar
-                              to display, but do not change the URI of the page as a whole.
+                           <p>Asynchronous JavaScript and XML (AJAX) を用いたウェブメールのプログラム。そのプログラム全体は http://example.com/mail に存在しているが、受信トレイ、連絡先、カレンダーがある。受信トレイ、連絡先、又はカレンダーを表示するリンク又はボタンが提供されているが、全体としてページの URI は変更されない。
                               
                            </p>
                            
@@ -1593,8 +1313,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A customizable portal site, where users can choose content to display from a set of
-                              different content modules.
+                           <p>カスタマイズ可能なポータルサイトで、利用者が様々なコンテンツモジュールのセットから表示させるコンテンツを選択できるようなもの。
                               
                            </p>
                            
@@ -1603,13 +1322,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>When you enter "http://shopping.example.com/" in your browser, you enter a movie-like
-                              interactive shopping environment where you visually move around in a store dragging
-                              products off of the shelves around you and into a visual shopping cart in front of
-                              you. Clicking on a product causes it to be demonstrated with a specification sheet
-                              floating alongside. This might be a single-page Web site or just one page within a
-                              Web site.
-                              
+                           <p>ブラウザで "http://shopping.example.com/" へ行くと、映画のようなインタラクティブなショッピング環境になる。そこでは、視覚的に店内を移動して、店内の棚から商品をドラッグして、目の前にある視覚的な買物カゴに商品を入れる。商品をクリックすると、同時に仕様書が浮き上がるように表示される。これは 1 ページだけのウェブサイトかもしれないし、ウェブサイトの中のほんの 1 ページなのかもしれない。
                            </p>
                            
                         </aside>
@@ -1628,13 +1341,10 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
-               </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -1649,11 +1359,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -1675,13 +1387,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -1690,7 +1402,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -1711,8 +1423,10 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+    <!--noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-      </noscript>
+      </noscript-->
    </body>
 </html>
