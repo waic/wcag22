@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  1.1.1: Non-text Content | WAI | W3C</title>
+      <title>解説書 達成基準 1.1.1: 非テキストコンテンツ | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
       <!-- 日本語訳されるまでの一時的なスクリプト -->
@@ -11,8 +11,8 @@
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://waic.jp/translations/WCAG22/Understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -36,13 +36,12 @@
          <div class="nav">
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
-                  <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                  <li class="nav__item"><a href=".">目次
                         							</a></li>
                   <li class="nav__item"><a href="text-alternatives">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Text Alternatives</a></li>
+                        </svg> ガイドライン: テキストによる代替</a></li>
                   <li class="nav__item"></li>
                   <li class="nav__item"></li>
                </ul>
@@ -52,44 +51,40 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#resources">Related Resources</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
-                     <li><a href="#key-terms">Key Terms</a></li>
-                     <li><a href="#test-rules">Test Rules</a></li>
+                     <li><a href="#brief">要約</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#benefits">利点</a></li>
+                     <li><a href="#examples">事例</a></li>
+                     <li><a href="#resources">関連リソース</a></li>
+                     <li><a href="#techniques">テクニック</a></li>
+                     <li><a href="#key-terms">重要な用語</a></li>
+                     <li><a href="#test-rules">テストルール</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				SC 1.1.1:</span>Non-text Content (Level A)
+            <h1><span class="standalone-resource__type-of-guidance">解説書 達成基準 1.1.1:</span>非テキストコンテンツ (レベル A)
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>All <a href="#dfn-non-text-content">non-text content</a> that is presented to the user has a <a href="#dfn-text-alternative">text alternative</a> that serves the equivalent purpose, except for the situations listed below.
-                     
+                  <p>利用者に提示されるすべての<a href="#dfn-non-text-content">非テキストコンテンツ</a>には、同等の目的を果たす<a href="#dfn-text-alternative">テキストによる代替</a>が提供されている。ただし、次の場合は除く:
                   </p>
                   <dl>
                      
                      
-                     <dt>Controls, Input</dt>
+                     <dt>コントロール、入力</dt>
                      
                      
                      <dd>
                         
                         
-                        <p>If non-text content is a control or accepts user input, then it has a <a href="#dfn-name">name</a> that describes its purpose. (Refer to <a href="#name-role-value">Success Criterion 4.1.2</a> for additional requirements for controls and content that accepts user input.)
+                        <p>非テキストコンテンツが、コントロール又は利用者の入力を受け付けるものであるとき、その目的を説明する<a href="#dfn-name">名前 (name)</a> を提供している。(コントロール及び利用者の入力を受け入れるコンテンツに関するその他の要件は、<a href="#name-role-value">達成基準 4.1.2</a> を参照。)
                            
                         </p>
                         
@@ -97,14 +92,13 @@
                      </dd>
                      
                      
-                     <dt>Time-Based Media</dt>
+                     <dt>時間依存メディア</dt>
                      
                      
                      <dd>
                         
                         
-                        <p>If non-text content is time-based media, then text alternatives at least provide descriptive
-                           identification of the non-text content. (Refer to <a href="#time-based-media">Guideline 1.2</a> for additional requirements for media.)
+                        <p>非テキストコンテンツが、時間に依存したメディアであるとき、テキストによる代替は、少なくとも、その非テキストコンテンツを識別できる説明を提供している。(メディアに関するその他の要件は、<a href="#time-based-media">ガイドライン 1.2</a> を参照。)
                            
                         </p>
                         
@@ -112,14 +106,13 @@
                      </dd>
                      
                      
-                     <dt>Test</dt>
+                     <dt>テスト</dt>
                      
                      
                      <dd>
                         
                         
-                        <p>If non-text content is a test or exercise that would be invalid if presented in <a href="#dfn-text">text</a>, then text alternatives at least provide descriptive identification of the non-text
-                           content.
+                        <p>非テキストコンテンツが、<a href="#dfn-text">テキスト</a>で提示されると無効になるテスト又は演習のとき、テキストによる代替は、少なくともその非テキストコンテンツを識別できる説明を提供している。
                            
                         </p>
                         
@@ -127,14 +120,13 @@
                      </dd>
                      
                      
-                     <dt>Sensory</dt>
+                     <dt>感覚的</dt>
                      
                      
                      <dd>
                         
                         
-                        <p>If non-text content is primarily intended to create a <a href="#dfn-specific-sensory-experience">specific sensory experience</a>, then text alternatives at least provide descriptive identification of the non-text
-                           content.
+                        <p>非テキストコンテンツが、<a href="#dfn-specific-sensory-experience">特定の感覚的体験</a>を創り出すことを主に意図しているとき、テキストによる代替は、少なくともその非テキストコンテンツを識別できる説明を提供している。
                            
                         </p>
                         
@@ -151,11 +143,7 @@
                      <dd>
                         
                         
-                        <p>If the purpose of non-text content is to confirm that content is being accessed by
-                           a person rather than a computer, then text alternatives that identify and describe
-                           the purpose of the non-text content are provided, and alternative forms of CAPTCHA
-                           using output modes for different types of sensory perception are provided to accommodate
-                           different disabilities.
+                        <p>非テキストコンテンツが、コンピュータではなく人間がコンテンツにアクセスしていることを確認する目的で用いられているとき、テキストによる代替は、その非テキストコンテンツの目的を特定し、説明している。なおかつ、他の感覚による知覚に対応して出力する CAPTCHA の代替形式を提供することで、様々な障害に対応している。
                            
                         </p>
                         
@@ -163,14 +151,13 @@
                      </dd>
                      
                      
-                     <dt>Decoration, Formatting, Invisible</dt>
+                     <dt>装飾、整形、非表示</dt>
                      
                      
                      <dd>
                         
                         
-                        <p>If non-text content is <a href="#dfn-pure-decoration">pure decoration</a>, is used only for visual formatting, or is not presented to users, then it is implemented
-                           in a way that it can be ignored by <a href="#dfn-assistive-technology">assistive technology</a>.
+                        <p>非テキストコンテンツが、<a href="#dfn-pure-decoration">純粋な装飾</a>である、見た目の整形のためだけに用いられている、又は利用者に提供されるものではないとき、<a href="#dfn-assistive-technology">支援技術</a>が無視できるように実装されている。
                            
                         </p>
                         
@@ -183,68 +170,43 @@
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   
                   
-                  <dt>Goal</dt>
-                  <dd>Non-text information is available to more people.</dd>
+                  <dt>目標</dt>
+                  <dd>非テキストの情報を、より多くの人々が利用できる。</dd>
                   
-                  <dt>What to do</dt>
-                  <dd>Create a text alternative for visual and auditory content.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>視覚的および聴覚的なコンテンツに対してテキストによる代替を作成する。</dd>
                   
-                  <dt>Why it's important</dt>
-                  <dd>People who can’t fully see or hear content can understand it.</dd> 
+                  <dt>なぜそれが重要か</dt>
+                  <dd>コンテンツを見たり聞いたりすることが完全にはできない人々が、内容を理解できる。</dd> 
                   
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The intent of this Success Criterion is to make information conveyed by non-text content
-                  accessible through the use of a text alternative.  Text alternatives are a primary
-                  way for making information accessible because they can be rendered through any sensory
-                  modality (for example, visual, auditory or tactile) to match the needs of the user.
-                  Providing text alternatives allows the information to be rendered in a variety of
-                  ways by a variety of user agents. For example, a person who cannot see a picture can
-                  have the text alternative read aloud using synthesized speech. A person who cannot
-                  hear an audio file can have the text alternative displayed so that he or she can read
-                  it. In the future, text alternatives will also allow information to be more easily
-                  translated into sign language or into a simpler form of the same language.
+               <h2>意図</h2>
+               <p>この達成基準の意図は、非テキストコンテンツにより伝達される情報を、テキストによる代替を用いることによってアクセシブルにすることである。テキストによる代替は、利用者の要求に合わせてあらゆる感覚モダリティ (例えば、視覚、聴覚、又は触覚) を通じてレンダリング可能なので、情報をアクセシブルにするための最も重要な方法である。テキストによる代替を提供することにより、情報を様々なユーザエージェントによって様々な方法でレンダリングすることを可能にする。例えば、写真を見ることのできない利用者は、合成音声を用いてテキストによる代替を読み上げさせることができる。また、音声ファイルを聞くことができない利用者は、テキストによる代替を表示させることで、読むことができるようになる。将来的には、テキストによる代替は、情報を手話又は同じ言語のより単純な形式に、より容易に変換することも可能になるだろう。
                   
                </p>
                <section id="-note-on-captcha-">
                   
                   
                   <h3>
-                     Note on CAPTCHA
+                     CAPTCHA に関する注記
                      
                      
                   </h3>
                   
                   
                   <p>
-                     CAPTCHAs are a controversial topic in the accessibility community. As is described
-                     in the
-                     paper 
-                     <a href="https://www.w3.org/TR/turingtest/">Inaccessibility of CAPTCHA</a>, CAPTCHAs intrinsically push the edges of human abilities in an attempt to defeat
-                     automated processes. Every type of CAPTCHA will be unsolvable by users with certain
-                     disabilities. However, they are widely used, and the Web Content Accessibility Guidelines
-                     Working Group believes that if CAPTCHAs were forbidden outright, Web sites would choose
-                     not to conform to WCAG rather than abandon CAPTCHA. This would create barriers for
-                     a great many more users with disabilities. For this reason the Working Group has chosen
-                     to structure the requirement about CAPTCHA in a way that meets the needs of most people
-                     with disabilities, yet is also considered adoptable by sites. Requiring two different
-                     forms of CAPTCHA on a given site ensures that most people with disabilities will find
-                     a form they can use.
+                     CAPTCHA は、アクセシビリティのコミュニティにおいて、議論の的になるトピックの一つである。<a href="https://www.w3.org/TR/turingtest/">Inaccessibility of CAPTCHA</a> で説明されているように、CAPTCHA はもともと、機械的な自動処理を排除しようとして、人間の能力の効果を追求するものである。特定の障害のある利用者は、あらゆる種類の CAPTCHA が解釈できないであろう。しかし、CAPTCHA は広く使われており、WCAG ワーキンググループは、もし CAPTCHA が完全に禁止されてしまったら、ウェブサイトは CAPTCHA の使用を断念するのではなく、WCAG に適合しないことを選択するだろうと考える。このことは、障害のある、非常に多くの利用者に対しての障壁を引き起こす。このため、ワーキンググループは、障害のある利用者のほとんどの要求を満たし、その上ウェブサイトが採用可能だと考えられる方法で、CAPTCHA に関する要件を構築することを選択した。異なる二つの形態の CAPTCHA をサイト上で提供することを要件として、障害のある利用者のほとんどが使用できる形式を見つけられるようにした。
                      
                   </p>
                   
                   
-                  <p>Because some users with disabilities will still not be able to access sites that meet
-                     the minimum requirements, the Working Group provides recommendations for additional
-                     steps. Organizations motivated to conform to WCAG should be aware of the importance
-                     of this topic and should go as far beyond the minimum requirements of the guidelines
-                     as possible. Additional recommended steps include:
+                  <p>中には最低限の要件を満たしているサイトに、それでもアクセスできない障害のある利用者もいるため、ワーキンググループは追加の手順に関する推奨を提供している。WCAG に適合する意欲のある組織は、このトピックの重要性を認識することが望ましく、かつ可能な限りこのガイドラインの最低要件を遥かに超えることが望ましい。追加の推奨される手段は、以下のものがある:
                      
                   </p>
                   
@@ -252,13 +214,13 @@
                   <ul>
                      
                      
-                     <li>Providing more than two modalities of CAPTCHAs</li>
+                     <li>CAPTCHA を二つよりも多くのモダリティで提供する</li>
                      
                      
-                     <li>Providing access to a human customer service representative who can bypass CAPTCHA</li>
+                     <li>CAPTCHA を回避できる、カスタマーサービスの担当者へのアクセスを提供する</li>
                      
                      
-                     <li>Not requiring CAPTCHAs for authorized users</li>
+                     <li>認証された利用者には CAPTCHA を要求しない</li>
                      
                      
                   </ul>
@@ -268,63 +230,31 @@
                <section id="additional-information">
                   
                   
-                  <h3>Additional information</h3>
+                  <h3>補足情報</h3>
                   
                   
-                  <p>Non-text content can take a number of forms, and this Success Criterion specifies
-                     how each is to be handled.
+                  <p>非テキストコンテンツには様々な形態があり、この達成基準ではそれぞれをどのように扱うべきかを特定している。
                      
                   </p>
                   
                   
                   <p> 
                      
-                     <strong>
-                        For non-text content that is not covered by one of the other situations listed below,
-                        </strong>
-                     such as charts, diagrams, audio recordings, pictures, and animations, text alternatives
-                     can make the same information available in a form that can be rendered through any
-                     modality (for example, visual, auditory or tactile).  Short and long text alternatives
-                     can be used as needed to convey the information in the non-text content.  Note that
-                     
-                     <strong>
-                        prerecorded
-                        audio-only
-                        </strong> and 
-                     
-                     <strong> prerecorded
-                        video-only
-                        </strong> files are covered here.  
-                     <strong>
-                        Live-audio-only
-                        </strong> and 
-                     <strong>
-                        Live-video-only
-                        </strong> files are covered below (see 3rd paragraph following this one).  
+                     <strong>下記のその他の状況のいずれも適用されない非テキストコンテンツ</strong> (例: グラフ、図表、録音した音声、写真、及びアニメーション) の場合、テキストによる代替はあらゆる感覚モダリティ (例えば、視覚、聴覚、又は触覚) によってレンダリング可能な形態で同じ情報を入手可能にできる。短い、及び長いテキストによる代替は、非テキストコンテンツにある情報を伝達するのに必要に応じて用いられる。<strong>収録済の音声しか含まないファイル</strong>及び<strong>収録済の映像しか含まないファイル</strong>は、ここで扱われている。<strong>ライブの音声しか含まない</strong>ファイル及び<strong>ライブの映像しか含まない</strong>ファイルは、以下で扱われている (この段落の三つ後の段落を参照のこと)。  
                      
                   </p>
                   
                   
                   <p> 
                      
-                     <strong>
-                        For non-text content that is a control or accepts user input
-                        </strong>, such as images used as submit buttons, image maps or complex animations, a name
-                     is provided to describe the purpose of the non-text content so that the person at
-                     least knows what the non-text content is and why it is there.
+                     <strong>コントロール又は利用者の入力を受け入れる非テキストコンテンツ</strong>、例えば、送信ボタンとして用いられる画像、イメージマップ、又は複雑なアニメーションなどの場合、名前は、少なくともその非テキストコンテンツが何で、なぜそこにあるのかを認識できるように、その非テキストコンテンツの目的を説明するために提供される。
                      
                   </p>
                   
                   
                   <p> 
                      
-                     <strong>
-                        Non-text content that is time-based media
-                        </strong>
-                     is made accessible through 
-                     <a href="time-based-media">1.2: Time-Based Media</a>.  However, it is important that users know what it is when they encounter it on a
-                     page so they can decide what action if any they want to take with it.  A text alternative
-                     that describes the time-based media and/or gives its title is therefore provided.
+                     <strong>時間依存のメディアである非テキストコンテンツ</strong>は、<a href="time-based-media.html">1.2: 時間依存メディア</a> によりアクセシブルになる。しかし、利用者がそのメディアを利用したいことがもしあれば、利用者がどんな動作をするかを解決できるので、利用者がページ上でそのメディアに出会ったときに、そのメディアが何であるかを知ることが重要である。したがって、時間依存のメディアを説明する、及び／又はそのメディアのタイトルを示すテキストによる代替を提供する。
                      
                      
                   </p>
@@ -332,11 +262,7 @@
                   
                   <p> 
                      
-                     <strong>
-                        For Live Audio-only and live video-only content
-                        </strong>, it can be much more difficult to provide text alternatives that provide equivalent
-                     information as live audio-only and live video-only content. For these types of non-text
-                     content, text alternatives provide a descriptive label.  
+                     <strong>ライブの音声しか含まないコンテンツ及びライブの映像しか含まないコンテンツの場合</strong>、それらと同じ情報を示すテキストによる代替を提供することは、はるかに困難なこともありうる。このようなタイプの非テキストコンテンツに対しては、テキストによる代替は説明ラベルを提供する。  
                      
                      
                   </p>
@@ -344,60 +270,28 @@
                   
                   <p> 
                      
-                     <strong>
-                        Sometimes a test or exercise must be partially or completely presented in non-text
-                        format.
-                        </strong>  Audio or visual information is provided that cannot be changed to text because the
-                     test or exercise must be conducted using that sense.  For example, a hearing test
-                     would be invalid if a text alternative were provided.  A visual skill development
-                     exercise would similarly make no sense in text form.  And a spelling test with text
-                     alternatives would not be very effective.  For these cases, text alternatives should
-                     be provided to describe the purpose of the non-text content; of course, the text alternatives
-                     would not provide the same information needed to pass the test. 
+                     <strong>テスト又は演習が、部分的又は全体的に非テキストの形式で提示されなければならないことがある。</strong>そのテスト又は演習は、聴覚又は視覚を用いて行う必要があるため、音声又は視覚情報はテキストに変換することのできないものとして提示される。例えば、ヒアリングテストは、もしテキストによる代替が提供されるなら、効力がないだろう。視覚能力向上のための演習も、テキスト形式では同様に意味を成さない。さらに、テキストによる代替のあるスペルのテストもあまり効果がない。このような場合には、テキストによる代替は非テキストコンテンツの目的を説明するために提供されることが望ましい。もちろん、そのテキストによる代替は、テストに合格するために必要な情報と同じものは提供しないことになる。 
                      
                   </p>
                   
                   
                   <p> 
                      
-                     <strong>
-                        Sometimes content is primarily intended to create a specific sensory experience
-                        </strong> that words cannot fully capture. Examples include a symphony performance, works of
-                     visual art etc. For such content, text alternatives at least identify the non-text
-                     content with a descriptive label and where possible, additional descriptive text.
-                     If the reason for including the content in the page is known and can be described
-                     it is helpful to include that information. 
+                     <strong>言葉で完全に捉えられない特定の感覚的体験を作り出すことを主な目的とするコンテンツもある。</strong>例としては、交響楽団の演奏、視覚的な芸術作品などが挙げられる。そのようなコンテンツの場合、テキストによる代替は、少なくとも説明ラベルをもつ非テキストコンテンツ及び、可能ならば追加のテキストで特定できるようにする。ページにそのコンテンツを含む理由が分かっていて、かつ説明できる場合、その情報を含めることは役立つ。 
                      
                   </p>
                   
                   
                   <p> 
                      
-                     <strong>Sometimes there are non-text exercises that are used to prove you are human.</strong> To avoid spam robots and other software from gaining access to a site a device called
-                     a CAPTCHA is used. These usually involve visual or auditory tasks that are beyond
-                     the current capabilities of Web robots. Providing a text alternative to them would
-                     however make them operable by Robots, thus defeating their purpose. In this case a
-                     text alternative would describe the purpose of the CAPTCHA, and alternate forms using
-                     different modalities would be provided to address the needs of people with different
-                     disabilities.
+                     <strong>利用者が人間であることを証明するために用いられる、非テキストのテスト。</strong>スパムロボットやその他のソフトウェアがサイトにアクセスしてくるのを回避するために、CAPTCHA と呼ばれている仕掛けが用いられる。CAPTCHA には通常、今日のウェブロボットの能力を超えた視覚的又は聴覚的な課題を伴う。しかし、その課題に対してテキストによる代替を提供することは、ロボットでも操作可能なものにしてしまい、結果としてその目的を挫折させてしまう。このような場合、テキストによる代替は、CAPTCHA の目的を説明し、かつ、様々な障害のある利用者の要求に対処するために、異なるモダリティを用いた代替形式が提供される。
                      
                   </p>
                   
                   
                   <p> 
                      
-                     <strong>
-                        Sometimes there is non-text content that really is not meant to be seen or understood
-                        by the user.
-                        </strong> Transparent images used to move text over on a page; an invisible image that is used
-                     to track usage statistics; and a swirl in the corner that conveys no information but
-                     just fills up a blank space to create an aesthetic effect are all examples of this.
-                     Putting alternative text on such items just distracts people using screen readers
-                     from the content on the page. Not marking the content in any way, though, leaves users
-                     guessing what the non-text content is and what information they may have missed (even
-                     though they have not missed anything in reality). This type of non-text content, therefore,
-                     is marked or implemented in a way that assistive technologies (AT) will ignore it
-                     and not present anything to the user.
+                     <strong>利用者が視覚的に確認したり、理解したりすることを実際には意図していない非テキストコンテンツ。</strong>ページ上でテキストを移動させるために用いる透過画像、ログ解析のために用いる非表示の画像、情報を伝えていないが、単に空白を埋めて美しい効果を作り出すコーナーのスウォール (渦巻き) などは、すべてこの例である。そのような画像にテキストによる代替を置くことは、スクリーンリーダーの利用者をそのページのコンテンツに集中できなくさせるだけである。しかし、形はどうあれコンテンツをマークアップしないことは、非テキストコンテンツがどのようなものか、(実際には何も見逃していないにもかかわらず) どのような情報を見逃していたのかを利用者に推測させてしまうことになる。そのため、このような非テキストコンテンツについては、支援技術 (AT) がそれを無視して、かつ利用者に何も提示しない方法でマークアップ又は実装する。
                      
                   </p>
                   
@@ -405,43 +299,37 @@
                </section>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>メリット</h2>
                <ul>
                   
                   
-                  <li>This Success Criterion helps people who have difficulty perceiving visual content.
-                     Assistive technology can read text aloud, present it visually, or convert it to braille.
+                  <li>この達成基準は、視覚的なコンテンツを知覚するのが困難な利用者の役に立つ。支援技術が、テキストを読み上げたり、視覚的に提示したり、点字に変換したりすることができるようになる。
                      
                   </li>
                   
                   
-                  <li>Text alternatives may help some people who have difficulty understanding the meaning
-                     of photographs, drawings, and other images  (e.g., line drawings, graphic designs,
-                     paintings, three-dimensional representations), graphs, charts, animations, etc.
-                     
-                     
-                  </li>
-                  
-                  
-                  <li>
-                     People who are deaf, are hard of hearing, or who are having trouble understanding
-                     audio information for any reason can read the text presentation. Research is ongoing
-                     regarding automatic translation of text into sign language. 
+                  <li>テキストによる代替は、写真、図面、その他の画像 (例えば、線画、グラフィックデザイン、絵画、3D 表現)、グラフ、図表、アニメーションなどの意味を理解するのが困難な利用者の役に立つことがある。
                      
                      
                   </li>
                   
                   
                   <li>
-                     People who are deaf-blind can read the text in braille.
+                     ろう、難聴、又は何らかの理由で音声情報を理解するのが困難な人が、テキストによる提示を読むことができる。テキストを手話に自動翻訳する研究が現在進められている。 
                      
                      
                   </li>
                   
                   
                   <li>
-                     Additionally, text alternatives support the ability to search for non-text content
-                     and to repurpose content in a variety of ways.
+                     盲ろうの利用者が、テキストを点字で読むことができるようになる。
+                     
+                     
+                  </li>
+                  
+                  
+                  <li>
+                     加えて、テキストによる代替は非テキストコンテンツの検索する能力を支援し、コンテンツを様々な方法で再利用できるようにする。
                      
                      
                   </li>
@@ -450,108 +338,69 @@
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>事例</h2>
                <dl>
                   
-                  <dt>A data chart</dt>
+                  <dt>データのグラフ</dt>
                   
-                  <dd>A bar chart compares how many widgets were sold in June, July, and August. The short
-                     label says, "Figure one - Sales in June, July and August." The longer description
-                     identifies the type of chart, provides a high-level summary of the data, trends and
-                     implications comparable to those available from the chart. Where possible and practical,
-                     the actual data is provided in a table.
+                  <dd>6 月、7 月、そして 8 月にどれだけの数の商品が売れたかを比較している棒グラフがある。短いラベルには、「図 1 - 6 月、7 月、8 月の売上」と書かれている。長い説明は、グラフの種類を特定し、そのグラフから見てとれるものに相当する、データ、傾向及び意味合いの高レベルな概要を提供している。可能かつ実用的な場合には、実際のデータが表で提供されている。
                   </dd>
                   
-                  <dt>An audio recording of a speech</dt>
+                  <dt>演説を録音した音声</dt>
                   
-                  <dd>The link to an audio clip says, "Chairman's speech to the assembly." A link to a text
-                     transcript is provided immediately after the link to the audio clip.
+                  <dd>「議会での議長の演説」という音声クリップへのリンクがある。そして、音声クリップへのリンクの直後に、テキストの書き起こしへのリンクが提供されている。
                   </dd>
                   
-                  <dt>An animation that illustrates how a car engine works</dt>
+                  <dt>車のエンジンがどのように動くのかを説明するアニメーション</dt>
                   
-                  <dd>An animation shows how a car engine works. There is no audio and the animation is
-                     part of a tutorial that describes how an engine works. Since the text of the tutorial
-                     already provides a full explanation, the image is an alternative for text and the
-                     text alternative includes only a brief description of the animation and refers to
-                     the tutorial text for more information.
+                  <dd>車のエンジンがどのように動くのかを見せているアニメーションがある。音声はなく、そのアニメーションはエンジンがどのように動くかを説明するチュートリアルの一部である。チュートリアルのテキストがすでに完全な説明をしているため、そのアニメーションはテキストの代替物であり、画像はテキストの代替物であり、テキストによる代替はそのアニメーションの簡潔な説明のみを含み、詳細についてはチュートリアルのテキストを参照している。
                   </dd>
                   
-                  <dt>A traffic Web camera</dt>
+                  <dt>交通情報ウェブカメラ</dt>
                   
-                  <dd>A Web site allows users to select from a variety of Web cameras positioned throughout
-                     a major city. After a camera is selected, the image updates every two minutes. A short
-                     text alternative identifies the Web camera as "traffic Web camera." The site also
-                     provides a table of travel times for each of the routes covered by the Web cameras.
-                     The table is also updated every two minutes.
+                  <dd>利用者がある大都市の至る所に設置された様々なウェブカメラを選択できるウェブサイトがある。どれか一つのカメラを選択すると、画像が 2 分おきに更新される。短いテキストによる代替では、そのウェブカメラを「交通情報ウェブカメラ」と説明している。そのサイトでは、ウェブカメラで扱われる経路のそれぞれの所要時間を表で提供している。その表も 2 分おきに更新されている。
                   </dd>
                   
-                  <dt>A photograph of an historic event in a news story</dt>
+                  <dt>ニュース記事にある歴史的な出来事の写真</dt>
                   
-                  <dd>A photograph of two world leaders shaking hands accompanies a news story about an
-                     international summit meeting. The text alternative says, "President X of Country X
-                     shakes hands with Prime Minister Y of country Y."
+                  <dd>握手を交わしている 2 人の世界的指導者の写真が国際首脳会議に関するニュース記事に添えられている。テキストによる代替には、「X 国の X 大統領が、Y 国の Y 首相と握手している。」と記述されている。
                   </dd>
                   
-                  <dt>A photograph of a historic event in content discussing diplomatic relationships</dt>
+                  <dt>外交関係を議論するコンテンツにある歴史的な出来事の写真</dt>
                   
-                  <dd>The same image is used in a different context intended to explain nuances in diplomatic
-                     encounters. The image of the president shaking hands with the prime minister appears
-                     on a Web site discussing intricate diplomatic relationships. The first text alternative
-                     reads, "President X of country X shakes hands with Prime Minister Y of country Y on
-                     January 2, 2009." An additional text alternative describes the room where the leaders
-                     are standing as well as the expressions on the leaders' faces, and identifies the
-                     other people in the room. The additional description might be included on the same
-                     page as the photograph or in a separate file associated with the image through a link
-                     or other standard programmatic mechanism.
+                  <dd>同じ写真が外交会談のニュアンスを説明するために、異なる文脈で使われている。首相と握手している大統領の画像が、複雑な外交関係を議論しているウェブサイトに掲載されている。最初のテキストによる代替には、「X 国の X 大統領が、2009年 1 月 2 日に、Y 国の Y 首相と握手している。」と書かれている。追加のテキストによる代替は、両首脳の顔の表情だけでなく 2 人が立っている部屋の説明もしており、さらに、その部屋にいる他の人を明らかにしている。その追加の説明は、写真と同じページに含まれるかもしれないし、リンク又はその他の標準的なプログラムによるメカニズムによってその画像と関連付けられた別のファイルに含まれるかもしれない。
                   </dd>
                   
-                  <dt>An audio recording of a press conference </dt>
+                  <dt>記者会見を録音した音声 </dt>
                   
-                  <dd>A Web page includes a link to an audio recording of a press conference. The link text
-                     identifies the audio recording. The page also links to a text transcript of the press
-                     conference. The transcript includes a verbatim record of everything the speakers say.
-                     It identifies who is speaking as well as noting other significant sounds that are
-                     part of the recording, such as applause, laughter, questions from the audience, and
-                     so on.
+                  <dd>ウェブページに、記者会見を録音した音声へのリンクがある。リンクテキストは、録音された音声を示している。また、そのページには記者会見のテキストによる書き起こしへのリンクもある。テキストによる書き起こしには、話者が発言したすべての逐語的な記録が含まれる。そこには、例えば、喝采、笑い、聴衆からの質問など、その録音の一部であるその他の重要な音声に言及するだけでなく、誰が話しているのかも記されている。
                   </dd>
                   
-                  <dt>An e-learning application</dt>
+                  <dt>E-ラーニングアプリケーション</dt>
                   
-                  <dd>An e-learning application uses sound effects to indicate whether or not the answers
-                     are correct. The chime sound indicates that the answer is correct and the beep sound
-                     indicates that the answer is incorrect. A text description is also included so that
-                     people who can't hear or understand the sound understand whether the answer is correct
-                     or incorrect.
+                  <dd>回答が正しいかどうかを示すために効果音を用いている E-ラーニングアプリケーションがある。チャイム音はその回答が正解であることを示し、ビープ音はその回答が不正解であることを示している。テキストの説明もあるため、その音を聞いたり理解したりすることができない利用者も、その回答が正解かどうかを理解できる。
                   </dd>
                   
-                  <dt>A linked thumbnail image</dt>
+                  <dt>リンクのあるサムネイル画像</dt>
                   
-                  <dd>A thumbnail image of the front page of a newspaper links to the home page of the "Smallville
-                     Times". The text alternative says "Smallville Times".
+                  <dd>「スモールヴィル タイムス」のウェブサイトにリンクしている、新聞の一面のサムネイル画像がある。そのテキストによる代替には、「スモールヴィル タイムス」と記述されている。
                   </dd>
                   
-                  <dt>The same image used on different sites</dt>
+                  <dt>異なるサイトで使われている同じ画像</dt>
                   
-                  <dd>Different alternatives for an image of the world: An image of the world that is used
-                     on a travel site as a link to the International Travel section has the text alternative
-                     "International Travel". The same image is used as a link on a university Web site
-                     with the text alternative "International Campuses".
+                  <dd>世界地図の画像に対する異なる代替の例: 旅行サイトで海外旅行コーナーへのリンクとして用いられている世界地図の画像には、「海外旅行」というテキストによる代替がある。同じ画像が、「国際キャンパス」というテキストによる代替とともに、ある大学のウェブサイトでリンクとして用いられている。
                   </dd>
                   
-                  <dt>An image map</dt>
+                  <dt>イメージマップ</dt>
                   
-                  <dd>An image of a building floor plan is interactive, allowing the user to select a
-                     particular room and navigate to a page containing information about that room.
-                     The short text alternative describes the image and its interactive purpose:
-                     "Building floor plan. Select a room for more information."
+                  <dd>ビルの見取り図のイメージマップ画像は操作可能で、利用者が特定の部屋を選択して、その部屋に関する情報のあるページへ移動できる。「ビルの見取り図。詳細については部屋を選択してください。」という短いテキストによる代替が、そのイメージマップの画像と操作の目的を説明している。
                   </dd>
                   
                </dl>
             </section>
             <section id="resources">
-               <h2>Related Resources</h2>
-               <p>Resources are for information purposes only, no endorsement implied.</p>
+               <h2>関連リソース</h2>
+               <p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p>
                <ul>
                   
                   
@@ -606,23 +455,17 @@
                </ul>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques.html">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
-                  <p>Select the situation below that matches your content. Each situation includes techniques
-                     or combinations of techniques that are known and documented to be sufficient for that
-                     situation. 
+                  <h3>十分なテクニック</h3>
+                  <p>そのコンテンツに合致する状況を以下から選択すること。それぞれの状況には、WCAG ワーキンググループがその状況において十分であると判断する、番号付のテクニック (又は、テクニックの組み合わせ) がある。 
                   </p>
                   <section class="situation" id="non-text-content-situation-0">
                      
                      
-                     <h4>Situation A: If a short description can serve the same purpose and present the same
-                        information as the non-text content:
+                     <h4>状況 A: 短い説明が非テキストコンテンツと同じ目的を果たし、かつ同じ情報を提示できる場合:
                         
                      </h4>
                      
@@ -632,13 +475,7 @@
                         
                         <li>
                            
-                           <a class="general" href="https://w3c.github.io/wcag/techniques/general/G94">G94: Providing short text alternative for non-text content that serves the same purpose
-                              and presents the same information as the non-text content</a> using one of the following 
-                           <strong>
-                              
-                              <a href="#text-equiv-all-situation-a-shorttext">Short text alternative techniques for Situation A</a>
-                              
-                              </strong>:
+                           次に挙げる<strong><a href="#text-equiv-all-situation-a-shorttext">状況 A における短いテキストによる代替のテクニック</a></strong>のいずれかを用いて、<a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G94">G94: Providing short text alternative for non-text content that serves the same purpose and presents the same information as the non-text content</a>:
                            
                         </li>
                         
@@ -648,7 +485,7 @@
                      
                      <p id="text-equiv-all-situation-a-shorttext">
                         
-                        <strong>Short text alternative techniques for Situation A</strong>:
+                        <strong>状況 A における短いテキストによる代替のテクニック</strong>:
                         
                      </p>
                      
@@ -658,7 +495,7 @@
                         
                         <li>
                            
-                           <a class="aria" href="https://w3c.github.io/wcag/techniques/aria/ARIA6">ARIA6: Using aria-label to provide labels for objects</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA6">ARIA6: Using aria-label to provide labels for objects</a>
                            
                            
                         </li>
@@ -666,7 +503,7 @@
                         
                         <li>
                            
-                           <a class="aria" href="https://w3c.github.io/wcag/techniques/aria/ARIA10">ARIA10: Using aria-labelledby to provide a text alternative for non-text content</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA10">ARIA10: Using aria-labelledby to provide a text alternative for non-text content</a>
                            
                            
                         </li>
@@ -674,8 +511,7 @@
                         
                         <li>
                            
-                           <a class="general" href="https://w3c.github.io/wcag/techniques/general/G196">G196: Using a text alternative on one item within a group of images that describes all items
-                              in the group</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G196">G196: Using a text alternative on one item within a group of images that describes all items in the group</a>
                            
                            
                         </li>
@@ -683,7 +519,7 @@
                         
                         <li>
                            
-                           <a class="html" href="https://w3c.github.io/wcag/techniques/html/H2">H2: Combining adjacent image and text links for the same resource</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/html/H2">H2: Combining adjacent image and text links for the same resource</a>
                            
                            
                         </li>
@@ -691,7 +527,7 @@
                         
                         <li>
                            
-                           <a class="html" href="https://w3c.github.io/wcag/techniques/html/H37">H37: Using alt attributes on img elements</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/html/H37">H37: Using alt attributes on img elements</a>
                            
                            
                         </li>
@@ -699,7 +535,7 @@
                         
                         <li>
                            
-                           <a class="html" href="https://w3c.github.io/wcag/techniques/html/H53">H53: Using the body of the object element</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/html/H53">H53: Using the body of the object element</a>
                            
                            
                         </li>
@@ -707,7 +543,7 @@
                         
                         <li>
                            
-                           <a class="html" href="https://w3c.github.io/wcag/techniques/html/H86">H86: Providing text alternatives for emojis, emoticons, ASCII art, and leetspeak</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/html/H86">H86: Providing text alternatives for emojis, emoticons, ASCII art, and leetspeak</a>
                            
                            
                         </li>
@@ -715,7 +551,7 @@
                         
                         <li>
                            
-                           <a class="pdf" href="https://w3c.github.io/wcag/techniques/pdf/PDF1">PDF1: Applying text alternatives to images with the Alt entry in PDF documents</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/pdf/PDF1">PDF1: Applying text alternatives to images with the Alt entry in PDF documents</a>
                            
                            
                         </li>
@@ -728,9 +564,7 @@
                   <section class="situation" id="non-text-content-situation-1">
                      
                      
-                     <h4>Situation B: If a short description can 
-                        <strong>not</strong> serve the same purpose and present the same information as the non-text content (e.g.,
-                        a chart or diagram):
+                     <h4>状況 B: 短い説明が非テキストコンテンツと同じ目的を果たせず、かつ同じ情報を提示<strong>できない</strong>場合 (例: チャート又は図表):
                         
                      </h4>
                      
@@ -740,20 +574,7 @@
                         
                         <li> 
                            
-                           <a class="general" href="https://w3c.github.io/wcag/techniques/general/G95">G95: Providing short text alternatives that provide a brief description of the non-text
-                              content</a> using one of the following 
-                           <strong>
-                              
-                              <a href="#text-equiv-all-situation-b-shorttext">Short text alternative techniques for Situation B</a>
-                              
-                              </strong>
-                           										           
-                           <strong>AND</strong> one of the following 
-                           <strong>
-                              
-                              <a href="#text-equiv-all-situation-b-longtext">Long text alternative techniques for Situation B</a>
-                              
-                              </strong>:
+                           次に挙げる<strong><a href="#text-equiv-all-situation-b-shorttext">状況 B における短いテキストによる代替のテクニック</a></strong>のいずれか<strong>かつ</strong>、<strong><a href="#text-equiv-all-situation-b-longtext">状況 B における長いテキストによる代替のテクニック</a></strong>のいずれかを用いて、<a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G95">G95: Providing short text alternatives that provide a brief description of the non-text content</a>:
                            
                         </li>
                         
@@ -763,7 +584,7 @@
                      
                      <p id="text-equiv-all-situation-b-shorttext">
                         
-                        <strong>Short text alternative techniques for Situation B</strong>:
+                        <strong>状況 B における短いテキストによる代替のテクニック</strong>:
                         
                      </p>
                      
@@ -773,7 +594,7 @@
                         
                         <li>
                            
-                           <a class="aria" href="https://w3c.github.io/wcag/techniques/aria/ARIA6">ARIA6: Using aria-label to provide labels for objects</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA6">ARIA6: Using aria-label to provide labels for objects</a>
                            
                            
                         </li>
@@ -781,7 +602,7 @@
                         
                         <li>
                            
-                           <a class="aria" href="https://w3c.github.io/wcag/techniques/aria/ARIA10">ARIA10: Using aria-labelledby to provide a text alternative for non-text content</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA10">ARIA10: Using aria-labelledby to provide a text alternative for non-text content</a>
                            
                            
                         </li>
@@ -789,8 +610,22 @@
                         
                         <li>
                            
-                           <a class="general" href="https://w3c.github.io/wcag/techniques/general/G196">G196: Using a text alternative on one item within a group of images that describes all items
-                              in the group</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G196">G196: Using a text alternative on one item within a group of images that describes all items in the group</a>
+                           
+                           
+                        </li>
+                        
+                        
+                        <li>
+                                          
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/html/H2">H2: Combining adjacent image and text links for the same resource</a>
+                           
+                        </li>
+                        
+                        
+                        <li>
+                           
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/html/H37">H37: Using alt attributes on img elements</a>
                            
                            
                         </li>
@@ -798,7 +633,7 @@
                         
                         <li>
                            
-                           <a class="html" href="https://w3c.github.io/wcag/techniques/html/H2">H2: Combining adjacent image and text links for the same resource</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/html/H53">H53: Using the body of the object element</a>
                            
                            
                         </li>
@@ -806,7 +641,7 @@
                         
                         <li>
                            
-                           <a class="html" href="https://w3c.github.io/wcag/techniques//H35">H35: </a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/html/H86">H86: Providing text alternatives for emojis, emoticons, ASCII art, and leetspeak</a>
                            
                            
                         </li>
@@ -814,31 +649,7 @@
                         
                         <li>
                            
-                           <a class="html" href="https://w3c.github.io/wcag/techniques/html/H37">H37: Using alt attributes on img elements</a>
-                           
-                           
-                        </li>
-                        
-                        
-                        <li>
-                           
-                           <a class="html" href="https://w3c.github.io/wcag/techniques/html/H53">H53: Using the body of the object element</a>
-                           
-                           
-                        </li>
-                        
-                        
-                        <li>
-                           
-                           <a class="html" href="https://w3c.github.io/wcag/techniques/html/H86">H86: Providing text alternatives for emojis, emoticons, ASCII art, and leetspeak</a>
-                           
-                           
-                        </li>
-                        
-                        
-                        <li>
-                           
-                           <a class="pdf" href="https://w3c.github.io/wcag/techniques/pdf/PDF1">PDF1: Applying text alternatives to images with the Alt entry in PDF documents</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/pdf/PDF1">PDF1: Applying text alternatives to images with the Alt entry in PDF documents</a>
                            
                            
                         </li>
@@ -849,7 +660,7 @@
                      
                      <p id="text-equiv-all-situation-b-longtext">
                         
-                        <strong>Long text alternative techniques for Situation B</strong>:
+                        <strong>状況 B における長いテキストによる代替のテクニック</strong>:
                         
                      </p>
                      
@@ -859,7 +670,7 @@
                         
                         <li>
                            
-                           <a class="aria" href="https://w3c.github.io/wcag/techniques/aria/ARIA15">ARIA15: Using aria-describedby to provide descriptions of images</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA15">ARIA15: Using aria-describedby to provide descriptions of images</a>
                            
                            
                         </li>
@@ -867,8 +678,7 @@
                         
                         <li>
                            
-                           <a class="general" href="https://w3c.github.io/wcag/techniques/general/G73">G73: Providing a long description in another location with a link to it that is immediately
-                              adjacent to the non-text content</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G73">G73: Providing a long description in another location with a link to it that is immediately adjacent to the non-text content</a>
                            
                            
                         </li>
@@ -876,8 +686,7 @@
                         
                         <li>
                            
-                           <a class="general" href="https://w3c.github.io/wcag/techniques/general/G74">G74: Providing a long description in text near the non-text content, with a reference to
-                              the location of the long description in the short description</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G74">G74: Providing a long description in text near the non-text content, with a reference to the location of the long description in the short description</a>
                            
                            
                         </li>
@@ -885,8 +694,7 @@
                         
                         <li>
                            
-                           <a class="general" href="https://w3c.github.io/wcag/techniques/general/G92">G92: Providing long description for non-text content that serves the same purpose and presents
-                              the same information</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G92">G92: Providing long description for non-text content that serves the same purpose and presents the same information</a>
                            
                            
                         </li>
@@ -894,7 +702,7 @@
                         
                         <li>
                            
-                           <a class="html" href="https://w3c.github.io/wcag/techniques/html/H53">H53: Using the body of the object element</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/html/H53">H53: Using the body of the object element</a>
                            
                            
                         </li>
@@ -907,7 +715,7 @@
                   <section class="situation" id="non-text-content-situation-2">
                      
                      
-                     <h4>Situation C: If non-text content is a control or accepts user input:</h4>
+                     <h4>状況 C: 非テキストコンテンツがコントロールである、又は利用者の入力を受け入れる場合:</h4>
                      
                      
                      <ul>
@@ -915,12 +723,7 @@
                         
                         <li> 
                            
-                           <a class="general" href="https://w3c.github.io/wcag/techniques/general/G82">G82: Providing a text alternative that identifies the purpose of the non-text content</a> using one of the following 
-                           <strong>
-                              
-                              <a href="#text-equiv-all-situation-c-controls">Text alternative techniques for controls and input for Situation C</a>
-                              
-                              </strong>:
+                           次に挙げる<strong><a href="#text-equiv-all-situation-c-controls">状況 C におけるコントロールと入力のための短いテキストによる代替のテクニック</a></strong>のいずれかを用いて、<a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G82">G82: Providing a text alternative that identifies the purpose of the non-text content</a>:
                            
                         </li>
                         
@@ -930,7 +733,7 @@
                      
                      <p id="text-equiv-all-situation-c-controls">
                         
-                        <strong>Text alternative techniques for controls and input for Situation C</strong>:
+                        <strong>状況 C におけるコントロールと入力のための短いテキストによる代替のテクニック</strong>:
                         
                      </p>
                      
@@ -940,7 +743,7 @@
                         
                         <li>
                            
-                           <a class="aria" href="https://w3c.github.io/wcag/techniques/aria/ARIA6">ARIA6: Using aria-label to provide labels for objects</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA6">ARIA6: Using aria-label to provide labels for objects</a>
                            
                            
                         </li>
@@ -948,7 +751,7 @@
                         
                         <li>
                            
-                           <a class="aria" href="https://w3c.github.io/wcag/techniques/aria/ARIA9">ARIA9: Using aria-labelledby to concatenate a label from several text nodes</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA9">ARIA9: Using aria-labelledby to concatenate a label from several text nodes</a>
                            
                            
                         </li>
@@ -956,7 +759,7 @@
                         
                         <li>
                            
-                           <a class="html" href="https://w3c.github.io/wcag/techniques/html/H24">H24: Providing text alternatives for the area elements of image maps</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/html/H24">H24: Providing text alternatives for the area elements of image maps</a>
                            
                            
                         </li>
@@ -964,7 +767,7 @@
                         
                         <li>
                            
-                           <a class="html" href="https://w3c.github.io/wcag/techniques/html/H30">H30: Providing link text that describes the purpose of a link for anchor elements</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/html/H30">H30: Providing link text that describes the purpose of a link for anchor elements</a>
                            
                            
                         </li>
@@ -972,7 +775,7 @@
                         
                         <li>
                            
-                           <a class="html" href="https://w3c.github.io/wcag/techniques/html/H36">H36: Using alt attributes on images used as submit buttons</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/html/H36">H36: Using alt attributes on images used as submit buttons</a>
                            
                            
                         </li>
@@ -980,7 +783,7 @@
                         
                         <li>
                            
-                           <a class="html" href="https://w3c.github.io/wcag/techniques/html/H44">H44: Using label elements to associate text labels with form controls</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/html/H44">H44: Using label elements to associate text labels with form controls</a>
                            
                            
                         </li>
@@ -988,8 +791,7 @@
                         
                         <li>
                            
-                           <a class="html" href="https://w3c.github.io/wcag/techniques/html/H65">H65: Using the title attribute to identify form controls when the label element cannot
-                              be used</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/html/H65">H65: Using the title attribute to identify form controls when the label element cannot be used</a>
                            
                            
                         </li>
@@ -1002,9 +804,7 @@
                   <section class="situation" id="non-text-content-situation-3">
                      
                      
-                     <h4>Situation D: If non-text content is time-based media (including live video-only and
-                        live audio-only); a test or exercise that would be invalid if presented in text; or
-                        primarily intended to create a specific sensory experience:
+                     <h4>状況 D: 非テキストコンテンツが時間依存のメディアである (ライブの映像しか含まないコンテンツ及びライブの音声しか含まないコンテンツを含む)、テキストで提示されると無効になるテスト又は演習である、又は、特定の感覚的体験を創り出すことを主に意図しているコンテンツである場合:
                         
                      </h4>
                      
@@ -1012,38 +812,21 @@
                      <ul>
                         
                         
-                        <li>Providing a descriptive label using one of the following 
-                           <strong>
-                              
-                              <a href="#text-equiv-all-situation-d-shorttext">Short text alternative techniques for Situation D</a>
-                              
-                              </strong>:
+                        <li>次に挙げる<strong><a href="#text-equiv-all-situation-d-shorttext">状況 D における短いテキストによる代替のテクニック</a></strong>のいずれかを用いて、ラベルを記述する:
                            
                         </li>
                         
                         
                         <li> 
                            
-                           <a class="general" href="https://w3c.github.io/wcag/techniques/general/G68">G68: Providing a short text alternative that describes the purpose of live audio-only and
-                              live video-only content</a> using one of the following 
-                           <strong>
-                              
-                              <a href="#text-equiv-all-situation-d-shorttext">Short text alternative techniques for Situation D</a>
-                              
-                              </strong>:
+                           次に挙げる<strong><a href="#text-equiv-all-situation-d-shorttext">状況 D における短いテキストによる代替のテクニック</a></strong>のいずれかを用いて、<a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G68">G68: Providing a short text alternative that describes the purpose of live audio-only and live video-only content</a>:
                            
                         </li>
                         
                         
                         <li> 
                            
-                           <a class="general" href="https://w3c.github.io/wcag/techniques/general/G100">G100: Providing a short text alternative which is the accepted name or a descriptive name
-                              of the non-text content</a> using one of the following 
-                           <strong>
-                              
-                              <a href="#text-equiv-all-situation-d-shorttext">Short text alternative techniques for Situation D</a>
-                              
-                              </strong>:
+                           次に挙げる<strong><a href="#text-equiv-all-situation-d-shorttext">状況 D における短いテキストによる代替のテクニック</a></strong>のいずれかを用いて、<a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G100">G100: Providing a short text alternative which is the accepted name or a descriptive name of the non-text content</a>:
                            
                         </li>
                         
@@ -1053,7 +836,7 @@
                      
                      <p id="text-equiv-all-situation-d-shorttext">
                         
-                        <strong>Short text alternative techniques for Situation D</strong>:
+                        <strong>状況 D における短いテキストによる代替のテクニック</strong>:
                         
                      </p>
                      
@@ -1063,7 +846,7 @@
                         
                         <li>
                            
-                           <a class="aria" href="https://w3c.github.io/wcag/techniques/aria/ARIA6">ARIA6: Using aria-label to provide labels for objects</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA6">ARIA6: Using aria-label to provide labels for objects</a>
                            
                            
                         </li>
@@ -1071,7 +854,7 @@
                         
                         <li>
                            
-                           <a class="aria" href="https://w3c.github.io/wcag/techniques/aria/ARIA10">ARIA10: Using aria-labelledby to provide a text alternative for non-text content</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA10">ARIA10: Using aria-labelledby to provide a text alternative for non-text content</a>
                            
                            
                         </li>
@@ -1079,8 +862,7 @@
                         
                         <li>
                            
-                           <a class="general" href="https://w3c.github.io/wcag/techniques/general/G196">G196: Using a text alternative on one item within a group of images that describes all items
-                              in the group</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G196">G196: Using a text alternative on one item within a group of images that describes all items in the group</a>
                            
                            
                         </li>
@@ -1088,7 +870,7 @@
                         
                         <li>
                            
-                           <a class="html" href="https://w3c.github.io/wcag/techniques/html/H2">H2: Combining adjacent image and text links for the same resource</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/html/H2">H2: Combining adjacent image and text links for the same resource</a>
                            
                            
                         </li>
@@ -1096,7 +878,7 @@
                         
                         <li>
                            
-                           <a class="html" href="https://w3c.github.io/wcag/techniques/html/H37">H37: Using alt attributes on img elements</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/html/H37">H37: Using alt attributes on img elements</a>
                            
                            
                         </li>
@@ -1104,7 +886,7 @@
                         
                         <li>
                            
-                           <a class="html" href="https://w3c.github.io/wcag/techniques/html/H53">H53: Using the body of the object element</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/html/H53">H53: Using the body of the object element</a>
                            
                            
                         </li>
@@ -1112,7 +894,7 @@
                         
                         <li>
                            
-                           <a class="html" href="https://w3c.github.io/wcag/techniques/html/H86">H86: Providing text alternatives for emojis, emoticons, ASCII art, and leetspeak</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/html/H86">H86: Providing text alternatives for emojis, emoticons, ASCII art, and leetspeak</a>
                            
                            
                         </li>
@@ -1120,7 +902,7 @@
                         
                         <li>
                            
-                           <a class="pdf" href="https://w3c.github.io/wcag/techniques/pdf/PDF1">PDF1: Applying text alternatives to images with the Alt entry in PDF documents</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/pdf/PDF1">PDF1: Applying text alternatives to images with the Alt entry in PDF documents</a>
                            
                            
                         </li>
@@ -1133,7 +915,7 @@
                   <section class="situation" id="non-text-content-situation-4">
                      
                      
-                     <h4>Situation E: If non-text content is a CAPTCHA:</h4>
+                     <h4>状況 E: 非テキストコンテンツが CAPTCHA である場合:</h4>
                      
                      
                      <ul>
@@ -1141,12 +923,7 @@
                         
                         <li>
                            										           
-                           <a class="general" href="https://w3c.github.io/wcag/techniques/general/G143">G143: Providing a text alternative that describes the purpose of the CAPTCHA</a>
-                           										           
-                           <strong>AND</strong>
-                           										           
-                           <a class="general" href="https://w3c.github.io/wcag/techniques/general/G144">G144: Ensuring that the Web Page contains another CAPTCHA serving the same purpose using
-                              a different modality</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G143">G143: Providing a text alternative that describes the purpose of the CAPTCHA</a>、<strong>かつ</strong>、<a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G144">G144: Ensuring that the Web Page contains another CAPTCHA serving the same purpose using a different modality</a>
                            									         
                            
                         </li>
@@ -1159,19 +936,13 @@
                   <section class="situation" id="non-text-content-situation-5">
                      
                      
-                     <h4>Situation F: If the non-text content should be ignored by assistive technology:</h4>
+                     <h4>状況 F: 非テキストコンテンツを支援技術が無視することが望ましい場合:</h4>
                      
                      
                      <ul>
                         
                         
-                        <li>Implementing or marking the non-text content so that it will be ignored by assistive
-                           technology using one of the following 
-                           <strong>
-                              
-                              <a href="#text-equiv-all-situation-f-notrequired">Techniques to indicate that text alternatives are not required for Situation F</a>
-                              
-                              </strong>:
+                        <li>次に挙げる<strong><a href="#text-equiv-all-situation-f-notrequired">状況 F における必須ではないテキストによる代替を示すテクニック</a></strong>のいずれかを用いて、支援技術によって無視することができるように、非テキストコンテンツを実装またはマーク付けする:
                            
                         </li>
                         
@@ -1181,7 +952,7 @@
                      
                      <p id="text-equiv-all-situation-f-notrequired">
                         
-                        <strong>Techniques to indicate that text alternatives are not required for Situation F</strong>:
+                        <strong>状況 F における必須ではないテキストによる代替を示すテクニック</strong>:
                         
                      </p>
                      
@@ -1191,7 +962,7 @@
                         
                         <li>
                            
-                           <a class="css" href="https://w3c.github.io/wcag/techniques/css/C9">C9: Using CSS to include decorative images</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/css/C9">C9: Using CSS to include decorative images</a>
                            
                            
                         </li>
@@ -1199,8 +970,7 @@
                         
                         <li>
                            
-                           <a class="html" href="https://w3c.github.io/wcag/techniques/html/H67">H67: Using null alt text and no title attribute on img elements for images that assistive
-                              technology should ignore</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/html/H67">H67: Using null alt text and no title attribute on img elements for images that assistive technology should ignore</a>
                            
                            
                         </li>
@@ -1208,7 +978,7 @@
                         
                         <li>
                            
-                           <a class="pdf" href="https://w3c.github.io/wcag/techniques/pdf/PDF4">PDF4: Hiding decorative images with the Artifact tag in PDF documents</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/pdf/PDF4">PDF4: Hiding decorative images with the Artifact tag in PDF documents</a>
                            
                            
                         </li>
@@ -1220,15 +990,13 @@
                   </section>
                </section>
                <section id="advisory">
-                  <h3>Advisory Techniques</h3>
-                  <p>Although not required for conformance, the following additional techniques should
-                     be considered in order to make content more accessible. Not all techniques can be
-                     used or would be effective in all situations.
+                  <h3>参考テクニック</h3>
+                  <p>適合のために必須ではないが、コンテンツをよりアクセシブルにするために、次の追加のテクニックを検討することが望ましい。ただし、すべての状況において、すべてのテクニックが使用可能、又は効果的であるとは限らない。
                   </p>
                   <section id="css-techniques-advisory">
                      
                      
-                     <h4>CSS Techniques (Advisory)</h4>
+                     <h4>CSS のテクニック (参考)</h4>
                      
                      
                      <ul>
@@ -1236,7 +1004,7 @@
                         
                         <li>
                            										           
-                           <a class="css" href="https://w3c.github.io/wcag/techniques/css/C18">C18: Using CSS margin and padding rules instead of spacer images for layout design</a>
+                           <a href="https://www.w3.org/WAI/WCAG22/Techniques/css/C18">C18: Using CSS margin and padding rules instead of spacer images for layout design</a>
                            									         
                            
                         </li>
@@ -1248,17 +1016,15 @@
                   </section>
                </section>
                <section id="failure">
-                  <h3>Failures</h3>
-                  <p>The following are common mistakes that are considered failures of this Success Criterion
-                     by the WCAG Working Group.
+                  <h3>失敗例</h3>
+                  <p>以下に挙げるものは、WCAG ワーキンググループが達成基準の失敗例とみなした、よくある間違いである。
                   </p>
                   <ul>
                      
                      
                      <li>
                         									         
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F3">F3: Failure of Success Criterion 1.1.1 due to using CSS to include images that convey
-                           important information</a>
+                        <a href="https://www.w3.org/WAI/WCAG22/Techniques/failures/F3">F3: Failure of Success Criterion 1.1.1 due to using CSS to include images that convey important information</a>
                         								       
                         
                      </li>
@@ -1266,8 +1032,7 @@
                      
                      <li>
                         									         
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F13">F13: Failure of Success Criterion 1.1.1 and 1.4.1 due to having a text alternative that
-                           does not include information that is conveyed by color differences in the image</a>
+                        <a href="https://www.w3.org/WAI/WCAG22/Techniques/failures/F13">F13: Failure of Success Criterion 1.1.1 and 1.4.1 due to having a text alternative that does not include information that is conveyed by color differences in the image</a>
                         								       
                         
                      </li>
@@ -1275,8 +1040,7 @@
                      
                      <li>
                         									         
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F20">F20: Failure of Success Criterion 1.1.1 and 4.1.2 due to not updating text alternatives
-                           when changes to non-text content occur</a>
+                        <a href="https://www.w3.org/WAI/WCAG22/Techniques/failures/F20">F20: Failure of Success Criterion 1.1.1 and 4.1.2 due to not updating text alternatives when changes to non-text content occur</a>
                         								       
                         
                      </li>
@@ -1284,8 +1048,7 @@
                      
                      <li>
                         									         
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F30">F30: Failure of Success Criterion 1.1.1 and 1.2.1 due to using text alternatives that are
-                           not alternatives (e.g., filenames or placeholder text)</a>
+                        <a href="https://www.w3.org/WAI/WCAG22/Techniques/failures/F30">F30: Failure of Success Criterion 1.1.1 and 1.2.1 due to using text alternatives that are not alternatives (e.g., filenames or placeholder text)</a>
                         								       
                         
                      </li>
@@ -1293,8 +1056,7 @@
                      
                      <li>
                         									         
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F38">F38: Failure of Success Criterion 1.1.1 due to not marking up decorative images in HTML
-                           in a way that allows assistive technology to ignore them</a>
+                        <a href="https://www.w3.org/WAI/WCAG22/Techniques/failures/F38">F38: Failure of Success Criterion 1.1.1 due to not marking up decorative images in HTML in a way that allows assistive technology to ignore them</a>
                         								       
                         
                      </li>
@@ -1302,9 +1064,7 @@
                      
                      <li>
                         									         
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F39">F39: Failure of Success Criterion 1.1.1 due to providing a text alternative that is not
-                           null (e.g., alt="spacer" or alt="image") for images that should be ignored by assistive
-                           technology</a>
+                        <a href="https://www.w3.org/WAI/WCAG22/Techniques/failures/F39">F39: Failure of Success Criterion 1.1.1 due to providing a text alternative that is not null (e.g., alt="spacer" or alt="image") for images that should be ignored by assistive technology</a>
                         								       
                         
                      </li>
@@ -1312,8 +1072,7 @@
                      
                      <li>
                         									         
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F65">F65: Failure of Success Criterion 1.1.1 due to omitting the alt attribute or text alternative
-                           on img elements, area elements, and input elements of type "image"</a>
+                        <a href="https://www.w3.org/WAI/WCAG22/Techniques/failures/F65">F65: Failure of Success Criterion 1.1.1 due to omitting the alt attribute or text alternative on img elements, area elements, and input elements of type "image"</a>
                         								       
                         
                      </li>
@@ -1321,9 +1080,7 @@
                      
                      <li>
                         									         
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F67">F67: Failure of Success Criterion 1.1.1 and 1.2.1 due to providing long descriptions for
-                           non-text content that does not serve the same purpose or does not present the same
-                           information</a>
+                        <a href="https://www.w3.org/WAI/WCAG22/Techniques/failures/F67">F67: Failure of Success Criterion 1.1.1 and 1.2.1 due to providing long descriptions for non-text content that does not serve the same purpose or does not present the same information</a>
                         								       
                         
                      </li>
@@ -1331,8 +1088,7 @@
                      
                      <li>
                         									         
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F71">F71: Failure of Success Criterion 1.1.1 due to using text look-alikes to represent text
-                           without providing a text alternative</a>
+                        <a href="https://www.w3.org/WAI/WCAG22/Techniques/failures/F71">F71: Failure of Success Criterion 1.1.1 due to using text look-alikes to represent text without providing a text alternative</a>
                         								       
                         
                      </li>
@@ -1340,8 +1096,7 @@
                      
                      <li>
                         									         
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F72">F72: Failure of Success Criterion 1.1.1 due to using ASCII art without providing a text
-                           alternative</a>
+                        <a href="https://www.w3.org/WAI/WCAG22/Techniques/failures/F72">F72: Failure of Success Criterion 1.1.1 due to using ASCII art without providing a text alternative</a>
                         								       
                         
                      </li>
@@ -1353,63 +1108,49 @@
             <section id="key-terms">
                <details>
                   <summary>
-                     <h2>Key Terms</h2>
+                     <h2>重要な用語</h2>
                   </summary>
-                  <dt id="dfn-ascii-art">ascii art</dt>
+                  <dt id="dfn-ascii-art">ASCII アート (ASCII art)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">picture created by a spatial arrangement of characters or glyphs (typically from the
-                           95 printable characters defined by ASCII)
+                        <p xmlns="http://www.w3.org/1999/xhtml">文字又はグリフの空間的配置によって作られた図画 (典型的には、ASCII で定義されている 95 の印字可能文字から作られる)。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-assistive-technology">assistive technology</dt>
+                  <dt id="dfn-assistive-technology">支援技術 (assistive technology)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">hardware and/or software that acts as a <a href="#dfn-user-agent">user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements
-                           of users with disabilities that go beyond those offered by mainstream user agents
+                        <p xmlns="http://www.w3.org/1999/xhtml">障害のある利用者の要件を満たすために、主流の<a href="#dfn-user-agent">ユーザエージェント</a>が提供する機能を超えた機能を提供するような、ユーザエージェントとして動作する、又は主流のユーザエージェントと共に動作するハードウェア及び／又はソフトウェア。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Functionality provided by assistive technology includes alternative presentations
-                              (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
-                              voice), additional navigation or orientation mechanisms, and content transformations
-                              (e.g., to make tables more accessible).
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術が提供する機能としては、代替の提示 (例: 合成音声や拡大表示したコンテンツ)、代替入力手法 (例: 音声認識)、付加的なナビゲーション又は位置確認のメカニズム、及びコンテンツ変換 (例: テーブルをよりアクセシブルにするもの) などを挙げることができる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Assistive technologies often communicate data and messages with mainstream user agents
-                              by using and monitoring APIs.
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術は、API を利用、監視することで、主流のユーザエージェントとデータやメッセージのやりとりをすることが多い。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The distinction between mainstream user agents and assistive technologies is not absolute.
-                              Many mainstream user agents provide some features to assist individuals with disabilities.
-                              The basic difference is that mainstream user agents target broad and diverse audiences
-                              that usually include people with and without disabilities. Assistive technologies
-                              target narrowly defined populations of users with specific disabilities. The assistance
-                              provided by an assistive technology is more specific and appropriate to the needs
-                              of its target users. The mainstream user agent may provide important functionality
-                              to assistive technologies like retrieving Web content from program objects or parsing
-                              markup into identifiable bundles.
+                           <p class="note-title marker">注記</p>
+                           <p>主流のユーザエージェントと支援技術との区別は、絶対的なものではない。多くの主流のユーザエージェントは、障害のある個人を支援する機能を提供している。基本的な差異は、主流のユーザエージェントが障害のある人もない人も含めて、広く多様な利用者を対象にしているのに対し、支援技術は、特定の障害のある利用者という、より狭く限られた人たちを対象にしているということである。支援技術により提供される支援は、対象とする利用者に特化した、よりニーズに適したものである。主流のユーザエージェントは、プログラムオブジェクトからのウェブコンテンツの抽出、マークアップの識別可能な構造への解釈といった、重要な機能を支援技術に対して提供する場合がある。
                               
                            </p>
                         </div>
@@ -1417,8 +1158,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Assistive technologies that are important in the context of this document include
-                              the following:
+                           <p>この文書の文脈において重要な支援技術としては、以下のものが挙げられる:
                               
                            </p>
                            
@@ -1426,38 +1166,30 @@
                            <ul>
                               
                               
-                              <li>screen magnifiers, and other visual reading assistants, which are used by people with
-                                 visual, perceptual and physical print disabilities to change text font, size, spacing,
-                                 color, synchronization with speech, etc. in order to improve the visual readability
-                                 of rendered text and images;
+                              <li>画面拡大ソフト及びその他の視覚的な表示に関する支援技術。視覚障害、知覚障害、及び読書困難などの障害のある人が、レンダリング後のテキスト及び画像の視覚的な読みやすさを改善するために、テキストのフォント、サイズ、間隔、色、音声との同期などを変更するのに使用している。
                                  
                               </li>
                               
                               
-                              <li>screen readers, which are used by people who are blind to read textual information
-                                 through synthesized speech or braille;
+                              <li>スクリーンリーダー。全盲の人がテキスト情報を合成音声あるいは点字で読み取るために使用している。
                                  
                               </li>
                               
                               
-                              <li>text-to-speech software, which is used by some people with cognitive, language, and
-                                 learning disabilities to convert text into synthetic speech;
+                              <li>音声変換ソフトウェア。認知障害、言語障害、及び学習障害のある人が、テキストを合成音声に変換するために使用している。
                                  
                               </li>
                               
                               
-                              <li>speech recognition software, which may be used by people who have some physical disabilities;</li>
+                              <li>音声認識ソフトウェア。何らかの身体障害のある利用者が使用することがある。</li>
                               
                               
-                              <li>alternative keyboards, which are used by people with certain physical disabilities
-                                 to simulate the keyboard (including alternate keyboards that use head pointers, single
-                                 switches, sip/puff and other special input devices.);
+                              <li>代替キーボード。特定の身体障害のある人がキーボード操作をシミュレートするのに使用している (ヘッドポインタ、シングルスイッチ、呼気・吸気スイッチ、及びその他の特別な入力デバイスを使った代替キーボードを含む)。
                                  
                               </li>
                               
                               
-                              <li>alternative pointing devices, which are used by people with certain physical disabilities
-                                 to simulate mouse pointing and button activations.
+                              <li>代替ポインティングデバイス。特定の身体障害のある人がマウスポインタとボタンの動きをシミュレートするのに使用している。
                                  
                               </li>
                               
@@ -1468,64 +1200,27 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-captcha">captcha</dt>
+                  <dt id="dfn-captcha">CAPTCHA</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">initialism for "Completely Automated Public Turing test to tell Computers and Humans
-                           Apart"
+                        <p xmlns="http://www.w3.org/1999/xhtml">コンピュータと人間とを判別する完全自動化されたチューリングテスト (Completely Automated Public Turing test to tell Computers and Humans Apart) の頭文字語。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>CAPTCHA tests often involve asking the user to type in text that is displayed in an
-                              obscured image or audio file.
+                           <p class="note-title marker">注記</p>
+                           <p>CAPTCHA のテストは多くの場合、利用者に対し、不明瞭な画像又は音声ファイルによって提示されたテキストを入力するよう求める。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>A Turing test is any system of tests designed to differentiate a human from a computer.
-                              It is named after famed computer scientist Alan Turing. The term was coined by researchers
-                              at Carnegie Mellon University.
-                              
-                           </p>
-                        </div>
-                        
-                        
-                     </definition>
-                  </dd>
-                  <dt id="dfn-content">content</dt>
-                  <dd>
-                     <definition xmlns="">
-                        
-                        
-                        <p xmlns="http://www.w3.org/1999/xhtml">information and sensory experience to be communicated to the user by means of a <a href="#dfn-user-agent">user agent</a>, including code or markup that defines the content's <a href="#dfn-structure">structure</a>, <a href="#dfn-presentation">presentation</a>, and interactions
-                           
-                        </p>
-                        
-                        
-                     </definition>
-                  </dd>
-                  <dt id="dfn-human-language">human language</dt>
-                  <dd>
-                     <definition xmlns="">
-                        
-                        
-                        <p xmlns="http://www.w3.org/1999/xhtml">language that is spoken, written or signed (through visual or tactile means) to communicate
-                           with humans
-                           
-                        </p>
-                        
-                        
-                        <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>See also <a href="#dfn-sign-language">sign language</a>.
+                           <p class="note-title marker">注記</p>
+                           <p>チューリングテストは、人間とコンピュータを区別することを目的としたテストの仕組みである。その名は、高名なコンピュータ科学者のアラン チューリングにちなんでいる。この用語は、カーネギーメロン大学の研究者たちによる造語である。
                               
                            </p>
                         </div>
@@ -1533,73 +1228,102 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-label">label</dt>
+                  <dt id="dfn-content">コンテンツ (content)</dt>
+                  <dd>
+                     <definition xmlns="">
+                        
+                        
+                        <p xmlns="http://www.w3.org/1999/xhtml">コンテンツの<a href="#dfn-user-agent">構造</a>、<a href="#dfn-structure">提示</a>、及びインタラクションを定義するコード又はマークアップも含めて、<a href="#dfn-presentation">ユーザエージェント</a>によって利用者に伝達される情報及び感覚的な体験。
+                           
+                        </p>
+                        
+                        
+                     </definition>
+                  </dd>
+                  <dt id="dfn-human-language">自然言語 (human language)</dt>
+                  <dd>
+                     <definition xmlns="">
+                        
+                        
+                        <p xmlns="http://www.w3.org/1999/xhtml">人間とコミュニケーションをとるために話される、書かれる、又は (視覚的もしくは触覚的な手段で) 手話にされる言語。
+                           
+                        </p>
+                        
+                        
+                        <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                           <p class="note-title marker">注記</p>
+                           <p><a href="#dfn-sign-language">手話</a>も参照。
+                              
+                           </p>
+                        </div>
+                        
+                        
+                     </definition>
+                  </dd>
+                  <dt id="dfn-label">ラベル (label)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
                         <p xmlns="http://www.w3.org/1999/xhtml">
-                           <a href="#dfn-text">text</a> or other component with a <a href="#dfn-text-alternative">text alternative</a> that is presented to a user to identify a component within Web <a href="#dfn-content">content</a>
+                           <a href="#dfn-text">テキスト</a>、又は<a href="#dfn-text-alternative">テキストによる代替</a>を伴うコンポーネントで、ウェブ<a href="#dfn-content">コンテンツ</a>内のコンポーネントを識別するために利用者に提示されているもの。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>A label is presented to all users whereas the <a href="#dfn-name">name</a> may be hidden and only exposed by assistive technology. In many (but not all) cases
-                              the name and the label are the same.
+                           <p class="note-title marker">注記</p>
+                           <p><a href="#dfn-name">名前 (name)</a> は隠されていて、支援技術に対してだけ公開される場合がある一方で、ラベルはすべての利用者に提示される。多くの場合 (すべてではないが)、名前 (name) とラベルは同じである。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The term label is not limited to the label element in HTML.</p>
+                           <p class="note-title marker">注記</p>
+                           <p>ラベルという用語は、HTML における label 要素だけに限定されない。</p>
                         </div>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-name">name</dt>
+                  <dt id="dfn-name">名前 (name)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">text by which software can identify a component within Web content to the user</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ソフトウェアが、ウェブコンテンツのコンポーネントを利用者に識別させることができるテキスト。</p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The name may be hidden and only exposed by assistive technology, whereas a <a href="#dfn-label">label</a> is presented to all users. In many (but not all) cases, the label and the name are
-                              the same.
+                           <p class="note-title marker">注記</p>
+                           <p><a href="#dfn-label">ラベル</a>はすべての利用者に提示される一方で、名前 (name) は隠されていて、支援技術に対してだけ明らかにされる場合もある。多くの場合 (すべてではないが)、ラベルと名前 (name) は同じである。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>This is unrelated to the name attribute in HTML.</p>
+                           <p class="note-title marker">注記</p>
+                           <p>これは、HTML の name 属性とは関係がない。</p>
                         </div>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-non-text-content">non-text content</dt>
+                  <dt id="dfn-non-text-content">非テキストコンテンツ (non-text content)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">any content that is not a sequence of characters that can be <a href="#dfn-programmatically-determined">programmatically determined</a> or where the sequence is not expressing something in <a href="#dfn-human-language">human language</a>
+                        <p xmlns="http://www.w3.org/1999/xhtml"><a href="#dfn-programmatically-determined">プログラムによる解釈</a>が可能な文字の並びではないコンテンツ、又は文字の並びが<a href="#dfn-human-language">自然言語</a>においても何をも表現していないコンテンツ。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>This includes <a href="#dfn-ascii-art">ASCII Art</a> (which is a pattern of characters), emoticons, leetspeak (which uses character substitution),
-                              and images representing text
+                           <p class="note-title marker">注記</p>
+                           <p>これには、 (文字による図画である) <a href="#dfn-ascii-art">ASCII アート</a>、顔文字、 (文字を置き換える) リートスピーク、文字を表現している画像が含まれる。
                               
                            </p>
                         </div>
@@ -1607,33 +1331,31 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-presentation">presentation</dt>
+                  <dt id="dfn-presentation">提示 (presentation)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">rendering of the <a href="#dfn-content">content</a> in a form to be perceived by users
+                        <p xmlns="http://www.w3.org/1999/xhtml">利用者が知覚できる形式で<a href="#dfn-content">コンテンツ</a>をレンダリングすること。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-programmatically-determined">programmatically determined</dt>
+                  <dt id="dfn-programmatically-determined">プログラムによる解釈 (programmatically determined)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">determined by software from author-supplied data provided in a way that different
-                           <a href="#dfn-user-agent">user agents</a>, including <a href="#dfn-assistive-technology">assistive technologies</a>, can extract and present this information to users in different modalities
+                        <p xmlns="http://www.w3.org/1999/xhtml"><a href="#dfn-user-agent">支援技術</a>を含む様々な<a href="#dfn-assistive-technology">ユーザエージェント</a>が抽出でき、利用者に様々な感覚モダリティで提示できるような形のデータがコンテンツ制作者によって提供されたとき、そのデータがソフトウェアによって解釈されること。
                            
                         </p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Determined in a markup language from elements and attributes that are accessed directly
-                              by commonly available assistive technology.
+                           <p>マークアップ言語で、一般に入手可能な支援技術が直接アクセスできる要素と属性から解釈される。
                               
                            </p>
                            
@@ -1642,9 +1364,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Determined from technology-specific data structures in a non-markup language and exposed
-                              to assistive technology via an accessibility API that is supported by commonly available
-                              assistive technology.
+                           <p>非マークアップ言語の技術特有のデータ構造から解釈され、一般に入手可能な支援技術がサポートするアクセシビリティ API を通じて支援技術に提供される。
                               
                            </p>
                            
@@ -1653,18 +1373,17 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-pure-decoration">pure decoration</dt>
+                  <dt id="dfn-pure-decoration">純粋な装飾 (pure decoration)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">serving only an aesthetic purpose, providing no information, and having no functionality</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">見栄えのためだけのもので、情報は提供せず、機能性も備えていないもの。</p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Text is only purely decorative if the words can be rearranged or substituted without
-                              changing their purpose.
+                           <p class="note-title marker">注記</p>
+                           <p>テキストが純粋な装飾といえるのは、単語を並べ替え、又は置き換えても意図が変わらないときだけである。
                               
                            </p>
                         </div>
@@ -1672,47 +1391,45 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>The cover page of a dictionary has random words in very light text in the background.</p>
+                           <p>背景にとても淡い文字で単語がランダムに並んでいる辞書の表紙。</p>
                            
                         </aside>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-sign-language">sign language</dt>
+                  <dt id="dfn-sign-language">手話 (sign language)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">a language using combinations of movements of the hands and arms, facial expressions,
-                           or body positions to convey meaning
+                        <p xmlns="http://www.w3.org/1999/xhtml">意味を伝えるために、手と腕の動き、顔の表情又は身体の姿勢の組み合わせを用いる言語。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-specific-sensory-experience">specific sensory experience</dt>
+                  <dt id="dfn-specific-sensory-experience">特定の感覚的な体験 (specific sensory experience)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">a sensory experience that is not purely decorative and does not primarily convey important
-                           information or perform a function
+                        <p xmlns="http://www.w3.org/1999/xhtml">純粋な装飾ではなく、かつ、重要な情報を伝える、又は機能を果たすことを主としない、感覚的な体験。
                            
                         </p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Examples include a performance of a flute solo, works of visual art etc.</p>
+                           <p>フルートのソロ演奏、視覚芸術の作品などが例として挙げられる。</p>
                            
                         </aside>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-structure">structure</dt>
+                  <dt id="dfn-structure">構造 (structure)</dt>
                   <dd>
                      <definition xmlns="">
                         
@@ -1720,12 +1437,12 @@
                         <ol xmlns="http://www.w3.org/1999/xhtml">
                            
                            
-                           <li>The way the parts of a <a href="#dfn-web-page">Web page</a> are organized in relation to each other; and
+                           <li><a href="#dfn-web-page">ウェブページ</a>の各部を相互の関係性によりまとめる方法論。及び、
                               
                            </li>
                            
                            
-                           <li>The way a collection of <a href="#dfn-web-page">Web pages</a> is organized
+                           <li>一連の<a href="#dfn-web-page">ウェブページ</a>をまとめる方法論。
                               
                            </li>
                            
@@ -1735,35 +1452,32 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-text">text</dt>
+                  <dt id="dfn-text">テキスト (text)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">sequence of characters that can be <a href="#dfn-programmatically-determined">programmatically determined</a>, where the sequence is expressing something in <a href="#dfn-human-language">human language</a>
+                        <p xmlns="http://www.w3.org/1999/xhtml"><a href="#dfn-programmatically-determined">プログラムによる解釈</a>が可能な文字の並びで、<a href="#dfn-human-language">自然言語</a>で何かを表現しているもの。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-text-alternative">text alternative</dt>
+                  <dt id="dfn-text-alternative">テキストによる代替 (text alternative)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
                         <p xmlns="http://www.w3.org/1999/xhtml">
-                           <a href="#dfn-text">Text</a> that is programmatically associated with <a href="#dfn-non-text-content">non-text content</a> or referred to from text that is programmatically associated with non-text content.
-                           Programmatically associated text is text whose location can be programmatically determined
-                           from the non-text content.
+                           <a href="#dfn-text">非テキストコンテンツ</a>とプログラムで関連付けられる<a href="#dfn-non-text-content">テキスト</a>、又は非テキストコンテンツとプログラムで関連付けられるテキストから参照されるテキスト。プログラムで関連付けられたテキストとは、その場所を、非テキストコンテンツからプログラムによる解釈が可能なテキストである。
                            
                         </p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>An image of a chart is described in text in the paragraph after the chart. The short
-                              text alternative for the chart indicates that a description follows.
+                           <p>チャートの画像があり、その直後の段落にテキストによる説明がある。チャートに対する短いテキストによる代替で後に説明があることを示している。
                               
                            </p>
                            
@@ -1771,8 +1485,8 @@
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Refer to <a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance#text-alternatives">Understanding Text Alternatives</a> for more information.
+                           <p class="note-title marker">注記</p>
+                           <p>より詳細な情報は、<a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance#text-alternatives">テキストによる代替を理解する</a> を参照。
                               
                            </p>
                         </div>
@@ -1780,17 +1494,17 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-user-agent">user agent</dt>
+                  <dt id="dfn-user-agent">ユーザエージェント (user agent)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">any software that retrieves and presents Web content for users</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ウェブコンテンツを取得して利用者に提示するあらゆるソフトウェア。</p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technology">assistive technologies</a> — that help in retrieving, rendering, and interacting with Web content.
+                           <p>ウェブコンテンツの取得、レンダリング及びインタラクションを支援する、ウェブブラウザ、メディアプレーヤ、プラグイン、及びその他のプログラム (<a href="#dfn-assistive-technology">支援技術</a>も含む)。
                               
                            </p>
                            
@@ -1799,30 +1513,27 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-web-page">web page</dt>
+                  <dt id="dfn-web-page">ウェブページ (web page)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">a non-embedded resource obtained from a single URI using HTTP plus any other resources
-                           that are used in the rendering or intended to be rendered together with it by a <a href="#dfn-user-agent">user agent</a>
+                        <p xmlns="http://www.w3.org/1999/xhtml">単一の URI から HTTP で得た埋め込まれていないリソースに加え、レンダリングに使われる、又は<a href="#dfn-user-agent">ユーザエージェント</a>がこのリソースと一緒にレンダリングすることを意図しているその他のあらゆるリソースを合わせたもの。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Although any "other resources" would be rendered together with the primary resource,
-                              they would not necessarily be rendered simultaneously with each other.
+                           <p class="note-title marker">注記</p>
+                           <p>どのような「その他のリソース」も主たるリソースと一緒にレンダリングされるであろうが、これらのリソースが同時にレンダリングされるとは限らない。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>For the purposes of conformance with these guidelines, a resource must be "non-embedded"
-                              within the scope of conformance to be considered a Web page.
+                           <p class="note-title marker">注記</p>
+                           <p>このガイドラインの適合範囲に含まれる対象となるウェブページとみなされるためには、リソースが「埋め込まれていない」リソースでなければならない。
                               
                            </p>
                         </div>
@@ -1830,17 +1541,14 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A Web resource including all embedded images and media.</p>
+                           <p>単体のウェブリソースであり、埋め込まれている画像及びメディアのすべてを含んだもの。</p>
                            
                         </aside>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A Web mail program built using Asynchronous JavaScript and XML (AJAX). The program
-                              lives entirely at http://example.com/mail, but includes an inbox, a contacts area
-                              and a calendar. Links or buttons are provided that cause the inbox, contacts, or calendar
-                              to display, but do not change the URI of the page as a whole.
+                           <p>Asynchronous JavaScript and XML (AJAX) を用いたウェブメールのプログラム。そのプログラム全体は http://example.com/mail に存在しているが、受信トレイ、連絡先、カレンダーがある。受信トレイ、連絡先、又はカレンダーを表示するリンク又はボタンが提供されているが、全体としてページの URI は変更されない。
                               
                            </p>
                            
@@ -1849,8 +1557,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A customizable portal site, where users can choose content to display from a set of
-                              different content modules.
+                           <p>カスタマイズ可能なポータルサイトで、利用者が様々なコンテンツモジュールのセットから表示させるコンテンツを選択できるようなもの。
                               
                            </p>
                            
@@ -1859,12 +1566,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>When you enter "http://shopping.example.com/" in your browser, you enter a movie-like
-                              interactive shopping environment where you visually move around in a store dragging
-                              products off of the shelves around you and into a visual shopping cart in front of
-                              you. Clicking on a product causes it to be demonstrated with a specification sheet
-                              floating alongside. This might be a single-page Web site or just one page within a
-                              Web site.
+                           <p>ブラウザで "http://shopping.example.com/" へ行くと、映画のようなインタラクティブなショッピング環境になる。そこでは、視覚的に店内を移動して、店内の棚から商品をドラッグして、目の前にある視覚的な買物カゴに商品を入れる。商品をクリックすると、同時に仕様書が浮き上がるように表示される。これは 1 ページだけのウェブサイトかもしれないし、ウェブサイトの中のほんの 1 ページなのかもしれない。
                               
                            </p>
                            
@@ -1876,21 +1578,18 @@
                </details>
             </section>
             <section id="test-rules">
-               <h2>Test Rules</h2>
-               <p>The following are Test Rules for certain aspects of this Success Criterion. It is
-                  not necessary to use these particular Test Rules to check for conformance with WCAG,
-                  but they are defined and approved test methods. For information on using Test Rules,
-                  see <a href="understanding-act-rules.html">Understanding Test Rules for WCAG Success Criteria</a>.
+               <h2>テストルール</h2>
+               <p>以下は、この達成基準の特定の側面に関するテストルールである。この特定のルールを使用して WCAG に適合しているかどうかを確認する必要はないが、これらのルールは定義され、承認されたテスト方法である。テストルールの使用については、<a href="understanding-act-rules.html">WCAG 達成基準のテストルールを理解する</a>を参照のこと。
                </p>
                <ul>
-                  <li><a href="/WAI/standards-guidelines/act/rules/qt1vmo/">Image accessible name is descriptive</a></li>
-                  <li><a href="/WAI/standards-guidelines/act/rules/59796f/">Image button has non-empty accessible name</a></li>
-                  <li><a href="/WAI/standards-guidelines/act/rules/23a2a8/">Image has non-empty accessible name</a></li>
-                  <li><a href="/WAI/standards-guidelines/act/rules/c487ae/">Link has non-empty accessible name</a></li>
-                  <li><a href="/WAI/standards-guidelines/act/rules/8fc3b6/">Object element rendering non-text content has non-empty accessible name</a></li>
-                  <li><a href="/WAI/standards-guidelines/act/rules/7d6734/">SVG element with explicit role has non-empty accessible name</a></li>
-                  <li><a href="/WAI/standards-guidelines/act/rules/9eb3f6/proposed/">Image filename is accessible name for image</a></li>
-                  <li><a href="/WAI/standards-guidelines/act/rules/e88epe/proposed/">Image not in the accessibility tree is decorative</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/qt1vmo/">Image accessible name is descriptive</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/59796f/">Image button has non-empty accessible name</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/23a2a8/">Image has non-empty accessible name</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/c487ae/">Link has non-empty accessible name</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/8fc3b6/">Object element rendering non-text content has non-empty accessible name</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/7d6734/">SVG element with explicit role has non-empty accessible name</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/9eb3f6/proposed/">Image filename is accessible name for image</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/e88epe/proposed/">Image not in the accessibility tree is decorative</a></li>
                </ul>
             </section><a class="button button-backtotop" href="#top"><span>
                   <svg focusable="false" aria-hidden="true" class="icon-arrow-up " viewBox="0 0 26 28">
@@ -1902,13 +1601,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -1923,11 +1621,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://www.w3.org/WAI/WCAG22/Understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -1949,13 +1649,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -1964,7 +1664,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -1985,8 +1685,10 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+    <!--noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-      </noscript>
+      </noscript-->
    </body>
 </html>
