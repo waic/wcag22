@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  1.3.1: Info and Relationships | WAI | W3C</title>
+      <title>解説書 達成基準 1.3.1: 情報及び関係性 | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
-      <!-- 日本語訳されるまでの一時的なスクリプト -->
-      <script src="untranslated-note.js"></script>
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://waic.jp/translations/WCAG22/Understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -37,14 +35,14 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"><a href="adaptable">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Adaptable</a></li>
+                        </svg>ガイドライン: 適応可能</a></li>
                   <li class="nav__item"></li>
-                  <li class="nav__item"><a href="meaningful-sequence">Next SC: Meaningful Sequence
+                  <li class="nav__item"><a href="meaningful-sequence">次: 意味のあるシーケンス
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -55,157 +53,104 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#resources">Related Resources</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
-                     <li><a href="#key-terms">Key Terms</a></li>
-                     <li><a href="#test-rules">Test Rules</a></li>
+                     <li><a href="#brief">要約</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#benefits">利点</a></li>
+                     <li><a href="#examples">事例</a></li>
+                     <li><a href="#resources">関連リソース</a></li>
+                     <li><a href="#techniques">テクニック</a></li>
+                     <li><a href="#key-terms">重要な用語</a></li>
+                     <li><a href="#test-rules">テストルール</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				SC 1.3.1:</span>Info and Relationships (Level A)
+            <h1><span class="standalone-resource__type-of-guidance">解説書 
+                  				達成基準 1.3.1:</span>情報及び関係性 (レベル A)
+
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>Information, <a href="#dfn-structure">structure</a>, and <a href="#dfn-relationships">relationships</a> conveyed through <a href="#dfn-presentation">presentation</a> can be <a href="#dfn-programmatically-determined">programmatically determined</a> or are available in text.
+                  <p>何らかの形で<a href="#dfn-presentation">提示</a>されている情報、<a href="#dfn-structure">構造</a>、及び<a href="#dfn-relationships">関係性</a>は、<a href="#dfn-programmatically-determined">プログラムによる解釈</a>が可能である、又はテキストで提供されている。
                      
                   </p>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   
                   
-                  <dt>Goal</dt>
-                  <dd>Information about content structure is available to more people.</dd>
+                  <dt>目標</dt>
+                  <dd>コンテンツ構造に関する情報が、より多くの人々に利用できる。</dd>
                   
-                  <dt>What to do</dt>
-                  <dd>Use code to reinforce relationships and information conveyed through presentation.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>提示によって伝えられている関係性と情報を補強するために、コードを用いる。</dd>
                   
-                  <dt>Why it's important</dt>
-                  <dd>People can adapt the presentation to suit their needs while preserving the original
-                     meaning.
+                  <dt>なぜそれが重要か</dt>
+                  <dd>人々は、元の意味を維持しながら、提示を自分のニーズに合うように調整できる。
                   </dd>
                   
                   		
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The intent of this Success Criterion is to ensure that information and relationships
-                  that are implied by visual or auditory formatting are preserved when the presentation
-                  format changes. For example, the presentation format changes when the content is read
-                  by a screen reader or when a user style sheet is substituted for the style sheet provided
-                  by the author.
+               <h2>意図</h2>
+               <p>この達成基準の意図は、視覚的又は聴覚的な体裁によって暗に伝えられている情報及び関係性を、その提示形式が変わったときにも保つようにすることである。例えば、コンテンツがスクリーンリーダーによって読み上げられたり、コンテンツ制作者が提供するスタイルシートがユーザスタイルシートに置き換えられたりしたときには、提示形式が変わる。
+               </p>
+               <p>目の見える利用者は、様々な視覚的な手がかりによって構造及び関係性を知覚する。例えば、見出しは多くの場合、改行で段落から切り離された、より大きな太字のフォントである。リスト項目は、中黒が先行しており、おそらく字下げがある。段落は、改行で分離される。共通の特性を持つ項目は、表の行と列で整理される。フォームのフィールドは、テキストラベルを共有するグループとして配置されることがある。異なる背景色を用いて、複数の項目が互いに関係のあることを示していることもある。特別な状態の語句は、フォントファミリーを変える及び／又は、太字、イタリック、下線付きにすることによって示されている。共通の特性を共有する項目は、同じ行又は列を共有するセルの関係性並びに、各セルと行及び／又は列見出しとの関係性を理解するのが不可欠な表に整理されている。などである。これらの構造及び関係性がプログラムによる解釈が可能する、又はテキストで入手可能にすることで、理解に重要な情報がすべての人に知覚されることを保証する。
+                  
+                  
+               </p>
+               <p>同様に、聴覚的な手がかりを用いることもある。例えば、チャイム音が新しい節の開始位置を示している。声のピッチや発話のスピードを変えて、重要な情報を強調したり、引用されたテキストを示したりしている、など。
                   
                </p>
                <p>
-                  						Sighted users perceive structure and relationships through various visual cues
-                  — headings are often in a larger, bold font separated from paragraphs by blank lines;
-                  list items are preceded by a bullet and perhaps indented; paragraphs are separated
-                  by a blank line; items that share a common characteristic are organized into tabular
-                  rows and columns; form fields may be positioned as groups that share text labels;
-                  a different background color may be used to indicate that several items are related
-                  to each other; words that have special status are indicated by changing the font family
-                  and /or bolding, italicizing, or underlining them; items that share a common characteristic
-                  are organized into a table where the relationship of cells sharing the same row or
-                  column and the relationship of each cell to its row and/or column header are necessary
-                  for understanding; and so on. Having these structures and these relationships programmatically
-                  determined or available in text ensures that information important for comprehension
-                  will be perceivable to all.
+                  そういった関係性が、ある利用者にとって知覚可能であれば、その関係性をすべての利用者が知覚できるようにすることが可能である。情報をすべての利用者にきちんと提供できたかどうかを判断する一つの方法は、その情報に様々な感覚モダリティで連続してアクセスしてみることである。
                   
                   
                </p>
-               <p>Auditory cues may be used as well. For example, a chime might indicate the beginning
-                  of a new section; a change in voice pitch or speech rate may be used to emphasize
-                  important information or to indicate quoted text; etc.
+               <p>用語集にある用語へのリンクを a 要素 (又は、使用している技術特有のリンク要素) を用いて実装して、異なるフォントで示していれば、スクリーンリーダーの利用者は、用語集にある用語のところで、たとえフォントの違いに関する情報は受け取れなかったとしても、それがリンクであることが音声読み上げを聞けば分かるだろう。あるオンラインカタログの価格表示では赤い大きなフォントを使用している。スクリーンリーダーの利用者は赤色の情報は得られないが、価格の前に通貨表示を記載することで情報を得ることができる。
                   
                </p>
-               <p>
-                  When such relationships are perceivable to one set of users, those relationships can
-                  be made to be perceivable to all. One method of determining whether or not information
-                  has been properly provided to all users is to access the information serially in different
-                  modalities.
-                  
-                  
+               <p>ウェブコンテンツ技術の中には、ある種の情報及び関係性をプログラムによる解釈をするための手段を提供していないものがある。そういった場合には、その情報及び関係性を説明するテキストを提供すべきである。例えば、「アスタリスク (*) のある項目はすべて必須項目です。」のように説明テキストを提供する。テキストによる説明は、例えば、その親要素又は隣接する要素内などのように、(そのページを線形化したときに) テキストが説明している情報の近くに置くべきである。
                </p>
-               <p>If links to glossary items are implemented using anchor elements (or the proper link
-                  element for the technology in use) and identified using a different font face, a screen
-                  reader user will hear that the item is a link when the glossary term is encountered
-                  even though they may not receive information about the change in font face. An on-line
-                  catalog may indicate prices using a larger font colored red. A screen reader or person
-                  who cannot perceive red, still has the information about the price as long as it is
-                  preceded by the currency symbol.
-                  
-               </p>
-               <p>Some technologies do not provide a means to programmatically determine some types
-                  of information and relationships. In that case then there should be a text description
-                  of the information and relationships. For instance, "all required fields are marked
-                  with an asterisk (*)". The text description should be near the information it is describing
-                  (when the page is linearized), such as in the parent element or in the adjacent element.
-                  
-               </p>
-               <p>There may also be cases where it may be a judgment call as to whether the relationships
-                  should be programmatically determined or be presented in text. However, when technologies
-                  support programmatic relationships, it is strongly encouraged that information and
-                  relationships be programmatically determined rather than described in text.
+               <p>場合によっては、関係性をプログラムによる解釈が可能にする又はテキストで提供することが望ましいかどうか、各自の判断に委ねるしかないこともありうる。しかし、技術がプログラムに基づいた関係性をサポートする場合、情報及び関係性をテキストで提供するよりも、プログラムによる解釈することを強く推奨する。
                   
                </p>
                <div class="note">
-                  <p class="note-title marker">Note</p>
+                  <p class="note-title marker">注記</p>
                   <div>
                      
-                     
-                     <p>It is not required that color values be programmatically determined. The information
-                        conveyed by color cannot be adequately presented simply by exposing the value. Therefore,
-                        
-                        <a href="use-of-color" class="guideline">Success Criterion 1.4.1
-                           
-                           </a> addresses the specific case of color, rather than Success Criterion 1.3.1.
-                        
-                        
-                     </p>
+                     <p>色の値がプログラムによる解釈が可能であることは要求していない。色によって伝えられる情報は、その値を明らかにするだけでは、十分に提示することができないからである。そのため、色に特有の問題については、達成基準 1.3.1 ではなく、<a href="use-of-color.html" class="guideline">達成基準 1.4.1</a> で対処している。</p>
                      
                      
                   </div>
                </div>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>利点</h2>
                <ul>
                   
                   
-                  <li>This Success Criterion helps people with different disabilities by allowing user agents
-                     to adapt content according to the needs of individual users.
-                     
+                  <li>この達成基準は、ユーザエージェントが個々の利用者のニーズに応じてコンテンツに適応できるようにすることによって、様々な障害のある利用者の役に立つ。
                      
                   </li>
                   
                   
-                  <li>Users who are blind (using a screen reader) benefit when information conveyed through
-                     color is also available in text (including text alternatives for images that use color
-                     to convey information).
+                  <li>全盲の (スクリーンリーダーを使用している) 利用者が、色を用いて伝えられている情報をテキストでも得られるようになる (色を用いて情報を伝えている画像のテキストによる代替を含む)。
                      
                   </li>
                   
                   
-                  <li>Users who are deaf-blind using braille (text) refreshable displays may be unable to
-                     access color-dependent information.
+                  <li>点字ピンディスプレイを使用している盲ろうの利用者は、色に依存した情報を利用できないことがある。
                      
                   </li>
                   
@@ -213,54 +158,39 @@
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>事例</h2>
                <dl>
                   
-                  <dt>A form with required fields</dt>
+                  <dt>必須項目のある入力フォーム</dt>
                   
-                  <dd>A form contains several required fields. The labels for the required fields are displayed
-                     in red. In addition, at the end of each label is an asterisk character, *. The instructions
-                     for completing the form indicate that "all required fields are displayed in red and
-                     marked with an asterisk *", followed by an example.
+                  <dd>入力フォームに、いくつかの必須項目がある。必須項目のラベルを、赤で表示している。さらに、各ラベルの最後には、アスタリスクの記号文字 (*) が付いている。フォームへの入力に関する説明文には、「すべての必須項目は赤字で示してあり、アスタリスク (*) が付いています。」と書かれていて、例が後に続いている。
                   </dd>
                   
-                  <dt>A form that uses color and text to indicate required fields</dt>
+                  <dt>必須項目を示すために色とテキストを用いている入力フォーム</dt>
                   
-                  <dd>A form contains both required and optional fields. Instructions at the top of the
-                     form explain that required fields are labeled with red text and also with an icon
-                     whose text alternative says, "Required." Both the red text and the icon are programmatically
-                     associated with the appropriate form fields so that assistive technology users can
-                     determine the required fields.
+                  <dd>ある入力フォームには、必須項目と任意項目の両方がある。入力フォームの先頭にある説明文には、必須項目のラベルが赤字になっていて、「必須」というテキストによる代替のあるアイコンも付いている。赤字とアイコンの両方が、フォームのテキストフィールドとプログラム的に関連付けられているので、支援技術の利用者は必須項目を判断できる。
                   </dd>
                   
-                  <dt>A bus schedule table where the headers for each cell can be programmatically determined</dt>
+                  <dt>各セルの見出しをプログラムによる解釈が可能なバスの時刻表テーブル</dt>
                   
-                  <dd>A bus schedule consists of a table with the bus stops listed vertically in the first
-                     column and the different buses listed horizontally across the first row. Each cell
-                     contains the time when the bus will be at that bus stop. The bus stop and bus cells
-                     are identified as headers for their corresponding row or column so that assistive
-                     technology can programmatically determine which bus and which bus stop are associated
-                     with the time in each cell.
+                  <dd>バスの運行スケジュールが、1 列目には縦にバス停の名前が並び、1 行目には横に異なるバスが並んでいる表で示されている。各セルには、バスがそのバス停に到着する時刻が書かれている。支援技術が、各セルにある時刻がどのバスとどのバス停とに関連付けられているのかをプログラムによる解釈が可能であるように、各バス停と各バスのセルは、それぞれの対応する行又は列の見出しとして示されている。
                   </dd>
                   
-                  <dt>A form where the labels for the checkboxes can be programmatically determined</dt>
+                  <dt>チェックボックスのラベルをプログラムによる解釈が可能な入力フォーム</dt>
                   
-                  <dd>In a form, the labels for each checkbox can be programmatically determined by assistive
-                     technology.
+                  <dd>あるフォームでは、各チェックボックスに対するラベルが、支援技術によってプログラムによる解釈が可能になっている。
                   </dd>
                   
-                  <dt>A text document</dt>
+                  <dt>テキスト文書</dt>
                   
-                  <dd>A simple text document is formatted with double blank lines before titles, asterisks
-                     to indicate list items and other standard formatting conventions so that its structure
-                     can be programmatically determined.
+                  <dd>構造をプログラムによる解釈が可能であるように、シンプルなテキスト文書は、タイトルの前に 2 行の空行があり、アスタリスクを使ってリスト項目を示し、その他の標準的な書式の決まりに従ってフォーマットされている。
                   </dd>
                   
                </dl>
             </section>
             <section id="resources">
-               <h2>Related Resources</h2>
-               <p>Resources are for information purposes only, no endorsement implied.</p>
+               <h2>関連リソース</h2>
+               <p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p>
                <ul>
                   
                   
@@ -283,589 +213,280 @@
                </ul>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
-                  <p>Select the situation below that matches your content. Each situation includes techniques
-                     or combinations of techniques that are known and documented to be sufficient for that
-                     situation. 
+                  <h3>十分なテクニック</h3>
+                  <p>そのコンテンツに合致する状況を以下から選択すること。それぞれの状況には、WCAG ワーキンググループがその状況において十分であると判断する、番号付のテクニック (又は、テクニックの組み合わせ) がある。
                   </p>
                   <section class="situation" id="info-and-relationships-situation-0">
                      
                      
-                     <h4>Situation A: The technology provides semantic structure to make information and relationships
-                        conveyed through presentation programmatically determinable:
+                     <h4>状況 A: ウェブコンテンツ技術が、表現によって伝えている情報及び関係性をプログラムによる解釈が可能になるセマンテックな構造を提供している場合:
                         
                      </h4>
-                     
-                     
                      <ul>
-                        
-                        
-                        <li>
-                           
-                           <a class="aria" href="https://w3c.github.io/wcag/techniques/aria/ARIA11">ARIA11: Using ARIA landmarks to identify regions of a page</a>
-                           
-                           
-                        </li>
-                        
-                        
-                        <li>
+                     
+                     
+                     <li><a class="aria" href="https://w3c.github.io/wcag/techniques/aria/ARIA11">ARIA11: Using ARIA landmarks to identify regions of a page</a></li>
+                     
+                     
+                     <li>
                            
                            <a class="aria" href="https://w3c.github.io/wcag/techniques/html/H101">H101: Using semantic HTML elements to identify regions of a page</a>
                            
                            
-                        </li>
+                     </li>
+                     
+                     
+                     <li><a class="aria" href="https://w3c.github.io/wcag/techniques/aria/ARIA12">ARIA12: Using role=heading to identify headings</a></li>
+                     
+                     
+                     <li><a class="aria" href="https://w3c.github.io/wcag/techniques/aria/ARIA13">ARIA13: Using aria-labelledby to name regions and landmarks</a></li>
+                     
+                     
+                     <li><a class="aria" href="https://w3c.github.io/wcag/techniques/aria/ARIA16">ARIA16: Using aria-labelledby to provide a name for user interface controls</a></li>
+                     
+                     
+                     <li><a class="aria" href="https://w3c.github.io/wcag/techniques/aria/ARIA17">ARIA17: Using grouping roles to identify related form controls</a></li>
+                     
+                     
+                     <li><a class="aria" href="https://w3c.github.io/wcag/techniques/aria/ARIA20">ARIA20: Using the region role to identify a region of the page</a></li>
+                     
+                     
+                     <li><a class="general" href="https://w3c.github.io/wcag/techniques/general/G115">G115: Using semantic elements to mark up structure</a>、<strong>かつ</strong>、<a class="html" href="https://w3c.github.io/wcag/techniques/html/H49">H49: Using semantic markup to mark emphasized or special text</a></li>
+                     
+                     
+                     <li><a class="general" href="https://w3c.github.io/wcag/techniques/general/G117">G117: Using text to convey information that is conveyed by variations in presentation of text</a></li>
+                     
+                     
+                     <li><a class="general" href="https://w3c.github.io/wcag/techniques/general/G140">G140: Separating information and structure from presentation to enable different presentations</a></li>
+                     
+                     <li><a class="aria" href="https://w3c.github.io/wcag/techniques/aria/ARIA24">ARIA24: Semantically identifying a font icon with role="img"</a></li>
+
+                     <li><p>次のテクニックを用いて、表現によって伝えられている情報及び関係性をプログラムによる解釈が可能になる:</p>
                         
                         
-                        <li>
-                           
-                           <a class="aria" href="https://w3c.github.io/wcag/techniques/aria/ARIA12">ARIA12: Using role=heading to identify headings</a>
+                        <ul>
                            
                            
-                        </li>
+                           <li><a class="general" href="https://w3c.github.io/wcag/techniques/general/G138">G138: Using semantic markup whenever color cues are used</a></li>
+                           
+                           
+                           <li><a class="html" href="https://w3c.github.io/wcag/techniques/html/H51">H51: Using table markup to present tabular information</a></li>
+                           
+                           
+                           <li><a class="pdf" href="https://w3c.github.io/wcag/techniques/pdf/PDF6">PDF6: Using table elements for table markup in PDF Documents</a></li>
+                           
+                           
+                           <li><a class="pdf" href="https://w3c.github.io/wcag/techniques/pdf/PDF20">PDF20: Using Adobe Acrobat Pro's Table Editor to repair mistagged tables</a></li>
+                           
+                           
+                           <li><a class="html" href="https://w3c.github.io/wcag/techniques/html/H39">H39: Using caption elements to associate data table captions with data tables</a></li>
+                           
+                           
+                           
+                           
+                           <li><a class="html" href="https://w3c.github.io/wcag/techniques/html/H63">H63: Using the scope attribute to associate header cells with data cells in data tables</a></li>
+                           
+                           
+                           <li><a class="html" href="https://w3c.github.io/wcag/techniques/html/H43">H43: Using id and headers attributes to associate data cells with header cells in data tables</a></li>
+                           
+                           
+                           <li><a class="html" href="https://w3c.github.io/wcag/techniques/html/H44">H44: Using label elements to associate text labels with form controls</a></li>
+                           
+                           
+                           <li><a class="html" href="https://w3c.github.io/wcag/techniques/html/H65">H65: Using the title attribute to identify form controls when the label element cannot be used</a></li>
+                           
+                           
+                           <li><a class="pdf" href="https://w3c.github.io/wcag/techniques/pdf/PDF10">PDF10: Providing labels for interactive form controls in PDF documents</a></li>
+                           
+                           
+                           <li><a class="pdf" href="https://w3c.github.io/wcag/techniques/pdf/PDF12">PDF12: Providing name, role, value information for form fields in PDF documents</a></li>
+                           
+                           
+                           <li><a class="html" href="https://w3c.github.io/wcag/techniques/html/H71">H71: Providing a description for groups of form controls using fieldset and legend elements</a></li>
+                           
+                           
+                           
+                           <li><a class="html" href="https://w3c.github.io/wcag/techniques/html/H85">H85: Using optgroup to group option elements inside a select</a></li>
+                           
+                           
+                           <li><a class="html" href="https://w3c.github.io/wcag/techniques/html/H48">H48: Using ol, ul and dl for lists or groups of links</a></li>
+                           
+                           
+                           <li><a class="html" href="https://w3c.github.io/wcag/techniques/html/H42">H42: Using h1-h6 to identify headings</a></li>
+                           
+                           
+                           <li><a class="pdf" href="https://w3c.github.io/wcag/techniques/pdf/PDF9">PDF9: Providing headings by marking content with heading tags in PDF documents</a></li>
+                           
+                           
+                           <li><a class="script" href="https://w3c.github.io/wcag/techniques/client-side-script/SCR21">SCR21: Using functions of the Document Object Model (DOM) to add content to a page</a></li>
+                           
+                           
+                           <li><a class="pdf" href="https://w3c.github.io/wcag/techniques/pdf/PDF11">PDF11: Providing links and link text using the Link annotation and the /Link structure element in PDF documents</a></li>
+                           
+                           
+                           <li><a class="pdf" href="https://w3c.github.io/wcag/techniques/pdf/PDF17">PDF17: Specifying consistent page numbering for PDF documents</a></li>
+                           
+                           
+                           <li><a class="pdf" href="https://w3c.github.io/wcag/techniques/pdf/PDF21">PDF21: Using List tags for lists in PDF documents</a></li>
+                           
+                           
+                           <li><a class="html" href="https://w3c.github.io/wcag/techniques/html/H97">H97: Grouping related links using the nav element</a></li>
+                           
+                           
+                        </ul>
                         
                         
-                        <li>
-                           
-                           <a class="aria" href="https://w3c.github.io/wcag/techniques/aria/ARIA13">ARIA13: Using aria-labelledby to name regions and landmarks</a>
-                           
-                           
-                        </li>
-                        
-                        
-                        <li>
-                           
-                           <a class="aria" href="https://w3c.github.io/wcag/techniques/aria/ARIA16">ARIA16: Using aria-labelledby to provide a name for user interface controls</a>
-                           
-                           
-                        </li>
-                        
-                        
-                        <li>
-                           
-                           <a class="aria" href="https://w3c.github.io/wcag/techniques/aria/ARIA17">ARIA17: Using grouping roles to identify related form controls</a>
-                           
-                           
-                        </li>
-                        
-                        
-                        <li>
-                           
-                           <a class="aria" href="https://w3c.github.io/wcag/techniques/aria/ARIA20">ARIA20: Using the region role to identify a region of the page</a>
-                           
-                           
-                        </li>
-                        
-                        
-                        <li>
-                           										           
-                           <a class="general" href="https://w3c.github.io/wcag/techniques/general/G115">G115: Using semantic elements to mark up structure</a>
-                           										           
-                           <strong>AND</strong>
-                           										           
-                           <a class="html" href="https://w3c.github.io/wcag/techniques/html/H49">H49: Using semantic markup to mark emphasized or special text</a>
-                           									         
-                           
-                        </li>
-                        
-                        
-                        <li>
-                           										           
-                           <a class="general" href="https://w3c.github.io/wcag/techniques/general/G117">G117: Using text to convey information that is conveyed by variations in presentation of
-                              text</a>
-                           									         
-                           
-                        </li>
-                        
-                        
-                        <li>
-                           										           
-                           <a class="general" href="https://w3c.github.io/wcag/techniques/general/G140">G140: Separating information and structure from presentation to enable different presentations</a>
-                           									         
-                           
-                        </li>
-                        
-                        <li>
-                           										           
-                           <a class="aria" href="https://w3c.github.io/wcag/techniques/aria/ARIA24">ARIA24: Semantically identifying a font icon with role="img"</a>
-                           
-                           
-                        </li>
-                        
-                        
-                        <li>
-                           
-                           
-                           <p>Making information and relationships conveyed through presentation programmatically
-                              determinable using the following techniques:
-                              
-                           </p>
-                           
-                           
-                           <ul>
-                              
-                              
-                              <li>
-                                 												               
-                                 <a class="general" href="https://w3c.github.io/wcag/techniques/general/G138">G138: Using semantic markup whenever color cues are used</a>
-                                 											             
-                                 
-                              </li>
-                              
-                              
-                              <li>
-                                 												               
-                                 <a class="html" href="https://w3c.github.io/wcag/techniques/html/H51">H51: Using table markup to present tabular information</a>
-                                 											             
-                                 
-                              </li>
-                              
-                              
-                              <li>
-                                 
-                                 <a class="pdf" href="https://w3c.github.io/wcag/techniques/pdf/PDF6">PDF6: Using table elements for table markup in PDF Documents</a>
-                                 
-                                 
-                              </li>
-                              
-                              
-                              <li>
-                                 
-                                 <a class="pdf" href="https://w3c.github.io/wcag/techniques/pdf/PDF20">PDF20: Using Adobe Acrobat Pro's Table Editor to repair mistagged tables</a>
-                                 
-                                 
-                              </li>
-                              
-                              
-                              <li>
-                                 												               
-                                 <a class="html" href="https://w3c.github.io/wcag/techniques/html/H39">H39: Using caption elements to associate data table captions with data tables</a>
-                                 											             
-                                 
-                              </li>
-                              
-                              
-                              <li>
-                                 												               
-                                 <a class="html" href="https://w3c.github.io/wcag/techniques/html/H63">H63: Using the scope attribute to associate header cells with data cells in data tables</a>
-                                 											             
-                                 
-                              </li>
-                              
-                              
-                              <li>
-                                 												               
-                                 <a class="html" href="https://w3c.github.io/wcag/techniques/html/H43">H43: Using id and headers attributes to associate data cells with header cells in data
-                                    tables</a>
-                                 											             
-                                 
-                              </li>
-                              
-                              
-                              <li>
-                                 												               
-                                 <a class="html" href="https://w3c.github.io/wcag/techniques/html/H44">H44: Using label elements to associate text labels with form controls</a>
-                                 											             
-                                 
-                              </li>
-                              
-                              
-                              <li>
-                                 												               
-                                 <a class="html" href="https://w3c.github.io/wcag/techniques/html/H65">H65: Using the title attribute to identify form controls when the label element cannot
-                                    be used</a>
-                                 											             
-                                 
-                              </li>
-                              
-                              
-                              <li>
-                                 
-                                 <a class="pdf" href="https://w3c.github.io/wcag/techniques/pdf/PDF10">PDF10: Providing labels for interactive form controls in PDF documents</a>
-                                 
-                                 
-                              </li>
-                              
-                              
-                              <li>
-                                 
-                                 <a class="pdf" href="https://w3c.github.io/wcag/techniques/pdf/PDF12">PDF12: Providing name, role, value information for form fields in PDF documents</a>
-                                 
-                                 
-                              </li>
-                              
-                              
-                              <li>
-                                 												               
-                                 <a class="html" href="https://w3c.github.io/wcag/techniques/html/H71">H71: Providing a description for groups of form controls using fieldset and legend elements</a>
-                                 											             
-                                 
-                              </li>
-                              
-                              
-                              <li>
-                                 												               
-                                 <a class="html" href="https://w3c.github.io/wcag/techniques/html/H85">H85: Using optgroup to group option elements inside a select</a>
-                                 											             
-                                 
-                              </li>
-                              
-                              
-                              <li>
-                                 												               
-                                 <a class="html" href="https://w3c.github.io/wcag/techniques/html/H48">H48: Using ol, ul and dl for lists or groups of links</a>
-                                 											             
-                                 
-                              </li>
-                              
-                              
-                              <li>
-                                 												               
-                                 <a class="html" href="https://w3c.github.io/wcag/techniques/html/H42">H42: Using h1-h6 to identify headings</a>
-                                 											             
-                                 
-                              </li>
-                              
-                              
-                              <li>
-                                 
-                                 <a class="pdf" href="https://w3c.github.io/wcag/techniques/pdf/PDF9">PDF9: Providing headings by marking content with heading tags in PDF documents</a>
-                                 
-                                 
-                              </li>
-                              
-                              
-                              <li>
-                                 												               
-                                 <a class="script" href="https://w3c.github.io/wcag/techniques/client-side-script/SCR21">SCR21: Using functions of the Document Object Model (DOM) to add content to a page</a>
-                                 											             
-                                 
-                              </li>
-                              
-                              
-                              <li>
-                                 
-                                 <a class="pdf" href="https://w3c.github.io/wcag/techniques/pdf/PDF11">PDF11: Providing links and link text using the Link annotation and the /Link structure element
-                                    in PDF documents</a>
-                                 
-                                 
-                              </li>
-                              
-                              
-                              <li>
-                                 
-                                 <a class="pdf" href="https://w3c.github.io/wcag/techniques/pdf/PDF17">PDF17: Specifying consistent page numbering for PDF documents</a>
-                                 
-                                 
-                              </li>
-                              
-                              
-                              <li>
-                                 
-                                 <a class="pdf" href="https://w3c.github.io/wcag/techniques/pdf/PDF21">PDF21: Using List tags for lists in PDF documents</a>
-                                 
-                                 
-                              </li>
-                              
-                              
-                              <li>
-                                 
-                                 <a class="html" href="https://w3c.github.io/wcag/techniques/html/H97">H97: Grouping related links using the nav element</a>
-                                 
-                                 
-                              </li>
-                              
-                              
-                           </ul>
-                           
-                           
-                        </li>
-                        
-                        
-                     </ul>
+                     </li>
+                     
+                     
+                  </ul>
+                     
                      
                      
                   </section>
                   <section class="situation" id="info-and-relationships-situation-1">
                      
                      
-                     <h4> Situation B: The technology in use does NOT provide the semantic structure to make
-                        the information and relationships conveyed through presentation programmatically determinable:
+                     <h4>状況 B: ウェブコンテンツ技術が、表現によって伝えている情報及び関係性をプログラムによる解釈が可能になるセマンテックな構造を提供していない場合:
                         
                      </h4>
                      
-                     
                      <ul>
+                     
+                     
+                     <li><a class="general" href="https://w3c.github.io/wcag/techniques/general/G117">G117: Using text to convey information that is conveyed by variations in presentation of text</a></li>
+                     
+                     
+                     <li><p>表現によって伝えられている情報及び関係性をプログラムによる解釈が可能になる、又は次のテクニックを用いてテキストで入手可能にする:</p>
                         
                         
-                        <li>
-                           										           
-                           <a class="general" href="https://w3c.github.io/wcag/techniques/general/G117">G117: Using text to convey information that is conveyed by variations in presentation of
-                              text</a>
-                           									         
+                        <ul>
                            
-                        </li>
+                           
+                           <li><a class="text" href="https://w3c.github.io/wcag/techniques/text/T1">T1: Using standard text formatting conventions for paragraphs</a></li>
+                           
+                           
+                           <li><a class="text" href="https://w3c.github.io/wcag/techniques/text/T2">T2: Using standard text formatting conventions for lists</a></li>
+                           
+                           
+                           <li><a class="text" href="https://w3c.github.io/wcag/techniques/text/T3">T3: Using standard text formatting conventions for headings</a></li>
+                           
+                           
+                        </ul>
                         
                         
-                        <li>
-                           
-                           
-                           <p>Making information and relationships conveyed through presentation programmatically
-                              determinable or available in text using the following techniques:
-                              
-                           </p>
-                           
-                           
-                           <ul>
-                              
-                              
-                              <li>
-                                 												               
-                                 <a class="text" href="https://w3c.github.io/wcag/techniques/text/T1">T1: Using standard text formatting conventions for paragraphs</a>
-                                 											             
-                                 
-                              </li>
-                              
-                              
-                              <li>
-                                 												               
-                                 <a class="text" href="https://w3c.github.io/wcag/techniques/text/T2">T2: Using standard text formatting conventions for lists</a>
-                                 											             
-                                 
-                              </li>
-                              
-                              
-                              <li>
-                                 												               
-                                 <a class="text" href="https://w3c.github.io/wcag/techniques/text/T3">T3: Using standard text formatting conventions for headings</a>
-                                 											             
-                                 
-                              </li>
-                              
-                              
-                           </ul>
-                           
-                           
-                        </li>
-                        
-                        
-                     </ul>
+                     </li>
+                     
+                     
+                  </ul>
                      
                      
                   </section>
                </section>
                <section id="advisory">
-                  <h3>Advisory Techniques</h3>
-                  <p>Although not required for conformance, the following additional techniques should
-                     be considered in order to make content more accessible. Not all techniques can be
-                     used or would be effective in all situations.
+                  <h3>参考テクニック</h3>
+                  <p>適合のために必須ではないが、コンテンツをよりアクセシブルにするために、次の追加のテクニックを検討することが望ましい。ただし、すべての状況において、すべてのテクニックが使用可能、又は効果的であるとは限らない。
                   </p>
                   <ul>
-                     
-                     
-                     <li>
-                        									         
-                        <a class="css" href="https://w3c.github.io/wcag/techniques/css/C22">C22: Using CSS to control visual presentation of text</a>
-                        								       
-                        
-                     </li>
-                     
-                     
-                     <li>
-                        									         
-                        <a class="general" href="https://w3c.github.io/wcag/techniques/general/G162">G162: Positioning labels to maximize predictability of relationships</a>
-                        								       
-                        
-                     </li>
-                     
-                     
-                     <li>
-                        									         
-                        <a class="aria" href="https://w3c.github.io/wcag/techniques/aria/ARIA1">ARIA1: Using the aria-describedby property to provide a descriptive label for user interface
-                           controls</a>
-                        								       
-                        
-                     </li>
-                     
-                     
-                     <li>
-                        									         
-                        <a class="aria" href="https://w3c.github.io/wcag/techniques/aria/ARIA2">ARIA2: Identifying a required field with the aria-required property</a>
-                        								       
-                        
-                     </li>
-                     
-                     
-                     <li>
-                        									         
-                        <a class="general" href="https://w3c.github.io/wcag/techniques/general/G141">G141: Organizing a page using headings</a>
-                        								       
-                        
-                     </li>
-                     
-                     
-                  </ul>
+                  
+                  
+                  <li><a class="css" href="https://w3c.github.io/wcag/techniques/css/C22">C22: Using CSS to control visual presentation of text</a></li>
+                  
+                  
+                  <li><a class="general" href="https://w3c.github.io/wcag/techniques/general/G162">G162: Positioning labels to maximize predictability of relationships</a></li>
+                  
+                  
+                  <li><a class="aria" href="https://w3c.github.io/wcag/techniques/aria/ARIA1">ARIA1: Using the aria-describedby property to provide a descriptive label for user interface controls</a></li>
+                  
+                  
+                  <li><a class="aria" href="https://w3c.github.io/wcag/techniques/aria/ARIA2">ARIA2: Identifying a required field with the aria-required property</a></li>
+                  
+                  
+                  <li><a class="general" href="https://w3c.github.io/wcag/techniques/general/G141">G141: Organizing a page using headings</a></li>
+                  
+                  
+               </ul>
                </section>
                <section id="failure">
-                  <h3>Failures</h3>
-                  <p>The following are common mistakes that are considered failures of this Success Criterion
-                     by the WCAG Working Group.
+                  <h3>失敗例</h3>
+                  <p>以下に挙げるものは、WCAG ワーキンググループが達成基準の失敗例とみなした、よくある間違いである。
                   </p>
                   <ul>
-                     
-                     
-                     <li>
-                        									         
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F2">F2: Failure of Success Criterion 1.3.1 due to using changes in text presentation to convey
-                           information without using the appropriate markup or text</a>
-                        								       
-                        
-                     </li>
-                     
-                     
-                     <li>
-                        									         
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F33">F33: Failure of Success Criterion 1.3.1 and 1.3.2 due to using white space characters to
-                           create multiple columns in plain text content</a>
-                        								       
-                        
-                     </li>
-                     
-                     
-                     <li>
-                        									         
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F34">F34: Failure of Success Criterion 1.3.1 and 1.3.2 due to using white space characters to
-                           format tables in plain text content</a>
-                        								       
-                        
-                     </li>
-                     
-                     
-                     <li>
-                        									         
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F42">F42: Failure of Success Criteria 1.3.1, 2.1.1, 2.1.3, or 4.1.2 when emulating links</a>
-                        								       
-                        
-                     </li>
-                     
-                     
-                     <li>
-                        									         
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F43">F43: Failure of Success Criterion 1.3.1 due to using structural markup in a way that does
-                           not represent relationships in the content</a>
-                        								       
-                        
-                     </li>
-                     
-                     
-                     <li>
-                        									         
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F46">F46: Failure of Success Criterion 1.3.1 due to using th elements, layout tables</a>
-                        								       
-                        
-                     </li>
-                     
-                     
-                     <li>
-                        									         
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F48">F48: Failure of Success Criterion 1.3.1 due to using the pre element to markup tabular
-                           information</a>
-                        								       
-                        
-                     </li>
-                     
-                     
-                     <li>
-                        									         
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F87">F87: Failure of Success Criterion 1.3.1 due to inserting non-decorative content by using
-                           ::before and ::after pseudo-elements and the 'content' property in CSS</a>
-                        								       
-                        
-                     </li>
-                     
-                     
-                     <li>
-                        
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F90">F90: Failure of Success Criterion 1.3.1 for incorrectly associating table headers and content
-                           via the headers and id attributes</a>
-                        
-                        
-                     </li>
-                     
-                     
-                     <li>
-                        
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F91">F91: Failure of Success Criterion 1.3.1 for not correctly marking up table headers</a>
-                        
-                        
-                     </li>
-                     
-                     
-                     <li>
-                        
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F92">F92: Failure of Success Criterion 1.3.1 due to the use of role presentation on content
-                           which conveys semantic information</a>
-                        
-                        
-                     </li>
-                     
-                     
-                  </ul>
+                  
+                  
+                  <li><a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F2">F2: Failure of Success Criterion 1.3.1 due to using changes in text presentation to convey information without using the appropriate markup or text</a></li>
+                  
+                  
+                  <li><a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F33">F33: Failure of Success Criterion 1.3.1 and 1.3.2 due to using white space characters to create multiple columns in plain text content</a></li>
+                  
+                  
+                  <li><a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F34">F34: Failure of Success Criterion 1.3.1 and 1.3.2 due to using white space characters to format tables in plain text content</a></li>
+                  
+                  
+                  <li><a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F42">F42: Failure of Success Criteria 1.3.1, 2.1.1, 2.1.3, or 4.1.2 when emulating links</a></li>
+                  
+                  
+                  <li><a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F43">F43: Failure of Success Criterion 1.3.1 due to using structural markup in a way that does not represent relationships in the content</a></li>
+                  
+                  
+                  <li><a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F46">F46: Failure of Success Criterion 1.3.1 due to using th elements, caption elements, or non-empty summary attributes in layout tables</a></li>
+                  
+                  
+                  <li><a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F48">F48: Failure of Success Criterion 1.3.1 due to using the pre element to markup tabular information</a></li>
+                  
+                  
+                  <li><a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F87">F87: Failure of Success Criterion 1.3.1 due to inserting non-decorative content by using ::before and ::after pseudo-elements and the 'content' property in CSS</a></li>
+                  
+                  
+                  <li><a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F90">F90: Failure of Success Criterion 1.3.1 for incorrectly associating table headers and content via the headers and id attributes</a></li>
+                  
+                  
+                  <li><a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F91">F91: Failure of Success Criterion 1.3.1 for not correctly marking up table headers</a></li>
+                  
+                  
+                  <li><a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F92">F92: Failure of Success Criterion 1.3.1 due to the use of role presentation on content which conveys semantic information</a></li>
+                  
+                  
+               </ul>
                </section>
             </section>
             <section id="key-terms">
                <details>
                   <summary>
-                     <h2>Key Terms</h2>
+                     <h2>重要な用語</h2>
                   </summary>
-                  <dt id="dfn-assistive-technology">assistive technology</dt>
+                  <dt id="dfn-assistive-technology">支援技術 (assistive technology)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">hardware and/or software that acts as a <a href="#dfn-user-agent">user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements
-                           of users with disabilities that go beyond those offered by mainstream user agents
+                        <p xmlns="http://www.w3.org/1999/xhtml">障害のある利用者の要件を満たすために、主流の<a href="#dfn-user-agent">ユーザエージェント</a>が提供する機能を超えた機能を提供するような、ユーザエージェントとして動作する、又は主流のユーザエージェントと共に動作するハードウェア及び／又はソフトウェア。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Functionality provided by assistive technology includes alternative presentations
-                              (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
-                              voice), additional navigation or orientation mechanisms, and content transformations
-                              (e.g., to make tables more accessible).
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術が提供する機能としては、代替の提示 (例: 合成音声や拡大表示したコンテンツ)、代替入力手法 (例: 音声認識)、付加的なナビゲーション又は位置確認のメカニズム、及びコンテンツ変換 (例: テーブルをよりアクセシブルにするもの) などを挙げることができる。
+                           </p>
+                        </div>
+                        
+                        
+                        <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術は、API を利用、監視することで、主流のユーザエージェントとデータやメッセージのやりとりをすることが多い。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Assistive technologies often communicate data and messages with mainstream user agents
-                              by using and monitoring APIs.
-                              
-                           </p>
-                        </div>
-                        
-                        
-                        <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The distinction between mainstream user agents and assistive technologies is not absolute.
-                              Many mainstream user agents provide some features to assist individuals with disabilities.
-                              The basic difference is that mainstream user agents target broad and diverse audiences
-                              that usually include people with and without disabilities. Assistive technologies
-                              target narrowly defined populations of users with specific disabilities. The assistance
-                              provided by an assistive technology is more specific and appropriate to the needs
-                              of its target users. The mainstream user agent may provide important functionality
-                              to assistive technologies like retrieving Web content from program objects or parsing
-                              markup into identifiable bundles.
+                           <p class="note-title marker">注記</p>
+                           <p>主流のユーザエージェントと支援技術との区別は、絶対的なものではない。多くの主流のユーザエージェントは、障害のある個人を支援する機能を提供している。基本的な差異は、主流のユーザエージェントが障害のある人もない人も含めて、広く多様な利用者を対象にしているのに対し、支援技術は、特定の障害のある利用者という、より狭く限られた人たちを対象にしているということである。支援技術により提供される支援は、対象とする利用者に特化した、よりニーズに適したものである。主流のユーザエージェントは、プログラムオブジェクトからのウェブコンテンツの抽出、マークアップの識別可能な構造への解釈といった、重要な機能を支援技術に対して提供する場合がある。
                               
                            </p>
                         </div>
@@ -873,8 +494,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Assistive technologies that are important in the context of this document include
-                              the following:
+                           <p>この文書の文脈において重要な支援技術としては、以下のものが挙げられる:
                               
                            </p>
                            
@@ -882,38 +502,30 @@
                            <ul>
                               
                               
-                              <li>screen magnifiers, and other visual reading assistants, which are used by people with
-                                 visual, perceptual and physical print disabilities to change text font, size, spacing,
-                                 color, synchronization with speech, etc. in order to improve the visual readability
-                                 of rendered text and images;
+                              <li>画面拡大ソフト及びその他の視覚的な表示に関する支援技術。視覚障害、知覚障害、及び読書困難などの障害のある人が、レンダリング後のテキスト及び画像の視覚的な読みやすさを改善するために、テキストのフォント、サイズ、間隔、色、音声との同期などを変更するのに使用している。
+                              </li>
+                              
+                              
+                              <li>スクリーンリーダー。全盲の人がテキスト情報を合成音声あるいは点字で読み取るために使用している。
                                  
                               </li>
                               
                               
-                              <li>screen readers, which are used by people who are blind to read textual information
-                                 through synthesized speech or braille;
+                              <li>音声変換ソフトウェア。認知障害、言語障害、及び学習障害のある人が、テキストを合成音声に変換するために使用している。
                                  
                               </li>
                               
                               
-                              <li>text-to-speech software, which is used by some people with cognitive, language, and
-                                 learning disabilities to convert text into synthetic speech;
+                              <li>音声認識ソフトウェア。何らかの身体障害のある利用者が使用することがある。
+</li>
+                              
+                              
+                              <li>代替キーボード。特定の身体障害のある人がキーボード操作をシミュレートするのに使用している (ヘッドポインタ、シングルスイッチ、呼気・吸気スイッチ、及びその他の特別な入力デバイスを使った代替キーボードを含む)。
                                  
                               </li>
                               
                               
-                              <li>speech recognition software, which may be used by people who have some physical disabilities;</li>
-                              
-                              
-                              <li>alternative keyboards, which are used by people with certain physical disabilities
-                                 to simulate the keyboard (including alternate keyboards that use head pointers, single
-                                 switches, sip/puff and other special input devices.);
-                                 
-                              </li>
-                              
-                              
-                              <li>alternative pointing devices, which are used by people with certain physical disabilities
-                                 to simulate mouse pointing and button activations.
+                              <li>代替ポインティングデバイス。特定の身体障害のある人がマウスポインタとボタンの動きをシミュレートするのに使用している。
                                  
                               </li>
                               
@@ -924,45 +536,43 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-content">content</dt>
+                  <dt id="dfn-content">コンテンツ (content)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">information and sensory experience to be communicated to the user by means of a <a href="#dfn-user-agent">user agent</a>, including code or markup that defines the content's <a href="#dfn-structure">structure</a>, <a href="#dfn-presentation">presentation</a>, and interactions
+                        <p xmlns="http://www.w3.org/1999/xhtml">コンテンツの<a href="#dfn-structure">構造</a>、<a href="#dfn-presentation">提示</a>、及びインタラクションを定義するコード又はマークアップも含めて、<a href="#dfn-user-agent">ユーザエージェント</a>によって利用者に伝達される情報及び感覚的な体験。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-presentation">presentation</dt>
+                  <dt id="dfn-presentation">提示 (presentation)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">rendering of the <a href="#dfn-content">content</a> in a form to be perceived by users
+                        <p xmlns="http://www.w3.org/1999/xhtml">利用者が知覚できる形式で<a href="#dfn-content">コンテンツ</a>をレンダリングすること。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-programmatically-determined">programmatically determined</dt>
+                  <dt id="dfn-programmatically-determined">プログラムによる解釈 (programmatically determined)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">determined by software from author-supplied data provided in a way that different
-                           <a href="#dfn-user-agent">user agents</a>, including <a href="#dfn-assistive-technology">assistive technologies</a>, can extract and present this information to users in different modalities
-                           
+                        <p xmlns="http://www.w3.org/1999/xhtml"><a href="#dfn-assistive-technology">支援技術</a>を含む様々な<a href="#dfn-user-agent">ユーザエージェント</a>が抽出でき、利用者に様々な感覚モダリティで提示できるような形のデータがコンテンツ制作者によって提供されたとき、そのデータがソフトウェアによって解釈されること。
+
                         </p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Determined in a markup language from elements and attributes that are accessed directly
-                              by commonly available assistive technology.
+                           <p>マークアップ言語で、一般に入手可能な支援技術が直接アクセスできる要素と属性から解釈される。
                               
                            </p>
                            
@@ -971,9 +581,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Determined from technology-specific data structures in a non-markup language and exposed
-                              to assistive technology via an accessibility API that is supported by commonly available
-                              assistive technology.
+                           <p>非マークアップ言語の技術特有のデータ構造から解釈され、一般に入手可能な支援技術がサポートするアクセシビリティ API を通じて支援技術に提供される。
                               
                            </p>
                            
@@ -982,17 +590,17 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-relationships">relationships</dt>
+                  <dt id="dfn-relationships">関係性 (relationships)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">meaningful associations between distinct pieces of content</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">コンテンツの異なる部分間における意味のあるつながり。</p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-structure">structure</dt>
+                  <dt id="dfn-structure">構造 (structure)</dt>
                   <dd>
                      <definition xmlns="">
                         
@@ -1000,12 +608,13 @@
                         <ol xmlns="http://www.w3.org/1999/xhtml">
                            
                            
-                           <li>The way the parts of a <a href="#dfn-web-page">Web page</a> are organized in relation to each other; and
+                           <li><a href="#dfn-web-page">ウェブページ</a>の各部を相互の関係性によりまとめる方法論。及び、
+
                               
                            </li>
                            
                            
-                           <li>The way a collection of <a href="#dfn-web-page">Web pages</a> is organized
+                           <li>一連の<a href="#dfn-web-page">ウェブページ</a>をまとめる方法論。
                               
                            </li>
                            
@@ -1015,18 +624,18 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-user-agent">user agent</dt>
+                  <dt id="dfn-user-agent">ユーザエージェント (user agent)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">any software that retrieves and presents Web content for users</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ウェブコンテンツを取得して利用者に提示するあらゆるソフトウェア。</p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technology">assistive technologies</a> — that help in retrieving, rendering, and interacting with Web content.
-                              
+                           <p>ウェブコンテンツの取得、レンダリング及びインタラクションを支援する、ウェブブラウザ、メディアプレーヤ、プラグイン、及びその他のプログラム (<a href="#dfn-assistive-technology">支援技術</a>も含む)。
+            
                            </p>
                            
                         </aside>
@@ -1034,30 +643,27 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-web-page">web page</dt>
+                  <dt id="dfn-web-page">ウェブページ (web page)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">a non-embedded resource obtained from a single URI using HTTP plus any other resources
-                           that are used in the rendering or intended to be rendered together with it by a <a href="#dfn-user-agent">user agent</a>
+                        <p xmlns="http://www.w3.org/1999/xhtml">単一の URI から HTTP で得た埋め込まれていないリソースに加え、レンダリングに使われる、又は<a href="#dfn-user-agent">ユーザエージェント</a>がこのリソースと一緒にレンダリングすることを意図しているその他のあらゆるリソースを合わせたもの。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Although any "other resources" would be rendered together with the primary resource,
-                              they would not necessarily be rendered simultaneously with each other.
+                           <p class="note-title marker">注記</p>
+                           <p>どのような「その他のリソース」も主たるリソースと一緒にレンダリングされるであろうが、これらのリソースが同時にレンダリングされるとは限らない。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>For the purposes of conformance with these guidelines, a resource must be "non-embedded"
-                              within the scope of conformance to be considered a Web page.
+                           <p class="note-title marker">注記</p>
+                           <p>このガイドラインの適合範囲に含まれる対象となるウェブページとみなされるためには、リソースが「埋め込まれていない」リソースでなければならない。
                               
                            </p>
                         </div>
@@ -1065,17 +671,22 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A Web resource including all embedded images and media.</p>
+                           <p>単体のウェブリソースであり、埋め込まれている画像及びメディアのすべてを含んだもの。</p>
                            
                         </aside>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A Web mail program built using Asynchronous JavaScript and XML (AJAX). The program
-                              lives entirely at http://example.com/mail, but includes an inbox, a contacts area
-                              and a calendar. Links or buttons are provided that cause the inbox, contacts, or calendar
-                              to display, but do not change the URI of the page as a whole.
+                           <p>Asynchronous JavaScript and XML (AJAX) を用いたウェブメールのプログラム。そのプログラム全体は http://example.com/mail に存在しているが、受信トレイ、連絡先、カレンダーがある。受信トレイ、連絡先、又はカレンダーを表示するリンク又はボタンが提供されているが、全体としてページの URI は変更されない。
+                           </p>
+                           
+                        </aside>
+                        
+                        
+                        <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
+                           
+                           <p>カスタマイズ可能なポータルサイトで、利用者が様々なコンテンツモジュールのセットから表示させるコンテンツを選択できるようなもの。
                               
                            </p>
                            
@@ -1084,23 +695,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A customizable portal site, where users can choose content to display from a set of
-                              different content modules.
-                              
-                           </p>
-                           
-                        </aside>
-                        
-                        
-                        <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
-                           
-                           <p>When you enter "http://shopping.example.com/" in your browser, you enter a movie-like
-                              interactive shopping environment where you visually move around in a store dragging
-                              products off of the shelves around you and into a visual shopping cart in front of
-                              you. Clicking on a product causes it to be demonstrated with a specification sheet
-                              floating alongside. This might be a single-page Web site or just one page within a
-                              Web site.
-                              
+                           <p>ブラウザで "http://shopping.example.com/" へ行くと、映画のようなインタラクティブなショッピング環境になる。そこでは、視覚的に店内を移動して、店内の棚から商品をドラッグして、目の前にある視覚的な買物カゴに商品を入れる。商品をクリックすると、同時に仕様書が浮き上がるように表示される。これは 1 ページだけのウェブサイトかもしれないし、ウェブサイトの中のほんの 1 ページなのかもしれない。
                            </p>
                            
                         </aside>
@@ -1111,23 +706,20 @@
                </details>
             </section>
             <section id="test-rules">
-               <h2>Test Rules</h2>
-               <p>The following are Test Rules for certain aspects of this Success Criterion. It is
-                  not necessary to use these particular Test Rules to check for conformance with WCAG,
-                  but they are defined and approved test methods. For information on using Test Rules,
-                  see <a href="understanding-act-rules.html">Understanding Test Rules for WCAG Success Criteria</a>.
+               <h2>テストルール</h2>
+               <p>以下は、この達成基準の特定の側面に関するテストルールである。この特定のルールを使用して WCAG に適合しているかどうかを確認する必要はないが、これらのルールは定義され、承認されたテスト方法である。テストルールの使用については、<a href="understanding-act-rules.html">WCAG 達成基準のテストルールを理解する</a>を参照のこと。
                </p>
                <ul>
-                  <li><a href="/WAI/standards-guidelines/act/rules/5f99a7/">ARIA attribute is defined in WAI-ARIA</a></li>
-                  <li><a href="/WAI/standards-guidelines/act/rules/6a7281/">ARIA state or property has valid value</a></li>
-                  <li><a href="/WAI/standards-guidelines/act/rules/a25f45/">Headers attribute specified on a cell refers to cells in the same table element</a></li>
-                  <li><a href="/WAI/standards-guidelines/act/rules/674b10/">Role attribute has valid value</a></li>
-                  <li><a href="/WAI/standards-guidelines/act/rules/ff89c9/proposed/">ARIA required context role</a></li>
-                  <li><a href="/WAI/standards-guidelines/act/rules/in6db8/proposed/">ARIA required ID references exist</a></li>
-                  <li><a href="/WAI/standards-guidelines/act/rules/bc4a75/proposed/">ARIA required owned elements</a></li>
-                  <li><a href="/WAI/standards-guidelines/act/rules/5c01ea/proposed/">ARIA state or property is permitted</a></li>
-                  <li><a href="/WAI/standards-guidelines/act/rules/4e8ab6/proposed/">Element with role attribute has required states and properties</a></li>
-                  <li><a href="/WAI/standards-guidelines/act/rules/d0f69e/proposed/">Table header cell has assigned cells</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/5f99a7/">ARIA attribute is defined in WAI-ARIA</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/">ARIA state or property has valid value</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/">Headers attribute specified on a cell refers to cells in the same table element</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/674b10/">Role attribute has valid value</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/ff89c9/proposed/">ARIA required context role</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/in6db8/proposed/">ARIA required ID references exist</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/bc4a75/proposed/">ARIA required owned elements</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/5c01ea/proposed/">ARIA state or property is permitted</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/4e8ab6/proposed/">Element with role attribute has required states and properties</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/d0f69e/proposed/">Table header cell has assigned cells</a></li>
                </ul>
             </section><a class="button button-backtotop" href="#top"><span>
                   <svg focusable="false" aria-hidden="true" class="icon-arrow-up " viewBox="0 0 26 28">
@@ -1139,13 +731,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -1160,11 +751,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -1186,13 +779,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -1201,7 +794,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -1222,8 +815,10 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+    <!--noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-      </noscript>
+      </noscript-->
    </body>
 </html>
