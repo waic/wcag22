@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  1.4.1: Use of Color | WAI | W3C</title>
+      <title>解説書 達成基準 1.4.1: 色の使用 | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
-      <!-- 日本語訳されるまでの一時的なスクリプト -->
-      <script src="untranslated-note.js"></script>
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://waic.jp/translations/WCAG22/Understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -37,14 +35,14 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"><a href="distinguishable">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Distinguishable</a></li>
+                        </svg>ガイドライン: 判別可能</a></li>
                   <li class="nav__item"></li>
-                  <li class="nav__item"><a href="audio-control">Next SC: Audio Control
+                  <li class="nav__item"><a href="audio-control">次: 音声の制御
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -55,91 +53,79 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#resources">Related Resources</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
+                     <li><a href="#brief">要約</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#benefits">利点</a></li>
+                     <li><a href="#examples">事例</a></li>
+                     <li><a href="#resources">関連リソース</a></li>
+                     <li><a href="#techniques">テクニック</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				SC 1.4.1:</span>Use of Color (Level A)
+            <h1><span class="standalone-resource__type-of-guidance">解説書 
+                  				達成基準 1.4.1:</span>色の使用 (レベル A)
+
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>Color is not used as the only visual means of conveying information, indicating an
-                     action, prompting a response, or distinguishing a visual element.
+                  <p>色が、情報を伝える、動作を示す、反応を促す、又は視覚的な要素を判別するための唯一の視覚的手段になっていない。
                      
                   </p>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
-                     <p>This success criterion addresses color perception specifically. Other forms of perception
-                        are covered in <a href="#adaptable">Guideline 1.3</a> including programmatic access to color and other visual presentation coding.
+                     <p class="note-title marker">注記</p>
+                     <p>この達成基準は、特に色の知覚に関するものである。その他の知覚形態については、色やその他の視覚的提示のコーディングへのプログラムによるアクセスも含めて、<a href="adaptable.html">ガイドライン 1.3</a> で網羅されている。
+
                      </p>
                   </div>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   
-                  <dt>Goal</dt>
-                  <dd>Color is not the only way of distinguishing information.</dd>
+                  <dt>目標</dt>
+                  <dd>色が情報を判別する唯一の方法とならない。</dd>
                   
-                  <dt>What to do</dt>
-                  <dd>Use information in addition to color, such as shape or text, to convey meaning.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>色だけでなく、形状やテキストといった情報も用いて、意味を伝達する。</dd>
                   
-                  <dt>Why it's important</dt>
-                  <dd>Not everyone sees colors or sees them the same way.</dd> 
+                  <dt>なぜそれが重要か</dt>
+                  <dd>全ての人に色が見えるわけでもなければ、色が同じように見えるわけでもない。</dd> 
                   
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The intent of this Success Criterion is to ensure that all sighted users can access
-                  information
-                  that is conveyed by color differences, that is, by the use of color where each color
-                  has a meaning assigned to it. If the information is conveyed through color differences
-                  in an image (or other non-text format), the color may not be seen by users with color
-                  deficiencies. In this case, providing the information conveyed with color through
-                  another visual means ensures users who cannot see color can still perceive the information.
-                  
-               </p>
-               <p>Color is an important asset in design of Web content, enhancing its aesthetic appeal,
-                  its usability, and its accessibility. However, some users have difficulty perceiving
-                  color. People with partial sight often experience limited color vision, and many older
-                  users do not see color well. In addition, people using limited-color or
-                  monochrome displays and browsers will be unable to access information that is presented
-                  only in color.
-                  
-               </p>
-               <p>Examples of information conveyed by color differences: “required fields are red",
-                  “error is shown in red", and “Mary's sales are in red, Tom's are in blue". Examples
-                  of indications of an action include: using color to indicate that a link will open
-                  in a new window or that a database entry has been updated successfully. An example
-                  of prompting a response would be: using highlighting on form fields to indicate that
-                  a required field had been left blank.
+               <h2>意図</h2>
+               <p>この達成基準の意図は、色の違いによって伝えられている情報、言い換えれば、それぞれの色には割り当てられた意味があり、その色を使うことによって伝えている情報に、目の見えるすべての利用者がアクセスできるようにすることである。画像 (又は、その他の非テキスト形式) で色の違いによって情報を伝えている場合、色覚異常の利用者はその色が分からないかもしれない。この場合、色で伝えている情報を他の視覚的な手段で提供することで、色の分からない利用者もその情報を知覚できる。
                   
                </p>
                <div class="note">
-                  <p class="note-title marker">Note</p>
+               <p class="note-title marker">訳注</p>
+                  <div>
+                     <p>「色覚異常」という用語は、<a href="https://jams.med.or.jp/dic/colorvision.html">日本医学会 医学用語辞典「色覚関連用語について」</a>に基づいて使用している。</p>
+                  </div>
+               </div>
+
+               <p>色は、感覚的な訴求力、ユーザビリティ、そしてアクセシビリティを高めるため、ウェブコンテンツのデザインにおいて重要なものである。しかし、色を知覚しづらい利用者もいる。ロービジョンの人は、色覚に限界を感じることがよくあり、年配の利用者の多くも色がよく見えない。さらに、色数が制限されている、又はモノクロのディスプレイ及びブラウザを使用している人は、色だけで提示されている情報を知覚できない。
+                  
+               </p>
+               <p>色の違いで伝えられている情報の例としては、「必須項目は赤字」、「赤字はエラー」、そして「赤がメアリーの売上、青がトムの売上」などが挙げられる。動作を示している例では、リンクが新しいウィンドウで開くことやデータベースの項目が正常に更新されたことを示すために色を使うことがある。また、利用者の反応を促している例には、必須項目が未入力であることを示すためにフォームの入力フィールドを反転表示することが挙げられる。
+                  
+               </p>
+               <div class="note">
+                  <p class="note-title marker">注記</p>
                   <div>
                      
                      
-                     <p>This should not in any way discourage the use of color on a page, or even color coding
-                        if it is complemented by other visual indication.
+                     <p>この達成基準は、ページ上での色の使用、又は他の視覚的な表示によって補完される場合に色分けすることを何ら阻むものではない。
                         
                      </p>
                      
@@ -147,29 +133,13 @@
                   </div>
                </div>
                <div class="note">
-                  <p class="note-title marker">Note</p>
+                  <p class="note-title marker">注記</p>
                   <div>
                      
                      
-                     <p>If content is conveyed through the use of colors that differ not only in their hue,
-                        but that also have a significant difference in lightness, then this counts as an additional
-                        visual distinction, as long as the difference in relative luminance between the colors
-                        leads
-                        to a contrast ratio of 3:1 or greater.
-                        For example, a light green and a dark red differ <strong>both</strong> by color (hue)
-                        <strong>and</strong> by lightness, so they would pass if the contrast ratio is at least 3:1.
-                        Similarly, if content is distinguished by inverting an element's foreground and background
-                        colors,
-                        this would pass (again, assuming that the foreground and background colors have a
-                        sufficient contrast).
-                        
-                     </p>
+                     <p>色相だけでなく明度も大きく異なる色を用いてコンテンツを伝える場合、色間の相対輝度の差が 3:1 のコントラスト比になるのであれば、これは追加の視覚的な区別とみなす。例えば、明るい緑と暗い赤とでは、色（色相）と明度の<strong>両方</strong>が異なるため、コントラスト比が 3:1 以上あれば合格となる。同様に、要素の前景色と背景色を反転させてコンテンツを区別させる場合も（繰り返すが、前景色と背景色が十分なコントラストを持っているのであれば）合格となる。</p>
                      
-                     <p>However, if content relies on the user's ability to accurately perceive or differentiate
-                        a particular color
-                        an additional visual indicator will be required regardless of the contrast ratio between
-                        those colors. For example, 
-                        knowing whether an outline is green for valid or red for invalid.
+                     <p>しかしながら、コンテンツが特定の色を正確に知覚又は区別できる利用者の能力に依存している場合、色間のコントラスト比に関わらず、追加の視覚的な標識が必要となる。例えば、輪郭線が緑なら有効、赤なら無効とわかるようになっているような場合である。
                         
                      </p>
                      
@@ -177,17 +147,11 @@
                   </div>
                </div>
                <div class="note">
-                  <p class="note-title marker">Note</p>
+                  <p class="note-title marker">注記</p>
                   <div>
                      
                      
-                     <p>This criterion does not apply to situations where color has <em>not</em> been used to convey information, indicate an action,
-                        prompt a response or distinguish a visual element. For instance, a hyperlink which
-                        has been styled to appear no different than neighboring 
-                        static text would not fail this success criterion, as there would be no color differentiation
-                        between the actionable hyperlink text 
-                        and the adjacent static text. Such lack of styling differentiation could result in
-                        poor usability for anyone looking at the interface, regardless of disability.
+                     <p>この達成基準は、情報を伝達する、アクションを示す、反応を促す、又は視覚的要素を判別するために色が使用されて<em>いない</em>状況には適用されない。例えば、ハイパーリンクが隣接する静的テキストと変わらないようにスタイリングされている場合、アクション可能なハイパーリンクテキストと隣接する静的テキストとの間には色の違いがないため、この達成基準の失敗とはならない。ただ、こうしたスタイリングの違いの欠如は、障害の有無にかかわらずインタフェースを見るすべての人にとって、ユーザビリティの悪化を招く恐れがある。
                         
                      </p>
                      
@@ -195,30 +159,14 @@
                   </div>
                </div>
                <div class="note">
-                  <p class="note-title marker">Note</p>
+                  <p class="note-title marker">注記</p>
                   <div>
                      
                      
-                     <p>This criterion does not directly address the needs of users with assistive technologies.
-                        It aims to ensure that sighted users who cannot distinguish between some colors can
-                        still
-                        understand content.
-                        How information is conveyed to assistive technology users is covered separately in
-                        other
-                        criteria, including (but not limited to)
-                        <a href="non-text-content">1.1.1 Non-text Content</a>,
-                        <a href="info-and-relationships">1.3.1 Info and Relationships</a>, and
-                        <a href="name-role-value">4.1.2 Name, Role, Value</a>.
-                        
+                     <p>この達成基準は、支援技術の利用者のニーズに直接対応するものではない。これは、一部の色を区別できない目の見える利用者が、コンテンツを理解できるようにすることを目的としている。支援技術の利用者に情報をどう伝達するかは、別の達成基準、例えば <a href="non-text-content.html">1.1.1 非テキストコンテンツ</a>、<a href="info-and-relationships.html">1.3.1 情報及び関係性</a>、<a href="name-role-value.html">4.1.2 名前 (name)・役割 (role)・値 (value)</a> など (ただし、これらに限定されるわけではない) で個別に扱われる。
                      </p>
                      
-                     <p>Conversely, even if information that is conveyed by color differences is appropriately
-                        conveyed
-                        to assistive technologies, it does not necessarily pass this criterion, as sighted
-                        users who cannot
-                        distinguish between certain color may not necessarily be using any assistive technologies.
-                        This
-                        criterion requires a visible alternative to color.
+                     <p>逆に、たとえ色の違いによって伝達される情報が適切に支援技術に伝達されたとしても、特定の色を区別できない目の見える利用者が必ずしも支援技術を使用しているとは限らないため、必ずしもこの達成基準を満たしているとはいえない。この達成基準は、色に代わる視覚的な代替を要求するものである。
                         
                      </p>
                      
@@ -226,88 +174,59 @@
                   </div>
                </div>
                <div class="note">
-                  <p class="note-title marker">Note</p>
+                  <p class="note-title marker">注記</p>
                   <div>
                      
                      
-                     <p>Most user agents provide users with a color-only cue that a link has been previously
-                        activated by them ("visited"). However, several technical constraints result in authors
-                        having very limited control over these color-only indications of visited links.  The
-                        technical constraints are as follows:
+                     <p>ほとんどのユーザエージェントは利用者に、リンクが以前アクティブにされた (visited) ことを示す色だけの手がかりを提供する。しかし、いくつかの技術的な制約により、訪問済みリンクを色だけで表示することに対して、コンテンツ制作者が制御できることは非常に限られている。その技術的な制約は次のとおりである:
                      </p>
                      
                      
                      <ol>
                         
-                        <li> 
-                           User agents constrain the exposure of a link's visited state due to <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Privacy_and_the_:visited_selector">privacy concerns</a>. Author queries to user agents will indicate all links have not been visited.
-                           
+                        <li>ユーザエージェントが、<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Privacy_and_the_:visited_selector">プライバシーの懸念</a>から、リンクの訪問済み状態の公開を制限している。コンテンツ制作者からのユーザエージェントへのクエリは、すべてのリンクが未訪問であることを示す。
                         </li>
                         
-                        <li>
-                           Any available information on the visited state of a link would be inaccurate since
-                           it is both user and browser-dependent. Even if an author could accurately get information
-                           on previously activated links by a certain user, the author would be constrained to
-                           the current browser's preserved history, and would be unable to determine if the user
-                           had visited the page using a different browser (or if the history was not preserved,
-                           either from cache clearing or use of private sessions).
-                           
+                        <li>リンクの訪問済み状態に関する利用可能な情報は、利用者及びブラウザの両方に依存するため、正確ではない。仮に、特定の利用者が以前アクティブにしたリンクに関する情報を正確にコンテンツ制作者が取得できたとしても、コンテンツ制作者は現在のブラウザに保存されている履歴に制約され、利用者が別のブラウザを使ってページを訪れたかどうか (又は、キャッシュクリアもしくはプライベートセッションの使用によって履歴が保存されていないかどうか) を判断することはできない。
                         </li>
                         
-                        <li>
-                           Authors can <em>only</em> use color to modify the <code>:visited</code> CSS pseudoclass style. The technology constrains any non-color styling. Due to palette
-                           limitations, an author cannot use color alone to achieve 3:1 contrast between link
-                           and non-link text as well as between visited and unvisited links while also achieving
-                           4.5:1 contrast for all link and non-link text.
-                           
+                        <li>コンテンツ制作者は、CSS 擬似クラス <code>:visited</code> のスタイルを変更するのに、色<em>だけ</em>を使うことができる。この技術は、色以外のあらゆるスタイリングを制約する。パレットの制限によって、コンテンツ制作者は色だけを使用して、リンクと非リンクのテキストの間だけでなく、訪問済みリンクと非訪問済みリンクの間のコントラストを 3:1 にしつつ、同時に全てのリンク及び非リンクのテキストのコントラストを 4.5:1 にすることはできない。            
                         </li>
                         
-                        <li>
-                           Authors also cannot set the visited state of links. The anchor element does not include
-                           a "visited" attribute; therefore the author has no ability to alter the state through
-                           an attribute setting. As such, authors cannot achieve <a href="info-and-relationships">1.3.1 Info and Relationships</a> or
-                           <a href="name-role-value">4.1.2 Name, Role, Value</a> in regard to visited links.
+                        <li>コンテンツ制作者はまた、リンクの訪問済み状態を設定することもできない。アンカー要素には visited 属性がなく、したがって属性設定を通じて状態を切り替えることができない。そのため、コンテンツ制作者は訪問済みリンクに関して <a href="info-and-relationships">1.3.1 情報及び関係性</a> 又は <a href="name-role-value">4.1.2 名前 (name)・役割 (role)・値 (value)</a> を達成することができない。
                            
                         </li>
                         
                      </ol>
                      
                      
-                     <p>For these reasons, setting or conveying a link's visited status is not an author responsibility.
-                        Where color alone distinguishes between visited and unvisited links, it does not result
-                        in a failure of this Success Criterion, even where the contrast between the two link
-                        colors is below 3:1. Note that authors must continue to ensure that all text links
-                        meet contrast minimums against the page background (SC 1.4.3).
+                     <p>これらの理由から、リンクの訪問済み状態の設定又は伝達は、コンテンツ制作者の責任範囲ではない。色だけで訪問済みリンクと未訪問リンクを判別する場合、二つのリンク色のコントラストが 3:1 以下であっても、結果としてこの達成基準の失敗とはならない。コンテンツ制作者は、すべてのテキストリンクがページの背景に対して最低限のコントラスト (達成基準 1.4.3) を満たすことを引き続き保証しなければならないことに注意されたい。
+
                      </p>
                      
                   </div>
                </div>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>利点</h2>
                <ul>
                   
                   
-                  <li>Users with partial sight often experience limited color vision.</li>
+                  <li>ロービジョンの利用者が、色覚の限界を感じることがよくある。</li>
                   
                   
-                  <li>Some older users may not be able to see color well.</li>
+                  <li>年配の利用者は、色がよく見えないかもしれない。</li>
                   
                   
-                  <li>Users who have color-blindness benefit when information conveyed by color is available
-                     in other visual ways.
+                  <li>色覚異常の利用者が、色で伝えられている情報をその他の視覚的な手段で知覚できるようになる。</li>
+                  
+                  
+                  <li>色数の制限されたモノクロのディスプレイを使用している人は、色に依存している情報を利用できないことがある。
                      
                   </li>
                   
                   
-                  <li>People using limited color monochrome displays may be unable to access
-                     color-dependent information.
-                     
-                  </li>
-                  
-                  
-                  <li>Users who have problems distinguishing between colors can look or listen for text
-                     cues.
+                  <li>色の識別に問題を抱える利用者が、テキストの手がかりを見たり、聞いたりすることができる。
                      
                   </li>
                   
@@ -315,34 +234,25 @@
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>事例</h2>
                <dl>
                   
-                  <dt>A form that uses color and text to indicate required fields</dt>
+                  <dt>必須項目を示すために色とテキストを用いている入力フォーム</dt>
                   
-                  <dd>A form contains both required and optional fields. Instructions at the top of the
-                     form explain that required fields are labeled with red text and also with an icon.
-                     Users who cannot perceive the difference between the optional field labels and the
-                     red labels for the required fields will still be able to see the icon next to the
-                     red labels.
+                  <dd>ある入力フォームには、必須項目と任意項目の両方がある。入力フォームの上部にある説明文では、必須項目は赤字とアイコンで説明されている。任意項目のラベルと必須フィールドの赤いラベルの違いを知覚できない利用者でも、赤いラベルに隣接するアイコンで視認することができる。
                   </dd>
                   
-                  <dt>An examination</dt>
+                  <dt>試験</dt>
                   
-                  <dd>Students view an SVG image of a chemical compound and identify the chemical elements
-                     present based <strong>both</strong> on the colors used, as well as numbers next to each
-                     element. A legend shows the color and number for each type of element. Sighted users
-                     who
-                     cannot perceive all the color differences can still understand the image by relying
-                     on
-                     the numbers.
+                  <dd>学生は、化合物の SVG 画像を見て、図に使用されている色及び各元素に隣接する番号の<strong>両方</strong>に基づいて、存在する化学元素を識別する。凡例によって、元素の種類ごとの色及び番号が示されている。目が見えてもすべての色の違いを知覚できない利用者でも、番号を頼りに画像を理解することができる。
+
                   </dd>
                   
                </dl>
             </section>
             <section id="resources">
-               <h2>Related Resources</h2>
-               <p>Resources are for information purposes only, no endorsement implied.</p>
+               <h2>関連リソース</h2>
+               <p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p>
                <ul>
                   
                   
@@ -405,154 +315,89 @@
                </ul>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
-                  <p>Select the situation below that matches your content. Each situation includes techniques
-                     or combinations of techniques that are known and documented to be sufficient for that
-                     situation. 
+                  <h3>十分なテクニック</h3>
+                  <p>そのコンテンツに合致する状況を以下から選択すること。それぞれの状況には、WCAG ワーキンググループがその状況において十分であると判断する、番号付のテクニック (又は、テクニックの組み合わせ) がある。
                   </p>
                   <section class="situation" id="use-of-color-situation-0">
                      
                      
-                     <h4>Situation A: If the color of particular words, backgrounds, or other content is used
-                        to indicate information:
+                     <h4>状況 A: 特定の語句、背景、又は他のコンテンツの色を用いて情報を示している場合:
                         
                      </h4>
                      
                      
                      <ul>
-                        
-                        
-                        <li>
-                           										           
-                           <a class="general" href="https://w3c.github.io/wcag/techniques/general/G14">G14: Ensuring that information conveyed by color differences is also available in text</a>
-                           									         
-                           
-                        </li>
-                        
-                        
-                        <li>
-                           										           
-                           <a class="general" href="https://w3c.github.io/wcag/techniques/general/G205">G205: Including a text cue for colored form control labels</a>
-                           									         
-                           
-                        </li>
-                        
-                        
-                        <li>
-                           										           
-                           <a class="general" href="https://w3c.github.io/wcag/techniques/general/G182">G182: Ensuring that additional visual cues are available when text color differences are
-                              used to convey information</a>
-                           									         
-                           
-                        </li>
-                        
-                        
-                        <li>
-                           										           
-                           <a class="general" href="https://w3c.github.io/wcag/techniques/general/G183">G183: Using a contrast ratio of 3:1 with surrounding text and providing additional visual
-                              cues on hover for links or controls where color alone is used to identify them</a>
-                           									         
-                           
-                        </li>
-                        
-                        
-                     </ul>
+                     
+                     
+                     <li><a class="general" href="https://w3c.github.io/wcag/techniques/general/G14">G14: Ensuring that information conveyed by color differences is also available in text</a></li>
+                     
+                     
+                     <li><a class="general" href="https://w3c.github.io/wcag/techniques/general/G205">G205: Including a text cue for colored form control labels</a></li>
+                     
+                     
+                     <li><a class="general" href="https://w3c.github.io/wcag/techniques/general/G182">G182: Ensuring that additional visual cues are available when text color differences are used to convey information</a></li>
+                     
+                     
+                     <li><a class="general" href="https://w3c.github.io/wcag/techniques/general/G183">G183: Using a contrast ratio of 3:1 with surrounding text and providing additional visual cues on hover for links or controls where color alone is used to identify them</a></li>
+                     
+                     
+                     </ull>
                      
                      
                   </section>
                   <section class="situation" id="use-of-color-situation-1">
                      
                      
-                     <h4>Situation B: If color is used within an image to convey information:</h4>
+                     <h4>状況 B: 情報を伝える画像の中で色を用いている場合:</h4>
                      
                      
                      <ul>
-                        
-                        
-                        <li>
-                           										           
-                           <a class="general" href="https://w3c.github.io/wcag/techniques/general/G111">G111: Using color and pattern</a>
-                           									         
-                           
-                        </li>
-                        
-                        
-                        <li>
-                           										           
-                           <a class="general" href="https://w3c.github.io/wcag/techniques/general/G14">G14: Ensuring that information conveyed by color differences is also available in text</a>
-                           									         
-                           
-                        </li>
-                        
-                        
+                     
+                     
+                     <li><a class="general" href="https://w3c.github.io/wcag/techniques/general/G111">G111: Using color and pattern</a></li>
+                     
+                     
+                     <li><a class="general" href="https://w3c.github.io/wcag/techniques/general/G14">G14: Ensuring that information conveyed by color differences is also available in text</a></li>
+                     
+                     
                      </ul>
                      
                      
                   </section>
                </section>
                <section id="advisory">
-                  <h3>Advisory Techniques</h3>
-                  <p>Although not required for conformance, the following additional techniques should
-                     be considered in order to make content more accessible. Not all techniques can be
-                     used or would be effective in all situations.
+                  <h3>参考テクニック</h3>
+                  <p>適合のために必須ではないが、コンテンツをよりアクセシブルにするために、次の追加のテクニックを検討することが望ましい。ただし、すべての状況において、すべてのテクニックが使用可能、又は効果的であるとは限らない。
                   </p>
                   <ul>
                      
                      
-                     <li>
-                        									         
-                        <a class="css" href="https://w3c.github.io/wcag/techniques/css/C15">C15: Using CSS to change the presentation of a user interface component when it receives
-                           focus</a>
-                        								       
-                        
-                     </li>
+                     <li><a class="css" href="https://w3c.github.io/wcag/techniques/css/C15">C15: Using CSS to change the presentation of a user interface component when it receives focus</a></li>
                      
                      
                   </ul>
                </section>
                <section id="failure">
-                  <h3>Failures</h3>
-                  <p>The following are common mistakes that are considered failures of this Success Criterion
-                     by the WCAG Working Group.
+                  <h3>失敗例</h3>
+                  <p>以下に挙げるものは、WCAG ワーキンググループが達成基準の失敗例とみなした、よくある間違いである。
                   </p>
                   <ul>
-                     
-                     
-                     <li>
-                        									         
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F13">F13: Failure of Success Criterion 1.1.1 and 1.4.1 due to having a text alternative that
-                           does not include information that is conveyed by color differences in the image</a>
-                        								       
-                        
-                     </li>
-                     
-                     
-                     <li>
-                        									         
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F73">F73: Failure of Success Criterion 1.4.1 due to creating links that are not visually evident
-                           without color vision</a>
-                        								       
-                        
-                     </li>
-                     
-                     
-                     <li>
-                        									         
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F81">F81: Failure of Success Criterion 1.4.1 due to identifying required or error fields using
-                           color differences only</a>
-                        								       
-                        
-                     </li>
-                     
-                     
-                  </ul>
+                  
+                  
+                  <li><a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F13">F13: Failure of Success Criterion 1.1.1 and 1.4.1 due to having a text alternative that does not include information that is conveyed by color differences in the image</a></li>
+                  
+                  
+                  <li><a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F73">F73: Failure of Success Criterion 1.4.1 due to creating links that are not visually evident without color vision</a></li>
+                  
+                  
+                  <li><a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F81">F81: Failure of Success Criterion 1.4.1 due to identifying required or error fields using color differences only</a></li>
+                  
+                  
+                 </ul>
                </section>
             </section><a class="button button-backtotop" href="#top"><span>
                   <svg focusable="false" aria-hidden="true" class="icon-arrow-up " viewBox="0 0 26 28">
@@ -564,13 +409,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -585,11 +429,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -611,13 +457,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -626,7 +472,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -647,8 +493,10 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+    <!--noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-      </noscript>
+      </noscript-->
    </body>
 </html>
