@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  1.3.3: Sensory Characteristics | WAI | W3C</title>
+      <title>解説書 達成基準 1.3.3: 感覚的な特徴 | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
-      <!-- 日本語訳されるまでの一時的なスクリプト -->
-      <script src="untranslated-note.js"></script>
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://waic.jp/translations/WCAG22/Understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -37,17 +35,17 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"><a href="adaptable">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Adaptable</a></li>
+                        </svg>ガイドライン: 適応可能</a></li>
                   <li class="nav__item"><a href="meaningful-sequence">
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-left-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
-                        </svg>Previous SC: Meaningful Sequence</a></li>
-                  <li class="nav__item"><a href="orientation">Next SC: Orientation
+                        </svg>前: 意味のあるシーケンス</a></li>
+                  <li class="nav__item"><a href="orientation">次: 表示の向き
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -58,104 +56,73 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
-                     <li><a href="#test-rules">Test Rules</a></li>
+                     <li><a href="#brief">要約</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#benefits">利点</a></li>
+                     <li><a href="#examples">事例</a></li>
+                     <li><a href="#techniques">テクニック</a></li>
+                     <li><a href="#test-rules">テストルール</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				SC 1.3.3:</span>Sensory Characteristics (Level A)
+            <h1><span class="standalone-resource__type-of-guidance">解説書 
+                  				達成基準 1.3.3:</span>感覚的な特徴 (レベル A)
+
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>Instructions provided for understanding and operating content do not rely solely on
-                     sensory characteristics of components such as shape, color, size, visual location,
-                     orientation,
-                     or sound.
+                  <p>コンテンツを理解し操作するための説明は、形、色、大きさ、視覚的な位置、方向、又は音のような、構成要素が持つ感覚的な特徴だけに依存していない。
                      
                   </p>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
-                     <p>For requirements related to color, refer to <a href="#distinguishable">Guideline 1.4</a>.
-                     </p>
+                     <p class="note-title marker">注記</p>
+                     <p>色に関する要件は、<a href="distinguishable.html">ガイドライン 1.4</a> を参照。
                   </div>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   
-                  <dt>Goal</dt>
-                  <dd>Instructions are understandable by more people.</dd>
+                  <dt>目標</dt>
+                  <dd>より多くの人が説明を理解できる。</dd>
                   
-                  <dt>What to do</dt>
-                  <dd> Describe controls by name, not just by appearance or location.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>コントロールを、外見又は位置ではなく、名前で表現する。</dd>
                   
-                  <dt>Why it's important</dt>
-                  <dd>People who are blind or have low vision need non-visual instructions.</dd> 
+                  <dt>なぜそれが重要か</dt>
+                  <dd>全盲又はロービジョンの人々には、視覚的ではない説明が必要である。</dd> 
                   
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The intent of this Success Criterion is to ensure that all users can access instructions
-                  for using the content, even when they cannot perceive shape or size or use information
-                  about spatial location or orientation. 
-                  Some content relies on knowledge of the shape or position of objects that are not
-                  available from the structure of the content (for example, "round button" or "button
-                  to the right"). 
-                  Some users with disabilities are not able to perceive shape or position due to the
-                  nature of the assistive technologies they use. 
-                  This Success Criterion requires that additional information be provided to clarify
-                  instructions that are dependent on this kind of information.         
+               <h2>意図</h2>
+               <p>この達成基準の意図は、形又は大きさを知覚できない、もしくは空間的な位置又は方向に関する情報を利用できない場合でも、すべての利用者がコンテンツを利用するための指示にアクセスできるようにすることである。コンテンツによっては、コンテンツの構造からは入手できない対象の形又は位置の知識 (例えば、「円いボタン」又は「右のボタン」) に依存していることがある。障害のある利用者は、使用している支援技術の性質のために、形又は配置を知覚できないことがある。この達成基準は、このような情報に依存しているあらゆるものを明確にするために、補足の情報を提供することを要求している。
                   
                </p>
-               <p>Providing information using shape and/or location, however, is an effective method
-                  for many users including those with cognitive limitations.
-                  This provision should not discourage those types of cues as long as the information
-                  is also provided in other ways.
+               <p>しかし、形及び／又は位置を用いて情報を提供することは、認知能力の低下している利用者を含む多くの利用者に対しては効果的な手法である。この達成基準は、情報が他の方法でも提供されている限り、これらのタイプの手がかりを妨げないほうがよい。
                   
                </p>
-               <p>In some languages, it is commonly understood that "above" refers to the content previous
-                  to that point in the content and "below" refers to the content after that point. In
-                  such languages, if the content being referenced is in the appropriate place in the
-                  reading order and the references are unambiguous, statements such as "choose one of
-                  the links below" or "all of the above" would conform to this Success Criterion. 
-                  
+               <p>ある言語においては、「上記」はコンテンツのその地点よりも前にあるコンテンツを指し、「下記」はその地点よりも後にあるコンテンツを指すことが共通理解となっている。そのような言語では、参照されているコンテンツが読み上げ順序の中で適切な位置にあり、かつ参照が明確ならば、「下記のリンクのいずれかを選択する」または「上記のすべてを選択する」などの文はこの達成基準に適合するだろう。
                </p>
-               <p>WCAG was designed to apply only to controls that were displayed on a web page. The
-                  intent was to avoid describing controls solely via references to visual or auditory
-                  cues. When applying this to instructions for operating physical hardware controls
-                  (e.g. a web kiosk with dedicated content), tactile cues on the hardware might be described
-                  (e.g. the arrow shaped key, the round key on the right side). This success criterion
-                  is not intended to prevent the use of tactile cues in instructions.
+               <p>WCAG はウェブページ上に表示されたコントロールのみに該当するよう設計された。その意図は、視覚的又は聴覚的な手がかりのみを参考にコントロールを説明をすることを避けるためである。これを物理的なハードウェアコントロール (専用コンテンツのあるウェブキオスクなど) を操作するための手順に適用するとき、おそらく触知できる手がかり (例えば、矢印の形をしたキー、右側の丸いキー) が説明されるだろう。この達成基準は、指示の中で触知できる手がかりの使用を防ぐことを意図したものではない。
                   
                </p>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>利点</h2>
                <ul>
                   
                   
-                  <li>People who are blind and people who have low vision may not be able to understand
-                     instructions if they rely only on a description of the shape and/or location of content.
-                     Providing additional information in any instructions other than shape and/or location
-                     will allow users to understand the instructions even if they cannot perceive shape
-                     and/or location.          
+                  <li>全盲及びロービジョンの人々は、説明文がコンテンツの形及び／又は位置の記述のみに依存している場合、その説明文を理解できないことがある。形及び／又は位置以外の追加情報を説明文の中に提供することで、たとえ利用者が形及び／又は位置を知覚できないとしても、説明文を理解できるようになる。
                      
                   </li>
                   
@@ -163,98 +130,58 @@
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>事例</h2>
                <dl>
                   
-                  <dt>Example 1: Instructions for interpreting a schedule of competitive events references
-                     colored icons in different shapes to indicate the venue for each event
+                  <dt>事例 1: 重複した競技のスケジュールを解釈する説明文で、各競技の会場を示すために、異なる形をした色付きアイコンを参照している
                   </dt>
                   
-                  <dd>A table presents a list of times across the top row and a list of events in the first
-                     vertical column and instructions are provided under the table: "Events marked with
-                     a
-                     blue diamond are played on field A and events marked with a green circle are played
-                     on field B." The instructions rely on color and shape only and result in a failure
-                     of
-                     this criterion.
+                  <dd>テーブルの 1 行目に時間のリストが、1 列目に競技のリストが表示されて、テーブルの下に説明文が提示されている。「青いひし形で示された競技はフィールド A で、緑色の丸で示された競技はフィールド B で行われます。」この説明文は色及び形にのみ依存しており、この達成基準の失敗となる。
                   </dd>
                   
-                  <dt>Example 2: An online multi-page survey</dt>
+                  <dt>事例 2: 複数のページによるオンライン調査</dt>
                   
-                  <dd>An online multi-page survey uses a link implemented as a green arrow icon placed
-                     in the lower right hand corner of the content to move from one survey page to the
-                     next. The arrow is clearly labeled with "Next" and the instructions state, "To move
-                     to the next section of the survey, select the green arrow icon labeled 'Next' in the
-                     lower right corner below the last survey question." 
-                     The instruction uses positioning and color to help identify the icon; 
-                     the instruction does not rely on these sensory characteristics since it also refers
-                     to
-                     the label, so it passes this criterion.
+                  <dd>複数のページによるオンライン調査では、あるページから次のページへ遷移するために、緑色の矢印のアイコンとして実装されたリンクを使っていて、それをコンテンツの右下に置いている。矢印には「次へ」というラベルがはっきりと記述されていて、「次の調査へ進むには、最後の質問の右下にある『次へ』というラベルの付いた緑色の矢印のアイコンを選択してください。」という説明文が書かれている。この説明文は、アイコンの識別を助けるために位置及び色を用いているが、こうした感覚的な特徴のみに依存するのではなく、ラベルも参照しているため、この達成基準を満たしている。
                   </dd>
                   
                </dl>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
+                  <h3>十分なテクニック</h3>
                   <ul>
                      
                      
-                     <li>
-                        									         
-                        <a class="general" href="https://w3c.github.io/wcag/techniques/general/G96">G96: Providing textual identification of items that otherwise rely only on sensory information
-                           to be understood</a>
-                        								       
-                        
-                     </li>
+                     <li><a class="general" href="https://w3c.github.io/wcag/techniques/general/G96">G96: Providing textual identification of items that otherwise rely only on sensory information to be understood</a></li>
                      
                      
                   </ul>
                </section>
                <section id="failure">
-                  <h3>Failures</h3>
-                  <p>The following are common mistakes that are considered failures of this Success Criterion
-                     by the WCAG Working Group.
+                  <h3>失敗例</h3>
+                  <p>以下に挙げるものは、WCAG ワーキンググループが達成基準の失敗例とみなした、よくある間違いである。
                   </p>
                   <ul>
-                     
-                     
-                     <li>
-                        									         
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F14">F14: Failure of Success Criterion 1.3.3 due to identifying content only by its shape or
-                           location</a>
-                        								       
-                        
-                     </li>
-                     
-                     
-                     <li>
-                        
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F26">F26:  Failure of Success Criterion 1.3.3 due to using a graphical symbol alone to convey
-                           information</a>
-                        
-                        
-                     </li>
-                     
-                     
-                  </ul>
+                  
+                  
+                  <li><a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F14">F14: Failure of Success Criterion 1.3.3 due to identifying content only by its shape or location</a></li>
+                  
+                  
+                  <li><a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F26">F26: Failure of Success Criterion 1.3.3 due to using a graphical symbol alone to convey information</a></li>
+                  
+                  
+               </ul>
                </section>
             </section>
             <section id="test-rules">
-               <h2>Test Rules</h2>
-               <p>The following are Test Rules for certain aspects of this Success Criterion. It is
-                  not necessary to use these particular Test Rules to check for conformance with WCAG,
-                  but they are defined and approved test methods. For information on using Test Rules,
-                  see <a href="understanding-act-rules.html">Understanding Test Rules for WCAG Success Criteria</a>.
+               <h2>テストルール</h2>
+               <p>以下は、この達成基準の特定の側面に関するテストルールである。この特定のルールを使用して WCAG に適合しているかどうかを確認する必要はないが、これらのルールは定義され、承認されたテスト方法である。テストルールの使用については、<a href="understanding-act-rules.html">WCAG 達成基準のテストルールを理解する</a>を参照のこと。
                </p>
                <ul>
-                  <li><a href="/WAI/standards-guidelines/act/rules/9bd38c/proposed/">Content has alternative for visual reference</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/9bd38c/proposed/">Content has alternative for visual reference</a></li>
                </ul>
             </section><a class="button button-backtotop" href="#top"><span>
                   <svg focusable="false" aria-hidden="true" class="icon-arrow-up " viewBox="0 0 26 28">
@@ -266,13 +193,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -287,11 +213,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -313,13 +241,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -328,7 +256,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -349,8 +277,10 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+    <!--noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-      </noscript>
+      </noscript-->
    </body>
 </html>
