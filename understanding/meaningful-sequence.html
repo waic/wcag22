@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  1.3.2: Meaningful Sequence | WAI | W3C</title>
+      <title>解説書 達成基準 1.3.2: 意味のあるシーケンス | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
-      <!-- 日本語訳されるまでの一時的なスクリプト -->
-      <script src="untranslated-note.js"></script>
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://waic.jp/translations/WCAG22/Understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -37,17 +35,17 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"><a href="adaptable">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Adaptable</a></li>
+                        </svg>ガイドライン: 適応可能</a></li>
                   <li class="nav__item"><a href="info-and-relationships">
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-left-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
-                        </svg>Previous SC: Info and Relationships</a></li>
-                  <li class="nav__item"><a href="sensory-characteristics">Next SC: Sensory Characteristics
+                        </svg>前: 情報及び関係性</a></li>
+                  <li class="nav__item"><a href="sensory-characteristics">次: 感覚的な特徴
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -58,109 +56,86 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
-                     <li><a href="#key-terms">Key Terms</a></li>
+                     <li><a href="#brief">要約</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#benefits">利点</a></li>
+                     <li><a href="#examples">事例</a></li>
+                     <li><a href="#techniques">テクニック</a></li>
+                     <li><a href="#key-terms">重要な用語</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				SC 1.3.2:</span>Meaningful Sequence (Level A)
+            <h1><span class="standalone-resource__type-of-guidance">解説書
+                  				達成基準 1.3.2:</span>意味のあるシーケンス (レベル A)
+
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>When the sequence in which content is presented affects its meaning, a <a href="#dfn-correct-reading-sequence">correct reading sequence</a> can be <a href="#dfn-programmatically-determined">programmatically determined</a>.
+                  <p>コンテンツが提示されている順序が意味に影響を及ぼす場合には、<a href="#dfn-correct-reading-sequence">正しく読むシーケンス</a>は<a href="#dfn-programmatically-determined">プログラムによる解釈</a>が可能である。
                      
                   </p>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   
-                  <dt>Goal</dt>
-                  <dd>The order of content can be understood by more people.</dd>
+                  <dt>目標</dt>
+                  <dd>コンテンツの順序を、より多くの人が理解できる。</dd>
                   
-                  <dt>What to do</dt>
-                  <dd>Use code to preserve meaningful content order.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>意味をなすコンテンツ順序を保つように、コードを用いる</dd>
                   
-                  <dt>Why it's important</dt>
-                  <dd>Assistive technology can present content to users in the proper order.</dd> 
+                  <dt>なぜそれが重要か</dt>
+                  <dd>支援技術が、利用者にコンテンツを適切な順序で提示することができる。</dd> 
                   
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The intent of this Success Criterion is to enable a user agent to provide an alternative
-                  presentation of content while preserving the reading order needed to understand the
-                  meaning. It is important that it be possible to programmatically determine at least
-                  one sequence of the content that makes sense. Content that does not meet this Success
-                  Criterion may confuse or disorient users when assistive technology reads the content
-                  in the wrong order, or when alternate style sheets or other formatting changes are
-                  applied.
+               <h2>意図</h2>
+               <p>この達成基準の意図は、コンテンツの意味を理解するのに必要な音声読み上げの順序を保ちながら、ユーザエージェントがコンテンツの代替表現を提供できるようにすることである。意味のあるコンテンツの少なくとも一つの順序がプログラムによる解釈が可能であることが重要である。この達成基準を満たしていないコンテンツは、支援技術がそのコンテンツを正しくない順序で読み上げたり、代替スタイルシート又はその他の書式変更が適用されたりしたときに、利用者を困惑あるいは混乱させてしまう恐れがある。
                   
                   
                </p>
-               <p>A sequence is 
-                  <em>meaningful</em> if the order of content in the sequence cannot be changed without affecting its meaning.
-                  
-                  For example, if a page contains two independent articles, the relative order of the
-                  articles may not affect their meaning, as long as they are not interleaved. In such
-                  a situation, the articles themselves may have meaningful sequence, but the container
-                  that contains the articles may not have a meaningful sequence.
+               <p>コンテンツの並び順を変更すると、コンテンツの意味に影響を及ぼす場合、その順序には<em>意味</em>がある。例えば、あるページに二つの独立した記事がある場合、それらの記事の相対的な順序がそれぞれの意味に影響を及ぼす可能性はない。そのような状況においては、それらの記事自体には意味のあるシーケンスがあるかもしれないが、それらの記事が入っているテキストコンテナには意味のあるシーケンスはないかもしれない。
                   
                </p>
-               <p>The semantics of some elements define whether or not their content is a meaningful
-                  sequence. For instance, in HTML, text is always a meaningful sequence. Tables and
-                  ordered lists are meaningful sequences, but unordered lists are not.
+               <p>ある要素のプログラムが持つ意味が、そのコンテンツに意味のあるシーケンスがあるかどうかを定義している。例えば、HTML では、テキストには常に意味のあるシーケンスがある。テーブル及び順序付きリストには意味のあるシーケンスがあるが、順序なしリストには意味のあるシーケンスがない。
                   
                </p>
-               <p>The order of content in a sequence is not always meaningful. For example, the relative
-                  order of the main section of a Web page and a navigation section does not affect their
-                  meaning. They could occur in either order in the programmatically determined reading
-                  sequence. As another example, a magazine article contains several callout sidebars.
-                  The order of the article and the sidebars does not affect their meaning. In these
-                  cases there are a number of different reading orders for a Web page that can satisfy
-                  the Success Criterion. 
+               <p>コンテンツの並び順には、常に意味があるとは限らない。例えば、あるウェブページのメイン部分とナビゲーション部分の相対的な順序は、それぞれの意味には影響を及ぼさない。それらは、プログラムによる解釈が可能な音声読み上げ順序で、どちらが先にもなりえる。もう一つの例としては、雑誌の記事にはいくつかの補足記事がいくつか含まれている。記事と補足記事の順序は、それぞれの意味に影響を及ぼすことはない。このような場合においては、この達成基準を満たすことのできるウェブページには、異なる音声読み上げ順序が複数あることになる。
                   
                   
                </p>
-               <p>For clarity:</p>
+               <p>誤解のないように書くと:</p>
                <ul>
                   
                   
-                  <li>Providing a particular linear order is only required where it affects meaning.</li>
+                  <li>特定の線形順序を提供することが要求されるのは、意味に影響を与えるときだけである。</li>
                   
                   
-                  <li>There may be more than one order that is "correct" (according to the WCAG 2.0 definition).</li>
+                  <li>複数の順序が (WCAG 2.0の定義する)「正しい」読み順となることもありえる。</li>
                   
                   
-                  <li>Only one correct order needs to be provided.</li>
+                  <li>提供する正しい読み順はひとつだけでよい。</li>
                   
                   
                </ul>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>利点</h2>
                <ul>
                   
                   
-                  <li>This Success Criterion may help people who rely on assistive technologies that read
-                     content aloud. The meaning evident in the sequencing of the information in the default
-                     presentation will be the same when the content is presented in spoken form.
+                  <li>この達成基準は、コンテンツを読み上げる支援技術に依存している利用者の役に立つ。デフォルトの表現における情報の並び順で明らかになる意味は、コンテンツを読み上げで提示したときも同じになるはずである。
                      
                      
                   </li>
@@ -169,23 +144,20 @@
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>事例</h2>
                <ul>
                   
                   
                   <li> 
                      
-                     <strong>Example 1:</strong> In a multi-column document, the linear presentation of the content flows from the
-                     top of a column to the bottom of the column, then to the top of the next column.
+                     <strong>事例 1:</strong> 段組をしている文書において、コンテンツを線形化した提示は、ある段の先頭から最後へと流れていき、その後次の段の先頭へと流れていく。
                      
                   </li>
                   
                   
                   <li> 
                      
-                     <strong>Example 2:</strong> CSS is used to position a navigation bar, the main story on a page, and a side story.
-                     The visual presentation of the sections does not match the programmatically determined
-                     order, but the meaning of the page does not depend on the order of the sections.
+                     <strong>事例 2:</strong> CSS を用いて、ナビゲーションバー、ページの本文、及び関連記事を配置している。それらの視覚的提示は、プログラムによる解釈される順序とは合致していないが、そのページの意味はその見た目の順序には依存していない。
                      
                   </li>
                   
@@ -193,201 +165,109 @@
                </ul>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
+                  <h3>十分なテクニック</h3>
                   <ul>
+                  
+                  
+                  <li>ウェブページにあるすべてのコンテンツについて、<a class="general" href="https://w3c.github.io/wcag/techniques/general/G57">G57: Ordering the content in a meaningful sequence</a></li>
+                  
+                  
+                  <li><p>次のテクニックのどれか一つを用いて、コンテンツの並び順を意味のあるものにする、<strong>かつ</strong>、その並び順については、<a class="general" href="https://w3c.github.io/wcag/techniques/general/G57">G57: Ordering the content in a meaningful sequence</a></p>
                      
                      
-                     <li> 
-                        
-                        <a class="general" href="https://w3c.github.io/wcag/techniques/general/G57">G57: Ordering the content in a meaningful sequence</a> for all the content in the Web page
+                     <ul>
                         
                         
-                     </li>
+                        <li><a class="html" href="https://w3c.github.io/wcag/techniques/html/H34">H34: Using a Unicode right-to-left mark (RLM) or left-to-right mark (LRM) to mix text direction inline</a></li>
+                        
+                        
+                        <li><a class="html" href="https://w3c.github.io/wcag/techniques/html/H56">H56: Using the dir attribute on an inline element to resolve problems with nested directional runs</a></li>
+                        
+                        
+                        <li><a class="css" href="https://w3c.github.io/wcag/techniques/css/C6">C6: Positioning content based on structural markup</a></li>
+                        
+                        
+                        <li><a class="css" href="https://w3c.github.io/wcag/techniques/css/C8">C8: Using CSS letter-spacing to control spacing within a word</a></li>
+                        
+                        
+                     </ul>
                      
                      
-                     <li>
-                        
-                        
-                        <p>Marking sequences in the content as meaningful using one of the following techniques
-                           
-                           <strong>AND</strong> 
-                           
-                           <a class="general" href="https://w3c.github.io/wcag/techniques/general/G57">G57: Ordering the content in a meaningful sequence</a> for those sequences    
-                           
-                        </p>
-                        
-                        
-                        <ul>
-                           
-                           
-                           <li>
-                              											             
-                              <a class="html" href="https://w3c.github.io/wcag/techniques/html/H34">H34: Using a Unicode right-to-left mark (RLM) or left-to-right mark (LRM) to mix text direction
-                                 inline</a>
-                              										           
-                              
-                           </li>
-                           
-                           
-                           <li>
-                              											             
-                              <a class="html" href="https://w3c.github.io/wcag/techniques/html/H56">H56: Using the dir attribute on an inline element to resolve problems with nested directional
-                                 runs</a>
-                              										           
-                              
-                           </li>
-                           
-                           
-                           <li>
-                              											             
-                              <a class="css" href="https://w3c.github.io/wcag/techniques/css/C6">C6: Positioning content based on structural markup</a>
-                              										           
-                              
-                           </li>
-                           
-                           
-                           <li>
-                              											             
-                              <a class="css" href="https://w3c.github.io/wcag/techniques/css/C8">C8: Using CSS letter-spacing to control spacing within a word</a>
-                              										           
-                              
-                           </li>
-                           
-                           
-                        </ul>
-                        
-                        
-                     </li>
-                     
-                     
-                     <li>
-                        									         
-                        <a class="css" href="https://w3c.github.io/wcag/techniques/css/C27">C27: Making the DOM order match the visual order</a>
-                        								       
-                        
-                     </li>
-                     
-                     
-                     <li>
-                        
-                        <a class="pdf" href="https://w3c.github.io/wcag/techniques/pdf/PDF3">PDF3: Ensuring correct tab and reading order in PDF documents</a>
-                        
-                        
-                     </li>
-                     
-                     
-                  </ul>
+                  </li>
+                  
+                  
+                  <li><a class="css" href="https://w3c.github.io/wcag/techniques/css/C27">C27: Making the DOM order match the visual order</a></li>
+                  
+                  
+                  <li><a class="pdf" href="https://w3c.github.io/wcag/techniques/pdf/PDF3">PDF3: Ensuring correct tab and reading order in PDF documents</a></li>
+                  
+                  
+                  
+               </ul>
                </section>
                <section id="failure">
-                  <h3>Failures</h3>
-                  <p>The following are common mistakes that are considered failures of this Success Criterion
-                     by the WCAG Working Group.
+                  <h3>失敗例</h3>
+                  <p>以下に挙げるものは、WCAG ワーキンググループが達成基準の失敗例とみなした、よくある間違いである。
                   </p>
                   <ul>
-                     
-                     
-                     <li>
-                        									         
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F34">F34: Failure of Success Criterion 1.3.1 and 1.3.2 due to using white space characters to
-                           format tables in plain text content</a>
-                        								       
-                        
-                     </li>
-                     
-                     
-                     <li>
-                        									         
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F33">F33: Failure of Success Criterion 1.3.1 and 1.3.2 due to using white space characters to
-                           create multiple columns in plain text content</a>
-                        								       
-                        
-                     </li>
-                     
-                     
-                     <li>
-                        									         
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F32">F32: Failure of Success Criterion 1.3.2 due to using white space characters to control
-                           spacing within a word</a>
-                        								       
-                        
-                     </li>
-                     
-                     
-                     <li>
-                        									         
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F49">F49:  Failure of Success Criterion 1.3.2 due to using an HTML layout table that does not
-                           make sense when linearized  </a>
-                        								       
-                        
-                     </li>
-                     
-                     
-                     <li>
-                        									         
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F1">F1: Failure of Success Criterion 1.3.2 due to changing the meaning of content by positioning
-                           information with CSS</a>
-                        								       
-                        
-                     </li>
-                     
-                     
-                  </ul>
+                  
+                  
+                  <li><a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F34">F34: Failure of Success Criterion 1.3.1 and 1.3.2 due to using white space characters to format tables in plain text content</a></li>
+                  
+                  
+                  <li><a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F33">F33: Failure of Success Criterion 1.3.1 and 1.3.2 due to using white space characters to create multiple columns in plain text content</a></li>
+                  
+                  
+                  <li><a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F32">F32: Failure of Success Criterion 1.3.2 due to using white space characters to control spacing within a word</a></li>
+                  
+                  
+                  <li><a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F49">F49: Failure of Success Criterion 1.3.2 due to using an HTML layout table that does not make sense when linearized</a></li>
+                  
+                  
+                  <li><a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F1">F1: Failure of Success Criterion 1.3.2 due to changing the meaning of content by positioning information with CSS</a></li>
+                  
+                  
+               </ul>
                </section>
             </section>
             <section id="key-terms">
                <details>
                   <summary>
-                     <h2>Key Terms</h2>
+                     <h2>重要な用語</h2>
                   </summary>
-                  <dt id="dfn-assistive-technology">assistive technology</dt>
+                  <dt id="dfn-assistive-technology">支援技術 (assistive technology)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">hardware and/or software that acts as a <a href="#dfn-user-agent">user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements
-                           of users with disabilities that go beyond those offered by mainstream user agents
+                        <p xmlns="http://www.w3.org/1999/xhtml">障害のある利用者の要件を満たすために、主流の<a href="#dfn-user-agent">ユーザエージェント</a>が提供する機能を超えた機能を提供するような、ユーザエージェントとして動作する、又は主流のユーザエージェントと共に動作するハードウェア及び／又はソフトウェア。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Functionality provided by assistive technology includes alternative presentations
-                              (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
-                              voice), additional navigation or orientation mechanisms, and content transformations
-                              (e.g., to make tables more accessible).
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術が提供する機能としては、代替の提示 (例: 合成音声や拡大表示したコンテンツ)、代替入力手法 (例: 音声認識)、付加的なナビゲーション又は位置確認のメカニズム、及びコンテンツ変換 (例: テーブルをよりアクセシブルにするもの) などを挙げることができる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Assistive technologies often communicate data and messages with mainstream user agents
-                              by using and monitoring APIs.
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術は、API を利用、監視することで、主流のユーザエージェントとデータやメッセージのやりとりをすることが多い。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The distinction between mainstream user agents and assistive technologies is not absolute.
-                              Many mainstream user agents provide some features to assist individuals with disabilities.
-                              The basic difference is that mainstream user agents target broad and diverse audiences
-                              that usually include people with and without disabilities. Assistive technologies
-                              target narrowly defined populations of users with specific disabilities. The assistance
-                              provided by an assistive technology is more specific and appropriate to the needs
-                              of its target users. The mainstream user agent may provide important functionality
-                              to assistive technologies like retrieving Web content from program objects or parsing
-                              markup into identifiable bundles.
+                           <p class="note-title marker">注記</p>
+                           <p>主流のユーザエージェントと支援技術との区別は、絶対的なものではない。多くの主流のユーザエージェントは、障害のある個人を支援する機能を提供している。基本的な差異は、主流のユーザエージェントが障害のある人もない人も含めて、広く多様な利用者を対象にしているのに対し、支援技術は、特定の障害のある利用者という、より狭く限られた人たちを対象にしているということである。支援技術により提供される支援は、対象とする利用者に特化した、よりニーズに適したものである。主流のユーザエージェントは、プログラムオブジェクトからのウェブコンテンツの抽出、マークアップの識別可能な構造への解釈といった、重要な機能を支援技術に対して提供する場合がある。
                               
                            </p>
                         </div>
@@ -395,8 +275,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Assistive technologies that are important in the context of this document include
-                              the following:
+                           <p>この文書の文脈において重要な支援技術としては、以下のものが挙げられる:
                               
                            </p>
                            
@@ -404,38 +283,29 @@
                            <ul>
                               
                               
-                              <li>screen magnifiers, and other visual reading assistants, which are used by people with
-                                 visual, perceptual and physical print disabilities to change text font, size, spacing,
-                                 color, synchronization with speech, etc. in order to improve the visual readability
-                                 of rendered text and images;
+                              <li>画面拡大ソフト及びその他の視覚的な表示に関する支援技術。視覚障害、知覚障害、及び読書困難などの障害のある人が、レンダリング後のテキスト及び画像の視覚的な読みやすさを改善するために、テキストのフォント、サイズ、間隔、色、音声との同期などを変更するのに使用している。
+                              </li>
+                              
+                              
+                              <li>スクリーンリーダー。全盲の人がテキスト情報を合成音声あるいは点字で読み取るために使用している。
                                  
                               </li>
                               
                               
-                              <li>screen readers, which are used by people who are blind to read textual information
-                                 through synthesized speech or braille;
+                              <li>音声変換ソフトウェア。認知障害、言語障害、及び学習障害のある人が、テキストを合成音声に変換するために使用している。
                                  
                               </li>
                               
                               
-                              <li>text-to-speech software, which is used by some people with cognitive, language, and
-                                 learning disabilities to convert text into synthetic speech;
+                              <li>音声認識ソフトウェア。何らかの身体障害のある利用者が使用することがある。</li>
+                              
+                              
+                              <li>代替キーボード。特定の身体障害のある人がキーボード操作をシミュレートするのに使用している (ヘッドポインタ、シングルスイッチ、呼気・吸気スイッチ、及びその他の特別な入力デバイスを使った代替キーボードを含む)。
                                  
                               </li>
                               
                               
-                              <li>speech recognition software, which may be used by people who have some physical disabilities;</li>
-                              
-                              
-                              <li>alternative keyboards, which are used by people with certain physical disabilities
-                                 to simulate the keyboard (including alternate keyboards that use head pointers, single
-                                 switches, sip/puff and other special input devices.);
-                                 
-                              </li>
-                              
-                              
-                              <li>alternative pointing devices, which are used by people with certain physical disabilities
-                                 to simulate mouse pointing and button activations.
+                              <li>代替ポインティングデバイス。特定の身体障害のある人がマウスポインタとボタンの動きをシミュレートするのに使用している。
                                  
                               </li>
                               
@@ -446,34 +316,31 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-correct-reading-sequence">correct reading sequence</dt>
+                  <dt id="dfn-correct-reading-sequence">正しく読むシーケンス (correct reading sequence)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">any sequence where words and paragraphs are presented in an order that does not change
-                           the meaning of the content
+                        <p xmlns="http://www.w3.org/1999/xhtml">コンテンツの意味を変更せずに、単語及び段落が提示されるシーケンス。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-programmatically-determined">programmatically determined</dt>
+                  <dt id="dfn-programmatically-determined">プログラムによる解釈 (programmatically determined)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">determined by software from author-supplied data provided in a way that different
-                           <a href="#dfn-user-agent">user agents</a>, including <a href="#dfn-assistive-technology">assistive technologies</a>, can extract and present this information to users in different modalities
+                        <p xmlns="http://www.w3.org/1999/xhtml"><a href="#dfn-assistive-technology">支援技術</a>を含む様々な<a href="#dfn-user-agent">ユーザエージェント</a>が抽出でき、利用者に様々な感覚モダリティで提示できるような形のデータがコンテンツ制作者によって提供されたとき、そのデータがソフトウェアによって解釈されること。
                            
                         </p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Determined in a markup language from elements and attributes that are accessed directly
-                              by commonly available assistive technology.
+                           <p>マークアップ言語で、一般に入手可能な支援技術が直接アクセスできる要素と属性から解釈される。
                               
                            </p>
                            
@@ -482,10 +349,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Determined from technology-specific data structures in a non-markup language and exposed
-                              to assistive technology via an accessibility API that is supported by commonly available
-                              assistive technology.
-                              
+                           <p>非マークアップ言語の技術特有のデータ構造から解釈され、一般に入手可能な支援技術がサポートするアクセシビリティ API を通じて支援技術に提供される。
                            </p>
                            
                         </aside>
@@ -493,17 +357,17 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-user-agent">user agent</dt>
+                  <dt id="dfn-user-agent">ユーザエージェント (user agent)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">any software that retrieves and presents Web content for users</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ウェブコンテンツを取得して利用者に提示するあらゆるソフトウェア。</p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technology">assistive technologies</a> — that help in retrieving, rendering, and interacting with Web content.
+                           <p>ウェブコンテンツの取得、レンダリング及びインタラクションを支援する、ウェブブラウザ、メディアプレーヤ、プラグイン、及びその他のプログラム (<a href="#dfn-assistive-technology">支援技術</a>も含む)。
                               
                            </p>
                            
@@ -523,13 +387,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -544,11 +407,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -570,13 +435,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -585,7 +450,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -606,8 +471,10 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+    <!--noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-      </noscript>
+      </noscript-->
    </body>
 </html>
