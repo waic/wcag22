@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Documenting Accessibility Support for Uses of a Web Technology | WAI | W3C</title>
+      <title>解説書 ウェブコンテンツ技術の使用法のアクセシビリティ サポートを文書化する | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
-      <!-- 日本語訳されるまでの一時的なスクリプト -->
-      <script src="untranslated-note.js"></script>
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://waic.jp/translations/WCAG22/Understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -37,10 +35,10 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"></li>
-                  <li class="nav__item"><a href="understanding-metadata">Next : Understanding Metadata
+                  <li class="nav__item"><a href="understanding-metadata">次: メタデータを理解する
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -51,7 +49,7 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul></ul>
                </div>
@@ -59,38 +57,33 @@
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1>Documenting Accessibility Support for Uses of a Web Technology</h1>
+            <h1>ウェブコンテンツ技術の使用法のアクセシビリティ サポートを文書化する</h1>
             <div>
                		
                		
-               <p>The documentation of accessibility support for uses of a Web technology provides the
-                  information needed to determine whether it is possible to satisfy the WCAG 2.1 Success
-                  Criteria for a particular environment. 
+               <p>ウェブコンテンツ技術の使用法に関するアクセシビリティ サポートの文書化は、ある特定の環境において WCAG 2 の達成基準を満たすことが可能かどうかを判断するために必要な情報を提供する。
                </p>
                		
-               <p>Accessibility Support documentation for uses of a Web technology includes the following
-                  information: 
+               <p>ウェブコンテンツ技術の使用法に関するアクセシビリティサポートの文書化においては、以下の情報を含める:
                </p>
                		
                <ul>
                   			
                   <li>
                      				
-                     <p> The version or versions of the technology </p>
+                     <p>ウェブコンテンツ技術のバージョン又は複数のウェブ技術のバージョン。</p>
                      			
                   </li>
                   			
                   <li>
                      				
-                     <p> For each user agent or plug-in that supports this version of the technology:</p>
+                     <p>ウェブコンテンツ技術のこのバージョンをサポートするユーザエージェント又はプラグインのそれぞれについて:</p>
                      				
                      <ul>
                         					
                         <li>
                            						
-                           <p> The version of the user agent or plug-in, including the operating system or platform
+                           <p>ユーザエージェント又はプラグインのバージョン。使用する OS 又はプラットフォームを含む。
                               
                            </p>
                            					
@@ -98,16 +91,14 @@
                         					
                         <li>
                            						
-                           <p> Ways of using the technology that are supported by the user agent; ideally, there
-                              are ways to meet all of the success criteria, but exceptions should be noted. 
+                           <p>ユーザエージェントがサポートしている技術の使用法。理想としては、達成基準のすべてを満たす方法があることだが、例外は記されていなければならない。
                            </p>
                            					
                         </li>
                         					
                         <li>
                            						
-                           <p> Known limitations of the user agent support for uses of the technology to meet Success
-                              Criteria 
+                           <p>達成基準を満たすためのウェブ技術の使用法へのユーザエージェントによるサポートの既知の制限。
                            </p>
                            					
                         </li>
@@ -118,13 +109,13 @@
                   			
                   <li>
                      				
-                     <p> For each assistive technology that supports the Web technology:</p>
+                     <p>ウェブコンテンツ技術をサポートする支援技術のそれぞれについて:</p>
                      				
                      <ul>
                         					
                         <li>
                            						
-                           <p> The version of the assistive technology, including the operating system or platform
+                           <p>支援技術のバージョン。使用する OS 又はプラットフォームを含む。
                               
                            </p>
                            					
@@ -136,22 +127,20 @@
                   			
                   <li>
                      				
-                     <p> For each host user agent that is supported by this version of the assistive technology:</p>
+                     <p>支援技術のこのバージョンによりサポートされている、ホストユーザエージェントのそれぞれについて:</p>
                      				
                      <ul>
                         					
                         <li>
                            						
-                           <p> Ways of using the technology supported by the assistive technology for this user
-                              agent 
+                           <p>このユーザエージェントに対する支援技術がサポートしている技術の使用法。
                            </p>
                            					
                         </li>
                         					
                         <li>
                            						
-                           <p> Known limitations in the support of uses of the technology to meet success criteria
-                              when using the assistive technology with this user agent 
+                           <p>このユーザエージェントで支援技術を用いることにより達成基準を満たすウェブコンテンツ技術の使用法へのサポートにおける既知の制限。
                            </p>
                            					
                         </li>
@@ -162,52 +151,23 @@
                   		
                </ul>
                		
-               <p>Target environments are defined by the user agents and assistive technologies available
-                  to its users. Documentation of accessibility support involves detailed understanding
-                  of the ways to use functionality of a technology to meet success criteria, and also
-                  of user agents and assistive technology. Because of this, vendors and developers of
-                  Web technologies and user agents are encouraged to provide this information about
-                  the accessibility support of their products. Similarly, developers and vendors of
-                  assistive technology are encouraged to provide this information about the ways to
-                  use Web technologies that are supported by their products. Authors should need to
-                  document the accessibility supported ways to use a technology only when there is not
-                  reliable documentation available from vendors or testing groups for those uses. 
+               <p>ターゲットとする環境は、その利用者にとって入手可能なユーザエージェント及び支援技術によって決まる。アクセシビリティサポートの文書化には、達成基準を満たす技術の機能の使用法、そしてユーザエージェント及び支援技術の機能に関する詳細な理解が必要である。このために、ウェブ技術及びユーザエージェントの開発者とベンダーには、製品のアクセシビリティサポートに関する情報を提供することが望まれる。同様に、支援技術の開発者とベンダーにも、その製品がサポートするウェブコンテンツ技術の使用法に関する情報を提供することが望まれる。コンテンツ制作者は、ある技術の使用法に関してベンダーあるいは検証者のグループから信頼できる文書が提供されていないときのみ、その技術のアクセシビリティ サポーテッドな使用法を文書化する必要がある。
                </p>
                		
-               <p>For a controlled environment, such as a corporate workplace, the user agents and assistive
-                  technologies available may be a specific set of versions of user agents on a specific
-                  set of platforms. To determine whether uses of a Web technology are accessibility
-                  supported in a target environment, an author checks that the user agents and assistive
-                  technologies available are in the set of supported user agents and assistive technologies
-                  listed for those uses in the Accessibility Support documentation. 
+               <p>例えば企業の職場などのように、制御された環境においては、利用可能なユーザエージェント及び支援技術は、特定のプラットフォーム上における特定のバージョンのユーザエージェントである可能性がある。ウェブコンテンツ技術の使用法が、そのターゲットとなる環境においてアクセシビリティ サポーテッドであるかどうかを判断するためには、コンテンツ制作者は、利用可能なユーザエージェント及び支援技術が、アクセシビリティサポート文書の中で挙げられている、サポートしているユーザエージェント及び支援技術に該当するかどうかを確認する必要がある。
                </p>
                		
-               <p>For a target environment like the Internet, authors may need to consider a much larger
-                  set of user agents, including older versions, and on a wider variety of platforms.
+               <p>ターゲットとするのがインターネットのような環境である場合は、コンテンツ制作者は旧バージョンを含むユーザエージェントと様々なプラットフォーム上でのより多様な組合せを考慮する必要があるかもしれない。
                   
                </p>
                		
-               <p>Environments that use different natural languages are different target environments.
-                  For example, the accessibility-supported ways of using technologies for an English
-                  language environment may differ from those for an Arabic language environment, since
-                  there may be different user agents and assistive technologies that support these languages.
+               <p>異なる自然言語を用いる環境は、ターゲットとなる環境も異なってくる。例えば、ウェブ技術のアクセシビリティ サポーテッドな使用法は、英語の環境とアラビア言語の環境とでは異なる可能性がある。なぜなら、それぞれの言語をサポートするユーザエージェント及び支援技術が異なるかもしれないからである。
                </p>
                		
-               <p>The documentation includes version-specific information about all the assistive technologies
-                  and all the user agents and the ways that they interact with one another. If support
-                  in these user agents is similar, it will be straightforward for an author to decide
-                  if a documented way of using a technology is accessibility supported. If the uses
-                  supported are different in different versions, authors can only rely on the uses that
-                  are supported in the versions available to their users in determining accessibility
-                  support. 
+               <p>文書化する際には、すべての支援技術及びすべてのユーザエージェント、そしてそれぞれが互いに情報のやりとりをする方法に関するバージョン特有の情報を含める。それらのユーザエージェントにおけるサポートが似通っていれば、コンテンツ制作者が文書化されているウェブコンテンツ技術の使用法がアクセシビリティ サポーテッドかどうかを判断するのは簡単であろう。サポートされている使用法がバージョンによって異なる場合、コンテンツ制作者は、アクセシビリティサポートかどうかを判断する際には、利用者が使用可能なバージョンにおいてサポートされている使用法だけに依存することだけができる。
                </p>
                		
-               <p>If a way of using a technology is not relied upon for conformance, the absence of
-                  accessibility support for that use does not prevent conformance of the Web page. So
-                  if the unsupported use does not occur in the content, or if there is a conforming
-                  version of that content available, the Web page still conforms. For instance, lack
-                  of accessibility support for interactive controls in a Web technology would not prevent
-                  uses of the Web technology for non-interactive content that are accessibility supported.
+               <p>ウェブコンテンツ技術のある使用法が適合する上で依存されていなければ、その使用法がアクセシビリティサポートでなかったとしても、ウェブページの適合を妨げることにはならない。サポートされていない使用法がコンテンツで発生しない場合、あるいはそのコンテンツの適合しているバージョンが利用可能である場合、そのウェブページは適合していることになる。例えば、あるウェブコンテンツ技術のインタラクティブなコントロールにアクセシビリティ サポートが欠如していたとしても、アクセシビリティ サポーテッドであるインタラクティブでないコンテンツでそのウェブコンテンツ技術を使用することを禁じるものではない。
                   
                </p>
                	
@@ -221,13 +181,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -242,11 +201,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -268,13 +229,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -283,7 +244,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -304,8 +265,10 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+      <!--noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-      </noscript>
+      </noscript-->
    </body>
 </html>
