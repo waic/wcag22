@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  2.2.1: Timing Adjustable | WAI | W3C</title>
+      <title>解説書 達成基準 2.2.1: タイミング調整可能 | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
-      <!-- 日本語訳されるまでの一時的なスクリプト -->
-      <script src="untranslated-note.js"></script>
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://waic.jp/translations/WCAG22/Understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -37,14 +35,14 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"><a href="enough-time">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Enough Time</a></li>
+                        </svg>ガイドライン: 十分な時間</a></li>
                   <li class="nav__item"></li>
-                  <li class="nav__item"><a href="pause-stop-hide">Next SC: Pause, Stop, Hide
+                  <li class="nav__item"><a href="pause-stop-hide">次: 一時停止、停止、非表示
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -55,54 +53,51 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
-                     <li><a href="#key-terms">Key Terms</a></li>
-                     <li><a href="#test-rules">Test Rules</a></li>
+                     <li><a href="#brief">要約</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#benefits">利点</a></li>
+                     <li><a href="#examples">事例</a></li>
+                     <li><a href="#techniques">テクニック</a></li>
+                     <li><a href="#key-terms">重要な用語</a></li>
+                     <li><a href="#test-rules">テストルール</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				SC 2.2.1:</span>Timing Adjustable (Level A)
+            <h1><span class="standalone-resource__type-of-guidance">解説書 
+                  				達成基準 2.2.1:</span>タイミング調整可能 (レベル A)
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>For each time limit that is set by the content, at least one of the following is true:</p>
+                  <p>コンテンツに制限時間を設定する場合は、次に挙げる事項のうち、少なくとも一つを満たしている</p>
                   <dl>
                      
                      
-                     <dt>Turn off</dt>
+                     <dt>解除</dt>
                      
                      
                      <dd>
                         
                         
-                        <p>The user is allowed to turn off the time limit before encountering it; or</p>
+                        <p>制限時間があるコンテンツを利用する前に、利用者がその制限時間を解除することができる。又は、</p>
                         
                         
                      </dd>
                      
                      
-                     <dt>Adjust</dt>
+                     <dt>調整</dt>
                      
                      
                      <dd>
                         
                         
-                        <p>The user is allowed to adjust the time limit before encountering it over a wide range
-                           that is at least ten times the length of the default setting; or
+                        <p>制限時間があるコンテンツを利用する前に、利用者が少なくともデフォルト設定の 10 倍を超える、大幅な制限時間の調整をすることができる。又は、
                            
                         </p>
                         
@@ -110,15 +105,13 @@
                      </dd>
                      
                      
-                     <dt>Extend</dt>
+                     <dt>延長</dt>
                      
                      
                      <dd>
                         
                         
-                        <p>The user is warned before time expires and given at least 20 seconds to extend the
-                           time limit with a simple action (for example, "press the space bar"), and the user
-                           is allowed to extend the time limit at least ten times; or
+                        <p>時間切れになる前に利用者に警告し、かつ少なくとも 20 秒間の猶予をもって、例えば「スペースキーを押す」などの簡単な操作により、利用者が制限時間を少なくとも 10 倍以上延長することができる。又は、
                            
                         </p>
                         
@@ -126,14 +119,13 @@
                      </dd>
                      
                      
-                     <dt>Real-time Exception</dt>
+                     <dt>リアルタイムの例外</dt>
                      
                      
                      <dd>
                         
                         
-                        <p>The time limit is a required part of a real-time event (for example, an auction),
-                           and no alternative to the time limit is possible; or
+                        <p>リアルタイムのイベント (例えば、オークション) において制限時間が必須の要素で、その制限時間に代わる手段が存在しない。又は、
                            
                         </p>
                         
@@ -141,13 +133,13 @@
                      </dd>
                      
                      
-                     <dt>Essential Exception</dt>
+                     <dt>必要不可欠な例外</dt>
                      
                      
                      <dd>
                         
                         
-                        <p>The time limit is <a href="#dfn-essential">essential</a> and extending it would invalidate the activity; or
+                        <p>制限時間が<a href="#dfn-essential">必要不可欠</a>なもので、制限時間を延長することがコンテンツの動作を無効にすることになる。又は、
                            
                         </p>
                         
@@ -155,13 +147,13 @@
                      </dd>
                      
                      
-                     <dt>20 Hour Exception</dt>
+                     <dt>20 時間の例外</dt>
                      
                      
                      <dd>
                         
                         
-                        <p>The time limit is longer than 20 hours.</p>
+                        <p>制限時間が 20 時間よりも長い。</p>
                         
                         
                      </dd>
@@ -169,246 +161,147 @@
                      
                   </dl>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
-                     <p>This success criterion helps ensure that users can complete tasks without unexpected
-                        changes in content or context that are a result of a time limit. This success criterion
-                        should be considered in conjunction with <a href="#on-focus">Success Criterion 3.2.1</a>, which puts limits on changes of content or context as a result of user action.
-                        
+                     <p class="note-title marker">注記</p>
+                     <p>この達成基準は、制限時間の結果として、コンテンツ又は状況の予期せぬ変化を引き起こさないように利用者がタスクを完了できるようにするためのものである。この達成基準は、利用者の動作の結果としてのコンテンツ又はコンテキストの変化を制限する<a href="on-focus.html">達成基準 3.2.1</a> と併せて考慮すること。
+
                      </p>
                   </div>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   
-                  <dt>Goal</dt>
-                  <dd>Users have adequate time to complete tasks.</dd>
+                  <dt>目標</dt>
+                  <dd>利用者がタスクを完了するのに、十分な時間がある。</dd>
                   
-                  <dt>What to do</dt>
-                  <dd>Let users turn off, adjust, or extend time limits.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>利用者が時間制限を解除、調整、又は延長できるようにする。</dd>
                   
-                  <dt>Why it's important</dt>
-                  <dd>People with disabilities may need more time to complete activities.</dd> 
+                  <dt>なぜそれが重要か</dt>
+                  <dd>障害のある人は、行為を完了するのに、より長い時間を要するかもしれない。</dd> 
                   
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The intent of this Success Criterion is to ensure that users with disabilities are
-                  given adequate time to interact with Web content whenever possible. People with disabilities
-                  such as blindness, low vision, dexterity impairments, and cognitive limitations may
-                  require more time to read content or to perform functions such as filling out on-line
-                  forms. If Web functions are time-dependent, it will be difficult for some users to
-                  perform the required action before a time limit occurs. This may render the service
-                  inaccessible to them. Designing functions that are not time-dependent will help people
-                  with disabilities succeed at completing these functions. Providing options to disable
-                  time limits, customize the length of time limits, or request more time before a time
-                  limit occurs helps those users who require more time than expected to successfully
-                  complete tasks. These options are listed in the order that will be most helpful for
-                  the user. Disabling time limits is better than customizing the length of time limits,
-                  which is better than requesting more time before a time limit occurs. 
+               <h2>意図</h2>
+               <p>この達成基準の意図は、障害のある利用者がウェブコンテンツを操作するのに十分な時間の提供を、可能な限り保証することである。全盲、ロービジョン、巧緻性障害、及び、認知能力の低下している利用者は、コンテンツを読んだり、オンラインフォームに記入したりするような操作を実行するのに、より長い時間を必要とする場合がある。ウェブコンテンツの機能が時間の経過に依存している場合、制限時間内に必要な操作を実行することが困難な利用者もいるだろう。このことは、サービスをそういった利用者に対してアクセシブルではないものにしてしまう。そこで、機能を時間の経過に依存しないように設計することで、障害のある利用者がその操作を完了させやすくなる。制限時間を解除する、制限時間の長さを調整する、又は時間切れになる前に制限時間の延長を要求する、といった選択肢を提供することは、作業を無事に終えると見込まれているよりも多くの時間を必要とする利用者の助けになる。これらの選択肢は、利用者にとって最も有用なものから順に書かれている。時間切れになる前に制限時間の延長を要求できるようにすることよりも、制限時間の長さを調整できるようにすることのほうが望ましく、さらにそれよりも制限時間を解除できるようにすることのほうが望ましい。
                   
                </p>
-               <p>Any process that happens without user initiation after a set time or on a periodic
-                  basis is a time limit. This includes partial or full updates of content (for example,
-                  page refresh), changes to content, or the expiration of a window of opportunity for
-                  a user to react to a request for input. 
+               <p>利用者によって開始されることがなく、設定時間後又は定期的に発生する処理は、どれも制限時間によるものである。これには、コンテンツの一部又は全部の更新 (例えば、ページのリフレッシュ)、コンテンツの変更、入力の要求に利用者が対応するためのウィンドウの期限切れなどが含まれる。
                   
                </p>
-               <p>It also includes content that is advancing or updating at a rate beyond the user's
-                  ability to read and/or understand it. In other words, animated, moving or scrolling
-                  content introduces a time limit on a users ability to read content.
+               <p>利用者が読む及び／又は理解することができる能力を超えた速度で、進む又は更新されるコンテンツも、あわせて含まれる。言い換えれば、アニメーションのある、動きのある、又はスクロールするコンテンツは、利用者がコンテンツを読む能力に対して制限時間を課することになる。
                </p>
-               <p>This success criterion is generally not applicable when the content repeats or is
-                  synchronized with other content, so long as the information and data is adjustable
-                  or otherwise under the control of the end user.  Examples of time limits for which
-                  this success criterion is not applicable include scrolling text that repeats, captioning,
-                  and <a href="https://www.w3.org/WAI/tutorials/carousels/">carousels</a>.  These are situations which do include time limits, but the content is still available
-                  to the user because it has controls for accessing it, as specified in <a href="../../guidelines/sc/20/pause-stop-hide.html">2.2.2 Pause, Stop, Hide</a>.
+               <p>この達成基準は、コンテンツが繰り返される又は他のコンテンツと同期する場合、情報及びデータが調整可能である、又は別の方法で利用者の制御下にある限り、一般に適用されない。この達成基準が適用されない制限時間の例としては、繰り返しスクロールするテキスト、キャプション、及び<a href="https://www.w3.org/WAI/tutorials/carousels/">カルーセル</a>が含まれる。これらは制限時間を含む状況ではあるものの、コンテンツには<a href="pause-stop-hide.html">達成基準 2.2.2 一時停止、停止、非表示</a>で規定されているようなアクセスするためのコントロールがあるため、利用者にとっては依然として利用可能である。
                </p>
-               <p>In some cases, however, it is not possible to change the time limit (for example,
-                  for an auction or other real-time event) and exceptions are therefore provided for
-                  those cases.
+               <p>ただし場合によっては、制限時間を変更することが不可能なことがあり (例えば、オークション又は他のリアルタイムのイベントにおいて)、このため、それらの場合に対する例外規定が提供されている。
                </p>
-               <p>Content that operates on a timer does not need to be time adjustable if there is an
-                  alternative that does not rely on a timer. For example, a web application such as
-                  an email client provides notification of new email arriving with a temporary message
-                  (such as a 'toast' message) in the lower right-hand side of the interface, and the
-                  message disappears after 5 seconds. Users are able to identify the arrival of email
-                  through other means, such as viewing the Inbox, so the disappearance of the message
-                  does not set a time limit on the their ability to determine if new mail has arrived.
-                  If the user has no other means of discovering the same information (or performing
-                  the same function), then each message would need to meet this Success Criterion in
-                  order to provide users with sufficient time to access the information.
+               <p>タイマーで動作するコンテンツは、タイマーに依存しない代替手段があれば、時間を調整可能にする必要はない。例えば電子メールクライアントのようなウェブアプリケーションは、新しい電子メールの到着をインタフェースの右下に一時的なメッセージ (「トースト」メッセージのような) で通知し、そのメッセージは 5 秒後に消えるようになっている。利用者は受信トレイを見るなど他の手段でメールの到着を確認することができるので、メッセージが消えても、新しいメールが到着したかどうかを判断する能力に時間制限を設けていることにはならない。利用者が同じ情報を発見する (又は同じ機能を実行する) 他の手段がない場合は、利用者が情報にアクセスするのに十分な時間を提供するために、各メッセージはこの達成基準を満たす必要がある。
                </p>
                <p>
                   						   
-                  <strong>Notes regarding server time limits</strong>
+                  <strong>サーバーの制限時間に関する注記</strong>
                   					
                   
                </p>
                <ul>
                   
                   
-                  <li>Timed server redirects can be found below under Common Failures.</li>
+                  <li>制限時間のあるサーバーのリダイレクトは、以下にある「よくある失敗例」の中で述べられている。</li>
                   
                   
-                  <li>Non-timed server redirects (e.g., 3xx response codes) are not applicable because there
-                     is no time limit: they work instantly.
+                  <li>制限時間のないサーバーのリダイレクト (例: HTTP レスポンスコード 3xx) は、時間の制限がなく、瞬時に作動するので、この達成基準は適用されない。
                      
                   </li>
                   
                   
-                  <li>This Success Criterion applies only to time limits that are set by the content itself.
-                     For example, if a time limit is included in order to address security concerns, it
-                     would be considered to have been set by the content because it  is designed to be
-                     part of the presentation and interaction experience for that content. Time limits
-                     set externally to content, such as by the user agent or by factors intrinsic to the
-                     Internet are not under the author's control and not subject to WCAG conformance requirements.
-                     Time limits set by Web servers should be under the author's/organization's control
-                     and are covered. (Success Criteria 
-                     <a href="no-timing" class="guideline">2.2.3</a>, 
-                     <a href="interruptions" class="guideline">2.2.4</a> and 
-                     <a href="re-authenticating" class="guideline">2.2.5</a> may also apply.)
-                     
+                  <li>この達成基準は、コンテンツ自体が設定する制限時間だけに適用される。例えば、セキュリティ上の懸念に対処するために制限時間を設けている場合、そのコンテンツの提示やインタラクションによる体験の一部であるため、コンテンツによって制限時間が設定されているとみなされる。ユーザエージェント又はインターネット固有の要因などにより、コンテンツ以外のものが設定する制限時間は、コンテンツ制作者が制御できるものではなく、WCAG への適合要件の対象とはならない。ウェブサーバにより設定される制限時間は、コンテンツ制作者や運営組織が制御できるものであり、対象となる (達成基準 <a href="no-timing" class="guideline">2.2.3</a>、<a href="interruptions" class="guideline">2.2.4</a> 及び <a href="re-authenticating" class="guideline">2.2.5</a> も適用されることがある)。
                   </li>
                   
                   
-                  <li>Ten times the default was chosen based on clinical experience and other guidelines.
-                     For example, if 15 seconds is allowed for a user to respond and hit a switch, 150
-                     seconds would be sufficient to allow almost all users to hit a switch even if they
-                     had trouble.
+                  <li>デフォルトの 10 倍は、臨床的経験及び他のガイドラインに基づいて選ばれている。例えば、利用者が反応してスイッチを押すのに 15 秒間与えられていたら、たとえ問題があったとしても、150 秒はすべての利用者がスイッチを押すのに十分な時間であろう。
                      
                      
                   </li>
                   
                   
-                  <li>20 seconds was also based on clinical experience and other guidelines. 20 seconds
-                     to hit 'any switch' is sufficient for almost all users including those with spasticity.
-                     Some would fail, but some would fail all lengths of time. A reasonable period for
-                     requesting more time is required since an arbitrarily long time can provide security
-                     risks to all users, including those with disabilities, for some applications. For
-                     example, with kiosks or terminals that are used for financial transactions, it is
-                     quite common for people to walk away without signing off. This leaves them vulnerable
-                     to those walking up behind them. Providing a long period of inactivity before asking,
-                     and then providing a long period for the person to indicate that they are present
-                     can leave terminals open for abuse. If there is no activity the system should ask
-                     if the user is there. It should then ask for an indication that a person is there
-                     ('hit any key') and then wait long enough for almost anyone to respond. For "hit any
-                     key," 20 seconds would meet this. If the person indicates that they are still present,
-                     the device should return the user to the exact condition that existed before it asked
-                     the question.
+                  <li>また、20 秒間も、臨床的経験及び他のガイドラインに基づいている。「あらゆるスイッチ」を押すのに、20 秒あれば、痙性 (麻痺している筋肉が自分の意思に関わらず勝手に緊張して収縮する症状) のある利用者も含むほとんどすべての利用者にとって十分である。中にはそれでも足りない利用者もいるかもしれないし、時間をどれだけ延ばしても足りない利用者もいるだろう。任意の長い時間にしてしまうと、あるアプリケーションに対して障害のある利用者を含むすべての利用者を危険な状態にするため、時間の延長を要求するのに妥当な時間を定める必要がある。例えば、金融取引に用いられるキオスク端末又は端末装置は、利用者が取引を終了せずにその場を離れてしまうことが非常によくある。そのままでは、端末を次の人に不正利用されやすい状態にしておくことになる。利用者の確認をせずに休止状態を長時間与えて、長時間にわたって利用者がその場にいるという状態にしておくことは、端末を不正利用の危険にさらすことになる。何も動きがなければ、システムはそこに利用者がいるかどうかを確認しなければならない。そのため、システムは、利用者がそこにいることを確認するように求め (「どれかキーを押してください」)、誰もが応じることができるだけの長さで利用者の反応を待つべきである。「どれかキーを押してください」に対して、20 秒という時間は、この条件を満たすであろう。もし利用者が自分はまだそこにいるということを示せば、その端末は利用者に確認する前と同じ状況を利用者に再び提示しなくてはならない。
                      
                      
                   </li>
                   
                   
-                  <li>20 hours was chosen as an upper limit because it is longer than a full waking day.
+                  <li>一日に起きている時間よりも長いので、上限として 20 時間を選んだ。
                      
                      
                   </li>
                   
                   
                </ul>
-               <p>In cases where timing is not an intrinsic requirement but giving users control over
-                  timed events would invalidate the outcome, a third party can control the time limits
-                  for the user (for example, granting double time on a test). 
+               <p>制限時間が本質的な要件ではなく、利用者に制限時間のあるイベントを制御できるようにすることが、その結果を無価値にするような場合には、第三者がその利用者のために制限時間を調整することができる (例えば、試験に 2 倍の時間を与える)。
                   
                   
                </p>
-               <p>See also 
-                  <a href="no-timing">2.2.3: No Timing</a>.
-                  
+               <p><a href="no-timing">2.2.3: タイミング非依存</a>も参照のこと。
                </p>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>利点</h2>
                <ul>
                   
                   
-                  <li>People with physical disabilities often need more time to react, to type and to complete
-                     activities.  People with low vision need more time to locate things on screen and
-                     to read.   People who are blind and using screen readers may need more time to understand
-                     screen layouts, to find information and to operate controls.  People who have cognitive
-                     or language limitations need more time to read and to understand.  People who are
-                     deaf and communicate in sign language may need more time to read information printed
-                     in text (which may be a second language for some).
+                  <li>身体障害のある利用者は、反応したり、入力したり、タスクを完了したりするのに、より長い時間を要することが多い。ロービジョンの利用者は、画面上で何かを探したり、読んだりするのに時間がかかる。全盲でスクリーンリーダーを使用している利用者は、画面のレイアウトを理解したり、情報を見つけたり、そしてコントロールを操作したりするのに時間がかかるかもしれない。認知能力の低下、又は言語の障害のある利用者は、読んだり、理解したりするのに時間がかかる。ろう者で手話によるコミュニケーションしている利用者は、（彼らにとっては第二言語のようなものかもしれない）テキストで書かれた情報を読むのに時間がかかるかもしれない。
                      
                   </li>
                   
                   
-                  <li>In circumstances where a sign-language interpreter may be relating audio content to
-                     a user who is deaf, control over time limits is also important.
+                  <li>手話通訳者がろう者に音声コンテンツを通訳しているような状況では、制限時間を調整できることも重要である。
                      
                   </li>
                   
                   
-                  <li>People with reading disabilities, cognitive limitations, and learning disabilities
-                     who may need more time to read or comprehend information can have additional time
-                     to read the information by pausing the content.
-                     
+                  <li>読字障害、認知の障害及び学習障害のある利用者は、情報を読んだり、理解したりするのに時間がかかることがあり、コンテンツを一時停止させることによって、その情報を読む時間を延長することができる。
                   </li>
                   
                   
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>事例</h2>
                <ul>
                   
                   
-                  <li>A Web site uses a client side time limit to help protect users who may step away from
-                     their computer.   After a period of inactivity the Web page asks if the user needs
-                     more time.  If it doesn't get a response – it times out. 
+                  <li>ウェブサイトは、クライアントサイドの制限時間を用いて、コンピュータから離れてしまう可能性のある利用者を保護している。何も活動がないと、ウェブページは利用者がまだ時間が必要かどうかを確認する。もし利用者からの反応がなければ、そこでタイムアウトになる。
                      
                   </li>
                   
                   
-                  <li>A Web page has a field that automatically updates with the latest headlines in a rotating
-                     fashion. There is an interactive control that allows the user to extend the length
-                     of time between each update to as much as ten times the default. The control can be
-                     operated with either a mouse or a keyboard. 
+                  <li>ウェブページには、巡回手段で最新のニュース見出しを自動的に更新するフィールドがある。利用者は更新する時間をデフォルトの 10 倍の長さに延ばすことができるインタラクティブなコントロールがある。そのコントロールは、マウス又はキーボードのどちらかで操作可能である。
                      
                      
                   </li>
                   
                   
-                  <li>A Web page includes an animation which includes text that appears and disappears throughout.
-                     In some cases, the text is scrolling across the screen and in others, it is only displayed
-                     for a short time before it fades into the background. The page includes a pause button
-                     so that users who have trouble reading the text before it disappears can read it.
+                  <li>ウェブページには、至るところに現れては消えるテキストが組み込まれたアニメーションがある。テキストがスクロールして画面を横切るものもあれば、表示されると短時間で背景に消えていくものもある。テキストを読むのが困難な利用者がテキストの消えてしまう前に読むことができるように、そのページには一時停止ボタンがある。
                      
                   </li>
                   
                   
-                  <li>In an auction, there is a time limit on the amount of time a user has to submit a
-                     bid. Since the time limit applies to all users who want to bid on a particular item,
-                     it would be unfair to extend the time limit for any one particular user. Therefore,
-                     a time limit is required for this type of activity and no extension, adjustment, or
-                     deactivation of the time limit is required by this Success Criterion.
+                  <li>オークションにおいて、利用者が入札しなければならない時間に期限がある。その制限時間は、特定の品目に入札したいと思っているすべての利用者に適用されるので、特定の利用者の誰か 1 人だけに制限時間の延長を認めると公平ではなくなる。そのため、制限時間はこの種のコンテンツには必須であり、この達成基準によって、制限時間の延長、調整、又は解除を要求されることはない。
                      
                      
                   </li>
                   
                   
-                  <li>An on-line ticket-purchasing site gives the user two minutes to confirm a purchase
-                     before the seats are returned to the general pool. Because tickets on such sites can
-                     sell out quickly, holding a ticket longer than that may invalidate the nature of the
-                     site, so this is a case in which the timing is essential and cannot be extended without
-                     invalidating the activity. However, the site does move as much of the process out
-                     of the time-critical period as possible, for instance allowing users to provide necessary
-                     information like name, payment method, etc., before entering the time-critical stage.
+                  <li>オンラインチケット購入サイトでは、利用者が席を確保して購入内容を確認するのに 2 分間の制限時間が与えられている。そのようなサイトのチケットはすぐに売り切れてしまうため、それ以上チケットを確保しておくと、サイト本来の機能を発揮できない可能性がある。そのため、これは制限時間が必要不可欠で、利用者による行為を無効にすることなく時間延長することができない事例の一つである。しかし、そのサイトは、時間制約のある段階に入る前に、例えば氏名、支払方法などの必要な情報を利用者が提供できるようにするなどして、できる限り多くのプロセスを制約時間外で行えるようにしている。
                      
                      
                   </li>
                   
                   
-                  <li>A ticket-purchasing site allows the user two minutes to confirm purchase of selected
-                     seats, but warns the user when their time is almost out and allows the user to extend
-                     this time limit some number of times with a simple action such as clicking a "Extend
-                     time limit" button.
+                  <li>チケット購入サイトは、利用者が選択した席の購入を確認するために 2 分間の制限時間を与えているが、時間切れが近づくと利用者に警告を出し、例えば、「時間を延長する」ボタンを押すなどの簡単な操作で、利用者がこの制限時間を何度か延長できるようにしている。
                      
                      
                   </li>
@@ -417,22 +310,17 @@
                </ul>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
-                  <p>Select the situation below that matches your content. Each situation includes techniques
-                     or combinations of techniques that are known and documented to be sufficient for that
-                     situation. 
+                  <h3>十分なテクニック</h3>
+                  <p>そのコンテンツに合致する状況を以下から選択すること。それぞれの状況には、WCAG ワーキンググループがその状況において十分であると判断する、番号付のテクニック (又は、テクニックの組み合わせ) がある。
                   </p>
                   <section class="situation" id="timing-adjustable-situation-0">
                      
                      
-                     <h4>Situation A: If there are session time limits:</h4>
+                     <h4>状況 A: セッションの制限時間がある場合:</h4>
                      
                      
                      <ul>
@@ -462,7 +350,7 @@
                   <section class="situation" id="timing-adjustable-situation-1">
                      
                      
-                     <h4>Situation B: If a time limit is controlled by a script on the page:</h4>
+                     <h4>状況 B: 制限時間がページ上のスクリプトで制御されている場合:</h4>
                      
                      
                      <ul>
@@ -504,7 +392,7 @@
                   <section class="situation" id="timing-adjustable-situation-2">
                      
                      
-                     <h4>Situation C: If there are time limits on reading:</h4>
+                     <h4>状況 C: コンテンツを読むのに制限時間がある場合:</h4>
                      
                      
                      <ul>
@@ -549,9 +437,8 @@
                   </section>
                </section>
                <section id="failure">
-                  <h3>Failures</h3>
-                  <p>The following are common mistakes that are considered failures of this Success Criterion
-                     by the WCAG Working Group.
+                  <h3>失敗例</h3>
+                  <p>以下に挙げるものは、WCAG ワーキンググループが達成基準の失敗例とみなした、よくある間違いである。
                   </p>
                   <ul>
                      
@@ -588,15 +475,14 @@
             <section id="key-terms">
                <details>
                   <summary>
-                     <h2>Key Terms</h2>
+                     <h2>重要な用語</h2>
                   </summary>
-                  <dt id="dfn-essential">essential</dt>
+                  <dt id="dfn-essential">必要不可欠 (essential)</dt>
                   <dd>
                      <definition xmlns="">
                         					
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">if removed, would fundamentally change the information or functionality of the content,
-                           <strong>and</strong> information and functionality cannot be achieved in another way that would conform
+                        <p xmlns="http://www.w3.org/1999/xhtml">もし取り除いてしまうと、コンテンツの情報又は機能を根本的に変えてしまい、かつ、適合する他の方法では情報及び機能を実現できない。
                            
                         </p>
                         				
@@ -606,15 +492,12 @@
                </details>
             </section>
             <section id="test-rules">
-               <h2>Test Rules</h2>
-               <p>The following are Test Rules for certain aspects of this Success Criterion. It is
-                  not necessary to use these particular Test Rules to check for conformance with WCAG,
-                  but they are defined and approved test methods. For information on using Test Rules,
-                  see <a href="understanding-act-rules.html">Understanding Test Rules for WCAG Success Criteria</a>.
+               <h2>テストルール</h2>
+               <p>以下は、この達成基準の特定の側面に関するテストルールである。この特定のルールを使用して WCAG に適合しているかどうかを確認する必要はないが、これらのルールは定義され、承認されたテスト方法である。テストルールの使用については、<a href="understanding-act-rules.html">WCAG 達成基準のテストルールを理解する</a>を参照のこと。
                </p>
                <ul>
-                  <li><a href="/WAI/standards-guidelines/act/rules/bc659a/">Meta element has no refresh delay</a></li>
-                  <li><a href="/WAI/standards-guidelines/act/rules/bisz58/">Meta element has no refresh delay (no exception)</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/bc659a/">Meta element has no refresh delay</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/">Meta element has no refresh delay (no exception)</a></li>
                </ul>
             </section><a class="button button-backtotop" href="#top"><span>
                   <svg focusable="false" aria-hidden="true" class="icon-arrow-up " viewBox="0 0 26 28">
@@ -626,13 +509,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -647,11 +529,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -673,13 +557,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -688,7 +572,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -709,8 +593,10 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+    <!--noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-      </noscript>
+      </noscript-->
    </body>
 </html>
