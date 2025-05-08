@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  4.1.1: Parsing (Obsolete and removed) | WAI | W3C</title>
+      <title>解説書 達成基準  4.1.1: 構文解析 (廃止・削除) | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
-      <!-- 日本語訳されるまでの一時的なスクリプト -->
-      <script src="untranslated-note.js"></script>
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://waic.jp/translations/WCAG22/Understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding/about">WCAG解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -37,14 +35,14 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"><a href="compatible">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Compatible</a></li>
+                        </svg> ガイドライン: 互換性</a></li>
                   <li class="nav__item"></li>
-                  <li class="nav__item"><a href="name-role-value">Next SC: Name, Role, Value
+                  <li class="nav__item"><a href="name-role-value">次: 名前 (name)・役割 (role)・値 (value)
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -55,72 +53,61 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
-                     <li><a href="#test-rules">Test Rules</a></li>
+                     <li><a href="#brief">要約</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#benefits">利点</a></li>
+                     <li><a href="#techniques">テクニック</a></li>
+                     <li><a href="#test-rules">テストルール</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				SC 4.1.1:</span>Parsing (Obsolete and removed) (Level )
+            <h1><span class="standalone-resource__type-of-guidance">解説書 
+                  				達成基準 4.1.1:</span>構文解析 (廃止・削除)
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
                   <div class="note">
-                     <p class="note-title marker">Note</p>
-                     <p>This criterion was originally adopted to address problems that assistive technology
-                        had directly parsing HTML. Assistive technology no longer has any need to directly
-                        parse HTML. Consequently, these problems either no longer exist or are addressed by
-                        other criteria. This criterion no longer has utility and is removed.
+                     <p class="note-title marker">注記</p>
+                     <p>この達成基準はもともと、支援技術が直接 HTML を構文解析する際の問題に対処するために採用された。支援技術は、もはや直接 HTML を構文解析する必要がなくなった。その結果、これらの問題はもはや存在しない、又は他の達成基準によって対処されている。この達成基準はもはや有用ではないため、削除された。
                      </p>
                   </div>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   
-                  <dt>Goal</dt>
-                  <dd>Assistive technology can properly present page content.</dd>
+                  <dt>目標</dt>
+                  <dd>支援技術はページコンテンツを適切に表示できる。</dd>
                   
-                  <dt>What to do</dt>
-                  <dd>Create web pages according to specifications.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>仕様に従ってウェブページを作成する。</dd>
                   
-                  <dt>Why it's important</dt>
-                  <dd>People can browse web content more easily with their assistive technology.</dd> 
+                  <dt>なぜそれが重要か</dt>
+                  <dd>支援技術を使用すると、人々はウェブコンテンツをより簡単に閲覧できる。</dd> 
                   
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <div class="wcag22"> <span class="new-version">New in WCAG 22: </span>
+               <h2>意図</h2>
+               <div class="wcag22"> <span class="new-version">WCAG 2.2 の新基準:</span>
                   
-                  <p>This criterion has been removed from WCAG 2.2.</p>
+                  <p>この基準は WCAG 2.2 から削除された。</p>
                   
                   
-                  <p>The intent of this Success Criterion was to ensure that user-agents, including assistive
-                     technologies, can accurately interpret and parse content. Since WCAG 2.0 was published,
-                     the specifications (such as HTML) and browsers have improved their handling of parsing
-                     errors. It is also the case that assistive technology used to do their own parsing
-                     of markup, but now rely on the browser. For that reason this success criterion has
-                     been removed. Many issues that would have failed this criterion will fail <a href="info-and-relationships">Info and Relationships</a> or <a href="name-role-value">Name, Role, Value</a>. Other issues are excepted by the "except where the specification allow these features"
-                     part of the criterion.
+                  <p>この達成基準の意図は、支援技術を含むユーザエージェントがコンテンツを正確に解釈及び解析できるようにすることであった。WCAG 2.0 が公開されて以来、仕様 (HTML など) 及びブラウザは解析エラーの処理方法を改善してきた。また、支援技術はかつては独自にマークアップの解析を行っていたが、現在はブラウザに依存している。そのため、この達成基準は削除された。この基準に失敗した多くの問題は、<a href="info-and-relationships">情報及び関係性</a>又は、<a href="name-role-value">名前 (name)・役割 (role)・値 (value)</a> に失敗する。その他の問題は、基準の「ただし、仕様で認められているものを除く」という部分によって除外される。
                   </p>
                   
                   
-                  <p>The following content is left for historical purposes to show the original intent.</p>  
+                  <p>次の内容は、元の意図を示すために歴史的な目的で残されている。</p>  
                   
                   
                   <hr />
@@ -128,19 +115,13 @@
                   
                   <blockquote class="scquote">
                      
-                     <p>Success Criterion <a href="https://www.w3.org/TR/WCAG21/#parsing" style="font-weight: bold;">4.1.1 Parsing</a> (Level A): In content implemented using markup languages, elements have complete
-                        start and end
-                        tags, elements are nested according to their specifications, elements do not contain
-                        duplicate attributes, and any IDs are unique, except where the specifications allow
-                        these features.
+                     <p>達成基準 <a href="https://www.w3.org/TR/WCAG21/#parsing" style="font-weight: bold;">4.1.1 構文解析</a> (レベル A): マークアップ言語を用いて実装されているコンテンツにおいては、要素には完全な開始タグ及び終了タグがあり、要素は仕様に準じて入れ子になっていて、要素には重複した属性がなく、どの ID も一意的である。ただし、仕様で認められているものを除く。
                         
                      </p>
                      
                      <div class="note">
-                        <p class="note-title marker">Note</p>
-                        <p>Start and end tags that are missing a critical character in their formation, such
-                           as a closing angle bracket or a mismatched attribute value quotation mark are not
-                           complete.
+                        <p class="note-title marker">注記</p>
+                        <p>開始及び終了タグに重要な記号が欠けている場合、例えば、タグを閉じる山括弧がない、又は属性値の引用符が一致していない場合は、完全とはいえない。
                            
                         </p>
                      </div>
@@ -149,47 +130,25 @@
                   
                </div>
                <p>
-                  The intent of this Success Criterion is to ensure that user agents, including assistive
-                  technologies, can accurately interpret and parse content.  If the content cannot be
-                  parsed into a data structure, then different user agents may present it differently
-                  or be completely unable to parse it. Some user agents use "repair techniques" to render
-                  poorly coded content.
+                  この達成基準の意図は、支援技術を含むユーザエージェントが、コンテンツを正確に解釈して解析できることを確実にするものである。コンテンツをデータ構造に解析できない場合、別のユーザエージェントはそのコンテンツを異なって提示するか、又はコンテンツを全く解析できないかもしれない。ユーザエージェントの中には、不適切なソースコードのコンテンツを描画するために「修復技術」を用いる。
                   
                </p>
-               <p>Since repair techniques vary among user agents, authors cannot assume that content
-                  will be accurately parsed into a data structure or that it will be rendered correctly
-                  by specialized user agents, including assistive technologies, unless the content is
-                  created according to the rules defined in the formal grammar for that technology.
-                  In markup languages, errors in element and attribute syntax and
-                  failure to provide properly nested start/end tags lead to errors that
-                  prevent user agents from parsing the content reliably.
-                  Therefore, the Success Criterion requires that the content can be parsed using only
-                  the rules of the formal grammar.
+               <p>修復技術はユーザエージェントの間で異なるため、コンテンツがそのウェブコンテンツ技術の正式な文法で定義される規則に従って制作されない限り、コンテンツ制作者は、コンテンツがデータ構造へ正確に解析されるか、又はコンテンツが支援技術を含む特殊なユーザエージェントによって正しく描画されるものと仮定できない。マークアップ言語では、要素と属性の構文のエラー及び適切に入れ子にされた開始/終了タグを提供できなかった場合、ユーザエージェントがコンテンツを確実に解析するのを妨げるエラーを導く。したがって、この達成基準は、コンテンツが正式な文法の規則のみを用いて解析できることを必要とする。
                   
                   
                </p>
                <div class="note">
-                  <p class="note-title marker">Note</p>
+                  <p class="note-title marker">注記</p>
                   <div>
                      
                      
-                     <p>The concept of "well formed" is close to what is required here. However, exact parsing
-                        requirements vary amongst markup languages, and most non XML-based languages do not
-                        explicitly define requirements for well formedness. Therefore, it was necessary to
-                        be more explicit in the Success Criterion in order to be generally applicable to markup
-                        languages. Because the term "well formed" is only defined in XML, and (because end
-                        tags are sometimes optional) valid HTML does not require well formed code, the term
-                        is not used in this Success Criterion.
+                     <p>「整形式 (well formed)」の概念は、この達成基準で要件としているものに近い。しかし、正確な解析結果の要件は、マークアップ言語によって異なり、そして、ほとんどの非 XML ベースの言語は、整形式であることの要件が明確に定義されていない。したがって、マークアップ言語に対して一般的に適用可能にするためには、達成基準をより明確にする必要があった。用語「整形式 (well formed)」は、XML でのみ定義され、そして、(終了タグは任意の場合もあるため) 妥当 (valid) な HTML は整形式のソースコードを要求しないから、この達成基準では用いていない。
                         
                      </p>
                      
                      
-                     <p>With the exception of one Success Criterion (
-                        <a href="resize-text">1.4.4: Resize Text</a>, which specifically mentions that the effect specified by the Success Criterion must
-                        be achieved without relying on an assistive technology) authors can meet the Success
-                        Criteria with content that assumes use of an assistive technology (or access features
-                        in use agents) by the user, where such assistive technologies (or access features
-                        in user agents) exist and are available to the user.
+                     <p>一つの達成基準 (
+                        <a href="resize-text">1.4.4: テキストのサイズ変更</a>、達成基準で指定された効果が支援技術に依存せずに達成されなければならないと具体的に述べている) を除き、支援技術 (又はユーザエージェントにあるアクセス機能) が存在かつ利用者が使用できる場合に、コンテンツ制作者は、利用者が支援技術 (又はユーザエージェントにあるアクセス機能) の使用を想定することで、コンテンツを達成基準に適合できる。
                         
                      </p>
                      
@@ -198,14 +157,11 @@
                </div>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>利点</h2>
                <ul>
                   
                   
-                  <li>Ensuring that Web pages have complete start and end tags and are nested according
-                     to specification
-                     helps ensure that assistive technologies can parse the content accurately and without
-                     crashing.
+                  <li>ウェブページに完全な開始タグ及び終了タグがあり、仕様に準じて入れ子になっていることを確保することで、支援技術がコンテンツを正確かつ衝突することなく解析できるようになる。
                      
                   </li>
                   
@@ -213,14 +169,11 @@
                </ul>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断する達成方法、又は複数の達成方法の組み合わせを表している。しかしながら、必ずしもこれらの達成方法を用いる必要はない。その他の達成方法についての詳細は、<a href="understanding-techniques">WCAG 達成基準の達成方法を理解する</a>の「その他の達成方法」を参照のこと。
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
+                  <h3>十分な達成方法</h3>
                   <ul>
                      
                      
@@ -251,7 +204,7 @@
                      <li>
                         
                         
-                        <p>Ensuring that Web pages can be parsed  by using one of the following techniques:</p>
+                        <p>以下のいずれかの方法で、ウェブページが正しく解析できることを確認する:</p>
                         
                         
                         <ul>
@@ -261,11 +214,11 @@
                               											             
                               <a class="html" href="https://w3c.github.io/wcag/techniques/html/H74">H74: Ensuring that opening and closing tags are used according to specification</a>
                               											             
-                              <strong>AND</strong>
+                              <strong>かつ</strong>
                               											             
                               <a class="html" href="https://w3c.github.io/wcag/techniques/html/H93">H93: Ensuring that id attributes are unique on a Web page</a>
                               											             
-                              <strong>AND</strong>
+                              <strong>かつ</strong>
                               											             
                               <a class="html" href="https://w3c.github.io/wcag/techniques/html/H94">H94: Ensuring that elements do not contain duplicate attributes</a>
                               										           
@@ -290,9 +243,8 @@
                   </ul>
                </section>
                <section id="failure">
-                  <h3>Failures</h3>
-                  <p>The following are common mistakes that are considered failures of this Success Criterion
-                     by the WCAG Working Group.
+                  <h3>失敗例</h3>
+                  <p>以下に挙げるものは、WCAG ワーキンググループが達成基準の失敗例とみなした、よくある間違いである。
                   </p>
                   <ul>
                      
@@ -318,11 +270,8 @@
                </section>
             </section>
             <section id="test-rules">
-               <h2>Test Rules</h2>
-               <p>The following are Test Rules for certain aspects of this Success Criterion. It is
-                  not necessary to use these particular Test Rules to check for conformance with WCAG,
-                  but they are defined and approved test methods. For information on using Test Rules,
-                  see <a href="understanding-act-rules.html">Understanding Test Rules for WCAG Success Criteria</a>.
+               <h2>テストルール</h2>
+               <p>以下は、この達成基準の特定の側面に関するテストルールである。WCAG への適合を確認するために、これらの特定のテストルールを使用する必要はないが、これらは定義され、承認されたテスト方法である。テストルールの使用については、<a href="understanding-act-rules.html">WCAG 達成基準のテストルールを理解する</a>を参照のこと。
                </p>
                <ul>
                   <li><a href="/WAI/standards-guidelines/act/rules/e6952f/proposed/">Attribute is not duplicated</a></li>
@@ -338,13 +287,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -359,11 +307,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -385,13 +335,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -400,7 +350,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -421,7 +371,9 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+      <noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
       </noscript>
    </body>
