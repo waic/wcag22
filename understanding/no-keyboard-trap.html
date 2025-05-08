@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  2.1.2: No Keyboard Trap | WAI | W3C</title>
+      <title>解説書 達成基準 2.1.2: キーボードトラップなし | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
-      <!-- 日本語訳されるまでの一時的なスクリプト -->
-      <script src="untranslated-note.js"></script>
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://waic.jp/translations/WCAG22/Understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -37,17 +35,17 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"><a href="keyboard-accessible">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Keyboard Accessible</a></li>
+                        </svg>ガイドライン: キーボード操作可能</a></li>
                   <li class="nav__item"><a href="keyboard">
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-left-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
-                        </svg>Previous SC: Keyboard</a></li>
-                  <li class="nav__item"><a href="keyboard-no-exception">Next SC: Keyboard (No Exception)
+                        </svg>前: キーボード</a></li>
+                  <li class="nav__item"><a href="keyboard-no-exception">次: キーボード (例外なし)
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -58,40 +56,34 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
-                     <li><a href="#key-terms">Key Terms</a></li>
-                     <li><a href="#test-rules">Test Rules</a></li>
+                     <li><a href="#brief">要約</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#benefits">利点</a></li>
+                     <li><a href="#examples">事例</a></li>
+                     <li><a href="#techniques">テクニック</a></li>
+                     <li><a href="#key-terms">重要な用語</a></li>
+                     <li><a href="#test-rules">テストルール</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				SC 2.1.2:</span>No Keyboard Trap (Level A)
+            <h1><span class="standalone-resource__type-of-guidance">解説書 
+                  				達成基準 2.1.2:</span>キーボードトラップなし (レベル A)
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>If keyboard focus can be moved to a component of the page using a <a href="#dfn-keyboard-interface">keyboard interface</a>, then focus can be moved away from that component using only a keyboard interface,
-                     and, if it requires more than unmodified arrow or tab keys or other standard exit
-                     methods, the user is advised of the method for moving focus away.
+                  <p><a href="#dfn-keyboard-interface">キーボードインタフェース</a>を用いてキーボードフォーカスをそのウェブページのあるコンポーネントに移動できる場合、キーボードインタフェースだけを用いてそのコンポーネントからフォーカスを外すことが可能である。さらに、修飾キーを伴わない矢印キー、Tab キー、又はフォーカスを外すその他の標準的な方法でフォーカスを外せない場合は、フォーカスを外す方法が利用者に通知される。
                      
                   </p>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
-                     <p>Since any content that does not meet this success criterion can interfere with a user's
-                        ability to use the whole page, all content on the Web page (whether it is used to
-                        meet other success criteria or not) must meet this success criterion. See <a href="#cc5">Conformance Requirement 5: Non-Interference</a>.
+                     <p class="note-title marker">注記</p>
+                     <p>この達成基準を満たさないコンテンツでは、利用者がそのウェブページ全体を使用できない恐れがあるため、ウェブページ上のすべてのコンテンツは他の達成基準を満たすために用いられているか否かにかかわらず、この達成基準を満たさなければならない。<a href="https://waic.jp/translations/WCAG22/#cc5">適合要件 5: 非干渉</a>を参照。
                         
                      </p>
                   </div>
@@ -99,41 +91,35 @@
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   
-                  <dt>Goal</dt>
-                  <dd>Keyboard users don't get stuck.</dd>
+                  <dt>目標</dt>
+                  <dd>キーボード利用者が、はまって動けなくならないようにする。</dd>
                   
-                  <dt>What to do</dt>
-                  <dd>Ensure users always know how to navigate away from components.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>コンポーネントから離れる方法を、利用者が常に知っているようにする。</dd>
                   
-                  <dt>Why it's important</dt>
-                  <dd>People who rely on the keyboard often have no other means to navigate.</dd> 
+                  <dt>なぜそれが重要か</dt>
+                  <dd>キーボード操作に依存する人は、ナビゲートする別の手段がないことが多い。</dd> 
                   
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The intent of this Success Criterion is to ensure that that content does not "trap"
-                  keyboard focus within subsections of content on a Web page. This is a common problem
-                  when multiple formats are combined within a page and rendered using plug-ins or embedded
-                  applications.
+               <h2>意図</h2>
+               <p>この達成基準の意図は、コンテンツが、ウェブページ上のコンテンツのサブセクション内で、キーボードフォーカスを「トラップ」しないことを確実にするためのものである。これは、複数のフォーマットが 1 ページ中に組み合わされ、かつ、プラグイン又は埋め込みアプリケーションを使用してレンダリングされるときによく起こる問題である。
                   
                </p>
-               <p>There may be times when the functionality of the Web page restricts the focus to a
-                  subsection of the content, as long as the user knows how to leave that state and "untrap"
-                  the focus.
+               <p>利用者がその状態を離れる方法及びフォーカスを「トラップしない」ようにする方法を知っている限り、ウェブページの機能がコンテンツのサブセクションへのフォーカスを制限する場合があるかもしれない。
                   
                </p>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>利点</h2>
                <ul>
                   
                   
-                  <li>People who rely on a keyboard or keyboard interface to use the Web including people
-                     who are blind and people with physical disabilities.
+                  <li>全盲の人及び物理的な障害のある人など、ウェブを利用するためにキーボード又はキーボードインタフェースに依存している人。
                      
                   </li>
                   
@@ -141,43 +127,32 @@
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>事例</h2>
                <dl>
                   
-                  <dt>A calendar widget</dt>
+                  <dt>カレンダーウィジェット</dt>
                   
-                  <dd>A calendar widget allows users to add, remove or update items in their calendar using
-                     the keyboard. The controls in the widget are part of the tab order within the Web
-                     page, allowing users to tab through the controls in the widget as well as to any links
-                     or controls that follow.
+                  <dd>カレンダーウィジェットは、利用者がキーボードを用いてカレンダーに項目の追加、削除又は更新することを可能にする。ウィジェット内のコントロールは、ウェブページ内のタブ移動順序の一部であり、利用者はウィジェット内のコントロールだけでなく、その後に続く任意のリンク又はコントロールにも Tab キーで移動できる。
                   </dd>
                   
-                  <dt>A puzzle applet</dt>
+                  <dt>パズルアプレット</dt>
                   
-                  <dd>Once a user tabs into an applet, further tabs and other keystrokes are handled by
-                     the applet. Instructions describing the keystroke used to exit the applet are provided
-                     prior to the applet as well as within the applet itself.
+                  <dd>利用者がアプレット内に Tab キーを使用すると、Tab キー及びその他のキーストロークはアプレットによって処理される。アプレットから抜け出すのに用いるキーストロークを説明する指示は、アプレット自身の中だけでなく、アプレットの前にも提供されている。
                   </dd>
                   
-                  <dt>A modal dialog box</dt>
+                  <dt>モーダルダイアログボックス</dt>
                   
-                  <dd>A Web application brings up a dialog box. At the bottom of the dialog are two buttons,
-                     Cancel and OK. When the dialog has been opened, focus is trapped within the dialog;
-                     tabbing from the last control in the dialog takes focus to the first control in the
-                     dialog. The dialog is dismissed by activating the Cancel button or the OK button.
+                  <dd>ウェブアプリケーションが、ダイアログを提示する。ダイアログの下部には、「キャンセル」と「OK」の二つのボタンがある。ダイアログが開くと、フォーカスはダイアログ内に閉じ込められる。ダイアログの最後のコントロールから Tab キーを使用すると、ダイアログの最初のコントロールにフォーカスが移動する。ダイアログは、「キャンセル」ボタン又は「OK」ボタンをアクティブにすると閉じられる。
                   </dd>
                   
                </dl>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
+                  <h3>十分なテクニック</h3>
                   <ul>
                      
                      
@@ -192,9 +167,8 @@
                   </ul>
                </section>
                <section id="failure">
-                  <h3>Failures</h3>
-                  <p>The following are common mistakes that are considered failures of this Success Criterion
-                     by the WCAG Working Group.
+                  <h3>失敗例</h3>
+                  <p>以下に挙げるものは、WCAG ワーキンググループが達成基準の失敗例とみなした、よくある間違いである。
                   </p>
                   <ul>
                      
@@ -214,32 +188,27 @@
             <section id="key-terms">
                <details>
                   <summary>
-                     <h2>Key Terms</h2>
+                     <h2>重要な用語</h2>
                   </summary>
-                  <dt id="dfn-keyboard-interface">keyboard interface</dt>
+                  <dt id="dfn-keyboard-interface">キーボードインタフェース (keyboard interface)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">interface used by software to obtain keystroke input</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">キーストローク入力を取得するためにソフトウェアが用いるインタフェース。</p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">注記</p>
                            <div>
                               
-                              <p>A keyboard interface allows users to provide keystroke input to programs even if the
-                                 native technology does not contain a keyboard.
+                              <p>標準ではキーボードが存在しない技術であっても、キーボードインタフェースによって、利用者がキーストローク入力をプログラムに提供できる。
                               </p>
                               
                               
                               <aside class="example">
                                  
-                                 <p>A touchscreen PDA has a keyboard interface built into its operating system as well
-                                    as a connector for external keyboards. Applications on the PDA can use the interface
-                                    to obtain keyboard input either from an external keyboard or from other applications
-                                    that provide simulated keyboard output, such as handwriting interpreters or speech-to-text
-                                    applications with "keyboard emulation" functionality.
+                                 <p>タッチスクリーンを搭載している PDA には、外部キーボードへのコネクタとあわせて、そのオペレーティングシステムに組み込まれたキーボードインタフェースがある。PDA 上のアプリケーションはそのインタフェースを用いて、外部キーボード、あるいは手書き解釈プログラムや「キーボードエミュレーション」機能付きの音声テキスト変換アプリケーションのような擬似キーボード出力を提供する他のアプリケーションのいずれかからキーボード入力を取得することができる。
                                  </p>
                                  
                               </aside>
@@ -249,11 +218,8 @@
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Operation of the application (or parts of the application) through a keyboard-operated
-                              mouse emulator, such as MouseKeys, does not qualify as operation through a keyboard
-                              interface because operation of the program is through its pointing device interface,
-                              not through its keyboard interface.
+                           <p class="note-title marker">注記</p>
+                           <p>マウスキーのようなキーボード操作によるマウスエミュレータによるアプリケーション (又は、そのアプリケーションの一部) の操作は、キーボードインタフェースからの操作とは見なさない。なぜならば、この場合、プログラムの操作は、キーボードインタフェースからではなく、そのポインティングデバイス インタフェースからの入力によって行われるからである。
                               
                            </p>
                         </div>
@@ -264,14 +230,11 @@
                </details>
             </section>
             <section id="test-rules">
-               <h2>Test Rules</h2>
-               <p>The following are Test Rules for certain aspects of this Success Criterion. It is
-                  not necessary to use these particular Test Rules to check for conformance with WCAG,
-                  but they are defined and approved test methods. For information on using Test Rules,
-                  see <a href="understanding-act-rules.html">Understanding Test Rules for WCAG Success Criteria</a>.
+               <h2>テストルール</h2>
+               <p>以下は、この達成基準の特定の側面に関するテストルールである。この特定のルールを使用して WCAG に適合しているかどうかを確認する必要はないが、これらのルールは定義され、承認されたテスト方法である。テストルールの使用については、<a href="understanding-act-rules.html">WCAG 達成基準のテストルールを理解する</a>を参照のこと。
                </p>
                <ul>
-                  <li><a href="/WAI/standards-guidelines/act/rules/80af7b/proposed/">Focusable element has no keyboard trap</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/80af7b/proposed/">Focusable element has no keyboard trap</a></li>
                </ul>
             </section><a class="button button-backtotop" href="#top"><span>
                   <svg focusable="false" aria-hidden="true" class="icon-arrow-up " viewBox="0 0 26 28">
@@ -283,13 +246,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -304,11 +266,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -330,13 +294,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -345,7 +309,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -366,8 +330,10 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+    <!--noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-      </noscript>
+      </noscript-->
    </body>
 </html>
