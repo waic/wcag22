@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
-      <meta charset="UTF-8" />
+      <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  1.2.1: Audio-only and Video-only (Prerecorded) | WAI | W3C</title>
+      <title>解説書 達成基準 1.2.1: 音声のみ及び映像のみ (収録済) | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
-      <!-- 日本語訳されるまでの一時的なスクリプト -->
-      <script src="untranslated-note.js"></script>
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://waic.jp/translations/WCAG22/Understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -36,15 +34,14 @@
          <div class="nav">
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
-                  <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                  <li class="nav__item"><a href=".">目次
                         							</a></li>
-                  <li class="nav__item"><a href="time-based-media">
+                  <li class="nav__item"><a href="time-based-media.html">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Time-based Media</a></li>
+                        </svg> ガイドライン: 時間依存メディア</a></li>
                   <li class="nav__item"></li>
-                  <li class="nav__item"><a href="captions-prerecorded">Next SC: Captions (Prerecorded)
+                  <li class="nav__item"><a href="captions-prerecorded.html">次: キャプション (収録済)
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -55,45 +52,41 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#resources">Related Resources</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
-                     <li><a href="#key-terms">Key Terms</a></li>
-                     <li><a href="#test-rules">Test Rules</a></li>
+                     <li><a href="#brief">要約</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#benefits">利点</a></li>
+                     <li><a href="#examples">事例</a></li>
+                     <li><a href="#resources">関連リソース</a></li>
+                     <li><a href="#techniques">テクニック</a></li>
+                     <li><a href="#key-terms">重要な用語</a></li>
+                     <li><a href="#test-rules">テストルール</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				SC 1.2.1:</span>Audio-only and Video-only (Prerecorded) (Level A)
+            <h1><span class="standalone-resource__type-of-guidance">解説書 達成基準 1.2.1:</span>音声のみ及び映像のみ (収録済) (レベル A)
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>For <a href="#dfn-prerecorded">prerecorded</a>
-                     <a href="#dfn-audio-only">audio-only</a> and prerecorded <a href="#dfn-video-only">video-only</a> media, the following are true, except when the audio or video is a <a href="#dfn-media-alternative-for-text">media alternative for text</a> and is clearly labeled as such:
+                  <p><a href="#dfn-prerecorded">収録済</a>の<a href="#dfn-audio-only">音声しか含まない</a>メディア及び収録済の<a href="#dfn-video-only">映像しか含まない</a>メディアは、次の事項を満たしている。ただし、その音声又は映像が<a href="#dfn-media-alternative-for-text">メディアによるテキストの代替</a>であって、メディアによる代替であることが明確にラベル付けされている場合は除く:
                      
                   </p>
                   <dl>
                      
                      
-                     <dt>Prerecorded Audio-only</dt>
+                     <dt>収録済の音声しか含まない</dt>
                      
                      
                      <dd>
                         
                         
-                        <p>An <a href="#dfn-alternative-for-time-based-media">alternative for time-based media</a> is provided that presents equivalent information for prerecorded audio-only content.
+                        <p><a href="#dfn-alternative-for-time-based-media">時間依存メディアに対する代替コンテンツ</a>によって、収録済の音声しか含まないコンテンツと同等の情報を提供している。
                            
                         </p>
                         
@@ -101,14 +94,13 @@
                      </dd>
                      
                      
-                     <dt>Prerecorded Video-only</dt>
+                     <dt>収録済の映像しか含まない</dt>
                      
                      
                      <dd>
                         
                         
-                        <p>Either an alternative for time-based media or an audio track is provided that presents
-                           equivalent information for prerecorded video-only content.
+                        <p>時間依存メディアに対する代替コンテンツ又は音声トラックによって、収録済の映像しか含まないコンテンツと同等の情報を提供している。
                            
                         </p>
                         
@@ -121,90 +113,69 @@
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   
-                  <dt>Goal</dt>
-                  <dd>Audio and video-only content can be understood by more people.</dd>
+                  <dt>目標</dt>
+                  <dd>音声のみ及び映像のみコンテンツを、より多くの人が理解できる。</dd>
                   
-                  <dt>What to do</dt>
-                  <dd>Provide an alternative when content is perceivable with only one sense.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>コンテンツが一つの感覚でしか知覚できないとき、代替コンテンツを提供する。</dd>
                   
-                  <dt>Why it's important</dt>
-                  <dd>People who can’t fully see or hear content can understand it.</dd> 
+                  <dt>なぜそれが重要か</dt>
+                  <dd>コンテンツを見たり聞いたりすることが完全にはできない人が、内容を理解できる。</dd> 
                   
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The intent of this Success Criterion is to make information conveyed by prerecorded
-                  audio-only and prerecorded video-only content available to all users. Alternatives
-                  for time-based media that are text based make information accessible because text
-                  can be rendered through any sensory modality (for example, visual, auditory or tactile)
-                  to match the needs of the user. In the future, text could also be translated into
-                  symbols, sign language or simpler forms of the language (future).
+               <h2>意図</h2>
+               <p>この達成基準の意図は、収録済の音声しか含まないコンテンツ及び収録済の映像しか含まないコンテンツの伝える情報を、すべての利用者が入手できるようにすることである。テキストは利用者のニーズに合った、あらゆる感覚モダリティ (例えば、視覚、聴覚、又は触覚) を通じてレンダリング可能であるため、時間依存メディアの代替は、情報をアクセシブルにする。将来的には、テキストを記号、手話、又はその言語のより単純な形態に変えることも可能になるかもしれない。
                   
                </p>
-               <p>An example of pre-recorded video with no audio information or user interaction is
-                  a silent movie. The purpose of the transcript is to provide an equivalent to what
-                  is presented visually. For prerecorded video content, authors have the option to provide
-                  an audio track. The purpose of the audio alternative is to be an equivalent to the
-                  video. This makes it possible for users with and without vision impairment to review
-                  content simultaneously. The approach can also make it easier for those with cognitive,
-                  language and learning disabilities to understand the content because it would provide
-                  parallel presentation.
+               <p>音声情報や利用者のインタラクションを伴わない収録済の映像の例は、無声映画である。書き起こしの目的は、視覚的に提示されるものと同等のものを提供することである。収録済の映像コンテンツの場合、コンテンツ制作者には音声トラックを提供するという選択肢がある。音声による代替の目的は、映像と同等のものになることである。これにより、視覚障害の有無に関係なく、利用者はコンテンツを同時に楽しむことが可能になる。このアプローチはまた、映像と音声の並行した提示を提供するため、認知障害、言語障害、及び学習障害のある利用者がコンテンツを理解しやすくすることができる。
                   
                </p>
                <div class="note">
-                  <p class="note-title marker">Note</p>
+                  <p class="note-title marker">注記</p>
                   <div>
                      
                      
-                     <p>A text equivalent is not required for audio that is provided as an equivalent for
-                        video with no audio information.  For example, it is not required to caption video
-                        description that is provided as an alternative to a silent movie.
+                     <p>音声情報がない映像に対し同等として提供されている音声に対しては、テキストによる代替は必要ない。例えば、無声映画の代替として提供されている音声解説にキャプションを付与する必要はない。
                         
                      </p>
                      
                      
                   </div>
                </div>
-               <p>See also 
-                  <a href="audio-only-live">1.2.4: Audio-only (Live)</a>
+               <p><a href="audio-only-live.html">1.2.9: 音声のみ (ライブ)</a>も参照のこと。
                   
                   
                </p>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>メリット</h2>
                <ul>
                   
                   
-                  <li>This Success Criterion helps people who have difficulty perceiving visual content.
-                     Assistive technology can read text alternatives aloud, present them visually, or convert
-                     them to braille.
+                  <li>この達成基準は、視覚的なコンテンツを知覚するのが困難な利用者の役に立つ。支援技術が、テキストによる代替を音声で読み上げる、視覚的に提示する、又は点字に変換することが可能になる。
                      
                   </li>
                   
                   
-                  <li>Alternatives for timed-based media that are text based may help some people who have
-                     difficulty understanding the meaning of prerecorded video content.
+                  <li>テキストベースの時間依存メディアの代替は、収録済の映像コンテンツの意味を理解するのが困難な利用者の役に立つことがある。
                      
                   </li>
                   
                   
-                  <li>People who are deaf, are hard of hearing, or who are having trouble understanding
-                     audio information for any reason can read the text presentation. Research is ongoing
-                     regarding automatic translation of text into sign language.
+                  <li>ろう、難聴、又は何らかの理由で音声情報を理解するのが困難な人が、テキストによる提示を読むことができる。テキストを手話に自動翻訳する研究が現在進められている。
                      
                   </li>
                   
                   
-                  <li>People who are deaf-blind can read the text in braille.</li>
+                  <li>盲ろうの利用者が、テキストを点字で読むことができるようになる。</li>
                   
                   
-                  <li>Additionally, text supports the ability to search for non-text content and to repurpose
-                     content in a variety of ways.
+                  <li>加えて、テキストは、非テキストコンテンツを検索可能なものにし、コンテンツを様々な方法で再利用できるようにする。
                      
                   </li>
                   
@@ -212,44 +183,34 @@
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>事例</h2>
                <dl>
                   
-                  <dt>An audio recording of a speech</dt>
+                  <dt>演説を録音した音声</dt>
                   
-                  <dd>The link to an audio clip says, "Chairman's speech to the assembly." A link to a text
-                     transcript is provided immediately after the link to the audio clip.
+                  <dd>「議会での議長の演説」という音声クリップへのリンクがある。そして、音声クリップへのリンクの直後に、テキストの書き起こしへのリンクが提供されている。
                   </dd>
                   
-                  <dt>An audio recording of a press conference</dt>
+                  <dt>記者会見を録音した音声</dt>
                   
-                  <dd>A Web page includes a link to an audio recording of a press conference that identifies
-                     the audio recording. The page also links to a text transcript of the press conference.
-                     The transcript includes a verbatim record of everything the speakers say. It identifies
-                     who is speaking as well as noting other significant sounds that are part of the recording,
-                     such as applause, laughter, questions from the audience, and so on.
+                  <dd>ウェブページに、録音音声であることが分かる記者会見の録音音声へのリンクがある。また、そのページには記者会見のテキストによる書き起こしへのリンクもある。テキストによる書き起こしには、話者が発言したすべての逐語的な記録が含まれる。そこには、例えば、喝采、笑い、聴衆からの質問など、その録音の一部であるその他の重要な音声に言及するだけでなく、誰が話しているのかも記されている。
                   </dd>
                   
-                  <dt>An animation that illustrates how a car engine works</dt>
+                  <dt>車のエンジンがどのように動くのかを説明するアニメーション</dt>
                   
-                  <dd>An animation shows how a car engine works. There is no audio and the animation is
-                     part of a tutorial that describes how an engine works. Since the text of the tutorial
-                     already provides a full explanation, the media is an alternative for text and the
-                     text alternative includes only a brief description of the animation and refers to
-                     the tutorial text for more information.
+                  <dd>車のエンジンがどのように動くのかを見せているアニメーションがある。音声はなく、そのアニメーションはエンジンがどのように動くかを説明するチュートリアルの一部である。チュートリアルのテキストがすでに完全な説明をしているため、そのアニメーションはテキストの代替物であり、画像はテキストの代替物であり、テキストによる代替はそのアニメーションの簡潔な説明のみを含み、詳細についてはチュートリアルのテキストを参照している。
                   </dd>
                   
-                  <dt>A video-only file with an audio track</dt>
+                  <dt>音声トラック付きの、映像しか含まないファイル</dt>
                   
-                  <dd>A silent movie includes an audio track which includes a description of the action
-                     in the video.
+                  <dd>無音映画に、映像の動きを説明している音声トラックがある。
                   </dd>
                   
                </dl>
             </section>
             <section id="resources">
-               <h2>Related Resources</h2>
-               <p>Resources are for information purposes only, no endorsement implied.</p>
+               <h2>関連リソース</h2>
+               <p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p>
                <ul>
                   
                   
@@ -280,22 +241,17 @@
                </ul>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques.html">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
-                  <p>Select the situation below that matches your content. Each situation includes techniques
-                     or combinations of techniques that are known and documented to be sufficient for that
-                     situation. 
+                  <h3>十分なテクニック</h3>
+                  <p>そのコンテンツに合致する状況を以下から選択すること。それぞれの状況には、WCAG ワーキンググループがその状況において十分であると判断する、番号付のテクニック (又は、テクニックの組み合わせ) がある。 
                   </p>
                   <section class="situation" id="audio-only-and-video-only-prerecorded-situation-0">
                      
                      
-                     <h4>Situation A: If the content is prerecorded audio-only:</h4>
+                     <h4>状況 A: 収録済の音声しか含まないコンテンツの場合:</h4>
                      
                      
                      <ul>
@@ -316,7 +272,7 @@
                   <section class="situation" id="audio-only-and-video-only-prerecorded-situation-1">
                      
                      
-                     <h4>Situation B: If the content is prerecorded video-only:</h4>
+                     <h4>状況 B: 収録済の映像しか含まないコンテンツの場合:</h4>
                      
                      
                      <ul>
@@ -344,10 +300,8 @@
                   </section>
                </section>
                <section id="advisory">
-                  <h3>Advisory Techniques</h3>
-                  <p>Although not required for conformance, the following additional techniques should
-                     be considered in order to make content more accessible. Not all techniques can be
-                     used or would be effective in all situations.
+                  <h3>参考テクニック</h3>
+                  <p>適合のために必須ではないが、コンテンツをよりアクセシブルにするために、次の追加のテクニックを検討することが望ましい。ただし、すべての状況において、すべてのテクニックが使用可能、又は効果的であるとは限らない。
                   </p>
                   <ul>
                      
@@ -363,17 +317,15 @@
                   </ul>
                </section>
                <section id="failure">
-                  <h3>Failures</h3>
-                  <p>The following are common mistakes that are considered failures of this Success Criterion
-                     by the WCAG Working Group.
+                  <h3>失敗例</h3>
+                  <p>以下に挙げるものは、WCAG ワーキンググループが達成基準の失敗例とみなした、よくある間違いである。
                   </p>
                   <ul>
                      
                      
                      <li>
                         									         
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F30">F30: Failure of Success Criterion 1.1.1 and 1.2.1 due to using text alternatives that are
-                           not alternatives (e.g., filenames or placeholder text)</a>
+                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F30">F30: Failure of Success Criterion 1.1.1 and 1.2.1 due to using text alternatives that are not alternatives (e.g., filenames or placeholder text)</a>
                         								       
                         
                      </li>
@@ -381,9 +333,7 @@
                      
                      <li>
                         									         
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F67">F67: Failure of Success Criterion 1.1.1 and 1.2.1 due to providing long descriptions for
-                           non-text content that does not serve the same purpose or does not present the same
-                           information</a>
+                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F67">F67: Failure of Success Criterion 1.1.1 and 1.2.1 due to providing long descriptions for non-text content that does not serve the same purpose or does not present the same information</a>
                         								       
                         
                      </li>
@@ -395,25 +345,21 @@
             <section id="key-terms">
                <details>
                   <summary>
-                     <h2>Key Terms</h2>
+                     <h2>重要な用語</h2>
                   </summary>
-                  <dt id="dfn-alternative-for-time-based-media">alternative for time-based media</dt>
+                  <dt id="dfn-alternative-for-time-based-media">時間依存メディアに対する代替コンテンツ (alternative for time-based media)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">document including correctly sequenced text descriptions of time-based visual and
-                           auditory information and providing a means for achieving the outcomes of any time-based
-                           interaction
+                        <p xmlns="http://www.w3.org/1999/xhtml">時間依存の視覚的及び聴覚的情報を正しい順序で説明したテキストを含み、あらゆる時間依存のインタラクションによる結果を得る手段を提供している文書。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>A screenplay used to create the synchronized media content would meet this definition
-                              only if it was corrected to accurately represent the final synchronized media after
-                              editing.
+                           <p class="note-title marker">注記</p>
+                           <p>同期したメディアのコンテンツを作るために用いられる脚本は、編集が終了した最終版の同期したメディアを正確に描写した脚本に修正されている場合だけ、この定義を満たす。
                               
                            </p>
                         </div>
@@ -421,18 +367,17 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-audio">audio</dt>
+                  <dt id="dfn-audio">音声 (audio)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">the technology of sound reproduction</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">音の再生技術。</p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Audio can be created synthetically (including speech synthesis), recorded from real
-                              world sounds, or both.
+                           <p class="note-title marker">注記</p>
+                           <p>音声には、合成して作られたもの (音声合成を含む)、実世界の音を収録したもの、又はその両方が含まれる。
                               
                            </p>
                         </div>
@@ -440,63 +385,57 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-audio-only">audio-only</dt>
+                  <dt id="dfn-audio-only">音声しか含まない (audio-only)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">a time-based presentation that contains only <a href="#dfn-audio">audio</a> (no <a href="#dfn-video">video</a> and no interaction)
+                        <p xmlns="http://www.w3.org/1999/xhtml"><a href="#dfn-audio">音声</a>のみを含んだ、時間に依存する提示 (<a href="#dfn-video">映像</a>やインタラクションを含まない)。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-live">live</dt>
+                  <dt id="dfn-live">ライブ (live)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">information captured from a real-world event and transmitted to the receiver with
-                           no more than a broadcast delay
+                        <p xmlns="http://www.w3.org/1999/xhtml">現実の出来事から取り込まれ、放送遅延以上の遅延なく受け手に送信される情報。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>A broadcast delay is a short (usually automated) delay, for example used in order
-                              to give the broadcaster time to cue or censor the audio (or video) feed, but not sufficient
-                              to allow significant editing.
+                           <p class="note-title marker">注記</p>
+                           <p>放送遅延は、短時間の (通常は自動的な) 遅れで、例えば放送局に放送のタイミング[queue→cue]の調整や音声 (又は映像) の検閲のための時間を与えるものだが、意味のある編集ができるほどのものではない。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>If information is completely computer generated, it is not live.</p>
+                           <p class="note-title marker">注記</p>
+                           <p>もし情報が完全にコンピュータで生成されたものならば、それはライブではない。</p>
                         </div>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-media-alternative-for-text">media alternative for text</dt>
+                  <dt id="dfn-media-alternative-for-text">メディアによるテキストの代替 (media alternative for text)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">media that presents no more information than is already presented in text (directly
-                           or via text alternatives)
+                        <p xmlns="http://www.w3.org/1999/xhtml">テキストで (直接又はテキストによる代替によって) 既に提示されている情報以上のものを提示していないメディア。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>A media alternative for text is provided for those who benefit from alternate representations
-                              of text. Media alternatives for text may be audio-only, video-only (including sign-language
-                              video), or audio-video.
+                           <p class="note-title marker">注記</p>
+                           <p>メディアによるテキストの代替は、テキストを代替する提示の恩恵を受ける人たちのために提供される。テキストの代替メディアになりうるのは、音声しか含まないメディア、映像しか含まない (手話の映像を含む) メディア、又は音声付映像メディアである。
                               
                            </p>
                         </div>
@@ -504,40 +443,40 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-prerecorded">prerecorded</dt>
+                  <dt id="dfn-prerecorded">収録済 (prerecorded)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">information that is not <a href="#dfn-live">live</a>
+                        <p xmlns="http://www.w3.org/1999/xhtml"><a href="#dfn-live">ライブ</a>ではない情報。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-video">video</dt>
+                  <dt id="dfn-video">映像 (video)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">the technology of moving or sequenced pictures or images</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">写真又は画像を動かす、又はシーケンス化する技術。</p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Video can be made up of animated or photographic images, or both.</p>
+                           <p class="note-title marker">注記</p>
+                           <p>映像は、アニメーション画像もしく実写画像、又はその両方で構成され得る。</p>
                         </div>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-video-only">video-only</dt>
+                  <dt id="dfn-video-only">映像しか含まない (video-only)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">a time-based presentation that contains only <a href="#dfn-video">video</a> (no <a href="#dfn-audio">audio</a> and no interaction)
+                        <p xmlns="http://www.w3.org/1999/xhtml"><a href="#dfn-video">映像</a>のみを含んだ (<a href="#dfn-audio">音声</a>もインタラクションも含まない)、時間に依存する提示。
                            
                         </p>
                         
@@ -547,11 +486,8 @@
                </details>
             </section>
             <section id="test-rules">
-               <h2>Test Rules</h2>
-               <p>The following are Test Rules for certain aspects of this Success Criterion. It is
-                  not necessary to use these particular Test Rules to check for conformance with WCAG,
-                  but they are defined and approved test methods. For information on using Test Rules,
-                  see <a href="understanding-act-rules.html">Understanding Test Rules for WCAG Success Criteria</a>.
+               <h2>テストルール</h2>
+               <p>以下は、この達成基準の特定の側面に関するテストルールである。この特定のルールを使用して WCAG に適合しているかどうかを確認する必要はないが、これらのルールは定義され、承認されたテスト方法である。テストルールの使用については、<a href="understanding-act-rules.html">WCAG 達成基準のテストルールを理解する</a>を参照のこと。
                </p>
                <ul>
                   <li><a href="/WAI/standards-guidelines/act/rules/e7aa44/proposed/">Audio element content has text alternative</a></li>
@@ -568,13 +504,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -589,11 +524,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            </p><p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -615,13 +552,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -630,7 +567,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -651,8 +588,10 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+    <!--noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-      </noscript>
+      </noscript-->
    </body>
 </html>
