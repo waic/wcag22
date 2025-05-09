@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  3.3.3: Error Suggestion | WAI | W3C</title>
+      <title>解説書 達成基準 3.3.3: エラー修正の提案 | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
-      <!-- 日本語訳されるまでの一時的なスクリプト -->
-      <script src="untranslated-note.js"></script>
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://waic.jp/translations/WCAG22/Understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -37,17 +35,17 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"><a href="input-assistance">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Input Assistance</a></li>
+                        </svg> ガイドライン: 入力支援</a></li>
                   <li class="nav__item"><a href="labels-or-instructions">
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-left-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
-                        </svg>Previous SC: Labels or Instructions</a></li>
-                  <li class="nav__item"><a href="error-prevention-legal-financial-data">Next SC: Error Prevention (Legal, Financial, Data)
+                        </svg>前: ラベル又は説明</a></li>
+                  <li class="nav__item"><a href="error-prevention-legal-financial-data">次: 誤り防止 (法的、金融、データ)
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -58,124 +56,100 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
-                     <li><a href="#key-terms">Key Terms</a></li>
+                     <li><a href="#brief">要約</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#benefits">利点</a></li>
+                     <li><a href="#examples">事例</a></li>
+                     <li><a href="#techniques">テクニック</a></li>
+                     <li><a href="#key-terms">重要な用語</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				SC 3.3.3:</span>Error Suggestion (Level AA)
+            <h1><span class="standalone-resource__type-of-guidance">解説書 
+                  				達成基準 3.3.3:</span>エラー修正の提案 (レベル AA)
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>If an <a href="#dfn-input-error">input error</a> is automatically detected and suggestions for correction are known, then the suggestions
-                     are provided to the user, unless it would jeopardize the security or purpose of the
-                     content.
+                  <p><a href="#dfn-input-error">入力エラー</a>が自動的に検出され、修正方法を提案できる場合、その提案が利用者に提示される。ただし、セキュリティ又はコンテンツの目的を損なう場合は除く。
                      
                   </p>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   
-                  <dt>Goal</dt>
-                  <dd>Users get suggestions on how to resolve errors.</dd>
+                  <dt>目標</dt>
+                  <dd>利用者が誤りを解決する方法の提案を受け取る。</dd>
                   
-                  <dt>What to do</dt>
-                  <dd>Where errors are detected, suggest known ways to correct them.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>誤りが検出された場合は、既知の修正方法を提案する。</dd>
                   
-                  <dt>Why it's important</dt>
-                  <dd>People can address errors faster and with reduced effort.</dd> 
+                  <dt>なぜそれが重要か</dt>
+                  <dd>人々は、より早く、より少ない労力で誤りに対処できる。</dd> 
                   
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The intent of this Success Criterion is to ensure that users receive appropriate suggestions
-                  for correction of an input error if it is possible. The definition of "input error"
-                  says that it is "information provided by the user that is not accepted" by
-                  the system. Some examples of information that is not accepted include information
-                  that is required but omitted by the user and information that is provided by the user
-                  but that falls outside the required data format or allowed values.
+               <h2>意図</h2>
+               <p>この達成基準の意図は、可能であれば、利用者が入力エラーを修正するのに適切な修正方法を入手できるようにすることである。「入力エラー」の定義は、システムによって「利用者が提供した情報で、受け付けられないもの」であるとされている。受け付けられない情報の例には、必須だが利用者によって省略された情報や、利用者によって提供されたが、必要なデータ形式や許容値の範囲外である情報が含まれる。
                   
                </p>
-               <p>Success Criterion 3.3.1 provides for notification of errors. However, persons with
-                  cognitive limitations may find it difficult to understand how to correct the errors.
-                  People with visual disabilities may not be able to figure out exactly how to correct
-                  the error. In the case of an unsuccessful form submission, users may abandon the form
-                  because they may be unsure of how to correct the error even though they are aware
-                  that it has occurred. 
+               <p>達成基準 3.3.1 は、入力エラー箇所を通知するためのものである。しかし、例えば、認知的な制約のある利用者は、入力エラーの修正方法を理解するのが困難なことがある。視覚障害のある利用者は、入力エラーの修正方法を正確に把握することができないことがある。フォーム送信がうまくいかなかった場合、利用者はエラーが発生したことには気づいていたとしても、そのエラーを修正する方法が分からないために、そのフォームを途中であきらめてしまうかもしれない。
                   
                </p>
-               <p>The content author may provide the description of the error, or the user agent may
-                  provide the description of the error based on technology-specific, programmatically
-                  determined information.
+               <p>コンテンツ制作者はエラーの説明を提供してもよく、又はユーザエージェントは技術固有な、プログラムによる解釈される情報に基づいてエラーの説明を提供してもよい。
                   
                   
                </p>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>利点</h2>
                <ul>
                   
-                  <li>Providing information about how to correct input errors allows users who have learning
-                     disabilities to fill in a form successfully.
+                  <li>入力エラーを修正する方法に関する情報を提供することによって、学習障害のある利用者がフォームに問題なく入力できるようになる。
                   </li>
                   
-                  <li>Users who are blind or have impaired vision understand more easily the nature of the
-                     input error and how to correct it.
+                  <li>全盲の利用者又は視覚に障害のある利用者が、入力エラーの内容及びその修正方法をもっと容易に理解できるようになる。
                   </li>
                   
-                  <li>People with motion impairment can reduce the number of times they need to change an
-                     input value.
+                  <li>運動障害のある利用者は、入力内容を変更せざるを得なくなる回数を減らすことができる。
                   </li>
                   
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>事例 </h2>
                <dl>
                   
-                  <dt>Additional Help for Correcting An Input Error</dt>
+                  <dt>入力エラーを修正するためのヘルプの追加</dt>
                   
-                  <dd>The result of a form that was not successfully submitted describes an
-                     input error in place in the page along with the correct input and offers additional
-                     help for the form field that caused the input error.
+                  <dd>うまく送信されなかったフォームのエラー画面で、そのページで起こった入力エラーを正しい入力方法とあわせて説明していて、入力エラーになったテキストフィールドのヘルプを追加で提供している。
                   </dd>
                   
-                  <dt>Suggestions from a Limited Set of Values</dt>
+                  <dt>制限のある値の提示</dt>
                   
                   <dd>
                      
-                     <p>An input field requires that a month name be entered. If the user enters "12," suggestions
-                        for correction may include:
+                     <p>月の名前を入力するテキストフィールドがある。利用者が「12」と入力すると、修正する方法が提示される:
                      </p>
                      
                      
                      <ul>
                         
-                        <li>A list of the acceptable values, e.g., "Choose one of: January, February, March, April,
-                           May, June, July, August, September, October, November, December."
+                        <li>入力可能な値の一覧。例えば、「どれか一つを選んでください: January, February, March, April, May, June, July, August, September, October, November, December」。
                            
                         </li>
                         
-                        <li>The conversion of the input data interpreted as a different month format, e.g., "Do
-                           you mean 'December'?"
+                        <li>入力されたデータを異なるフォーマットに変換して提示する。例えば、「もしかして 'December' ですか?」
                            
                         </li>
                         
@@ -186,20 +160,16 @@
                </dl>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <div class="note">
-                  <p class="note-title marker">Note</p>
+                  <p class="note-title marker">注記</p>
                   <div>
                      
                      
                      <p>
-                        In some cases, more than one of these situations may apply. For example, when a mandatory
-                        field also requires the data to be in a specific format.
+                        二つ以上の状況が適用される場合もある。例えば、必須フィールドが特別なデータフォーマットを要求する場合である。
                         
                         
                         
@@ -209,15 +179,13 @@
                   </div>
                </div>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
-                  <p>Select the situation below that matches your content. Each situation includes techniques
-                     or combinations of techniques that are known and documented to be sufficient for that
-                     situation. 
+                  <h3>十分なテクニック</h3>
+                  <p>そのコンテンツに合致する状況を以下から選択すること。それぞれの状況には、WCAG ワーキンググループがその状況において十分であると判断する、番号付のテクニック (又は、テクニックの組み合わせ) がある。 
                   </p>
                   <section class="situation" id="error-suggestion-situation-1">
                      
                      
-                     <h4>Situation A: If information for a field is required to be in a specific data format:</h4>
+                     <h4>状況 A: フィールドの情報に、特別のデータフォーマットが要求される場合:</h4>
                      
                      
                      <ul>
@@ -263,8 +231,7 @@
                   <section class="situation" id="error-suggestion-situation-2">
                      
                      
-                     <h4>Situation B: Information provided by the user is required to be one of a limited set
-                        of values:
+                     <h4>状況 B: 利用者の入力する情報は、複数の限定された値のうちの一つであることが要求される場合:
                         
                      </h4>
                      
@@ -311,10 +278,8 @@
                   </section>
                </section>
                <section id="advisory">
-                  <h3>Advisory Techniques</h3>
-                  <p>Although not required for conformance, the following additional techniques should
-                     be considered in order to make content more accessible. Not all techniques can be
-                     used or would be effective in all situations.
+                  <h3>参考テクニック</h3>
+                  <p>適合のために必須ではないが、コンテンツをよりアクセシブルにするために、次の追加のテクニックを検討することが望ましい。ただし、すべての状況において、すべてのテクニックが使用可能、又は効果的であるとは限らない。
                   </p>
                   <ul>
                      
@@ -339,7 +304,7 @@
                   <section id="client-side-scripting-techniques-advisory">
                      
                      
-                     <h4>Client-Side Scripting Techniques (Advisory)</h4>
+                     <h4>クライアントサイドのスクリプトのテクニック (参考)</h4>
                      
                      
                      <ul>
@@ -370,50 +335,37 @@
             <section id="key-terms">
                <details>
                   <summary>
-                     <h2>Key Terms</h2>
+                     <h2>重要な用語</h2>
                   </summary>
-                  <dt id="dfn-assistive-technology">assistive technology</dt>
+                  <dt id="dfn-assistive-technology">支援技術 (assistive technology)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">hardware and/or software that acts as a <a href="#dfn-user-agent">user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements
-                           of users with disabilities that go beyond those offered by mainstream user agents
+                        <p xmlns="http://www.w3.org/1999/xhtml">障害のある利用者の要件を満たすために、主流の<a href="#dfn-user-agent">ユーザエージェント</a>が提供する機能を超えた機能を提供するような、ユーザエージェントとして動作する、又は主流のユーザエージェントと共に動作するハードウェア及び／又はソフトウェア。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Functionality provided by assistive technology includes alternative presentations
-                              (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
-                              voice), additional navigation or orientation mechanisms, and content transformations
-                              (e.g., to make tables more accessible).
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術が提供する機能としては、代替の提示 (例: 合成音声や拡大表示したコンテンツ)、代替入力手法 (例: 音声認識)、付加的なナビゲーション又は位置確認のメカニズム、及びコンテンツ変換 (例: テーブルをよりアクセシブルにするもの) などを挙げることができる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Assistive technologies often communicate data and messages with mainstream user agents
-                              by using and monitoring APIs.
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術は、API を利用、監視することで、主流のユーザエージェントとデータやメッセージのやりとりをすることが多い。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The distinction between mainstream user agents and assistive technologies is not absolute.
-                              Many mainstream user agents provide some features to assist individuals with disabilities.
-                              The basic difference is that mainstream user agents target broad and diverse audiences
-                              that usually include people with and without disabilities. Assistive technologies
-                              target narrowly defined populations of users with specific disabilities. The assistance
-                              provided by an assistive technology is more specific and appropriate to the needs
-                              of its target users. The mainstream user agent may provide important functionality
-                              to assistive technologies like retrieving Web content from program objects or parsing
-                              markup into identifiable bundles.
+                           <p class="note-title marker">注記</p>
+                           <p>主流のユーザエージェントと支援技術との区別は、絶対的なものではない。多くの主流のユーザエージェントは、障害のある個人を支援する機能を提供している。基本的な差異は、主流のユーザエージェントが障害のある人もない人も含めて、広く多様な利用者を対象にしているのに対し、支援技術は、特定の障害のある利用者という、より狭く限られた人たちを対象にしているということである。支援技術により提供される支援は、対象とする利用者に特化した、よりニーズに適したものである。主流のユーザエージェントは、プログラムオブジェクトからのウェブコンテンツの抽出、マークアップの識別可能な構造への解釈といった、重要な機能を支援技術に対して提供する場合がある。
                               
                            </p>
                         </div>
@@ -421,8 +373,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Assistive technologies that are important in the context of this document include
-                              the following:
+                           <p>この文書の文脈において重要な支援技術としては、以下のものが挙げられる:
                               
                            </p>
                            
@@ -430,38 +381,30 @@
                            <ul>
                               
                               
-                              <li>screen magnifiers, and other visual reading assistants, which are used by people with
-                                 visual, perceptual and physical print disabilities to change text font, size, spacing,
-                                 color, synchronization with speech, etc. in order to improve the visual readability
-                                 of rendered text and images;
+                              <li>画面拡大ソフト及びその他の視覚的な表示に関する支援技術。視覚障害、知覚障害、及び読書困難などの障害のある人が、レンダリング後のテキスト及び画像の視覚的な読みやすさを改善するために、テキストのフォント、サイズ、間隔、色、音声との同期などを変更するのに使用している。
                                  
                               </li>
                               
                               
-                              <li>screen readers, which are used by people who are blind to read textual information
-                                 through synthesized speech or braille;
+                              <li>スクリーンリーダー。全盲の人がテキスト情報を合成音声あるいは点字で読み取るために使用している。
                                  
                               </li>
                               
                               
-                              <li>text-to-speech software, which is used by some people with cognitive, language, and
-                                 learning disabilities to convert text into synthetic speech;
+                              <li>音声変換ソフトウェア。認知障害、言語障害、及び学習障害のある人が、テキストを合成音声に変換するために使用している。
                                  
                               </li>
                               
                               
-                              <li>speech recognition software, which may be used by people who have some physical disabilities;</li>
+                              <li>音声認識ソフトウェア。何らかの身体障害のある利用者が使用することがある。</li>
                               
                               
-                              <li>alternative keyboards, which are used by people with certain physical disabilities
-                                 to simulate the keyboard (including alternate keyboards that use head pointers, single
-                                 switches, sip/puff and other special input devices.);
+                              <li>代替キーボード。特定の身体障害のある人がキーボード操作をシミュレートするのに使用している (ヘッドポインタ、シングルスイッチ、呼気・吸気スイッチ、及びその他の特別な入力デバイスを使った代替キーボードを含む)。
                                  
                               </li>
                               
                               
-                              <li>alternative pointing devices, which are used by people with certain physical disabilities
-                                 to simulate mouse pointing and button activations.
+                              <li>代替ポインティングデバイス。特定の身体障害のある人がマウスポインタとボタンの動きをシミュレートするのに使用している。
                                  
                               </li>
                               
@@ -472,31 +415,30 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-input-error">input error</dt>
+                  <dt id="dfn-input-error">入力エラー (input error)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">information provided by the user that is not accepted</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">利用者が入力した情報で、受け付けられないもの。</p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">注記</p>
                            <div>
                               
-                              <p>This includes:</p>
+                              <p>以下のものが含まれる:</p>
                               
                               
                               <ol>
                                  
                                  
-                                 <li>Information that is required by the <a href="#dfn-web-page">Web page</a> but omitted by the user
+                                 <li>その<a href="#dfn-web-page">ウェブページ</a>では必須であるが、利用者が入力しなかった情報
                                     
                                  </li>
                                  
                                  
-                                 <li>Information that is provided by the user but that falls outside the required data
-                                    format or values
+                                 <li>利用者が入力したが、要求されたデータ形式あるいは値ではない情報
                                     
                                  </li>
                                  
@@ -508,17 +450,17 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-user-agent">user agent</dt>
+                  <dt id="dfn-user-agent">ユーザエージェント (user agent)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">any software that retrieves and presents Web content for users</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ウェブコンテンツを取得して利用者に提示するあらゆるソフトウェア。</p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technology">assistive technologies</a> — that help in retrieving, rendering, and interacting with Web content.
+                           <p>ウェブコンテンツの取得、レンダリング及びインタラクションを支援する、ウェブブラウザ、メディアプレーヤ、プラグイン、及びその他のプログラム (<a href="#dfn-assistive-technology"> 支援技術</a>も含む)。
                               
                            </p>
                            
@@ -527,30 +469,27 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-web-page">web page</dt>
+                  <dt id="dfn-web-page">ウェブページ (web page)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">a non-embedded resource obtained from a single URI using HTTP plus any other resources
-                           that are used in the rendering or intended to be rendered together with it by a <a href="#dfn-user-agent">user agent</a>
+                        <p xmlns="http://www.w3.org/1999/xhtml">単一の URI から HTTP で得た埋め込まれていないリソースに加え、レンダリングに使われる、又は<a href="#dfn-user-agent">ユーザエージェント</a>がこのリソースと一緒にレンダリングすることを意図しているその他のあらゆるリソースを合わせたもの。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Although any "other resources" would be rendered together with the primary resource,
-                              they would not necessarily be rendered simultaneously with each other.
+                           <p class="note-title marker">注記</p>
+                           <p>どのような「その他のリソース」も主たるリソースと一緒にレンダリングされるであろうが、これらのリソースが同時にレンダリングされるとは限らない。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>For the purposes of conformance with these guidelines, a resource must be "non-embedded"
-                              within the scope of conformance to be considered a Web page.
+                           <p class="note-title marker">注記</p>
+                           <p>このガイドラインの適合範囲に含まれる対象となるウェブページとみなされるためには、リソースが「埋め込まれていない」リソースでなければならない。
                               
                            </p>
                         </div>
@@ -558,17 +497,14 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A Web resource including all embedded images and media.</p>
+                           <p>単体のウェブリソースであり、埋め込まれている画像及びメディアのすべてを含んだもの。</p>
                            
                         </aside>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A Web mail program built using Asynchronous JavaScript and XML (AJAX). The program
-                              lives entirely at http://example.com/mail, but includes an inbox, a contacts area
-                              and a calendar. Links or buttons are provided that cause the inbox, contacts, or calendar
-                              to display, but do not change the URI of the page as a whole.
+                           <p>Asynchronous JavaScript and XML (AJAX) を用いたウェブメールのプログラム。そのプログラム全体は http://example.com/mail に存在しているが、受信トレイ、連絡先、カレンダーがある。受信トレイ、連絡先、又はカレンダーを表示するリンク又はボタンが提供されているが、全体としてページの URI は変更されない。
                               
                            </p>
                            
@@ -577,8 +513,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A customizable portal site, where users can choose content to display from a set of
-                              different content modules.
+                           <p>カスタマイズ可能なポータルサイトで、利用者が様々なコンテンツモジュールのセットから表示させるコンテンツを選択できるようなもの。
                               
                            </p>
                            
@@ -587,12 +522,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>When you enter "http://shopping.example.com/" in your browser, you enter a movie-like
-                              interactive shopping environment where you visually move around in a store dragging
-                              products off of the shelves around you and into a visual shopping cart in front of
-                              you. Clicking on a product causes it to be demonstrated with a specification sheet
-                              floating alongside. This might be a single-page Web site or just one page within a
-                              Web site.
+                           <p>ブラウザで "http://shopping.example.com/" へ行くと、映画のようなインタラクティブなショッピング環境になる。そこでは、視覚的に店内を移動して、店内の棚から商品をドラッグして、目の前にある視覚的な買物カゴに商品を入れる。商品をクリックすると、同時に仕様書が浮き上がるように表示される。これは 1 ページだけのウェブサイトかもしれないし、ウェブサイトの中のほんの 1 ページなのかもしれない。
                               
                            </p>
                            
@@ -612,13 +542,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -633,11 +562,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -659,13 +590,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -674,7 +605,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -695,7 +626,9 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+      <noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
       </noscript>
    </body>
