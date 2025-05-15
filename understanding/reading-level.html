@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  3.1.5: Reading Level | WAI | W3C</title>
+      <title>解説書 達成基準 3.1.5: 読解レベル | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
-      <!-- 日本語訳されるまでの一時的なスクリプト -->
-      <script src="untranslated-note.js"></script>
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://waic.jp/translations/WCAG22/Understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -37,17 +35,17 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"><a href="readable">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Readable</a></li>
+                        </svg> ガイドライン: 読み取り可能</a></li>
                   <li class="nav__item"><a href="abbreviations">
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-left-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
-                        </svg>Previous SC: Abbreviations</a></li>
-                  <li class="nav__item"><a href="pronunciation">Next SC: Pronunciation
+                        </svg>前: 略語</a></li>
+                  <li class="nav__item"><a href="pronunciation">次: 発音
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -58,189 +56,121 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#resources">Related Resources</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
-                     <li><a href="#key-terms">Key Terms</a></li>
+                     <li><a href="#brief">要約</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#benefits">利点</a></li>
+                     <li><a href="#examples">事例</a></li>
+                     <li><a href="#resources">関連リソース</a></li>
+                     <li><a href="#techniques">テクニック</a></li>
+                     <li><a href="#key-terms">重要な用語</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				SC 3.1.5:</span>Reading Level (Level AAA)
+            <h1><span class="standalone-resource__type-of-guidance">解説書 
+                  				達成基準 3.1.5:</span>読解レベル (レベル AAA)
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>When text requires reading ability more advanced than the <a href="#dfn-lower-secondary-education-level">lower secondary education level</a> after removal of proper names and titles, <a href="#dfn-supplemental-content">supplemental content</a>, or a version that does not require reading ability more advanced than the lower
-                     secondary education level, is available.
+                  <p>固有名詞や題名を取り除いた状態で、テキストが<a href="#dfn-lower-secondary-education-level">前期中等教育レベル</a>を超えた読解力を必要とする場合は、<a href="#dfn-supplemental-content">補足コンテンツ</a>又は前期中等教育レベルを超えた読解力を必要としない版が利用できる。
                      
                   </p>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   
-                  <dt>Goal</dt>
-                  <dd>Users can get a simplified version of complex information.</dd>
+                  <dt>目標</dt>
+                  <dd>利用者は複雑な情報の簡略版を入手できる。</dd>
                   
-                  <dt>What to do</dt>
-                  <dd>When text information becomes complex, create a more easily understood version.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>テキスト情報が複雑になる場合、より理解しやすいバージョンを作成する。</dd>
                   
-                  <dt>Why it's important</dt>
-                  <dd>More people, especially those with cognitive disabilities, can understand the meaning
-                     of content.
+                  <dt>なぜそれが重要か</dt>
+                  <dd>特に認知障害のある人など、より多くの人々がコンテンツの意味を理解できるようになる。
                   </dd> 
                   
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
+               <h2>意図</h2>
                <p>
-                  Content should be written as clearly and simply as possible. The intent of this Success
-                  Criterion is:
+                  コンテンツは、可能な限り明快かつ簡潔に書かれているべきである。この達成基準の意図は以下の通りである:
                   
                </p>
                <ul>
                   
                   
-                  <li>to ensure that additional content is available to aid the understanding of difficult
-                     or complex text;
+                  <li>難解又は複雑なテキストの理解を支援する追加コンテンツが利用できることを保証すること。
                      
                   </li>
                   
                   
-                  <li>to establish a testable measure indicating when such additional content is required.</li>
+                  <li>そのような追加コンテンツがいつ必要になるかを示すテスト可能な基準を保証すること。</li>
                   
                   
                </ul>
-               <p>This Success Criterion helps people with reading disabilities while also allowing
-                  authors to publish difficult or complex Web content. Text difficulty is described
-                  in terms of the level of education required to read the text. Education levels are
-                  defined according to the International Standard Classification of Education [[UNESCO]],
-                  which was created to allow international comparison among systems of education.
+               <p>この達成基準は、コンテンツ制作者が難解又は複雑なウェブコンテンツを公開できるようにしながらも、読字障害のある利用者の手助けとなる。テキストの難しさは、テキストを読むのに必要とされる教育の水準という観点から説明されている。教育レベルは、教育システム間を国際的に比較できるようにするために作成された国際標準教育分類 [[UNESCO]] に従って定義している。
                   
                   
                </p>
-               <p>Difficult or complex text may be appropriate for most members of the intended audience
-                  (that is, most of the people for whom the content has been created). But there are
-                  people with disabilities, including reading disabilities, even among highly educated
-                  users with specialized knowledge of the subject matter. It may be possible to accommodate
-                  these users by making the text more readable. If the text cannot be made more readable,
-                  then supplemental content is needed. Supplemental content is required when text demands
-                  reading ability more advanced than the lower secondary education level—that is, more
-                  than nine years of school. Such text presents severe obstacles to people with reading
-                  disabilities and is considered difficult even for people without disabilities who
-                  have completed upper secondary education.
+               <p>難解又は複雑なテキストは、想定した利用者層のほとんどのメンバー (つまり、コンテンツを作成したほとんどの人) に対しては適切なこともある。しかし、その分野の専門的な知識を持つ高い教育を受けた利用者の間にも、読字障害を含めて、障害のある利用者がいる。テキストをより読みやすくすることで、そうした利用者にも対処させることが可能である。テキストをより読みやすくすることができない場合には、補足的なコンテンツが必要となる。補足的なコンテンツは、前期中等教育レベル、つまり、9 年以上の学校教育以上のより高度な読解力を要求する場合に求められる。このようなテキストは、読字障害のある利用者にとって重大な障害となり、後期中等教育を修了した障害のない利用者にとっても難解であると考えられている。
                   
                </p>
-               <p>Reading disabilities such as dyslexia make it difficult to recognize written or printed
-                  words and associate them with the correct sounds. This is called "decoding" the text.
-                  Decoding must be automatic in order for people to read fluently. The act of decoding
-                  text word by word consumes much of the mental energy that most people are able to
-                  use for understanding what they read.
-                  Text that uses short, common words and short sentences is easier to decode and usually
-                  requires less advanced reading ability than text that uses long sentences and long
-                  or unfamiliar words.
+               <p>ディスレクシアなどの読字障害は、書かれた又は印刷された単語を認識し正しい音に関連づけることを、困難にする。これは、テキストの「復号」と呼ばれる。人々が流暢に読むために、復号は自動的に行われなければならない。単語ごとにテキストを復号する行為は、ほとんどの人にとって、彼らが読んでいるものを理解するために使うことのできる、精神的なエネルギーをひどく消費する。短いか、一般的な単語か、短い文章を使っているテキストは容易に復号でき、通常、長い文章及び、長い又は馴染みのない単語を使ったテキストよりも、高度な読解力を必要としない。
                   
                </p>
-               <p>The education level required to read text content (also called "readability") is measured
-                  by analyzing selected passages of text from the Web page. If the Web page includes
-                  text written for different purposes or different styles are used, the selected passages
-                  include samples of the types of content in the Web page and the different styles in
-                  which the content is written. (In many cases, the Web page contains only one kind
-                  of text content—e.g., technical documentation, a legal notice, marketing material,
-                  etc.—and all the content uses the same style.) 
+               <p>テキストのコンテンツを読むのに必要な教育レベル (リーダビリティ (readability) とも呼ばれる) は、ウェブページからテキストの選択された部分を解析することで測定される。ウェブページに異なる目的で書かれた又は異なるスタイルを用いたテキストが含まれている場合、選択された部分は、ウェブページにあるコンテンツの種類及びそのコンテンツが書かれている異なるスタイルのサンプルを含める。(多くの場合、ウェブページには、例えば、技術的な文書、法律上の表示、マーケティング素材など、一つの種類のテキストコンテンツのみが含まれ、そして、すべてのコンテンツは同じスタイルを用いている)。
                   
                </p>
-               <p>Educators can also measure the education level required to read text content. For
-                  example, qualified teachers can evaluate text according to local education standards
-                  to determine if it requires reading ability beyond what is expected for students in
-                  the last year of lower secondary education.
+               <p>教育者は、テキストコンテンツを読むのに必要とされる教育レベルを測定することもできる。例えば、資格のある教師は、前期中等教育の最終学年の生徒に要求される以上の読解力を必要とするかどうかを判断するために、ローカルの教育標準に従って文章を評価することができる。
                   
                </p>
-               <p>Because people's names, the names of cities or other proper names cannot be changed
-                  to shorter names with fewer syllables, and because doing so or just referring to everyone
-                  by pronouns can make sentences harder to understand, the success criterion specifies
-                  that proper names can be ignored or removed from the text before assessing whether
-                  it meets the reading ability requirement. Titles refer to the name of documents, books,
-                  movies, etc. Titles are removed or ignored for the analysis because changing the words
-                  in titles might make the titles easier to read but would make it impossible to understand
-                  the item to which the title refers. This would make it harder to read and understand
-                  the content. (e.g., a book, academic paper, article, etc.). Therefore, titles are
-                  also exempted specifically. 
+               <p>人名、都市名、又はその他の固有名詞は、音節の少ない短い名前に変更できず、そして、そうした名前を変更したり、全ての人を代名詞で呼ぶと文章を理解しづらくする恐れがあるため、この達成基準は、読解力の要件を満たしているかどうかを検証する前に、固有名詞をテキストから無視又は除去できると規定している。題名とは、文書、書籍、映画などの名前を指すものである。検証の際に題名を削除又は無視するのは、題名の単語を変更すると、題名は読みやすくなるかもしれないが、題名が指す項目を理解できなくなるためである。そうなると、コンテンツを読んで理解することが難しくなる (例えば、書籍、学術論文、記事など)。したがって、題名も明確に除外されている。
                   
                </p>
-               <p>When a Web page contains multiple languages, a readability result should be calculated
-                  for each language that constitutes at least 5% of the content and that is used in
-                  full sentences or paragraphs (not just individual words or phrases). The overall readability
-                  of the page should be judged on the language that yields the worst readability results.
+               <p>ウェブページに複数の言語が含まれているとき、リーダビリティの結果は、コンテンツの少なくとも 5％を占めていて、全文又は段落全体で使われている各言語ごとに算出すべきである (個々の単語又は語句だけというのは除く)。ページ全体のリーダビリティは、最も悪い結果をもたらす言語で判断するべきである。
                   
                   
                </p>
-               <p>The readability of content may also be determined by applying a readability formula
-                  to the selected passage. Many (though not all) readability formulas base their calculations
-                  on passages of 100 words. Such formulas have been developed for many languages.  The
-                  number of words in the passage is counted and the length of the words is determined
-                  by counting either the number of syllables or the number of characters. Most readability
-                  formulas also count the number and length of sentences. The average length of words
-                  and sentences in the content is then used to calculate a readability score.  (Some
-                  languages, such as Japanese, may include multiple scripts within the same passage.
-                  Readability formulas for these languages may use the number and length of such "runs"
-                  in their calculations.)  The result may be presented as a number (for example, on
-                  a scale from 0-100) or as a grade level.   These results can then be interpreted using
-                  the education levels described in the International Standard Classification of Education.
-                  Readability formulas are available for at least some languages when running the spell
-                  checkers in popular software if you specify in the options of this engine that you
-                  want to have the statistics when it has finished checking your documents.
+               <p>コンテンツのリーダビリティは、選択した節にリーダビリティの計算式を適用することによっても判断してもよい。(すべてではないが) 多くのリーダビリティの計算式は、100 単語の節に基いて計算されている。そのような計算式は、多くの言語に対して開発された。その節にある単語の数を数え、単語の長さを音節の数又は文字数のいずれかを数えることによって判断される。ほとんどのリーダビリティの計算式は、文の長さと数も数える。コンテンツの単語及び文の平均的な長さを用いて、リーダビリティのスコアを算出している (日本語のような言語では、同じ節の中に複数のスクリプトが含まれていることがある。このような言語のリーダビリティの計算式は、計算式に「連続」の数及び長さを用いてもよい)。計算結果は、数字 (例えば、0〜100 の範囲) 又は学年で提示される。これらの結果は、国際標準教育分類に記載されている教育レベルを用いて評価することができる。このエンジンのオプションで、文書のチェックが終了したときに統計を取得するように指定した場合、一般的なソフトウェアでスペルチェック機能を実行したとき、少なくともいくつかの言語でリーダビリティの計算式が利用できる。
                   
                </p>
                <dl>
                   
-                  <dt>Primary education</dt>
+                  <dt>初等教育</dt>
                   
-                  <dd>First 6 years of school</dd>
+                  <dd>学校の最初の 6 年間</dd>
                   
-                  <dt>Lower secondary education</dt>
+                  <dt>前期中等教育</dt>
                   
-                  <dd>7-9 years of school</dd>
+                  <dd>学校の 7 ～ 9 年間</dd>
                   
-                  <dt>Upper secondary education</dt>
+                  <dt>後期中等教育</dt>
                   
-                  <dd>10-12 years of school</dd>
+                  <dd>学校の 10 ～ 12 年間</dd>
                   
-                  <dt>Advanced education</dt>
+                  <dt>高等教育</dt>
                   
-                  <dd>More than 12 years of school</dd>
+                  <dd>12 年以上の学校</dd>
                   
                </dl>
-               <p>Adapted from <a href="https://uis.unesco.org/en/topic/international-standard-classification-education-isced">International Standard Classification of Education (UNESCO)</a>.
+               <p>出典: <a href="https://uis.unesco.org/en/topic/international-standard-classification-education-isced">International Standard Classification of Education (UNESCO)</a>.
                </p>
                <div class="note">
-                  <p class="note-title marker">Note</p>
+                  <p class="note-title marker">注記</p>
                   <div>
                      
                      
-                     <p>According to the Open Society Mental Health Initiative, the concept of Easy to Read
-                        cannot be universal, and it will not be possible to write a text that will suit the
-                        abilities of all people with literacy and comprehension problems. Using the clearest
-                        and simplest language appropriate is highly desirable, but the WCAG Working Group
-                        could not find a way to test whether this had been achieved. The use of reading level
-                        is a way to introduce testability into a Success Criterion that encourages clear writing.
-                        Supplementary content can be a powerful technique for people with some classes of
-                        cognitive disability. 
+                     <p>Open Society Mental Health Initiative によれば、読みやすさの概念は万国共通ではなく、読み書きと理解に問題を抱えたすべての人の能力に合致するテキストを書くことはできないだろうといわれている。適切で明瞭かつで簡単な言葉を用いることが非常に望ましいが、WCAG ワーキンググループは、それが達成されているかどうかを検証する方法を見つけることができなかった。読解レベルの使用は、明快な文章を推奨する達成基準にテスト可能性を導入する方法である。補足的なコンテンツは、認知障害のいくつかのクラスのある人々のための、効果的な達成方法となる。
                         
                         
                      </p>
@@ -250,14 +180,12 @@
                </div>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
-               <p>This Success Criterion may help people who:</p>
+               <h2>利点</h2>
+               <p>この達成基準は、次のような利用者にメリットがある:</p>
                <ul>
                   
                   
-                  <li>Have difficulty comprehending and interpreting written language (e.g., articles, instructions,
-                     or newspapers in text or braille), for the purpose of obtaining general knowledge
-                     or specific information
+                  <li>一般的な知識又は特定の情報を得る目的で、書き言葉 (例: テキストあるいは点字の記事、説明文、又は新聞記事) を理解して解釈するのが困難である。
                      
                   </li>
                   
@@ -265,52 +193,30 @@
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>事例</h2>
                <dl>
                   
-                  <dt>A scientific journal including readable summaries of complex research articles</dt>
+                  <dt>複雑な研究記事の読みやすい要約がある科学雑誌</dt>
                   
-                  <dd>A scientific journal includes articles written in highly technical language aimed
-                     at specialists in the field.  The journal's Table of Contents page includes a plain-language
-                     summary of each article. The summaries are intended for a general audience with eight
-                     years of school. The metadata for the journal uses the Dublin Core specification to
-                     identify the education level of the articles' intended audience as "advanced," and
-                     the education level of the intended audience for the summaries as "lower secondary
-                     education."
+                  <dd>科学雑誌には、その分野の専門家を対象とした、高度な専門用語で書かれた記事が含まれている。雑誌の目次ページには、各記事の平易な言葉遣いによる要約が含まれている。要約は、8 年間の学校教育を受けた一般的な読者を想定している。雑誌のメタデータは、「高等教育」を記事の想定している読者の教育レベル、そして「前期中等教育」を要約の想定している読者の教育レベルを示すために、Dublin Core (ダブリンコア) 仕様を用いている。
                   </dd>
                   
-                  <dt>Medical information for members of the public</dt>
+                  <dt>一般会員向けの医療情報</dt>
                   
-                  <dd>A medical school operates a Web site that explains recent medical and scientific discoveries.
-                     The articles on the site are written for people without medical training. Each article
-                     uses the Dublin Core metadata specification to identify the education level of the
-                     intended audience as "lower secondary education" and includes the Flesch Reading Ease
-                     score for the article. A link on each page displays the education level and other
-                     metadata. No supplemental content is required because people who read at the lower
-                     secondary education level can read the articles.
+                  <dd>医科大学は、最近の医学的及び科学的発見を説明するウェブサイトを運営している。サイトの記事は、医学訓練をしていない人向けに書かれている。各記事では、「前期中等教育」を想定している読者の教育レベルと示すために、Dublin Core (ダブリンコア) のメタデータの仕様を用いて、そして、記事の Flesch Reading Ease のスコアを含んでいる。各ページのリンクは、教育レベル及びその他のメタデータを表示する。前期中等教育レベルの読者は記事を読むことができるので、補足的コンテンツは必要ない。
                   </dd>
                   
-                  <dt>An e-learning application</dt>
+                  <dt>e ラーニングアプリケーション</dt>
                   
-                  <dd>An on-line course about Spanish cultural history includes a unit on Moorish architecture.
-                     The unit includes text written for students with different reading abilities. Photographs
-                     and drawings of buildings illustrate architectural concepts and styles. Graphic organizers
-                     are used to illustrate complex relationships, and an audio version using synthetic
-                     speech is available. The metadata for each version describes the academic level of
-                     the content and includes a readability score based on formulas developed for Spanish-language
-                     text. The learning application uses this metadata and metadata about the students
-                     to provide versions of instructional content that match the needs of individual students.
+                  <dd>スペインの文化史に関するオンラインコースには、ムーア建築の単元が含まれている。単元には、読解力の異なる生徒のために書かれたテキストが含まれている。建築物の写真や画は、建築のコンセプト及び様式を解説している。グラフィックオーガナイザーは複雑な関係性を解説するために用いられ、合成音声を用いた音声バージョンが利用できる。各バージョンのメタデータは、コンテンツの教育レベルを記述し、スペイン語のテキスト用に開発された計算式に基づいたリーダビリティのスコアを含んでいる。ラーニングアプリケーションは、このメタデータ及び生徒に関するメタデータを用いて、個々の生徒のニーズに合った教材コンテンツのバージョンを提供する。
                   </dd>
                   
-                  <dt>Science information that requires a reading ability at the lower secondary education
-                     level
+                  <dt>前期中等教育レベルの読解力を要する科学情報
                   </dt>
                   
                   <dd>
                      
-                     <p>The text below (116 words total) requires a reading ability of grade 4.2 in the United
-                        States according to the Flesch-Kincaid formula. In the US, grade 4.2 is at the primary
-                        education level.
+                     <p>次のテキスト (合計 116 ワード) は、Flesch-Kincaid 式に従って、米国ではグレード 4.2 の読解力が必要である。米国では、グレード 4.2 は初等教育レベルである。
                      </p>
                      
                      <p>Science is about testing — and about looking closely. Some scientists use microscopes
@@ -340,13 +246,12 @@
                </dl>
             </section>
             <section id="resources">
-               <h2>Related Resources</h2>
-               <p>Resources are for information purposes only, no endorsement implied.</p>
+               <h2>関連リソース</h2>
+               <p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p>
                <ul>
                   
                   
-                  <li>The <a href="https://plainlanguagenetwork.org/">Plain Language Association International</a> (PLAIN) Web site provides many useful resources to help writers produce documents
-                     that communicate clearly in a variety of cultural and rhetorical contexts.
+                  <li><a href="https://plainlanguagenetwork.org/">Plain Language Association International</a>  (PLAIN) のウェブサイトは、様々な文化的及び修辞的な文脈において、明解なコミュニケーションを行う文書を作成するライターを助ける多くの有益なリソースを提供する。
                      
                      
                   </li>
@@ -354,22 +259,21 @@
                   
                   <li> 
                      
-                     <a href="https://www.plainlanguage.gov/">The US Government's plain language Web site</a> provides general information about plain language as well as information about use
-                     of plain language in US Government documents, including legal requirements
+                     <a href="https://www.plainlanguage.gov/">The US Government's plain language Web site</a> では、法的な要件を含む米国政府の文書における平易な言葉遣い (plain language) の使用に関する情報だけでなく、平易な言葉遣いに関する一般的情報も提供している。
                      
                   </li>
                   
                   
                   <li> 
                      
-                     <a href="https://www.plainenglish.co.uk/">The Plain English Campaign Web site</a> provides useful information and guidance for authors writing in English. 
+                     <a href="https://www.plainenglish.co.uk/">The Plain English Campaign Web site</a> では、コンテンツ制作者が英語で書くために有用な情報や指針を提供する。
                      
                   </li>
                   
                   
                   <li> 
                      
-                     <a href="https://juicystudio.com/services/readability.php">Juicy Studio's Readability Test</a> analyzes the readability of all rendered content. 
+                     <a href="https://juicystudio.com/services/readability.php">Juicy Studio's Readability Test</a> は、表示されたすべてのコンテンツのリーダビリティの解析を行う。
                      
                      
                      
@@ -399,8 +303,7 @@
                      <a href="https://www.leesbaarnederlands.nl/">
                         <span lang="nl">Leesbaar Nederlands</span>
                         
-                        </a> ("Readable Dutch") contains guidelines for writing text that is accessible for people
-                     with a reading disability. These guidelines address language, content and design.
+                        </a> ("Readable Dutch"「読みやすいオランダ語」) では、読字障害のある人にとってアクセシブルな文書の書き方に関するガイドラインが提供されている。このガイドラインでは、言葉遣い、内容及びデザインについて示されている。
                      
                      
                   </li>
@@ -426,14 +329,11 @@
                </ul>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
+                  <h3>十分なテクニック</h3>
                   <ul>
                      
                      
@@ -482,19 +382,11 @@
                      
                   </ul>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
+                     <p class="note-title marker">注記</p>
                      <div>
                         
                         
-                        <p>Different sites may address this Success Criterion in different ways. An audio version
-                           of the content may be helpful to some users. For some people who are deaf, a sign
-                           language version of the page may be easier to understand than a written language version
-                           since sign language may be their first language. 
-                           Some sites may decide to do both or other combinations. No technique will help all
-                           users who have difficulty. So different techniques are provided as sufficient techniques
-                           here for authors trying to make their sites more accessible. Any numbered technique
-                           or combination above can be used by a particular site and it is considered sufficient
-                           by the Working Group.
+                        <p>サイトによっては、さまざまな方法でこの達成基準で対処してもよい。コンテンツの音声バージョンは、一部の利用者に有用かもしれない。聴覚障害のある利用者にとっては、手話が彼らの第一言語であることもあるので、書き言葉のバージョンよりもページの手話バージョンのほうが理解しやすいかもしれない。一部のサイトは、両方又はその他の組み合わせを行うことを決定するかもしれない。問題を抱えるすべての利用者に役立つ技術はない。そのため、サイトをよりアクセシブルにしようとしているコンテンツ制作者のために、達成基準として、様々な達成方法が提供される。上にある全ての番号の付いた達成方法又は組み合わせは、特定のサイトで用いることができ、ワーキンググループでは十分とみなされている。
                            
                         </p>
                         
@@ -506,50 +398,37 @@
             <section id="key-terms">
                <details>
                   <summary>
-                     <h2>Key Terms</h2>
+                     <h2>重要な用語</h2>
                   </summary>
-                  <dt id="dfn-assistive-technology">assistive technology</dt>
+                  <dt id="dfn-assistive-technology">支援技術 (assistive technology)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">hardware and/or software that acts as a <a href="#dfn-user-agent">user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements
-                           of users with disabilities that go beyond those offered by mainstream user agents
+                        <p xmlns="http://www.w3.org/1999/xhtml">障害のある利用者の要件を満たすために、主流の<a href="#dfn-user-agent">ユーザエージェント</a>が提供する機能を超えた機能を提供するような、ユーザエージェントとして動作する、又は主流のユーザエージェントと共に動作するハードウェア及び／又はソフトウェア。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Functionality provided by assistive technology includes alternative presentations
-                              (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
-                              voice), additional navigation or orientation mechanisms, and content transformations
-                              (e.g., to make tables more accessible).
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術が提供する機能としては、代替の提示 (例: 合成音声や拡大表示したコンテンツ)、代替入力手法 (例: 音声認識)、付加的なナビゲーション又は位置確認のメカニズム、及びコンテンツ変換 (例: テーブルをよりアクセシブルにするもの) などを挙げることができる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Assistive technologies often communicate data and messages with mainstream user agents
-                              by using and monitoring APIs.
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術は、API を利用、監視することで、主流のユーザエージェントとデータやメッセージのやりとりをすることが多い。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The distinction between mainstream user agents and assistive technologies is not absolute.
-                              Many mainstream user agents provide some features to assist individuals with disabilities.
-                              The basic difference is that mainstream user agents target broad and diverse audiences
-                              that usually include people with and without disabilities. Assistive technologies
-                              target narrowly defined populations of users with specific disabilities. The assistance
-                              provided by an assistive technology is more specific and appropriate to the needs
-                              of its target users. The mainstream user agent may provide important functionality
-                              to assistive technologies like retrieving Web content from program objects or parsing
-                              markup into identifiable bundles.
+                           <p class="note-title marker">注記</p>
+                           <p>主流のユーザエージェントと支援技術との区別は、絶対的なものではない。多くの主流のユーザエージェントは、障害のある個人を支援する機能を提供している。基本的な差異は、主流のユーザエージェントが障害のある人もない人も含めて、広く多様な利用者を対象にしているのに対し、支援技術は、特定の障害のある利用者という、より狭く限られた人たちを対象にしているということである。支援技術により提供される支援は、対象とする利用者に特化した、よりニーズに適したものである。主流のユーザエージェントは、プログラムオブジェクトからのウェブコンテンツの抽出、マークアップの識別可能な構造への解釈といった、重要な機能を支援技術に対して提供する場合がある。
                               
                            </p>
                         </div>
@@ -557,8 +436,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Assistive technologies that are important in the context of this document include
-                              the following:
+                           <p>この文書の文脈において重要な支援技術としては、以下のものが挙げられる:
                               
                            </p>
                            
@@ -566,38 +444,30 @@
                            <ul>
                               
                               
-                              <li>screen magnifiers, and other visual reading assistants, which are used by people with
-                                 visual, perceptual and physical print disabilities to change text font, size, spacing,
-                                 color, synchronization with speech, etc. in order to improve the visual readability
-                                 of rendered text and images;
+                              <li>画面拡大ソフト及びその他の視覚的な表示に関する支援技術。視覚障害、知覚障害、及び読書困難などの障害のある人が、レンダリング後のテキスト及び画像の視覚的な読みやすさを改善するために、テキストのフォント、サイズ、間隔、色、音声との同期などを変更するのに使用している。
                                  
                               </li>
                               
                               
-                              <li>screen readers, which are used by people who are blind to read textual information
-                                 through synthesized speech or braille;
+                              <li>スクリーンリーダー。全盲の人がテキスト情報を合成音声あるいは点字で読み取るために使用している。
                                  
                               </li>
                               
                               
-                              <li>text-to-speech software, which is used by some people with cognitive, language, and
-                                 learning disabilities to convert text into synthetic speech;
+                              <li>音声変換ソフトウェア。認知障害、言語障害、及び学習障害のある人が、テキストを合成音声に変換するために使用している。
                                  
                               </li>
                               
                               
-                              <li>speech recognition software, which may be used by people who have some physical disabilities;</li>
+                              <li>音声認識ソフトウェア。何らかの身体障害のある利用者が使用することがある。</li>
                               
                               
-                              <li>alternative keyboards, which are used by people with certain physical disabilities
-                                 to simulate the keyboard (including alternate keyboards that use head pointers, single
-                                 switches, sip/puff and other special input devices.);
+                              <li>代替キーボード。特定の身体障害のある人がキーボード操作をシミュレートするのに使用している (ヘッドポインタ、シングルスイッチ、呼気・吸気スイッチ、及びその他の特別な入力デバイスを使った代替キーボードを含む)。
                                  
                               </li>
                               
                               
-                              <li>alternative pointing devices, which are used by people with certain physical disabilities
-                                 to simulate mouse pointing and button activations.
+                              <li>代替ポインティングデバイス。特定の身体障害のある人がマウスポインタとボタンの動きをシミュレートするのに使用している。
                                  
                               </li>
                               
@@ -608,33 +478,32 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-content">content</dt>
+                  <dt id="dfn-content">コンテンツ (content)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">information and sensory experience to be communicated to the user by means of a <a href="#dfn-user-agent">user agent</a>, including code or markup that defines the content's <a href="#dfn-structure">structure</a>, <a href="#dfn-presentation">presentation</a>, and interactions
+                        <p xmlns="http://www.w3.org/1999/xhtml">コンテンツの <a href="#dfn-structure">構造</a>、<a href="#dfn-presentation">提示</a>、及びインタラクションを定義するコード又はマークアップも含めて、<a href="#dfn-user-agent">ユーザエージェント</a>によって利用者に伝達される情報及び感覚的な体験。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-lower-secondary-education-level">lower secondary education level</dt>
+                  <dt id="dfn-lower-secondary-education-level">前期中等教育レベル (lower secondary education level)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">the two or three year period of education that begins after completion of six years
-                           of school and ends nine years after the beginning of <a href="#dfn-primary-education-level">primary education</a>
+                        <p xmlns="http://www.w3.org/1999/xhtml">6 年間の学校教育卒業の後に始まり、<a href="#dfn-primary-education-level">初等教育</a>の開始から 9 年後に終わる、2 年、又は 3 年の教育期間。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>This definition is based on the International Standard Classification of Education
-                              [[UNESCO]].
+                           <p class="note-title marker">注記</p>
+                           <p>この定義は、"International Standard Classification of Education"
+                              [[UNESCO]] に基づいている。
                               
                            </p>
                         </div>
@@ -642,33 +511,32 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-presentation">presentation</dt>
+                  <dt id="dfn-presentation">提示 (presentation)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">rendering of the <a href="#dfn-content">content</a> in a form to be perceived by users
+                        <p xmlns="http://www.w3.org/1999/xhtml">利用者が知覚できる形式で<a href="#dfn-content">コンテンツ</a>をレンダリングすること。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-primary-education-level">primary education level</dt>
+                  <dt id="dfn-primary-education-level">初等教育レベル (primary education level)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">six year time period that begins between the ages of five and seven, possibly without
-                           any previous education
+                        <p xmlns="http://www.w3.org/1999/xhtml">5～7 歳の間に始まる 6 年間の教育で、その前には教育を受けた期間がない場合もある。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>This definition is based on the International Standard Classification of Education
-                              [[UNESCO]].
+                           <p class="note-title marker">注記</p>
+                           <p>この定義は、"International Standard Classification of Education"
+                              [[UNESCO]] に基づいている。
                               
                            </p>
                         </div>
@@ -676,19 +544,17 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-process">process</dt>
+                  <dt id="dfn-process">プロセス (process)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">series of user actions where each action is required in order to complete an activity</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ある活動を完了させるために必要な利用者の一連の動作。</p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Successful use of a series of Web pages on a shopping site requires users to view
-                              alternative products, prices and offers, select products, submit an order, provide
-                              shipping information and provide payment information.
+                           <p>ショッピングサイト上の一連のウェブページで目的を果たすためには、利用者が選択肢となりうる製品、価格及び内容を閲覧した後、製品を選択して発注し、配送先情報及び支払情報を提供する必要がある。
                               
                            </p>
                            
@@ -697,8 +563,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>An account registration page requires successful completion of a <a href="https://www.w3.org/TR/turingtest/">Turing test</a> before
-                              the registration form can be accessed.
+                           <p>アカウント登録ページでは、登録フォームにアクセスする前に<a href="https://www.w3.org/TR/turingtest/">チューリングテスト</a>に成功する必要がある。
                               
                            </p>
                            
@@ -707,7 +572,7 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-structure">structure</dt>
+                  <dt id="dfn-structure">構造 (structure)</dt>
                   <dd>
                      <definition xmlns="">
                         
@@ -715,12 +580,12 @@
                         <ol xmlns="http://www.w3.org/1999/xhtml">
                            
                            
-                           <li>The way the parts of a <a href="#dfn-web-page">Web page</a> are organized in relation to each other; and
+                           <li><a href="#dfn-web-page">ウェブページ</a>の各部を相互の関係性によりまとめる方法論。及び、
                               
                            </li>
                            
                            
-                           <li>The way a collection of <a href="#dfn-web-page">Web pages</a> is organized
+                           <li>一連の<a href="#dfn-web-page">ウェブページ</a>をまとめる方法論。
                               
                            </li>
                            
@@ -730,19 +595,19 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-supplemental-content">supplemental content</dt>
+                  <dt id="dfn-supplemental-content">補足コンテンツ (supplemental content)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">additional <a href="#dfn-content">content</a> that illustrates or clarifies the primary content
+                        <p xmlns="http://www.w3.org/1999/xhtml">元のコンテンツを説明、又はより明確にするために付加された<a href="#dfn-content">コンテンツ</a>。
                            
                         </p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>An audio version of a <a href="#dfn-web-page">Web page</a>.
+                           <p><a href="#dfn-web-page">ウェブページ</a>の音声版。
                               
                            </p>
                            
@@ -751,7 +616,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>An illustration of a complex <a href="#dfn-process">process</a>.
+                           <p>複雑な<a href="#dfn-process">プロセス</a>を示したイラスト。
                               
                            </p>
                            
@@ -760,8 +625,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A paragraph summarizing the major outcomes and recommendations made in a research
-                              study.
+                           <p>調査研究でなされた主要な成果及び提言を要約する段落。
                               
                            </p>
                            
@@ -770,17 +634,17 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-user-agent">user agent</dt>
+                  <dt id="dfn-user-agent">ユーザエージェント (user agent)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">any software that retrieves and presents Web content for users</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ウェブコンテンツを取得して利用者に提示するあらゆるソフトウェア。</p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technology">assistive technologies</a> — that help in retrieving, rendering, and interacting with Web content.
+                           <p>ウェブコンテンツの取得、レンダリング及びインタラクションを支援する、ウェブブラウザ、メディアプレーヤ、プラグイン、及びその他のプログラム (<a href="#dfn-assistive-technology"> 支援技術</a>も含む)。
                               
                            </p>
                            
@@ -789,30 +653,27 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-web-page">web page</dt>
+                  <dt id="dfn-web-page">ウェブページ (web page)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">a non-embedded resource obtained from a single URI using HTTP plus any other resources
-                           that are used in the rendering or intended to be rendered together with it by a <a href="#dfn-user-agent">user agent</a>
+                        <p xmlns="http://www.w3.org/1999/xhtml">単一の URI から HTTP で得た埋め込まれていないリソースに加え、レンダリングに使われる、又は<a href="#dfn-user-agent">ユーザエージェント</a>がこのリソースと一緒にレンダリングすることを意図しているその他のあらゆるリソースを合わせたもの。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Although any "other resources" would be rendered together with the primary resource,
-                              they would not necessarily be rendered simultaneously with each other.
+                           <p class="note-title marker">注記</p>
+                           <p>どのような「その他のリソース」も主たるリソースと一緒にレンダリングされるであろうが、これらのリソースが同時にレンダリングされるとは限らない。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>For the purposes of conformance with these guidelines, a resource must be "non-embedded"
-                              within the scope of conformance to be considered a Web page.
+                           <p class="note-title marker">注記</p>
+                           <p>このガイドラインの適合範囲に含まれる対象となるウェブページとみなされるためには、リソースが「埋め込まれていない」リソースでなければならない。
                               
                            </p>
                         </div>
@@ -820,17 +681,14 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A Web resource including all embedded images and media.</p>
+                           <p>単体のウェブリソースであり、埋め込まれている画像及びメディアのすべてを含んだもの。</p>
                            
                         </aside>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A Web mail program built using Asynchronous JavaScript and XML (AJAX). The program
-                              lives entirely at http://example.com/mail, but includes an inbox, a contacts area
-                              and a calendar. Links or buttons are provided that cause the inbox, contacts, or calendar
-                              to display, but do not change the URI of the page as a whole.
+                           <p>Asynchronous JavaScript and XML (AJAX) を用いたウェブメールのプログラム。そのプログラム全体は http://example.com/mail に存在しているが、受信トレイ、連絡先、カレンダーがある。受信トレイ、連絡先、又はカレンダーを表示するリンク又はボタンが提供されているが、全体としてページの URI は変更されない。
                               
                            </p>
                            
@@ -839,8 +697,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A customizable portal site, where users can choose content to display from a set of
-                              different content modules.
+                           <p>カスタマイズ可能なポータルサイトで、利用者が様々なコンテンツモジュールのセットから表示させるコンテンツを選択できるようなもの。
                               
                            </p>
                            
@@ -849,12 +706,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>When you enter "http://shopping.example.com/" in your browser, you enter a movie-like
-                              interactive shopping environment where you visually move around in a store dragging
-                              products off of the shelves around you and into a visual shopping cart in front of
-                              you. Clicking on a product causes it to be demonstrated with a specification sheet
-                              floating alongside. This might be a single-page Web site or just one page within a
-                              Web site.
+                           <p>ブラウザで "http://shopping.example.com/" へ行くと、映画のようなインタラクティブなショッピング環境になる。そこでは、視覚的に店内を移動して、店内の棚から商品をドラッグして、目の前にある視覚的な買物カゴに商品を入れる。商品をクリックすると、同時に仕様書が浮き上がるように表示される。これは 1 ページだけのウェブサイトかもしれないし、ウェブサイトの中のほんの 1 ページなのかもしれない。
                               
                            </p>
                            
@@ -874,13 +726,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -895,11 +746,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -921,13 +774,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -936,7 +789,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -957,7 +810,9 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+      <noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
       </noscript>
    </body>
