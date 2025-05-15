@@ -3,16 +3,14 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Guideline  3.2: Predictable | WAI | W3C</title>
+      <title>解説書 ガイドライン 3.2: 予測可能 | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
-      <!-- 日本語訳されるまでの一時的なスクリプト -->
-      <script src="untranslated-note.js"></script>
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://waic.jp/translations/WCAG22/Understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -37,13 +35,13 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"><a href="readable">
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-left-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
-                        </svg>Previous Guideline: Readable</a></li>
-                  <li class="nav__item"><a href="input-assistance">Next Guideline: Input Assistance
+                        </svg>前: 読み取り可能</a></li>
+                  <li class="nav__item"><a href="input-assistance">次: 入力支援
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -54,64 +52,45 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#success-criteria">Success Criteria</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#success-criteria">達成基準</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				Guideline 3.2:</span>Predictable
+            <h1><span class="standalone-resource__type-of-guidance">解説書 
+                  				ガイドライン 3.2:</span>予測可能
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Guideline </header>
+               <header class="box-h  box-h-icon">ガイドライン</header>
                <div class="box-i">
-                  <p>Make Web pages appear and operate in predictable ways.</p>
+                  <p>ウェブページの表示や挙動を予測可能にすること。</p>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The intent of this Guideline is to help users with disabilities by presenting content
-                  in a predictable order from Web page to Web page and by making the behavior of functional
-                  and interactive components predictable. It is difficult for some users to form an
-                  overview of the Web page: screen readers present content as a one-dimensional stream
-                  of synthetic speech that makes it difficult to understand spatial relationships. Users
-                  with cognitive limitations may become confused if components appear in different places
-                  on different pages.
+               <h2>意図</h2>
+               <p>このガイドラインの意図は、ウェブページからウェブページへの予測可能なコンテンツの順序を提示することによって、及び機能的でインタラクティブなコンポーネントの動作を予測可能にすることによって、障害のある利用者を支援することである。利用者がウェブページ全体の概観を把握するのが困難なことがある。例えば、スクリーンリーダーは、合成音声の 1 次元のストリームとしてコンテンツを提示するため、空間的な関係性を理解しづらくする。認知能力が低下した利用者は、コンポーネントがページによって異なる場所に表示される場合に混乱することがある。
                   
                </p>
-               <p>For example, people who use screen magnifiers see only part of the screen at any point
-                  in time; a consistent layout makes it easier for them to find navigation bars and
-                  other components. Placing repeated components in the same relative order within a
-                  set of Web pages allows users with reading disabilities to focus on an area of the
-                  screen rather than spending additional time decoding the text of each link. Users
-                  with limited use of their hands can more easily determine how to complete their tasks
-                  using the fewest keystrokes.
+               <p>例えば、画面拡大ソフトを使用している利用者は、ある時点で画面の一部分だけしか見ていない。一貫性のあるレイアウトによって、ナビゲーションバーやその他のコンポーネントが見つけやすくなる。ウェブページ一式の中で、繰り返し用いられるコンポーネントを同じ相対的順序で配置することにより、読字障害のある利用者が、各リンクのテキストを読み解くことに追加の時間を費やすことなく、画面のある領域に集中することを可能にする。手を十分に使えない利用者は、最少のキーストロークでタスクを完了できる方法をより容易に見つけ出すことができる。
                   
                </p>
             </section>
             <section id="advisory">
-               <h2>Advisory Techniques</h2>
-               <p>Specific techniques for meeting each Success Criterion for this guideline are listed
-                  in the understanding sections for each Success Criterion (listed below). If there
-                  are techniques, however, for addressing this guideline that do not fall under any
-                  of the success criteria, they are listed here. These techniques are not required or
-                  sufficient for meeting any success criteria, but can make certain types of Web content
-                  more accessible to more people.
+               <h2>参考テクニック</h2>
+               <p>このガイドラインにある各達成基準を満たすためのテクニックは、この後に達成基準ごとに挙げられている。しかし、このガイドラインに対処するためのテクニックがどの達成基準にも該当しない場合は、ここで挙げている。そういったテクニックは、どの達成基準を満たす上でも必須ではないし、十分でもないが、ウェブコンテンツの種類によってはより多くの利用者にとってよりアクセシブルにすることができるものである。
                </p>
                <ul>
                   
                   
                   <li>
-                     Positioning labels to maximize predictability of relationships
+                     ラベルを配置することで、関係性を予測できる可能性を最大限に高める
                      
                      
                      
@@ -121,14 +100,14 @@
                </ul>
             </section>
             <section id="success-criteria">
-               <h2>Success Criteria for this Guideline</h2>
+               <h2>このガイドラインの達成基準</h2>
                <ul>
-                  <li><a href="on-focus">3.2.1 On Focus</a></li>
-                  <li><a href="on-input">3.2.2 On Input</a></li>
-                  <li><a href="consistent-navigation">3.2.3 Consistent Navigation</a></li>
-                  <li><a href="consistent-identification">3.2.4 Consistent Identification</a></li>
-                  <li><a href="change-on-request">3.2.5 Change on Request</a></li>
-                  <li><a href="consistent-help">3.2.6 Consistent Help</a></li>
+                  <li><a href="on-focus">3.2.1 フォーカス時</a></li>
+                  <li><a href="on-input">3.2.2 入力時</a></li>
+                  <li><a href="consistent-navigation">3.2.3 一貫したナビゲーション</a></li>
+                  <li><a href="consistent-identification">3.2.4 一貫した識別性</a></li>
+                  <li><a href="change-on-request">3.2.5 要求による変化</a></li>
+                  <li><a href="consistent-help">3.2.6 一貫したヘルプ</a></li>
                </ul>
             </section><a class="button button-backtotop" href="#top"><span>
                   <svg focusable="false" aria-hidden="true" class="icon-arrow-up " viewBox="0 0 26 28">
@@ -140,13 +119,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -161,11 +139,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -187,13 +167,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -202,7 +182,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -223,7 +203,9 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+      <noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
       </noscript>
    </body>
