@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  1.4.3: Contrast (Minimum) | WAI | W3C</title>
+      <title>解説書 達成基準  1.4.3: コントラスト (最低限) | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
-      <!-- 日本語訳されるまでの一時的なスクリプト -->
-      <script src="untranslated-note.js"></script>
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://waic.jp/translations/WCAG22/Understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -37,17 +35,17 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"><a href="distinguishable">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Distinguishable</a></li>
+                        </svg>ガイドライン: 判別可能</a></li>
                   <li class="nav__item"><a href="audio-control">
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-left-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
-                        </svg>Previous SC: Audio Control</a></li>
-                  <li class="nav__item"><a href="resize-text">Next SC: Resize Text
+                        </svg>前: 音声の制御</a></li>
+                  <li class="nav__item"><a href="resize-text">次: テキストのサイズ変更
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -58,44 +56,43 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#resources">Related Resources</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
-                     <li><a href="#key-terms">Key Terms</a></li>
-                     <li><a href="#test-rules">Test Rules</a></li>
+                     <li><a href="#brief">要約</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#benefits">利点</a></li>
+                     <li><a href="#resources">関連リソース</a></li>
+                     <li><a href="#techniques">テクニック</a></li>
+                     <li><a href="#key-terms">重要な用語</a></li>
+                     <li><a href="#test-rules">テストルール</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				SC 1.4.3:</span>Contrast (Minimum) (Level AA)
+            <h1><span class="standalone-resource__type-of-guidance">解説書 
+                  				達成基準 1.4.3:</span>コントラスト (最低限) (レベル AA)
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>The visual presentation of <a href="#dfn-text">text</a> and <a href="#dfn-image-of-text">images of text</a> has a <a href="#dfn-contrast-ratio">contrast ratio</a> of at least 4.5:1, except for the following:
+                  <p><a href="#dfn-text">テキスト</a>及び<a href="#dfn-image-of-text">文字画像</a>の視覚的提示に、少なくとも 4.5:1 の<a href="#dfn-contrast-ratio">コントラスト比</a>がある。ただし、次の場合は除く:
+
                      
                   </p>
                   <dl>
                      
                      
-                     <dt>Large Text</dt>
+                     <dt>大きな文字</dt>
                      
                      
                      <dd>
                         
                         
                         <p>
-                           <a href="#dfn-large-scale">Large-scale</a> text and images of large-scale text have a contrast ratio of at least 3:1;
+                           <a href="#dfn-large-scale">サイズの大きな</a>テキスト及びサイズの大きな文字画像に、少なくとも 3:1 のコントラスト比がある。
                            
                         </p>
                         
@@ -103,14 +100,13 @@
                      </dd>
                      
                      
-                     <dt>Incidental</dt>
+                     <dt>付随的</dt>
                      
                      
                      <dd>
                         
                         
-                        <p>Text or images of text that are part of an inactive <a href="#dfn-user-interface-component">user interface component</a>, that are <a href="#dfn-pure-decoration">pure decoration</a>, that are not visible to anyone, or that are part of a picture that contains significant
-                           other visual content, have no contrast requirement.
+                        <p>テキスト又は文字画像において、次の場合はコントラストの要件はない。アクティブではない<a href="#dfn-user-interface-component">ユーザインタフェース コンポーネント</a>の一部である、<a href="#dfn-pure-decoration">純粋な装飾</a>である、誰も視覚的に確認できない、又は重要な他の視覚的なコンテンツを含む写真の一部分である。
                            
                         </p>
                         
@@ -118,13 +114,13 @@
                      </dd>
                      
                      
-                     <dt>Logotypes</dt>
+                     <dt>ロゴタイプ</dt>
                      
                      
                      <dd>
                         
                         
-                        <p>Text that is part of a logo or brand name has no contrast requirement.</p>
+                        <p>ロゴ又はブランド名の一部である文字には、最低限のコントラストの要件はない。</p>
                         
                         
                      </dd>
@@ -135,153 +131,76 @@
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   
-                  <dt>Goal</dt>
-                  <dd>Text can be seen by more people.</dd>
+                  <dt>目標</dt>
+                  <dd>より多くの人がテキストを見られる。</dd>
                   
-                  <dt>What to do</dt>
-                  <dd>Provide sufficient contrast between text and its background.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>テキストとその背景の間に十分なコントラストを提供する。</dd>
                   
-                  <dt>Why it's important</dt>
-                  <dd>Some people cannot read faint text. </dd> 
+                  <dt>なぜそれが重要か</dt>
+                  <dd>うすい色のテキストを読むことができない人がいる。</dd> 
                   
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The intent of this Success Criterion is to provide enough contrast between text and
-                  its background, so that it can be read by people with moderately low vision or impaired
-                  contrast perception, without the use of contrast-enhancing assistive technology.
+               <h2>意図</h2>
+               <p>この達成基準の意図は、コントラストを強化する支援技術を使用しなくても、中度のロービジョンの人又はコントラスト知覚に障害のある人がテキストを読めるように、テキストとその背景の間に十分なコントラストを提供することである。
                   
                </p>
-               <p>For all consumers of visual content, adequate light-dark contrast is needed between
-                  the relative luminance of text and its background for good readability.
-                  Many different visual impairments can substantially impact contrast sensitivity, requiring
-                  more light-dark contrast, regardless of color (hue).
-                  For people who are not able to distinguish certain shades of color (often referred
-                  to as <q>color blindness</q>) hue and saturation have minimal or no effect on legibility as assessed by reading
-                  performance.
-                  Further, the inability to distinguish certain shades of color does not negatively
-                  affect light-dark contrast perception.
-                  Therefore, in the recommendation, contrast is calculated in such a way that color
-                  (hue) is not a key factor.
-                  
+               <p>視覚的なコンテンツを利用するすべての人にとって、可読性をよくするためには、テキストとその背景の相対輝度の間に適切な明暗のコントラストが必要となる。多様な視覚障害がコントラストの感度に大きく影響する可能性があり、色 (色相) に関係なく、より高い明暗のコントラストを必要とする。特定の色合いを区別できない人 (しばしば<q>色覚異常</q>と呼ばれる) にとって、色相と彩度は、読解力の評価において、読みやすさにほとんど又は全く影響しない。さらに、特定の色合いを区別できなくても、明暗のコントラストの知覚に悪影響を与えることはない。したがって、W3C の勧告では、色 (色相) が重要な要素にならないようにコントラストは計算される。
                </p>
-               <p>Text that is decorative and conveys no information is excluded. For example, if random
-                  words are used to create a background and the words could be rearranged or substituted
-                  without changing meaning, then it would be decorative and would not need to meet this
-                  criterion. 
-                  
+               <p>装飾的及び情報を伝えないテキストは除外される。例えば、背景を作成するためにランダムな単語が使用され、かつその単語を意味を変えずに並べ替え又は置換できる場合、これは装飾的であり、この達成基準を満たす必要はない。      
                </p>
-               <p>Text that is larger and has wider character strokes is easier to read at lower contrast.
-                  The contrast requirement for larger text is therefore lower. This allows authors to
-                  use a wider range of color choices for large text, which is helpful for design of
-                  pages, particularly titles. 18 point text or 14 point bold text is judged to be large
-                  enough to require a lower contrast ratio. (See The American Printing House for the
-                  Blind Guidelines for Large Printing and The Library of Congress Guidelines for Large
-                  Print under 
-                  <a href="#resources">Resources</a>). "18 point" and "bold" can both have different meanings in
-                  different fonts but, except for very thin or unusual fonts, they should be sufficient.
-                  Since there
-                  are so many different fonts, the general measures are used and a note regarding thin
-                  or unusual
-                  fonts is included in the definition for <a href="#dfn-large-scale">large-scale</a> text.
+               <p>より大きい及びより広い文字ストロークを持つテキストは、より低いコントラストでも読みやすい。したがって、より大きいテキストに対するコントラスト要件は、より低い。これにより、コンテンツ制作者は、より大きいテキストに対して幅広い色の選択肢を使用することができ、ページ、特にタイトルのデザインに役立つ。18 ポイントのテキスト又は 14 ポイントの太字のテキストは、より低いコントラスト比を要求するのに十分な大きさであると判断される (<a href="#resources">関連リソース</a>にある "The American Printing House for the Blind Guidelines for Large Printing and The Library of Congress Guidelines for Large Print" を参照のこと)。「18 ポイント」と「太字」の両者は、異なるフォントでは異なる意味合いを持つこともあるが、極めて細い線のフォント又は特異なフォントを除き、十分である。非常に多くの様々なフォントがあるため、ここでは一般的な基準を用いることとして、細い線のフォント又は特異なフォントに関する注記を、<a href="#dfn-large-scale">サイズの大きなテキスト</a>の定義に付けている。
                   
                </p>
                <div class="note">
-                  <p class="note-title marker">Note</p>
+                  <p class="note-title marker">注記</p>
                   <div>
                      
-                     <p>When evaluating this Success Criterion, the font size in points should be obtained
-                        from the user agent or calculated on font metrics in the way that user agents do.
-                        Point sizes are based on the CSS <code>pt</code> size as defined in 
-                        <a href="https://www.w3.org/TR/css-values-3/#reference-pixel">CSS3 Values</a>. The ratio between
-                        sizes in points and CSS pixels is <code>1pt = 1.333px</code>, therefore <code>14pt</code>
-                        and <code>18pt</code> are equivalent to approximately <code>18.5px</code> and <code>24px</code>.
+                     <p>この達成基準を評価する場合、フォントのポイント数は、ユーザエージェントから取得されるべきである、又はユーザエージェントが行う方法でフォントメトリックをもとに算出されるべきである。ポイント数は、<a href="https://www.w3.org/TR/css-values-3/#reference-pixel">CSS3 Values</a> で定義されている CSS の pt サイズに基づいている。ポイント数と CSS ピクセルの比は <code>1pt = 1.333px</code> であり、したがって <code>14pt</code> と <code>18pt</code> は約 <code>18.5px</code> と <code>24px</code> に相当する。
+                     </p>
+                     
+                     <p>画像編集アプリケーションによってデフォルトとなるピクセル密度が異なるため (例: <code>72ppi</code> 又は <code>96ppi</code>)、文字を特定のサイズで提示する場合に、画像編集アプリケーションでのフォントのポイントサイズを特定することは当てにならない。サイズの大きな文字画像を作成する場合、コンテンツ制作者は画面に表示される画像の文字が、おおよそ本文のテキストの標準サイズの 1.2em と 1.5em 又は 120％ と 150％ に相当することを確認することが望ましい。例えば、<code>72ppi</code> の画像の場合、サイズの大きな文字画像を利用者にうまく提示するために、コンテンツ制作者は約 19pt と 24pt のフォントサイズを用いる必要がある。
                         
                      </p>
                      
-                     <p>Because different image editing applications default to different pixel densities
-                        (e.g., <code>72ppi</code> or <code>96ppi</code>), specifying point sizes for fonts from within an
-                        image editing application can be unreliable when it comes to presenting text at a
-                        specific size.
-                        When creating images of large-scale text, authors should ensure that the text in the
-                        resulting image is roughly equivalent to 1.2 and 1.5 em or to 120% or 150% of the
-                        default size for body text. For example, for a <code>72ppi</code> image, an author would need
-                        to use approximately 19pt and 24pt font sizes in order to successfully present images
-                        of large-scale text to a user. 
-                        
-                     </p>
-                     
-                     <p>The 3:1 and 4.5:1 contrast ratios referenced in this Success Criterion are intended
-                        to be
-                        treated as threshold values. When comparing the computed contrast ratio to the Success
-                        Criterion
-                        ratio, the computed values should not be rounded (e.g., 4.499:1 would not meet the
-                        4.5:1 threshold).
+                     <p>この達成基準で言及されている 3:1 及び 4.5:1 のコントラスト比は、閾値として扱われることを意図している。算出されたコントラスト比を達成基準のコントラスト比と比較する場合、算出された値は丸めるべきではない（例えば、4.499:1 は 4.5:1 という閾値を満たさない）。
                      </p>
                      
                   </div>
                </div>
                <div class="note">
-                  <p class="note-title marker">Note</p>
+                  <p class="note-title marker">注記</p>
                   <div>
                      
-                     <p>Because authors do not have control over user settings for font smoothing/anti-aliasing,
-                        when evaluating this
-                        Success Criterion, refer to the foreground and background colors obtained from the
-                        user agent, or the underlying
-                        markup and stylesheets, rather than the text as presented on screen.
+                     <p>コンテンツ制作者はフォントのスムージング／アンチエイリアシングのユーザ設定を制御できないので、この達成基準を評価するときは、画面に表示されるテキストではなく、ユーザエージェントから取得した前景色と背景色、つまり基礎となるマークアップ及びスタイルシート取得した色を参照すること。
                      </p>
                      
-                     <p>Due to anti-aliasing, particularly thin or unusual fonts may be rendered by user agents
-                        with a much fainter
-                        color than the actual text color defined in the underlying CSS. This can lead to situations
-                        where text has
-                        a contrast ratio that nominally passes the Success Criterion, but has a much lower
-                        contrast in practice.
-                        In these cases, best practice would be for authors to choose a font with stronger/thicker
-                        lines,
-                        or to aim for a foreground/background color combination that exceeds the normative
-                        requirements
-                        of this Success Criterion.
-                        
+                     <p>アンチエイリアシングが原因で、特に線の細いフォント又は特異なフォントは、ユーザエージェントによって、基礎となる CSS で定義された実際のテキストの色よりもずっとうすい色でレンダリングされることがある。このため、テキストのコントラスト比が名目上は達成基準を満たしていても、実際にはコントラストがかなり低いという状況が起こり得る。このような場合、ベストプラクティスは、コンテンツ制作者がより強く太い線を持つフォントを選ぶか、この達成基準の規範的要件を上回る前景色と背景色の組み合わせを目指すことである。
                      </p>
                      
                   </div>
                </div>
-               <p>The contrast requirements for text also apply to images of text
-                  (text that has been rendered into pixels and then stored in an image format) - see
-                  <a href="images-of-text">Success Criterion 1.4.5: Images of Text</a>.
+               <p>テキストに対するコントラストの要件は、文字画像 (ピクセルでレンダリングされ、画像フォーマットで保存された文字 - <a href="images-of-text">達成基準 1.4.5 文字画像</a>を参照) にも適用される。
                   
                </p>
-               <p>This requirement applies to situations in which images of text were intended to be
-                  understood as text. Incidental text, such as in photographs that happen to include
-                  a street sign, are not included. Nor is text that for some reason is designed to be
-                  invisible to all viewers. Stylized text, such as in corporate logos, should be treated
-                  in terms of its function on the page, which may or may not warrant including the content
-                  in the text alternative. Corporate visual guidelines beyond logo and logotype are
-                  not included in the exception.
+               <p>この要件は、文字画像がテキストとして理解されることを意図した状況に適用される。たまたま道路標識が入った写真などの付随的なテキストはこの例外には含まれない。なんらかの理由で、すべての閲覧者に見えないように設計されているテキストも含まれない。企業のロゴなどの図案化されたテキストは、ページ上の機能の観点から取り扱われるべきであり、これは、テキストによる代替でコンテンツを含むことを保証するかもしれないし、保証しないかもしれない。ロゴ及びロゴタイプの範囲を超える企業の視覚的なガイドラインは含まれない。
                   
                   
                </p>
-               <p>In this provision there is an exception that reads "that are part of a picture that
-                  contains significant other visual content,". This exception is intended to separate
-                  pictures that have text in them from images of text that are done to replace text
-                  in order to get a particular look. 
+               <p>この達成基準には、「意味のあるその他の視覚的なコンテンツを含む写真の一部分である」という例外がある。この例外は、特定の見た目にするためにテキストを置き換えるための文字画像から、テキストのある写真を区別することを意図している。 
                   
                </p>
                <div class="note">
-                  <p class="note-title marker">Note</p>
+                  <p class="note-title marker">注記</p>
                   <div>
                      
                      
-                     <p>Images of text do not scale as well as text because they tend to pixelate. It is also
-                        harder to change foreground and background contrast and color combinations for images
-                        of text, which is necessary for some users. Therefore, we suggest using text wherever
-                        possible, and when not, consider supplying an image of higher resolution.
+                     <p>文字画像は、画素に分解されてしまうので、テキストと同じようにきれいに拡大することができない。また、一部の利用者にとって必要となる文字画像の前景と背景のコントラスト及び色の組み合わせを変更することは困難である。したがって、可能な限り、テキストを用いることを勧めるが、それができない場合には、さらに高い解像度の画像を提供することを考慮すること。
                         
                         
                      </p>
@@ -289,82 +208,42 @@
                      
                   </div>
                </div>
-               <p>This Success Criterion applies to text in the page, including
-                  placeholder text and text that is shown when a pointer is hovering over an object
-                  or when an object has keyboard focus. If any of these are used in a page, the text
-                  needs to provide sufficient contrast.
+               <p>この達成基準は、プレースホルダーテキストおよびオブジェクトにポインターをかざされたりキーボードフォーカスされた時に表示されるテキストを含め、ページ内のテキストに適用される。そのようなテキストを使用するのであれば、十分なコントラストを提供する必要がある。
                   
                </p>
-               <p>Although this Success Criterion only applies to text, similar issues occur for content
-                  presented
-                  in charts, graphs, diagrams, and other non-text-based information, which is covered
-                  by
-                  <a href="non-text-contrast">Success Criterion 1.4.11 Non-Text Contrast</a>.         
+               <p>この達成基準はテキストだけに適用されるが、同様の問題は、チャート、グラフ、ダイアグラム、及び他のテキストベースでない情報で提示されるコンテンツにおいても生じることであり、<a href="non-text-contrast">達成基準 1.4.11 非テキストのコントラスト</a>でカバーされている。
                   
                </p>
-               <p>See also 
-                  <a href="contrast-enhanced">1.4.6: Contrast (Enhanced)</a>.
+               <p><a href="contrast-enhanced">1.4.6 コントラスト (高度)</a> も参照のこと。
                   
                </p>
                <section id="rationale-for-the-ratios-chosen">
                   
                   
-                  <h3>Rationale for the Ratios Chosen</h3>
+                  <h3>コントラスト比を定めた論理的根拠</h3>
                   
                   
-                  <p>A contrast ratio of 3:1 is the minimum level recommended by [[ISO-9241-3]] and [[ANSI-HFES-100-1988]]
-                     for standard text and vision. The 4.5:1 ratio is used in this Success Criterion to
-                     account
-                     for the loss in contrast that results from moderately low visual acuity, congenital
-                     or acquired color deficiencies, or the loss of contrast sensitivity that typically
-                     accompanies aging.
+                  <p>3:1 のコントラスト比は、[[ISO-9241-3]] 及び [[ANSI-HFES-100-1988]] で、標準的なテキスト及び視覚に対して推奨されている最低限のレベルである。この達成基準では、中程度の視力低下、先天性もしくは後天性の色覚異常、又は加齢に伴うコントラスト感度の低下によって生じるコントラストの低下を考慮するために、4.5:1 の比率が用いられている。
                      
                   </p>
                   
                   
-                  <p>The rationale is based on a) adoption of the 3:1 contrast ratio for minimum acceptable
-                     contrast for normal observers, in the ANSI standard, and b) the empirical finding
-                     that in the population, visual acuity of 20/40 is associated with a contrast sensitivity
-                     loss of roughly 1.5 [[ARDITI-FAYE]]. A user with 20/40 would thus require a contrast
-                     ratio of
-                     <code>3 * 1.5 = 4.5 to 1</code>. Following analogous empirical findings and the same logic,
-                     the user with 20/80 visual acuity would require contrast of about 7:1. This ratio
-                     is used in
-                     Success Criterion 1.4.6.
+                  <p>その根拠は、a) ANSI 規格において通常の観測者にとっての最低限の許容可能なコントラストとして 3:1 のコントラスト比が採用されていること、かつ b) 集団において、視力 20/40 (0.5) はおよそ 1.5 のコントラスト感度低下と関連しているという実証的知見 [[ARDITI-FAYE]] に基づいている。したがって、 視力 20/40 (0.5) の利用者には、<code>3 * 1.5 = 4.5 : 1</code> のコントラスト比が必要になる。類似した実証的知見と同じ論理に従うと、視力 20/80 (0.25) の利用者には約 7:1 のコントラストが必要になる。この比率は、達成基準 1.4.6 で用いられている。
                      
                   </p>
                   
                   
-                  <p>Hues are perceived differently by users with color vision deficiencies (both congenital
-                     and acquired) resulting in different colors and relative luminance contrasts than
-                     for normally sighted users. Because of this, effective contrast and readability are
-                     different for this population. However, color deficiencies are so diverse that prescribing
-                     effective general use color pairs (for contrast) based on quantitative data is not
-                     feasible. Requiring good luminance contrast accommodates this by requiring contrast
-                     that is independent of color perception. Fortunately, most of the luminance contribution
-                     is from the mid and long wave receptors which largely overlap in their spectral responses.
-                     The result is that effective luminance contrast can generally be computed without
-                     regard to specific color deficiency, except for the use of predominantly long wavelength
-                     colors against darker colors (generally appearing black) for those who have protanopia.
-                     (We provide an advisory technique on avoiding red on black for that reason). For more
-                     information see [[ARDITI-KNOBLAUCH-1994]] 
-                     [[ARDITI-KNOBLAUCH-1996]] 
-                     [[ARDITI]].
+                  <p>色相は、色覚異常 (先天性及び後天性の両方) をもつ利用者によって、通常の目の見える利用者とは異なる色及び相対的な輝度コントラストを結果としてもたらすように、異なって知覚される。このため、有効なコントラスト及び読みやすさは、人々によって異なる。しかし、色覚異常は非常に多様であるため、定量的なデータに基づく (コントラストのための) 有効で一般的な色の組み合わせを規定することは、実現不可能である。十分な輝度コントラストを要求することは、色の知覚から独立したコントラストを要求することによって、これに対応している。幸いにも、輝度の寄与のほとんどは、分光応答で大部分が重なる中波長及び長波長の受容体からのものである。その結果、有効な輝度コントラストが一般的に、特定の色覚異常に関係なく計算できる。ただし、赤色を知覚しにくい 1 型 2 色覚の人の場合、暗い色 (一般に黒に見える) に対して主に長波長の色を用いることは除く (この理由のために、WCAG ワーキンググループは、黒の背景色に赤の前景色を使うことを避ける参考達成方法を提供している)。詳細については、[ARDITI-KNOBLAUCH] [ARDITI-KNOBLAUCH-1996] [ARDITI] を参照のこと。
                      
                   </p>
                   
                   
                   <div class="note">
-                     <p class="note-title marker">Note</p>
+                     <p class="note-title marker">注記</p>
                      <div>
                         
                         
-                        <p>Some people with cognitive disabilities require color combinations or hues that have
-                           low contrast, and therefore we allow and encourage authors to provide mechanisms to
-                           adjust the foreground and background colors of the content. Some of the combinations
-                           that could be chosen may have contrast levels that will be lower than those those
-                           specified here. This is not a violation of this Success Criterion, provided
-                           there is a mechanism that will return to the required values set out here.
+                        <p>認知の障害のある人は、コントラストの低い色の組み合わせ又は色相を必要とすることもある。そのため、コンテンツ制作者にコンテンツの前景色と背景色を調節するメカニズムを提供することを認め、それを推奨する。選択可能な組み合わせの中には、ここで指定されているより低いレベルのコントラストがあってもよい。ここで要求されている指定値に戻すことができるメカニズムが提供されていれば、この達成基準に反していることにはならない。
                            
                         </p>          
                         
@@ -373,34 +252,21 @@
                   </div>
                   
                   
-                  <p>The contrast ratio of 4.5:1 was chosen for level AA because it compensated for the
-                     loss in contrast sensitivity usually experienced by users with vision loss equivalent
-                     to approximately 20/40 vision. (20/40 calculates to approximately 4.5:1.) 20/40 is
-                     commonly reported as typical visual acuity of elders at roughly age 80. [[GITTINGS-FOZARD]]
-                     
+                  <p>4.5:1 のコントラスト比は、約 20/40 (0.5) の視力に等しい視覚損失をもつ利用者によって通常経験されるコントラスト感度の低下を埋め合わせをするため、レベル AA に対して選択された。20/40 (0.5) は、80 歳前後の高齢者の典型的な視力として、よく報告される視力である。[[GITTINGS-FOZARD]]
                      
                   </p>
                   
                   
-                  <p>The contrast ratio of 7:1 was chosen for level AAA because it compensated for the
-                     loss in contrast sensitivity usually experienced by users with vision loss equivalent
-                     to approximately 20/80 vision. People with more than this degree of vision loss usually
-                     use assistive technologies to access their content (and the assistive technologies
-                     usually have contrast enhancing, as well as magnification capability built into them).
-                     The 7:1 level therefore generally provides compensation for the loss in contrast sensitivity
-                     experienced by users with low vision who do not use assistive technology and provides
-                     contrast enhancement for color deficiency as well.
+                  <p>7:1 のコントラスト比は、約 20/80 (0.25) の視力に等しい視覚損失をもつ利用者によって通常経験されるコントラスト感度の低下を埋め合わせをするため、レベル AAA に対して選択された。この程度の視覚損失を超える人は、通常、コンテンツにアクセスするために支援技術を使用する (そして、支援技術は通常、コントラストの強化と画面の拡大機能が組み込まれている)。したがって、7:1 のレベルは、一般に支援技術を使用していないロービジョンの利用者によって経験されるコントラスト感度の低下に対する補償を提供し、同様に色覚異常の利用者に対してもコントラストの強化を提供する。
                      
                   </p>
                   
                   
                   <div class="note">
-                     <p class="note-title marker">Note</p>
+                     <p class="note-title marker">注記</p>
                      <div>
                         
-                        <p>Calculations in [[ISO-9241-3]] and [[ANSI-HFES-100-1988]] are for body text. A relaxed
-                           contrast
-                           ratio is provided for text that is much larger.
+                        <p>[ISO-9241-3] 及び [ANSI-HFES-100-1988] における計算は、本文のテキストのためのものである。それよりもはるかに大きいサイズのテキストに対しては、緩やかなコントラスト比が提供されている。
                         </p>
                         
                      </div>
@@ -411,45 +277,36 @@
                <section id="notes-on-formula">
                   
                   
-                  <h3>Notes on formula</h3>
+                  <h3>計算式に関する注記</h3>
                   
                   
-                  <p>Conversion from nonlinear to linear RGB values is based on IEC/4WD 61966-2-1 [[IEC-4WD]].</p>
+                  <p>RGB 値の非線形から線形への変換は、IEC/4WD 61966-2-1 [IEC-4WD] に基づいている。</p>
                   
                   
-                  <p>The formula (<code>L1/L2</code>) for contrast is based on [[ISO-9241-3]] and [[ANSI-HFES-100-1988]] standards.
+                  <p>コントラストの計算式 (<code>L1/L2</code>) は、[ISO-9241-3] 及び [ANSI-HFES-100-1988] 規格に基づいている。
                   </p>
                   
                   
-                  <p>The ANSI/HFS 100-1988 standard calls for the contribution from ambient light to be
-                     included in the calculation of L1 and L2. The <code>.05</code> value used is based on Typical Viewing
-                     Flare from [[IEC-4WD]].
+                  <p>ANSI/HFS 100-1988 規格では、L1 及び L2 の計算を含むために、周辺光からの寄与を必要とする。用いている <code>.05</code> という値は、[IEC-4WD] の Typical Viewing Flare に基づいている。
                      
                   </p>
                   
                   
-                  <p>This Success Criterion and its definitions use the terms "contrast ratio" and "relative
-                     luminance" rather than "luminance" to reflect the fact that Web content does not emit
-                     light itself. The contrast ratio gives a measure of the relative luminance that would
-                     result when displayed. (Because it is a ratio, it is dimensionless.)
+                  <p>この達成基準及びその定義では、ウェブコンテンツが光そのものを放たないという事実を反映するために、「輝度」ではなく、「コントラスト比」及び「相対輝度」という用語を用いている。コントラスト比は、コンテンツが表示されたときに生じる相対輝度の評価基準 (尺度) を与える。(比率なので無次元である)
                      
                   </p>
                   
                   
                   <div class="note">
-                     <p class="note-title marker">Note</p>
+                     <p class="note-title marker">注記</p>
                      <div>
                         
                         <p>
-                           Refer to 
-                           <a href="#resources">related resources</a> for a list of tools that utilize the contrast ratio
-                           to analyze the contrast of Web content.
+                           コントラスト比を用いてウェブコンテンツのコントラストを分析するツールの一覧は、<a href="#resources">関連リソース</a>を参照のこと。
                            
                         </p>
                         
-                        <p>See also 
-                           <a href="focus-visible">2.4.7: Focus Visible</a> for techniques for indicating keyboard focus.
-                           
+                        <p>キーボードフォーカスを表示するための達成方法については、<a href="focus-visible">2.4.7 フォーカスの可視化</a>も参照のこと。
                         </p>
                         
                      </div>
@@ -459,36 +316,27 @@
                </section>
                <section id="inactive-controls">
                   
-                  <h3>Inactive User Interface Components</h3>
+                  <h3>アクティブではないユーザインタフェース コンポーネント</h3>
                   
                   
-                  <p>User Interface Components that are not available for user interaction (e.g., a disabled
-                     control in HTML) are not required to meet contrast requirements. An inactive user
-                     interface component is visible but not currently operable. An example would be a submit
-                     button at the bottom of a form that is visible but cannot be activated until all the
-                     required fields in the form are completed.
+                  <p>利用者が操作に使用できないユーザインタフェース コンポーネント (例: HTML で disabled になっているコントロール) は、コントラスト要件を満たす必要はない。アクティブではないユーザインタフェース コンポーネントは、視認できてもその時点では操作ができない。その一例はフォームの下部にある送信ボタンで、視認できるが、フォーム内の全ての必須フィールドが入力されるまでアクティブ化されないようなものである。
                   </p>
                   
                   <figure id="figure-grey-button-and-text">
-                     <img src="img/inactive-button.png" alt="Grey button with non-contrasting grey text." width="120" />
+                     <img src="img/inactive-button.png" alt="グレーのボタンに、コントラストのないグレーのテキストがある。" width="120" />
                      
-                     <figcaption>Figure 1  An inactive button using default browser styles</figcaption>
+                     <figcaption>図 1  デフォルトのブラウザスタイルを使用した、アクティブではないボタン。</figcaption>
                      
                   </figure>
                   
                </section>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>利点</h2>
                <ul>
                   
                   
-                  <li>People with low vision often have difficulty reading text that does not contrast with
-                     its background. This can be exacerbated if the person has a color vision deficiency
-                     that lowers the contrast even further. Providing a minimum luminance contrast ratio
-                     between the text and its background can make the text more readable even if the person
-                     does not see the full range of colors. It also works for the rare individuals who
-                     see no color. 
+                  <li>ロービジョンの人は、背景とのコントラストがないテキストを読むのが困難なことがよくある。これは、コントラストをさらに低下させる色覚異常がある人の場合、深刻となりえる。テキストとその背景との間に最低限のコントラスト比を提供することで、たとえその人があらゆる色を見ることができなくても、テキストをより読みやすくすることができる。また、まれに色がまったく見えない人にも有用である。
                      
                   </li>
                   
@@ -496,8 +344,8 @@
                </ul>
             </section>
             <section id="resources">
-               <h2>Related Resources</h2>
-               <p>Resources are for information purposes only, no endorsement implied.</p>
+               <h2>関連リソース</h2>
+               <p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p>
                <ul>
                   
                   
@@ -594,22 +442,18 @@
                </ul>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
+
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
-                  <p>Select the situation below that matches your content. Each situation includes techniques
-                     or combinations of techniques that are known and documented to be sufficient for that
-                     situation. 
+                  <h3>十分なテクニック</h3>
+                  <p>そのコンテンツに合致する状況を以下から選択すること。それぞれの状況には、WCAG ワーキンググループがその状況において十分であると判断する、番号付のテクニック (又は、テクニックの組み合わせ) がある。
                   </p>
                   <section class="situation" id="contrast-minimum-situation-0">
                      
                      
-                     <h4>Situation A: text is less than 18 point if not bold and less than 14 point if bold</h4>
+                     <h4>状況 A: 太字でないテキストが 18 ポイント未満、太字のテキストが 14 ポイント未満の場合:</h4>
                      
                      
                      <ul>
@@ -643,7 +487,7 @@
                   <section class="situation" id="contrast-minimum-situation-1">
                      
                      
-                     <h4>Situation B: text is at least 18 point if not bold and at least 14 point if bold</h4>
+                     <h4>状況 B: 太字でないテキストが少なくとも 18 ポイント以上、太字のテキストが少なくとも 14 ポイント以上の場合:</h4>
                      
                      
                      <ul>
@@ -676,10 +520,8 @@
                   </section>
                </section>
                <section id="advisory">
-                  <h3>Advisory Techniques</h3>
-                  <p>Although not required for conformance, the following additional techniques should
-                     be considered in order to make content more accessible. Not all techniques can be
-                     used or would be effective in all situations.
+                  <h3>参考テクニック</h3>
+                  <p>適合のために必須ではないが、コンテンツをよりアクセシブルにするために、次の追加のテクニックを検討することが望ましい。ただし、すべての状況において、すべてのテクニックが使用可能、又は効果的であるとは限らない。
                   </p>
                   <ul>
                      
@@ -694,9 +536,8 @@
                   </ul>
                </section>
                <section id="failure">
-                  <h3>Failures</h3>
-                  <p>The following are common mistakes that are considered failures of this Success Criterion
-                     by the WCAG Working Group.
+                  <h3>失敗例</h3>
+                  <p>以下に挙げるものは、WCAG ワーキンググループが達成基準の失敗例とみなした、よくある間違いである。
                   </p>
                   <ul>
                      
@@ -721,50 +562,37 @@
             <section id="key-terms">
                <details>
                   <summary>
-                     <h2>Key Terms</h2>
+                     <h2>重要な用語</h2>
                   </summary>
-                  <dt id="dfn-assistive-technology">assistive technology</dt>
+                  <dt id="dfn-assistive-technology">支援技術 (assistive technology)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">hardware and/or software that acts as a <a href="#dfn-user-agent">user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements
-                           of users with disabilities that go beyond those offered by mainstream user agents
+                        <p xmlns="http://www.w3.org/1999/xhtml">障害のある利用者の要件を満たすために、主流の<a href="#dfn-user-agent">ユーザエージェント</a>が提供する機能を超えた機能を提供するような、ユーザエージェントとして動作する、又は主流のユーザエージェントと共に動作するハードウェア及び／又はソフトウェア。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Functionality provided by assistive technology includes alternative presentations
-                              (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
-                              voice), additional navigation or orientation mechanisms, and content transformations
-                              (e.g., to make tables more accessible).
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術が提供する機能としては、代替の提示 (例: 合成音声や拡大表示したコンテンツ)、代替入力手法 (例: 音声認識)、付加的なナビゲーション又は位置確認のメカニズム、及びコンテンツ変換 (例: テーブルをよりアクセシブルにするもの) などを挙げることができる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Assistive technologies often communicate data and messages with mainstream user agents
-                              by using and monitoring APIs.
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術は、API を利用、監視することで、主流のユーザエージェントとデータやメッセージのやりとりをすることが多い。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The distinction between mainstream user agents and assistive technologies is not absolute.
-                              Many mainstream user agents provide some features to assist individuals with disabilities.
-                              The basic difference is that mainstream user agents target broad and diverse audiences
-                              that usually include people with and without disabilities. Assistive technologies
-                              target narrowly defined populations of users with specific disabilities. The assistance
-                              provided by an assistive technology is more specific and appropriate to the needs
-                              of its target users. The mainstream user agent may provide important functionality
-                              to assistive technologies like retrieving Web content from program objects or parsing
-                              markup into identifiable bundles.
+                           <p class="note-title marker">注記</p>
+                           <p>主流のユーザエージェントと支援技術との区別は、絶対的なものではない。多くの主流のユーザエージェントは、障害のある個人を支援する機能を提供している。基本的な差異は、主流のユーザエージェントが障害のある人もない人も含めて、広く多様な利用者を対象にしているのに対し、支援技術は、特定の障害のある利用者という、より狭く限られた人たちを対象にしているということである。支援技術により提供される支援は、対象とする利用者に特化した、よりニーズに適したものである。主流のユーザエージェントは、プログラムオブジェクトからのウェブコンテンツの抽出、マークアップの識別可能な構造への解釈といった、重要な機能を支援技術に対して提供する場合がある。
                               
                            </p>
                         </div>
@@ -772,8 +600,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Assistive technologies that are important in the context of this document include
-                              the following:
+                           <p>この文書の文脈において重要な支援技術としては、以下のものが挙げられる:
                               
                            </p>
                            
@@ -781,38 +608,29 @@
                            <ul>
                               
                               
-                              <li>screen magnifiers, and other visual reading assistants, which are used by people with
-                                 visual, perceptual and physical print disabilities to change text font, size, spacing,
-                                 color, synchronization with speech, etc. in order to improve the visual readability
-                                 of rendered text and images;
+                              <li>画面拡大ソフト及びその他の視覚的な表示に関する支援技術。視覚障害、知覚障害、及び読書困難などの障害のある人が、レンダリング後のテキスト及び画像の視覚的な読みやすさを改善するために、テキストのフォント、サイズ、間隔、色、音声との同期などを変更するのに使用している。
                                  
                               </li>
                               
                               
-                              <li>screen readers, which are used by people who are blind to read textual information
-                                 through synthesized speech or braille;
+                              <li>スクリーンリーダー。全盲の人がテキスト情報を合成音声あるいは点字で読み取るために使用している。
                                  
                               </li>
                               
                               
-                              <li>text-to-speech software, which is used by some people with cognitive, language, and
-                                 learning disabilities to convert text into synthetic speech;
+                              <li>音声変換ソフトウェア。認知障害、言語障害、及び学習障害のある人が、テキストを合成音声に変換するために使用している。
                                  
                               </li>
                               
                               
-                              <li>speech recognition software, which may be used by people who have some physical disabilities;</li>
+                              <li>音声認識ソフトウェア。何らかの身体障害のある利用者が使用することがある。</li>
                               
                               
-                              <li>alternative keyboards, which are used by people with certain physical disabilities
-                                 to simulate the keyboard (including alternate keyboards that use head pointers, single
-                                 switches, sip/puff and other special input devices.);
-                                 
+                              <li>代替キーボード。特定の身体障害のある人がキーボード操作をシミュレートするのに使用している (ヘッドポインタ、シングルスイッチ、呼気・吸気スイッチ、及びその他の特別な入力デバイスを使った代替キーボードを含む)。
                               </li>
                               
                               
-                              <li>alternative pointing devices, which are used by people with certain physical disabilities
-                                 to simulate mouse pointing and button activations.
+                              <li>代替ポインティングデバイス。特定の身体障害のある人がマウスポインタとボタンの動きをシミュレートするのに使用している。
                                  
                               </li>
                               
@@ -823,23 +641,23 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-contrast-ratio">contrast ratio</dt>
+                  <dt id="dfn-contrast-ratio">コントラスト比 (contrast ratio)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">(L1 + 0.05) / (L2 + 0.05), where</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">(L1 + 0.05) / (L2 + 0.05) ここでは、</p>
                         
                         
                         <ul xmlns="http://www.w3.org/1999/xhtml">
                            
                            
-                           <li>L1 is the <a href="#dfn-relative-luminance">relative luminance</a> of the lighter of the colors, and
+                           <li>L1 は、明るいほうの色の<a href="#dfn-relative-luminance">相対輝度</a>である。そして、
                               
                            </li>
                            
                            
-                           <li>L2 is the <a href="#dfn-relative-luminance">relative luminance</a> of the darker of the colors.
+                           <li>L2 は、暗いほうの色の<a href="#dfn-relative-luminance">相対輝度</a>である。
                               
                            </li>
                            
@@ -848,60 +666,65 @@
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Contrast ratios can range from 1 to 21 (commonly written 1:1 to 21:1).</p>
+                           <p class="note-title marker">注記</p>
+                           <p>コントラスト比は、1～21 の範囲になりうる (通常は、1:1～21:1 と記述される)。</p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Because authors do not have control over user settings as to how text is rendered
-                              (for example font smoothing or anti-aliasing), the contrast ratio for text can be
-                              evaluated with anti-aliasing turned off.
+                           <p class="note-title marker">注記</p>
+                           <p>コンテンツ制作者は、テキストのレンダリング (例: フォントのスムージングやアンチエイリアス) に関する利用者の設定を制御できないため、アンチエイリアスをオフにした状態でテキストのコントラスト比を評価してもよい。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>For the purpose of Success Criteria 1.4.3 and 1.4.6, contrast is measured with respect
-                              to the specified background over which the text is rendered in normal usage. If no
-                              background color is specified, then white is assumed.
+                           <p class="note-title marker">注記</p>
+                           <p>達成基準 1.4.3 及び 1.4.6 の目的上、コントラストは通常の使用においてテキストがレンダリングされるときに指定されている背景色に対して測定する。もし背景色の指定がない場合は、背景色には白を想定する。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Background color is the specified color of content over which the text is to be rendered
-                              in normal usage. It is a failure if no background color is specified when the text
-                              color is specified, because the user's default background color is unknown and cannot
-                              be evaluated for sufficient contrast. For the same reason, it is a failure if no text
-                              color is specified when a background color is specified.
+                           <p class="note-title marker">注記</p>
+                           <p>背景色は、テキストが通常の使用においてレンダリングされるときに背景となるコンテンツの色として指定された色である。テキストの色は指定されているが背景色が指定されていない場合、利用者のデフォルトの背景色は未知であり、コントラストが十分かどうかを評価することができないため、失敗例となる。同じ理由で、背景色が指定されているがテキストの色が指定されていない場合も失敗例となる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>When there is a border around the letter, the border can add contrast and would be
-                              used in calculating the contrast between the letter and its background. A narrow border
-                              around the letter would be used as the letter. A wide border around the letter that
-                              fills in the inner details of the letters acts as a halo and would be considered background.
+                           <p class="note-title marker">注記</p>
+                           <p>文字の周囲に縁取りがある場合、その縁取りがコントラストを強めることもあり、文字とその背景色におけるコントラストの計算に用いられる。文字の周囲の細い縁取りは文字として扱われる。文字の周囲の太い縁取りが、光彩のようになって、文字の内側の細部を塗りつぶしていれば、背景色として考慮されることになる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>WCAG conformance should be evaluated for color pairs specified in the content that
-                              an author would expect to appear adjacent in typical presentation. Authors need not
-                              consider unusual presentations, such as color changes made by the user agent, except
-                              where caused by authors' code.
+                           <p class="note-title marker">注記</p>
+                           <p>WCAG に適合しているか判断する場合は、典型的な提示において隣接するであろうと制作者が想定するコンテンツで指定された色の組み合わせについて評価しなければならない。制作者は、ユーザエージェントによる色の変更などのように通常とは異なる提示を考慮する必要はない。ただし、それが制作者のコードによって起こる場合は除く。                              
+                           </p>
+                        </div>
+                        
+                        
+                     </definition>
+                  </dd>
+                  <dt id="dfn-human-language">自然言語 (human language)</dt>
+                  <dd>
+                     <definition xmlns="">
+                        
+                        
+                        <p xmlns="http://www.w3.org/1999/xhtml">人間とコミュニケーションをとるために話される、書かれる、又は (視覚的もしくは触覚的な手段で) 手話にされる言語。
+                           
+                        </p>
+                        
+                        
+                        <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                           <p class="note-title marker">注記</p>
+                           <p><a href="#dfn-sign-language">手話</a>も参照。
                               
                            </p>
                         </div>
@@ -909,119 +732,77 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-human-language">human language</dt>
+                  <dt id="dfn-image-of-text">文字画像 (image of text)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">language that is spoken, written or signed (through visual or tactile means) to communicate
-                           with humans
+                        <p xmlns="http://www.w3.org/1999/xhtml">特定の視覚的効果を得るために非テキスト形式 (例えば画像) でレンダリングされたテキスト。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>See also <a href="#dfn-sign-language">sign language</a>.
-                              
-                           </p>
-                        </div>
-                        
-                        
-                     </definition>
-                  </dd>
-                  <dt id="dfn-image-of-text">image of text</dt>
-                  <dd>
-                     <definition xmlns="">
-                        
-                        
-                        <p xmlns="http://www.w3.org/1999/xhtml">text that has been rendered in a non-text form (e.g., an image) in order to achieve
-                           a particular visual effect
-                           
-                        </p>
-                        
-                        
-                        <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>This does not include <a href="#dfn-text">text</a> that is part of a picture that contains significant other visual content.
-                              
+                           <p class="note-title marker">注記</p>
+                           <p><a href="#dfn-text">テキスト</a>以外の部分が重要な視覚的コンテンツである場合、画像に含まれるテキストは該当しない。
                            </p>
                         </div>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A person's name on a nametag in a photograph.</p>
+                           <p>写真に写っている人の名札にある人名。</p>
                            
                         </aside>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-large-scale">large scale</dt>
+                  <dt id="dfn-large-scale">サイズの大きなテキスト (large scale text)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">with at least 18 point or 14 point bold or font size that would yield equivalent size
-                           for Chinese, Japanese and Korean (CJK) fonts
+                        <p xmlns="http://www.w3.org/1999/xhtml">少なくとも 18 ポイント、又は 14 ポイントの太字。あるいは、中国語、日本語、及び韓国語 (CJK) のフォントは、それと同等の文字サイズ。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Fonts with extraordinarily thin strokes or unusual features and characteristics that
-                              reduce the familiarity of their letter forms are harder to read, especially at lower
-                              contrast levels.
+                           <p class="note-title marker">注記</p>
+                           <p>特別に細い線のフォント、又は文字の形が分かりにくくなるような独特の見た目や特徴のあるフォントは、コントラストが低い場合に特に読みづらい。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Font size is the size when the content is delivered. It does not include resizing
-                              that may be done by a user.
+                           <p class="note-title marker">注記</p>
+                           <p>ここでいう文字サイズは、コンテンツが提供される際のサイズであり、利用者によるサイズ変更は含まれない。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The actual size of the character that a user sees is dependent both on the author-defined
-                              size and the user's display or user agent settings. For many mainstream body text
-                              fonts, 14 and 18 point is roughly equivalent to 1.2 and 1.5 em or to 120% or 150%
-                              of the default size for body text (assuming that the body font is 100%), but authors
-                              would need to check this for the particular fonts in use. When fonts are defined in
-                              relative units, the actual point size is calculated by the user agent for display.
-                              The point size should be obtained from the user agent, or calculated based on font
-                              metrics as the user agent does, when evaluating this success criterion. Users who
-                              have low vision would be responsible for choosing appropriate settings.
+                           <p class="note-title marker">注記</p>
+                           <p>利用者が目にする文字の実際のサイズは、コンテンツ制作者が指定したサイズと利用者のディスプレイあるいはユーザエージェントの設定の両方に依存している。多くの主流となっている本文テキストで用いられるフォントにおいて、14 ポイントと 18 ポイントは、1.2em と 1.5em、又は、 (本文フォントが 100％であると仮定して) デフォルトサイズの 120%と 150%に、おおよそ同等である。しかし、制作者は、使用する特定のフォントについて、このことをチェックしておく必要がある。フォントが相対単位で定義されている時、実際に表示される文字サイズのポイント数は、ユーザエージェントによって計算される。この達成基準について評価する時には、文字サイズのポイント数は、ユーザエージェントから取得されるべきであり、又はユーザエージェントが行うフォントの計算基準に基づいて計算するべきである。ロービジョンの利用者については、自分で適切な設定を選択することを想定している。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>When using text without specifying the font size, the smallest font size used on major
-                              browsers for unspecified text would be a reasonable size to assume for the font. If
-                              a level 1 heading is rendered in 14pt bold or higher on major browsers, then it would
-                              be reasonable to assume it is large text. Relative scaling can be calculated from
-                              the default sizes in a similar fashion.
+                           <p class="note-title marker">注記</p>
+                           <p>フォントサイズを指定せずにテキストを用いる際は、サイズを指定していないテキストに対して主要ブラウザで用いられる最小のフォントサイズをそのテキストのサイズとみなすのが妥当であろう。もし、レベル 1 の見出しが、主要なブラウザで 14 ポイントの太字あるいはそれ以上のサイズでレンダリングされるならば、それは「サイズの大きな」テキストであると考えてよい。相対的な拡大縮小は、同様の方法でそのデフォルトのサイズから算出することが可能である。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The 18 and 14 point sizes for roman texts are taken from the minimum size for large
-                              print (14pt) and the larger standard font size (18pt). For other fonts such as CJK
-                              languages, the "equivalent" sizes would be the minimum large print size used for those
-                              languages and the next larger standard large print size.
+                           <p class="note-title marker">注記</p>
+                           <p>半角の英数字のテキストにおける 18 ポイント及び 14 ポイントのサイズは、拡大印刷の最小サイズ (14 ポイント) と標準的な大きい文字サイズ (18 ポイント) に基づいている。例えば、CJK 言語のようなその他の文字については、「同等な」サイズはその言語での拡大印刷の最小サイズと拡大印刷でその次に大きな標準のサイズとなる。
                               
                            </p>
                         </div>
@@ -1029,21 +810,18 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-programmatically-determined">programmatically determined</dt>
+                  <dt id="dfn-programmatically-determined">プログラムによる解釈 (programmatically determined)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">determined by software from author-supplied data provided in a way that different
-                           <a href="#dfn-user-agent">user agents</a>, including <a href="#dfn-assistive-technology">assistive technologies</a>, can extract and present this information to users in different modalities
-                           
+                        <p xmlns="http://www.w3.org/1999/xhtml"><a href="#dfn-assistive-technology">支援技術</a>を含む様々な<a href="#dfn-user-agent">ユーザエージェント</a>が抽出でき、利用者に様々な感覚モダリティで提示できるような形のデータがコンテンツ制作者によって提供されたとき、そのデータがソフトウェアによって解釈されること。
                         </p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Determined in a markup language from elements and attributes that are accessed directly
-                              by commonly available assistive technology.
+                           <p>マークアップ言語で、一般に入手可能な支援技術が直接アクセスできる要素と属性から解釈される。
                               
                            </p>
                            
@@ -1052,9 +830,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Determined from technology-specific data structures in a non-markup language and exposed
-                              to assistive technology via an accessibility API that is supported by commonly available
-                              assistive technology.
+                           <p>非マークアップ言語の技術特有のデータ構造から解釈され、一般に入手可能な支援技術がサポートするアクセシビリティ API を通じて支援技術に提供される。
                               
                            </p>
                            
@@ -1063,18 +839,17 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-pure-decoration">pure decoration</dt>
+                  <dt id="dfn-pure-decoration">純粋な装飾 (pure decoration)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">serving only an aesthetic purpose, providing no information, and having no functionality</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">見栄えのためだけのもので、情報は提供せず、機能性も備えていないもの。</p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Text is only purely decorative if the words can be rearranged or substituted without
-                              changing their purpose.
+                           <p class="note-title marker">注記</p>
+                           <p>テキストが純粋な装飾といえるのは、単語を並べ替え、又は置き換えても意図が変わらないときだけである。
                               
                            </p>
                         </div>
@@ -1082,30 +857,28 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>The cover page of a dictionary has random words in very light text in the background.</p>
+                           <p>背景にとても淡い文字で単語がランダムに並んでいる辞書の表紙。</p>
                            
                         </aside>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-relative-luminance">relative luminance</dt>
+                  <dt id="dfn-relative-luminance">相対輝度 (relative luminance)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">the relative brightness of any point in a colorspace, normalized to 0 for darkest
-                           black and 1 for lightest white
+                        <p xmlns="http://www.w3.org/1999/xhtml">最も暗い黒を 0 に、最も明るい白を 1 に正規化した色空間内の任意の点の相対的な明るさ。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">注記</p>
                            <div>
                               
-                              <p>For the sRGB colorspace, the relative luminance of a color is defined as L = 0.2126
-                                 * <strong>R</strong> + 0.7152 * <strong>G</strong> + 0.0722 * <strong>B</strong> where <strong>R</strong>, <strong>G</strong> and <strong>B</strong> are defined as:
+                              <p>sRGB 色空間においては、色の相対輝度は、L = 0.2126 * <strong>R</strong> + 0.7152 * <strong>G</strong> + 0.0722 * <strong>B</strong> と定義されており、<strong>R</strong>、<strong>G</strong> 及び <strong>B</strong> は以下のように定義される:
                                  
                               </p>
                               
@@ -1113,25 +886,19 @@
                               <ul>
                                  
                                  
-                                 <li>if RsRGB &lt;= 0.04045 then <strong>R</strong> = RsRGB/12.92 else <strong>R</strong> = ((RsRGB+0.055)/1.055) ^ 2.4
-                                    
-                                 </li>
+                                 <li>RsRGB &lt;= 0.04045 の場合 <strong>R</strong> = RsRGB/12.92、そうでない場合 <strong>R</strong> = ((RsRGB+0.055)/1.055) ^ 2.4</li>
                                  
                                  
-                                 <li>if GsRGB &lt;= 0.04045 then <strong>G</strong> = GsRGB/12.92 else <strong>G</strong> = ((GsRGB+0.055)/1.055) ^ 2.4
-                                    
-                                 </li>
+                                 <li>GsRGB &lt;= 0.04045 の場合 <strong>G</strong> = GsRGB/12.92、そうでない場合 <strong>G</strong> = ((GsRGB+0.055)/1.055) ^ 2.4</li>
                                  
                                  
-                                 <li>if BsRGB &lt;= 0.04045 then <strong>B</strong> = BsRGB/12.92 else <strong>B</strong> = ((BsRGB+0.055)/1.055) ^ 2.4
-                                    
-                                 </li>
+                                 <li>BsRGB &lt;= 0.04045 の場合 <strong>B</strong> = BsRGB/12.92、そうでない場合 <strong>B</strong> = ((BsRGB+0.055)/1.055) ^ 2.4</li>
                                  
                                  
                               </ul>
                               
                               
-                              <p>and RsRGB, GsRGB, and BsRGB are defined as:</p>
+                              <p>そして、RsRGB、GsRGB、及び BsRGB は、次のように定義される:</p>
                               
                               
                               <ul>
@@ -1149,8 +916,7 @@
                               </ul>
                               
                               
-                              <p>The "^" character is the exponentiation operator. (Formula taken from 
-                                 [[SRGB]].)
+                              <p>^ という記号は、指数演算子である (計算式は、[SRGB] を参考にしている)。
                                  
                               </p>
                               
@@ -1160,46 +926,40 @@
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Before May 2021 the value of 0.04045 in the definition was different (0.03928). It
-                              was taken from an older version of the specification and has been updated. It has
-                              no practical effect on the calculations in the context of these guidelines.
+                           <p class="note-title marker">注記</p>
+                           <p>2021 年 5 月以前は、定義にある 0.04045 の値が異なっていた (0.03928)。これは、古いバージョンの仕様から取り込んだものであり、現在は更新されている。本ガイドラインの文脈における計算には、実質的な影響はない。
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Almost all systems used today to view Web content assume sRGB encoding. Unless it
-                              is known that another color space will be used to process and display the content,
-                              authors should evaluate using sRGB colorspace. If using other color spaces, see <a href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum">Understanding Success Criterion 1.4.3</a>.
+                           <p class="note-title marker">注記</p>
+                           <p>ウェブコンテンツを閲覧するのに今日用いられているほとんどすべてのシステムは、sRGB 符号化を前提としている。コンテンツを処理して表示するのに別の色空間が用いられている事が分かっているのでない限り、コンテンツ制作者は sRGB 色空間を用いて検証するべきである。もしその他の色空間を用いるのであれば、<a href="https://waic.jp/translations/WCAG22/Understanding/contrast-minimum">達成基準 1.4.3 を理解する</a>を参照。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>If dithering occurs after delivery, then the source color value is used. For colors
-                              that are dithered at the source, the average values of the colors that are dithered
-                              should be used (average R, average G, and average B).
+                           <p class="note-title marker">注記</p>
+                           <p>表示時にディザリングが発生する場合は、元の色の値が用いられる。元々ディザリングがかけられている色については、用いられている色の平均値を用いるべきである (R の平均値、G の平均値、及び B の平均値)。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Tools are available that automatically do the calculations when testing contrast and
-                              flash.
+                           <p class="note-title marker">注記</p>
+                           <p>コントラストと閃光を検証する際に、この計算を自動で行うツールが利用できる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>A <a href="relative-luminance.html">separate page giving the relative luminance definition using MathML</a> to display the formulas is available.
+                           <p class="note-title marker">注記</p>
+                           <p><a href="https://www.w3.org/TR/WCAG22/relative-luminance.html">MathML を用いて相対輝度の定義を与える別のページ</a>でもこの計算式を表示できる。
+
                               
                            </p>
                         </div>
@@ -1207,42 +967,40 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-sign-language">sign language</dt>
+                  <dt id="dfn-sign-language">手話 (sign language)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">a language using combinations of movements of the hands and arms, facial expressions,
-                           or body positions to convey meaning
+                        <p xmlns="http://www.w3.org/1999/xhtml">意味を伝えるために、手と腕の動き、顔の表情又は身体の姿勢の組み合わせを用いる言語。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-text">text</dt>
+                  <dt id="dfn-text">テキスト (text)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">sequence of characters that can be <a href="#dfn-programmatically-determined">programmatically determined</a>, where the sequence is expressing something in <a href="#dfn-human-language">human language</a>
-                           
+                        <p xmlns="http://www.w3.org/1999/xhtml"> <a href="#dfn-programmatically-determined">プログラムによる解釈</a>が可能な文字の並びで、<a href="#dfn-human-language">自然言語</a>で何かを表現しているもの。
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-user-agent">user agent</dt>
+                  <dt id="dfn-user-agent">ユーザエージェント (user agent)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">any software that retrieves and presents Web content for users</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ウェブコンテンツを取得して利用者に提示するあらゆるソフトウェア。</p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technology">assistive technologies</a> — that help in retrieving, rendering, and interacting with Web content.
+                           <p>ウェブコンテンツの取得、レンダリング及びインタラクションを支援する、ウェブブラウザ、メディアプレーヤ、プラグイン、及びその他のプログラム (<a href="#dfn-assistive-technology">支援技術</a>も含む)。
                               
                            </p>
                            
@@ -1251,40 +1009,35 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-user-interface-component">user interface component</dt>
+                  <dt id="dfn-user-interface-component">ユーザインタフェース コンポーネント (user interface component)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">a part of the content that is perceived by users as a single control for a distinct
-                           function
+                        <p xmlns="http://www.w3.org/1999/xhtml">コンテンツの一部分で、特定の機能を実現するための単一のコントロールとして利用者が知覚するもの。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Multiple user interface components may be implemented as a single programmatic element.
-                              "Components" here is not tied to programming techniques, but rather to what the user
-                              perceives as separate controls.
+                           <p class="note-title marker">注記</p>
+                           <p>複数のユーザインタフェース コンポーネントが、単一のプログラム要素で実装されることもある。ここでいう「コンポーネント」は、プログラムの手法と結びついたものではなく、利用者が別々のコントロールとして知覚するものを指す。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>User interface components include form elements and links as well as components generated
-                              by scripts.
+                           <p class="note-title marker">注記</p>
+                           <p>ユーザインタフェース コンポーネントには、フォーム要素、リンクだけでなく、スクリプトで生成されるコンポーネントが含まれる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>What is meant by "component" or "user interface component" here is also sometimes
-                              called "user interface element".
+                           <p class="note-title marker">注記</p>
+                           <p>ここでの「コンポーネント」又は「ユーザインタフェース コンポーネント」は、「ユーザインタフェース要素」とも呼ばれる。
                               
                            </p>
                         </div>
@@ -1292,9 +1045,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>An applet has a "control" that can be used to move through content by line or page
-                              or random access. Since each of these would need to have a name and be settable independently,
-                              they would each be a "user interface component."
+                           <p>アプレットには、コンテンツ内を行単位、ページ単位、又はランダムアクセスで移動するために用いられる「コントロール」がある。これらには、いずれも名前 (name) を割り当て、個別に設定できるようにする必要があるため、それぞれが「ユーザインタフェース コンポーネント」となる。
                               
                            </p>
                            
@@ -1306,15 +1057,12 @@
                </details>
             </section>
             <section id="test-rules">
-               <h2>Test Rules</h2>
-               <p>The following are Test Rules for certain aspects of this Success Criterion. It is
-                  not necessary to use these particular Test Rules to check for conformance with WCAG,
-                  but they are defined and approved test methods. For information on using Test Rules,
-                  see <a href="understanding-act-rules.html">Understanding Test Rules for WCAG Success Criteria</a>.
+               <h2>テストルール</h2>
+               <p>以下は、この達成基準の特定の側面に関するテストルールである。この特定のルールを使用して WCAG に適合しているかどうかを確認する必要はないが、これらのルールは定義され、承認されたテスト方法である。テストルールの使用については、<a href="understanding-act-rules.html">WCAG 達成基準のテストルールを理解する</a>を参照のこと。
                </p>
                <ul>
-                  <li><a href="/WAI/standards-guidelines/act/rules/09o5cg/">Text has enhanced contrast</a></li>
-                  <li><a href="/WAI/standards-guidelines/act/rules/afw4f7/">Text has minimum contrast</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/09o5cg/">Text has enhanced contrast</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/afw4f7/">Text has minimum contrast</a></li>
                </ul>
             </section><a class="button button-backtotop" href="#top"><span>
                   <svg focusable="false" aria-hidden="true" class="icon-arrow-up " viewBox="0 0 26 28">
@@ -1326,13 +1074,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -1347,11 +1094,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -1373,13 +1122,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -1388,7 +1137,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -1409,8 +1158,10 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+    <!--noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-      </noscript>
+      </noscript-->
    </body>
 </html>
