@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  2.5.1: Pointer Gestures | WAI | W3C</title>
+      <title>解説書 達成基準 2.5.1: ポインタのジェスチャ | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
-      <!-- 日本語訳されるまでの一時的なスクリプト -->
-      <script src="untranslated-note.js"></script>
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://waic.jp/translations/WCAG22/Understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -37,14 +35,14 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"><a href="input-modalities">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Input Modalities</a></li>
+                        </svg> ガイドライン: 入力モダリティ</a></li>
                   <li class="nav__item"></li>
-                  <li class="nav__item"><a href="pointer-cancellation">Next SC: Pointer Cancellation
+                  <li class="nav__item"><a href="pointer-cancellation">次: ポインタのキャンセル
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -55,284 +53,179 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
-                     <li><a href="#key-terms">Key Terms</a></li>
+                     <li><a href="#brief">要約</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#benefits">利点</a></li>
+                     <li><a href="#examples">事例</a></li>
+                     <li><a href="#techniques">テクニック</a></li>
+                     <li><a href="#key-terms">重要な用語</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				SC 2.5.1:</span>Pointer Gestures (Level A)
+            <h1><span class="standalone-resource__type-of-guidance">解説書 
+                  				達成基準 2.5.1:</span>ポインタのジェスチャ (レベル A)
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>All <a href="#dfn-functionality">functionality</a> that uses multipoint or path-based gestures for operation can be operated with a
-                     <a href="#dfn-single-pointer">single pointer</a> without a path-based gesture, unless a multipoint or path-based gesture is <a href="#dfn-essential">essential</a>.
+                  <p>マルチポイント又は軌跡ベースのジェスチャを使って操作する<a href="#dfn-functionality">機能</a>はすべて、軌跡ベースのジェスチャなしの<a href="#dfn-single-pointer">シングルポインタ</a>で操作することができる。ただし、マルチポイント又は軌跡ベースのジェスチャが<a href="#dfn-essential">必要不可欠</a>である場合は例外とする。
                   </p>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
-                     <p>This requirement applies to web content that interprets pointer actions (i.e. this
-                        does not apply to actions that are required to operate the user agent or assistive
-                        technology).
+                     <p class="note-title marker">注記</p>
+                     <p>この要件は、ポインタの動作を解釈するウェブコンテンツに適用される (ユーザエージェントや支援技術の操作に必要なアクションには適用されない)。
                      </p>
                   </div>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   			
-                  <dt>Goal</dt>
-                  <dd>Let users operate touchscreens with one finger and reduced gestures.</dd>
+                  <dt>目標</dt>
+                  <dd>利用者が 1 本の指及び少ないジェスチャでタッチスクリーンを操作できるようにする。</dd>
                   			
-                  <dt>What to do</dt>
-                  <dd>Provide single-point operation for all functions.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>全ての機能に対してシングルポイントによる操作を提供する。</dd>
                   			
-                  <dt>Why it's important</dt>
-                  <dd>Not everyone can perform complex and multi-touch gestures.</dd>
+                  <dt>なぜそれが重要か</dt>
+                  <dd>誰もが複雑なマルチタッチのジェスチャを実行できるわけではない。</dd>
                   		
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The intent of this Success Criterion is to ensure that content can be controlled with
-                  a range of pointing devices, abilities, and assistive technologies. Some people  cannot
-                  perform gestures in a precise manner, or they may use a specialized or adapted input
-                  device such as a head pointer, eye-gaze system, or speech-controlled mouse emulator.
-                  Some pointing methods lack the capability or accuracy to perform multipoint or path-based
-                  gestures.
+               <h2>意図</h2>
+               <p>この達成基準の意図は、さまざまなポインティングデバイス、能力、および支援技術とともにコンテンツをコントロール可能であることを確実にすることである。ジェスチャを正確に実行できない人もいれば、ヘッドポインタ、視線システム、音声制御マウスエミュレーターなどの特殊な又は適合した入力デバイスを使用することもある。ポインティングの方法の中には、マルチポイント又は軌跡ベースのジェスチャを実行する能力又は精度が不足しているものもある。
                </p>
-               <p>A <strong>path-based gesture</strong> involves an interaction where not just the endpoints matter, but how the pointer
-                  moves between these points.
+               <p><strong>軌跡ベースのジェスチャ</strong>では、終点だけでなく、ポインタがこれらの点の間でどのように移動するかが問題となるインタラクションが含まれる。
                </p>
-               <p>If the gesture is only recognised if the user moves in a (mostly) straight line from
-                  the start point to the end point, it is an example of a <strong>path-based gesture</strong>.
+               <p>利用者が始点から終点まで (ほぼ) 直線で移動した場合にだけジェスチャが認識される場合、これは <strong>軌跡ベースのジェスチャ</strong>の例である。
                </p>
                <figure id="figure-path-based-gesture-1">
-                  				<img src="img/path-based-gesture-1.png" width="400" alt="Hand showing a starting touch, 1. Moving in a straight line to a second point, 2." />
+                  				<img src="img/path-based-gesture-1.png" width="400" alt="1、タッチの開始を示す手。2、2 つ目の点まで直線で移動する。" />
                   				
-                  <figcaption>Figure 1 A <strong>path-based gesture</strong> where pointer movement is only allowed in a straight line from the start-point to
-                     the end-point. If the user strays from the straight directional path, the gesture
-                     is not recognised, has no effect, or is aborted.
+                  <figcaption>図 1 ポインタの移動が始点から終点まで直線でだけ許可される<strong>軌跡ベースのジェスチャ</strong>。利用者が直線方向の軌跡から外れると、ジェスチャは認識されない、効果がない、又は中止される。
                   </figcaption>
                   			
                </figure>
-               <p>If going through an intermediate point (usually near the start of the gesture) affects
-                  its meaning, then it is a <strong>path-based gesture</strong>. The user engages a pointer (starting point), carries out a movement that goes through
-                  at least one intermediate-point before disengaging the pointer (end point). The intermediate
-                  point defines the gesture as requiring a specific path, even if the complete path
-                  is not defined.
+               <p>中間点 (通常はジェスチャの始点近く) を通過することがその意味に影響を与える場合、それは<strong>軌跡ベースのジェスチャ</strong>である。利用者は、ポインタの操作を始め (始点)、少なくとも一つの中間点を通過する動きを実行した後、ポインタの操作を終える (終点)。たとえ完全な軌跡が定義されていなくても、中間点が存在すれば、そのジェスチャは特定の軌跡を必要とするものとみなされる。
                </p>
                <figure id="figure-path-based-gesture-2">
-                  				<img src="img/path-based-gesture-2.png" width="400" alt="Hand showing a starting touch, 1. Moving through a second point, 2. Going to one of several points,3." />
+                  				<img src="img/path-based-gesture-2.png" width="400" alt="1、タッチの開始を示す手。2、2 つ目の点を通過する。3、複数の点の一つに行く。" />
                   				
-                  <figcaption>Figure 2 A <strong>path-based gesture</strong> involves starting a pointer movement that goes through at least one intermediate
-                     point before the end-point. The end-point may be a continuation, or allow for various
-                     movements.
+                  <figcaption>図 2 <strong>軌跡ベースのジェスチャ</strong>では、終点の前に少なくとも一つの中間点を通過するポインタの動きを開始する。終点で動きが止まらないこともあれば、他のさまざまな動きを許すこともある。
                   </figcaption>
                   			
                </figure>
-               <p>Examples of path-based gestures include swiping, sliders and carousels dependent on
-                  the direction of interaction, and other gestures which trace a prescribed path such
-                  as drawing a specific shape. Such paths may be drawn with a finger or stylus on a
-                  touchscreen, graphics tablet, or trackpad, or with a mouse, joystick, or similar pointer
-                  device.
+               <p>軌跡ベースのジェスチャの例には、インタラクションの方向に応じたスワイプ、スライダー、カルーセル、及び特定の形状の描画などの指定された軌跡をトレースするその他のジェスチャが含まれる。このような軌跡は、タッチスクリーン、ペンタブレットもしくはトラックパッド上で指もしくはスタイラスペンを用いて、又はマウス、ジョイスティックもしくは同様のポインタデバイスを用いて描画されるかもしれない。
                </p>
-               <p>Dragging is a movement where the user picks up an object with a pointer (such as mouse
-                  cursor or a finger) and moves it to some other position. This movement from start
-                  point to end point does not require the user to follow any particular path or direction.
-                  Dragging is therefore not path-based. In contrast, a path-based pointer gesture requires
-                  the traversal of an intermediate point, which is a technical way of expressing that
-                  the directionality and possibly speed of the gesture communicates a particular command
-                  to the system. Dragging motions are covered in <a href="https://www.w3.org/WAI/WCAG22/Understanding/dragging.html">Success Criterion 2.5.7: Dragging</a>.
+               <p>ドラッグとは、利用者がポインタ (マウスカーソル、指など) でオブジェクトをつかんで、他の位置に移動させる動作のことである。この始点から終点への動作は、利用者に特定の軌跡又は方向をたどることを要求しない。したがって、ドラッグは軌跡ベースではない。これに対して、軌跡ベースのポインタジェスチャでは中間点の通過が求められるが、これは、ジェスチャの方向性、及び場合によっては速度が、システムに特定のコマンドを伝えることを表現する技術的な方法である。ドラッグ動作については<a href="dragging.html">達成基準 2.5.7: ドラッグ動作</a>で扱う。
                </p>
                <figure id="figure-path-based-gesture-3">
-                  				<img src="img/path-based-gesture-3.png" width="400" alt="Hand showing a starting touch, 1. Going to a second point, 2. It follows a very random path." />
+                  				<img src="img/path-based-gesture-3.png" width="400" alt="1、タッチの開始を示す手。2、2 番目のポイントに移動する。非常にランダムな軌跡をたどる。" />
                   				
-                  <figcaption>Figure 3 A <strong>free-form gesture</strong> does <strong>not</strong> require any particular path before the end-point, only the start and (optionally)
-                     the end point matter. This is <strong>not path-based</strong></figcaption>
+                  <figcaption>図 3 <strong>自由形式のジェスチャ</strong>では、終点の前に特定の経路を必要と<strong>せず</strong>、始点と (オプションで) 終点のみが重要である。これは、<strong>軌跡ベース</strong>ではない。</figcaption>
                   			
                </figure>
                <div class="note">
-                  <p class="note-title marker">Note</p>
-                  <p>Any movement of a pointer could be difficult or impossible to use for someone who
-                     cannot perform precise movements, therefore alternative forms of interaction are always
-                     recommended. This success criterion is scoped to <em>path-based gestures</em> as it may be difficult or impossible to provide an alternative for <em>free-form gestures</em>.
+                  <p class="note-title marker">注記</p>
+                  <p>ポインタの動きは、正確な動きを実行できない人にとって、使用が困難又は不可能である可能性があるため、代替の形式のインタラクションが常に推奨される。この達成基準は、<em>自由形式のジェスチャ</em>の代替を提供することが困難又は不可能な場合があるため、<em>軌跡ベースのジェスチャ</em>に限定される。
                   </p>
                </div>
-               <p>Examples of <strong>multipoint</strong> gestures include a two-finger pinch zoom, a split tap where one finger rests on the
-                  screen and a second finger taps, or a two- or three-finger tap or swipe. Users may
-                  find it difficult or impossible to accomplish these if they type and point with a
-                  single finger or stick.
+               <p><strong>マルチポイント</strong>ジェスチャの例には、2 本指のピンチズーム、1 本目の指を画面上に置いて 2 本目の指をタップするスプリットタップ、2 本指もしくは 3 本指のタップ又はスワイプが含まれる。利用者は、単一の指又は棒でタイプ及びポイントする場合、これらを達成することが困難又は不可能であると感じることがある。
                </p>
-               <p>Authors must ensure that their content can be operated without multipoint or path-based
-                  gestures. Multipoint or path-based gestures can be used so long as the functionality
-                  can also be operated by another method, such as a tap, click, double tap, double click,
-                  long press, or click &amp; hold. 
+               <p>コンテンツ制作者は、マルチポイント又は軌跡ベースのジェスチャなしにコンテンツを操作できることを保証しなければならない。タップ、クリック、ダブルタップ、ダブルクリック、長押し、クリック＆ホールドなどの別の方法でも機能を操作できる限りにおいて、マルチポイント又は軌跡ベースのジェスチャを使用することができる。
                </p>
-               <p>This Success Criterion applies to gestures in the author-provided content, not gestures
-                  defined by the operating system, user agent, or assistive technology. Examples of
-                  operating system gestures would be swiping down to see system notifications and gestures
-                  for built-in assistive technologies (AT). Examples of user agent-implemented gestures
-                  would be horizontal swiping implemented by browsers for navigating within the page
-                  history, or vertical swiping to scroll page content.
+               <p>この達成基準は、オペレーティングシステム、ユーザエージェント、又は支援技術によって定義されたジェスチャではなく、コンテンツ制作者が提供したコンテンツのジェスチャに適用される。 オペレーティングシステムのジェスチャの例としては、システム通知を表示するための下方向へのスワイプ、及び組み込みの支援技術 (AT) ためのジェスチャがある。ユーザエージェントが実装するジェスチャの例としては、ページ履歴内を移動するためにブラウザが実装する水平方向のスワイプや、ページのコンテンツをスクロールするために用いられる垂直方向のスワイプなどがある。
                </p>
-               <p>There are times when a component requires a path-based gesture for touch screen devices
-                  but not with a mouse. Taking an example of a generic slider:
+               <p>コンポーネントがタッチスクリーンデバイスでは軌跡ベースのジェスチャを必要とするが、マウスでは必要としないある場合がある。一般的なスライダーを例にとると:
                </p>
                <ul>
                   				
-                  <li><strong>Using a mouse:</strong> If the user clicks on the thumb control of the slider and moves vertically, the slider
-                     will respond by moving to the right or left, even if the movement is mostly upwards.
-                     There will be no page scrolling as a result of the vertical movement as long as they
-                     drag with focus on the slider. Therefore, the slider does not require a path-based
-                     gesture with mouse pointer.
+                  <li><strong>マウスを使用:</strong> 利用者がスライダーのつまみコントロールをクリックして垂直方向に移動する場合、たとえその動きがほとんど上向きであったとしても、スライダーは右又は左に移動して応答する。スライダーにフォーカスしてドラッグしている限り、垂直方向の動きによるページのスクロールは発生しない。したがって、スライダーにはマウスポインタを使用した軌跡ベースのジェスチャは必要ない。
                   </li>
                   				
-                  <li><strong>Using a touch-screen:</strong> If the user puts their finger on the thumb control of the slider and moves upwards
-                     more than sideways, the slider may not respond because the browser takes control of
-                     the swipe and interprets it as a scroll, and will move the page up and down. Moving
-                     left or right on the slider thumb engages the slider and then the user can vary their
-                     vertical movement. This implementation has the 3-point requirement to work with a
-                     finger on a touch screen device so is a path-based gesture.
+                  <li><strong>タッチスクリーンを使用:</strong> 利用者がスライダーのつまみコントロールに指を置き、横よりも上に移動する場合、ブラウザがスワイプを制御してスクロールとして解釈し、ページを上下に移動させるため、スライダーが応答しないことがある。スライダーのつまみを左右に動かすとスライダーが動き、利用者は垂直方向の動きを変えることができる。この実装は、タッチスクリーンデバイス上で指で操作するための 3 点要件があり、軌跡ベースのジェスチャとなっている。
                   </li>
                   			
                </ul>
-               <p>As touch screen devices can apply default gestures it is important to test with them
-                  if you are unsure whether a particular component does require a path-based gesture.
+               <p>タッチスクリーンデバイスはデフォルトのジェスチャを適用できるため、特定のコンポーネントが軌跡ベースのジェスチャを必要するかどうかわからない場合は、タッチスクリーンデバイスでテストすることが重要である。
                </p>
-               <p>Browsers on a touch screen device generally provide some default gestures that impact
-                  whether a path-based gesture is needed. For example, a web browser on a touch-screen
-                  devices might detect a vertical gesture and scroll the page. If a user places their
-                  finger on a slider thumb and moves up (to scroll down) that might not activate the
-                  slider (depending on implementation). If the user moves horizontally first then the
-                  slider could capture that gesture and ignore vertical movement, resulting in a path-based
-                  gesture. If you include touch-screen devices as accessibility supported then these
-                  types of interaction need testing with a touch screen as using a mouse in a similar
-                  way would not trigger the same browser behavior.
+               <p>タッチスクリーンデバイスのブラウザは一般に、軌跡ベースのジェスチャが必要かどうかに影響を及ぼすいくつかのデフォルトのジェスチャを提供する。例えば、タッチスクリーンデバイス上のウェブブラウザは、垂直方向のジェスチャを検出してページをスクロールすることがある。利用者がスライダーのつまみに指を置いて上に動かすと (下にスクロールするため)、スライダーが作動しないことがある (実装による)。利用者が最初に水平方向に動かす場合、スライダーはそのジェスチャをキャプチャし、垂直方向の動きを無視して、軌跡のジェスチャを生成することがある。アクセシビリティ サポーテッドとしてタッチスクリーンデバイスを含める場合、同様の方法でマウスを使用しても同じブラウザの動作をトリガーしないため、このタイプのインタラクションはタッチスクリーンでテストする必要がある。
                </p>
-               <p>This Success Criterion does not require all functionality to be available through
-                  pointing devices, but if it is available to pointer devices then it should not require
-                  path-based gestures. While content authors generally need to provide keyboard commands
-                  or other non-pointer mechanisms that perform actions equivalent to complex gestures
-                  (see Success Criterion 2.1.1 Keyboard), this is not sufficient to conform to this
-                  Success Criterion. That is because some users rely entirely on pointing devices, or
-                  find simple pointer inputs much easier to perform and understand than alternatives.
-                  For example, a user relying on a head-pointer would find clicking a control to be
-                  much more convenient than activating an on-screen keyboard to emulate a keyboard shortcut,
-                  and a person who has difficulty memorizing a series of keys (or gestures) may find
-                  it much easier to simply click on a labeled control. Therefore, if one or more pointer-based
-                  mechanisms are supported, then their benefits should be afforded to users through
-                  simple, single-point actions alone.
+               <p>この達成基準では、全ての機能がポインティングデバイスで利用できることを要求するものではないが、ポインタデバイスで使用できる場合は、軌跡ベースのジェスチャを要求すべきでない。一般にコンテンツ制作者は、複雑なジェスチャと同等の動作を実行するキーボードコマンド又は他の非ポインタメカニズムを提供する必要があるが (達成基準 2.1.1 キーボードを参照)、この達成基準に適合するためには十分ではない。ポインティングデバイスに完全に依存している又は単純なポインタ入力が代替手段よりもはるかに実行しやすく理解しやすいと感じる利用者がいるからである。例えば、ヘッドポインタに依存している利用者は、キーボードショートカットをエミュレートするためにスクリーンキーボードを動作させるよりも、コントロールをクリックする方がはるかに使いやすいと感じるだろうし、一連のキー (又はジェスチャ) を覚えるのが困難な人は、ラベル付きコントロールをクリックする方がはるかに簡単であると感じるだろう。したがって、一つ以上のポインタベースのメカニズムがサポートされている場合、その恩恵は、単独で単純なシングルポイントによる動作を通して利用者に提供されるべきである。
                </p>
-               <p>Single pointer operations include taps and clicks, double-taps and double-clicks,
-                  long presses, swiping, dragging, and path-based gestures. Gestures such as "pinch
-                  to zoom" or two-finger swipes are <em>multipoint</em> gestures, as they require two or more pointer inputs - in this case, two fingers
-                  on a touchscreen.
+               <p>シングルポインタの操作には、タップ及びクリック、ダブルタップ及びダブルクリック、長押し、スワイプ、ドラッグ、並びに軌跡ベースのジェスチャが含まれる。「ピンチズーム」のようなジェスチャ又は 2 本指でのスワイプは、二つ以上のポインタ入力 (この場合はタッチスクリーン上の 2 本指) を必要とするため、<em>マルチポイント</em>ジェスチャとなる。
                </p>
-               <p>An exception is made for functionality that is inherently and necessarily based on
-                  complex paths or multipoint gestures. For example, entering your signature may be
-                  inherently path-based (although acknowledging something or confirming your identity
-                  need not be).
+               <p>本質的かつ必然的に複雑な軌跡又はマルチポイントジェスチャに基づく機能については、例外が設けられている。例えば、署名の入力は本質的に軌跡ベースである可能性がある (とはいえ、何かを認証したり、身元を確認したりする機能が本質的に軌跡ベースを必要とするわけではない)。
                </p>
-               <p>This Success Criterion <em>does not apply</em> to gestures that involve dragging in any direction because only the start and end
-                  points matter in a dragging operation. However, such gestures do require fine motor
-                  control. Authors are encouraged to provide non-dragging methods, for instance, a drag
-                  and drop operation could also be achieved by selecting an item (with a tap or keyboard
-                  interaction) and then selecting its destination as a second step.
+               <p>ドラッグ操作では始点と終点のみが重要であるため、この達成基準は、任意の方向へのドラッグを伴うジェスチャには適用<em>されない</em>。しかし、そのようなジェスチャが、細かい運動制御を必要とすることは間違いない。コンテンツ制作者には、ドラッグしない方法を提供することを勧める。例えば、ドラッグ＆ドロップ操作は、(タップ又はキーボード操作で) アイテムを選択し、2 番目のステップとしてその目的地を選択することによっても実現できる。
                </p>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>利点</h2>
                <ul>
                   					
                   <li>
-                     <p>Users who cannot (accurately) perform path-based pointer gestures - on a touchscreen,
-                        or with a mouse - will have alternative means for operating the content.
+                     <p>タッチスクリーン又はマウスで、複雑なポインタのジェスチャを (正確に) 実行できない利用者には、コンテンツを操作するための代替手段がある。
                      </p>
                   </li>
                   					
                   <li>
-                     <p>Users who cannot perform multi-pointer gestures on a touchscreen (for instance, because
-                        they are operating the touchscreen with an alternative input such as a head pointer)
-                        will have a single-pointer alternative for operating the content.
+                     <p>タッチスクリーンでマルチポインタのジェスチャができない利用者 (例えば、ヘッドポインタなどの代替入力でタッチスクリーンを操作しているため) は、シングルポインタによる代替手段でコンテンツを操作できるようになる。
                      </p>
                   </li>
                   					
                   <li>
-                     <p>Users who may not understand the custom gesture interaction intended by the author
-                        will be able to rely on simple, frequently used gestures to interact. This can be
-                        especially beneficial for users with cognitive or learning disabilities.
+                     <p>コンテンツ制作者が意図したカスタムジェスチャのインタラクションを理解できない利用者は、シンプルでよく使うジェスチャに頼ってインタラクションできるようになる。これは、認知障害又は学習障害のある利用者にとって特に有益なものになり得る。
                      </p>
                   </li>
                   				
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>事例</h2>
                <ul>
                   		
                   <li>
-                     <p>A web site includes a map view that supports the pinch gesture to zoom into the map
-                        content. User interface controls offer the operation using plus and minus buttons
-                        to zoom in and out.
+                     <p>ウェブサイトには、マップコンテンツを拡大するためのピンチジェスチャをサポートするマップビューが含まれている。ユーザインタフェースコントロールは、プラスボタンとマイナスボタンを使用してズームイン及びズームアウトする操作を提供する。
                      </p>
                   </li>
                   				
                   <li>
-                     <p>A web site includes a map view that supports the pinch gesture to zoom into the map
-                        content. As an single-pointer alternative, the map also allows users to double-tap,
-                        hold, and then move the pointer up or down to zoom in or out.
+                     <p>ウェブサイトには地図表示が含まれており、地図コンテンツを拡大するためのピンチジェスチャがサポートされている。シングルポインタによる代替手段として、その地図は、利用者がダブルタップして長押ししたまま、ポインタを上下に動かしてズームイン又はズームアウトすることもできる。
                      </p>
                   </li>
                   		
                   <li>
-                     <p>A news site has a horizontal content slider with hidden news teasers that can moved
-                        into the viewport via a fast horizontal swipe/flicking motion. It also offers forward
-                        and backward arrow buttons for single-point activation to navigate to adjacent slider
-                        content.
+                     <p>ニュースサイトには、水平方向の素早いスワイプ／フリック動作によってビューポートに移動できる、隠されたニュースティーザーを含む水平コンテンツスライダーがある。また、1 回の動作で隣接するスライダーコンテンツに移動するための、前後の矢印ボタンを提供する。
                      </p>
                   </li>
                   				
                   <li>
-                     <p>A kanban widget with several vertical areas representing states in a defined process
-                        allows the user to right- or left-swipe elements to move them to an adjacent silo.
-                        The user can also accomplish this by selecting the element with a single tap or click,
-                        and then activating an arrow button to move the selected element.
+                     <p>定義されたプロセスの状態を表す、いくつかの垂直な領域を持ったカンバンウィジェットを使用すると、利用者は要素を右又は左にスワイプして隣接するサイロに移動できる。利用者は、1 回タップ又はクリックして要素を選択し、矢印ボタンを動作させて選択した要素を移動することもできる。
                      </p>
                   </li>
                   				
                   <li>
-                     <p>A custom slider requires movement in a strict left/right direction when operated by
-                        dragging the thumb control. Buttons on both sides of the slider increment and decrement
-                        the selected value and update the thumb position.
+                     <p>カスタムスライダーは、つまみコントロールをドラッグして操作するときに、厳密な左右方向に移動する必要がある。スライダーの両側にあるボタンは、選択した値を増減させ、つまみの位置を更新する。
                      </p>
                   </li>
                   		
                </ul>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
+                  <h3>十分なテクニック</h3>
                   <ul>
                      					
                      <li><a href="https://w3c.github.io/wcag/techniques/general/G215">G215: Providing controls to achieve the same result as path based or multipoint gestures</a></li>
@@ -342,9 +235,8 @@
                   </ul>
                </section>
                <section id="failure">
-                  <h3>Failures</h3>
-                  <p>The following are common mistakes that are considered failures of this Success Criterion
-                     by the WCAG Working Group.
+                  <h3>失敗例</h3>
+                  <p>以下に挙げるものは、WCAG ワーキンググループが達成基準の失敗例とみなした、よくある間違いである。
                   </p>
                   <ul>
                      					
@@ -357,47 +249,44 @@
             <section id="key-terms">
                <details>
                   <summary>
-                     <h2>Key Terms</h2>
+                     <h2>重要な用語</h2>
                   </summary>
-                  <dt id="dfn-essential">essential</dt>
+                  <dt id="dfn-essential">必要不可欠 (essential)</dt>
                   <dd>
                      <definition xmlns="">
                         					
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">if removed, would fundamentally change the information or functionality of the content,
-                           <strong>and</strong> information and functionality cannot be achieved in another way that would conform
+                        <p xmlns="http://www.w3.org/1999/xhtml">もし取り除いてしまうと、コンテンツの情報又は機能を根本的に変えてしまい、<strong>かつ、</strong>適合する他の方法では情報及び機能を実現できない。
                            
                         </p>
                         				
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-functionality">functionality</dt>
+                  <dt id="dfn-functionality">機能 (functionality)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
                         <p xmlns="http://www.w3.org/1999/xhtml">
-                           <a href="#dfn-process">processes</a> and outcomes achievable through user action
+                           利用者の操作により実現可能な<a href="#dfn-process">プロセス</a>及び結果。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-process">process</dt>
+                  <dt id="dfn-process">プロセス (process)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">series of user actions where each action is required in order to complete an activity</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ある活動を完了させるために必要な利用者の一連の動作。</p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Successful use of a series of Web pages on a shopping site requires users to view
-                              alternative products, prices and offers, select products, submit an order, provide
-                              shipping information and provide payment information.
+                           <p>ショッピングサイト上の一連のウェブページで目的を果たすためには、利用者が選択肢となりうる製品、価格及び内容を閲覧した後、製品を選択して発注し、配送先情報及び支払情報を提供する必要がある。
                               
                            </p>
                            
@@ -406,8 +295,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>An account registration page requires successful completion of a <a href="https://www.w3.org/TR/turingtest/">Turing test</a> before
-                              the registration form can be accessed.
+                           <p>アカウント登録ページでは、登録フォームにアクセスする前に<a href="https://www.w3.org/TR/turingtest/">チューリングテスト</a>に成功する必要がある。
                               
                            </p>
                            
@@ -416,13 +304,12 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-single-pointer">single pointer</dt>
+                  <dt id="dfn-single-pointer">シングルポインタ (single pointer)</dt>
                   <dd>
                      <definition xmlns="">
                         	
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">pointer input that operates with one point of contact with the screen, including single
-                           taps and clicks, double-taps and clicks, long presses, and path-based gestures
+                        <p xmlns="http://www.w3.org/1999/xhtml">シングルタップ・クリック、ダブルタップ・クリック、長押し、軌跡ベースのジェスチャなど、画面と一つの接点で動作するポインタ入力。
                         </p>
                         				
                         
@@ -439,13 +326,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -460,11 +346,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -486,13 +374,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -501,7 +389,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -522,7 +410,9 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+      <noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
       </noscript>
    </body>
