@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Guideline  2.4: Navigable | WAI | W3C</title>
+      <title>解説書 ガイドライン 2.4: ナビゲーション可能 | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
-      <!-- 日本語訳されるまでの一時的なスクリプト -->
-      <script src="untranslated-note.js"></script>
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://waic.jp/translations/WCAG22/Understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -37,13 +35,13 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"><a href="seizures-and-physical-reactions">
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-left-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
-                        </svg>Previous Guideline: Seizures and Physical Reactions</a></li>
-                  <li class="nav__item"><a href="input-modalities">Next Guideline: Input Modalities
+                        </svg>前: 発作と身体的反応</a></li>
+                  <li class="nav__item"><a href="input-modalities">次: 入力モダリティ
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -54,85 +52,65 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#success-criteria">Success Criteria</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#success-criteria">達成基準</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				Guideline 2.4:</span>Navigable
+            <h1><span class="standalone-resource__type-of-guidance">解説書 
+                  				ガイドライン 2.4:</span>ナビゲーション可能
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Guideline </header>
+               <header class="box-h  box-h-icon">ガイドライン</header>
                <div class="box-i">
-                  <p>Provide ways to help users navigate, find content, and determine where they are.</p>
+                  <p>利用者がナビゲートしたり、コンテンツを探し出したり、現在位置を確認したりすることを手助けする手段を提供すること。</p>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The intent of this guideline is to help users find the content they need and allow
-                  them to keep track of their location. These tasks are often more difficult for people
-                  with disabilities. For finding, navigation, and orientation, it is important that
-                  the user can find out what the current location is. For navigation, information about
-                  the possible destinations needs to be available. Screen readers convert content to
-                  synthetic speech  which, because it is audio, must be presented in linear order. 
-                  Some Success Criteria in this guideline explain what provisions need to be taken to
-                  ensure that screen reader users can successfully navigate the content. Others allow
-                  users to more easily recognize navigation bars and page headers and to bypass this
-                  repeated content. Unusual user interface features or behaviors may confuse people
-                  with cognitive disabilities.
+               <h2>意図</h2>
+               <p>このガイドラインの目的は、利用者が必要とするコンテンツを見つけるのを助け、自分の現在位置を把握できるようにすることである。このタスクは、多くの場合障害のある人にとってはより困難である。検索、ナビゲーション及び位置確認のために、利用者が現在位置を知ることができることが重要である。ナビゲーションのために、考えられる行き先に関する情報が利用可能になっている必要がある。スクリーンリーダーは、コンテンツを合成音声に変換する。合成音声は音声であるため、線形順序で提示されなければならない。このガイドラインの達成基準では、スクリーンリーダーの利用者がコンテンツをうまくナビゲートできるようにするために、どの条項に対応する必要があるのかを説明しているものがある。他のものは、利用者がナビゲーションバー及びページの見出しをより容易に認識できるようにし、この繰り返されるコンテンツをスキップできるようにする。見慣れないユーザインタフェースの機能又はふるまいは、認知障害のある人を混乱させることがある。
                   
                   
                   
                </p>
-               <p>Navigation has two main functions:</p>
+               <p>ナビゲーションには、主に二つの機能がある:</p>
                <ul>
                   
                   
-                  <li>to tell the user where they are</li>
+                  <li>利用者に自分がどこにいるのかを知らせる</li>
                   
                   
-                  <li>to enable the user to go somewhere else</li>
+                  <li>利用者が他のどこかへ行けるようにする</li>
                   
                   
                </ul>
-               <p>This guideline works closely with 
-                  <a href="adaptable" class="guideline">Guideline 1.3</a>, which ensures that any structure in the content can be perceived, a key to navigation
-                  as well. Headings are particularly important mechanisms for helping users orient themselves
-                  within content and navigate through it. Many users of assistive technologies rely
-                  on appropriate headings to skim through information and easily locate the different
-                  sections of content. Satisfying 
-                  <a href="info-and-relationships" class="guideline">Success Criterion 1.3.1
-                     
-                     </a> for headings also addresses some aspects of Guideline 2.4.
+               <p>このガイドラインは、<a href="adaptable" class="guideline">ガイドライン 1.3</a> と密接に連動しており、コンテンツのあらゆる構造を理解することを保証し、同様にナビゲーションの鍵となる。見出しは、利用者がコンテンツ内での自分の現在位置を確認して、ナビゲートしていく上で、特に重要なメカニズムである。支援技術の利用者の多くは、情報を流し読みするために適切な見出しを頼りにし、コンテンツの様々なセクションを容易に見つける。見出しに関して、<a href="info-and-relationships" class="guideline">達成基準 1.3.1</a> に適合することは、同時にガイドライン 2.4 にも部分的に対処していることになる。
                   
                </p>
             </section>
             <section id="success-criteria">
-               <h2>Success Criteria for this Guideline</h2>
+               <h2>このガイドラインの達成基準</h2>
                <ul>
-                  <li><a href="bypass-blocks">2.4.1 Bypass Blocks</a></li>
-                  <li><a href="page-titled">2.4.2 Page Titled</a></li>
-                  <li><a href="focus-order">2.4.3 Focus Order</a></li>
-                  <li><a href="link-purpose-in-context">2.4.4 Link Purpose (In Context)</a></li>
-                  <li><a href="multiple-ways">2.4.5 Multiple Ways</a></li>
-                  <li><a href="headings-and-labels">2.4.6 Headings and Labels</a></li>
-                  <li><a href="focus-visible">2.4.7 Focus Visible</a></li>
-                  <li><a href="location">2.4.8 Location</a></li>
-                  <li><a href="link-purpose-link-only">2.4.9 Link Purpose (Link Only)</a></li>
-                  <li><a href="section-headings">2.4.10 Section Headings</a></li>
-                  <li><a href="focus-not-obscured-minimum">2.4.11 Focus Not Obscured (Minimum)</a></li>
-                  <li><a href="focus-not-obscured-enhanced">2.4.12 Focus Not Obscured (Enhanced)</a></li>
-                  <li><a href="focus-appearance">2.4.13 Focus Appearance</a></li>
+                  <li><a href="bypass-blocks">2.4.1 ブロックスキップ</a></li>
+                  <li><a href="page-titled">2.4.2 ページタイトル</a></li>
+                  <li><a href="focus-order">2.4.3 フォーカス順序</a></li>
+                  <li><a href="link-purpose-in-context">2.4.4 リンクの目的 (コンテキスト内)</a></li>
+                  <li><a href="multiple-ways">2.4.5 複数の手段</a></li>
+                  <li><a href="headings-and-labels">2.4.6 見出し及びラベル</a></li>
+                  <li><a href="focus-visible">2.4.7 フォーカスの可視化</a></li>
+                  <li><a href="location">2.4.8 現在位置</a></li>
+                  <li><a href="link-purpose-link-only">2.4.9 リンクの目的 (リンクのみ)</a></li>
+                  <li><a href="section-headings">2.4.10 セクション見出し</a></li>
+                  <li><a href="focus-not-obscured-minimum">2.4.11 隠されないフォーカス (最低限)</a></li>
+                  <li><a href="focus-not-obscured-enhanced">2.4.12 隠されないフォーカス (高度)</a></li>
+                  <li><a href="focus-appearance">2.4.13 フォーカスの外観</a></li>
                </ul>
             </section><a class="button button-backtotop" href="#top"><span>
                   <svg focusable="false" aria-hidden="true" class="icon-arrow-up " viewBox="0 0 26 28">
@@ -144,13 +122,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -165,11 +142,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -191,13 +170,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -206,7 +185,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -227,8 +206,10 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+    <!--noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-      </noscript>
+      </noscript-->
    </body>
 </html>
