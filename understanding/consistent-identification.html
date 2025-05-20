@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  3.2.4: Consistent Identification | WAI | W3C</title>
+      <title>解説書 達成基準 3.2.4: 一貫した識別性 | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
-      <!-- 日本語訳されるまでの一時的なスクリプト -->
-      <script src="untranslated-note.js"></script>
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://waic.jp/translations/WCAG22/Understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding//about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -37,17 +35,17 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"><a href="predictable">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Predictable</a></li>
+                        </svg> ガイドライン: 予測可能</a></li>
                   <li class="nav__item"><a href="consistent-navigation">
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-left-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
-                        </svg>Previous SC: Consistent Navigation</a></li>
-                  <li class="nav__item"><a href="change-on-request">Next SC: Change on Request
+                        </svg>前: 一貫したナビゲーション</a></li>
+                  <li class="nav__item"><a href="change-on-request">次: 要求による変化
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -58,98 +56,79 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
-                     <li><a href="#key-terms">Key Terms</a></li>
+                     <li><a href="#brief">意図</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#benefits">利点</a></li>
+                     <li><a href="#examples">事例</a></li>
+                     <li><a href="#techniques">テクニック</a></li>
+                     <li><a href="#key-terms">重要な用語</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				SC 3.2.4:</span>Consistent Identification (Level AA)
+            <h1><span class="standalone-resource__type-of-guidance">解説書 
+                  				達成基準 3.2.4:</span>一貫した識別性 (レベル AA)
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>Components that have the <a href="#dfn-same-functionality">same functionality</a> within a <a href="#dfn-set-of-web-pages">set of Web pages</a> are identified consistently.
+                  <p><a href="#dfn-set-of-web-pages">ウェブページ一式</a>の中で<a href="#dfn-same-functionality">同じ機能</a>を有するコンポーネントは、一貫して識別できる。
                      
                   </p>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   
-                  <dt>Goal</dt>
-                  <dd>Actions are more predictable across pages.</dd>
+                  <dt>目標</dt>
+                  <dd>ページ間での動作をより予測可能にする。</dd>
                   
-                  <dt>What to do</dt>
-                  <dd>Identify repeating functions consistently.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>繰り返される機能を一貫して識別する。</dd>
                   
-                  <dt>Why it's important</dt>
-                  <dd>Consistently identified actions are especially important to people with disabilities.</dd> 
+                  <dt>なぜそれが重要か</dt>
+                  <dd>一貫して識別される動作は、障害のある人にとって特に重要である。</dd> 
                   
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The intent of this Success Criterion is to ensure consistent identification of functional
-                  components that appear repeatedly within a set of Web pages. A strategy that people
-                  who use screen readers use when operating a Web site is to rely heavily on their familiarity
-                  with functions that may appear on different Web pages. If identical functions have
-                  different labels (or, more generally, a different <a href="https://www.w3.org/TR/accname-aam-1.1/">accessible name</a>)
-                  on different Web pages, the site will be considerably more difficult
-                  to use. It may also be confusing and increase the cognitive load for people with cognitive
-                  limitations. Therefore, consistent labeling will help. 
+               <h2>意図</h2>
+               <p>この達成基準の意図は、ウェブページ一式で繰り返して表示される機能的なコンポーネントを一貫して識別できるようにすることである。ウェブサイトを操作する際にスクリーンリーダーを使用している利用者は、複数のウェブページで使われている機能に馴染みがあるかどうかに大きく依存している。全く同じ機能が、複数のウェブページ毎に異なるラベル (又は、より一般的には、異なる <a href="https://www.w3.org/TR/accname-aam-1.1/">アクセシブルな名前 (accessible name)</a>) を付けられている場合、そのウェブサイトはかなり使いづらいものになってしまう。それは、認知的限界のある人々に混乱をもたらし、認知的負荷を増大させてしまうことがある。したがって、一貫したラベルが役立つ。
                   
                </p>
-               <p>This consistency extends to the text alternatives. If icons or other non-text items
-                  have the same functionality, then their text alternatives should be consistent as
-                  well.
+               <p>この一貫性は、テキストによる代替にも及ぶ。アイコン又はその他の非テキスト項目が同じ機能を持つ場合、そのテキストによる代替も同様に一貫性をもたせるべきである。
                   
                </p>
-               <p>If there are two components on a web page that both have the same functionality as
-                  a component on another page in a set of web pages, then all 3 must be consistent.
-                  Hence the two on the same page will be consistent.
+               <p>ウェブページ一式の中で、あるウェブページに二つのコンポーネントがあり、その両方が別のページ上の一つのコンポーネントと同じ機能を持つ場合、三つのコンポーネント全てが一貫していなければならない。したがって、同じページ上の二つのコンポーネントは一貫していることになる。
                   
                </p>
-               <p>While it is desirable and best practice always to be consistent within a single web
-                  page, 3.2.4 only addresses consistency within a set of web pages where something is
-                  repeated on more than one page in the set.
+               <p>一つのウェブページにおいて一貫性を持つことは望ましく、かつ最善の対応策だが、3.2.4 はウェブページ一式において 1 ページ以上何かが繰り返される場合の一貫性の対処である。
                   
                </p>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>利点</h2>
                <ul>
                   
                   
-                  <li>People who learn functionality on one page on a site can find the desired functions
-                     on other pages if they are present.
+                  <li>あるサイトのあるページで機能を学習した人は、それらが存在する場合、他のページで目的の機能を見つけることができる。
                      
                   </li>
                   
                   
-                  <li>When non-text content is used in a consistent way to identify components with the
-                     same functionality, people with difficulty reading text or detecting text alternatives
-                     can interact with the Web without depending on text alternatives.
+                  <li>非テキストコンテンツが同じ機能を持つコンポーネントを特定するために一貫した方法で使用されている場合、テキストを読むことや、テキストによる代替を見つけることが困難な人は、テキストによる代替を頼りにすることなくウェブとやり取りができる。
                      
                   </li>
                   
                   
-                  <li>People who depend on text alternatives can have a more predictable experience. They
-                     can also search for the component if it has a consistent label on different pages.
+                  <li>テキストによる代替を頼りにしている人は、より予測可能な体験ができるようになる。異なるページに一貫したラベルがある場合、そのコンポーネントを検索することもできる。
                      
                   </li>
                   
@@ -157,86 +136,59 @@
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>事例</h2>
                <dl>
                   
-                  <dt>Example 1: Document Icon</dt>
+                  <dt>事例 1: 文書のアイコン</dt>
                   
-                  <dd>A document icon is used to indicate document download throughout a site. The text
-                     alternative for the icon always begins with the word “Download," followed by a shortened
-                     form of the document title. Using different text alternatives to identify document
-                     names for different documents is a consistent use of text alternatives.
+                  <dd>文書のアイコンは、サイトの至る所で文書のダウンロードを示すために使用される。そのアイコンのテキストによる代替は、どれも「ダウンロード」という単語で始まっていて、その後に文書のタイトルの短縮形が続いている。異なる文書の異なるタイトルを示すために異なるテキストによる代替を用いることは、テキストによる代替の一貫した使用である。
                   </dd>
                   
-                  <dt>Example 2: Check Mark</dt>
+                  <dt>事例 2: チェックマーク</dt>
                   
-                  <dd>A check mark icon functions as "approved", on one page but as "included" on another.
-                     Since they serve different functions, they have different text alternatives.
+                  <dd>チェックマークのアイコンは、あるページでは「承認済」として機能しているが、別のページでは「あり」として機能している。異なる意味で使われているので、異なるテキストによる代替を持っている。
                   </dd>
                   
-                  <dt>Example 3: Consistent references to other pages</dt>
+                  <dt>事例 3: 他のページへの一貫したリンクのラベル</dt>
                   
-                  <dd> A Web site publishes articles on-line. Each article spans multiple Web pages and
-                     each page contains a link to the first page, the next page and the previous page of
-                     the article. If the references to the next page read "page 2", "page 3", "page 4"
-                     etcetera, the labels are not the same but they are consistent. Therefore, these references
-                     are not failures of this Success Criterion.
+                  <dd>あるウェブサイトが、オンライン記事を発行している。各記事は複数のウェブページにわたっており、各ページには記事の最初のページ、次のページ、そして前のページへのリンクがある。もし、次のページへのリンクのラベルが、「ページ 2」、「ページ 3」、「ページ 4」などとなっていたとしても、ラベルは同一ではないが、一貫しているといえる。そのため、こういったラベルは、この達成基準の失敗例ではない。
                   </dd>
                   
-                  <dt>Example 4: Icons with similar functions</dt>
+                  <dt>事例 4: 似たような機能のアイコン</dt>
                   
-                  <dd>An e-commerce application uses a printer icon that allows the user to print receipts
-                     and invoices. In one part of the application, the printer icon is labeled "Print receipt"
-                     and is used to print receipts, while in another part it is labeled "Print invoice"
-                     and is used to print invoices. The labeling is consistent ("Print x"), but the labels
-                     are different to reflect the different functions of the icons. Therefore, this example
-                     does not fail the Success Criterion.
+                  <dd>e コマース アプリケーションは、利用者が領収書又は請求書を印刷できること許可するプリンタのアイコンを使用している。アプリケーションのある部分では、プリンタのアイコンに「領収書を印刷」のラベルが付けられ、領収書を印刷するために使われており、さらに、他の部分に「請求書を印刷」のラベルが付けられ、請求書を印刷するために使われている。ラベルの付け方 (…を印刷) は一貫しているが、ラベルはアイコンの異なる機能を反映するために異なっている。そのため、この例はこの達成基準の不適合事例ではない。
                   </dd>
                   
-                  <dt>Example 5: Save icon</dt>
+                  <dt>事例 5: 保存アイコン</dt>
                   
-                  <dd>A common "save" icon is used through out the site where page save function is provided
-                     on multiple Web pages.
+                  <dd>共通の「保存」アイコンは、複数のウェブページにページ保存機能が提供されているサイトから使用される。
                   </dd>
                   
-                  <dt>Example 6: Icon and adjacent link to same destination</dt>
+                  <dt>事例 6: アイコンと隣接した同じ目的地へのリンク</dt>
                   
-                  <dd>An icon with alt text and a link are next to each other and go to the same location.
-                     The best practice would be to group them into one link as per 
-                     <a class="html" href="https://w3c.github.io/wcag/techniques/html/H2">H2: Combining adjacent image and text links for the same resource</a>. However if they are visually positioned one above the other but separated in the
-                     source, this may not be possible. To meet the Success Criterion, the link text for
-                     these two links need only be consistent, not identical. But best practice is to have
-                     identical text so that when users encounter the second one, it is clear that it goes
-                     to the same place as the first.
+                  <dd>代替テキストの記載されたアイコン及びテキストリンクが隣接して配置されており、かつリンク先は同じである。最善の対応策は、
+                     <a class="html" href="https://w3c.github.io/wcag/techniques/html/H2">H2: Combining adjacent image and text links for the same resource</a> による通り、一つのリンクにグループ化することである。しかし、もし視覚的には上下に配置されているが、ソースでは独立している場合、これは不可能であるかもしれない。この達成基準を満たすには、これら二つのリンクテキストが、同一ではなくとも、一貫していれば良い。しかし、最善の対応策は、利用者が二つ目のリンクに遭遇した時、一つ目のリンクと同じリンク先に行くことが明確であるよう、同一のリンクテキストにすることである。
                   </dd>
                   
-                  <dt>Example 7: Example of a Failure</dt>
+                  <dt>事例 7: 失敗例</dt>
                   
-                  <dd>A submit "search" button on one Web page and a "find" button on another Web page both
-                     have a field to enter a term and list topics in the Web site related to the term submitted.
-                     In this case, the buttons have the same functionality but are not labeled consistently.
+                  <dd>あるウェブページにある「検索」ボタンと他のページにある「探す」ボタンは、どちらも用語を入力するためのフィールドがあり、送信された用語に関連するウェブサイト内のトピックを一覧表示する。この場合、ボタンは同じ機能を持っているが、ラベルに一貫性がない。
                   </dd>
                   
                   
-                  <dt>Example 8: Failure primarily impacting assistive technology users</dt>
+                  <dt>事例 8: 主に支援技術の利用者に影響を与える失敗例</dt>
                   
-                  <dd>Two buttons with the same functionality visually have the same text, but have been
-                     given
-                     different <code>aria-label="..."</code> accessible names. For users of assistive technologies,
-                     these two buttons will be announced differently and inconsistently.
+                  <dd>同じ機能を持つ二つのボタンは、視覚的には同じテキストであるが、<code>aria-label="..."</code> により異なるアクセシブルな名前 (accessible name) が付けられている。支援技術の利用者の場合、これら二つのボタンは異なる方法で一貫性のない方法で通知される。
                   </dd>
                   
                </dl>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
+                  <h3>十分なテクニック</h3>
                   <ul>
                      
                      
@@ -245,37 +197,25 @@
                         <a class="general" href="https://w3c.github.io/wcag/techniques/general/G197">G197: Using labels, names, and text alternatives consistently for content that has the same
                            functionality</a>
                         									         
-                        <strong>AND</strong> following the 
-                        <a href="non-text-content#techniques" class="understanding">sufficient techniques for Success Criterion 1.1.1</a> and 
-                        <a href="name-role-value#techniques" class="understanding">sufficient techniques for Success Criterion 4.1.2</a> for providing labels, names, and text alternatives.
+                        、<strong>かつ</strong>、ラベル、名前 (name)、及び代替テキストを提供するための
+                        <a href="non-text-content#techniques" class="understanding">達成基準 1.1.1 を満たすことのできる十分なテクニック</a>並びに
+                        <a href="name-role-value#techniques" class="understanding">達成基準 4.1.2 を満たすことのできる十分なテクニック</a>。
                         
                      </li>
                      
                      
                   </ul>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
+                     <p class="note-title marker">注記</p>
                      <div>
                         
                         
-                        <p>Text alternatives that are "consistent" are not always "identical." For instance,
-                           you may have a graphical arrow at the bottom of a Web page that links to the next
-                           Web page. The text alternative may say "Go to page 4." Naturally, it would not be
-                           appropriate to repeat this exact text alternative on the next Web page. It would be
-                           more appropriate to say "Go to page 5". Although these text alternatives would not
-                           be identical, they would be consistent, and therefore would satisfy this Success Criterion.
+                        <p>「一貫した」テキストによる代替は、常に「同一」であるとは限らない。例えば、次のウェブページへリンクするウェブページの下部にあるグラフィカルな矢印があるとする。テキストによる代替は、「4 ページに移動」と言うかもしれない。当然ながら、次のウェブページでそのままこのテキストによる代替を繰り返すのは適切ではない。「5 ページに移動」と言う方がより適切であろう。これらのテキストによる代替は同一ではないが、一貫しており、この達成基準に適合しているといえる。
                            
                         </p>
                         
                         
-                        <p> A single non-text-content-item may be used to serve different functions. In such
-                           cases, different text alternatives are necessary and should be used. Examples can
-                           be commonly found with the use of icons such as check marks, cross marks, and traffic
-                           signs. Their functions can be different depending on the context of the Web page.
-                           A check mark icon may function as "approved", "completed", or "included", to name
-                           a few, depending on the situation. Using "check mark" as text alternative across all
-                           Web pages does not help users understand the function of the icon. Different text
-                           alternatives can be used when the same non-text content serves multiple functions.
+                        <p>単一の非テキストコンテンツのアイテムが、異なる機能のために使われることがある。そのような場合、異なるテキストによる代替が必要であり、用いられるべきである。チェックマーク、クロスマーク、そして交通標識などのアイコンを使用する際によく見られる例である。それらの機能は、ウェブページの文脈によって異なる可能性がある。チェックマークのアイコンは、その状況に応じて、「承認済」、「完了」、又は「あり」という意味で使われることがある。すべてのウェブページを通じてテキストによる代替を「チェックマーク」として用いても、利用者がそのアイコンの機能を理解することができない。同一の非テキストコンテンツが複数の機能を果たしている場合は、異なるテキストによる代替を用いることができる。
                            
                         </p>
                         
@@ -284,9 +224,8 @@
                   </div>
                </section>
                <section id="failure">
-                  <h3>Failures</h3>
-                  <p>The following are common mistakes that are considered failures of this Success Criterion
-                     by the WCAG Working Group.
+                  <h3>失敗例</h3>
+                  <p>以下に挙げるものは、WCAG ワーキンググループが達成基準の失敗例とみなした、よくある間違いである。
                   </p>
                   <ul>
                      
@@ -306,50 +245,37 @@
             <section id="key-terms">
                <details>
                   <summary>
-                     <h2>Key Terms</h2>
+                     <h2>重要な用語</h2>
                   </summary>
-                  <dt id="dfn-assistive-technology">assistive technology</dt>
+                  <dt id="dfn-assistive-technology">支援技術 (assistive technology)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">hardware and/or software that acts as a <a href="#dfn-user-agent">user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements
-                           of users with disabilities that go beyond those offered by mainstream user agents
+                        <p xmlns="http://www.w3.org/1999/xhtml">障害のある利用者の要件を満たすために、主流の<a href="#dfn-user-agent">ユーザエージェント</a>が提供する機能を超えた機能を提供するような、ユーザエージェントとして動作する、又は主流のユーザエージェントと共に動作するハードウェア及び／又はソフトウェア。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Functionality provided by assistive technology includes alternative presentations
-                              (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
-                              voice), additional navigation or orientation mechanisms, and content transformations
-                              (e.g., to make tables more accessible).
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術が提供する機能としては、代替の提示 (例: 合成音声や拡大表示したコンテンツ)、代替入力手法 (例: 音声認識)、付加的なナビゲーション又は位置確認のメカニズム、及びコンテンツ変換 (例: テーブルをよりアクセシブルにするもの) などを挙げることができる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Assistive technologies often communicate data and messages with mainstream user agents
-                              by using and monitoring APIs.
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術は、API を利用、監視することで、主流のユーザエージェントとデータやメッセージのやりとりをすることが多い。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The distinction between mainstream user agents and assistive technologies is not absolute.
-                              Many mainstream user agents provide some features to assist individuals with disabilities.
-                              The basic difference is that mainstream user agents target broad and diverse audiences
-                              that usually include people with and without disabilities. Assistive technologies
-                              target narrowly defined populations of users with specific disabilities. The assistance
-                              provided by an assistive technology is more specific and appropriate to the needs
-                              of its target users. The mainstream user agent may provide important functionality
-                              to assistive technologies like retrieving Web content from program objects or parsing
-                              markup into identifiable bundles.
+                           <p class="note-title marker">注記</p>
+                           <p>主流のユーザエージェントと支援技術との区別は、絶対的なものではない。多くの主流のユーザエージェントは、障害のある個人を支援する機能を提供している。基本的な差異は、主流のユーザエージェントが障害のある人もない人も含めて、広く多様な利用者を対象にしているのに対し、支援技術は、特定の障害のある利用者という、より狭く限られた人たちを対象にしているということである。支援技術により提供される支援は、対象とする利用者に特化した、よりニーズに適したものである。主流のユーザエージェントは、プログラムオブジェクトからのウェブコンテンツの抽出、マークアップの識別可能な構造への解釈といった、重要な機能を支援技術に対して提供する場合がある。
                               
                            </p>
                         </div>
@@ -357,8 +283,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Assistive technologies that are important in the context of this document include
-                              the following:
+                           <p>この文書の文脈において重要な支援技術としては、以下のものが挙げられる:
                               
                            </p>
                            
@@ -366,38 +291,30 @@
                            <ul>
                               
                               
-                              <li>screen magnifiers, and other visual reading assistants, which are used by people with
-                                 visual, perceptual and physical print disabilities to change text font, size, spacing,
-                                 color, synchronization with speech, etc. in order to improve the visual readability
-                                 of rendered text and images;
+                              <li>画面拡大ソフト及びその他の視覚的な表示に関する支援技術。視覚障害、知覚障害、及び読書困難などの障害のある人が、レンダリング後のテキスト及び画像の視覚的な読みやすさを改善するために、テキストのフォント、サイズ、間隔、色、音声との同期などを変更するのに使用している。
                                  
                               </li>
                               
                               
-                              <li>screen readers, which are used by people who are blind to read textual information
-                                 through synthesized speech or braille;
+                              <li>スクリーンリーダー。全盲の人がテキスト情報を合成音声あるいは点字で読み取るために使用している。
                                  
                               </li>
                               
                               
-                              <li>text-to-speech software, which is used by some people with cognitive, language, and
-                                 learning disabilities to convert text into synthetic speech;
+                              <li>音声変換ソフトウェア。認知障害、言語障害、及び学習障害のある人が、テキストを合成音声に変換するために使用している。
                                  
                               </li>
                               
                               
-                              <li>speech recognition software, which may be used by people who have some physical disabilities;</li>
+                              <li>音声認識ソフトウェア。何らかの身体障害のある利用者が使用することがある。</li>
                               
                               
-                              <li>alternative keyboards, which are used by people with certain physical disabilities
-                                 to simulate the keyboard (including alternate keyboards that use head pointers, single
-                                 switches, sip/puff and other special input devices.);
+                              <li>代替キーボード。特定の身体障害のある人がキーボード操作をシミュレートするのに使用している (ヘッドポインタ、シングルスイッチ、呼気・吸気スイッチ、及びその他の特別な入力デバイスを使った代替キーボードを含む)。
                                  
                               </li>
                               
                               
-                              <li>alternative pointing devices, which are used by people with certain physical disabilities
-                                 to simulate mouse pointing and button activations.
+                              <li>代替ポインティングデバイス。特定の身体障害のある人がマウスポインタとボタンの動きをシミュレートするのに使用している。
                                  
                               </li>
                               
@@ -408,20 +325,17 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-same-functionality">same functionality</dt>
+                  <dt id="dfn-same-functionality">同じ機能 (same functionality)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">same result when used</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">使うと同じ結果が得られること。</p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A submit "search" button on one Web page and a "find" button on another Web page may
-                              both have a field to enter a term and list topics in the Web site related to the term
-                              submitted. In this case, they would have the same functionality but would not be labeled
-                              consistently.
+                           <p>あるウェブページ上にある "search" ボタンと他のウェブページ上にある "find" ボタンは、どちらもキーワードを入力するテキストフィールドがあり、そのウェブサイトにある入力されたキーワードに関係のあるコンテンツをリスト表示する。この場合、同じ機能を有しながらも、ラベルは一貫していないことになる。
                               
                            </p>
                            
@@ -430,37 +344,29 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-set-of-web-pages">set of web pages</dt>
+                  <dt id="dfn-set-of-web-pages">ウェブページ一式 (set of Web pages)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">collection of <a href="#dfn-web-page">web pages</a> that share a common purpose and that are created by the same author, group or organization
+                        <p xmlns="http://www.w3.org/1999/xhtml">共通の目的を共有し、同じコンテンツ制作者、グループ、又は組織により制作された<a href="#dfn-web-page">ウェブページ</a>の集合。
                            
                         </p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Examples include:</p>
+                           <p>以下の例がある:</p>
                            
                            <ul>
                               
-                              <li>a publication which is split across multiple Web pages, where each page contains one
-                                 chapter or other significant section of the work. The publication is logically a single
-                                 contiguous unit, and contains navigation features that enable access to the full set
-                                 of pages.
+                              <li>複数のウェブページにまたがる発行物で、各ページには一つの章又はその他の重要なセクションが含まれる。その発行物は論理的には一つの連続した集合体であり、ページ一式全体へのアクセスを可能にするナビゲーション機能を有する。
                               </li>
                               
-                              <li>an e-commerce website shows products in a set of Web pages that all share the same
-                                 navigation and identification. However, when progressing to the checkout process,
-                                 the template changes; the navigation and other elements are removed, so the pages
-                                 in that process are functionally and visually different. The checkout pages are not
-                                 part of the set of product pages.
+                              <li>e コマースのウェブサイトで、同じナビゲーション及び識別を共有するウェブページ一式に、商品が表示されている。しかし、精算プロセスに進むと、テンプレートが変更される。ナビゲーション及び他の要素が削除され、それによって、そのプロセスのページは機能的にも視覚的にも異なったものとなる。その精算ページは商品のページ一式の一部ではない。
                               </li>
                               
-                              <li>a blog on a sub-domain (e.g. blog.example.com) which has a different navigation and
-                                 is authored by a distinct set of people from the pages on the primary domain (example.com).
+                              <li>サブドメイン (例えば blog.example.com) 上のブログで、プライマリドメイン (example.com) 上のページとは異なるナビゲーションを持ち、かつ異なる人々によって制作されている。
                               </li>
                               
                            </ul>
@@ -469,24 +375,24 @@
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Different language versions would be considered different sets of Web pages.</p>
+                           <p class="note-title marker">注記</p>
+                           <p>他言語版は、異なるウェブページ一式と見なされることもある。</p>
                         </div>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-user-agent">user agent</dt>
+                  <dt id="dfn-user-agent">ユーザエージェント (user agent)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">any software that retrieves and presents Web content for users</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ウェブコンテンツを取得して利用者に提示するあらゆるソフトウェア。</p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technology">assistive technologies</a> — that help in retrieving, rendering, and interacting with Web content.
+                           <p>ウェブコンテンツの取得、レンダリング及びインタラクションを支援する、ウェブブラウザ、メディアプレーヤ、プラグイン、及びその他のプログラム (<a href="#dfn-assistive-technology"> 支援技術</a>も含む)。
                               
                            </p>
                            
@@ -495,30 +401,27 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-web-page">web page</dt>
+                  <dt id="dfn-web-page">ウェブページ (web page)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">a non-embedded resource obtained from a single URI using HTTP plus any other resources
-                           that are used in the rendering or intended to be rendered together with it by a <a href="#dfn-user-agent">user agent</a>
+                        <p xmlns="http://www.w3.org/1999/xhtml">単一の URI から HTTP で得た埋め込まれていないリソースに加え、レンダリングに使われる、又は<a href="#dfn-user-agent">ユーザエージェント</a>がこのリソースと一緒にレンダリングすることを意図しているその他のあらゆるリソースを合わせたもの。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Although any "other resources" would be rendered together with the primary resource,
-                              they would not necessarily be rendered simultaneously with each other.
+                           <p class="note-title marker">注記</p>
+                           <p>どのような「その他のリソース」も主たるリソースと一緒にレンダリングされるであろうが、これらのリソースが同時にレンダリングされるとは限らない。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>For the purposes of conformance with these guidelines, a resource must be "non-embedded"
-                              within the scope of conformance to be considered a Web page.
+                           <p class="note-title marker">注記</p>
+                           <p>このガイドラインの適合範囲に含まれる対象となるウェブページとみなされるためには、リソースが「埋め込まれていない」リソースでなければならない。
                               
                            </p>
                         </div>
@@ -526,17 +429,14 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A Web resource including all embedded images and media.</p>
+                           <p>単体のウェブリソースであり、埋め込まれている画像及びメディアのすべてを含んだもの。</p>
                            
                         </aside>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A Web mail program built using Asynchronous JavaScript and XML (AJAX). The program
-                              lives entirely at http://example.com/mail, but includes an inbox, a contacts area
-                              and a calendar. Links or buttons are provided that cause the inbox, contacts, or calendar
-                              to display, but do not change the URI of the page as a whole.
+                           <p>Asynchronous JavaScript and XML (AJAX) を用いたウェブメールのプログラム。そのプログラム全体は http://example.com/mail に存在しているが、受信トレイ、連絡先、カレンダーがある。受信トレイ、連絡先、又はカレンダーを表示するリンク又はボタンが提供されているが、全体としてページの URI は変更されない。
                               
                            </p>
                            
@@ -545,8 +445,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A customizable portal site, where users can choose content to display from a set of
-                              different content modules.
+                           <p>カスタマイズ可能なポータルサイトで、利用者が様々なコンテンツモジュールのセットから表示させるコンテンツを選択できるようなもの。
                               
                            </p>
                            
@@ -555,12 +454,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>When you enter "http://shopping.example.com/" in your browser, you enter a movie-like
-                              interactive shopping environment where you visually move around in a store dragging
-                              products off of the shelves around you and into a visual shopping cart in front of
-                              you. Clicking on a product causes it to be demonstrated with a specification sheet
-                              floating alongside. This might be a single-page Web site or just one page within a
-                              Web site.
+                           <p>ブラウザで "http://shopping.example.com/" へ行くと、映画のようなインタラクティブなショッピング環境になる。そこでは、視覚的に店内を移動して、店内の棚から商品をドラッグして、目の前にある視覚的な買物カゴに商品を入れる。商品をクリックすると、同時に仕様書が浮き上がるように表示される。これは 1 ページだけのウェブサイトかもしれないし、ウェブサイトの中のほんの 1 ページなのかもしれない。
                               
                            </p>
                            
@@ -580,13 +474,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -601,11 +494,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -627,13 +522,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -642,7 +537,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -663,7 +558,9 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+      <noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
       </noscript>
    </body>
