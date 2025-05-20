@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  3.1.3: Unusual Words | WAI | W3C</title>
+      <title>解説書 達成基準 3.1.3: 一般的ではない用語 | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
-      <!-- 日本語訳されるまでの一時的なスクリプト -->
-      <script src="untranslated-note.js"></script>
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://waic.jp/translations/WCAG22/Understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -37,17 +35,17 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"><a href="readable">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Readable</a></li>
+                        </svg> ガイドライン: 読み取り可能</a></li>
                   <li class="nav__item"><a href="language-of-parts">
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-left-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
-                        </svg>Previous SC: Language of Parts</a></li>
-                  <li class="nav__item"><a href="abbreviations">Next SC: Abbreviations
+                        </svg>前: 一部分の言語</a></li>
+                  <li class="nav__item"><a href="abbreviations">次: 略語
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -58,133 +56,115 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#resources">Related Resources</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
-                     <li><a href="#key-terms">Key Terms</a></li>
+                     <li><a href="#brief">要約</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#benefits">利点</a></li>
+                     <li><a href="#examples">事例</a></li>
+                     <li><a href="#resources">関連リソース</a></li>
+                     <li><a href="#techniques">テクニック</a></li>
+                     <li><a href="#key-terms">重要な用語</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				SC 3.1.3:</span>Unusual Words (Level AAA)
+            <h1><span class="standalone-resource__type-of-guidance">解説書 
+                  				達成基準 3.1.3:</span>一般的ではない用語 (レベル AAA)
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>A <a href="#dfn-mechanism">mechanism</a> is available for identifying specific definitions of words or phrases <a href="#dfn-used-in-an-unusual-or-restricted-way">used in an unusual or restricted way</a>, including <a href="#dfn-idiom">idioms</a> and <a href="#dfn-jargon">jargon</a>.
+                  <p><a href="#dfn-idiom">慣用句</a>及び<a href="#dfn-jargon">業界用語</a>を含めて、<a href="#dfn-used-in-an-unusual-or-restricted-way">一般的ではない、又は限定された用法で使われている</a>単語、又は語句の、明確な定義を特定する<a href="#dfn-mechanism">メカニズム</a>が利用できる。
                      
                   </p>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   
-                  <dt>Goal</dt>
-                  <dd>Users can identify and learn what unusual words mean.</dd>
+                  <dt>目標</dt>
+                  <dd>利用者が一般的でない用語の意味を特定及び学習できるようにする。</dd>
                   
-                  <dt>What to do</dt>
-                  <dd>Provide definitions for technical jargon and unusual terms.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>業界用語又は一般的でない用語の定義を提供する。</dd>
                   
-                  <dt>Why it's important</dt>
-                  <dd>More people, especially those with cognitive disabilities, can understand the meaning
-                     of content.
+                  <dt>なぜそれが重要か</dt>
+                  <dd>より多くの人々、特に認知障害のある人々がコンテンツの意味を理解できるようになる。
                   </dd> 
                   
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>Certain disabilities make it difficult to understand nonliteral word usage and specialized
-                  words or usage. Certain disabilities make it difficult to understand figurative language
-                  or specialized usage. Providing such mechanisms is vital for these audiences. Specialized
-                  information intended for non-specialist readers is encouraged to satisfy this Success
-                  Criterion, even when claiming only Single-A or Double-A conformance. 
+               <h2>意図</h2>
+               <p>ある種の障害は、文字通りの意味ではない言葉の使い方及び、特殊な言葉又はその使い方の理解を困難にする。ある種の障害は、比喩的な言い回し又は特殊な使い方の理解を困難にする。当該達成基準のメカニズムを提供することは、これらの読者にとって不可欠である。専門家ではない読者を対象とした専門知識は、レベル A 又はレベル AA 適合のみを主張する場合でも、この達成基準に適合することを推奨する。
                   
                   
                   
                </p>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
-               <p>This Success Criterion may help people with cognitive, language and learning disabilities
-                  who:
+               <h2>利点</h2>
+               <p>この達成基準は、認知の障害、言語の障害、及び学習障害のある次のような利用者に役立つ:
                   
                </p>
                <ul>
                   
                   
-                  <li>have difficulty decoding words</li>
+                  <li>単語を読み解くことが困難である。</li>
                   
                   
-                  <li>have difficulty understanding words and phrases</li>
+                  <li>単語及び語句を理解することが困難である。</li>
                   
                   
-                  <li>have difficulty using context to aid understanding</li>
+                  <li>理解を助けるために前後の文脈を用いることが困難である。</li>
                   
                   
                </ul>
-               <p>It would also help people with visual disabilities who:</p>
+               <p>また、視覚障害のある次のような利用者にも役立つ:</p>
                <ul>
                   
                   
-                  <li>lose context when zoomed-in with a screen magnifier</li>
+                  <li>画面拡大ソフトで拡大していて前後の文脈を見失っている。</li>
                   
                   
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>事例</h2>
                <dl>
                   
-                  <dt>Text that includes a definition for a word used in an unusual way</dt>
+                  <dt>一般的ではない使われ方をしている単語の定義があるテキスト</dt>
                   
-                  <dd>Organize the list or "cascade" of dictionaries and other resources so that the definition
-                     search will find the intended definitions instead of displaying definitions from other
-                     sources in the "cascade." (The "cascade" lists the dictionaries and other reference
-                     materials in the order most likely to bring up the right definition. This controls
-                     the order to follow when searching for definitions.)
+                  <dd>定義検索で意図した定義が見つかるようにするために、辞書及び他の情報源のリスト又は「カスケード」を整理して、「カスケード」内の他の情報源からの定義は表示しないようにする。(ここでいう「カスケード」とは、辞書及びその他の参考文献を、正しい定義が最も見つかりやすい順序でリストアップしたものである。これにより、定義を検索したときの順序を制御している。)
                   </dd>
                   
-                  <dt>Including definitions in the glossary</dt>
+                  <dt>用語集に定義を掲載する</dt>
                   
-                  <dd>WCAG 2.0 uses the word "text" in a specific way. Thus, when the word "text" is used
-                     within WCAG 2.0 it is linked to the definition of "text" provided in a glossary within
-                     the same Web page.
+                  <dd>WCAG 2.0 では、特別な用法で単語「テキスト」を用いている。したがって、WCAG 2.0 で単語「テキスト」が用いられる場合、同じウェブページにある用語集で提供されている「テキスト」の定義へリンクしている。
                   </dd>
                   
-                  <dt>The specific definition of a word is provided at the bottom of the page</dt>
+                  <dt>ページ末尾で単語の具体的な定義を提供する</dt>
                   
-                  <dd>The internal link from the word to the corresponding definition is also provided within
-                     the page.
+                  <dd>単語から対応する定義への内部リンクもページ内に提供されている。
                   </dd>
                   
                </dl>
             </section>
             <section id="resources">
-               <h2>Related Resources</h2>
-               <p>Resources are for information purposes only, no endorsement implied.</p>
+               <h2>関連リソース</h2>
+               <p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p>
                <div class="note">
-                  <p class="note-title marker">Note</p>
+                  <p class="note-title marker">注記</p>
                   <div>
                      
                      
-                     <p>The inclusion of a product or vendor name in the list below does not constitute an
-                        endorsement by the Web Content Accessibility Guidelines Working Group or the Web Accessibility
-                        Initiative of the World Wide Web Consortium. This list is provided simply for convenience
-                        and to give users an idea of what resources may be available
+                     <p>次のリストにある製品名又はベンダー企業名は、WCAG ワーキンググループ又は W3C の WAI による推薦を意味するものではない。このリストは、単に便宜を提供するだけのものであり、どのようなリソースが参照可能なのかを知らせるだけのものである。
                         
                      </p>
                      
@@ -194,24 +174,22 @@
                <ul>
                   
                   
-                  <li>Free bilingual dictionaries for a number of languages are available from the 
-                     <a href="http://www.freedict.org/">Freedict.org Web site</a>. The dictionaries are of uneven quality and size as noted on the site. Retrieved
-                     9 April 2005.
+                  <li>無料で利用できる多くの原語の辞書が、
+                     <a href="http://www.freedict.org/">Freedict.orgのウェブサイト (英語) </a> から入手可能である。同サイトに明記されているが、これらの辞書の品質と規模は辞書によってまちまちである。この情報は 2005 年 4 月 9 日現在のものである。
                      
                   </li>
                   
                   
                   <li> 
                      
-                     <a href="http://www.stars21.com/index.html?lang=en&amp;pname=african">The WorldStar Free Dictionaries, Translators and Search Engines</a> site provides access to free on-line dictionaries and search engines in many languages.
-                     Retrieved 18 November 2005.
+                     <a href="http://www.stars21.com/index.html?lang=en&amp;pname=african">The WorldStar Free Dictionaries, Translators and Search Engines</a>のサイトでは、無料で利用できる多くの原語のオンライン辞書やサーチエンジンが提供されている。この情報は 2005 年 11 月 18 日現在のものである。
                      
                   </li>
                   
                   
-                  <li>More dictionaries are at 
-                     <a href="http://www.yourdictionary.com">your dictionary</a>, 
-                     <a href="http://www.freelang.com">freelang.com</a> (in English, Spanish and French!) and many other places.
+                  <li>他にも、
+                     <a href="http://www.yourdictionary.com">your dictionary</a>、
+                     <a href="http://www.freelang.com">freelang.com</a> (英語、スペイン語、フランス語) など多くのサイトで辞書が提供されている。
                      
                   </li>
                   
@@ -219,22 +197,17 @@
                </ul>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
-                  <p>Select the situation below that matches your content. Each situation includes techniques
-                     or combinations of techniques that are known and documented to be sufficient for that
-                     situation. 
+                  <h3>十分なテクニック</h3>
+                  <p>そのコンテンツに合致する状況を以下から選択すること。それぞれの状況には、WCAG ワーキンググループがその状況において十分であると判断する、番号付のテクニック (又は、テクニックの組み合わせ) がある。
                   </p>
                   <section class="situation" id="unusual-words-situation-0">
                      
                      
-                     <h4>Situation A: If the word or phrase has a unique meaning within the Web page:</h4>
+                     <h4>状況 A: 単語又は語句にそのウェブページ特有の意味がある場合:</h4>
                      
                      
                      <ul>
@@ -245,8 +218,7 @@
                            
                            <p> 
                               
-                              <a class="general" href="https://w3c.github.io/wcag/techniques/general/G101">G101: Providing the definition of a word or phrase used in an unusual or restricted way</a> for the first occurrence of the word or phrase in a Web page using one of the following
-                              techniques:
+                              ウェブページ上で単語や語句の初出時に、以下のいずれかの方法で <a class="general" href="https://w3c.github.io/wcag/techniques/general/G101">G101: Providing the definition of a word or phrase used in an unusual or restricted way</a>:
                               
                               
                            </p>
@@ -322,8 +294,7 @@
                            
                            <p> 
                               
-                              <a class="general" href="https://w3c.github.io/wcag/techniques/general/G101">G101: Providing the definition of a word or phrase used in an unusual or restricted way</a> for each occurrence of the word or phrase in a Web page using one of the following
-                              techniques:
+                              以下のいずれかの方法を用いて、その単語又は語句がウェブページ上に出現する度に <a class="general" href="https://w3c.github.io/wcag/techniques/general/G101">G101: Providing the definition of a word or phrase used in an unusual or restricted way</a>:
                               
                               
                            </p>
@@ -389,7 +360,7 @@
                   <section class="situation" id="unusual-words-situation-1">
                      
                      
-                     <h4>Situation B: If the word or phrase means different things within the same Web page:</h4>
+                     <h4>状況 B: 単語又は語句の意味が、同じウェブページ内で異なる場合:</h4>
                      
                      
                      <ul>
@@ -400,8 +371,7 @@
                            
                            <p> 
                               
-                              <a class="general" href="https://w3c.github.io/wcag/techniques/general/G101">G101: Providing the definition of a word or phrase used in an unusual or restricted way</a> for each occurrence of the word or phrase in a Web page using one of the following
-                              techniques:
+                              以下のいずれかの方法を用いて、その単語又は語句がウェブページ上に出現する度に <a class="general" href="https://w3c.github.io/wcag/techniques/general/G101">G101: Providing the definition of a word or phrase used in an unusual or restricted way</a>:
                               
                               
                            </p>
@@ -481,50 +451,37 @@
             <section id="key-terms">
                <details>
                   <summary>
-                     <h2>Key Terms</h2>
+                     <h2>重要な用語</h2>
                   </summary>
-                  <dt id="dfn-assistive-technology">assistive technology</dt>
+                  <dt id="dfn-assistive-technology">支援技術 (assistive technology)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">hardware and/or software that acts as a <a href="#dfn-user-agent">user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements
-                           of users with disabilities that go beyond those offered by mainstream user agents
+                        <p xmlns="http://www.w3.org/1999/xhtml">障害のある利用者の要件を満たすために、主流の<a href="#dfn-user-agent">ユーザエージェント</a>が提供する機能を超えた機能を提供するような、ユーザエージェントとして動作する、又は主流のユーザエージェントと共に動作するハードウェア及び／又はソフトウェア。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Functionality provided by assistive technology includes alternative presentations
-                              (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
-                              voice), additional navigation or orientation mechanisms, and content transformations
-                              (e.g., to make tables more accessible).
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術が提供する機能としては、代替の提示 (例: 合成音声や拡大表示したコンテンツ)、代替入力手法 (例: 音声認識)、付加的なナビゲーション又は位置確認のメカニズム、及びコンテンツ変換 (例: テーブルをよりアクセシブルにするもの) などを挙げることができる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Assistive technologies often communicate data and messages with mainstream user agents
-                              by using and monitoring APIs.
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術は、API を利用、監視することで、主流のユーザエージェントとデータやメッセージのやりとりをすることが多い。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The distinction between mainstream user agents and assistive technologies is not absolute.
-                              Many mainstream user agents provide some features to assist individuals with disabilities.
-                              The basic difference is that mainstream user agents target broad and diverse audiences
-                              that usually include people with and without disabilities. Assistive technologies
-                              target narrowly defined populations of users with specific disabilities. The assistance
-                              provided by an assistive technology is more specific and appropriate to the needs
-                              of its target users. The mainstream user agent may provide important functionality
-                              to assistive technologies like retrieving Web content from program objects or parsing
-                              markup into identifiable bundles.
+                           <p class="note-title marker">注記</p>
+                           <p>主流のユーザエージェントと支援技術との区別は、絶対的なものではない。多くの主流のユーザエージェントは、障害のある個人を支援する機能を提供している。基本的な差異は、主流のユーザエージェントが障害のある人もない人も含めて、広く多様な利用者を対象にしているのに対し、支援技術は、特定の障害のある利用者という、より狭く限られた人たちを対象にしているということである。支援技術により提供される支援は、対象とする利用者に特化した、よりニーズに適したものである。主流のユーザエージェントは、プログラムオブジェクトからのウェブコンテンツの抽出、マークアップの識別可能な構造への解釈といった、重要な機能を支援技術に対して提供する場合がある。
                               
                            </p>
                         </div>
@@ -532,8 +489,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Assistive technologies that are important in the context of this document include
-                              the following:
+                           <p>この文書の文脈において重要な支援技術としては、以下のものが挙げられる:
                               
                            </p>
                            
@@ -541,38 +497,30 @@
                            <ul>
                               
                               
-                              <li>screen magnifiers, and other visual reading assistants, which are used by people with
-                                 visual, perceptual and physical print disabilities to change text font, size, spacing,
-                                 color, synchronization with speech, etc. in order to improve the visual readability
-                                 of rendered text and images;
+                              <li>画面拡大ソフト及びその他の視覚的な表示に関する支援技術。視覚障害、知覚障害、及び読書困難などの障害のある人が、レンダリング後のテキスト及び画像の視覚的な読みやすさを改善するために、テキストのフォント、サイズ、間隔、色、音声との同期などを変更するのに使用している。
                                  
                               </li>
                               
                               
-                              <li>screen readers, which are used by people who are blind to read textual information
-                                 through synthesized speech or braille;
+                              <li>画面拡大ソフト及びその他の視覚的な表示に関する支援技術。視覚障害、知覚障害、及び読書困難などの障害のある人が、レンダリング後のテキスト及び画像の視覚的な読みやすさを改善するために、テキストのフォント、サイズ、間隔、色、音声との同期などを変更するのに使用している。
                                  
                               </li>
                               
                               
-                              <li>text-to-speech software, which is used by some people with cognitive, language, and
-                                 learning disabilities to convert text into synthetic speech;
+                              <li>音声変換ソフトウェア。認知障害、言語障害、及び学習障害のある人が、テキストを合成音声に変換するために使用している。
                                  
                               </li>
                               
                               
-                              <li>speech recognition software, which may be used by people who have some physical disabilities;</li>
+                              <li>音声認識ソフトウェア。何らかの身体障害のある利用者が使用することがある。</li>
                               
                               
-                              <li>alternative keyboards, which are used by people with certain physical disabilities
-                                 to simulate the keyboard (including alternate keyboards that use head pointers, single
-                                 switches, sip/puff and other special input devices.);
+                              <li>代替キーボード。特定の身体障害のある人がキーボード操作をシミュレートするのに使用している (ヘッドポインタ、シングルスイッチ、呼気・吸気スイッチ、及びその他の特別な入力デバイスを使った代替キーボードを含む)。
                                  
                               </li>
                               
                               
-                              <li>alternative pointing devices, which are used by people with certain physical disabilities
-                                 to simulate mouse pointing and button activations.
+                              <li>代替ポインティングデバイス。特定の身体障害のある人がマウスポインタとボタンの動きをシミュレートするのに使用している。
                                  
                               </li>
                               
@@ -583,31 +531,29 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-conformance">conformance</dt>
+                  <dt id="dfn-conformance">適合 (conformance)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">satisfying all the requirements of a given standard, guideline or specification</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">与えられた規格、ガイドライン、又は仕様のすべての要件を満たすこと。</p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-idiom">idiom</dt>
+                  <dt id="dfn-idiom">慣用句 (idiom)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">phrase whose meaning cannot be deduced from the meaning of the individual words and
-                           the specific words cannot be changed without losing the meaning
+                        <p xmlns="http://www.w3.org/1999/xhtml">個々の単語の意味からはその意味を推測できず、特定の単語を変えると意味が通じなくなる言い回し。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Idioms cannot be translated directly, word for word, without losing their (cultural
-                              or language-dependent) meaning.
+                           <p class="note-title marker">注記</p>
+                           <p>慣用句は、その (文化的又は言語依存の) 意味を失わせることなく、直接に、逐語的に翻訳することはできない。
                               
                            </p>
                         </div>
@@ -615,8 +561,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>In English, "spilling the beans" means "revealing a secret." However, "knocking over
-                              the beans" or "spilling the vegetables" does not mean the same thing.
+                           <p>英語では、"spilling the beans" (豆をこぼす) は「秘密を漏らす」という意味である。しかし、"knocking over the beans" (豆をひっくり返す) 又は "spilling the vegetables" (野菜をこぼす) は同じ意味にはならない。
                               
                            </p>
                            
@@ -625,8 +570,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>In Japanese, the phrase "<span lang="ja">さじを投げる</span>" literally translates into "he throws a spoon," but it means that there is nothing
-                              he can do and finally he gives up.
+                           <p>日本語では、「<span lang="ja">さじを投げる</span>という言い回しは、逐語訳では "he throws a spoon"となるが、「どうすることもできずに諦める」という意味である。
                               
                            </p>
                            
@@ -635,8 +579,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>In Dutch, "<span lang="nl">Hij ging met de kippen op stok</span>" literally translates into "He went to roost with the chickens," but it means that
-                              he went to bed early.
+                           <p>オランダ語では、"<span lang="nl">Hij ging met de kippen op stok</span>" は、逐語訳すれば「彼はニワトリとねぐらについた」となるが、「彼は早く寝た」という意味である。
                               
                            </p>
                            
@@ -645,63 +588,61 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-jargon">jargon</dt>
+                  <dt id="dfn-jargon">業界用語 (jargon)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">words used in a particular way by people in a particular field</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">特定の分野の人々が特定の用法で用いる単語。</p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>The word StickyKeys is jargon from the field of assistive technology/accessibility.</p>
+                           <p>固定キーという用語は、支援技術やアクセシビリティの分野における業界用語である。</p>
                            
                         </aside>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-mechanism">mechanism</dt>
+                  <dt id="dfn-mechanism">メカニズム (mechanism)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
                         <p xmlns="http://www.w3.org/1999/xhtml">
-                           <a href="#dfn-process">process</a> or technique for achieving a result
+                           結果を得るための<a href="#dfn-process">プロセス</a>又は手法。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The mechanism may be explicitly provided in the content, or may be <a href="#dfn-relied-upon">relied upon</a> to be provided by either the platform or by <a href="#dfn-user-agent">user agents</a>, including <a href="#dfn-assistive-technology">assistive technologies</a>.
+                           <p class="note-title marker">注記</p>
+                           <p>メカニズムは、コンテンツ内で明示的に提供されることもあれば、プラットフォーム又は<a href="#dfn-assistive-technology">支援技術</a>を含む<a href="#dfn-user-agent">ユーザエージェント</a>で提供されるものに<a href="#dfn-relied-upon">依存</a>することもある。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The mechanism needs to meet all success criteria for the conformance level claimed.</p>
+                           <p class="note-title marker">注記</p>
+                           <p>メカニズムは、宣言する適合レベルのすべての達成基準を満たしている必要がある。</p>
                         </div>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-process">process</dt>
+                  <dt id="dfn-process">プロセス (process)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">series of user actions where each action is required in order to complete an activity</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ある活動を完了させるために必要な利用者の一連の動作。</p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Successful use of a series of Web pages on a shopping site requires users to view
-                              alternative products, prices and offers, select products, submit an order, provide
-                              shipping information and provide payment information.
+                           <p>ショッピングサイト上の一連のウェブページで目的を果たすためには、利用者が選択肢となりうる製品、価格及び内容を閲覧した後、製品を選択して発注し、配送先情報及び支払情報を提供する必要がある。
                               
                            </p>
                            
@@ -710,8 +651,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>An account registration page requires successful completion of a <a href="https://www.w3.org/TR/turingtest/">Turing test</a> before
-                              the registration form can be accessed.
+                           <p>アカウント登録ページでは、登録フォームにアクセスする前に<a href="https://www.w3.org/TR/turingtest/">チューリングテスト</a>に成功する必要がある。
                               
                            </p>
                            
@@ -720,44 +660,40 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-relied-upon">relied upon</dt>
+                  <dt id="dfn-relied-upon">依存されている (relied upon)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">the content would not <a href="#dfn-conformance">conform</a> if that <a href="#dfn-technology">technology</a> is turned off or is not supported
+                        <p xmlns="http://www.w3.org/1999/xhtml">その<a href="#dfn-technology">技術</a>が無効になっている場合、又はサポートされていない場合に、コンテンツが<a href="#dfn-conformance">適合</a>できないこと。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-technology">technology</dt>
+                  <dt id="dfn-technology">技術 (technology)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
                         <p xmlns="http://www.w3.org/1999/xhtml">
-                           <a href="#dfn-mechanism">mechanism</a> for encoding instructions to be rendered, played or executed by <a href="#dfn-user-agent">user agents</a>
+                           <a href="#dfn-user-agent">ユーザエージェント</a>がどのようにレンダリング、再生、又は実行するかを符号化する<a href="#dfn-mechanism">メカニズム</a>。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>As used in these guidelines "Web Technology" and the word "technology" (when used
-                              alone) both refer to Web Content Technologies.
+                           <p class="note-title marker">注記</p>
+                           <p>このガイドラインで用いられている「ウェブ技術」及び (単独で用いられている) 「技術」という用語は、どちらもウェブコンテンツ技術を指す。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Web content technologies may include markup languages, data formats, or programming
-                              languages that authors may use alone or in combination to create end-user experiences
-                              that range from static Web pages to synchronized media presentations to dynamic Web
-                              applications.
+                           <p class="note-title marker">注記</p>
+                           <p>ウェブコンテンツ技術には、マークアップ言語、データ形式、及びプログラム言語などがあり、これらをコンテンツ制作者が単独で、又は組み合わせて用いることによって、静的なウェブページや同期したメディアによる提示、さらには動的なウェブアプリケーションに至るまでの様々なエンドユーザ体験を作ることができる。
                               
                            </p>
                         </div>
@@ -765,8 +701,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Some common examples of Web content technologies include HTML, CSS, SVG, PNG, PDF,
-                              Flash, and JavaScript.
+                           <p>ウェブコンテンツ技術のよくある事例としては、HTML、CSS、SVG、PNG、PDF、Flash、 JavaScript などがある。
                               
                            </p>
                            
@@ -775,23 +710,19 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-used-in-an-unusual-or-restricted-way">used in an unusual or restricted way</dt>
+                  <dt id="dfn-used-in-an-unusual-or-restricted-way">一般的ではない、又は限定された用法で使われている (used in an unusual or restricted way)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">words used in such a way that requires users to know exactly which definition to apply
-                           in order to understand the content correctly
+                        <p xmlns="http://www.w3.org/1999/xhtml">そのコンテンツを正しく理解するために、どの定義で使われているのかを利用者が正確に知る必要があるような使われ方をしている言葉。
                            
                         </p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>The term "gig" means something different if it occurs in a discussion of music concerts
-                              than it does in article about computer hard drive space, but the appropriate definition
-                              can be determined from context. By contrast, the word "text" is used in a very specific
-                              way in WCAG 2.1, so a definition is supplied in the glossary.
+                           <p>"gig" という用語は、音楽コンサートの話の中で使われている場合、コンピュータのハードディスクドライブの容量に関する記事とは違うことを意味するが、適切な定義は文脈から判断できる。それに対して、「テキスト」という言葉は、WCAG 2.1 では非常に特定された意味で使われており、その定義が用語集で提供されている。
                               
                            </p>
                            
@@ -800,17 +731,17 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-user-agent">user agent</dt>
+                  <dt id="dfn-user-agent">ユーザエージェント (user agent)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">any software that retrieves and presents Web content for users</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ウェブコンテンツを取得して利用者に提示するあらゆるソフトウェア。</p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technology">assistive technologies</a> — that help in retrieving, rendering, and interacting with Web content.
+                           <p>ウェブコンテンツの取得、レンダリング及びインタラクションを支援する、ウェブブラウザ、メディアプレーヤ、プラグイン、及びその他のプログラム (<a href="#dfn-assistive-technology"> 支援技術</a>も含む)。
                               
                            </p>
                            
@@ -830,13 +761,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -851,11 +781,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -877,13 +809,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -892,7 +824,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -913,7 +845,9 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+      <noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
       </noscript>
    </body>
