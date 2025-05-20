@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  3.1.2: Language of Parts | WAI | W3C</title>
+      <title>解説書 達成基準 3.1.2: 一部分の言語 | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
-      <!-- 日本語訳されるまでの一時的なスクリプト -->
-      <script src="untranslated-note.js"></script>
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://waic.jp/translations/WCAG22/Understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -37,17 +35,17 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"><a href="readable">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Readable</a></li>
+                        </svg> ガイドライン: 読み取り可能</a></li>
                   <li class="nav__item"><a href="language-of-page">
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-left-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
-                        </svg>Previous SC: Language of Page</a></li>
-                  <li class="nav__item"><a href="unusual-words">Next SC: Unusual Words
+                        </svg>前: ページの言語</a></li>
+                  <li class="nav__item"><a href="unusual-words">次: 一般的ではない用語
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -58,131 +56,90 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#resources">Related Resources</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
-                     <li><a href="#key-terms">Key Terms</a></li>
-                     <li><a href="#test-rules">Test Rules</a></li>
+                     <li><a href="#brief">要約</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#benefits">利点</a></li>
+                     <li><a href="#examples">事例</a></li>
+                     <li><a href="#resources">関連リソース</a></li>
+                     <li><a href="#techniques">テクニック</a></li>
+                     <li><a href="#key-terms">重要な用語</a></li>
+                     <li><a href="#test-rules">テストルール</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				SC 3.1.2:</span>Language of Parts (Level AA)
+            <h1><span class="standalone-resource__type-of-guidance">解説書 
+                  				達成基準 3.1.2:</span>一部分の言語 (レベル AA)
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
-                  <p>The <a href="#dfn-human-language">human language</a> of each passage or phrase in the content can be <a href="#dfn-programmatically-determined">programmatically determined</a> except for proper names, technical terms, words of indeterminate language, and words
-                     or phrases that have become part of the vernacular of the immediately surrounding
-                     text.
+                  <p>コンテンツの一節、又は語句それぞれの<a href="#dfn-human-language">自然言語</a>がどの言語であるか、<a href="#dfn-programmatically-determined">プログラムによる解釈が可能</a>である。ただし、固有名詞、技術用語、言語が不明な語句、及びすぐ前後にあるテキストの言語の一部になっている単語又は語句は除く。
                      
                   </p>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   
-                  <dt>Goal</dt>
-                  <dd>Assistive technology can identify the languages used within a page.</dd>
+                  <dt>目標</dt>
+                  <dd>支援技術は、ページ内で使用されている言語を特定できる。</dd>
                   
-                  <dt>What to do</dt>
-                  <dd>Indicate when words are in a different language.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>単語が異なる言語で書かれているとき、そのことを示す。</dd>
                   
-                  <dt>Why it's important</dt>
-                  <dd>People using assistive technology get information in the correct language.</dd> 
+                  <dt>なぜそれが重要か</dt>
+                  <dd>支援技術を使用するユーザーは、正しい言語で情報を取得できる。</dd> 
                   
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The intent of this Success Criterion is to ensure that user agents can correctly present
-                  phrases, passages, and in some cases words written in multiple languages. This makes
-                  it possible for user agents and
-                  assistive technologies to present content according to the  presentation and pronunciation
-                  rules for that language. This applies to graphical browsers as well as screen readers,
-                  braille displays, and other voice browsers.
+               <h2>意図</h2>
+               <p>この達成基準の目的は、ユーザエージェントが複数の言語で書かれた句、引用部分、場合によっては単語を正しく提示できることを保証することである。これにより、その言語の提示規則および発音規則に従ってコンテンツをユーザエージェントおよび支援技術に提示することが可能になる。これは、スクリーンリーダー、点字ディスプレイ及びその他の音声ブラウザだけでなくグラフィカルブラウザにも適用される。
                   
                </p>
-               <p>Both assistive technologies and conventional user agents can render text more accurately
-                  if the language of each passage of text is identified. Screen readers can use the
-                  pronunciation rules of the language of the text. Visual browsers can display characters
-                  and scripts in appropriate ways. This is especially important when switching between
-                  languages that read from left to right and languages that read from right to left,
-                  or when text is rendered in a language that uses a different alphabet. Users with
-                  disabilities who know all the languages used in the Web page will be better able to
-                  understand the content when each passage is rendered appropriately. 
+               <p>支援技術及び従来のユーザエージェントはともに、テキストの各節の言語が識別される場合、テキストをより正確にレンダリングできる。スクリーンリーダーは、テキストの言語の発音規則を用いることができる。ビジュアルブラウザは、適切な方法で文字及び書体を表示することができる。これは、左から右に読む言語と右から左に読む言語を切り替えるとき、又はテキストが異なるアルファベットを使用する言語でレンダリングされるときに特に重要である。ウェブページで用いられているすべての言語を理解している障害のある利用者は、各節が適切にレンダリングされたとき、コンテンツをよりよく理解できるようになる。
                   
                </p>
-               <p>When no other language has been specified for a phrase or passage of text, its human
-                  language is the default human language of the Web page (see <a href="https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html">Success Criterion 3.1.1</a>). So the human language of all content in single language documents can be programmatically
-                  determined. 
+               <p>テキストの語句又は節に何も言語が指定されていない場合、そのテキストの自然言語は、ウェブページのデフォルトの自然言語である (<a href="language-of-page.html">達成基準 3.1.1</a>を参照)。そのため、単一言語の文書にあるすべてのコンテンツの言語は、プログラムによる解釈が可能となる。
                   
                </p>
-               <p>Individual words or phrases in one language can become part of another language. For
-                  example, "rendezvous" is a French word that has been adopted in English, appears in
-                  English dictionaries, and is properly pronounced by English screen readers. Hence
-                  a passage of English text may contain the word "rendezvous" without specifying that
-                  its human language is French and still satisfy this Success Criterion. Frequently,
-                  when the human language of text appears to be changing for a single word, that word
-                  has become part of the language of the surrounding text. Because this is so common
-                  in some languages, single words should be considered part of the language of the surrounding
-                  text unless it is clear that a change in language was intended. If there is doubt
-                  whether a change in language is intended, consider whether the word would be pronounced
-                  the same (except for accent or intonation) in the language of the immediately surrounding
-                  text.
+               <p>ある言語の個々の単語又は語句が、その他の言語の一部になることがある。例えば、"rendezvous" は、英語に採用され、英語の辞書に現れ、英語のスクリーンリーダーによって適切に発音される、フランス語の単語である。したがって、英語のテキストの一節に、その自然言語がフランス語であることを示すことなく "rendezvous" という単語が含まれていても、この達成基準を満たしていることになる。しばしば、テキストの自然言語が一つの単語に対して変化するような時、その単語は周囲にテキストの言語の一部となっていることがある。これは、一部の言語では一般的なことなので、言語を意図的に変えていることが明白でない限り、その単語は周囲のテキストの言語の一部とみなすべきである。言語を意図的に変えているかどうかが疑わしい場合は、単語が、隣接する周囲のテキストの言語で同じように発音されるかどうかを考えてみるとよいだろう (ただし、アクセントやイントネーションは除く)。
                   
                </p>
-               <p>Most professions require frequent use of technical terms which may originate from
-                  a foreign language. Such terms are usually not translated to all languages. The universal
-                  nature of technical terms also facilitate communication between professionals.
+               <p>ほとんどの専門的な職業では、外国語からきた技術用語を頻繁に使うことを必要とする。そのような用語は、通常すべての言語に翻訳されていない。技術用語の広く共通な性質は、専門家の間でのコミュニケーションも促進する。
                   
                </p>
-               <p>Some common examples of technical terms include: Homo sapiens, Alpha Centauri, hertz,
-                  and habeas corpus.
+               <p>技術用語のよくある例としては、次のようなものがある: ホモ サピエンス (Homo sapiens)、アルファケンタウリ (Alpha Centauri)、ヘルツ (hertz)、ヘイビアス コーパス (habeas corpus) など。
                   
                </p>
-               <p>Identifying changes in language is important for a number of reasons:</p>
+               <p>言語の変化を示すことは、多くの理由から重要である:</p>
                <ul>
                   
                   
-                  <li>It allows braille translation software to follow changes in language, e.g., substitute
-                     control codes for accented characters, and insert control codes necessary to prevent
-                     erroneous creation of Grade 2 braille contractions.
+                  <li>点字翻訳ソフトウェアが言語の変化に追従すること、例えば、アクセント記号付き文字の代わりに制御コードを使用すること、及び 2 級点字の略字の誤った作成を防ぐために必要な制御コードを挿入することを可能にする。
+                     <div class="note"><div role="heading" class="note-title marker" aria-level="3">訳注</div><p>2 級点字はグレード 2 とも呼ばれる。これは、英語の点字において、使用頻度の高い単語又は単語の一部を短縮した特別な点字を用いるものである。詳細については、<a href="https://ja.wikipedia.org/wiki/%E8%8B%B1%E8%AA%9E%E3%81%AE%E7%82%B9%E5%AD%97">英語の点字</a>及び<a href="http://www.dinf.ne.jp/doc/japanese/resource/blind/eigohyoki_rewrite.html">日本における英語点字の表記について</a>を参照のこと。</p></div>
+                  </li>
+                  
+                  
+                  <li>複数の言語をサポートしている合成音声は、適切な発音で適切なアクセントのテキストを話すことができるようになる。言語の変化が示されていない場合、合成音声は、動作するデフォルトの言語として単語を読み上げるのに最善を尽くそうとする。したがって、自動車を表すフランス語の単語 "<span lang="fr">voiture</span>" は、デフォルトの言語として英語を用いている合成音声では "voyture" と発音されるだろう。
                      
                   </li>
                   
                   
-                  <li>Speech synthesizers that support multiple languages will be able to speak the text
-                     in the appropriate accent with proper pronunciation. If changes are not marked, the
-                     synthesizer will try its best to speak the words in the  default language it works
-                     in. Thus, the French word for car, "<span lang="fr">voiture</span>" would be pronounced "voyture" by a speech
-                     synthesizer that uses English as its default language. 
+                  <li>言語の変更を示すことは、将来の技術開発に役立つことがあり、例えば、言語の間を行き来して翻訳をすることができない利用者は、機械翻訳を使ってよく知らない言語の翻訳に機械を用いることができるだろう。
                      
                   </li>
                   
                   
-                  <li>Marking changes in language can benefit future developments in technology, for example
-                     users who are unable to translate between languages themselves will be able to use
-                     machines to translate unfamiliar languages.  
-                     
-                  </li>
-                  
-                  
-                  <li>Marking changes in language can also assist user agents in providing definitions using
-                     a dictionary. 
+                  <li>言語の変更を示すことは、辞書を用いて定義を提供するユーザエージェントを支援することもできるだろう。
                      
                   </li>
                   
@@ -190,32 +147,27 @@
                </ul>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
-               <p>This Success Criterion helps:</p>
+               <h2>利点</h2>
+               <p>この達成基準は、次のような利用者にメリットがある:</p>
                <ul>
                   
-                  <li>people who use screen readers or other technologies that convert text into synthetic
-                     speech;
+                  <li>スクリーンリーダー又はテキストを合成音声に変換するその他の技術を使用している利用者。
                      
                   </li>
                   
                   
-                  <li>people who find it difficult to read written material with fluency and accuracy, such
-                     as recognizing characters and alphabets, decoding words, and understanding words and
-                     phrases;
+                  <li>例えば、文字及びアルファベットを認識したり、単語を読み取ったりすることのように、流暢かつ正確に書かれたものを読むことが困難な利用者。
                      
                   </li>
                   
                   
-                  <li>people with certain cognitive, language and learning disabilities who use text-to-speech
-                     software;
+                  <li>テキストを音声に変換するソフトウェアを使用している、特定の認知の障害、言語の障害、及び学習障害のある利用者。
                      
                      
                   </li>
                   
                   
-                  <li>people who rely on captions to recognize language changes in the soundtrack of synchronized
-                     media content.
+                  <li>同期メディアのキャプションを頼りにしている利用者。
                      
                   </li>
                   
@@ -223,21 +175,17 @@
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>事例</h2>
                <ul>   
                   
                   <li>  
                      
                      <p>  								       
-                        <strong>A German phrase in an English sentence.</strong>							     
+                        <strong>英語の文章中にあるドイツ語の一節</strong>							     
                         
                      </p>
                      
-                     <p>In the sentence, "He maintained that the DDR (German Democratic Republic) was just
-                        a '<span lang="de">Treppenwitz der Weltgeschichte</span>'," the German phrase '<span lang="de">Treppenwitz der Weltgeschichte</span>' is marked as German. Depending on the markup language, English may either be marked
-                        as the language for the entire document except where specified, or marked at the paragraph
-                        level. When a screen reader encounters the German phrase, it changes pronunciation
-                        rules from English to German to pronounce the word correctly.
+                     <p>文章中の "He maintained that the DDR (German Democratic Republic) was just a '<span lang="de">Treppenwitz der Weltgeschichte</span>'" は、ドイツ語の一節 '<span lang="de">Treppenwitz der Weltgeschichte</span>' がドイツ語であることが示されている。マークアップ言語に応じて、英語は、指定された箇所を除く文書全体の言語として示すこともできるし、段落レベルで示すこともできる。スクリーンリーダーがドイツ語の一節を読み上げる際は、その単語を正確に発音するために、英語からドイツ語に発音規則を変更する。
                         
                      </p>
                      
@@ -246,13 +194,11 @@
                   <li>
                      
                      <p>  								       
-                        <strong>Alternative language links</strong>							     
+                        <strong>代わりの言語へのリンク</strong>							     
                         
                      </p>
                      
-                     <p>An HTML Web page includes links to versions of the page in other languages (e.g.,
-                        <span lang="de">Deutsch</span>, <span lang="fr">Français</span>, <span lang="nl">Nederlands</span>, <span lang="ca">Catalan</span>, etc.). The text of each link is the name of the language, in that language. The
-                        language of each link is indicated via a <code class="att">lang</code> attribute.
+                     <p>ある HTML のウェブページには、そのページの他言語版へのリンクがある (例: <span lang="de">Deutsch</span>, <span lang="fr">Français</span>, <span lang="nl">Nederlands</span>, <span lang="ca">Catalan</span> など)。それぞれのリンクのテキストは、その言語で言語の名前である。それぞれのリンクの言語は、<code class="att">lang</code> 属性で示されている。
                         
                      </p>
                      <pre><code>&lt;ul&gt;
@@ -267,14 +213,13 @@
                   <li>
                      
                      <p>  								       
-                        <strong>"Podcast" used in a French sentence.</strong>							     
+                        <strong>フランス語の文章中で使われている "Podcast"</strong>							     
                         
                      </p>
                      
-                     <p>Because "podcast" is part of the vernacular of the immediately surrounding text in
-                        the following excerpt, "<span lang="fr">À l'occasion de l'exposition "Energie éternelle. 1500 ans d'art indien", le Palais
+                     <p>"podcast" は、次の引用 "<span lang="fr">À l'occasion de l'exposition "Energie éternelle. 1500 ans d'art indien", le Palais
                            des Beaux-Arts de Bruxelles a lancé son premier podcast. Vous pouvez télécharger ce
-                           podcast au format M4A et MP3</span>", no indication of language change is required.
+                           podcast au format M4A et MP3</span>" の周囲にあるテキストの母国語の一部なので、言語の変更を示す必要はない。
                         
                      </p>
                      
@@ -283,8 +228,8 @@
                </ul>
             </section>
             <section id="resources">
-               <h2>Related Resources</h2>
-               <p>Resources are for information purposes only, no endorsement implied.</p>
+               <h2>関連リソース</h2>
+               <p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p>
                <ul>
                   
                   <li>
@@ -305,14 +250,11 @@
                </ul>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
+                  <h3>十分なテクニック</h3>
                   <ul> 
                      
                      <li>  									         
@@ -331,50 +273,37 @@
             <section id="key-terms">
                <details>
                   <summary>
-                     <h2>Key Terms</h2>
+                     <h2>重要な用語</h2>
                   </summary>
-                  <dt id="dfn-assistive-technology">assistive technology</dt>
+                  <dt id="dfn-assistive-technology">支援技術 (assistive technology)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">hardware and/or software that acts as a <a href="#dfn-user-agent">user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements
-                           of users with disabilities that go beyond those offered by mainstream user agents
+                        <p xmlns="http://www.w3.org/1999/xhtml">障害のある利用者の要件を満たすために、主流の<a href="#dfn-user-agent">ユーザエージェント</a>が提供する機能を超えた機能を提供するような、ユーザエージェントとして動作する、又は主流のユーザエージェントと共に動作するハードウェア及び／又はソフトウェア。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Functionality provided by assistive technology includes alternative presentations
-                              (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
-                              voice), additional navigation or orientation mechanisms, and content transformations
-                              (e.g., to make tables more accessible).
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術が提供する機能としては、代替の提示 (例: 合成音声や拡大表示したコンテンツ)、代替入力手法 (例: 音声認識)、付加的なナビゲーション又は位置確認のメカニズム、及びコンテンツ変換 (例: テーブルをよりアクセシブルにするもの) などを挙げることができる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Assistive technologies often communicate data and messages with mainstream user agents
-                              by using and monitoring APIs.
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術は、API を利用、監視することで、主流のユーザエージェントとデータやメッセージのやりとりをすることが多い。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The distinction between mainstream user agents and assistive technologies is not absolute.
-                              Many mainstream user agents provide some features to assist individuals with disabilities.
-                              The basic difference is that mainstream user agents target broad and diverse audiences
-                              that usually include people with and without disabilities. Assistive technologies
-                              target narrowly defined populations of users with specific disabilities. The assistance
-                              provided by an assistive technology is more specific and appropriate to the needs
-                              of its target users. The mainstream user agent may provide important functionality
-                              to assistive technologies like retrieving Web content from program objects or parsing
-                              markup into identifiable bundles.
+                           <p class="note-title marker">注記</p>
+                           <p>主流のユーザエージェントと支援技術との区別は、絶対的なものではない。多くの主流のユーザエージェントは、障害のある個人を支援する機能を提供している。基本的な差異は、主流のユーザエージェントが障害のある人もない人も含めて、広く多様な利用者を対象にしているのに対し、支援技術は、特定の障害のある利用者という、より狭く限られた人たちを対象にしているということである。支援技術により提供される支援は、対象とする利用者に特化した、よりニーズに適したものである。主流のユーザエージェントは、プログラムオブジェクトからのウェブコンテンツの抽出、マークアップの識別可能な構造への解釈といった、重要な機能を支援技術に対して提供する場合がある。
                               
                            </p>
                         </div>
@@ -382,8 +311,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Assistive technologies that are important in the context of this document include
-                              the following:
+                           <p>この文書の文脈において重要な支援技術としては、以下のものが挙げられる:
                               
                            </p>
                            
@@ -391,38 +319,30 @@
                            <ul>
                               
                               
-                              <li>screen magnifiers, and other visual reading assistants, which are used by people with
-                                 visual, perceptual and physical print disabilities to change text font, size, spacing,
-                                 color, synchronization with speech, etc. in order to improve the visual readability
-                                 of rendered text and images;
+                              <li>画面拡大ソフト及びその他の視覚的な表示に関する支援技術。視覚障害、知覚障害、及び読書困難などの障害のある人が、レンダリング後のテキスト及び画像の視覚的な読みやすさを改善するために、テキストのフォント、サイズ、間隔、色、音声との同期などを変更するのに使用している。
                                  
                               </li>
                               
                               
-                              <li>screen readers, which are used by people who are blind to read textual information
-                                 through synthesized speech or braille;
+                              <li>スクリーンリーダー。全盲の人がテキスト情報を合成音声あるいは点字で読み取るために使用している。
                                  
                               </li>
                               
                               
-                              <li>text-to-speech software, which is used by some people with cognitive, language, and
-                                 learning disabilities to convert text into synthetic speech;
+                              <li>音声変換ソフトウェア。認知障害、言語障害、及び学習障害のある人が、テキストを合成音声に変換するために使用している。
                                  
                               </li>
                               
                               
-                              <li>speech recognition software, which may be used by people who have some physical disabilities;</li>
+                              <li>音声認識ソフトウェア。何らかの身体障害のある利用者が使用することがある。</li>
                               
                               
-                              <li>alternative keyboards, which are used by people with certain physical disabilities
-                                 to simulate the keyboard (including alternate keyboards that use head pointers, single
-                                 switches, sip/puff and other special input devices.);
+                              <li>代替キーボード。特定の身体障害のある人がキーボード操作をシミュレートするのに使用している (ヘッドポインタ、シングルスイッチ、呼気・吸気スイッチ、及びその他の特別な入力デバイスを使った代替キーボードを含む)。
                                  
                               </li>
                               
                               
-                              <li>alternative pointing devices, which are used by people with certain physical disabilities
-                                 to simulate mouse pointing and button activations.
+                              <li>代替ポインティングデバイス。特定の身体障害のある人がマウスポインタとボタンの動きをシミュレートするのに使用している。
                                  
                               </li>
                               
@@ -433,20 +353,19 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-human-language">human language</dt>
+                  <dt id="dfn-human-language">自然言語 (human language)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">language that is spoken, written or signed (through visual or tactile means) to communicate
-                           with humans
+                        <p xmlns="http://www.w3.org/1999/xhtml">人間とコミュニケーションをとるために話される、書かれる、又は (視覚的もしくは触覚的な手段で) 手話にされる言語。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>See also <a href="#dfn-sign-language">sign language</a>.
+                           <p class="note-title marker">注記</p>
+                           <p><a href="#dfn-sign-language">手話</a>も参照。
                               
                            </p>
                         </div>
@@ -454,21 +373,19 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-programmatically-determined">programmatically determined</dt>
+                  <dt id="dfn-programmatically-determined">プログラムによる解釈 (programmatically determined)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">determined by software from author-supplied data provided in a way that different
-                           <a href="#dfn-user-agent">user agents</a>, including <a href="#dfn-assistive-technology">assistive technologies</a>, can extract and present this information to users in different modalities
+                        <p xmlns="http://www.w3.org/1999/xhtml"><a href="#dfn-assistive-technology">支援技術</a>を含む様々な<a href="#dfn-user-agent">ユーザエージェント</a>が抽出でき、利用者に様々な感覚モダリティで提示できるような形のデータがコンテンツ制作者によって提供されたとき、そのデータがソフトウェアによって解釈されること。
                            
                         </p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Determined in a markup language from elements and attributes that are accessed directly
-                              by commonly available assistive technology.
+                           <p>マークアップ言語で、一般に入手可能な支援技術が直接アクセスできる要素と属性から解釈される。
                               
                            </p>
                            
@@ -477,9 +394,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Determined from technology-specific data structures in a non-markup language and exposed
-                              to assistive technology via an accessibility API that is supported by commonly available
-                              assistive technology.
+                           <p>非マークアップ言語の技術特有のデータ構造から解釈され、一般に入手可能な支援技術がサポートするアクセシビリティ API を通じて支援技術に提供される。
                               
                            </p>
                            
@@ -488,30 +403,29 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-sign-language">sign language</dt>
+                  <dt id="dfn-sign-language">手話 (sign language)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">a language using combinations of movements of the hands and arms, facial expressions,
-                           or body positions to convey meaning
+                        <p xmlns="http://www.w3.org/1999/xhtml">意味を伝えるために、手と腕の動き、顔の表情又は身体の姿勢の組み合わせを用いる言語。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-user-agent">user agent</dt>
+                  <dt id="dfn-user-agent">ユーザエージェント (user agent)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">any software that retrieves and presents Web content for users</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ウェブコンテンツを取得して利用者に提示するあらゆるソフトウェア。</p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technology">assistive technologies</a> — that help in retrieving, rendering, and interacting with Web content.
+                           <p>ウェブコンテンツの取得、レンダリング及びインタラクションを支援する、ウェブブラウザ、メディアプレーヤ、プラグイン、及びその他のプログラム (<a href="#dfn-assistive-technology"> 支援技術</a>も含む)。
                               
                            </p>
                            
@@ -523,15 +437,12 @@
                </details>
             </section>
             <section id="test-rules">
-               <h2>Test Rules</h2>
-               <p>The following are Test Rules for certain aspects of this Success Criterion. It is
-                  not necessary to use these particular Test Rules to check for conformance with WCAG,
-                  but they are defined and approved test methods. For information on using Test Rules,
-                  see <a href="understanding-act-rules.html">Understanding Test Rules for WCAG Success Criteria</a>.
+               <h2>テストルール</h2>
+               <p>以下は、この達成基準の特定の側面に関するテストルールである。この特定のルールを使用して WCAG に適合しているかどうかを確認する必要はないが、これらのルールは定義され、承認されたテスト方法である。テストルールの使用については、<a href="understanding-act-rules.html">WCAG 達成基準のテストルールを理解する</a>を参照のこと。
                </p>
                <ul>
-                  <li><a href="/WAI/standards-guidelines/act/rules/de46e4/">Element with lang attribute has valid language tag</a></li>
-                  <li><a href="/WAI/standards-guidelines/act/rules/off6ek/proposed/">HTML element language subtag matches language</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/de46e4/">Element with lang attribute has valid language tag</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/off6ek/proposed/">HTML element language subtag matches language</a></li>
                </ul>
             </section><a class="button button-backtotop" href="#top"><span>
                   <svg focusable="false" aria-hidden="true" class="icon-arrow-up " viewBox="0 0 26 28">
@@ -543,13 +454,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -564,11 +474,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -590,13 +502,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -605,7 +517,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -626,7 +538,9 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+      <noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
       </noscript>
    </body>
