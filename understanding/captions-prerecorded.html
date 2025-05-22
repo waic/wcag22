@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  1.2.2: Captions (Prerecorded) | WAI | W3C</title>
+      <title>解説書 達成基準 1.2.2: キャプション (収録済) | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
-      <!-- 日本語訳されるまでの一時的なスクリプト -->
-      <script src="untranslated-note.js"></script>
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://waic.jp/translations/WCAG22/Understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -37,17 +35,17 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"><a href="time-based-media">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Time-based Media</a></li>
+                        </svg> ガイドライン: 時間依存メディア</a></li>
                   <li class="nav__item"><a href="audio-only-and-video-only-prerecorded">
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-left-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
-                        </svg>Previous SC: Audio-only and Video-only (Prerecorded)</a></li>
-                  <li class="nav__item"><a href="audio-description-or-media-alternative-prerecorded">Next SC: Audio Description or Media Alternative (Prerecorded)
+                        </svg>前: 音声のみ及び映像のみ (収録済)</a></li>
+                  <li class="nav__item"><a href="audio-description-or-media-alternative-prerecorded">次: 音声解説、又はメディアに対する代替 (収録済)
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -58,94 +56,73 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#resources">Related Resources</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
-                     <li><a href="#key-terms">Key Terms</a></li>
-                     <li><a href="#test-rules">Test Rules</a></li>
+                     <li><a href="#brief">要約</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#benefits">利点</a></li>
+                     <li><a href="#examples">事例</a></li>
+                     <li><a href="#resources">関連リソース</a></li>
+                     <li><a href="#techniques">テクニック</a></li>
+                     <li><a href="#key-terms">重要な用語</a></li>
+                     <li><a href="#test-rules">テストルール</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				SC 1.2.2:</span>Captions (Prerecorded) (Level A)
+            <h1><span class="standalone-resource__type-of-guidance">解説書 
+                  				達成基準 1.2.2:</span>キャプション (収録済) (レベル A)
+
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
                   <p>
-                     <a href="#dfn-captions">Captions</a> are provided for all <a href="#dfn-prerecorded">prerecorded</a>
-                     <a href="#dfn-audio">audio</a> content in <a href="#dfn-synchronized-media">synchronized media</a>, except when the media is a <a href="#dfn-media-alternative-for-text">media alternative for text</a> and is clearly labeled as such.
+                     <a href="#dfn-synchronized-media">同期したメディア</a>に含まれているすべての<a href="#dfn-prerecorded">収録済</a>の<a href="#dfn-audio">音声</a>コンテンツに対して、<a href="#dfn-captions">キャプション</a>が提供されている。ただし、その同期したメディアが<a href="#dfn-media-alternative-for-text">メディアによるテキストの代替</a>であって、メディアによる代替であることが明確にラベル付けされている場合は除く。
                      
                   </p>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   
-                  <dt>Goal</dt>
-                  <dd>Videos can be played with captions.</dd>
+                  <dt>目標</dt>
+                  <dd>映像をキャプション付きで再生できる。</dd>
                   
-                  <dt>What to do</dt>
-                  <dd>Provide synchronized text for audio content in existing videos.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>制作された映像の音声コンテンツに同期したテキストを提供する。</dd>
                   
-                  <dt>Why it's important</dt>
-                  <dd>People who are deaf or hard of hearing can understand audio in videos.</dd> 
+                  <dt>なぜそれが重要か</dt>
+                  <dd>ろう又は難聴の人々が、映像の音声を理解できるようになる。</dd> 
                   
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The intent of this Success Criterion is to enable people who are deaf or hard of hearing
-                  to watch synchronized media presentations. Captions provide the part of the content
-                  available via the audio track. Captions not only include dialogue, but identify who
-                  is speaking and include non-speech information conveyed through sound, including meaningful
-                  sound effects. 
-                  
+               <h2>意図</h2>
+               <p>この達成基準の意図は、ろう又は難聴の利用者が、同期したメディアによる提示を見られるようにすることである。キャプションは、音声トラックを通じて利用可能なコンテンツの一部を提供する。キャプションは、会話を含むだけでなく、誰が話しているのかも特定し、意味のある効果音を含む、音声によって伝えられている非音声情報も含む。
                </p>
-               <p>It is acknowledged that at the present time there may be difficulty in creating captions
-                  for time-sensitive material and this may result in the author being faced with the
-                  choice of delaying the information until captions are available, or publishing time-sensitive
-                  content that is inaccessible to the deaf, at least for the interval until captions
-                  are available. Over time, the tools for captioning as well as building the captioning
-                  into the delivery process can shorten or eliminate such delays.
+               <p>現在のところ、時間依存の素材に対してキャプションを作成することは困難であるかもしれないことが認められている。これは、キャプションが利用可能になるまで情報を延期する、又は少なくともキャプションが利用可能になるまでの期限で、ろう者にアクセシブルでない時間依存のコンテンツを公開するという選択に直面するコンテンツ制作者をもたらす可能性がある。時間とともに、配信プロセスにキャプション付けを組み込むツールだけでなく、キャプションを付けるためのツールも、そのような遅延を短縮する又は除去するだろう。
+               </p>
+               <p>同期したメディア自体が、ウェブページ上でテキストによってすでに提示もされている情報の代替の提示であるとき、キャプションは必要ない。例えば、ページ上の情報が、テキストで既に提示されている情報よりも多くの情報を提示していないが、認知、言語、又は学習障害のある利用者が理解しやすい同期したメディアによる提示を伴う場合、キャプションを提供する必要はない。なぜなら、その情報は、既にテキスト又は (例えば、画像の) テキストによる代替によって、ページ上に提供されているからである。 
                   
                   
                </p>
-               <p>Captions are not needed when the synchronized media is, itself, an alternate presentation
-                  of information that is also presented via text on the Web page. For example, if information
-                  on a page is accompanied by a synchronized media presentation that presents no more
-                  information than is already presented in text, but is easier for people with cognitive,
-                  language, or learning disabilities to understand, then it would not need to be captioned
-                  since the information is already presented on the page in text or in text alternatives
-                  (e.g., for images). 
-                  
-                  
-               </p>
-               <p>See also 
-                  <a href="captions-live">1.2.4: Captions (Live)</a>.
+               <p>
+                  <a href="captions-live">1.2.4: キャプション (ライブ)</a> も参照のこと。
                   
                </p>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>利点</h2>
                <ul>
                   
                   
-                  <li> People who are deaf or have a hearing loss can access the auditory information in
-                     the synchronized media content through captions.
+                  <li>ろう又は難聴の利用者が、同期したメディアのコンテンツにある音声情報を、キャプションを通じて入手することができるようになる。
                      
                   </li>
                   
@@ -153,54 +130,48 @@
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>事例</h2>
                <ul>
                   
                   <li>
                      
-                     <p><strong>A captioned tutorial</strong></p>
+                     <p><strong>キャプションを提供しているチュートリアル</strong></p>
                      
-                     <p>A video clip shows how to tie a knot. The captions read, </p>
+                     <p>映像クリップは結び目の作り方を示している。キャプションは次のように読める。</p>
                      
-                     <p>"(music) </p>
+                     <p>「(音楽)</p>
                      
-                     <p>Using rope to tie knots was an important skill</p>
+                     <p>船乗り、兵士、そして木こりのような人たちにとっては、</p>
                      
-                     <p>for the likes of sailors, soldiers and woodsmen.." </p>
+                     <p>ロープを使って結び目を作るのは、重要なスキルでした。」</p>
                      
-                     <p>From Sample Transcript Formatting by Whit Anderson.</p>
+                     <p>Whit Anderson による、書き起こしテキストのフォーマットのサンプルより。</p>
                      
                   </li>
                   
-                  <li>A complex legal document contains synchronized media clips for different paragraphs
-                     that show a person speaking the contents of the paragraph. Each clip is associated
-                     with its corresponding paragraph. No captions are provided for the synchronized media.
+                  <li>複雑な法律文書は、様々な段落の内容を話す人を示す同期したメディアクリップを含んでいる。各クリップは、対応する段落に関連付けられている。その同期したメディアには、キャプションが提供されていない。
                   </li>
                   
-                  <li>An instruction manual containing a description of a part and its necessary orientation
-                     is accompanied by a synchronized media clip showing the part in its correct orientation.
-                     No captions are provided for the synchronized media clip.
+                  <li>部品の説明とその必要な向きを含む取扱説明書には、部品が正しい向きで示されている同期したメディアによるクリップがある。その同期したメディアによるクリップには、キャプションが提供されていない。
+
                   </li>
                   
                   <li>
                      
-                     <p>An orchestra provides captions for videos of performances. In addition to capturing
-                        dialog and lyrics verbatim, captions identify non-vocal music by title, movement,
-                        composer, and any information that will help the user comprehend the nature of the
-                        audio. For instance captions read,
+                     <p>オーケストラがコンサート映像にキャプションを提供している。キャプションは、台詞や歌詞を逐語的に提供するだけでなく、タイトル、楽章、作曲者などさまざまな情報を提供することで、利用者が音声の特徴を理解することを助け、楽器のみの音楽を明らかにしている。例えば、
                      </p>
                      
-                     <p>"[Orchestral Suite No. 3.2 in D major, BWV 1068, Air]</p>
+                     <p>「[管弦楽組曲第 3 番 ニ長調 BWV 1068 - 第 2 曲 G 線上のアリア]</p>
                      
-                     <p>[Johann Sebastian Bach, Composer] </p>
+                     <p>[作曲者 ヨハン ゼバスティアン バッハ]</p>
                      
-                     <p>♪ Calm melody with a slow tempo ♪"</p>
+                     <p>♪ 遅いテンポの落ち着いたメロディ ♪」</p>
                      
                      <div class="note">
-                        <p class="note-title marker">Note</p>
+                        <p class="note-title marker">注記</p>
                         <div>
                            
-                           <p>Style guides for captions may differ among different languages.</p>
+                           <p>キャプションのスタイルガイドは言語によって異なる可能性がある。</p>
                            
                         </div>
                      </div>
@@ -210,12 +181,12 @@
                </ul>
             </section>
             <section id="resources">
-               <h2>Related Resources</h2>
-               <p>Resources are for information purposes only, no endorsement implied.</p>
+               <h2>関連リソース</h2>
+               <p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p>
                <section id="guides-to-captioning">
                   
                   
-                  <h3>Guides to Captioning</h3>
+                  <h3>キャプションの付け方ガイド</h3>
                   
                   
                   <ul>
@@ -246,7 +217,7 @@
                <section id="smil-resources">
                   
                   
-                  <h3>SMIL Resources</h3>
+                  <h3>SMIL のリソース</h3>
                   
                   
                   <ul>
@@ -271,7 +242,7 @@
                <section id="other-captioning-resources">
                   
                   
-                  <h3>Other Captioning Resources</h3>
+                  <h3>キャプションの付け方のその他のリソース</h3>
                   
                   
                   <ul>
@@ -295,164 +266,113 @@
                </section>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
+                  <h3>十分なテクニック</h3>
                   <ul>
+                  
+                  
+                  <li><a class="general" href="https://w3c.github.io/wcag/techniques/general/G93">G93: Providing open (always visible) captions</a></li>
+                  
+                  
+                  <li>クローズドキャプションをサポートしたビデオプレーヤーのある、容易に利用可能なメディア形式を用いて、<a class="general" href="https://w3c.github.io/wcag/techniques/general/G87">G87: Providing closed captions</a></li>
+                  
+                  
+                  <li><p>次のいずれかのウェブコンテンツ技術特有のテクニックを用いて、<a class="general" href="https://w3c.github.io/wcag/techniques/general/G87">G87: Providing closed captions</a></p>
                      
                      
-                     <li>
-                        <a class="general" href="https://w3c.github.io/wcag/techniques/general/G93">G93: Providing open (always visible) captions</a>
+                     <ul>
                         
-                     </li>
+                        
+                        <li><a class="smil" href="https://w3c.github.io/wcag/techniques/smil/SM11">SM11: Providing captions through synchronized text streams in SMIL 1.0</a></li>
+                        
+                        
+                        <li><a class="smil" href="https://w3c.github.io/wcag/techniques/smil/SM12">SM12: Providing captions through synchronized text streams in SMIL 2.0</a></li>
+                        
+                        
+                        <li><a class="html" href="https://w3c.github.io/wcag/techniques/html/H95">H95: Using the track element to provide captions</a></li>
+                                                                 
+                        
+                        
+                        
+                        
+                        
+                     </ul>
                      
                      
-                     <li> 
-                        
-                        <a class="general" href="https://w3c.github.io/wcag/techniques/general/G87">G87: Providing closed captions</a> using any readily available media format that has a video player that  supports closed
-                        captioning 
-                        
-                        
-                     </li>
-                     
-                     
-                     <li>
-                        
-                        
-                        <p> 
-                           
-                           <a class="general" href="https://w3c.github.io/wcag/techniques/general/G87">G87: Providing closed captions</a> using any of the technology-specific techniques below 
-                           
-                           
-                        </p>
-                        
-                        
-                        <ul>
-                           
-                           
-                           <li>
-                              <a class="smil" href="https://w3c.github.io/wcag/techniques/smil/SM11">SM11: Providing captions through synchronized text streams in SMIL 1.0</a>
-                              
-                           </li>
-                           
-                           
-                           <li>
-                              <a class="smil" href="https://w3c.github.io/wcag/techniques/smil/SM12">SM12: Providing captions through synchronized text streams in SMIL 2.0</a>
-                              
-                           </li>
-                           
-                           
-                           <li>
-                              <a class="html" href="https://w3c.github.io/wcag/techniques/html/H95">H95: Using the track element to provide captions</a>
-                              
-                           </li>
-                           
-                           
-                        </ul>
-                        
-                        
-                     </li>
-                     
-                     
-                  </ul>
+                  </li>
+                  
+                  
+               </ul>
+
                </section>
                <section id="failure">
-                  <h3>Failures</h3>
-                  <p>The following are common mistakes that are considered failures of this Success Criterion
-                     by the WCAG Working Group.
+                  <h3>失敗例</h3>
+                  <p>以下に挙げるものは、WCAG ワーキンググループが達成基準の失敗例とみなした、よくある間違いである。
                   </p>
                   <ul>
-                     
-                     
-                     <li>
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F8">F8: Failure of Success Criterion 1.2.2 due to captions omitting some dialogue or important
-                           sound effects</a>
-                        
-                     </li>
-                     
-                     
-                     <li>
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F75">F75: Failure of Success Criterion 1.2.2 by providing synchronized media without captions
-                           when the synchronized media presents more information than is presented on the page</a>
-                        
-                     </li>
-                     
-                     
-                     <li>
-                        <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F74">F74: Failure of Success Criterion 1.2.2 and 1.2.8 due to not labeling a synchronized media
-                           alternative to text as an alternative</a>
-                        
-                     </li>
-                     
-                     
-                  </ul>
+                  
+                  
+                  <li><a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F8">F8: Failure of Success Criterion 1.2.2 due to captions omitting some dialogue or important sound effects</a></li>
+                  
+                  
+                  <li><a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F75">F75: Failure of Success Criterion 1.2.2 by providing synchronized media without captions when the synchronized media presents more information than is presented on the page</a></li>
+                  
+                  
+                  <li><a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F74">F74: Failure of Success Criterion 1.2.2 and 1.2.8 due to not labeling a synchronized media alternative to text as an alternative</a></li>
+                  
+                  
+               </ul>
                </section>
             </section>
             <section id="key-terms">
                <details>
                   <summary>
-                     <h2>Key Terms</h2>
+                     <h2>重要な用語</h2>
                   </summary>
-                  <dt id="dfn-ascii-art">ascii art</dt>
+                  <dt id="dfn-ascii-art">ASCII アート (ASCII art)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">picture created by a spatial arrangement of characters or glyphs (typically from the
-                           95 printable characters defined by ASCII)
+                        <p xmlns="http://www.w3.org/1999/xhtml">文字又はグリフの空間的配置によって作られた図画 (典型的には、ASCII で定義されている 95 の印字可能文字から作られる)。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-assistive-technology">assistive technology</dt>
+                  <dt id="dfn-assistive-technology">支援技術 (assistive technology)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">hardware and/or software that acts as a <a href="#dfn-user-agent">user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements
-                           of users with disabilities that go beyond those offered by mainstream user agents
+                        <p xmlns="http://www.w3.org/1999/xhtml">障害のある利用者の要件を満たすために、主流の<a href="#dfn-user-agent">ユーザエージェント</a>が提供する機能を超えた機能を提供するような、ユーザエージェントとして動作する、又は主流のユーザエージェントと共に動作するハードウェア及び／又はソフトウェア。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Functionality provided by assistive technology includes alternative presentations
-                              (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
-                              voice), additional navigation or orientation mechanisms, and content transformations
-                              (e.g., to make tables more accessible).
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術が提供する機能としては、代替の提示 (例: 合成音声や拡大表示したコンテンツ)、代替入力手法 (例: 音声認識)、付加的なナビゲーション又は位置確認のメカニズム、及びコンテンツ変換 (例: テーブルをよりアクセシブルにするもの) などを挙げることができる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Assistive technologies often communicate data and messages with mainstream user agents
-                              by using and monitoring APIs.
+                           <p class="note-title marker">注記</p>
+                           <p>支援技術は、API を利用、監視することで、主流のユーザエージェントとデータやメッセージのやりとりをすることが多い。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>The distinction between mainstream user agents and assistive technologies is not absolute.
-                              Many mainstream user agents provide some features to assist individuals with disabilities.
-                              The basic difference is that mainstream user agents target broad and diverse audiences
-                              that usually include people with and without disabilities. Assistive technologies
-                              target narrowly defined populations of users with specific disabilities. The assistance
-                              provided by an assistive technology is more specific and appropriate to the needs
-                              of its target users. The mainstream user agent may provide important functionality
-                              to assistive technologies like retrieving Web content from program objects or parsing
-                              markup into identifiable bundles.
+                           <p class="note-title marker">注記</p>
+                           <p>主流のユーザエージェントと支援技術との区別は、絶対的なものではない。多くの主流のユーザエージェントは、障害のある個人を支援する機能を提供している。基本的な差異は、主流のユーザエージェントが障害のある人もない人も含めて、広く多様な利用者を対象にしているのに対し、支援技術は、特定の障害のある利用者という、より狭く限られた人たちを対象にしているということである。支援技術により提供される支援は、対象とする利用者に特化した、よりニーズに適したものである。主流のユーザエージェントは、プログラムオブジェクトからのウェブコンテンツの抽出、マークアップの識別可能な構造への解釈といった、重要な機能を支援技術に対して提供する場合がある。
                               
                            </p>
                         </div>
@@ -460,8 +380,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Assistive technologies that are important in the context of this document include
-                              the following:
+                           <p>この文書の文脈において重要な支援技術としては、以下のものが挙げられる:
                               
                            </p>
                            
@@ -469,38 +388,30 @@
                            <ul>
                               
                               
-                              <li>screen magnifiers, and other visual reading assistants, which are used by people with
-                                 visual, perceptual and physical print disabilities to change text font, size, spacing,
-                                 color, synchronization with speech, etc. in order to improve the visual readability
-                                 of rendered text and images;
+                              <li>画面拡大ソフト及びその他の視覚的な表示に関する支援技術。視覚障害、知覚障害、及び読書困難などの障害のある人が、レンダリング後のテキスト及び画像の視覚的な読みやすさを改善するために、テキストのフォント、サイズ、間隔、色、音声との同期などを変更するのに使用している。
                                  
                               </li>
                               
                               
-                              <li>screen readers, which are used by people who are blind to read textual information
-                                 through synthesized speech or braille;
+                              <li>スクリーンリーダー。全盲の人がテキスト情報を合成音声あるいは点字で読み取るために使用している。
                                  
                               </li>
                               
                               
-                              <li>text-to-speech software, which is used by some people with cognitive, language, and
-                                 learning disabilities to convert text into synthetic speech;
+                              <li>音声変換ソフトウェア。認知障害、言語障害、及び学習障害のある人が、テキストを合成音声に変換するために使用している。
                                  
                               </li>
                               
                               
-                              <li>speech recognition software, which may be used by people who have some physical disabilities;</li>
+                              <li>音声認識ソフトウェア。何らかの身体障害のある利用者が使用することがある。</li>
                               
                               
-                              <li>alternative keyboards, which are used by people with certain physical disabilities
-                                 to simulate the keyboard (including alternate keyboards that use head pointers, single
-                                 switches, sip/puff and other special input devices.);
+                              <li>代替キーボード。特定の身体障害のある人がキーボード操作をシミュレートするのに使用している (ヘッドポインタ、シングルスイッチ、呼気・吸気スイッチ、及びその他の特別な入力デバイスを使った代替キーボードを含む)。
                                  
                               </li>
                               
                               
-                              <li>alternative pointing devices, which are used by people with certain physical disabilities
-                                 to simulate mouse pointing and button activations.
+                              <li>代替ポインティングデバイス。特定の身体障害のある人がマウスポインタとボタンの動きをシミュレートするのに使用している。
                                  
                               </li>
                               
@@ -511,18 +422,17 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-audio">audio</dt>
+                  <dt id="dfn-audio">音声 (audio)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">the technology of sound reproduction</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">音の再生技術。</p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Audio can be created synthetically (including speech synthesis), recorded from real
-                              world sounds, or both.
+                           <p class="note-title marker">注記</p>
+                           <p>音声には、合成して作られたもの (音声合成を含む)、実世界の音を収録したもの、又はその両方が含まれる。
                               
                            </p>
                         </div>
@@ -530,104 +440,106 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-audio-description">audio description</dt>
+                  <dt id="dfn-audio-description">音声解説 (audio description)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">narration added to the soundtrack to describe important visual details that cannot
-                           be understood from the main soundtrack alone
+                        <p xmlns="http://www.w3.org/1999/xhtml">主音声のトラックだけでは理解できない重要で視覚的な詳細を説明するために、音声トラックに追加されたナレーション。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Audio description of <a href="#dfn-video">video</a> provides information about actions, characters, scene changes, on-screen text, and
-                              other visual content.
+                           <p class="note-title marker">注記</p>
+                           <p><a href="#dfn-video">映像</a>の音声解説は、動作、登場人物、場面の変化、画面上のテキスト、及びその他の視覚的なコンテンツに関する情報を提供する。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>In standard audio description, narration is added during existing pauses in dialogue.
-                              (See also <a href="#dfn-extended-audio-description">extended audio description</a>.)
+                           <p class="note-title marker">注記</p>
+                           <p>標準的な音声解説では、ナレーションが会話の合間に挿入される。(<a href="#dfn-extended-audio-description">拡張音声解説</a>も参照。)
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Where all of the <a href="#dfn-video">video</a> information is already provided in existing <a href="#dfn-audio">audio</a>, no additional audio description is necessary.
+                           <p class="note-title marker">注記</p>
+                           <p><a href="#dfn-video">映像</a>情報のすべてが既存の<a href="#dfn-audio">音声</a>ですでに提供されている場合、補足の音声解説は不要である。
+
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Also called "video description" and "descriptive narration."</p>
+                           <p class="note-title marker">注記</p>
+                           <p>"video description" や "descriptive narration" とも呼ばれる。</p>
+                           <div class="note">
+                             <p class="note-title marker">訳注</p>
+                             <p>日本語では「音声ガイド」とも呼ばれる。</p>
+                           </div>
                         </div>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-captions">captions</dt>
+                  <dt id="dfn-captions">キャプション (captions)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">synchronized visual and/or <a href="#dfn-text-alternative">text alternative</a> for both speech and non-speech audio information needed to understand the media content
+                        <p xmlns="http://www.w3.org/1999/xhtml">そのメディアのコンテンツを理解するのに必要な、会話及び会話でない音声情報に対する、同期した視覚、又は<a href="#dfn-text-alternative">テキストによる代替</a>。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Captions are similar to dialogue-only subtitles except captions convey not only the
-                              content of spoken dialogue, but also equivalents for non-dialogue audio information
-                              needed to understand the program content, including sound effects, music, laughter,
-                              speaker identification and location.
+                           <p class="note-title marker">注記</p>
+                           <p>キャプションは会話のみの字幕と似ているが、会話の内容だけを伝えるのではなく、その番組の内容を理解するために必要な効果音、音楽、笑い声、話者の特定、位置などを含む、会話でない音声情報と同等の内容も伝える点が異なる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Closed Captions are equivalents that can be turned on and off with some players.</p>
+                           <p class="note-title marker">注記</p>
+                           <p>クローズドキャプションは、音声情報と同等の内容で、プレーヤーによっては表示／非表示を切り替えることができるものを指す。</p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Open Captions are any captions that cannot be turned off. For example, if the captions
-                              are visual equivalent <a href="#dfn-image-of-text">images of text</a> embedded in <a href="#dfn-video">video</a>.
+                           <p class="note-title marker">注記</p>
+                           <p>オープンキャプションは、非表示にできないキャプションである。例えば、キャプションが同等の視覚化された<a href="#dfn-image-of-text">文字画像</a>で<a href="#dfn-video">映像</a>に埋め込まれている場合である。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Captions should not obscure or obstruct relevant information in the video.</p>
+                           <p class="note-title marker">注記</p>
+                           <p>キャプションは、映像に含まれる情報を分かりにくくしたり遮ったりすべきではない。</p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>In some countries, captions are called subtitles.</p>
+                           <p class="note-title marker">注記</p>
+                           <p>国によっては、キャプションは "subtitle" と呼ばれている。</p>
+                           <div class="note">
+                             <p class="note-title marker">訳注</p>
+                             <p>subtitle には、「字幕」の意がある。日本では、キャプションのことを一般に字幕と呼ぶことが多い。</p>
+                           </div>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">注記</p>
                            <p>
-                              <a href="#dfn-audio-description">Audio descriptions</a> can be, but do not need to be, captioned since they are descriptions of information
-                              that is already presented visually.
+                              <a href="#dfn-audio-description">音声解説</a>にキャプションをつけることもできるが、つける必要はない。なぜなら、音声解説は既に視覚的に提示されている情報の説明だからである。
+
                               
                            </p>
                         </div>
@@ -635,19 +547,21 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-extended-audio-description">extended audio description</dt>
+                  <dt id="dfn-extended-audio-description">拡張音声解説 (extended audio description)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">audio description that is added to an audiovisual presentation by pausing the <a href="#dfn-video">video</a> so that there is time to add additional description
+                        <p xmlns="http://www.w3.org/1999/xhtml"><a href="#dfn-video">映像</a>を一時停止することで追加の説明を付加するための時間を確保し、視聴覚提示に付加した音声解説。
+
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>This technique is only used when the sense of the <a href="#dfn-video">video</a> would be lost without the additional <a href="#dfn-audio-description">audio description</a> and the pauses between dialogue/narration are too short.
+                           <p class="note-title marker">注記</p>
+                           <p>この手法は、追加の<a href="#dfn-audio-description">音声解説</a>がないと<a href="#dfn-video">映像</a>の意味が損なわれてしまい、かつ会話又はナレーションの合間が短すぎる場合だけに用いられる。
+
                               
                            </p>
                         </div>
@@ -655,20 +569,19 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-human-language">human language</dt>
+                  <dt id="dfn-human-language">自然言語 (human language)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">language that is spoken, written or signed (through visual or tactile means) to communicate
-                           with humans
+                        <p xmlns="http://www.w3.org/1999/xhtml">人間とコミュニケーションをとるために話される、書かれる、又は (視覚的もしくは触覚的な手段で) 手話にされる言語。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>See also <a href="#dfn-sign-language">sign language</a>.
+                           <p class="note-title marker">注記</p>
+                           <p><a href="#dfn-sign-language">手話</a>も参照。
                               
                            </p>
                         </div>
@@ -676,79 +589,71 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-image-of-text">image of text</dt>
+                  <dt id="dfn-image-of-text">文字画像 (image of text)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">text that has been rendered in a non-text form (e.g., an image) in order to achieve
-                           a particular visual effect
+                        <p xmlns="http://www.w3.org/1999/xhtml">特定の視覚的効果を得るために非テキスト形式 (例えば画像) でレンダリングされたテキスト。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>This does not include <a href="#dfn-text">text</a> that is part of a picture that contains significant other visual content.
-                              
+                           <p class="note-title marker">注記</p>
+                           <p><a href="#dfn-text">テキスト</a>以外の部分が重要な視覚的コンテンツである場合、画像に含まれるテキストは該当しない。
                            </p>
                         </div>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>A person's name on a nametag in a photograph.</p>
+                           <p>写真に写っている人の名札にある人名。</p>
                            
                         </aside>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-live">live</dt>
+                  <dt id="dfn-live">ライブ (live)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">information captured from a real-world event and transmitted to the receiver with
-                           no more than a broadcast delay
+                        <p xmlns="http://www.w3.org/1999/xhtml">現実の出来事から取り込まれ、放送遅延以上の遅延なく受け手に送信される情報。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>A broadcast delay is a short (usually automated) delay, for example used in order
-                              to give the broadcaster time to cue or censor the audio (or video) feed, but not sufficient
-                              to allow significant editing.
+                           <p class="note-title marker">注記</p>
+                           <p>放送遅延は、短時間の (通常は自動的な) 遅れで、例えば放送局に放送のタイミング[queue→cue]の調整や音声 (又は映像) の検閲のための時間を与えるものだが、意味のある編集ができるほどのものではない。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>If information is completely computer generated, it is not live.</p>
+                           <p class="note-title marker">注記</p>
+                           <p>もし情報が完全にコンピュータで生成されたものならば、それはライブではない。</p>
                         </div>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-media-alternative-for-text">media alternative for text</dt>
+                  <dt id="dfn-media-alternative-for-text">メディアによるテキストの代替 (media alternative for text)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">media that presents no more information than is already presented in text (directly
-                           or via text alternatives)
+                        <p xmlns="http://www.w3.org/1999/xhtml">テキストで (直接又はテキストによる代替によって) 既に提示されている情報以上のものを提示していないメディア。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>A media alternative for text is provided for those who benefit from alternate representations
-                              of text. Media alternatives for text may be audio-only, video-only (including sign-language
-                              video), or audio-video.
+                           <p class="note-title marker">注記</p>
+                           <p>メディアによるテキストの代替は、テキストを代替する提示の恩恵を受ける人たちのために提供される。テキストの代替メディアになりうるのは、音声しか含まないメディア、映像しか含まない (手話の映像を含む) メディア、又は音声付映像メディアである。
                               
                            </p>
                         </div>
@@ -756,20 +661,19 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-non-text-content">non-text content</dt>
+                  <dt id="dfn-non-text-content">非テキストコンテンツ (non-text content)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">any content that is not a sequence of characters that can be <a href="#dfn-programmatically-determined">programmatically determined</a> or where the sequence is not expressing something in <a href="#dfn-human-language">human language</a>
+                        <p xmlns="http://www.w3.org/1999/xhtml"><a href="#dfn-programmatically-determined">プログラムによる解釈</a>が可能な文字の並びではないコンテンツ、又は文字の並びが<a href="#dfn-human-language">自然言語</a>においても何をも表現していないコンテンツ。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>This includes <a href="#dfn-ascii-art">ASCII Art</a> (which is a pattern of characters), emoticons, leetspeak (which uses character substitution),
-                              and images representing text
+                           <p class="note-title marker">注記</p>
+                           <p>これには、 (文字による図画である) <a href="#dfn-ascii-art">ASCII アート</a>、顔文字、 (文字を置き換える) リートスピーク、文字を表現している画像が含まれる。
                               
                            </p>
                         </div>
@@ -777,33 +681,30 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-prerecorded">prerecorded</dt>
+                  <dt id="dfn-prerecorded">収録済 (prerecorded)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">information that is not <a href="#dfn-live">live</a>
-                           
+                        <p xmlns="http://www.w3.org/1999/xhtml"><a href="#dfn-live">ライブ</a>ではない情報。
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-programmatically-determined">programmatically determined</dt>
+                  <dt id="dfn-programmatically-determined">プログラムによる解釈 (programmatically determined)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">determined by software from author-supplied data provided in a way that different
-                           <a href="#dfn-user-agent">user agents</a>, including <a href="#dfn-assistive-technology">assistive technologies</a>, can extract and present this information to users in different modalities
+                        <p xmlns="http://www.w3.org/1999/xhtml"><a href="#dfn-assistive-technology">支援技術</a>を含む様々な<a href="#dfn-user-agent">ユーザエージェント</a>が抽出でき、利用者に様々な感覚モダリティで提示できるような形のデータがコンテンツ制作者によって提供されたとき、そのデータがソフトウェアによって解釈されること。
                            
                         </p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Determined in a markup language from elements and attributes that are accessed directly
-                              by commonly available assistive technology.
+                           <p>マークアップ言語で、一般に入手可能な支援技術が直接アクセスできる要素と属性から解釈される。
                               
                            </p>
                            
@@ -812,9 +713,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Determined from technology-specific data structures in a non-markup language and exposed
-                              to assistive technology via an accessibility API that is supported by commonly available
-                              assistive technology.
+                           <p>非マークアップ言語の技術特有のデータ構造から解釈され、一般に入手可能な支援技術がサポートするアクセシビリティ API を通じて支援技術に提供される。
                               
                            </p>
                            
@@ -823,62 +722,60 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-sign-language">sign language</dt>
+                  <dt id="dfn-sign-language">手話 (sign language)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">a language using combinations of movements of the hands and arms, facial expressions,
-                           or body positions to convey meaning
+                        <p xmlns="http://www.w3.org/1999/xhtml">意味を伝えるために、手と腕の動き、顔の表情又は身体の姿勢の組み合わせを用いる言語。
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-synchronized-media">synchronized media</dt>
+                  <dt id="dfn-synchronized-media">同期したメディア (synchronized media)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
                         <p xmlns="http://www.w3.org/1999/xhtml">
-                           <a href="#dfn-audio">audio</a> or <a href="#dfn-video">video</a> synchronized with another format for presenting information and/or with time-based
-                           interactive components, unless the media is a <a href="#dfn-media-alternative-for-text">media alternative for text</a> that is clearly labeled as such
+                           情報を提示するために、他のフォーマットと同期した<a href="#dfn-audio">音声</a>もしくは<a href="#dfn-video">映像</a>、及び／又は時間に依存するインタラクティブな構成要素と同期した音声もしくは映像。ただし、そのメディアが<a href="#dfn-media-alternative-for-text">メディアによるテキストの代替</a>であって、そのように明確にラベル付けされているものは除く。
+
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-text">text</dt>
+                  <dt id="dfn-text">テキスト (text)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">sequence of characters that can be <a href="#dfn-programmatically-determined">programmatically determined</a>, where the sequence is expressing something in <a href="#dfn-human-language">human language</a>
+                        <p xmlns="http://www.w3.org/1999/xhtml"><a href="#dfn-programmatically-determined">プログラムによる解釈</a>が可能な文字の並びで、<a href="#dfn-human-language">自然言語</a>で何かを表現しているもの。
+
                            
                         </p>
                         
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-text-alternative">text alternative</dt>
+                  <dt id="dfn-text-alternative">テキストによる代替 (text alternative)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
                         <p xmlns="http://www.w3.org/1999/xhtml">
-                           <a href="#dfn-text">Text</a> that is programmatically associated with <a href="#dfn-non-text-content">non-text content</a> or referred to from text that is programmatically associated with non-text content.
-                           Programmatically associated text is text whose location can be programmatically determined
-                           from the non-text content.
+                           <a href="#dfn-non-text-content">非テキストコンテンツ</a>とプログラムで関連付けられる<a href="#dfn-text">テキスト</a>。又は非テキストコンテンツとプログラムで関連付けられるテキストから参照されるテキスト。プログラムで関連付けられたテキストとは、その場所を、非テキストコンテンツからプログラムによる解釈が可能なテキストである。
+
                            
                         </p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>An image of a chart is described in text in the paragraph after the chart. The short
-                              text alternative for the chart indicates that a description follows.
+                           <p>チャートの画像があり、その直後の段落にテキストによる説明がある。チャートに対する短いテキストによる代替で後に説明があることを示している。
                               
                            </p>
                            
@@ -886,8 +783,8 @@
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Refer to <a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance#text-alternatives">Understanding Text Alternatives</a> for more information.
+                           <p class="note-title marker">注記</p>
+                           <p>より詳細な情報は、<a href="conformance.html#text-alternatives">「テキストによる代替」を理解する</a>を参照。
                               
                            </p>
                         </div>
@@ -895,17 +792,18 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-user-agent">user agent</dt>
+                  <dt id="dfn-user-agent">ユーザエージェント (user agent)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">any software that retrieves and presents Web content for users</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">ウェブコンテンツを取得して利用者に提示するあらゆるソフトウェア。</p>
                         
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technology">assistive technologies</a> — that help in retrieving, rendering, and interacting with Web content.
+                           <p>ウェブコンテンツの取得、レンダリング及びインタラクションを支援する、ウェブブラウザ、メディアプレーヤ、プラグイン、及びその他のプログラム (<a href="#dfn-assistive-technology">支援技術</a>も含む)。
+
                               
                            </p>
                            
@@ -914,17 +812,17 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-video">video</dt>
+                  <dt id="dfn-video">映像 (video)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">the technology of moving or sequenced pictures or images</p>
+                        <p xmlns="http://www.w3.org/1999/xhtml">写真又は画像を動かす、又はシーケンス化する技術。</p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Video can be made up of animated or photographic images, or both.</p>
+                           <p class="note-title marker">注記</p>
+                           <p>映像は、アニメーション画像もしく実写画像、又はその両方で構成され得る。</p>
                         </div>
                         
                         
@@ -933,14 +831,11 @@
                </details>
             </section>
             <section id="test-rules">
-               <h2>Test Rules</h2>
-               <p>The following are Test Rules for certain aspects of this Success Criterion. It is
-                  not necessary to use these particular Test Rules to check for conformance with WCAG,
-                  but they are defined and approved test methods. For information on using Test Rules,
-                  see <a href="understanding-act-rules.html">Understanding Test Rules for WCAG Success Criteria</a>.
+               <h2>テストルール</h2>
+               <p>以下は、この達成基準の特定の側面に関するテストルールである。この特定のルールを使用して WCAG に適合しているかどうかを確認する必要はないが、これらのルールは定義され、承認されたテスト方法である。テストルールの使用については、<a href="understanding-act-rules.html">WCAG 達成基準のテストルールを理解する</a>を参照のこと。
                </p>
                <ul>
-                  <li><a href="/WAI/standards-guidelines/act/rules/eac66b/proposed/">Video element auditory content has accessible alternative</a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/eac66b/proposed/">Video element auditory content has accessible alternative</a></li>
                </ul>
             </section><a class="button button-backtotop" href="#top"><span>
                   <svg focusable="false" aria-hidden="true" class="icon-arrow-up " viewBox="0 0 26 28">
@@ -952,13 +847,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -973,11 +867,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+			<p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -999,13 +895,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -1014,7 +910,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -1035,8 +931,10 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+	<script src="https://waic.jp/docs/js/translation-contact.js"></script>
+	<!--noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-      </noscript>
+      </noscript-->
    </body>
 </html>
