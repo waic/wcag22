@@ -5,8 +5,8 @@
 raw.githack.com により
 
 - [WCAG 2.2](https://raw.githack.com/waic/wcag22/main/guidelines/index.html)
+- [WCAG 2.2 解説書](https://raw.githack.com/waic/wcag22/main/understanding/index.html)
 <!--
-- [WCAG 2.1 解説書](https://waic.github.io/wcag21/understanding/)
 - [WCAG 2.1 達成方法集](https://waic.github.io/wcag21/techniques/)
 -->
 
@@ -39,9 +39,6 @@ Pull Request は、ブランチ `master` にお願いします。また、issue 
 
 [issue](https://github.com/waic/wcag21/issues)を作成してコメントしてもらえると助かります。また、[Pull Request](https://github.com/waic/wcag21/pulls)を作成できるよという方はPull Requestでも歓迎します。\
 また、各翻訳物の訳注にもありますように、[Googleフォームでのコメント](https://docs.google.com/forms/d/e/1FAIpQLSdIpvogLx8kGIMewhQ6MzhG2pOCQZ50iIBViGg8pUrRJuslKg/viewform?entry.685195438)も受け付けています。
-
-# 元ファイル情報
-
-- WCAG 2.1 解説書は、 2019 年 3 月 6 日付けのファイルをもとにしています。W3C のソースファイルのハッシュは [dfad86](https://github.com/w3c/wcag/tree/dfad867083e7137d27e472e3b85aaac8cd2c2c77/understanding) です。
-- WCAG 2.1 達成方法集は、2019 年 10 月 1日付けのファイルをもとにしています。W3C のソースファイルのハッシュは [0a32c3](https://github.com/w3c/wcag/tree/0a32c3b5411db477945ce4fcb0632af294bef3f9/techniques) です。
 -->
+
+翻訳の元ファイルについては、<https://github.com/waic/w3c-wcag>を参照してください。
