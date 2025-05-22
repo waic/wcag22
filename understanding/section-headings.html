@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  2.4.10: Section Headings | WAI | W3C</title>
+      <title>解説書 達成基準 2.4.10: セクション見出し | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
-      <!-- 日本語訳されるまでの一時的なスクリプト -->
-      <script src="untranslated-note.js"></script>
    </head>
    <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://w3c.github.io/wcag/understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://w3c.github.io/wcag/understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href="https://waic.jp/translations/WCAG22/Understanding/">WCAG 2.2 解説書</a></div>
+            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Understanding/about">WCAG 解説書について</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -37,17 +35,17 @@
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
                   <li class="nav__item"><a href=".">
-                        								All Understanding Docs
+                        								目次
                         							</a></li>
                   <li class="nav__item"><a href="navigable">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Navigable</a></li>
+                        </svg>ガイドライン: ナビゲーション可能</a></li>
                   <li class="nav__item"><a href="link-purpose-link-only">
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-left-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
-                        </svg>Previous SC: Link Purpose (Link Only)</a></li>
-                  <li class="nav__item"><a href="focus-not-obscured-minimum">Next SC: Focus Not Obscured (Minimum)
+                        </svg>前: リンクの目的 (リンクのみ)</a></li>
+                  <li class="nav__item"><a href="focus-not-obscured-minimum">次: 隠されないフォーカス (最低限)
                         <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                         </svg></a></li>
@@ -58,113 +56,91 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">このページの内容</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#resources">Related Resources</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
-                     <li><a href="#key-terms">Key Terms</a></li>
+                     <li><a href="#brief">要約</a></li>
+                     <li><a href="#intent">意図</a></li>
+                     <li><a href="#benefits">利点</a></li>
+                     <li><a href="#examples">事例</a></li>
+                     <li><a href="#resources">関連リソース</a></li>
+                     <li><a href="#techniques">テクニック</a></li>
+                     <li><a href="#key-terms">重要な用語</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
 
-         <!-- 日本語訳されるまでの一時的な注記 -->
-         <div class="untranslated-note"><p>このWCAG 2.2 解説書の日本語訳は作業中となっています。WCAG 2.1 解説書の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Understanding/">WCAG 2.1 解説書</a> ]</p></div>
-            <h1><span class="standalone-resource__type-of-guidance">Understanding 
-                  				SC 2.4.10:</span>Section Headings (Level AAA)
+            <h1><span class="standalone-resource__type-of-guidance">解説書 
+                  				達成基準 2.4.10:</span>セクション見出し (レベル AAA)
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">達成基準</header>
                <div class="box-i">
                   <p>
-                     <a href="#dfn-section">Section</a> headings are used to organize the content.
+                     <a href="#dfn-section">セクション</a>見出しを用いて、コンテンツが整理されている。
                      
                   </p>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
-                     <p>"Heading" is used in its general sense and includes titles and other ways to add a
-                        heading to different types of content.
+                     <p class="note-title marker">注記</p>
+                     <p>見出しはその一般的な意味で用いられており、タイトルや様々なタイプのコンテンツに見出しを付加するその他の手段を含む。
                         
                      </p>
                   </div>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
-                     <p>This success criterion covers sections within writing, not <a href="#dfn-user-interface-component">user interface components</a>. User interface components are covered under <a href="#name-role-value">Success Criterion 4.1.2</a>.
-                        
+                     <p class="note-title marker">注記</p>
+                     <p>この達成基準は、文書におけるセクションを対象としており、<a href="#dfn-user-interface-component">ユーザインタフェース コンポーネント</a>は対象としていない。ユーザインタフェース コンポーネントについては、<a href="name-role-value">達成基準 4.1.2</a> が対象にしている。
                      </p>
                   </div>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>要約</h2>
                <dl>
                   
-                  <dt>Goal</dt>
-                  <dd>Users understand how content is organized in sections.</dd>
+                  <dt>目標</dt>
+                  <dd>コンテンツがどのようなセクションによって構成されているかを、利用者が理解している。</dd>
                   
-                  <dt>What to do</dt>
-                  <dd>Where content is organized in sections, provide section headings.</dd>
+                  <dt>何をすればよいか</dt>
+                  <dd>コンテンツがセクションによって構成されている場合は、セクション見出しを付ける。</dd>
                   
-                  <dt>Why it's important</dt>
-                  <dd>People can orient themselves, especially those with cognitive or visual disabilities.</dd> 
+                  <dt>なぜそれが重要か</dt>
+                  <dd>特に認知障害又は視覚障害のある人々が、ページ上の自分の位置を確認することができる。</dd> 
                   
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
-               <p>The intent of this Success Criterion is to provide headings for sections of a Web
-                  page, when the page is organized into sections. For instance, long documents are often
-                  divided into a variety of chapters, chapters have subtopics, etc. When such sections
-                  exist,
-                  they need to have headings that introduce them. This clearly indicates the organization
-                  of the content, facilitates navigation within the content, and provides mental "handles"
-                  that aid in comprehension of the content. Other page elements may complement headings
-                  to improve presentation (e.g., horizontal rules and boxes), but visual presentation
-                  is not sufficient to identify document sections.
+               <h2>意図</h2>
+               <p>この達成基準の意図は、ページがセクションで構成されている場合に、ウェブページのセクションに見出しを提供することである。例えば、長い文書は多くの場合、様々な章に分けられ、章にはサブトピックなどがある。そのようなセクションが存在する場合、それらのセクションを紹介する見出しが必要である。これは、コンテンツの構造を明確に示し、コンテンツ内のナビゲーションを手助けし、そしてコンテンツの理解を助けるメンタルな「取っ掛かり」を提供する。提示を改善するために、ページのその他の要素 (例: 横罫線、囲み罫線) が見出しを補完することもあるが、視覚的提示は文章のセクションを特定するには十分ではない。
                   
                </p>
-               <p>This provision is included at Level AAA because it cannot be applied to all types
-                  of content and it may not always be possible to insert headings. For example, when
-                  posting a pre-existing document to the Web, headings that an author did not include
-                  in the original document cannot be inserted. Or, a long letter would often cover different
-                  topics, but putting headings into a letter would be very strange. However, if a document
-                  can be broken up into sections with headings, it facilitates both understanding and
-                  navigation.
+               <p>この達成基準は、すべての種類のコンテンツに適用できるわけではなく、見出しを挿入することが常に可能であるとも限らないため、レベル AAA に含まれている。例えば、既存の文書をウェブで公開する場合、元の文書に含まれていない見出しは挿入できない。又は、長い手紙には様々なトピックを扱うことが多いが、手紙に見出しを付けるのはとても奇妙なことだろう。しかし、もし文書が見出しの付いたセクションに分割できるならば、理解とナビゲーションの両方が容易になる。
                   
                </p>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>利点</h2>
                <ul>
                   
                   
-                  <li>People who are blind will know when they have moved from one section of a Web page
-                     to another and will know the purpose of each section.
+                  <li>全盲の利用者が、ウェブページのあるセクションからいつ別のセクションへ移動したのかが分かるようになり、各セクションの目的が分かるようになる。
                      
                   </li>
                   
                   
-                  <li>People with some learning disabilities will be able to use the headings to understand
-                     the overall organization of the page content more easily.
+                  <li>何らかの学習障害のある人が、ページ全体のコンテンツの構造をより容易に理解するために、見出しを使うことができる。
                      
                   </li>
                   
                   
-                  <li>People who navigate content by keyboard will be able to jump the focus from heading
-                     to heading, enabling them to find quickly content of interest.
+                  <li>キーボードでコンテンツをナビゲートしている利用者が、フォーカスを見出しから見出しへとジャンプできるようになり、関心のあるコンテンツを素早く見つけることができるようになる。
                      
                   </li>
                   
                   
-                  <li>In pages where content in part of the page updates, headings can be used to quickly
-                     access updated content.
+                  <li>一部のコンテンツを更新したページでは、見出しを使うことによって、更新したコンテンツへ素早く到達できるようになる。
                      
                   </li>
                   
@@ -172,18 +148,16 @@
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>事例</h2>
                <ul>
                   
                   
-                  <li>A menu contains different sections for different courses. Each section has a heading:
-                     Appetizers, Salad, Soup, Entree, Dessert.
+                  <li>メニューに様々なコース料理の様々なセクションがある。各セクションには、前菜、サラダ、スープ、メイン料理、デザートという見出しがある。
                      
                   </li>
                   
                   
-                  <li>A Web application contains a settings page that is divided into groups of related
-                     settings. Each section contains a heading describing the class of settings.
+                  <li>あるウェブアプリケーションは、関連する設定のグループに分けられた設定ページがある。各セクションには、設定の区分を説明する見出しがある。
                      
                   </li>
                   
@@ -191,8 +165,8 @@
                </ul>
             </section>
             <section id="resources">
-               <h2>Related Resources</h2>
-               <p>Resources are for information purposes only, no endorsement implied.</p>
+               <h2>関連リソース</h2>
+               <p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p>
                <ul>
                   
                   
@@ -215,14 +189,11 @@
                </ul>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>テクニック</h2>
+               <p>この節にある番号付きの各項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断するテクニック、又は複数のテクニックの組み合わせを表している。しかしながら、必ずしもこれらのテクニックを用いる必要はない。その他のテクニックについての詳細は、<a href="understanding-techniques">WCAG 達成基準のテクニックを理解する</a>の「その他のテクニック」を参照のこと。
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
+                  <h3>十分なテクニック</h3>
                   <ul>
                      
                      
@@ -248,23 +219,21 @@
             <section id="key-terms">
                <details>
                   <summary>
-                     <h2>Key Terms</h2>
+                     <h2>重要な用語</h2>
                   </summary>
-                  <dt id="dfn-section">section</dt>
+                  <dt id="dfn-section">セクション (section)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">a self-contained portion of written content that deals with one or more related topics
-                           or thoughts
+                        <p xmlns="http://www.w3.org/1999/xhtml">一つ以上の関連する話題、又は考えについて書かれたコンテンツの自己完結している部分。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>A section may consist of one or more paragraphs and include graphics, tables, lists
-                              and sub-sections.
+                           <p class="note-title marker">注記</p>
+                           <p>セクションは一つ以上の段落から成ることがあり、画像、表、リスト、及びサブセクションを含むこともある。
                               
                            </p>
                         </div>
@@ -272,40 +241,35 @@
                         
                      </definition>
                   </dd>
-                  <dt id="dfn-user-interface-component">user interface component</dt>
+                  <dt id="dfn-user-interface-component">ユーザインタフェース コンポーネント (user interface component)</dt>
                   <dd>
                      <definition xmlns="">
                         
                         
-                        <p xmlns="http://www.w3.org/1999/xhtml">a part of the content that is perceived by users as a single control for a distinct
-                           function
+                        <p xmlns="http://www.w3.org/1999/xhtml">コンテンツの一部分で、特定の機能を実現するための単一のコントロールとして利用者が知覚するもの。
                            
                         </p>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>Multiple user interface components may be implemented as a single programmatic element.
-                              "Components" here is not tied to programming techniques, but rather to what the user
-                              perceives as separate controls.
+                           <p class="note-title marker">注記</p>
+                           <p>複数のユーザインタフェース コンポーネントが、単一のプログラム要素で実装されることもある。ここでいう「コンポーネント」は、プログラムの手法と結びついたものではなく、利用者が別々のコントロールとして知覚するものを指す。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>User interface components include form elements and links as well as components generated
-                              by scripts.
+                           <p class="note-title marker">注記</p>
+                           <p>ユーザインタフェース コンポーネントには、フォーム要素、リンクだけでなく、スクリプトで生成されるコンポーネントが含まれる。
                               
                            </p>
                         </div>
                         
                         
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
-                           <p>What is meant by "component" or "user interface component" here is also sometimes
-                              called "user interface element".
+                           <p class="note-title marker">注記</p>
+                           <p>ここでの「コンポーネント」又は「ユーザインタフェース コンポーネント」は、「ユーザインタフェース要素」とも呼ばれる。
                               
                            </p>
                         </div>
@@ -313,9 +277,7 @@
                         
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            
-                           <p>An applet has a "control" that can be used to move through content by line or page
-                              or random access. Since each of these would need to have a name and be settable independently,
-                              they would each be a "user interface component."
+                           <p>アプレットには、コンテンツ内を行単位、ページ単位、又はランダムアクセスで移動するために用いられる「コントロール」がある。これらには、いずれも名前 (name) を割り当て、個別に設定できるようにする必要があるため、それぞれが「ユーザインタフェース コンポーネント」となる。
                               
                            </p>
                            
@@ -335,13 +297,12 @@
                <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
                   <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
                </svg>
-               <h2> Help improve this page </h2>
+               <h2>このページを改善する</h2>
             </header>
             <div class="box-i">
-               <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                  list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org@w3.org</a> or via GitHub
+               <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。
                </p>
-               <div class="button-group"><a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a></div>
+               <div class="button-group"><a class="button" href="https://waic.jp/contact/" id="file-issue"><span>翻訳に関するお問い合わせ</span></a><a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a></div>
             </div>
          </aside>
       </div>
@@ -356,11 +317,13 @@
                Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
                of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the European Commission.
             </p>
+            <p>この文書は、2024 年 2 月 14 日付けの <a href="https://w3c.github.io/wcag/understanding/">Understanding WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+            <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
          </div>
       </footer>
       <footer class="site-footer grid-4q" aria-label="Site">
          <div class="q1-start q3-end about">
-            <div>
+            <!--div>
                <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
                <p>Strategies, standards, and supporting resources to make the Web accessible to people
                   with disabilities.
@@ -382,13 +345,13 @@
                         </svg> YouTube</a></li>
                   <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
                </ul>
-            </div>
+            </div-->
             <div dir="auto" translate="no" lang="en">
                <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
                </p>
             </div>
          </div>
-         <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+         <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
             <ul style="margin-bottom:0">
                <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
                <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -397,7 +360,7 @@
                <li><a href="/WAI/translations/"> Translations</a></li>
                <li><a href="/WAI/roles/">Resources for Roles</a></li>
             </ul>
-         </div>
+         </div-->
       </footer>
       <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
       hljs.configure({
@@ -418,8 +381,10 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
+    </script>
+    <script src="https://waic.jp/docs/js/translation-contact.js"></script>
+    <!--noscript>
          <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-      </noscript>
+      </noscript-->
    </body>
 </html>
