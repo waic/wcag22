@@ -6,9 +6,8 @@ raw.githack.com により
 
 - [WCAG 2.2](https://raw.githack.com/waic/wcag22/main/guidelines/index.html)
 - [WCAG 2.2 解説書](https://raw.githack.com/waic/wcag22/main/understanding/index.html)
-<!--
-- [WCAG 2.1 達成方法集](https://waic.github.io/wcag21/techniques/)
--->
+- [WCAG 2.2 テクニック集](https://raw.githack.com/waic/wcag22/main/techniques/index.html)
+
 
 が閲覧可能です。<!-- WCAG 2.2 の策定は完了していますが、関連文書である Understanding WCAG 2.2 及び Techniques for WCAG 2.2 は、W3C AGWG によって随時更新されている文書であることに注意してください。-->
 
