@@ -1,5 +1,5 @@
-<!DOCTYPE html><html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
-    <title>H101: Using semantic HTML elements to identify regions of a page | WAI | W3C</title>
+<!DOCTYPE html><html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml"><head>
+    <title>H101: セマンティックな HTML 要素を用いてページの領域を識別する | WAI | W3C</title>
     
   
 
@@ -17,12 +17,12 @@
 <div class="minimal-header-container default-grid">
   <header class="minimal-header" id="site-header">
     <div class="minimal-header-name">
-      <a href="https://w3c.github.io/wcag/techniques/">WCAG 2.2 Techniques</a>
+      <a href="https://waic.jp/translations/WCAG22/Techniques/">WCAG 2.2 テクニック集</a>
     </div>
     
       <div class="minimal-header-subtitle">Examples of ways to meet WCAG; not required</div>
     
-    <a class="minimal-header-link" href="https://w3c.github.io/wcag/techniques/about">About WCAG Techniques</a>
+    <a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Techniques/about">WCAG テクニック集について</a>
     <div class="minimal-header-logo">
       <a href="http://w3.org/" aria-label="W3C">
         <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44">
@@ -51,15 +51,15 @@
 
 <div class="default-grid with-gap leftcol">
 <aside class="box nav-hack sidebar standalone-resource__sidebar">
-    <header class="box-h">Page Contents</header>
+    <header class="box-h">このページの内容</header>
     <div class="box-i">
       <nav aria-label="page contents" class="navtoc">
-        <ul><li><a href="#technique">About this Technique</a></li>
-<li><a href="#description">Description</a></li>
-<li><a href="#examples">Examples</a></li>
-<li><a href="#resources">Related Resources</a></li>
-<li><a href="#related">Related Techniques</a></li>
-<li><a href="#tests">Tests</a></li>
+        <ul><li><a href="#technique">このテクニックについて</a></li>
+<li><a href="#description">解説</a></li>
+<li><a href="#examples">事例</a></li>
+<li><a href="#resources">関連リソース</a></li>
+<li><a href="#related">関連テクニック</a></li>
+<li><a href="#tests">検証</a></li>
 </ul>
       </nav>
     </div>
@@ -67,27 +67,27 @@
 
 <main id="main" class="standalone-resource__main">
     
-<h1><span>Technique H101:</span>Using semantic <abbr title="HyperText Markup Language">HTML</abbr> elements to identify regions of a page</h1>
+<h1><span>テクニック H101:</span>セマンティックな <abbr title="HyperText Markup Language">HTML</abbr> 要素を用いてページの領域を識別する</h1>
 
 
 
 
 <section id="technique" class="box">
-	<h2 class="box-h box-h-icon">About this Technique</h2>
+	<h2 class="box-h box-h-icon">このテクニックについて</h2>
 	<div class="box-i">
 
 
   
   <p>
-    This technique relates to
+    このテクニックは
     
-<a href="https://w3c.github.io/wcag/understanding/info-and-relationships">1.3.1: Info and Relationships</a>
-(<strong>Sufficient</strong>).</p>
+<a href="https://waic.jp/translations/WCAG22/Understanding/info-and-relationships">1.3.1: 情報及び関係性</a>
+(<strong>十分なテクニック</strong>) に関連する。</p>
   
 
 
 
-  <p>This technique applies to technologies that support <a href="https://www.w3.org/TR/wai-aria/">ARIA (Accessible Rich Internet Applications)</a>.</p>
+  <p>このテクニックは、<a href="https://www.w3.org/TR/wai-aria/">ARIA (Accessible Rich Internet Applications)</a> をサポートする技術に適用される。</p>
 
 </div>
 </section>
@@ -97,29 +97,29 @@
     
     
     <section id="description">
-      <h2>Description</h2>
-      <p>The purpose of this technique is to provide programmatic access to sections of a web page. Landmark roles (or "landmarks") programmatically identify sections of a page. Browsers don't expose landmarks directly to users, but they they are made available to them by assistive technology and browser extensions to help navigation to various sections of a page.</p>
-      <p>Landmarks provide an easy way for users of assistive technology understand the programmatic structure of a page and skip over content they're not interested in. For instance, if a site's header, global navigation, main content area, and footer are marked up as landmarks, a screen reader user can easily skip to the landmark they're interested in without having to work their way through all the preceding content. A blind user who may be familiar with a news site's menu, and is only interested in getting to the top story, could easily navigate to the "main" landmark, and bypass dozens of menu links. In another circumstance, a user who is blind may want to quickly find a navigation menu, and can do so by jumping to the navigation landmark.</p>
-      <p>Landmark regions are implicitly created when certain semantic HTML elements are used, which is different from <a href="../aria/ARIA11">using ARIA to explicitly create landmarks</a>. These elements are:</p>
+      <h2>解説</h2>
+      <p>このテクニックの目的は、ウェブページのセクションへのプログラムによるアクセスを提供することである。ランドマークロール (又は「ランドマーク」) は、プログラムによるページのセクションを識別する。ブラウザはランドマークを利用者に直接公開しないが、支援技術及びブラウザ拡張機能によって、ページの様々なセクションへのナビゲーションを支援するために提供される。</p>
+      <p>ランドマークは、支援技術を使用する利用者がページのプログラム構造を理解し、関心のないコンテンツをスキップする容易な方法を提供する。例えば、サイトのヘッダー、グローバルナビゲーション、メインコンテンツエリア、フッターがランドマークとしてマークアップされている場合、スクリーンリーダーを使用する利用者は、先行するコンテンツを全て確認することなく、関心のあるランドマークに容易に移動できる。ニュースサイトのメニューに精通していて、トップニュースにのみアクセスしたい視覚障害のある利用者は、"main" ランドマークに容易に移動でき、多数のメニューリンクをバイパスできる。別の状況では、視覚障害のある利用者がナビゲーションメニューを素早く見つけたい場合、ナビゲーションランドマークにジャンプすることで見つけることができる。</p>
+      <p>ランドマーク領域は、特定のセマンティック HTML 要素が使用されると暗黙的に作成される。これは、<a href="../aria/ARIA11">ARIA を用いて明示的にランドマークを作成する</a>場合とは異なる。これらの要素は次のとおりである:</p>
       <ul>
-        <li><code class="language-html">&lt;header&gt;</code>: When a <code class="language-html">header</code> is a direct child of the <code class="language-html">body</code> element, it creates a <code>banner</code> role, a region that typically contains the site's logo, name, and other persistent site-wide content at the top of a page.</li>
-        <li><code class="language-html">&lt;nav&gt;</code>: A region that contains navigation links to other pages or different parts of the same page.</li>
-        <li><code class="language-html">&lt;main&gt;</code>: A region that contains a page's main content.</li>
-        <li><code class="language-html">&lt;section&gt;</code>: A region that contains a generic section of a document or application. A <code class="language-html">section</code> element isn't exposed as a landmark region unless it has an accessible name.</li>
-        <li><code class="language-html">&lt;form&gt;</code>: A region of the document that represents a collection of form-associated elements, some of which can represent editable values that can be submitted to a server for processing. A <code class="language-html">form</code> element isn't exposed as a landmark region unless it has an accessible name.</li>
-        <li><code class="language-html">&lt;aside&gt;</code>: A region of the document that supports the main content, yet is separate and meaningful on its own.</li>
-        <li><code class="language-html">&lt;footer&gt;</code>: A region that, when its nearest ancestor is the <code class="language-html">body</code> element, contains information about the page such as copyrights and links to privacy statements.</li>
+        <li><code class="language-html">&lt;header&gt;</code>: <code class="language-html">header</code> が <code class="language-html">body</code> 要素の直接の子要素である場合、これは<code>banner</code> ロールを作成し、通常、サイトのロゴ、名前、その他のサイト全体の永続的なコンテンツを含む領域で、ページ上部に表示される。</li>
+        <li><code class="language-html">&lt;nav&gt;</code>: 他のページ又は同じページ内の異なる部分へのナビゲーションリンクを含む領域。</li>
+        <li><code class="language-html">&lt;main&gt;</code>: ページのメインコンテンツを含む領域。</li>
+        <li><code class="language-html">&lt;section&gt;</code>: ドキュメントまたはアプリケーションの一般的なセクションを含む領域。<code class="language-html">section</code> 要素は、アクセシブルな名前 (name) を持たない限り、ランドマーク領域として公開されない。</li>
+        <li><code class="language-html">&lt;form&gt;</code>: フォーム関連要素のコレクションを表すドキュメントの領域。これらの要素の一部は、サーバーに送信して処理できる編集可能な値を表すことができる。<code class="language-html">form</code> 要素は、アクセシブルな名前を持たない限り、ランドマーク領域として公開されない。</li>
+        <li><code class="language-html">&lt;aside&gt;</code>: メインコンテンツをサポートしながらも、それ自体で独立した意味を持つドキュメントの領域。</li>
+        <li><code class="language-html">&lt;footer&gt;</code>: 最も近い祖先が <code class="language-html">body</code> 要素である場合、著作権やプライバシーステートメントへのリンクなど、ページに関する情報を含む領域。</li>
       </ul>
-      <p>Modern web browsers don't need to have the HTML element's related ARIA role added to them to be exposed as a landmark region. For example, <code class="language-html">&lt;main role="main"&gt;</code> is unnecessary, and should just be <code class="language-html">&lt;main&gt;</code>.</p>
-      <p>There are cases when a particular landmark role can be used more than once on a page, for example, primary and secondary blocks of navigation. In these cases, identical roles should be labeled using a valid technique for labelling regions.</p>
-      <p>It is a best practice to include all content on the page in landmarks, so that screen reader users who rely on landmarks to navigate from section to section do not lose track of content.</p>
+      <p>モダンなウェブブラウザでは、HTML 要素をランドマーク領域として公開するために、関連する ARIA ロールを追加する必要はない。例えば、<code class="language-html">&lt;main role="main"&gt;</code> は不要であり、<code class="language-html">&lt;main&gt;</code> のみで十分である。</p>
+      <p>ナビゲーションの主要ブロックと副次ブロックなど、特定のランドマークロールをページ上で複数回使用できる場合がある。このような場合、領域にラベルを付ける有効な手法を使用して、同一のロールにラベルを付けるべきである。</p>
+      <p>セクション間を移動するためにランドマークを使用するスクリーンリーダーの利用者がコンテンツを見失わないように、ページ上の全てのコンテンツをランドマークに含めることがベストプラクティスである。</p>
   </section>
 
   <section id="examples">
-    <h2>Examples</h2>
+    <h2>事例</h2>
     <section class="example" id="example-1-simple-landmarks">
-      <h3>Example 1: Simple landmarks</h3>
-      <p>The following example shows how landmarks might be added to an HTML document:</p>
+      <h3>事例 1: 単純なランドマーク</h3>
+      <p>次の例は、HTML 文書にどのようにランドマークを追加するかを示している:</p>
 <pre xml:space="preserve"><code class="language-html">&lt;header&gt; site logo and name, etc. here &lt;/header&gt;
 &lt;form aria-label="site search"&gt; search functionality here &lt;/form&gt;
 &lt;nav&gt; a list of navigation links here &lt;/nav&gt;
@@ -129,9 +129,9 @@
 &lt;footer&gt; site contact details, copyright information, etc. here &lt;/footer&gt;</code></pre>
   </section>
   <section class="example" id="example-2-multiple-landmarks-of-the-same-type-and-aria-labelledby">
-    <h3>Example 2: Multiple landmarks of the same type and aria-labelledby</h3>
+    <h3>事例 2: 同じ種類の複数のランドマークと aria-labelledby</h3>
 
-    <p>The following example shows a best practice of how landmarks might be added to an HTML document in situations where there are two or more of the same type of landmark on the same page. For instance, if a <code class="language-html">nav</code> element is used multiple times on a page, each instance may have a unique label specified using <code class="language-html">aria-labelledby</code>:</p>
+    <p>次の例は、同じページに同じ種類のランドマークが二つ以上存在する場合に、HTML ドキュメントにランドマークを追加するベストプラクティスを示している。例えば、<code class="language-html">nav</code> 要素がページ上で複数回使用されている場合、各インスタンスには <code class="language-html">aria-labelledby</code> を使用して一意のラベルを指定できる:</p>
 <pre xml:space="preserve"><code class="language-html">&lt;nav aria-labelledby="site-nav-heading"&gt;
   &lt;h2 id="site-nav-heading"&gt;Site&lt;/h2&gt;
   &lt;ul&gt;
@@ -150,8 +150,8 @@
 &lt;/nav&gt;</code></pre>
   </section>
   <section class="example" id="example-3-multiple-landmarks-of-the-same-type-and-aria-label">
-    <h3>Example 3: Multiple landmarks of the same type and aria-label</h3>
-    <p>The following example shows a best practice of how landmarks might be added to an HTML document in situations where there are two or more of the same type of landmark on the same page, and there is no existing text on the page that can be referenced as the label:</p>
+    <h3>事例 3: 同じ種類の複数のランドマークと aria-label</h3>
+    <p>次の例は、同じページに同じ種類のランドマーク二つ以上あり、ラベルとして参照できるテキストがページに存在しない場合に、HTML ドキュメントにランドマークを追加する方法のベストプラクティスを示している:</p>
 <pre xml:space="preserve"><code class="language-html">&lt;nav aria-label="Vehicles"&gt;
   &lt;ul&gt;
     &lt;li&gt;&lt;a aria-current="page" href="/cars"&gt;Cars&lt;/a&gt;&lt;/li&gt;
@@ -170,8 +170,8 @@
 &lt;/nav&gt;</code></pre>
   </section>
   <section class="example" id="example-4-search-form">
-    <h3>Example 4: Search form</h3>
-    <p>The following example shows a search form. A <code class="language-html">form</code> element must have an accessible name to be exposed as a landmark area:</p>
+    <h3>事例 4: 検索フォーム</h3>
+    <p>次の例は検索フォームを示している。<code class="language-html">form</code>  要素をランドマーク領域として表示するには、アクセシブルな名前 (name) を持たなければならない:</p>
 <pre xml:space="preserve"><code class="language-html">&lt;form aria-labelledby="search-label"&gt;
   &lt;label for="product-search" id="search-label"&gt;Search&lt;/label&gt;
   &lt;input id="product-search" placeholder="title, author, or ISBN" type="text"&gt;
@@ -182,8 +182,8 @@
 
 
 <section id="resources">
-  <h2>Related Resources</h2>
-<p style="margin-bottom: 1.5em;"><em><small>No endorsement implied.</small></em></p>
+  <h2>関連リソース</h2>
+<p style="margin-bottom: 1.5em;"><em><small>推奨を意味するものではない。</small></em></p>
 
 
     <ul>
@@ -208,7 +208,7 @@
 
 
 <section id="related">
-  <h2>Related Techniques</h2>
+  <h2>関連テクニック</h2>
   <ul>
     <li><a href="../aria/ARIA11">ARIA11: Using ARIA landmarks to identify regions of a page</a></li>
     <li><a href="../general/G1">G1: Adding a link at the top of each page that goes directly to the main content area</a></li>
@@ -218,19 +218,19 @@
   </ul>
 </section>
 <section id="tests">
-  <h2>Tests</h2>
+  <h2>検証</h2>
   <section class="procedure" id="test-procedure">
-    <h3>Procedure</h3>
+    <h3>手順</h3>
     <ol>
-      <li>Examine each HTML element that creates a <a href="https://www.w3.org/TR/wai-aria/#landmark_roles">landmark role</a>.</li>
-      <li>Examine whether the correct element has been used to mark up content. For example: a <code class="language-html">nav</code> element has been used to mark up a section with navigation links, or the <code class="language-html">main</code> element is used to contain the page's main content.</li>
-      <li>If a landmark region needs to have an accessible name to be exposed as a landmark, check to see that there is an accessible name.</li>
+      <li><a href="https://www.w3.org/TR/wai-aria/#landmark_roles">ランドマークロール</a>を作成する各 HTML 要素を調べる。</li>
+      <li>コンテンツのマークアップに適切な要素が使用されているかどうかを調べる。例えば、ナビゲーションリンクを含むセクションをマークアップするために <code class="language-html">nav</code> 要素が使用されている、ページのメインコンテンツを格納するために <code class="language-html">main</code> 要素が使用されているなどである。</li>
+      <li>ランドマーク領域をランドマークとして公開するためにアクセシブルな名前 (name) を持つ必要がある場合、アクセシブルな名前 (name) が設定されているかどうかをチェックする。</li>
     </ol>
   </section>
   <section class="results" id="expected-test-results">
-    <h3>Expected Results</h3>
+    <h3>期待される結果</h3>
     <ul>
-      <li>Checks #1, #2, and #3 are true.</li>
+      <li>チェック 1、2 及び 3 が真である。</li>
     </ul>
   </section>
 </section>
@@ -250,14 +250,13 @@
     <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
       <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
     </svg>
-    <h2>Help improve this page</h2>
+    <h2>このページを改善する</h2>
   </header>
   <div class="box-i">
-  <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org</a> or via GitHub</p>
+  <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。</p>
     <div class="button-group">
-      <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a>
-      <a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a>
-      <a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a>
+      <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdIpvogLx8kGIMewhQ6MzhG2pOCQZ50iIBViGg8pUrRJuslKg/viewform?entry.685195438=https%3A%2F%2Fwaic.jp%2Ftranslations%2FWCAG22%2FUnderstanding%2Ffocus-not-obscured-minimum" id="file-issue">翻訳に関するお問い合わせ (Google フォーム)</a>
+      <a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a>
     </div>
   </div>
 </aside>
@@ -279,12 +278,15 @@
       <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project,
       co-funded by the European Commission.
     </p>
+    <p>この文書は、2025 年 5 月 21 日付けの <a href="https://w3c.github.io/wcag/techniques/">Techniques for WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+    </p>
+    <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
   </div>
 </footer>
 
 <footer class="site-footer grid-4q" aria-label="Site">
   <div class="q1-start q3-end about">
-    <div>
+    <!--div>
       <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
       <p>Strategies, standards, and supporting resources to make the Web accessible to people with disabilities.</p>
     </div>
@@ -295,12 +297,12 @@
         <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube " viewBox="0 0 32 32"><path d="M31.327 8.273c-0.386-1.353-1.431-2.398-2.756-2.777l-0.028-0.007c-2.493-0.668-12.528-0.668-12.528-0.668s-10.009-0.013-12.528 0.668c-1.353 0.386-2.398 1.431-2.777 2.756l-0.007 0.028c-0.443 2.281-0.696 4.903-0.696 7.585 0 0.054 0 0.109 0 0.163l-0-0.008c-0 0.037-0 0.082-0 0.126 0 2.682 0.253 5.304 0.737 7.845l-0.041-0.26c0.386 1.353 1.431 2.398 2.756 2.777l0.028 0.007c2.491 0.669 12.528 0.669 12.528 0.669s10.008 0 12.528-0.669c1.353-0.386 2.398-1.431 2.777-2.756l0.007-0.028c0.425-2.233 0.668-4.803 0.668-7.429 0-0.099-0-0.198-0.001-0.297l0 0.015c0.001-0.092 0.001-0.201 0.001-0.31 0-2.626-0.243-5.196-0.708-7.687l0.040 0.258zM12.812 20.801v-9.591l8.352 4.803z"></path></svg> YouTube</a></li>
         <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
       </ul>
-    </div>
+    </div-->
     <div dir="auto" translate="no" lang="en">
       <p>Copyright © 2025 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
     </div>
   </div>
-  <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+  <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
     <ul style="margin-bottom:0">
       <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
       <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -309,7 +311,7 @@
       <li><a href="/WAI/translations/"> Translations</a></li>
       <li><a href="/WAI/roles/">Resources for Roles</a></li>
     </ul>
-  </div>
+  </div-->
 </footer>
 
 <link rel="stylesheet" href="../a11y-light.css">
@@ -323,7 +325,7 @@
 </script>
 <script src="https://www.w3.org/WAI/assets/scripts/main.js"></script>
 
-<script>
+<!--script>
   var _paq = _paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
   _paq.push(["setDoNotTrack", true]);
@@ -339,7 +341,7 @@
 </script>
 <noscript>
   <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-</noscript>
-
+</noscript-->
+<script src="https://waic.jp/docs/js/translation-contact.js"></script>
 
 </body></html>
