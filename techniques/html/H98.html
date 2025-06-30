@@ -1,5 +1,5 @@
-<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-		<title>H98: Using HTML 5.2 autocomplete attributes | WAI | W3C</title>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="ja"><head>
+		<title>H98: HTML 5.2 autocomplete 属性を使用する | WAI | W3C</title>
 		
 	
 
@@ -17,12 +17,12 @@
 <div class="minimal-header-container default-grid">
   <header class="minimal-header" id="site-header">
     <div class="minimal-header-name">
-      <a href="https://w3c.github.io/wcag/techniques/">WCAG 2.2 Techniques</a>
+      <a href="https://waic.jp/translations/WCAG22/Techniques/">WCAG 2.2 テクニック集</a>
     </div>
     
       <div class="minimal-header-subtitle">Examples of ways to meet WCAG; not required</div>
     
-    <a class="minimal-header-link" href="https://w3c.github.io/wcag/techniques/about">About WCAG Techniques</a>
+    <a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Techniques/about">WCAG テクニック集について</a>
     <div class="minimal-header-logo">
       <a href="http://w3.org/" aria-label="W3C">
         <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44">
@@ -51,13 +51,13 @@
 
 <div class="default-grid with-gap leftcol">
 <aside class="box nav-hack sidebar standalone-resource__sidebar">
-    <header class="box-h">Page Contents</header>
+    <header class="box-h">このページの内容</header>
     <div class="box-i">
       <nav aria-label="page contents" class="navtoc">
-        <ul><li><a href="#technique">About this Technique</a></li>
-<li><a href="#description">Description</a></li>
-<li><a href="#examples">Examples</a></li>
-<li><a href="#tests">Tests</a></li>
+        <ul><li><a href="#technique">このテクニックについて</a></li>
+<li><a href="#description">解説</a></li>
+<li><a href="#examples">事例</a></li>
+<li><a href="#tests">検証</a></li>
 </ul>
       </nav>
     </div>
@@ -65,27 +65,25 @@
 
 <main id="main" class="standalone-resource__main">
 		
-<h1><span>Technique H98:</span>Using HTML 5.2 <code class="language-html">autocomplete</code> attributes</h1>
+<h1><span>テクニック H98:</span>HTML 5.2 <code class="language-html">autocomplete</code> 属性を使用する</h1>
 
 
 
 
 <section id="technique" class="box">
-	<h2 class="box-h box-h-icon">About this Technique</h2>
+	<h2 class="box-h box-h-icon">このテクニックについて</h2>
 	<div class="box-i">
 
 
   
   <p>
-    This technique relates to
-    
-<a href="https://w3c.github.io/wcag/understanding/identify-input-purpose">1.3.5: Identify Input Purpose</a>
-(<strong>Sufficient</strong>).</p>
+    このテクニックは、<a href="https://waic.jp/translations/WCAG22/Understanding/identify-input-purpose">1.3.5: 入力目的の特定</a>
+(<strong>十分なテクニック</strong>) に関連する。</p>
   
 
 
 
-  <p>This technique applies to all <abbr title="Hypertext Markup Language">HTML</abbr> form fields that map to the <a href="/TR/WCAG/#input-purposes">HTML 5.2 <code class="language-html">autofill</code> tokens</a>.</p>
+  <p>このテクニックは、<a href="https://waic.jp/translations/WCAG22/#input-purposes">HTML 5.2 <code class="language-html">autofill</code> トークン</a>に対応する全ての<abbr title="Hypertext Markup Language">HTML</abbr> フォームフィールドに適用される。</p>
 
 </div>
 </section>
@@ -95,37 +93,37 @@
 		
 		
 		<section id="description">
-			<h2>Description</h2>
-			<p>The objective of this technique is to programmatically link a pre-defined and published taxonomic term to the input, so that the inputs can also be machine-interpreted. This way the input will always have a common, referable and identifiable value associated to it, no matter what language is used, or what visible on-screen term is used to label the input. Then it can be further customized or otherwise machine-manipulated to help users.</p>
-			<p>The technique works by adding the appropriate <code class="language-html">autocomplete</code> token to each form field on the form to make the identified inputs Programmatically Determinable. This will help people with cognitive disabilities who may not immediately know the purpose of the field because the label used by the author is not familiar to them. When inputs have been programmatically assigned, third party plugins and software can manipulate these form fields to make them more accessible to people with cognitive disabilities. For instance, a plugin could detect an <code class="language-html">autocomplete</code> token with the text string "<code class="language-html">tel</code>" and insert a telephone icon. It will further enable third party software to swap out the existing labels for text labels that the user finds more familiar. For instance, it could change "Given Name" to "First Name".</p>
-      <p>The <code class="language-html">autocomplete</code> attribute also improves the browser's ability to pre-populate form fields with user-preferred values. When the input has been properly "tagged" with the known token value, the value entered by the user is stored locally on the host machine and associated with the token value for reuse. It helps those with dexterity disabilities who have trouble typing, those who may need more time, and anyone who wishes to reduce effort to fill out a form.</p>
+			<h2>解説</h2>
+			<p>このテクニックの目的は、入力が機械でも解釈できるように、事前に定義及び公開された分類用語をプログラム的に入力へリンクすることである。この方法では、どの言語が使用されているか、又は入力にラベルを付けるためにどういった画面上に表示される用語が使用されているかに関係なく、入力には常に共通で、参照可能及び識別可能な関連付けられた値を持つ。それから、さらに利用者を支援するためにカスタマイズ又は機械操作することができる。</p>
+			<p>この達成方法では、フォームの各フォームフィールドに適切な <code class="language-html">autocomplete</code> トークンを追加して、特定の入力をプログラムによる解釈が可能にすることで動作する。これは、コンテンツ制作者が使用しているラベルが馴染みがないためにフィールドの目的をすぐには理解できない認知障害の人に役立つ。入力がプログラムによって割り当てられている場合、サードパーティのプラグイン及びソフトウェアは、フォームフィールドを認知障害のある人にとってよりアクセシブルにするために、そのフォームフィールドを操作できる。例えば、プラグインはテキスト文字列 "<code class="language-html">tel</code>" を持つ <code class="language-html">autocomplete</code> トークンを検出し、電話アイコンを挿入することができる。さらに、サードパーティのソフトウェアが、既存のラベルを利用者がより馴染みのあるテキストラベルと交換できるようになる。例えば、"Given Name" を "First Name" に変更できる。</p>
+      <p><code class="language-html">autocomplete</code> 属性は、利用者が望む値をフォームフィールドに事前に入力するブラウザの能力も向上する。入力が既知のトークン値で適切に “タグ付け” されると、利用者が入力した値はホストマシン上のローカルに保管され、再利用のためにトークン値に関連付けられる。これは、タイピングに問題をもつ巧緻性障害のある人、より多くの時間を必要とするかもしれない人、及びフォームに記入するための労力を減らしたいと望む全ての人に役立つ。</p>
         
-   		<p>The <code class="language-html">autocomplete</code> attribute allows the browser to do a pattern match against a list of values locally stored with the browser, and supplies the appropriate corresponding value when the input is programmatically tagged. This is a user setting that can be turned on or off, or modified by the end user. This reduces typing and reliance on memory because it uses stored values to fill in the fields.</p>
+   		<p><code class="language-html">autocomplete</code> 属性は、ブラウザにローカルで格納されている値のリストに対してパターンマッチを実行でき、入力がプログラムによりタグ付けされたときに適切な対応する値を提供できる。これは、末端利用者がオンもしくはオフにする、又は変更することができる利用者設定である。これは、フィールドに入力する格納された値を使用するため、タイピングが減る、及び記憶への依存が少なくなる。</p>
       
-			<p>It's important to note the Success Criterion <a href="https://w3c.github.io/wcag/understanding/identify-input-purpose.html">Identify Input Purpose</a> and <code class="language-html">autocomplete</code> attribute only place requirements on input fields collecting information <strong>about the user</strong>.</p>
+			<p>達成基準の<a href="https://waic.jp/translations/WCAG22/Understanding/identify-input-purpose.html">入力目的の特定</a>及び <code class="language-html">autocomplete</code> 属性は、<strong>利用者に関する</strong>情報を収集する入力フィールドにのみ必要条件として設定することに注意するのが重要である。</p>
 
-	  <p>For the Success Criterion, it is assumed that the <code class="language-html">autocomplete</code> attribute is not used on form fields that do not correspond to an autocomplete field described in the <a href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofilling-form-controls:-the-autocomplete-attribute">HTML <code class="language-html">autocomplete</code> attribute specification</a>. If the <code class="language-html">autocomplete</code> field is used to describe a "custom" taxonomy, rather than that described in the specification, this rule may produce incorrect results.</p>
+	  <p>達成基準では、<a href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofilling-form-controls:-the-autocomplete-attribute">HTML <code class="language-html">autocomplete</code> 属性の仕様</a>で説明されているオートコンプリートフィールドに対応しないフォームフィールドでは、<code class="language-html">autocomplete</code> 属性が使用されないと仮定する。<code class="language-html">autocomplete</code> フィールドが、仕様に記述されているものではなく、“カスタム” 分類法の記述するために使用されている場合、このルールは誤った結果を生成する可能性がある。</p>
 			<section id="security-considerations">
-				<h3>Security considerations</h3>
-				<p>Organizations can be concerned about allowing input fields to be automatically filled-in. There is sometimes confusion about how browsers save information and the security implications.</p>
-				<p>For the <code class="language-html">autocomplete</code> attribute:</p>
+				<h3>セキュリティへの配慮</h3>
+				<p>組織では、入力フィールドを自動的に入力できるようにすることを懸念する場合がある。ブラウザが情報を保存する方法及びセキュリティ上の影響について混乱がしばしば生じる。</p>
+				<p><code class="language-html">autocomplete</code> 属性の場合:</p>
 				<ul>
-					<li>This technique should only be used when asking for <strong>data about the user</strong> who is filling the form in, not for other people.</li>
-					<li>It only works if you are on the same computer, using the same user-account, and using the same browser. Any multi-login scenario does not save <code class="language-html">autocomplete</code> data between different accounts. (Users can setup syncing of data across computers, but that is not the default.)</li>
-					<li>Saving information with <code class="language-html">autocomplete</code> is opt-in by the user, usually at the point of saving data the first time.</li>
-					<li>The form is not auto-submitted, the user can see the data before it is submitted.</li>
-					<li>It is easy to wipe both history and form data in the browser settings.</li>
-					<li>It is easy to engage a privacy mode, such as private browsing.</li>
-					<li>Even <em>without</em> <code class="language-html">autocomplete</code> set in the web page, browsers can save data, and some plugins (such as password managers) will aggressively use heuristics to guess what fields are for and fill them in. Using the <code class="language-html">autocomplete</code> attribute makes those guesses accurate.</li>
+					<li>このテクニックは、フォームに入力している<strong>利用者に関するデータ</strong>を要求する場合にのみ使用し、他の人には使用すべきではない。</li>
+					<li>同じコンピュータ上で、同じ利用者のアカウントを使用し、及び同じブラウザを利用する場合にのみ機能する。いかなるマルチログインの状況でも、異なるアカウント間で <code class="language-html">autocomplete</code> のデータが保存されることはない。(利用者はコンピュータ間でデータの同期を設定できるが、これはデフォルトではない。)</li>
+					<li><code class="language-html">autocomplete</code> を使用した情報の保存は、通常データを初めて保存する時点で利用者が同意する。</li>
+					<li>フォームは自動送信されない。利用者は送信前にデータを確認できる。</li>
+					<li>履歴及びフォームデータの両方をブラウザの設定で簡単に消去できる。</li>
+					<li>プライベートブラウジングのような、プライバシーモードを簡単に利用できる。</li>
+					<li>ウェブページに <code class="language-html">autocomplete</code> が設定されて<em>いない</em>としても、ブラウザはデータを保存することができ、一部のプラグイン (パスワードマネージャーなど) は、何のフィールドかを推測する、及びそのフィールドに入力するために、経験則を積極的に使用する。<code class="language-html">autocomplete</code> 属性を使用すると、これらの推測が正確になる。</li>
 				</ul>
-				<p>The browser history provides far more detail about what people have done, and is just as available as <code class="language-html">autocomplete</code> data. The solutions/mitigations for browser-history are similar to <code class="language-html">autocomplete</code>.</p>
+				<p>ブラウザの履歴は、利用者が何をしたかについてより詳細な情報を提供する、及び <code class="language-html">autocomplete</code> のデータとして利用できる。ブラウザ履歴の解決方法／軽減は、 <code class="language-html">autocomplete</code> と同様である。</p>
 			</section>
 		</section>
 		<section id="examples">
-			<h2>Examples</h2>
+			<h2>事例</h2>
 			<section class="example" id="example-1-a-user's-credit-card-information">
-				<h3>Example 1: A user's credit card information</h3>
-				<p>This is a simple form that collects contact and credit card information from the user.</p>
+				<h3>事例 1: 利用者のクレジットカード情報</h3>
+				<p>次は、利用者から連絡先及びクレジットカード情報を収集するシンプルなフォームである。</p>
 				<pre xml:space="preserve"><code class="language-html">&lt;form method="post" action="step2"&gt;
   &lt;div&gt;
     &lt;label for="fname"&gt;First Name&lt;/label&gt;
@@ -156,19 +154,19 @@
 
 
 <section id="tests">
-			<h2>Tests</h2>
+			<h2>検証</h2>
 			<section class="test-procedure" id="procedure">
-				<h3>Procedure</h3>
-			<p>For each form field that collects information about the user and corresponds to an <code class="language-html">autocomplete</code> field described in <a href="/TR/WCAG/#input-purposes">WCAG 2.1 7. Section 7: Input Purposes for User Interface Components</a>, check the following:</p>
+				<h3>手順</h3>
+			<p>利用者に関する情報及び <a href="https://waic.jp/translations/WCAG22/#input-purposes">WCAG 2.2 7. ユーザインタフェース コンポーネントの入力目的</a>で解説されている <code class="language-html">autocomplete</code> フィールドに対応する各フォームフィールドについて、次を確認する:</p>
         <ol>
-					<li>The form field has a valid and well-formed <code class="language-html">autocomplete</code> attribute and value pair.</li>
-          <li>The purpose of the form field indicated by the label corresponds with the <code class="language-html">autocomplete</code> token on the input.</li>
+					<li>フォームフィールドは、有効な及び適切な形式の <code class="language-html">autocomplete</code> 属性及び値のペアを持つ。</li>
+          <li>ラベルが示すフォームフィールドの目的が、入力フィールドへ設定された <code class="language-html">autocomplete</code> トークンと一致する。</li>
 				</ol>
 			</section>
 			<section class="test-results" id="expected-results">
-				<h3>Expected Results</h3>
+				<h3>期待される結果</h3>
 				<ul>
-					<li>If #1 and #2 are true, then the test passes and the technique has been successfully implemented.</li>
+					<li>1 及び 2 が真である場合、検証試験は合格であり、このテクニックは正しく実装されている。</li>
 				</ul>
 			</section>
 		</section>
@@ -188,14 +186,13 @@
     <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
       <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
     </svg>
-    <h2>Help improve this page</h2>
+    <h2>このページを改善する</h2>
   </header>
   <div class="box-i">
-  <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org</a> or via GitHub</p>
+  <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。</p>
     <div class="button-group">
-      <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a>
-      <a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a>
-      <a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a>
+      <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdIpvogLx8kGIMewhQ6MzhG2pOCQZ50iIBViGg8pUrRJuslKg/viewform?entry.685195438=https%3A%2F%2Fwaic.jp%2Ftranslations%2FWCAG22%2FUnderstanding%2Ffocus-not-obscured-minimum" id="file-issue">翻訳に関するお問い合わせ (Google フォーム)</a>
+      <a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a>
     </div>
   </div>
 </aside>
@@ -217,12 +214,15 @@
       <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project,
       co-funded by the European Commission.
     </p>
+    <p>この文書は、2025 年 5 月 21 日付けの <a href="https://w3c.github.io/wcag/techniques/">Techniques for WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+    </p>
+    <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
   </div>
 </footer>
 
 <footer class="site-footer grid-4q" aria-label="Site">
   <div class="q1-start q3-end about">
-    <div>
+    <!--div>
       <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
       <p>Strategies, standards, and supporting resources to make the Web accessible to people with disabilities.</p>
     </div>
@@ -233,12 +233,12 @@
         <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube " viewBox="0 0 32 32"><path d="M31.327 8.273c-0.386-1.353-1.431-2.398-2.756-2.777l-0.028-0.007c-2.493-0.668-12.528-0.668-12.528-0.668s-10.009-0.013-12.528 0.668c-1.353 0.386-2.398 1.431-2.777 2.756l-0.007 0.028c-0.443 2.281-0.696 4.903-0.696 7.585 0 0.054 0 0.109 0 0.163l-0-0.008c-0 0.037-0 0.082-0 0.126 0 2.682 0.253 5.304 0.737 7.845l-0.041-0.26c0.386 1.353 1.431 2.398 2.756 2.777l0.028 0.007c2.491 0.669 12.528 0.669 12.528 0.669s10.008 0 12.528-0.669c1.353-0.386 2.398-1.431 2.777-2.756l0.007-0.028c0.425-2.233 0.668-4.803 0.668-7.429 0-0.099-0-0.198-0.001-0.297l0 0.015c0.001-0.092 0.001-0.201 0.001-0.31 0-2.626-0.243-5.196-0.708-7.687l0.040 0.258zM12.812 20.801v-9.591l8.352 4.803z"></path></svg> YouTube</a></li>
         <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
       </ul>
-    </div>
+    </div-->
     <div dir="auto" translate="no" lang="en">
       <p>Copyright © 2025 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
     </div>
   </div>
-  <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+  <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
     <ul style="margin-bottom:0">
       <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
       <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -247,7 +247,7 @@
       <li><a href="/WAI/translations/"> Translations</a></li>
       <li><a href="/WAI/roles/">Resources for Roles</a></li>
     </ul>
-  </div>
+  </div-->
 </footer>
 
 <link rel="stylesheet" href="../a11y-light.css">
@@ -261,7 +261,7 @@
 </script>
 <script src="https://www.w3.org/WAI/assets/scripts/main.js"></script>
 
-<script>
+<!--script>
   var _paq = _paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
   _paq.push(["setDoNotTrack", true]);
@@ -277,7 +277,7 @@
 </script>
 <noscript>
   <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-</noscript>
-
+</noscript-->
+<script src="https://waic.jp/docs/js/translation-contact.js"></script>
 
 </body></html>
