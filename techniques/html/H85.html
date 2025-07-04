@@ -1,5 +1,5 @@
-<!DOCTYPE html><html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
-    <title>H85: Using optgroup to group option elements inside a select | WAI | W3C</title>
+<!DOCTYPE html><html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml"><head>
+    <title>H85: select 要素内の option 要素をグループ化するために、optgroup 要素を使用する | WAI | W3C</title>
     
   
 
@@ -17,12 +17,12 @@
 <div class="minimal-header-container default-grid">
   <header class="minimal-header" id="site-header">
     <div class="minimal-header-name">
-      <a href="https://w3c.github.io/wcag/techniques/">WCAG 2.2 Techniques</a>
+      <a href="https://waic.jp/translations/WCAG22/Techniques/">WCAG 2.2 テクニック集</a>
     </div>
     
       <div class="minimal-header-subtitle">Examples of ways to meet WCAG; not required</div>
     
-    <a class="minimal-header-link" href="https://w3c.github.io/wcag/techniques/about">About WCAG Techniques</a>
+    <a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Techniques/about">WCAG テクニック集について</a>
     <div class="minimal-header-logo">
       <a href="http://w3.org/" aria-label="W3C">
         <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44">
@@ -51,14 +51,14 @@
 
 <div class="default-grid with-gap leftcol">
 <aside class="box nav-hack sidebar standalone-resource__sidebar">
-    <header class="box-h">Page Contents</header>
+    <header class="box-h">このページの内容</header>
     <div class="box-i">
       <nav aria-label="page contents" class="navtoc">
-        <ul><li><a href="#technique">About this Technique</a></li>
-<li><a href="#description">Description</a></li>
-<li><a href="#examples">Examples</a></li>
-<li><a href="#resources">Related Resources</a></li>
-<li><a href="#tests">Tests</a></li>
+        <ul><li><a href="#technique">このテクニックについて</a></li>
+<li><a href="#description">解説</a></li>
+<li><a href="#examples">事例</a></li>
+<li><a href="#resources">関連リソース</a></li>
+<li><a href="#tests">検証</a></li>
 </ul>
       </nav>
     </div>
@@ -66,29 +66,25 @@
 
 <main id="main" class="standalone-resource__main">
     
-<h1><span>Technique H85:</span>Using <code class="language-html">optgroup</code> to group <code class="language-html">option</code> elements inside a <code class="language-html">select</code></h1>
+<h1><span>テクニック H85:</span><code class="language-html">select</code> 要素内の <code class="language-html">option</code> 要素をグループ化するために、<code class="language-html">optgroup</code> 要素を使用する</h1>
 
 
 
 
 <section id="technique" class="box">
-	<h2 class="box-h box-h-icon">About this Technique</h2>
+	<h2 class="box-h box-h-icon">このテクニックについて</h2>
 	<div class="box-i">
 
 
   
   <p>
-    This technique relates to
-    
-<a href="https://w3c.github.io/wcag/understanding/info-and-relationships">1.3.1: Info and Relationships</a>
-(<strong>Sufficient</strong>
-  when used for making information and relationships conveyed through presentation programmatically
-                     determinable).</p>
+    このテクニックは、<a href="https://waic.jp/translations/WCAG22/Understanding/info-and-relationships">1.3.1: 情報及び関係性</a>
+(提示を通じて伝えられる情報及び関係性をプログラムによる解釈を可能にするために用いられる場合は<strong>十分なテクニック</strong>) に関連する。</p>
   
 
 
 
-  <p>This technique applies to <abbr title="HyperText Markup Language">HTML</abbr> pages that collect user input.</p>
+  <p>このテクニックは、利用者の入力を収集する <abbr title="HyperText Markup Language">HTML</abbr> ページに適用する。</p>
 
 </div>
 </section>
@@ -98,16 +94,16 @@
     
     
    <section id="description">
-    <h2>Description</h2>
-    <p>The objective of this technique is to group items in a selection list. A selection list is a set of allowed values for a form control such as a multi-select list or a combo box. Often, selection lists have groups of related options. Those groups should be semantically identified, rather than being delimited with "dummy" list entries, for example: an <code class="language-html">option</code> element containing only a series of dashes to create a horizontal line. Semantically identifying groups of options helps to visually break up long lists so that users can more easily locate what they are interested in.</p>
-    <p>In HTML, the <code class="language-html">select</code> element is used to create both multi-select lists and combo boxes. The various allowed options are each indicated with <code class="language-html">option</code> elements. To group options together, use the <code class="language-html">optgroup</code> element, with the related <code class="language-html">option</code> elements inside that element. Label the group with the <code class="language-html">label</code> attribute so users will know what to expect inside the group.</p>
-      <p>The <code class="language-html">optgroup</code> element should be directly inside the <code class="language-html">select</code> element, and the <code class="language-html">option</code>  elements directly inside the <code class="language-html">optgroup</code>. It is possible for a <code class="language-html">select</code> element to contain both single <code class="language-html">option</code> elements and <code class="language-html">optgroup</code> groups, though authors should consider if this is in fact the desired intent when using this. It is not possible to nest the <code class="language-html">optgroup</code> element, so only one level of grouping can be done within a <code class="language-html">select</code>.</p>
-      <p>If grouping information is essential to understanding the list, authors may define <code class="language-html">option</code> labels that can be understood even when the screen reader does not present the grouping information provided by <code class="language-html">optgroup</code>.</p>
+    <h2>解説</h2>
+    <p>このテクニックの目的は、選択リスト内の項目をグループ化することである。選択リストとは、複数を選択するリストやコンボボックスなどのフォームコントロールで使用できる値の集合である。多くの場合、選択リストには関連する選択肢のグループが含まれる。これらのグループは、「ダミー」のリスト項目で区切るのではなく、セマンティックに特定すべきである。例えば、水平線を作成するためのダッシュだけを含む <code class="language-html">option</code> 要素が挙げられる。選択肢のグループをセマンティックに特定することで、長いリストを視覚的に分割し、利用者が興味のあるものを見つけやすくする。</p>
+    <p>HTMLでは、<code class="language-html">select</code> 要素は複数を選択するリストとコンボボックスの両方を生成するために利用される。許可される様々な選択肢はそれぞれ <code class="language-html">option</code> 要素で示される。選択肢をグループ化するには、 <code class="language-html">optgroup</code> 要素を使用し、その要素内に関連する <code class="language-html">option</code> 要素を配置する。<code class="language-html">label</code> 属性でグループにラベルを付けることで、利用者がそのグループ内に何が含まれているのかを予想できるだろう。</p>
+      <p><code class="language-html">optgroup</code> 要素は <code class="language-html">select</code> 要素の直下に、<code class="language-html">option</code> 要素は <code class="language-html">optgroup</code> 要素の直下に配置すべきである。<code class="language-html">select</code> 要素には、単一の <code class="language-html">option</code> 要素と <code class="language-html">optgroup</code> 要素の両方を含めることができるが、コンテンツ制作者はこれを使用する場合、実際に意図されたものであるかどうかを検討すべきである。<code class="language-html">optgroup</code> 要素は入れ子にできないため、<code class="language-html">select</code> 要素内では 1 階層のみのグループ化が可能である。</p>
+      <p>グループ化情報がリストの理解に必要不可欠である場合、コンテンツ制作者はスクリーンリーダーが <code class="language-html">optgroup</code> によって提供されるグループ化情報を提示しない場合でも理解可能な <code class="language-html">option</code> のラベルを定義することができる。</p>
    </section>
    <section id="examples">
-      <h2>Examples</h2>
-      <section class="example" id="example-1"><h3>Example 1</h3>
-        <p>The following combo box collects data about favorite foods. Grouping by type allows users to select their preference more quickly.</p>
+      <h2>事例</h2>
+      <section class="example" id="example-1"><h3>事例 1</h3>
+        <p>次のコンボボックスは、好きな食べ物のデータをまとめたものである。利用者が好みのものを素早く選択できるように、食べ物の種類によってグループ化してある。</p>
          
 <pre xml:space="preserve"><code class="language-html">&lt;form action="/favorite-food/" method="post"&gt;
   &lt;label for="food"&gt;What is your favorite food?&lt;/label&gt;
@@ -130,9 +126,9 @@
    &lt;/select&gt;
 &lt;/form&gt;</code></pre>
       </section>
-      <section class="example" id="example-2"><h3>Example 2</h3>
+      <section class="example" id="example-2"><h3>事例 2</h3>
          
-  <p>The following example shows how a multi-select box can make use of the <code class="language-html">optgroup</code> element.</p>
+  <p>次の事例は、複数を選択するリストで <code class="language-html">optgroup</code> 要素をどのように用いるかを示している。</p>
          
   <pre xml:space="preserve"><code class="language-html">&lt;form action="/animals/" method="post"&gt;
   &lt;label for="animals"&gt;Pick your favorite animals:&lt;/label&gt;
@@ -162,8 +158,8 @@
    </section>
    
    <section id="resources">
-    <h2>Related Resources</h2>
-<p style="margin-bottom: 1.5em;"><em><small>No endorsement implied.</small></em></p>
+    <h2>関連リソース</h2>
+<p style="margin-bottom: 1.5em;"><em><small>推奨を意味するものではない。</small></em></p>
 
       
     <ul>
@@ -185,18 +181,18 @@
   
 
 <section id="tests">
-    <h2>Tests</h2>
+    <h2>検証</h2>
     <section class="procedure" id="procedure">
-      <h3>Procedure</h3>
+      <h3>手順</h3>
       <ol>
-        <li>Check the set of options within a selection list to see if there are groups of related options.</li>
-        <li>If there are groups of related options, they should be grouped with <code class="language-html">optgroup</code>.</li>
+        <li>選択リストに含まれる選択肢について、関連する選択肢のグループがあるかどうかをチェックする。</li>
+        <li>関連する選択肢のグループがある場合、<code class="language-html">optgroup</code> 要素でグループ化すべきである。</li>
       </ol>
       </section>
       <section class="results" id="expected-results">
-        <h3>Expected Results</h3>
+        <h3>期待される結果</h3>
          <ul>
-            <li>Check #2 is true.</li>
+            <li>チェック 2 が真である。</li>
          </ul>
       </section>
    </section>
@@ -216,14 +212,13 @@
     <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
       <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
     </svg>
-    <h2>Help improve this page</h2>
+    <h2>このページを改善する</h2>
   </header>
   <div class="box-i">
-  <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org</a> or via GitHub</p>
+  <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。</p>
     <div class="button-group">
-      <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a>
-      <a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a>
-      <a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a>
+      <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdIpvogLx8kGIMewhQ6MzhG2pOCQZ50iIBViGg8pUrRJuslKg/viewform?entry.685195438=https%3A%2F%2Fwaic.jp%2Ftranslations%2FWCAG22%2FUnderstanding%2Ffocus-not-obscured-minimum" id="file-issue">翻訳に関するお問い合わせ (Google フォーム)</a>
+      <a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a>
     </div>
   </div>
 </aside>
@@ -245,12 +240,15 @@
       <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project,
       co-funded by the European Commission.
     </p>
+    <p>この文書は、2025 年 5 月 21 日付けの <a href="https://w3c.github.io/wcag/techniques/">Techniques for WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+    </p>
+    <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
   </div>
 </footer>
 
 <footer class="site-footer grid-4q" aria-label="Site">
   <div class="q1-start q3-end about">
-    <div>
+    <!--div>
       <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
       <p>Strategies, standards, and supporting resources to make the Web accessible to people with disabilities.</p>
     </div>
@@ -261,12 +259,12 @@
         <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube " viewBox="0 0 32 32"><path d="M31.327 8.273c-0.386-1.353-1.431-2.398-2.756-2.777l-0.028-0.007c-2.493-0.668-12.528-0.668-12.528-0.668s-10.009-0.013-12.528 0.668c-1.353 0.386-2.398 1.431-2.777 2.756l-0.007 0.028c-0.443 2.281-0.696 4.903-0.696 7.585 0 0.054 0 0.109 0 0.163l-0-0.008c-0 0.037-0 0.082-0 0.126 0 2.682 0.253 5.304 0.737 7.845l-0.041-0.26c0.386 1.353 1.431 2.398 2.756 2.777l0.028 0.007c2.491 0.669 12.528 0.669 12.528 0.669s10.008 0 12.528-0.669c1.353-0.386 2.398-1.431 2.777-2.756l0.007-0.028c0.425-2.233 0.668-4.803 0.668-7.429 0-0.099-0-0.198-0.001-0.297l0 0.015c0.001-0.092 0.001-0.201 0.001-0.31 0-2.626-0.243-5.196-0.708-7.687l0.040 0.258zM12.812 20.801v-9.591l8.352 4.803z"></path></svg> YouTube</a></li>
         <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
       </ul>
-    </div>
+    </div-->
     <div dir="auto" translate="no" lang="en">
       <p>Copyright © 2025 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
     </div>
   </div>
-  <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+  <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
     <ul style="margin-bottom:0">
       <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
       <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -275,7 +273,7 @@
       <li><a href="/WAI/translations/"> Translations</a></li>
       <li><a href="/WAI/roles/">Resources for Roles</a></li>
     </ul>
-  </div>
+  </div-->
 </footer>
 
 <link rel="stylesheet" href="../a11y-light.css">
@@ -289,7 +287,7 @@
 </script>
 <script src="https://www.w3.org/WAI/assets/scripts/main.js"></script>
 
-<script>
+<!--script>
   var _paq = _paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
   _paq.push(["setDoNotTrack", true]);
@@ -305,7 +303,7 @@
 </script>
 <noscript>
   <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-</noscript>
-
+</noscript-->
+<script src="https://waic.jp/docs/js/translation-contact.js"></script>
 
 </body></html>
