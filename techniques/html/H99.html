@@ -122,7 +122,7 @@
 				</section>
 				<section class="example" id="example-2-page-list-in-epub-3-publications">
 				<h3>事例 2: EPUB 3 出版物のページリスト</h3>
-				<p>EPUB 3では、ナビゲーションドキュメント内のページリストを識別するために <code>epub:type</code> 属性を使用する。この属性は、値が "page-list" である nav 要素で使用される (ハイフネーションが異なることに注意する)。<abbr title="Accessible Rich Internet Applications">ARIA</abbr> <code class="language-html">role</code> 属性は、利用者がナビゲーションドキュメントに直接アクセスできる場合 (つまり、ドキュメントが EPUB の spine 内にある場合) を除き、効果がない。前の HTML の例と同様に、<code class="language-html">nav</code> 要素の内容は改ページ位置へのリンクのリストである。</p>
+				<p>EPUB 3では、ナビゲーションドキュメント内のページリストを識別するために <code>epub:type</code> 属性を使用する。この属性の値を "page-list" とし (ハイフネーションが異なることに注意)、nav 要素において使用する。<abbr title="Accessible Rich Internet Applications">ARIA</abbr> <code class="language-html">role</code> 属性は、利用者がナビゲーションのドキュメントに直接アクセスできない場合には、効果がない (つまり、そのドキュメントが EPUB の spine 内にある場合)。前の HTML の例と同様に、<code class="language-html">nav</code> 要素の内容は改ページ位置へのリンクのリストである。</p>
 				<pre xml:space="preserve"><code class="language-xml">&lt;nav epub:type="page-list" role="doc-pagelist" aria-labelledby="pglist"&gt;
   &lt;h2 id="pglist"&gt;Page List&lt;/h2&gt;
   &lt;ol&gt;
