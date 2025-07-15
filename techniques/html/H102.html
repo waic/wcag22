@@ -101,7 +101,7 @@
 			<p>ウェブサイト制作者は、主要ページのコンテンツの範囲を超えた情報又はタスク関連のアクティビティに利用者の注意を向けさせるために、モーダルダイアログをよく使用する。モーダルダイアログは、<a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/">ARIA dialog ロール及び関連属性</a>、又は HTML <code class="language-html">dialog</code> 要素を用いたマークアップで構築できる。<a href="https://www.w3.org/TR/using-aria/#rule1">ARIA の第 1 ルール</a>を満たすだけでなく、HTML <code class="language-html">dialog</code> 要素は、ブラウザがこれらの機能を処理することで、ARIA に比べていくつかの利点を提供する:</p>
       <ul>
         <li>キーボードフォーカスは新しく開いたモーダル <code class="language-html">dialog</code> に移動する。</li>
-        <li>モーダル <code class="language-html">dialog</code> が閉じられると、キーボードフォーカスは呼び出し元の要素に戻る (要素がまだページ上にあると仮定)。</li>
+        <li>モーダル <code class="language-html">dialog</code> が閉じられると、キーボードフォーカスは呼び出し元の要素に戻る (その要素がまだページ上にあるなら)。</li>
         <li>キーボードフォーカスは、モーダル <code class="language-html">dialog</code>  のコンテンツとブラウザのクロム (アドレスバーなどのブラウザ固有の UI) に限定される。</li>
         <li>モーダルダイアログの「外側」にあるページコンテンツは <a href="https://html.spec.whatwg.org/multipage/interaction.html#modal-dialogs-and-inert-subtrees">inert</a> になり、その結果、モーダル <code class="language-html">dialog</code> が開いている限り、コンテンツは支援技術から非表示になり、すべての利用者が操作できなくなる。</li>
         <li><kbd>Escape</kbd> キーを使用してモーダル <code class="language-html">dialog</code> を閉じる。</li>
