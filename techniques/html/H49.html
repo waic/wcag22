@@ -1,5 +1,5 @@
-<!DOCTYPE html><html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
-      <title>H49: Using semantic markup to mark emphasized or special text | WAI | W3C</title>
+<!DOCTYPE html><html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml"><head>
+      <title>H49: 強調又は特別なテキストをマークアップするために、セマンティックなマークアップを使用する | WAI | W3C</title>
       
    
 
@@ -17,12 +17,12 @@
 <div class="minimal-header-container default-grid">
   <header class="minimal-header" id="site-header">
     <div class="minimal-header-name">
-      <a href="https://w3c.github.io/wcag/techniques/">WCAG 2.2 Techniques</a>
+      <a href="https://waic.jp/translations/WCAG22/Techniques/">WCAG 2.2 テクニック集</a>
     </div>
     
       <div class="minimal-header-subtitle">Examples of ways to meet WCAG; not required</div>
     
-    <a class="minimal-header-link" href="https://w3c.github.io/wcag/techniques/about">About WCAG Techniques</a>
+    <a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Techniques/about">WCAG テクニック集について</a>
     <div class="minimal-header-logo">
       <a href="http://w3.org/" aria-label="W3C">
         <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44">
@@ -51,15 +51,15 @@
 
 <div class="default-grid with-gap leftcol">
 <aside class="box nav-hack sidebar standalone-resource__sidebar">
-    <header class="box-h">Page Contents</header>
+    <header class="box-h">このページの内容</header>
     <div class="box-i">
       <nav aria-label="page contents" class="navtoc">
-        <ul><li><a href="#technique">About this Technique</a></li>
-<li><a href="#description">Description</a></li>
-<li><a href="#examples">Examples</a></li>
-<li><a href="#resources">Related Resources</a></li>
-<li><a href="#related">Related Techniques</a></li>
-<li><a href="#tests">Tests</a></li>
+        <ul><li><a href="#technique">このテクニックについて</a></li>
+<li><a href="#description">解説</a></li>
+<li><a href="#examples">事例</a></li>
+<li><a href="#resources">関連リソース</a></li>
+<li><a href="#related">関連テクニック</a></li>
+<li><a href="#tests">検証</a></li>
 </ul>
       </nav>
     </div>
@@ -67,27 +67,27 @@
 
 <main id="main" class="standalone-resource__main">
       
-<h1><span>Technique H49:</span>Using semantic markup to mark emphasized or special text</h1>
+<h1><span>テクニック H49:</span>強調又は特別なテキストをマークアップするために、セマンティックなマークアップを使用する</h1>
 
 
 
 
 <section id="technique" class="box">
-	<h2 class="box-h box-h-icon">About this Technique</h2>
+	<h2 class="box-h box-h-icon">このテクニックについて</h2>
 	<div class="box-i">
 
 
   
   <p>
-    This technique relates to
+    このテクニックは
     
-<a href="https://w3c.github.io/wcag/understanding/info-and-relationships">1.3.1: Info and Relationships</a>
-(<strong>Sufficient</strong>, together with <a href="../general/G115">G115: Using semantic elements to mark up structure</a>).</p>
+<a href="https://waic.jp/translations/WCAG22/Understanding/info-and-relationships">1.3.1: 情報及び関係性</a>
+(<a href="../general/G115">G115: Using semantic elements to mark up structure</a> とともに、<strong>十分なテクニック</strong>) に関連する。</p>
   
 
 
 
-  <p>This technique applies to <abbr title="HyperText Markup Language">HTML</abbr>.</p>
+  <p>このテクニックは、<abbr title="HyperText Markup Language">HTML</abbr>に適用される。</p>
 
 </div>
 </section>
@@ -97,35 +97,25 @@
       
       
    <section id="description">
-      <h2>Description</h2>
-      <p>The objective of this technique is to demonstrate how semantic markup can be used to
-            mark emphasized or special text so that it can be programmatically determined. Using
-            semantic markup to mark emphasized or special text also provides structure to the
-            document. User agents can then make the structure perceivable to the user, for example
-            using a different visual presentation for different types of structures or by using a
-            different voice or pitch in an auditory presentation. </p>
-      <p>Most user agents will visually distinguish text that has been identified using semantic
-            markup. Some assistive technologies provide a mechanism for determining the
-            characteristics of content that has been created using proper semantic markup.</p>
+      <h2>解説</h2>
+      <p>この達成方法の目的は、プログラムによる解釈が可能にするために、セマンティックマークアップを使用して強調又は特別なテキストをマークアップする方法を示すことである。強調又は特別なテキストをマークアップするためにセマンティックなマークアップを用いることで、その文書に構造を与えることもできる。そうすることで、例えば、ユーザエージェントは、異なるタイプの構造に対して異なる視覚的提示を用いたり、聴覚的提示で異なる声又はピッチを用いたりすることによって、構造を利用者に知覚可能にすることができる。</p>
+      <p>大部分のユーザエージェントは、セマンティックなマークアップによって特定されたテキストを、ほかとは別の見た目にする。支援技術の中には、セマンティックなマークアップを適切に用いることで、コンテンツの特性を決定するためのメカニズムを提供するものもある。</p>
    </section>
    <section id="examples">
-      <h2>Examples</h2>
-      <p class="working-example">See <a href="../../working-examples/semantic-text/">rendered examples of semantic text</a>.</p>
+      <h2>事例</h2>
+      <p class="working-example"><a href="https://www.w3.org/WAI/WCAG22/working-examples/semantic-text/">rendered examples of semantic text</a> を参照。</p>
       <section class="example" id="example-1-using-the-em-and-strong-elements-to-emphasize-text">
-         <h3>Example 1: Using the <code class="language-html">em</code> and <code class="language-html">strong</code> elements
-            to emphasize text</h3>
+         <h3>事例 1: <code class="language-html">em</code> 要素及び <code class="language-html">strong</code> 要素を使用してテキストを強調する</h3>
          
-            <p>The <code class="language-html">em</code> and <code class="language-html">strong</code> elements are
-                designed to indicate structural emphasis that may be rendered in a variety of ways
-                (font style changes, speech inflection changes, etc.).</p>
+            <p><code class="language-html">em</code> 要素と <code class="language-html">strong</code> 要素は、様々な方法 (フォントスタイルの変更、話し方の抑揚の変更など) で表現される構造的な強調を示すために設計されている。</p>
          
          <pre xml:space="preserve"><code class="language-html"> ... What she &lt;em&gt;really&lt;/em&gt; meant to say was, &amp;quot;This is not OK, 
  it is &lt;strong&gt;excellent&lt;/strong&gt;&amp;quot;! ...</code></pre>
       </section>
       <section class="example" id="example-2-using-the-blockquote-element-to-mark-up-long-quotations-from-another-source">
-         <h3>Example 2: Using the <code class="language-html">blockquote</code> element to mark up long quotations from another source</h3>
+         <h3>事例 2: <code class="language-html">blockquote</code> 要素を使用して他のソースからの長い引用をマークアップする</h3>
          
-            <p>This example also demonstrates the use of the <code class="language-html">cite</code> element to specify a reference.</p>
+            <p>この例では、<code class="language-html">cite</code> 要素を使用して参照を指定する方法も示している。</p>
          
          <pre xml:space="preserve"><code class="language-html">&lt;p&gt;The following is an excerpt from the &lt;cite&gt;The Story Of My Life&lt;/cite&gt; 
    by Helen Keller:&lt;/p&gt;
@@ -137,24 +127,24 @@
 &lt;/blockquote&gt;</code></pre>
       </section>
       <section class="example" id="example-3-using-the-q-element-to-mark-up-a-shorter-quotation-from-another-source">
-         <h3>Example 3: Using the <code class="language-html">q</code> element to mark up a shorter quotation from another source</h3>
+         <h3>事例 3: <code class="language-html">q</code> 要素を使用して、別のソースからの短い引用をマークアップする</h3>
          
-         <p>Quotation marks aren't manually added to the quote because they are added by the user agent.</p>
+         <p>引用符はユーザエージェントによって追加されるため、手動で追加する必要はない。</p>
          
 <pre xml:space="preserve"><code class="language-html">&lt;p&gt;Helen Keller said, &lt;q&gt;Self-pity is our worst enemy and if we yield to it, 
    we can never do anything good in the world&lt;/q&gt;.&lt;/p&gt;</code></pre>
       </section>
       <section class="example" id="example-4-using-the-sup-and-sub-elements-to-mark-up-superscripts-and-subscripts">
-         <h3>Example 4: Using the <code class="language-html">sup</code> and <code class="language-html">sub</code> elements to mark up superscripts and subscripts</h3>
+         <h3>事例 4: <code class="language-html">sup</code> 要素 及び <code class="language-html">sub</code> 要素を用いた上付き文字及び下付き文字のマークアップ</h3>
          
-            <p>The <code class="language-html">sup</code> and <code class="language-html">sub</code> elements must be used only to mark up typographical conventions with specific meanings, not for typographical presentation for presentation's sake.</p>
+            <p><code class="language-html">sup</code> 要素と <code class="language-html">sub</code> 要素は、特定の意味を持つ表記規則をマークアップするためにのみ使用し、見栄えを良くするための表記法的な表現には使用してはならない。</p>
          
 <pre xml:space="preserve"><code class="language-html">&lt;p&gt;Henry won 1&lt;sup&gt;st&lt;/sup&gt; place in the 9&lt;sup&gt;th&lt;/sup&gt; grade science competition.&lt;/p&gt;
 &lt;p&gt;The chemical notation for water is H&lt;sub&gt;2&lt;/sub&gt;O.&lt;/p&gt;</code></pre>
       </section>
    	<section class="example" id="example-5-using-the-code-element-to-mark-up-code">
-         <h3>Example 5: Using the <code class="language-html">code</code> element to mark up code</h3>
-   		<p>This example shows use of the <code>code</code> element to provide visual emphasis for a CSS rule:</p>
+         <h3>Example 5: <code class="language-html">code</code> 要素を用いたコードのマークアップ</h3>
+   		<p>この事例は、<code class="language-html">code</code> 要素を用いて CSS ルールを視覚的に強調する方法を示している:</p>
    		<pre xml:space="preserve"><code class="language-html">&lt;code&gt;
 .trial {
   background-image: url(30daytrial.jpg);
@@ -166,8 +156,8 @@
    	</section>
    </section>
 <section id="resources">
-   <h2>Related Resources</h2>
-<p style="margin-bottom: 1.5em;"><em><small>No endorsement implied.</small></em></p>
+   <h2>関連リソース</h2>
+<p style="margin-bottom: 1.5em;"><em><small>推奨を意味するものではない。</small></em></p>
 
    
    <ul>
@@ -180,21 +170,21 @@
 </section>
 
 
-<section id="related"><h2>Related Techniques</h2><ul>
+<section id="related"><h2>関連テクニック</h2><ul>
       <li><a href="../general/G115">G115: Using semantic elements to mark up structure</a></li>
    </ul>
 </section>
-<section id="tests"><h2>Tests</h2>
-      <section class="procedure" id="procedure"><h3>Procedure</h3>
+<section id="tests"><h2>検証</h2>
+      <section class="procedure" id="procedure"><h3>手順</h3>
          <ol>
-            <li>Examine the content for information that is conveyed through variations in presentation of text.</li>
-            <li>Check that appropriate semantic markup (such as <code class="language-html">em</code>, <code class="language-html">strong</code>, <code class="language-html">cite</code>, <code class="language-html">blockquote</code>, <code class="language-html">sub</code>, and <code class="language-html">sup</code>) have been used to mark the text that conveys information through variations in text.</li>
+            <li>テキストの提示のバリエーションを通して伝えられる情報に関するコンテンツを調べる。</li>
+            <li>適切なセマンティックマークアップ (<code class="language-html">em</code>、<code class="language-html">strong</code>、<code class="language-html">cite</code>、<code class="language-html">blockquote</code>、<code class="language-html">quote</code>、<code class="language-html">sub</code> など) が、テキストの変化を通じて情報を伝達するテキストをマークアップに用いられていることをチェックする。</li>
          </ol>
       </section>
       <section class="results" id="expected-results">
-         <h3>Expected Results</h3>
+         <h3>期待される結果</h3>
          <ul>
-            <li>Check #2 is true.</li>
+            <li>チェック 2 が真である。</li>
          </ul>
       </section>
    </section>
@@ -214,14 +204,13 @@
     <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
       <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
     </svg>
-    <h2>Help improve this page</h2>
+    <h2>このページを改善する</h2>
   </header>
   <div class="box-i">
-  <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org</a> or via GitHub</p>
+  <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。</p>
     <div class="button-group">
-      <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a>
-      <a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a>
-      <a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a>
+      <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdIpvogLx8kGIMewhQ6MzhG2pOCQZ50iIBViGg8pUrRJuslKg/viewform?entry.685195438=https%3A%2F%2Fwaic.jp%2Ftranslations%2FWCAG22%2FUnderstanding%2Ffocus-not-obscured-minimum" id="file-issue">翻訳に関するお問い合わせ (Google フォーム)</a>
+      <a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a>
     </div>
   </div>
 </aside>
@@ -243,12 +232,15 @@
       <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project,
       co-funded by the European Commission.
     </p>
+    <p>この文書は、2025 年 5 月 21 日付けの <a href="https://w3c.github.io/wcag/techniques/">Techniques for WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+    </p>
+    <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
   </div>
 </footer>
 
 <footer class="site-footer grid-4q" aria-label="Site">
   <div class="q1-start q3-end about">
-    <div>
+    <!--div>
       <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
       <p>Strategies, standards, and supporting resources to make the Web accessible to people with disabilities.</p>
     </div>
@@ -259,12 +251,12 @@
         <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube " viewBox="0 0 32 32"><path d="M31.327 8.273c-0.386-1.353-1.431-2.398-2.756-2.777l-0.028-0.007c-2.493-0.668-12.528-0.668-12.528-0.668s-10.009-0.013-12.528 0.668c-1.353 0.386-2.398 1.431-2.777 2.756l-0.007 0.028c-0.443 2.281-0.696 4.903-0.696 7.585 0 0.054 0 0.109 0 0.163l-0-0.008c-0 0.037-0 0.082-0 0.126 0 2.682 0.253 5.304 0.737 7.845l-0.041-0.26c0.386 1.353 1.431 2.398 2.756 2.777l0.028 0.007c2.491 0.669 12.528 0.669 12.528 0.669s10.008 0 12.528-0.669c1.353-0.386 2.398-1.431 2.777-2.756l0.007-0.028c0.425-2.233 0.668-4.803 0.668-7.429 0-0.099-0-0.198-0.001-0.297l0 0.015c0.001-0.092 0.001-0.201 0.001-0.31 0-2.626-0.243-5.196-0.708-7.687l0.040 0.258zM12.812 20.801v-9.591l8.352 4.803z"></path></svg> YouTube</a></li>
         <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
       </ul>
-    </div>
+    </div-->
     <div dir="auto" translate="no" lang="en">
       <p>Copyright © 2025 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
     </div>
   </div>
-  <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+  <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
     <ul style="margin-bottom:0">
       <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
       <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -273,7 +265,7 @@
       <li><a href="/WAI/translations/"> Translations</a></li>
       <li><a href="/WAI/roles/">Resources for Roles</a></li>
     </ul>
-  </div>
+  </div-->
 </footer>
 
 <link rel="stylesheet" href="../a11y-light.css">
@@ -287,7 +279,7 @@
 </script>
 <script src="https://www.w3.org/WAI/assets/scripts/main.js"></script>
 
-<script>
+<!--script>
   var _paq = _paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
   _paq.push(["setDoNotTrack", true]);
@@ -303,7 +295,7 @@
 </script>
 <noscript>
   <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-</noscript>
-
+</noscript-->
+<script src="https://waic.jp/docs/js/translation-contact.js"></script>
 
 </body></html>
