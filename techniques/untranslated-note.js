@@ -1,3 +1,4 @@
+/*
 document.addEventListener('DOMContentLoaded', () => {
     const targetAnchor = document.querySelector('.untranslated-note a');
     if (!targetAnchor) return;
@@ -7,6 +8,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const parentDir = partsLength >= 3 ? pathParts[partsLength - 2] : '';
     const filename = partsLength >= 2 ? pathParts[partsLength - 1] : '';
+
+    const combinedPath = parentDir && filename ? `${parentDir}/${filename}` : filename;
+
+    targetAnchor.href = targetAnchor.href + combinedPath;
+});
+*/
+
+document.addEventListener('DOMContentLoaded', () => {
+    const targetAnchor = document.querySelector('.untranslated-note a');
+    if (!targetAnchor) return;
+
+    const pathParts = window.location.pathname.split('/');
+    const partsLength = pathParts.length;
+
+    const parentDir = pathParts.at(-2) || '';
+    const filename  = pathParts.at(-1) || '';
 
     const combinedPath = parentDir && filename ? `${parentDir}/${filename}` : filename;
 
