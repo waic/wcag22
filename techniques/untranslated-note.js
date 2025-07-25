@@ -1,34 +1,15 @@
-/*
 document.addEventListener('DOMContentLoaded', () => {
     const targetAnchor = document.querySelector('.untranslated-note a');
     if (!targetAnchor) return;
 
     const pathParts = window.location.pathname.split('/');
-    const partsLength = pathParts.length;
+    const parentDir = pathParts.at(-2);
+    const filename  = pathParts.at(-1);
+    if(!parentDir || !filename) return;
 
-    const parentDir = partsLength >= 3 ? pathParts[partsLength - 2] : '';
-    const filename = partsLength >= 2 ? pathParts[partsLength - 1] : '';
-
-    const combinedPath = parentDir && filename ? `${parentDir}/${filename}` : filename;
-
-    targetAnchor.href = targetAnchor.href + combinedPath;
+    targetAnchor.href = targetAnchor.href + parentDir + '/' + filename;
 });
-*/
 
-document.addEventListener('DOMContentLoaded', () => {
-    const targetAnchor = document.querySelector('.untranslated-note a');
-    if (!targetAnchor) return;
-
-    const pathParts = window.location.pathname.split('/');
-    const partsLength = pathParts.length;
-
-    const parentDir = pathParts.at(-2) || '';
-    const filename  = pathParts.at(-1) || '';
-
-    const combinedPath = parentDir && filename ? `${parentDir}/${filename}` : filename;
-
-    targetAnchor.href = targetAnchor.href + combinedPath;
-});
 
 /*
 この JavaScript ファイルは、WCAG 2.2 テクニック集が完全に日本語訳されるまでの、仮のスクリプトです。
