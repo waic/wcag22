@@ -99,10 +99,10 @@
       <section id="description">
          <h2>解説</h2>
          <p>このテクニックの目的は、HTML の双方向性アルゴリズムが望ましくない結果を生じるときに、それを無効にするために Unicode 制御文字の right-to-left mark と left-to-right mark を用いることである。たとえば、スペース又は句読点のようなニュートラルな文字が異なる方向性のテキストの間に置かれている時に必要となることがある。この達成方法で用いられているコンセプトは、W3C 文書の <a href="https://www.w3.org/International/articles/inline-bidi-markup/">Inline markup and bidirectional text in HTML</a> に書かれている。</p>
-            <p>Unicode 制御文字の right-to-left mark 及び left-to-right mark は、以下に示すように、そのまま、又は文字符号か数字符号の参照によって挿入することが可能である。</p>
+            <p>Unicode 制御文字の right-to-left mark 及び left-to-right mark は、次に示すように、そのまま、又は文字符号もしくは数字符号の参照によって挿入することが可能である。</p>
       <ul>
-         <li>left-to-right mark: <code class="language-html">&amp;lrm;</code> or <code>&amp;#x200e;</code> (<code>U+200E</code>)</li>
-         <li>right-to-left mark: <code class="language-html">&amp;rlm;</code> or <code>&amp;#x200f;</code> (<code>U+200F</code>)</li>
+         <li>left-to-right mark: <code class="language-html">&amp;lrm;</code> 又は <code>&amp;#x200e;</code> (<code>U+200E</code>)</li>
+         <li>right-to-left mark: <code class="language-html">&amp;rlm;</code> 又は <code>&amp;#x200f;</code> (<code>U+200F</code>)</li>
       </ul>
       <p>双方向性のアルゴリズムが原因で、ソースコード編集者は期待通りに文字符号や数字符号の参照を表示できないことがある。</p>
    </section>
