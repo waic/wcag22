@@ -1,6 +1,6 @@
-<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="ja"><head>
 <meta charset="UTF-8">
-<title>C38: Using CSS width, max-width and flexbox to fit labels and inputs | WAI | W3C</title>
+<title>C38: CSS width、max-width、及び flexbox を用いたラベルと入力欄の配置 | WAI | W3C</title>
   
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,8 +10,6 @@
 
 
 
-<!-- 日本語訳されるまでの一時的なスクリプト -->
-<script src="../untranslated-note.js"></script>
 </head>
   <body dir="ltr">
 
@@ -19,12 +17,12 @@
 <div class="minimal-header-container default-grid">
   <header class="minimal-header" id="site-header">
     <div class="minimal-header-name">
-      <a href="https://w3c.github.io/wcag/techniques/">WCAG 2.2 Techniques</a>
+      <a href="https://waic.jp/translations/WCAG22/Techniques/">WCAG 2.2 テクニック集</a>
     </div>
     
       <div class="minimal-header-subtitle">Examples of ways to meet WCAG; not required</div>
     
-    <a class="minimal-header-link" href="https://w3c.github.io/wcag/techniques/about">About WCAG Techniques</a>
+    <a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Techniques/about">WCAG テクニック集について</a>
     <div class="minimal-header-logo">
       <a href="http://w3.org/" aria-label="W3C">
         <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44">
@@ -53,23 +51,21 @@
 
 <div class="default-grid with-gap leftcol">
 <aside class="box nav-hack sidebar standalone-resource__sidebar">
-    <header class="box-h">Page Contents</header>
+    <header class="box-h">このページの内容</header>
     <div class="box-i">
       <nav aria-label="page contents" class="navtoc">
-        <ul><li><a href="#technique">About this Technique</a></li>
-<li><a href="#description">Description</a></li>
-<li><a href="#examples">Examples</a></li>
-<li><a href="#tests">Tests</a></li>
+        <ul><li><a href="#technique">このテクニックについて</a></li>
+<li><a href="#description">解説</a></li>
+<li><a href="#examples">事例</a></li>
+<li><a href="#tests">検証</a></li>
 </ul>
       </nav>
     </div>
 </aside>
 
 <main id="main" class="standalone-resource__main">
-<!-- 日本語訳されるまでの一時的な注記 -->
-<div class="untranslated-note"><p>このWCAG 2.2 テクニック集の日本語訳は作業中となっています。WCAG 2.1 達成方法集の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Techniques/">WCAG 2.1 達成方法集</a> ]</p></div>
     
-<h1><span>Technique C38:</span>Using <abbr title="Cascading Style Sheets">CSS</abbr> width, <code class="language-css">max-width</code> and flexbox to fit labels and inputs</h1>
+<h1><span>テクニック C38:</span><abbr title="Cascading Style Sheets">CSS</abbr> width、<code class="language-css">max-width</code> 、及び flexbox を用いたラベルと入力欄の配置</h1>
 
 
 
@@ -81,15 +77,15 @@
 
   
   <p>
-    This technique relates to
+     このテクニックは
     
-<a href="https://w3c.github.io/wcag/understanding/reflow">1.4.10: Reflow</a>
-(<strong>Sufficient</strong>).</p>
+<a href="https://waic.jp/translations/WCAG22/Understanding/reflow">1.4.10: リフロー</a>
+(<strong>十分なテクニック</strong>) に関連する。</p>
   
 
 
 
-  <p>This technique applies to CSS and <abbr title="HyperText Markup Language">HTML</abbr>.</p>
+  <p>このテクニックは、CSS 及び <abbr title="HyperText Markup Language">HTML</abbr> に適用される。</p>
 
 
 </div>
@@ -100,28 +96,28 @@
     
     
     <section id="description">
-      <h2>Description</h2>
-      <p>The objective of this technique is to be able to present labels and inputs without introducing a horizontal scroll bar at a width equivalent to 320 CSS pixels for content intended to scroll vertically. When space is limited in the viewport for the label and input to sit next to each other horizontally, they will be changed to a vertical alignment. This is done by using CSS properties for <code class="language-css">width</code>, <code class="language-css">max-width</code> and flexbox that adapt to the available space.</p>
+      <h2>解説</h2>
+      <p>このテクニックの目的は、垂直方向のスクロールを意図したコンテンツにおいて、320 CSS ピクセル相当の幅での表示時に、ラベルと入力欄を水平のスクロールバーを要さず表示できるようにすることである。ビューポート中のスペースが限られ、ラベルと入力欄を水平方向に並べて表示するのが困難な場合は、垂直方向に並ぶように切り替わる。これは、ビューポートの使用可能なスペースに適応する、<code class="language-css">width</code>、<code class="language-css">max-width</code>、及び flexbox CSS プロパティを使うことで実現される。</p>
       
-      <p>Responsive layouts can add or remove columns or layout blocks, and each part of the layout can be wider or smaller at different points. This technique ensures labels and inputs do not break out of their layout area, including in one-column layouts where it would cause horizontal scrolling.</p>
+      <p>レスポンシブなレイアウトはカラム又はレイアウトブロックを追加又は削除ができ、また、レイアウトの各構成要素のある時点での幅を広く又は狭く調整することができる。これにより、水平方向のスクロールが通常発生する単一カラムのレイアウトにおいても、ラベルと入力欄がそのレイアウト領域からはみ出ないことを保証する。</p>
 
-      <p>The basic approach for fitting labels and inputs is to:</p>
+      <p>ラベルと入力欄をフィッティングするための基本的なアプローチは次のとおり:</p>
       
       <ol>
-        <li>Define the size of layout regions using flexbox properties and media queries for specific viewport sizes, so they enlarge, shrink or wrap in the available space and respond to zoom levels;</li>       
-         <li>Position the layout regions in the flexbox container as a row of adjacent flexbox items, which may wrap to new rows as needed in much the same way as words in a paragraph wrap.</li>
-        <li>Define the width and max-width property for labels and inputs so they enlarge or shrink in the available space and respond to zoom levels.</li>
+        <li>flexbox プロパティ及び特定のビューポートサイズに対応するメディアクエリを用いてレイアウト領域のサイズを定義することで、使用可能なスペース内で拡大、縮小又は折り返し、及びズームレベルに応答する。</li>       
+         <li>flexbox コンテナ内のレイアウト領域を隣接する flexbox ボックスアイテムの行として配置する。これは、段落中の単語とほぼ同様に、適宜新しい行に折り返してもよい。</li>
+        <li>ラベルと入力欄それぞれの width と max-width プロパティを定義することで、使用可能なスペース内で拡大又は縮小する、及びズームレベルに応答するようする。</li>
       </ol>
       
-      <p>All labels and inputs require design finesse by making sure the original size fits the biggest size of the available spaces to achieve good-looking results at a wide range of viewport sizes and zoom levels. For help on flexbox please see the <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox">MDN article on Flexbox</a>.</p>
+      <p>幅広いビューポートサイズとズームレベルで見た目の良い結果を得るには、全てのラベルと入力欄の元のサイズが利用可能なスペースの中で最大のサイズに収まるようなデザインの精巧さを必要とする。flexbox の詳細については、<a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox">MDN の Flexbox について</a>のページを参照。</p>
       
     </section>
     <section id="examples">
-      <h2>Examples</h2>
+      <h2>事例</h2>
       <section class="example" id="example-1-fitting-labels-inputs-and-flexbox-layout-with-html-and-css.">
-        <h3>Example 1: Fitting labels, inputs and flexbox layout with HTML and CSS.</h3>
-        <p>The following example uses HTML and CSS to fit labels and inputs within various width containers, including the viewport. The layout regions adjust their size as the viewport is adjusted. The labels and inputs subsequently adjust their size to fit within the layout region containers.</p>
-        <p>The zoom level can be increased to 400% without requiring horizontal scrolling. This particular example uses a percent size for the <code class="language-css">width</code> and <code class="language-css">max-width</code> for the labels and inputs. The <code class="language-css">max-width</code> is applied in order to fix elements spilling out of the grid in a cross-browser way, as replaced elements such as the <code class="language-css">select</code> have intrinsic sizing.</p>
+        <h3>事例 1: HTML と CSS を使用した、ラベル、入力欄、及び flexbox レイアウトの配置</h3>
+        <p>次の事例では、HTML と CSS を用いて、ビューポートを含む可変幅のコンテナの中にラベルと入力欄を配置する。レイアウト領域は、ビューポートの調整に合わせてサイズが調整される。その後、ラベルと入力欄は、レイアウト領域のコンテナ内に収まるようにサイズが調整される。</p>
+        <p>水平方向のスクロールを必要とすることなくズームレベルを 400% に上げることができる。この事例ではラベルと入力欄の <code class="language-css">width</code> と <code class="language-css">max-width</code> にパーセントサイズを使用している。また、<code class="language-css">select</code> のような置換要素は内在寸法を持つため、要素がグリッドからはみ出るのをクロスブラウザ的に防ぐため <code class="language-css">max-width</code> を指定している。</p>
 
 <pre xml:space="preserve"><code class="language-html">&lt;style&gt;
 
@@ -206,7 +202,7 @@ label, select {
 </code>
 </pre>
         
-        <p class="working-examples">Working example: <a href="../../working-examples/css-fit-labels-inputs/">Using Adjustable Labels and Inputs for Reflow</a></p>
+        <p class="working-examples">動作例: <a href="https://www.w3.org/WAI/WCAG22/working-examples/css-fit-labels-inputs/">Using Adjustable Labels and Inputs for Reflow</a></p>
         
       </section>
     </section>
@@ -217,19 +213,19 @@ label, select {
 
 
 <section id="tests">
-      <h2>Tests</h2>      
+      <h2>検証</h2>      
       <section class="test-procedure" id="procedure">
-        <h3>Procedure</h3>
+        <h3>手順</h3>
         <ol>
-          <li>Display the web page in a user agent capable of 400% zoom and set the viewport dimensions (in CSS pixels) to 1280 wide and 1024 high.</li>
-          <li>Zoom in by 400%.</li>
-          <li>For vertically scrolling content, all labels and inputs fit in their available space without horizontal scrolling.</li>
+          <li>コンテンツを 400% ズームが可能なユーザエージェント上で、ビューポートサイズを 1280x1024 CSS ピクセルに設定してウェブページを表示する。</li>
+          <li>400% ズームする。</li>
+          <li>垂直方向にスクロールするコンテンツにおいては、全てのラベルと入力欄が水平方向にスクロールを要さず表示可能スペースに収まること。</li>
         </ol>
-        <p>NB: If the browser is not capable of zooming to 400%, you can reduce the width of the browser proportionally. For example, at 300% zoom the viewport should be sized to 960px wide.</p>
+        <p>注意: ブラウザが 400% までズームが可能でない場合、ブラウザの幅を相対的に狭めることも可能である。例えば、300% ズーム時はビューポートの幅を 960px にする。</p>
       </section>
       <section class="test-results" id="expected-results">
-        <h3>Expected Results</h3>
-        <p>Check #3 is true.</p>
+        <h3>期待される結果</h3>
+        <p>チェック 3 が真である。</p>
     </section>
     </section>
 
@@ -248,14 +244,13 @@ label, select {
     <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
       <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
     </svg>
-    <h2>Help improve this page</h2>
+    <h2>このページを改善する</h2>
   </header>
   <div class="box-i">
-  <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org</a> or via GitHub</p>
+  <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。</p>
     <div class="button-group">
-      <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a>
-      <a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a>
-      <a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a>
+      <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdIpvogLx8kGIMewhQ6MzhG2pOCQZ50iIBViGg8pUrRJuslKg/viewform?entry.685195438=https%3A%2F%2Fwaic.jp%2Ftranslations%2FWCAG22%2FUnderstanding%2Ffocus-not-obscured-minimum" id="file-issue">翻訳に関するお問い合わせ (Google フォーム)</a>
+      <a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a>
     </div>
   </div>
 </aside>
@@ -277,12 +272,15 @@ label, select {
       <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project,
       co-funded by the European Commission.
     </p>
+    <p>この文書は、2025 年 5 月 21 日付けの <a href="https://w3c.github.io/wcag/techniques/">Techniques for WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+    </p>
+    <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
   </div>
 </footer>
 
 <footer class="site-footer grid-4q" aria-label="Site">
   <div class="q1-start q3-end about">
-    <div>
+    <!--div>
       <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
       <p>Strategies, standards, and supporting resources to make the Web accessible to people with disabilities.</p>
     </div>
@@ -293,12 +291,12 @@ label, select {
         <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube " viewBox="0 0 32 32"><path d="M31.327 8.273c-0.386-1.353-1.431-2.398-2.756-2.777l-0.028-0.007c-2.493-0.668-12.528-0.668-12.528-0.668s-10.009-0.013-12.528 0.668c-1.353 0.386-2.398 1.431-2.777 2.756l-0.007 0.028c-0.443 2.281-0.696 4.903-0.696 7.585 0 0.054 0 0.109 0 0.163l-0-0.008c-0 0.037-0 0.082-0 0.126 0 2.682 0.253 5.304 0.737 7.845l-0.041-0.26c0.386 1.353 1.431 2.398 2.756 2.777l0.028 0.007c2.491 0.669 12.528 0.669 12.528 0.669s10.008 0 12.528-0.669c1.353-0.386 2.398-1.431 2.777-2.756l0.007-0.028c0.425-2.233 0.668-4.803 0.668-7.429 0-0.099-0-0.198-0.001-0.297l0 0.015c0.001-0.092 0.001-0.201 0.001-0.31 0-2.626-0.243-5.196-0.708-7.687l0.040 0.258zM12.812 20.801v-9.591l8.352 4.803z"></path></svg> YouTube</a></li>
         <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
       </ul>
-    </div>
+    </div-->
     <div dir="auto" translate="no" lang="en">
       <p>Copyright © 2025 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
     </div>
   </div>
-  <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+  <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
     <ul style="margin-bottom:0">
       <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
       <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -307,7 +305,7 @@ label, select {
       <li><a href="/WAI/translations/"> Translations</a></li>
       <li><a href="/WAI/roles/">Resources for Roles</a></li>
     </ul>
-  </div>
+  </div-->
 </footer>
 
 <link rel="stylesheet" href="../a11y-light.css">
@@ -321,7 +319,7 @@ label, select {
 </script>
 <script src="https://www.w3.org/WAI/assets/scripts/main.js"></script>
 
-<script>
+<!--script>
   var _paq = _paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
   _paq.push(["setDoNotTrack", true]);
@@ -337,7 +335,7 @@ label, select {
 </script>
 <noscript>
   <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-</noscript>
-
+</noscript-->
+<script src="https://waic.jp/docs/js/translation-contact.js"></script>
 
 </body></html>
