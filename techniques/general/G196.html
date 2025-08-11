@@ -1,6 +1,6 @@
-<!DOCTYPE html><html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
+<!DOCTYPE html><html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml"><head>
 <meta charset="UTF-8">
-<title>G196: Using a text alternative on one item within a group of images that describes all items in the group | WAI | W3C</title>
+<title>G196: 画像のグループにある一つの画像に、そのグループの全ての画像を説明するテキストによる代替を提供する | WAI | W3C</title>
 		
 	
 
@@ -11,8 +11,6 @@
 
 
 
-<!-- 日本語訳されるまでの一時的なスクリプト -->
-<script src="../untranslated-note.js"></script>
 </head>
 	<body dir="ltr">
 
@@ -20,12 +18,12 @@
 <div class="minimal-header-container default-grid">
   <header class="minimal-header" id="site-header">
     <div class="minimal-header-name">
-      <a href="https://w3c.github.io/wcag/techniques/">WCAG 2.2 Techniques</a>
+      <a href="https://waic.jp/translations/WCAG22/Techniques/">WCAG 2.2 テクニック集</a>
     </div>
     
       <div class="minimal-header-subtitle">Examples of ways to meet WCAG; not required</div>
     
-    <a class="minimal-header-link" href="https://w3c.github.io/wcag/techniques/about">About WCAG Techniques</a>
+    <a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Techniques/about">WCAG テクニック集について</a>
     <div class="minimal-header-logo">
       <a href="http://w3.org/" aria-label="W3C">
         <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44">
@@ -54,44 +52,42 @@
 
 <div class="default-grid with-gap leftcol">
 <aside class="box nav-hack sidebar standalone-resource__sidebar">
-    <header class="box-h">Page Contents</header>
+    <header class="box-h">このページの内容</header>
     <div class="box-i">
       <nav aria-label="page contents" class="navtoc">
-        <ul><li><a href="#technique">About this Technique</a></li>
-<li><a href="#description">Description</a></li>
-<li><a href="#examples">Examples</a></li>
-<li><a href="#related">Related Techniques</a></li>
-<li><a href="#tests">Tests</a></li>
+        <ul><li><a href="#technique">このテクニックについて</a></li>
+<li><a href="#description">解説</a></li>
+<li><a href="#examples">事例</a></li>
+<li><a href="#related">関連テクニック</a></li>
+<li><a href="#tests">検証</a></li>
 </ul>
       </nav>
     </div>
 </aside>
 
 <main id="main" class="standalone-resource__main">
-<!-- 日本語訳されるまでの一時的な注記 -->
-<div class="untranslated-note"><p>このWCAG 2.2 テクニック集の日本語訳は作業中となっています。WCAG 2.1 達成方法集の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Techniques/">WCAG 2.1 達成方法集</a> ]</p></div>
 		
-<h1><span>Technique G196:</span>Using a text alternative on one item within a group of images that describes all items in the group</h1>
+<h1><span>テクニック G196:</span>画像のグループにある一つの画像に、そのグループの全ての画像を説明するテキストによる代替を提供する</h1>
 
 
 
 
 <section id="technique" class="box">
-	<h2 class="box-h box-h-icon">About this Technique</h2>
+	<h2 class="box-h box-h-icon">このテクニックについて</h2>
 	<div class="box-i">
 
 
   
   <p>
-    This technique relates to
+    このテクニックは
     
-<a href="https://w3c.github.io/wcag/understanding/non-text-content">1.1.1: Non-text Content</a>
-(<strong>Sufficient</strong>).</p>
+<a href="https://waic.jp/translations/WCAG22/Understanding/non-text-content">1.1.1: 非テキストコンテンツ</a>
+(<strong>十分なテクニック</strong>) に関連する。</p>
   
 
 
 
-  <p>This technique applies to any technology where a grouping of non-text content is used to present information or functionality.</p>
+  <p>このテクニックは、非テキストコンテンツのグループを用いて情報又は機能を提示する、全ての技術に適用される。</p>
 
 </div>
 </section>
@@ -101,16 +97,16 @@
 		
 		
 		<section id="description">
-			<h2>Description</h2>
-      <p>The objective of this technique is to avoid unnecessary duplication that occurs when a grouping of adjacent non-text content is used to present information or functionality.</p>
-      <p>In some cases, pages will present a group of images to convey information. When presented together or in a specific combination these groupings can convey different types of information. For example, two images of a star where one is presented in black and white and the other is colored can be used in combination to represent a user rating. For example, three filled stars followed by two unfilled stars might represent a rating of three out of five stars.</p>
-      <p>To use this technique, an author provides a text alternative that serves the equivalent purpose for the entire group and associates it with one item in the group. The other items in the group are then marked in a way that can be ignored by assistive technologies. In this way, the user is able to more efficiently identify the purpose of the group and can avoid duplication or confusion that may result had a text alternative been provided for each item in the group.</p>
+			<h2>解説</h2>
+      <p>このテクニックの目的は、隣り合う非テキストコンテンツのグループを用いて情報又は機能を提示する際に生じる不要な重複を回避することである。</p>
+      <p>ウェブページでは、画像のグループを提示して情報を伝えることがある。一緒に提示する、又は特定の組み合わせで提示することにより、こうしたグループは様々なタイプの情報を伝えることができる。例えば、二つの星の画像のうち一つを白黒、もう一つをカラーで表示し、利用者評価を表すために使用することができる。また、塗りつぶした三つの星に続いて塗りつぶしていない二つの星を提示すれば、利用者評価が満点の五つ星のうちの三つ星であることを示すこともできる。</p>
+      <p>このテクニックを用いるには、コンテンツ制作者が、グループ全体と等価の目的を果たすテキストによる代替をそのグループにあるどれか一つのアイテムに関連付けて提供する。そして、グループ内のその他のアイテムは、支援技術が無視できるようにする。こうすることによって、利用者は、より効率的にそのグループの目的を理解して、グループ内の各アイテムにテキストによる代替が提供した際に生じる重複又は混乱を回避することができる。</p>
    </section>
 	 <section id="examples">
-		<h2>Examples</h2>
+		<h2>事例</h2>
 		<section class="example" id="example-1-a-rating-system-in-html">
-			<h3>Example 1: A rating system in <abbr title="HyperText Markup Language">HTML</abbr></h3>
-			<p>In the following example, a rating is shown as three filled stars and two empty stars. While a text alternative could have been provided for each of the five images, the author has instead provided the rating in the form "3 out of 5 stars" for the first image and has marked the others using null alt text.</p>
+			<h3>事例 1: <abbr title="HyperText Markup Language">HTML</abbr> での評価システム</h3>
+			<p>次の例では、塗りつぶされた星三つと塗りつぶされていない星二つで評価が示されている。テキストによる代替は、五つの画像それぞれに提供することもできるが、このコンテンツ制作者は、一つ目の画像に「3 out of 5 stars」として画像のグループが伝えている評価を提供し、他の画像には空の代替テキストを用いている。</p>
 <pre xml:space="preserve"><code class="language-html">&lt;p&gt;Rating: 
   &lt;img src="star-filled" alt="3 out of 5 stars"&gt;
   &lt;img src="star-filled" alt=""&gt;
@@ -120,8 +116,8 @@
 &lt;/p&gt;</code></pre>
       </section>
       <section class="example" id="example-2-buttons-created-with-groups-of-images-in-html">
-				<h3>Example 2: Buttons created with groups of images in HTML</h3>
-				<p>In this example, each button has a set of images to indicate the level of conformance to WCAG being claimed. This approach makes it possible for assistive technologies to avoid announcing things like, "Image A, Image A, Image A" etc.</p> 
+				<h3>事例 2: HTML で画像のグループを使用して作成されたボタン</h3>
+				<p>この例では、宣言している WCAG への適合レベルを示すために、各ボタンが複数の画像一式を用いている。このアプローチによって、支援技術は「画像 A、画像 A、画像 A」などのように読み上げるのを回避できるようになる。</p> 
 <pre xml:space="preserve"><code class="language-html">&lt;p&gt;Conformance Level:&lt;/p&gt;
 &lt;button name="A" type="button"&gt;
   &lt;img src="a.png" alt="A"&gt;
@@ -142,7 +138,7 @@
 
 
 <section id="related">
-		<h2>Related Techniques</h2>
+		<h2>関連テクニック</h2>
 		<ul>
       <li><a href="../general/G94">G94: Providing short text alternative for non-text content that serves the same purpose and presents the same information as the non-text content</a></li>
       <li><a href="../html/H2">H2: Combining adjacent image and text links for the same resource</a></li>
@@ -150,18 +146,18 @@
 		</ul>
 	</section>
 <section id="tests">
-		<h2>Tests</h2>
+		<h2>検証</h2>
 		<section class="procedure" id="procedure">
-			<h3>Procedure</h3>
+			<h3>手順</h3>
          <ol>
-            <li>Check that one item in the group includes a text alternative that serves the equivalent purpose for the entire group.</li>
-            <li>Check that the other items in the group are marked in a way that can be ignored by assistive technologies.</li>
-            <li>Check that the items marked in a way that can be ignored by assistive technologies are adjacent to the item that contains the text alternative for the group.</li>
+            <li>グループ内の一つのアイテムに、そのグループ全体の目的と等価なテキストによる代替があることをチェックする。</li>
+            <li>グループ内のその他のアイテムが、支援技術が無視できるようにマークされていることをチェックする。</li>
+            <li>支援技術が無視できるようにマークされたアイテムが、グループ全体に対するテキストによる代替のあるアイテムと隣り合っていることをチェックする。</li>
          </ol>
       </section>
-      <section class="results" id="expected-results"><h3>Expected Results</h3>
+      <section class="results" id="expected-results"><h3>期待される結果</h3>
          <ul>
-            <li>All of the above checks are true.</li>
+            <li>上記の全てのチェックが真である。</li>
          </ul>
       </section>
    </section>
@@ -181,14 +177,13 @@
     <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
       <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
     </svg>
-    <h2>Help improve this page</h2>
+    <h2>このページを改善する</h2>
   </header>
   <div class="box-i">
-  <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org</a> or via GitHub</p>
+  <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。</p>
     <div class="button-group">
-      <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a>
-      <a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a>
-      <a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a>
+      <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdIpvogLx8kGIMewhQ6MzhG2pOCQZ50iIBViGg8pUrRJuslKg/viewform?entry.685195438=https%3A%2F%2Fwaic.jp%2Ftranslations%2FWCAG22%2FUnderstanding%2Ffocus-not-obscured-minimum" id="file-issue">翻訳に関するお問い合わせ (Google フォーム)</a>
+      <a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a>
     </div>
   </div>
 </aside>
@@ -210,12 +205,15 @@
       <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project,
       co-funded by the European Commission.
     </p>
+    <p>この文書は、2025 年 5 月 21 日付けの <a href="https://w3c.github.io/wcag/techniques/">Techniques for WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+    </p>
+    <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
   </div>
 </footer>
 
 <footer class="site-footer grid-4q" aria-label="Site">
   <div class="q1-start q3-end about">
-    <div>
+    <!--div>
       <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
       <p>Strategies, standards, and supporting resources to make the Web accessible to people with disabilities.</p>
     </div>
@@ -226,12 +224,12 @@
         <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube " viewBox="0 0 32 32"><path d="M31.327 8.273c-0.386-1.353-1.431-2.398-2.756-2.777l-0.028-0.007c-2.493-0.668-12.528-0.668-12.528-0.668s-10.009-0.013-12.528 0.668c-1.353 0.386-2.398 1.431-2.777 2.756l-0.007 0.028c-0.443 2.281-0.696 4.903-0.696 7.585 0 0.054 0 0.109 0 0.163l-0-0.008c-0 0.037-0 0.082-0 0.126 0 2.682 0.253 5.304 0.737 7.845l-0.041-0.26c0.386 1.353 1.431 2.398 2.756 2.777l0.028 0.007c2.491 0.669 12.528 0.669 12.528 0.669s10.008 0 12.528-0.669c1.353-0.386 2.398-1.431 2.777-2.756l0.007-0.028c0.425-2.233 0.668-4.803 0.668-7.429 0-0.099-0-0.198-0.001-0.297l0 0.015c0.001-0.092 0.001-0.201 0.001-0.31 0-2.626-0.243-5.196-0.708-7.687l0.040 0.258zM12.812 20.801v-9.591l8.352 4.803z"></path></svg> YouTube</a></li>
         <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
       </ul>
-    </div>
+    </div-->
     <div dir="auto" translate="no" lang="en">
       <p>Copyright © 2025 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
     </div>
   </div>
-  <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+  <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
     <ul style="margin-bottom:0">
       <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
       <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -240,7 +238,7 @@
       <li><a href="/WAI/translations/"> Translations</a></li>
       <li><a href="/WAI/roles/">Resources for Roles</a></li>
     </ul>
-  </div>
+  </div-->
 </footer>
 
 <link rel="stylesheet" href="../a11y-light.css">
@@ -254,7 +252,7 @@
 </script>
 <script src="https://www.w3.org/WAI/assets/scripts/main.js"></script>
 
-<script>
+<!--script>
   var _paq = _paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
   _paq.push(["setDoNotTrack", true]);
@@ -270,7 +268,7 @@
 </script>
 <noscript>
   <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-</noscript>
-
+</noscript-->
+<script src="https://waic.jp/docs/js/translation-contact.js"></script>
 
 </body></html>
