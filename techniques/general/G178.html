@@ -1,6 +1,6 @@
-<!DOCTYPE html><html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
+<!DOCTYPE html><html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml"><head>
 <meta charset="UTF-8">
-<title>G178: Providing controls on the web page that allow users to incrementally change the size of all text on the page up to 200 percent | WAI | W3C</title>
+<title>G178: 利用者がウェブページ上のすべてのテキストを 200％まで徐々に変更できるコントロールをウェブページ上で提供する | WAI | W3C</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css">
@@ -9,20 +9,18 @@
 
 
 
-<!-- 日本語訳されるまでの一時的なスクリプト -->
-<script src="../untranslated-note.js"></script>
 </head><body dir="ltr">
 
 <a href="#main" class="button button--skip-link">Skip to content</a>
 <div class="minimal-header-container default-grid">
   <header class="minimal-header" id="site-header">
     <div class="minimal-header-name">
-      <a href="https://w3c.github.io/wcag/techniques/">WCAG 2.2 Techniques</a>
+      <a href="https://waic.jp/translations/WCAG22/Techniques/">WCAG 2.2 テクニック集</a>
     </div>
     
       <div class="minimal-header-subtitle">Examples of ways to meet WCAG; not required</div>
     
-    <a class="minimal-header-link" href="https://w3c.github.io/wcag/techniques/about">About WCAG Techniques</a>
+    <a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Techniques/about">WCAG テクニック集について</a>
     <div class="minimal-header-logo">
       <a href="http://w3.org/" aria-label="W3C">
         <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44">
@@ -51,81 +49,80 @@
 
 <div class="default-grid with-gap leftcol">
 <aside class="box nav-hack sidebar standalone-resource__sidebar">
-    <header class="box-h">Page Contents</header>
+    <header class="box-h">このページの内容</header>
     <div class="box-i">
       <nav aria-label="page contents" class="navtoc">
-        <ul><li><a href="#technique">About this Technique</a></li>
-<li><a href="#description">Description</a></li>
-<li><a href="#examples">Examples</a></li>
-<li><a href="#tests">Tests</a></li>
+        <ul><li><a href="#technique">このテクニックについて</a></li>
+<li><a href="#description">解説</a></li>
+<li><a href="#examples">事例</a></li>
+<li><a href="#tests">検証</a></li>
 </ul>
       </nav>
     </div>
 </aside>
 
 <main id="main" class="standalone-resource__main">
-<!-- 日本語訳されるまでの一時的な注記 -->
-<div class="untranslated-note"><p>このWCAG 2.2 テクニック集の日本語訳は作業中となっています。WCAG 2.1 達成方法集の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Techniques/">WCAG 2.1 達成方法集</a> ]</p></div>
-<h1><span>Technique G178:</span>Providing controls on the web page that allow users to incrementally change the size of all text on the page up to 200 percent</h1>
+
+<h1><span>テクニック G178:</span>利用者がウェブページ上のすべてのテキストを 200％まで徐々に変更できるコントロールをウェブページ上で提供する</h1>
 
 
 
 
 <section id="technique" class="box">
-	<h2 class="box-h box-h-icon">About this Technique</h2>
+	<h2 class="box-h box-h-icon">このテクニックについて</h2>
 	<div class="box-i">
 
 
   
   <p>
-    This technique relates to
+    このテクニックは
     
-<a href="https://w3c.github.io/wcag/understanding/resize-text">1.4.4: Resize Text</a>
-(<strong>Sufficient</strong>).</p>
+<a href="https://waic.jp/translations/WCAG22/Understanding/resize-text">1.4.4: テキストのサイズ変更</a>
+(<strong>十分なテクニック</strong>).</p>
   
 
 
 
-  <p>This technique applies to all technologies.</p>
+  <p>このテクニックは、全ての技術に適用される。</p>
 
 </div>
 </section>
 	
 
-<section id="description"><h2>Description</h2>
-      <p>The purpose of this technique is to provide a mechanism on the web page to incrementally increase the size of text. Many people with low vision do not use magnifying software, and they may not be familiar with their browser's text size adjustments. This may be particularly true of older people who are learning about computers later in life and who may be experiencing age related vision loss. It may also be true of some people with cognitive disabilities who require increased font size.</p>
-      <p>This technique provides a mechanism that some users will find easier to use. The mechanism may include links or buttons that will switch the visual presentation to a different style sheet or use scripts to change the text size dynamically.</p>
-      <p>To implement this technique, an author provides controls that allow the user to incrementally increase or decrease the text size of all of the text on the page to a size up to 200% of the default text size.</p>
-      <p>This can be achieved by providing links, buttons or linked images and the controls themselves should be as easy to find (e.g. prominently positioned within the page, presented in a larger text size, high contrast, etc.) as possible.</p>
-      <p>This technique can also be used in circumstances where scalable fonts cannot be used, such as legacy code situations.</p>
+<section id="description"><h2>解説</h2>
+      <p>このテクニックの目的は、文字のサイズを徐々に大きくするメカニズムをウェブサイト上で提供することである。多くのロービジョンの人々は拡大鏡ソフトウェアを使っておらず、そしてブラウザの文字サイズの調整について精通していない。このことは、あとからコンピューターを学んだり、また失明に近い症状の高齢者にも特に当てはまる。 これはフォントサイズを大きくしたいと思っている認知障害者もまた同様である。</p>
+      <p>このテクニックは、利用者がより簡単に使うことのできるメカニズムを提供する。このメカニズムは視覚的提示を異なるスタイルシートに切り替えたり、文字サイズをダイナミックに変化するためのスクリプトを使用したりするリンクやボタンを含んでいる。</p>
+      <p>このテクニックを実装するために、コンテンツ制作者は、利用者がページ上の全てのテキストの文字サイズを、デフォルトの文字サイズの最大 200％まで徐々に拡大又は縮小できるコントロールを提供する。</p>
+      <p>これはリンクやボタンまたはリンク画像によって達成可能であり、そしてそれらコントロールは可能な限り簡単に見つけられるべきである。(ページ内で目立つ場所にある、大きなテキスト、ハイコントラストで表現されているなど。)</p>
+      <p>このテクニックは、レガシーコードの場合のように、拡大縮小可能なフォントを用いることができない状況でも同様に用いることができる。</p>
       <div class="note">
-				<p class="note-title marker">Note</p>
+				<p class="note-title marker">注記</p>
 				<div>
-         <p>This technique can be used in combination with a style switching technique to present a page that is a <a href="https://w3c.github.io/wcag/guidelines/22/#dfn-conforming-alternate-versions" target="terms">conforming alternate version</a> for non-conforming content. Refer to <a href="../css/C29">C29: Using a style switcher to provide a conforming alternate version</a> and <a href="https://w3c.github.io/wcag/understanding/conformance#conforming-alt-versions">Understanding Conforming Alternate Versions</a> for more information.</p>
+         <p>このテクニックは、不適合コンテンツのための<a href="https://waic.jp/translations/WCAG22/#dfn-conforming-alternate-versions" target="terms">適合している代替版</a>のページを表示させるためのスタイル切り替えのテクニックとの組み合わせで用いることができる。更なる情報は <a href="../css/C29">C29: 適合している代替版を提供するために、スタイルスイッチャーを使用する</a>及び<a href="https://waic.jp/translations/WCAG22/Understanding/conformance#conforming-alt-versions" target="terms">適合している代替版を理解する</a>を参照。</p>
       </div>
 			</div>
-   </section><section id="examples"><h2>Examples</h2>
+   </section><section id="examples"><h2>事例</h2>
       <ul>
-         <li>A newspaper article has two buttons near the top of the page. The "increase text size" button has a big letter "T" with an upward arrow and the "decrease text size" button has a small letter "T" with a down arrow. There is <code class="language-html">alt</code> text on each button.</li>
-         <li>A site has a number of style sheets with different text size. The user can choose any of the style sheets if their browser provides this functionality. Each page also includes the links "Increase text size" and "Decrease text size" that will change the style sheet currently applied to the appropriate alternate style sheet.</li>
-         <li>A site includes the text "Change text size:" followed by text links "Up" and "Down" on every web page. The links trigger a Javascript that alters the value of the text-size property accordingly.</li>
-         <li>A site includes a link on every page that reads "Change text size." The resulting page includes a series of links that includes options representing the available sizes. The links read, "Smallest font size," "Small font size," "Default font size," "Large font size," etc. Instructions preceding the list direct users to choose a link to change to the desired font size.</li>
+         <li>新聞記事のページ上部に二つのボタンがある。「文字サイズを大きくする」ボタンは上矢印と大文字「T」、「文字サイズを小さくする」ボタンは下矢印と小文字「T」がある。それぞれのボタンには <code class="language-html">alt</code> テキストがある。</li>
+         <li>サイトは、異なる文字サイズの複数のスタイルシートを持つ。ブラウザがこの機能を提供する場合、利用者はスタイルシートのいずれかを選択できる。各ページには、各ページには現在適用されているスタイルシートを適切な代替スタイルシートに変更するリンク「文字サイズを大きくする」と「文字サイズを小さくする」も含まれている。</li>
+         <li>サイトは、すべてのウェブページで「文字サイズを変更」というテキストの後に「上へ」および「下へ」のテキストリンクを含んでいる。リンクは、それに応じて text-size プロパティの値を変更する Javascript をトリガーする。</li>
+         <li>サイトは、「文字サイズを変更する」と表示されているすべてのページにリンクが含まれている。結果のページには、利用可能なサイズを表すオプションを含む一連のリンクが含まれている。リンクは、「最小フォントサイズ」、「小さいフォントサイズ」、「デフォルトフォントサイズ」、「大きいフォントサイズ」などが表示されている。</li>
       </ul>
    </section>
 
-<section id="tests"><h2>Tests</h2>
-      <section class="procedure" id="procedure"><h3>Procedure</h3>
+<section id="tests"><h2>検証</h2>
+      <section class="procedure" id="procedure"><h3>手順</h3>
          <ol>
-            <li>Set the viewport size to 1024px by 768px or larger.</li>
-            <li>Increase the text size and check to see if the text size increased.</li>
-            <li>Check that the text size can be increased to 200% of the original size.</li>
-            <li>Check that after increasing the text size to 200% of the original size, there is no loss of content or functionality (e.g. no parts of the text are clipped, boxes do not overlap, controls are not obscured or separated from their labels, etc.).</li>
-            <li>Decrease the text size to its default value and check to see if it in fact returned to the default size.</li>
+            <li>ビューポートのサイズを 1024px × 768px 以上に設定する。</li>
+            <li>テキストサイズを大きくして、テキストサイズが大きくなるかどうかをチェックする。</li>
+            <li>テキストサイズが元のサイズから 200％に大きくすることができることをチェックする。</li>
+            <li>テキストサイズが元のサイズから 200％に大きくした後、コンテンツ又は機能が損なわれていないことをチェックする (例えば、テキストの一部が表示されなくなる、ボックスが重なり合う、コントロールが隠れてしまったりラベルから離れてしまったりする、というような状態にならない)。</li>
+            <li>テキストサイズを初期値まで小さくし、実際に初期値に戻っていることをチェックする。</li>
          </ol>
       </section>
-      <section class="results" id="expected-results"><h3>Expected Results</h3>
+      <section class="results" id="expected-results"><h3>期待される結果</h3>
          <ul>
-            <li>Checks #2, #3, #4 and #5 are true.</li>
+            <li>チェック 2、3、4 及び 5 が真である。</li>
          </ul>
       </section>
    </section>
@@ -145,14 +142,13 @@
     <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
       <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
     </svg>
-    <h2>Help improve this page</h2>
+    <h2>このページを改善する</h2>
   </header>
   <div class="box-i">
-  <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org</a> or via GitHub</p>
+  <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。</p>
     <div class="button-group">
-      <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a>
-      <a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a>
-      <a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a>
+      <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdIpvogLx8kGIMewhQ6MzhG2pOCQZ50iIBViGg8pUrRJuslKg/viewform?entry.685195438=https%3A%2F%2Fwaic.jp%2Ftranslations%2FWCAG22%2FUnderstanding%2Ffocus-not-obscured-minimum" id="file-issue">翻訳に関するお問い合わせ (Google フォーム)</a>
+      <a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a>
     </div>
   </div>
 </aside>
@@ -174,12 +170,15 @@
       <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project,
       co-funded by the European Commission.
     </p>
+    <p>この文書は、2025 年 5 月 21 日付けの <a href="https://w3c.github.io/wcag/techniques/">Techniques for WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+    </p>
+    <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
   </div>
 </footer>
 
 <footer class="site-footer grid-4q" aria-label="Site">
   <div class="q1-start q3-end about">
-    <div>
+    <!--div>
       <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
       <p>Strategies, standards, and supporting resources to make the Web accessible to people with disabilities.</p>
     </div>
@@ -190,12 +189,12 @@
         <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube " viewBox="0 0 32 32"><path d="M31.327 8.273c-0.386-1.353-1.431-2.398-2.756-2.777l-0.028-0.007c-2.493-0.668-12.528-0.668-12.528-0.668s-10.009-0.013-12.528 0.668c-1.353 0.386-2.398 1.431-2.777 2.756l-0.007 0.028c-0.443 2.281-0.696 4.903-0.696 7.585 0 0.054 0 0.109 0 0.163l-0-0.008c-0 0.037-0 0.082-0 0.126 0 2.682 0.253 5.304 0.737 7.845l-0.041-0.26c0.386 1.353 1.431 2.398 2.756 2.777l0.028 0.007c2.491 0.669 12.528 0.669 12.528 0.669s10.008 0 12.528-0.669c1.353-0.386 2.398-1.431 2.777-2.756l0.007-0.028c0.425-2.233 0.668-4.803 0.668-7.429 0-0.099-0-0.198-0.001-0.297l0 0.015c0.001-0.092 0.001-0.201 0.001-0.31 0-2.626-0.243-5.196-0.708-7.687l0.040 0.258zM12.812 20.801v-9.591l8.352 4.803z"></path></svg> YouTube</a></li>
         <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
       </ul>
-    </div>
+    </div-->
     <div dir="auto" translate="no" lang="en">
       <p>Copyright © 2025 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
     </div>
   </div>
-  <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+  <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
     <ul style="margin-bottom:0">
       <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
       <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -204,7 +203,7 @@
       <li><a href="/WAI/translations/"> Translations</a></li>
       <li><a href="/WAI/roles/">Resources for Roles</a></li>
     </ul>
-  </div>
+  </div-->
 </footer>
 
 <link rel="stylesheet" href="../a11y-light.css">
@@ -218,7 +217,7 @@
 </script>
 <script src="https://www.w3.org/WAI/assets/scripts/main.js"></script>
 
-<script>
+<!--script>
   var _paq = _paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
   _paq.push(["setDoNotTrack", true]);
@@ -234,7 +233,7 @@
 </script>
 <noscript>
   <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-</noscript>
-
+</noscript-->
+<script src="https://waic.jp/docs/js/translation-contact.js"></script>
 
 </body></html>
