@@ -1,6 +1,6 @@
-<!DOCTYPE html><html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
+<!DOCTYPE html><html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml"><head>
 <meta charset="UTF-8">
-<title>G155: Providing a checkbox in addition to a submit button | WAI | W3C</title>
+<title>G155: 送信ボタンに加えてチェックボックスを提供する | WAI | W3C</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css">
@@ -9,20 +9,18 @@
 
 
 
-<!-- 日本語訳されるまでの一時的なスクリプト -->
-<script src="../untranslated-note.js"></script>
 </head><body dir="ltr">
 
 <a href="#main" class="button button--skip-link">Skip to content</a>
 <div class="minimal-header-container default-grid">
   <header class="minimal-header" id="site-header">
     <div class="minimal-header-name">
-      <a href="https://w3c.github.io/wcag/techniques/">WCAG 2.2 Techniques</a>
+      <a href="https://waic.jp/translations/WCAG22/Techniques/">WCAG 2.2 テクニック集</a>
     </div>
     
       <div class="minimal-header-subtitle">Examples of ways to meet WCAG; not required</div>
     
-    <a class="minimal-header-link" href="https://w3c.github.io/wcag/techniques/about">About WCAG Techniques</a>
+    <a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Techniques/about">WCAG テクニック集について</a>
     <div class="minimal-header-logo">
       <a href="http://w3.org/" aria-label="W3C">
         <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44">
@@ -51,79 +49,78 @@
 
 <div class="default-grid with-gap leftcol">
 <aside class="box nav-hack sidebar standalone-resource__sidebar">
-    <header class="box-h">Page Contents</header>
+    <header class="box-h">このページの内容</header>
     <div class="box-i">
       <nav aria-label="page contents" class="navtoc">
-        <ul><li><a href="#technique">About this Technique</a></li>
-<li><a href="#description">Description</a></li>
-<li><a href="#examples">Examples</a></li>
-<li><a href="#related">Related Techniques</a></li>
-<li><a href="#tests">Tests</a></li>
+        <ul><li><a href="#technique">このテクニックについて</a></li>
+<li><a href="#description">解説</a></li>
+<li><a href="#examples">事例</a></li>
+<li><a href="#related">関連テクニック</a></li>
+<li><a href="#tests">検証</a></li>
 </ul>
       </nav>
     </div>
 </aside>
 
 <main id="main" class="standalone-resource__main">
-<!-- 日本語訳されるまでの一時的な注記 -->
-<div class="untranslated-note"><p>このWCAG 2.2 テクニック集の日本語訳は作業中となっています。WCAG 2.1 達成方法集の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Techniques/">WCAG 2.1 達成方法集</a> ]</p></div>
-<h1><span>Technique G155:</span>Providing a checkbox in addition to a submit button</h1>
+
+<h1><span>テクニック G155:</span>送信ボタンに加えてチェックボックスを提供する</h1>
 
 
 
 
 <section id="technique" class="box">
-	<h2 class="box-h box-h-icon">About this Technique</h2>
+	<h2 class="box-h box-h-icon">このテクニックについて</h2>
 	<div class="box-i">
 
 
   
   <p>
-    This technique relates to
+    このテクニックは
     
-<a href="https://w3c.github.io/wcag/understanding/error-prevention-legal-financial-data">3.3.4: Error Prevention (Legal, Financial, Data)</a>
-(<strong>Sufficient</strong>).</p>
+<a href="https://waic.jp/translations/WCAG22/Understanding/error-prevention-legal-financial-data">3.3.4: 誤り防止 (法的、金融、データ)</a>
+(<strong>十分なテクニック</strong>) に関連する。</p>
   
 
 
 
-  <p>This technique applies to any technology.</p>
+  <p>このテクニックは、全ての技術に適用される。</p>
 
 </div>
 </section>
 	
 
-<section id="description"><h2>Description</h2>
-      <p>The objective of this technique is to provide a checkbox that users must select to indicate they have reviewed their input and are ready for it to be committed. This is important when the nature of the transaction is such that it may not be reversible if input errors are subsequently discovered or when the result of an action is that data is deleted. The author provides a checkbox that is not selected when the page loads, with a label like "I confirm that the input is correct and am ready to submit" or "I confirm that I wish to delete this data". The checkbox should be located near the submit button to help the user notice it during the submission process. If the checkbox is not selected when the form is submitted, the input is rejected and the user is prompted to review their entry, select the checkbox, and resubmit. Only if the checkbox is selected will the input be accepted and the transaction processed.</p>
-      <p>This checkbox helps to guard against the consequences of an accidental form submission, and also serves to prompt the user to be sure they have entered accurate data. This is more secure than simply putting a label on the submit button like "input is correct, submit". Providing the checkbox as a separate control from the submit button forces the user to "double-check", as they must both select the checkbox and activate the submit button for the transaction to proceed. As such, this is a mechanism for reviewing, confirming, and correcting information before finalizing the submission.</p>
+<section id="description"><h2>解説</h2>
+      <p>このテクニックの目的は、利用者が自身の入力した内容を確認し、送信の準備ができたことを示すために選択しなければならないチェックボックスを提供することである。これは、後で入力エラーが発見されてもやり直しができない、または実行の結果データが削除されるような性質の処理においては重要である。コンテンツ制作者は、ページが読み込まれた時には選択されていないチェックボックスを提供し、「入力内容に間違いはなく、送信準備ができました」、又は「このデータの削除に同意します」のようなラベルを付加する。このチェックボックスは、利用者が送信の過程で気づきやすいように、送信ボタンの近くに配置するべきである。そのフォームの送信時にチェックボックスが選択されていない場合は、入力を受け付けず、利用者に対して入力内容を確認の上、チェックボックスを選択し、再送信するように促す。チェックボックスが選択されているときだけ、送信された内容を受け付け、処理を行う。</p>
+      <p>このチェックボックスは、フォームを誤って送信してしまった場合の影響を抑制すると同時に、利用者に対して入力内容が正確であることを確認するように促すことができる。この方法は、単に送信ボタンに「入力内容に誤りがなければ送信」というようなラベルを付加するよりも安全な方法である。送信ボタンとは別のコントロールとしてチェックボックスを提供することで、処理を続行するために利用者はチェックボックスの選択と送信ボタンの動作の両方をしなければならず、「ダブルチェック」を強制させる。したがって、これは送信内容を確定する前に、入力内容を見直し、正確さを確認し、訂正するためのメカニズムである。</p>
       <div class="note">
-				<p class="note-title marker">Note</p>
+				<p class="note-title marker">注記</p>
 				<div>
-         <p>When users submit information without selecting the checkbox, they should not lose the information that they have entered when they return to the form to resubmit.</p>
+         <p>利用者がチェックボックスを選択せずに送信した場合、再送信のためのフォームで、これまでに入力した情報を再入力する必要がないようにすべきである。</p>
       </div>
 			</div>
-   </section><section id="examples"><h2>Examples</h2>
+   </section><section id="examples"><h2>事例</h2>
       <ul>
-         <li>An online bank service allows users to transfer money between accounts in different currencies. Because exchange rates are constantly in flux, the money cannot be re-exchanged at the same rate if the user discovers an error in their input after the transaction has been carried out. In addition to the "account from", "account to", and "amount" fields, there is a checkbox with a label "I have checked that the amount I wish to transfer is correct". If this checkbox is not selected when the user submits the form, the transaction is not carried out and the user is notified. If the checkbox is selected, the (irreversible) transaction is carried out.</li>
-         <li>An online payment system stores user bank account information in order to process payments. There is an elaborate procedure for users to enter new accounts and verify that they are the owner. There is the facility to delete old accounts, but if an account is accidentally deleted, it would be difficult to reinstate it, and the transaction history with that account would be lost. Therefore, on pages that allow users to delete accounts, there is a checkbox with the label "I confirm that I wish to delete this account." If this checkbox is not selected when the user submits the form, the account is not deleted and the user is given an error message. Only if the checkbox is selected is the account deleted.</li>
-         <li>A checkout form on a shopping site includes a form that collects order, shipping and billing information. After submitting the form, the user is taken to a page where the information they have submitted is summarized for review. Below the summary, a checkbox with the label "I have reviewed and confirmed that this data is correct" is shown. The user must mark the checkbox and activate a "complete order" button in order to complete the transaction.</li>
+         <li>あるオンライン銀行サービスでは、異なる通貨の口座間で資金を振り替えることが可能である。為替レートは常に変化しているため、取引が実行された後に利用者が入力に誤りを発見した場合に、その資金を同じレートで再両替できない。「振り替え元口座」、「振り替え先口座」、「金額」のフィールドに加えて、「振替金額が正しいことを確認しました」というラベルのチェックボックスがある。利用者がフォームを送信するときにこのチェックボックスが選択されていない場合は、取引は実行されず、利用者に通知される。チェックボックスが選択されている場合は、(取り消しできない) 取引が実行される。</li>
+         <li>オンラインで支払いを可能にするシステムでは、支払いを可能にするために利用者の銀行口座情報を保持している。新しい口座に関する情報を入力し、その口座がその利用者のものであることを確認するための複雑な手順が存在する。古い口座を削除する機能があるが、誤って口座を削除した場合、その口座を復活させるのは難しく、それまでのその口座に対する処理の記録は失われてしまう。したがって、利用者が口座の削除を行うことができるページには、「この口座の削除を確認します」というラベルを付加したチェックボックスが配置されている。利用者がこのフォームを送信したときにこのチェックボックスが選択されていない場合は、口座の削除は行わず、利用者に対してはエラーメッセージを表示する。このチェックボックスが選択されているときのみ、口座の削除を実行する。</li>
+         <li>あるショッピングサイトの精算フォームには、注文、配送、及び請求情報を収集するフォームが含まれている。フォームを送信した後に、利用者は、送信した情報が確認のために要約されたページに移動する。要約の下に、「このデータが正しいことを確認しました」というラベルの付いたチェックボックスが表示される。取引を完了させるには、利用者がチェックボックスにチェックを入れて「注文完了」ボタンを有効にしなければならない。</li>
       </ul>
    </section>
-<section id="related"><h2>Related Techniques</h2><ul>
+<section id="related"><h2>関連テクニック</h2><ul>
       <li><a href="../general/G98">G98: Providing the ability for the user to review and correct answers before submitting</a></li>
       <li><a href="../general/G99">G99: Providing the ability to recover deleted information</a></li>
    </ul></section>
-<section id="tests"><h2>Tests</h2>
-      <section class="procedure" id="procedure"><h3>Procedure</h3>
-         <p>For user input pages that cause irreversible transactions to occur:</p>
+<section id="tests"><h2>検証</h2>
+      <section class="procedure" id="procedure"><h3>手順</h3>
+         <p>取り消しできない処理が発生する利用者の入力ページの場合:</p>
          <ol>
-            <li>Check that a checkbox indicating user confirmation of the input or action is provided in addition to the submit button.</li>
-            <li>Check that if the checkbox is not selected when the form is submitted, the input is rejected and the user is prompted to review their entry, select the checkbox, and resubmit.</li>
+            <li>送信ボタンに加えて、入力又は操作に対する利用者の確認を示すチェックボックスが提供されていることをチェックする。</li>
+            <li>フォームが送信されたときにチェックボックスが選択されていない場合は、入力は受け付けられず、利用者に対して入力内容の確認をした上で、チェックボックスを選択し、再送信するようになっていることをチェックする。</li>
          </ol>
       </section>
-      <section class="results" id="expected-results"><h3>Expected Results</h3>
+      <section class="results" id="expected-results"><h3>期待される結果</h3>
          <ul>
-            <li>Checks #1 and #2 are true</li>
+            <li>チェック 1 及び 2 が真である。</li>
          </ul>
       </section>
    </section>
@@ -143,14 +140,13 @@
     <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
       <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
     </svg>
-    <h2>Help improve this page</h2>
+    <h2>このページを改善する</h2>
   </header>
   <div class="box-i">
-  <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org</a> or via GitHub</p>
+  <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。</p>
     <div class="button-group">
-      <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a>
-      <a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a>
-      <a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a>
+      <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdIpvogLx8kGIMewhQ6MzhG2pOCQZ50iIBViGg8pUrRJuslKg/viewform?entry.685195438=https%3A%2F%2Fwaic.jp%2Ftranslations%2FWCAG22%2FUnderstanding%2Ffocus-not-obscured-minimum" id="file-issue">翻訳に関するお問い合わせ (Google フォーム)</a>
+      <a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a>
     </div>
   </div>
 </aside>
@@ -172,12 +168,15 @@
       <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project,
       co-funded by the European Commission.
     </p>
+    <p>この文書は、2025 年 5 月 21 日付けの <a href="https://w3c.github.io/wcag/techniques/">Techniques for WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+    </p>
+    <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
   </div>
 </footer>
 
 <footer class="site-footer grid-4q" aria-label="Site">
   <div class="q1-start q3-end about">
-    <div>
+    <!--div>
       <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
       <p>Strategies, standards, and supporting resources to make the Web accessible to people with disabilities.</p>
     </div>
@@ -188,12 +187,12 @@
         <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube " viewBox="0 0 32 32"><path d="M31.327 8.273c-0.386-1.353-1.431-2.398-2.756-2.777l-0.028-0.007c-2.493-0.668-12.528-0.668-12.528-0.668s-10.009-0.013-12.528 0.668c-1.353 0.386-2.398 1.431-2.777 2.756l-0.007 0.028c-0.443 2.281-0.696 4.903-0.696 7.585 0 0.054 0 0.109 0 0.163l-0-0.008c-0 0.037-0 0.082-0 0.126 0 2.682 0.253 5.304 0.737 7.845l-0.041-0.26c0.386 1.353 1.431 2.398 2.756 2.777l0.028 0.007c2.491 0.669 12.528 0.669 12.528 0.669s10.008 0 12.528-0.669c1.353-0.386 2.398-1.431 2.777-2.756l0.007-0.028c0.425-2.233 0.668-4.803 0.668-7.429 0-0.099-0-0.198-0.001-0.297l0 0.015c0.001-0.092 0.001-0.201 0.001-0.31 0-2.626-0.243-5.196-0.708-7.687l0.040 0.258zM12.812 20.801v-9.591l8.352 4.803z"></path></svg> YouTube</a></li>
         <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
       </ul>
-    </div>
+    </div-->
     <div dir="auto" translate="no" lang="en">
       <p>Copyright © 2025 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
     </div>
   </div>
-  <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+  <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
     <ul style="margin-bottom:0">
       <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
       <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -202,7 +201,7 @@
       <li><a href="/WAI/translations/"> Translations</a></li>
       <li><a href="/WAI/roles/">Resources for Roles</a></li>
     </ul>
-  </div>
+  </div-->
 </footer>
 
 <link rel="stylesheet" href="../a11y-light.css">
@@ -216,7 +215,7 @@
 </script>
 <script src="https://www.w3.org/WAI/assets/scripts/main.js"></script>
 
-<script>
+<!--script>
   var _paq = _paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
   _paq.push(["setDoNotTrack", true]);
@@ -232,7 +231,7 @@
 </script>
 <noscript>
   <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-</noscript>
-
+</noscript-->
+<script src="https://waic.jp/docs/js/translation-contact.js"></script>
 
 </body></html>
