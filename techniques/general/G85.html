@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml"><head>
 <meta charset="UTF-8">
-<title>G85: Providing a text description when user input falls outside the required format or values | WAI | W3C</title>
+<title>G85: 利用者の入力が要求されたフォーマット又は値の範囲外の場合に、テキストの説明を提供する | WAI | W3C</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css">
@@ -64,7 +64,7 @@
 
 <main id="main" class="standalone-resource__main">
 
-<h1><span>テクニック G85:</span>Providing a text description when user input falls outside the required format or values</h1>
+<h1><span>テクニック G85:</span>利用者の入力が要求されたフォーマット又は値の範囲外の場合に、テキストの説明を提供する</h1>
 
 
 
@@ -101,25 +101,25 @@
 
 
 
-  <p>This technique applies to content that accepts user data input, with restrictions on the format, value, and/or type of the input.</p>
+  <p>このテクニックは、利用者のデータ入力を受け付ける、入力のフォーマット、値及び／又は種類に制限があるコンテンツに適用される。</p>
 
 </div>
 </section>
 	
 
 <section id="description"><h2>解説</h2>
-      <p>The objective of this technique is to provide assistance in correcting input errors where the information supplied by the user is not accepted. When users enter data input that is validated, and input errors are detected, information about the nature and location of the input error is provided in text to enable the users to identify the problem. One approach is to use client-side validation and provide an alert dialog box that describes the error immediately when users enter invalid data in field. Another approach, using server-side validation, is to re-display the form (including any previously entered data), and a text description at the top of the page that indicates the fact that there was an error, describes the nature of the problem, and provides ways to easily locate the field(s) with a problem.</p>
-      <p>However the text description is provided, it should do one of the following things to assist the user:</p>
+      <p>このテクニックの目的は、利用者によって提供された情報が受け付けられない場合に、入力エラーの修正を支援することである。利用者がバリデート済みのデータ入力を行い、入力エラーが検出された場合、利用者が問題を特定できるようにするために、この入力エラーの性質及び場所に関する情報がテキストで提供される。一つのアプローチとして、クライアントサイドでのバリデーションを用いて、利用者が無効なデータをフィールドに入力すると、即座にエラーを説明するアラートダイアログボックスを提示する方法がある。もう一つのアプローチとして、サーバーサイドでのバリデーションを用いて、フォームを再表示し (すでに入力されたデータも含む)、エラーがあった事実を示し、問題の性質を説明し、そして問題のあったフィールドを簡単に見つけられる方法を提供するページの上部にテキストの説明を表示することである。</p>
+      <p>ただし、テキストでの説明が提供されるとしても、利用者を支援するために、次のいずれかを行うべきである:</p>
       <ul>
-         <li>Provide examples of the correct data entry for the field,</li>
-         <li>Describe the correct data entry for the field,</li>
-         <li>Show values of the correct data entry that are similar to the user's data entry, with instructions to the user as to how to enter one of these correct values should the user choose to do so.</li>
+         <li>そのフィールドの正しいデータ入力の例を提供する</li>
+         <li>そのフィールドの正しいデータ入力を説明する</li>
+         <li>利用者のデータ入力に類似した正しいデータ入力の値を表示し、利用者が選択した場合にこれらの正しい値の一つを入力する方法について利用者に指示する。</li>
       </ul>
    </section><section id="examples"><h2>事例</h2>
       <ul>
-         <li>The user inputs invalid data on a form field. When the user exits the field, an alert dialog appears that describes the nature of the error so the user can fix it.</li>
-         <li>The user inputs invalid data on a form field and submits the form. The server returns the form, with the user's data still present, and indicates clearly in text at the top of the page that there were input errors. The text describes the nature of the error(s) and clearly indicates which field had the problem so the user can easily navigate to it to fix the problem.</li>
-         <li>The user inputs invalid data on a form field and attempts to submit the form. Client side scripting detects the error, cancels the submit, and modifies the document to provide a text description after the submit button describing the error, with links to the field(s) with the error. The script also modifies the labels of the fields with the problems to highlight them.</li>
+         <li>利用者が、フォームフィールドに無効なデータを入力している。利用者がそのフィールドから出ると、エラーの性質を説明するアラートダイアログが表示され、利用者はエラーを修正することができる。</li>
+         <li>利用者がフォームフィールドに無効なデータを入力して、そのフォームを送信する。サーバーは、利用者の入力データが残ったままのフォームを返し、ページの上部に入力エラーがあったことをテキストで明確に示している。このテキストは、エラーの性質を説明していて、どのフィールドに問題があったのかを明確に示しているため、利用者は問題を修正するためにそのフィールドへ簡単に移動できる。</li>
+         <li>利用者がフォームフィールドに無効なデータを入力して、そのフォームを送信しようとする。クライアントサイドのスクリプトがエラーを検出し、送信をキャンセルし、送信ボタンの後にエラーを説明するテキスト説明とエラーのあるフィールドへのリンクを提供するように文書を修正する。このスクリプトはまた、問題のあるフィールドのラベルを強調するように変更する。</li>
       </ul>
    </section>
 <section id="related"><h2>関連テクニック</h2><ul>
@@ -128,9 +128,9 @@
 <section id="tests"><h2>検証</h2>
       <section class="procedure" id="procedure"><h3>手順</h3>
          <ol>
-            <li>Fill out a form, deliberately enter user input that falls outside the required format or values</li>
-            <li>Check that a text description is provided that identifies the field in error and provides some information about the nature of the invalid entry and how to fix it.</li>
-            <li>Check that other data previously entered by the user is re-displayed, unless the data is in a security related field where it would be inappropriate to retain the data for re-display (e.g. password).</li>
+            <li>フォームに記入し、要求されているフォーマット又は値以外の失敗する入力を故意に行う。</li>
+            <li>エラーになった項目を特定して、無効な入力の種類及びその修正方法に関する情報を提供する説明がテキストで提供されていることをチェックする。</li>
+            <li>再表示のためにデータを保持することが不適切なセキュリティに関連するフィールド (例: パスワード) にデータがない限り、利用者によって入力済みの他のデータが再表示されていることをチェックする。</li>
          </ol>
       </section>
       <section class="results" id="expected-results"><h3>期待される結果</h3>
