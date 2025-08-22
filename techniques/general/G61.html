@@ -1,7 +1,6 @@
-<!DOCTYPE html><html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
+<!DOCTYPE html><html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml"><head>
 <meta charset="UTF-8">
-<title>G61: Presenting repeated components in the same relative order each time they
-          appear | WAI | W3C</title>
+<title>G61: 毎回同じ相対的順序で繰り返されるコンポーネントを提示する | WAI | W3C</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css">
@@ -10,20 +9,18 @@
 
 
 
-<!-- 日本語訳されるまでの一時的なスクリプト -->
-<script src="../untranslated-note.js"></script>
 </head><body dir="ltr">
 
 <a href="#main" class="button button--skip-link">Skip to content</a>
 <div class="minimal-header-container default-grid">
   <header class="minimal-header" id="site-header">
     <div class="minimal-header-name">
-      <a href="https://w3c.github.io/wcag/techniques/">WCAG 2.2 Techniques</a>
+      <a href="https://waic.jp/translations/WCAG22/Techniques/">WCAG 2.2 テクニック集</a>
     </div>
     
       <div class="minimal-header-subtitle">Examples of ways to meet WCAG; not required</div>
     
-    <a class="minimal-header-link" href="https://w3c.github.io/wcag/techniques/about">About WCAG Techniques</a>
+    <a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Techniques/about">WCAG テクニック集について</a>
     <div class="minimal-header-logo">
       <a href="http://w3.org/" aria-label="W3C">
         <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44">
@@ -52,97 +49,68 @@
 
 <div class="default-grid with-gap leftcol">
 <aside class="box nav-hack sidebar standalone-resource__sidebar">
-    <header class="box-h">Page Contents</header>
+    <header class="box-h">このページの内容</header>
     <div class="box-i">
       <nav aria-label="page contents" class="navtoc">
-        <ul><li><a href="#technique">About this Technique</a></li>
-<li><a href="#description">Description</a></li>
-<li><a href="#examples">Examples</a></li>
-<li><a href="#tests">Tests</a></li>
+        <ul><li><a href="#technique">このテクニックについて</a></li>
+<li><a href="#description">解説</a></li>
+<li><a href="#examples">事例</a></li>
+<li><a href="#tests">検証</a></li>
 </ul>
       </nav>
     </div>
 </aside>
 
 <main id="main" class="standalone-resource__main">
-<!-- 日本語訳されるまでの一時的な注記 -->
-<div class="untranslated-note"><p>このWCAG 2.2 テクニック集の日本語訳は作業中となっています。WCAG 2.1 達成方法集の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Techniques/">WCAG 2.1 達成方法集</a> ]</p></div>
-<h1><span>Technique G61:</span>Presenting repeated components in the same relative order each time they
-          appear</h1>
+
+<h1><span>テクニック G61:</span>毎回同じ相対的順序で繰り返されるコンポーネントを提示する</h1>
 
 
 
 
 <section id="technique" class="box">
-	<h2 class="box-h box-h-icon">About this Technique</h2>
+	<h2 class="box-h box-h-icon">このテクニックについて</h2>
 	<div class="box-i">
 
 
   
   <p>
-    This technique relates to
+    このテクニックは
     
-<a href="https://w3c.github.io/wcag/understanding/consistent-navigation">3.2.3: Consistent Navigation</a>
-(<strong>Sufficient</strong>).</p>
+<a href="https://waic.jp/translations/WCAG22/Understanding/consistent-navigation">3.2.3: 一貫したナビゲーション</a>
+(<strong>十分なテクニック</strong>) に関連する。</p>
   
 
 
 
-  <p>This technique applies to any technologies.</p>
+  <p>このテクニックは、全ての技術に適用される。</p>
 
 </div>
 </section>
 	
 
-<section id="description"><h2>Description</h2>
-      <p>The objective of this technique is to make content easier to use by making
-            the placement of repeated components more predictable. This technique helps
-            maintain consistent layout or presentation between web pages by presenting components that are repeated in these Web  units in the same relative order each time they appear. Other
-            components can be inserted between them, but their relative order is not
-            changed.</p>
-      <p>This technique also applies to navigational components that are repeated.
-            Web pages often contain a navigation menu or other
-            navigational component that allows the user to jump to other web pages. This technique makes the placement of navigational
-            components more predictable by presenting the links or programmatic
-            references inside a navigational component in the same relative order each
-            time the navigational component is repeated. Other links can be removed or
-            inserted between the existing ones, for example to allow navigation inside a
-            subsection of a set of web pages, but the relative order is not
-            changed.</p>
-   </section><section id="examples"><h2>Examples</h2>
+<section id="description"><h2>解説</h2>
+      <p>このテクニックの目的は、繰り返し現れる一連のコンポーネント中での配置を予測可能にすることによって、コンテンツを使いやすくすることである。このテクニックは、現れるたびに同じ相対的な順序で、ウェブページ単位で繰り返されるコンポーネントを提示することにより、ウェブページ間の一貫性のあるレイアウト又は提示を維持するのを助ける。それらのコンポーネント間に別のコンポーネントを挿入することはあってもよいが、元のコンポーネント間の相対的順序は変更しない。</p>
+      <p>このテクニックは、繰り返し出現するナビゲーション コンポーネントについても当てはまる。ウェブページには利用者が他のページにジャンプできるよう、ナビゲーション メニュー又は他のナビゲーション コンポーネントを置くことが多い。このテクニックは、ナビゲーション コンポーネントが繰り返し用いられる度にその中に置かれるリンク又はプログラム的参照を一定の順序で提示することにより、コンポーネント間の配置を予測しやすくする。リンク先のウェブページについてそれぞれのサブセクションに移動できるようにしたい場合など、リンクを削除したり、既存のリンクの間に他のリンクを挿入したりしてもよいが、リンク間の相対的位置は変更しない。</p>
+   </section><section id="examples"><h2>事例</h2>
       <ul>
-         <li>A website has a logo, a title, a search form and a navigation bar
-                at the top of each page; these appear in the same relative order on
-                each page where they are repeated. On one page the search form is
-                missing but the other items are still in the same order.</li>
-         <li>A website has a left-hand navigation menu with links to the major
-                sections of the site. When the user follows a link to another
-                section of the site, the links to the major sections appear in the
-                same relative order in the next page. Sometime links are dropped and
-                other links are added, but the other links always stay in the same
-                relative order. For example, on a website of a company that sells
-                products and offers training, when a user moves from the section on
-                products to the section on training, the links to individual
-                products are removed from the navigation list, while links to
-                training offerings are added.</li>
+         <li>あるウェブサイトでは各ページの先頭に、ロゴ、タイトル、検索フォーム、ナビゲーションバーが置かれている。これらは同じ相対的順序で提示される。あるページには検索フォームがないが、その他のコンポーネントは繰り返し現れるどのページにおいてもやはり同じ順序で提示される</li>
+         <li>あるウェブサイトでは左側にナビゲーションメニューがあり、サイト内の主要なセクションへのリンクが置かれている。利用者がサイト内の他のセクションへのリンクをたどると、移動先のページでも主要なセクションへのリンクが同じ相対的順序で提示される。ページによっては一部のリンクが省かれたり他のリンクが追加されたりするが、その他のリンクは必ず同じ相対的順序を保っている。例えば製品とそのトレーニングサービスを提供する企業のウェブサイトでは、ナビゲーションリストには製品とトレーニングサービスが主要なセクションとして提示されている。また製品のページでは個別の製品へのリンクもナビゲーションリスト内に置かれている。利用者が製品のページからトレーニングのページに移動すると、ナビゲーションリストから個別の製品へのリンクが省かれ、個別のトレーニングサービスへのリンクが追加される。</li>
       </ul>
    </section>
 
-<section id="tests"><h2>Tests</h2>
-      <section class="procedure" id="procedure"><h3>Procedure</h3>
+<section id="tests"><h2>検証</h2>
+      <section class="procedure" id="procedure"><h3>手順</h3>
          <ol>
-            <li>List components that are repeated on each web page in a set
-                  of web pages (for example, on each page in a website).</li>
-            <li>For each component, check that it appears in the same relative
-                  order with regard to other repeated components on each web page where it appears.</li>
-            <li>For each navigational component, check that the links or
-                  programmatic references are always in the same relative order.</li>
+            <li>ウェブページ一式 (例えば一つのウェブサイト) 中の各ウェブページで繰り返されるコンポーネントをリストアップする。</li>
+            <li>それぞれのコンポーネントにおいて、そのコンポーネントが現れる各ウェブページで他の繰り返されるコンポーネントに関して同じ相対的順序で現れることをチェックする。</li>
+            <li>それぞれのナビゲーションのためのコンポーネントにおいて、リンク又はやプログラムの参照が常に同じ相対的順序であることをチェックする。</li>
          </ol>
       </section>
-      <section class="results" id="expected-results"><h3>Expected Results</h3>
+      <section class="results" id="expected-results"><h3>期待される結果</h3>
          <ul>
-            <li>#2 is true.</li>
-            <li>#3 is true.</li>
+            <li>2 が真である。</li>
+            <li>3 が真である。</li>
          </ul>
       </section>
    </section>
@@ -162,14 +130,13 @@
     <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
       <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
     </svg>
-    <h2>Help improve this page</h2>
+    <h2>このページを改善する</h2>
   </header>
   <div class="box-i">
-  <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org</a> or via GitHub</p>
+  <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。</p>
     <div class="button-group">
-      <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a>
-      <a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a>
-      <a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a>
+      <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdIpvogLx8kGIMewhQ6MzhG2pOCQZ50iIBViGg8pUrRJuslKg/viewform?entry.685195438=https%3A%2F%2Fwaic.jp%2Ftranslations%2FWCAG22%2FUnderstanding%2Ffocus-not-obscured-minimum" id="file-issue">翻訳に関するお問い合わせ (Google フォーム)</a>
+      <a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a>
     </div>
   </div>
 </aside>
@@ -191,12 +158,15 @@
       <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project,
       co-funded by the European Commission.
     </p>
+    <p>この文書は、2025 年 5 月 21 日付けの <a href="https://w3c.github.io/wcag/techniques/">Techniques for WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+    </p>
+    <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
   </div>
 </footer>
 
 <footer class="site-footer grid-4q" aria-label="Site">
   <div class="q1-start q3-end about">
-    <div>
+    <!--div>
       <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
       <p>Strategies, standards, and supporting resources to make the Web accessible to people with disabilities.</p>
     </div>
@@ -207,12 +177,12 @@
         <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube " viewBox="0 0 32 32"><path d="M31.327 8.273c-0.386-1.353-1.431-2.398-2.756-2.777l-0.028-0.007c-2.493-0.668-12.528-0.668-12.528-0.668s-10.009-0.013-12.528 0.668c-1.353 0.386-2.398 1.431-2.777 2.756l-0.007 0.028c-0.443 2.281-0.696 4.903-0.696 7.585 0 0.054 0 0.109 0 0.163l-0-0.008c-0 0.037-0 0.082-0 0.126 0 2.682 0.253 5.304 0.737 7.845l-0.041-0.26c0.386 1.353 1.431 2.398 2.756 2.777l0.028 0.007c2.491 0.669 12.528 0.669 12.528 0.669s10.008 0 12.528-0.669c1.353-0.386 2.398-1.431 2.777-2.756l0.007-0.028c0.425-2.233 0.668-4.803 0.668-7.429 0-0.099-0-0.198-0.001-0.297l0 0.015c0.001-0.092 0.001-0.201 0.001-0.31 0-2.626-0.243-5.196-0.708-7.687l0.040 0.258zM12.812 20.801v-9.591l8.352 4.803z"></path></svg> YouTube</a></li>
         <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
       </ul>
-    </div>
+    </div-->
     <div dir="auto" translate="no" lang="en">
       <p>Copyright © 2025 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
     </div>
   </div>
-  <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+  <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
     <ul style="margin-bottom:0">
       <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
       <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -221,7 +191,7 @@
       <li><a href="/WAI/translations/"> Translations</a></li>
       <li><a href="/WAI/roles/">Resources for Roles</a></li>
     </ul>
-  </div>
+  </div-->
 </footer>
 
 <link rel="stylesheet" href="../a11y-light.css">
@@ -235,7 +205,7 @@
 </script>
 <script src="https://www.w3.org/WAI/assets/scripts/main.js"></script>
 
-<script>
+<!--script>
   var _paq = _paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
   _paq.push(["setDoNotTrack", true]);
@@ -251,7 +221,7 @@
 </script>
 <noscript>
   <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-</noscript>
-
+</noscript-->
+<script src="https://waic.jp/docs/js/translation-contact.js"></script>
 
 </body></html>
