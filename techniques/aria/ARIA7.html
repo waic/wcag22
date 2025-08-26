@@ -91,7 +91,7 @@
 <section id="description"><h2>解説</h2>
       <p><code class="language-html">aria-labelledby</code> 属性を用いることで、コンテンツ制作者は、ページ上の可視テキスト要素を、フォーカス可能な要素 (フォームコントロール又はリンク) のラベルとして使用できる。たとえば、"read more..." のリンクは、リンクの目的を明確にするために、先行するセクションの見出しテキストと関連付けることができるかもしれない (事例 1 を参照)。</p>
       <p><code class="language-html">aria-labelledby</code> の助けを借りてフォーカス可能な要素にテキストを関連付ける場合、ターゲットのテキスト要素は、フォーカス可能な要素の <code class="language-html">aria-labelledby</code> 属性値の中で参照される <code class="language-html">id</code> によって与えられる。</p>
-      <p>フォーカス可能な要素のラベルとして、ページ上の複数のテキスト要素を使用することも可能である。使用されるそれぞれのテキスト要素は、<code class="language-html">aria-labelledby</code> 属性の値において <code class="language-html">id</code>s (IDREF) の文字列として参照される一意な ID を与えられなければならない。そして、ラベルテキストは <code class="language-html">aria-labelledby</code> 属性の値における <code class="language-html">id</code>s の順序に従って連結されるべきである。</p>
+      <p>フォーカス可能な要素のラベルとして、ページ上の複数のテキスト要素を使用することも可能である。使用されるそれぞれのテキスト要素は、<code class="language-html">aria-labelledby</code> 属性の値において <code class="language-html">id</code> (IDREF) の文字列として参照される一意な ID を与えられなければならない。そして、ラベルテキストは <code class="language-html">aria-labelledby</code> 属性の値における <code class="language-html">id</code> の順序に従って連結されるべきである。</p>
       <p>リンクに適用する場合、<code class="language-html">aria-labelledby</code> は、目の見える利用者に対して直ちに明白かもしれないが、スクリーンリーダーの利用者にはあまり明らかではないリンクの目的を識別するために使用できる。</p>
       <p><code class="language-html">aria-labelledby</code> の仕様上の動作は、関連付けられたラベルテキストが (リンクテキストに加えられるのではなく) リンクテキストの代わりに告知されるものである。リンクテキスト自身がラベルテキストに含まれるべきである場合、<code class="language-html">aria-labelledby</code> 属性の値を構成する IDs の文字列の中で、リンクの ID も参照されるべきである。</p>
       <p>名前付けの序列の詳細については、<a href="https://www.w3.org/TR/accname/">Accessible Name And Description Computation</a> を参照。</p>
@@ -99,7 +99,7 @@
       <section class="example" id="example-1-providing-additional-information-for-links">
          <h3>事例 1: リンクに追加情報を提供する</h3>
          
-            <p>この例は、画面に表示されるリンクテキストが、リンクに対するアクセシブルな名前の最初に使用されることを意図している。スクリーンリーダーは、これを "Read more ...Storms hit east coast" のように告知し、リンクだけを閲覧することがあるスクリーンリーダーの利用者にとって有益なリンク一覧にも同じテキストを表示する。</p>
+            <p>この例は、画面に表示されるリンクテキストが、リンクに対するアクセシブルな名前 (accessible name) の最初に使用されることを意図している。スクリーンリーダーは、これを "Read more ...Storms hit east coast" のように告知し、リンクだけを閲覧することがあるスクリーンリーダーの利用者にとって有益なリンク一覧にも同じテキストを表示する。</p>
 <pre xml:space="preserve"><code class="language-html">&lt;h2 id="headline"&gt;Storms hit east coast&lt;/h2&gt;
 &lt;p&gt;Torrential rain and gale force winds have struck the east coast,
    causing flooding in many coastal towns.
@@ -110,7 +110,7 @@
       <section class="example" id="example-2-concatenating-link-text-from-multiple-sources">
          <h3>事例 2: 複数のソースからのリンクテキストを連結する</h3>
          
-            <p>制作者は、参照したいコードのセクションを囲むタグを配置することもあるだろう。</p>
+            <p>コンテンツ制作者は、参照したいコードのセクションを囲むタグを配置することもあるだろう。</p>
 <pre xml:space="preserve"><code class="language-html">&lt;p&gt;Download &lt;span id="report-title"&gt;2012 Sales Report&lt;/span&gt;:
    &lt;a aria-labelledby="report-title pdf" href="#" id="pdf"&gt;PDF&lt;/a&gt; |
    &lt;a aria-labelledby="report-title doc" href="#" id="doc"&gt;Word&lt;/a&gt; |
