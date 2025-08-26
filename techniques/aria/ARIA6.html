@@ -91,7 +91,7 @@
 
 <section id="description"><h2>解説</h2>
       <p>このテクニックの目的は、支援技術によって読み取ることができるオブジェクトのラベルを提供することである。<code class="language-html">aria-label</code> 属性は、ボタンなど、オブジェクトのテキストラベルを提供する。スクリーンリーダーがオブジェクトに遭遇した際、<code class="language-html">aria-label</code> テキストが読み込まれ、利用者はそのオブジェクトがどのようなものかを知ることができる。</p>
-      <p>コンテンツ制作者は、<code class="language-html">aria-labelledby</code> が同じオブジェクトに使用される状況では、<code class="language-html">aria-label</code> が支援技術によって無視される場合があることに注意すべきである。名前付けの序列の詳細については、Accessible Name And Description Computation 勧告の <a href="https://www.w3.org/TR/accname/#mapping_additional_nd_te">accessible name and description computation</a> の節を参照。コンテンツ制作者は、<code class="language-html">aria-label</code> の使用が画像の <code class="language-html">alt</code> や <code class="language-html">for</code> 属性を用いてフォームフィールドに関係付けられた <code class="language-html">label</code> などのネイティブな名前付けを全て上書きすることに注意すべきである。</p>
+      <p>コンテンツ制作者は、<code class="language-html">aria-labelledby</code> が同じオブジェクトに使用される状況では、<code class="language-html">aria-label</code> が支援技術によって無視される場合があることに注意すべきである。名前付けの優先度の詳細については、Accessible Name And Description Computation 勧告の <a href="https://www.w3.org/TR/accname/#mapping_additional_nd_te">accessible name and description computation</a> の節を参照。コンテンツ制作者は、<code class="language-html">aria-label</code> の使用が画像の <code class="language-html">alt</code> や <code class="language-html">for</code> 属性を用いてフォームフィールドに関係付けられた <code class="language-html">label</code> などのネイティブな名前付けを全て上書きすることに注意すべきである。</p>
    </section><section id="examples"><h2>事例</h2>
       <section class="example" id="example-1-distinguishing-navigation-landmarks">
          <h3>事例 1: ナビゲーションランドマークを区別する</h3>
@@ -162,7 +162,7 @@
       </section>
       <section class="results" id="expected-results"><h3>期待される結果</h3>
          <ul>
-            <li> チェック 1 の結果が真である。</li>
+            <li>1 が真である。</li>
          </ul>
       </section>
    </section>
