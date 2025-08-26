@@ -60,7 +60,7 @@
 <li><a href="#resources">関連リソース</a></li>
 <li><a href="#related">関連テクニック</a></li>
 <li><a href="#tests">検証</a></li>
-<li><a href="#test-rules">検証ルール</a></li>
+<li><a href="#test-rules">テストルール</a></li>
 </ul>
       </nav>
     </div>
@@ -91,14 +91,14 @@
 	
 
 <section id="description"><h2>解説</h2>
-   <p>このテクニックの目的は、ユーザインタフェースコンポーネントのステート、プロパティ及び値を公開するために <a href="https://www.w3.org/TR/wai-aria/#states_and_properties">WAI-ARIA ステート及びプロパティ</a>を使用することであり、その結果それらが支援技術によって読み込まれて設定できるようになり、また、支援技術はそれらの値の変更を通知される。WAI-ARIA 仕様は、各属性の規範的記述、及びユーザインタフェース要素がサポートするロールを提供する。リッチインターネットアプリケーションが新しいユーザインタフェースウィジェットを定義する際、ステート及びプロパティ属性を公開することで、利用者がウィジェットを理解でき、そしてウィジェットと対話できるようになる。</p>
+   <p>このテクニックの目的は、ユーザインタフェース コンポーネントのステート、プロパティ及び値を公開するために <a href="https://www.w3.org/TR/wai-aria/#states_and_properties">WAI-ARIA ステート及びプロパティ</a>を使用することであり、その結果それらが支援技術によって読み込まれて設定できるようになり、また、支援技術はそれらの値の変更を通知される。WAI-ARIA 仕様は、各属性の規範的記述、及びユーザインタフェース要素がサポートするロールを提供する。リッチインターネットアプリケーションが新しいユーザインタフェースウィジェットを定義する際、ステート及びプロパティ属性を公開することで、利用者がウィジェットを理解でき、そしてウィジェットと対話できるようになる。</p>
 </section>
 <section id="examples">
    <h2>事例</h2>
    <section class="example" id="example-1-a-toggle-button">
       <h3>事例 1: トグルボタン</h3>
          <p><code class="language-html">button</code> ロールを持つウィジェットが <code class="language-html">aria-pressed</code> 属性を実装する場合、トグルボタンとして動作する。<code class="language-html">aria-pressed</code> が true である場合、ボタンは「押されている」状態になる。<code class="language-html">aria-pressed</code> が false である場合、押されていないことになる。この属性が存在しない場合、ボタンは単純なコマンドボタンとなる。</p>
-         <p>以下のスニペットは <a href="https://www.w3.org/WAI/ARIA/apg/example-index/button/button.html">ARIA Authoring Practices Guide (APG) のボタンの例</a> からの引用であり、音声のミュート／ミュート解除を行うトグルボタンに対する WAI-ARIA マークアップを示している:</p>
+         <p>次のスニペットは <a href="https://www.w3.org/WAI/ARIA/apg/example-index/button/button.html">ARIA Authoring Practices Guide (APG) のボタンの例</a> からの引用であり、音声のミュート／ミュート解除を行うトグルボタンに対する WAI-ARIA マークアップを示している:</p>
 <pre xml:space="preserve"><code class="language-html">&lt;a tabindex="0"
   role="button"
   id="toggle"
@@ -106,7 +106,7 @@
   Mute
   ...
 &lt;/a&gt;</code></pre>
-         <p>この <code class="language-html">a</code> 要素は、<code>role="button"</code> と <code>aria-pressed</code> 属性を持つ。以下は、この例において <code>aria-pressed</code> 属性の値を更新する Javascript の抜粋である:</p>
+         <p>この <code class="language-html">a</code> 要素は、<code>role="button"</code> と <code>aria-pressed</code> 属性を持つ。次は、この例において <code>aria-pressed</code> 属性の値を更新する Javascript の抜粋である:</p>
 <pre xml:space="preserve"><code class="language-javascript">/**
 * Toggles the toggle button's state between *pressed* and *not pressed*.
 *
@@ -124,7 +124,7 @@ function toggleButtonState(button) {
       <h3>事例 2: スライダー</h3>
       
          <p><code class="language-html">slider</code> ロールをもつウィジェットは、利用者に指定した範囲内から値を選択させる。スライダーは、スライダーの大きさやつまみの位置によって、現在の値、及びとり得る値の範囲を表す。これらのスライダーのプロパティは、属性 <code class="language-html">aria-valuemin</code>、<code class="language-html">aria-valuemax</code>、及び <code class="language-html">aria-valuenow</code> で表される。</p>
-         <p>以下のスニペットは <a href="https://www.w3.org/WAI/ARIA/apg/example-index/slider/slider-color-viewer.html">ARIA Authoring Practices Guide (APG) のカラービューアースライダーの例</a> からの引用であり、スライダーの一つに対する WAI-ARIA マークアップを示している:</p>
+         <p>次のスニペットは <a href="https://www.w3.org/WAI/ARIA/apg/example-index/slider/slider-color-viewer.html">ARIA Authoring Practices Guide (APG) のカラービューアースライダーの例</a> からの引用であり、スライダーの一つに対する WAI-ARIA マークアップを示している:</p>
 <pre xml:space="preserve"><code class="language-html">&lt;div id="id-red" class="color-slider-label"&gt;Red&lt;/div&gt;
 &lt;div class="color-slider red"
   role="slider"
@@ -135,7 +135,7 @@ function toggleButtonState(button) {
   aria-labelledby="id-red"&gt;
    ...
 &lt;/div&gt;</code></pre>
-         <p>以下はこの例のための Javascript の抜粋であり、スライダーのつまみの値が変更された場合に <code>aria-valuenow</code> 属性値を更新する:</p>
+         <p>次は、この例のための Javascript の抜粋であり、スライダーのつまみの値が変更された場合に <code>aria-valuenow</code> 属性値を更新する:</p>
 <pre xml:space="preserve"><code class="language-javascript">moveSliderTo(slider, value) {
   ...
   slider.sliderNode.setAttribute('aria-valuenow', value);
@@ -175,11 +175,11 @@ function toggleButtonState(button) {
    <section class="procedure" id="procedure"><h3>手順</h3>
       <p>
          <a href="https://www.w3.org/TR/wai-aria/#roles_categorization">The WAI-ARIA specification, Section 5.3, Categorization of Roles</a> は、各ロールに対し、必須であったり、継承されたりするステート及びプロパティを定義している。</p>
-      <p>WAI-ARIA role 属性を使用するユーザインタフェースコンポーネントの場合:</p>
+      <p>WAI-ARIA role 属性を使用するユーザインタフェース コンポーネントの場合:</p>
       <ol>
          <li>ロールに対して必須とされるステート及びプロパティが存在することをチェックする。</li>
          <li>必須でなく、サポートもされず、継承もされない WAI-ARIA ステート又はプロパティが存在しないことをチェックする。</li>
-         <li>ユーザインタフェースコンポーネントが状態を変更するときに、ステート及びプロパティの値が現在の状態を反映するように更新されていることをチェックする。</li>
+         <li>ユーザインタフェース コンポーネントが状態を変更するときに、ステート及びプロパティの値が現在の状態を反映するように更新されていることをチェックする。</li>
       </ol>
    </section>
    <section class="results" id="expected-results"><h3>期待される結果</h3>
@@ -189,7 +189,7 @@ function toggleButtonState(button) {
    </section>
 </section>
 <section id="test-rules">
-  <h2>検証ルール</h2>
+  <h2>テストルール</h2>
   <p>
     次は、この達成基準の特定の側面に関するテストルールである。この特定のルールを使用して WCAG に適合しているかどうかを確認する必要はないが、これらのルールは定義され、承認されたテスト方法である。テストルールの使用については、<a href="https://waic.jp/translations/WCAG22/Understanding/understanding-act-rules">WCAG 達成基準のテストルールを理解する</a>を参照。
   </p>
