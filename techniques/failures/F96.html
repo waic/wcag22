@@ -1,6 +1,6 @@
-<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="ja"><head>
 <meta charset="UTF-8">
-<title>F96: Failure due to the accessible name not containing the visible label text | WAI | W3C</title>
+<title>F96: 失敗例 - アクセシブルな名前 (accessible name) が可視ラベルのテキストを含んでいない | WAI | W3C</title>
 	
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,8 +10,6 @@
 
 
 
-<!-- 日本語訳されるまでの一時的なスクリプト -->
-<script src="../untranslated-note.js"></script>
 </head>
 	<body dir="ltr">
 
@@ -19,12 +17,12 @@
 <div class="minimal-header-container default-grid">
   <header class="minimal-header" id="site-header">
     <div class="minimal-header-name">
-      <a href="https://w3c.github.io/wcag/techniques/">WCAG 2.2 Techniques</a>
+      <a href="https://waic.jp/translations/WCAG22/Techniques/">WCAG 2.2 テクニック集</a>
     </div>
     
       <div class="minimal-header-subtitle">Examples of ways to meet WCAG; not required</div>
     
-    <a class="minimal-header-link" href="https://w3c.github.io/wcag/techniques/about">About WCAG Techniques</a>
+    <a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Techniques/about">WCAG テクニック集について</a>
     <div class="minimal-header-logo">
       <a href="http://w3.org/" aria-label="W3C">
         <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44">
@@ -53,44 +51,42 @@
 
 <div class="default-grid with-gap leftcol">
 <aside class="box nav-hack sidebar standalone-resource__sidebar">
-    <header class="box-h">Page Contents</header>
+    <header class="box-h">このページの内容</header>
     <div class="box-i">
       <nav aria-label="page contents" class="navtoc">
-        <ul><li><a href="#technique">About this Technique</a></li>
-<li><a href="#description">Description</a></li>
-<li><a href="#examples">Examples</a></li>
-<li><a href="#related">Related Techniques</a></li>
-<li><a href="#tests">Tests</a></li>
+        <ul><li><a href="#technique">このテクニックについて</a></li>
+<li><a href="#description">解説</a></li>
+<li><a href="#examples">事例</a></li>
+<li><a href="#related">関連テクニック</a></li>
+<li><a href="#tests">検証</a></li>
 </ul>
       </nav>
     </div>
 </aside>
 
 <main id="main" class="standalone-resource__main">
-<!-- 日本語訳されるまでの一時的な注記 -->
-<div class="untranslated-note"><p>このWCAG 2.2 テクニック集の日本語訳は作業中となっています。WCAG 2.1 達成方法集の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Techniques/">WCAG 2.1 達成方法集</a> ]</p></div>
 		
-<h1><span>Technique F96:</span>Failure due to the accessible name not containing the visible label text</h1>
+<h1><span>テクニック F96:</span>失敗例 - アクセシブルな名前 (accessible name) が可視ラベルのテキストを含んでいない</h1>
 
 
 
 
 <section id="technique" class="box">
-	<h2 class="box-h box-h-icon">About this Technique</h2>
+	<h2 class="box-h box-h-icon">このテクニックについて</h2>
 	<div class="box-i">
 
 
   
   <p>
-    This technique relates to
+   このテクニックは
     
-<a href="https://w3c.github.io/wcag/understanding/label-in-name">2.5.3: Label in Name</a>
-(<strong>Failure</strong>).</p>
+<a href="https://waic.jp/translations/WCAG22/Understanding/label-in-name">2.5.3: ラベルを含む名前 (name)</a>
+(<strong>失敗</strong>) に関連する。</p>
   
 
 
 
-<p>This failure applies to all technologies that include interactive controls (such as links or form inputs).</p></div>
+<p>この失敗例は、インタラクティブなコントロール (リンクやフォーム入力など) を含む全ての技術に適用される。</p></div>
 </section>
 	
 
@@ -100,32 +96,32 @@
 		
 
 		<section id="description">
-			<h2>Description</h2>
-			<p>The objective of this Failure is to describe situations where speech input users cannot reliably speak the name of a control because it differs from the visible label.</p>
-			<p>When speech input users interact with a web page, they usually speak a command followed by the reference to some visible label (like the text in a button or a link, or the text labelling some input). If the visible label does not match the accessible name of the control, speech users may be unable to directly activate that control.</p>	
-			<p>There are techniques that go beyond the visible label text of elements. The idea is to provide more context for users of assistive technologies to whom the visible context may not be available. Examples are the use of accessible hidden (e.g., offscreen-positioned) text, the use of the aria-label attribute to overwrite the label text, or the use of the aria-labelledby attribute to compose a label text from one or more strings strings on the page.</p>
-			<p>When the use of these techniques results in an accessible name in which the exact string of the visible label does not occur in the accessible name, speech users may be unable to activate that control. Refer to the <a href="https://www.w3.org/TR/accname/">Accessible Name and Description Computation</a> algorithm to work out the order of precedence in computing the accessible name of a control.</p>
+			<h2>解説</h2>
+			<p>この失敗例の目的は、コントロールの名前と、目に見えるラベルが異なっているために、音声入力の利用者がコントロールの名前を正しく話せないという状況を説明することである。</p>
+			<p>音声入力の利用者は、ウェブページを操作するとき、通常はコマンドの後に何らかの表示ラベル (ボタンやリンクの中のテキストや、入力欄にラベリングしてあるテキスト) への参照を続けて話す。表示されるラベルが、コントロールのアクセシブルな名前 (accessible name) と一致しない場合、音声を使う利用者は、そのコントロールを直接アクティブにできないことがある。</p>	
+			<p>要素の可視ラベルテキストを超えるテクニックがある。これは、視覚的なコンテキストを利用できない支援技術の利用者に、より多くのコンテキストを提供するためのアイデアである。例としては、非表示のアクセス可能なテキスト (例: 表示領域以外に配置したテキスト) の使用、ラベルテキストを上書きする aria-label 属性の使用、又はページ上の一つ以上の文字列からラベルテキストを作成する aria-labeledby 属性の使用がある。</p>
+			<p>これらのテクニックを使用した結果、表示されているラベルの正確な文字列が、アクセシブルな名前 (accessible name) に含まれない場合、音声を使う利用者はそのコントロールをアクティブにできない可能性がある。コントロールのアクセシブルな名前 (accessible name) を計算する際の優先順位を決定するには、 <a href="https://www.w3.org/TR/accname/">Accessible Name and Description Computation</a> アルゴリズムを参照。</p>
 		</section>
 
 		<section id="examples">
-			<h2>Examples</h2>
+			<h2>事例</h2>
 
       <section class="example" id="example-1-mismatch-of-visible-button-text-and-accessible-name-supplied-via-aria-label">
-				<h3>Example 1: Mismatch of visible button text and accessible name supplied via aria-label</h3>
-				<p>The text in a search button reads "Go" but the accessible name provided in an aria-label attribute is "Find in this site"</p>
+				<h3>事例 1: 表示されているボタンのテキストと、aria-label で指定されたアクセシブルな名前 (accessible name) が一致しない</h3>
+				<p>T検索ボタンのテキストは「Go」であるが、aria-label 属性で提供されるアクセシブルな名前 (accessible name) は、「find in this site」である。</p>
 <pre xml:space="preserve"><code class="language-html">&lt;button id="sitesearch" aria-label="Find in this site"&gt;Go&lt;/button&gt;
 </code></pre>
       </section>
 
       <section class="example" id="example-2-invisible-link-text-disrupts-visible-label-text-string-in-accessible-name">
-				<h3>Example 2: Invisible link text disrupts visible label text string in accessible name</h3>
-				<p>A download link reads "Download specification" but there is invisible link text so that the accessible name of that link is "Download gizmo specification". While the visible label text is contained in the accessible name, there is no string match which may prevent the link from being activated by speech input.</p>
+				<h3>事例 2: 目に見えないリンクテキストにより、アクセシブルな名前 (accessible name) の可視ラベルテキストの文字列が分断される</h3>
+				<p>ダウンロードリンクは「Download specification」と表示されるが、非表示のリンクテキストがあるため、そのリンクのアクセシブルな名前 (accessible name) は「Download gizmo specification」になる。表示されているテキストラベルは、アクセシブルな名前 (accessible name) に含まれているが、文字列は一致しないため、音声入力ではリンクがアクティブにならない場合がある。</p>
 <pre xml:space="preserve"><code class="language-html">&lt;a href="#"&gt;Download &lt;span class="accessibly-hidden"&gt;gizmo&lt;/span&gt; specification&lt;/a&gt;</code></pre>
       </section>
 
       <section class="example" id="example-3-input-with-a-hidden-label-carrying-text-that-differs-from-the-input's-value-attribute">
-				<h3>Example 3: Input with a hidden label carrying text that differs from the input's value attribute</h3>
-				<p>An input of type="submit" with the value="search" which is exposed as visible label of the input, has a programmatically linked and accessibly hidden label enclosing the text "Find in this site" referenced by aria-labelledby. Because aria-labelledby takes precedence over the value of the input, the accessible name of the input in most browser / screen reader combinations will be "Find in this site". Speech users speaking a command such as "Click search" will be unable to activate the input.</p>
+				<h3>事例 3: value 属性と異なるテキストを含む非表示のラベルを持つ入力コントロール</h3>
+				<p>type="submit"でvalue="search"となっている入力コントロールが、ラベルが見える状態で公開されており、aria-labeledbyが参照する「Find in this site」というテキストを含むラベルが、プログラム的にリンクされ、アクセス可能な非表示になっている。aria-labeledbyは入力コントロールの値より優先されるため、ほとんどのブラウザーとスクリーン・リーダーの組み合わせでは、入力コントロールのアクセシブルな名前 (accessible name)は「Find in this site」になる。音声を使用する利用者が「Click search」というコマンドを話しても、この入力コントロールをアクティブにできない。</p>
 <pre xml:space="preserve"><code class="language-html">&lt;div id="hidden-label"&gt;Find in this site&lt;/div&gt;
 &lt;input type="submit" aria-labelledby="hidden-label" value="search"&gt;
 </code></pre>
@@ -138,7 +134,7 @@
 
 
 <section id="related">
-			<h2>Related Techniques</h2>
+			<h2>関連テクニック</h2>
 			<ul>
 				<li><a href="../failures/F111">F111: 達成基準 1.3.1、2.5.3 及び 4.1.2 の失敗例 ― 可視のラベルはあるがアクセシブルな名前 (name) がないコントロール</a></li>
         <li><a href="../general/G131">G131: Providing descriptive labels</a></li>
@@ -151,19 +147,19 @@
 			</ul>
 		</section>
 <section id="tests">
-			<h2>Tests</h2>
+			<h2>検証</h2>
 			<section class="test-procedure" id="procedure">
-				<h3>Procedure</h3>
-				<p>For all controls with a visible label (e.g., link text, button text, programmatically linked label, images in links with text), check that:</p>
+				<h3>手順</h3>
+				<p>ラベルが表示されているすべてのコントロール (例えば、リンクテキスト、ボタンテキスト、プログラムによりリンクされたラベル、テキストをもつリンクされた画像) について、次のことをチェックする:</p>
 				<ol>
-					<li>The accessible name is the same as the visible label.</li>
-          <li>The accessible name contains a match for the string of the visible label.</li>
+					<li>アクセシブルな名前 (accessible name) が表示されているラベルと同じである。</li>
+          <li>アクセシブルな名前 (accessible name) に表示されているラベルと同じ文字列が含まれている。</li>
 				</ol>
 			</section>
 			<section class="test-results" id="expected-results">
-				<h3>Expected Results</h3>
+				<h3>期待される結果</h3>
 				<ul>
-					<li>If checks #1 and #2 are false, the content fails the Success Criterion.</li>
+					<li>チェック 1 及び 2 が偽である場合、コンテンツは達成基準に失敗する。</li>
 				</ul>
 			</section>
 		</section>
@@ -183,14 +179,13 @@
     <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
       <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
     </svg>
-    <h2>Help improve this page</h2>
+    <h2>このページを改善する</h2>
   </header>
   <div class="box-i">
-  <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org</a> or via GitHub</p>
+  <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。</p>
     <div class="button-group">
-      <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a>
-      <a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a>
-      <a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a>
+      <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdIpvogLx8kGIMewhQ6MzhG2pOCQZ50iIBViGg8pUrRJuslKg/viewform?entry.685195438=https%3A%2F%2Fwaic.jp%2Ftranslations%2FWCAG22%2FUnderstanding%2Ffocus-not-obscured-minimum" id="file-issue">翻訳に関するお問い合わせ (Google フォーム)</a>
+      <a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a>
     </div>
   </div>
 </aside>
@@ -212,12 +207,15 @@
       <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project,
       co-funded by the European Commission.
     </p>
+    <p>この文書は、2025 年 5 月 21 日付けの <a href="https://w3c.github.io/wcag/techniques/">Techniques for WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+    </p>
+    <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
   </div>
 </footer>
 
 <footer class="site-footer grid-4q" aria-label="Site">
   <div class="q1-start q3-end about">
-    <div>
+    <!--div>
       <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
       <p>Strategies, standards, and supporting resources to make the Web accessible to people with disabilities.</p>
     </div>
@@ -228,12 +226,12 @@
         <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube " viewBox="0 0 32 32"><path d="M31.327 8.273c-0.386-1.353-1.431-2.398-2.756-2.777l-0.028-0.007c-2.493-0.668-12.528-0.668-12.528-0.668s-10.009-0.013-12.528 0.668c-1.353 0.386-2.398 1.431-2.777 2.756l-0.007 0.028c-0.443 2.281-0.696 4.903-0.696 7.585 0 0.054 0 0.109 0 0.163l-0-0.008c-0 0.037-0 0.082-0 0.126 0 2.682 0.253 5.304 0.737 7.845l-0.041-0.26c0.386 1.353 1.431 2.398 2.756 2.777l0.028 0.007c2.491 0.669 12.528 0.669 12.528 0.669s10.008 0 12.528-0.669c1.353-0.386 2.398-1.431 2.777-2.756l0.007-0.028c0.425-2.233 0.668-4.803 0.668-7.429 0-0.099-0-0.198-0.001-0.297l0 0.015c0.001-0.092 0.001-0.201 0.001-0.31 0-2.626-0.243-5.196-0.708-7.687l0.040 0.258zM12.812 20.801v-9.591l8.352 4.803z"></path></svg> YouTube</a></li>
         <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
       </ul>
-    </div>
+    </div-->
     <div dir="auto" translate="no" lang="en">
       <p>Copyright © 2025 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
     </div>
   </div>
-  <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+  <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
     <ul style="margin-bottom:0">
       <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
       <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -242,7 +240,7 @@
       <li><a href="/WAI/translations/"> Translations</a></li>
       <li><a href="/WAI/roles/">Resources for Roles</a></li>
     </ul>
-  </div>
+  </div-->
 </footer>
 
 <link rel="stylesheet" href="../a11y-light.css">
@@ -256,7 +254,7 @@
 </script>
 <script src="https://www.w3.org/WAI/assets/scripts/main.js"></script>
 
-<script>
+<!--script>
   var _paq = _paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
   _paq.push(["setDoNotTrack", true]);
@@ -272,7 +270,7 @@
 </script>
 <noscript>
   <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-</noscript>
-
+</noscript-->
+<script src="https://waic.jp/docs/js/translation-contact.js"></script>
 
 </body></html>
