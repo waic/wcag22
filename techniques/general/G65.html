@@ -111,7 +111,7 @@
 
 <pre xml:space="preserve">Home / Galleries / Antarctica / Penguins / Gentoo Penguin</pre>
 
-<p>この例のマークアップでは、「Gentoo Penguin」を除く全てのテキスト項目をリンクとして実装している。パンくずリストにセマンティックな構造を提供するために、リンクはリスト要素内に含まれており、このリスト要素は <code class="language-html">aria-label</code>. を持つ <code class="language-html">nav</code> 要素内に入れ子にされている。現在位置である Gentoo Penguin はパンくずリストの最後の項目として含まれているが、視覚的及びセマンティックにパンくずリスト内の前の項目と区別するためのリンクとしては実装されていない。</p>
+<p>この例のマークアップでは、「Gentoo Penguin」を除く全てのテキスト項目をリンクとして実装している。パンくずリストにセマンティックな構造を提供するために、リンクはリスト要素内に含まれており、このリスト要素は <code class="language-html">aria-label</code> を持つ <code class="language-html">nav</code> 要素内に入れ子にされている。現在位置である Gentoo Penguin はパンくずリストの最後の項目として含まれているが、視覚的及びセマンティックにパンくずリスト内の前の項目と区別するために、リンクとしては実装されていない。</p>
 <p>最後のリスト項目には <code class="language-html">aria-current</code> 属性が指定されており、これが現在のウェブページを表す項目であることをプログラム的に識別する。パンくずリストを水平に表示するために、マークアップは CSS を使用してスタイル設定されている。</p>
       
 <pre xml:space="preserve"><code class="language-html">&lt;nav aria-label="Breadcrumbs"&gt; 
