@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml"><head>
 <meta charset="UTF-8">
-<title>F81: Failure of Success Criterion 1.4.1 due to identifying required or error fields using color differences only | WAI | W3C</title>
+<title>F81: 達成基準 1.4.1 の失敗例 － 色の違いだけで、必須又はエラーフィールドを特定している | WAI | W3C</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css">
@@ -63,7 +63,7 @@
 
 <main id="main" class="standalone-resource__main">
 
-<h1><span>テクニック F81:</span>Failure of Success Criterion 1.4.1 due to identifying required or error fields using color differences only</h1>
+<h1><span>テクニック F81:</span>達成基準 1.4.1 の失敗例 － 色の違いだけで、必須又はエラーフィールドを特定している</h1>
 
 
 
@@ -77,7 +77,7 @@
   <p>
     このテクニックは
     
-<a href="https://waic.jp/translations/WCAG22/Understanding/use-of-color">1.4.1: Use of Color</a>
+<a href="https://waic.jp/translations/WCAG22/Understanding/use-of-color">1.4.1: 色の使用</a>
 (<strong>失敗</strong>) に関連する。</p>
   
 
@@ -88,25 +88,25 @@
 	
 
 <section id="description"><h2>解説</h2>
-      <p>This objective of this technique is to describe the failure that occurs when a required field or an error field is marked with color differences only, without an alternate way to identify the required field or error field. This can cause problems for people who are blind or colorblind, because they may not be able to perceive the color differences that indicate which field is required or which field is causing an error.</p>
+      <p>この文書は、フォームの必須項目又はエラー項目が色の違いだけで示されていて、その必須項目又はエラー項目を特定するその他の方法がないことによる失敗例について述べている。全盲又は色覚異常の利用者は、どれが必須項目で、どれがエラー項目なのかを示す色の違いを知覚できないため、そのような利用者にとっては問題となる恐れがある。</p>
    </section><section id="examples"><h2>事例</h2>
       <ul>
-         <li>A user is completing an online form, and the phone number field is required. To indicate that the phone number field is required, the label "Phone Number" is displayed in a color different from the color used for optional fields, without any other indication that "Phone Number" is a required field. A blind or colorblind user may not be able to identify that "Phone Number" is a required field.</li>
-         <li>A user submits an online form and leaves a required field blank, resulting in an error. The form field that caused the error is indicated by red text only, without an additional non-color indication that the field caused an error.</li>
+         <li>利用者がオンラインフォームを入力していて、電話番号が必須項目である。電話番号のテキストフィールドへの入力が必須であることを示すために、「電話番号」というラベルが赤のテキストだけで示されており、「電話番号」が必須項目であることを示すものが他にはない。全盲又は色覚異常の利用者は、「電話番号」が必須項目であることを確認できないかもしれない。</li>
+         <li>利用者が必須項目を入力しないままオンラインフォームを送信してしまい、エラーになった。エラーになったフォームの入力項目が赤のテキストだけで示されていて、その入力項目がエラーであることが色以外の方法では示されていない。</li>
       </ul>
       <div class="note">
 				<p class="note-title marker">注記</p>
 				<div>
-         <p>In both examples, the color could be used without failure if the text was sufficiently different in visual presentation (e.g. bold or in a different font) that it would be easily differentiated from the surrounding text if the color were removed. It would also not fail if the color chosen had sufficient luminosity difference (lightness) from the other text that it would be easily be seen as different if viewed in black and white.  In these cases - the information would not be displayed in color (hue) alone but also in "presentation" or "lightness" respectively. </p>
+         <p>どちらの事例でも、もしテキストが視覚的提示において、たとえ色が取り除かれたとしても周辺のテキストから容易に区別される十分な差異があるなら (例えば太字や異なるフォントなど)、色は失敗なしで使用されうる。もしモノクロで見たなら、容易に異なって見えるだろう他のテキストと選択された色が十分な輝度の差 (明るさ) を持つなら、同様に失敗しないだろう。これらの場合、情報は色 (色相) だけではなく、それぞれ「提示」又は「明るさ」で表示されている。</p>
       </div>
 			</div>
    </section>
 
 <section id="tests"><h2>検証</h2>
       <section class="procedure" id="procedure"><h3>検証</h3>
-         <p>For all required fields or error fields in the web page that are identified using color differences:</p>
+         <p>色の違いで特定される、ウェブページで全ての必須フィールド又はエラーフィールドに対して:</p>
          <ol>
-            <li>Check that an non-color way to identify the required field or error field is provided.</li>
+            <li>必須フィールド又はエラーフィールドであることを特定するための色以外の方法が提供されていることをチェックする。</li>
          </ol>
       </section>
       <section class="results" id="expected-results"><h3>期待される結果</h3>
