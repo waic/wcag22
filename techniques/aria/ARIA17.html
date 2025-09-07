@@ -107,7 +107,7 @@
       <p>このテクニックの目的は、グループのように、フォーム内部で関連するコントロールのセットをマークアップすることである。グループに関連付けられた任意のラベルは、グループ内の個別のコントロールに対する共通のラベル又は修飾子としても機能する。支援技術は、グループ内および外へのナビゲーションのときに、グループの開始と終了、およびグループのラベルを示すことができる。これは、ユーザインタフェースのデザインが <code class="language-html">fieldset</code> と <code class="language-html">legend</code> によるテクニック (<a href="../html/H71">H71</a>) を採用することが困難な場合に、プログラム的にフォームコントロールをグループ化するための実行可能な代替手段である。</p>
       <p>ラジオボタングループの場合、<code class="language-html">role="group"</code> の代わりに <code class="language-html">role="radiogroup"</code> を使用するべきである。</p>
       <p>グループは <code class="language-html">aria-labelledby</code> を使用してラベル付けできる。</p>
-      <p>このテクニックは、<code class="language-html">role="group"</code> を持つ単一のコンテナ内にフォーム上のすべてのコントロールを包むためのものではない。</p>
+      <p>このテクニックは、<code class="language-html">role="group"</code> を持つ単一のコンテナ内にフォーム上の全てのコントロールを包むためのものではない。</p>
    </section>
    <section id="examples">
       <h2>事例</h2>
@@ -121,7 +121,7 @@
   &lt;input size="2" type="text" aria-required="true" title="Next 2 digits"&gt;-
   &lt;input size="4" type="text" aria-required="true" title="Last 4 digits"&gt;
 &lt;/div&gt;</code></pre>
-            <p class="working-example">動作事例: <a href="https://www.w3.org/WAI/WCAG22/working-examples/aria-grouping-multipart-fields-ssn/">複数パートに分かれたフィールドのグループ化</a>。</p>
+            <p class="working-example">動作例: <a href="https://www.w3.org/WAI/WCAG22/working-examples/aria-grouping-multipart-fields-ssn/">複数パートに分かれたフィールドのグループ化</a>。</p>
          
       </section>
       <section class="example" id="example-2-identifying-radio-groups">
@@ -157,7 +157,7 @@
 <pre xml:space="preserve"><code class="language-css">div[role=radiogroup] {
   border: black thin solid;
 }</code></pre>
-            <p class="working-example">動作事例: <a href="https://www.w3.org/WAI/WCAG22/working-examples/aria-grouping-related-fields/">関連するフォームコントロールを識別するためにグループ化ロールを使用する</a>。</p>
+            <p class="working-example">動作例: <a href="https://www.w3.org/WAI/WCAG22/working-examples/aria-grouping-related-fields/">関連するフォームコントロールを識別するためにグループ化ロールを使用する</a>。</p>
 
             <div class="note">
 				<p class="note-title marker">注記</p>
