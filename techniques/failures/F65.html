@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml"><head>
 <meta charset="UTF-8">
-<title>F65: Failure of Success Criterion 1.1.1 due to omitting the alt attribute or text alternative on img elements, area elements, and input elements of type "image" | WAI | W3C</title>
+<title>F65: 達成基準 1.1.1 の失敗例 － img 要素、area 要素、及び type "image" の input 要素の alt 属性又はテキストによる代替を省略している | WAI | W3C</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css">
@@ -65,7 +65,7 @@
 
 <main id="main" class="standalone-resource__main">
 
-<h1><span>テクニック F65:</span>Failure of Success Criterion 1.1.1 due to omitting the alt attribute or text alternative on img elements, area elements, and input elements of type "image"</h1>
+<h1><span>テクニック F65:</span>達成基準 1.1.1 の失敗例 － img 要素、area 要素、及び type "image" の input 要素の alt 属性又はテキストによる代替を省略している</h1>
 
 
 
@@ -90,15 +90,15 @@
 	
 
 <section id="description"><h2>解説</h2>
-      <p>This describes a failure condition for text alternatives on images. If there is no source of text to provide an alternative for the image then assistive technologies are not able to identify the image or to convey its purpose to the user. The <code class="language-html">alt</code> attribute continues to be the preferred way to provide alternative text for images. Appropriate WAI-ARIA attributes may be used to provide alternative text, as long as they are accessibility supported.  For more information about accessibility support, see <a href="https://waic.jp/translations/WCAG22/Understanding/documenting-accessibility-support">Documenting Accessibility Support</a>. The <a href="https://www.w3.org/TR/accname/">Accessible Name and Description Computation</a> described the method of deriving text alternative from the HTML and WAI-ARIA attributes of an element.</p>
+      <p>この文章では、画像のテキストによる代替の失敗条件を示す。画像の代替を提供するテキストがない場合、支援技術は画像を識別することも、その目的を利用者に伝えることもできない。<code class="language-html">alt</code>  属性は画像の代替テキストを提供するための好ましい実装方法であり続ける。アクセシビリティ サポーテッドである限り、適切な WAI-ARIA 属性を使用して代替テキストを提供することができる。アクセシビリティ サポートの詳細については、 <a href="https://waic.jp/translations/WCAG22/Understanding/documenting-accessibility-support">アクセシビリティ サポートを文書化する</a>を参照。<a href="https://www.w3.org/TR/accname/">Accessible Name and Description Computation</a> は、要素の HTML 属性及び WAI-ARIA 属性から代替テキストを導出する方法を解説した。</p>
       <p>
-Some Assistive Technologies attempt to compensate for the missing text alternatives by reading the file name of the image. But it is insufficient to rely simply on the file name for many reasons. For example, file names may not be descriptive (e.g., <code class="language-html">images/nav01.gif</code>), and technology specifications do not require descriptive file names. And some Assistive Technologies do not read the file name if there is no text alternative provided via HTML attributes.
+いくつかの支援技術は、画像のファイル名を読み取ることにより、欠落しているテキストによる代替を補うことを試みる。しかし、多くの理由からファイル名に単純に頼るのは不十分である。例えば、ファイル名は説明的ではない場合があり (例 <code class="language-html">images/nav01.gif</code>)、技術仕様には説明的なファイル名は必須ではない。そして多くの支援技術は HTML 属性を介して提供されるテキストによる代替がない場合はファイル名を読み取らない。
 </p>
    </section><section id="examples"><h2>事例</h2>
       <section class="example" id="example-1-missing-text-alternative">
-         <h3>Example 1: Missing text alternative</h3>
+         <h3>事例 1: テキストによる代替が存在しない</h3>
          
-            <p>In the code example below, the person using a screen reader would not know the purpose of the image.</p>
+            <p>下記のコード例において、スクリーンリーダーを使っている人は画像の目的を知ることはできない。</p>
          
          <pre xml:space="preserve"><code class="language-html">&lt;img src="../images/animal.jpg"&gt;</code></pre>
       </section>
@@ -123,12 +123,12 @@ Some Assistive Technologies attempt to compensate for the missing text alternati
    </ul></section>
 <section id="tests"><h2>検証</h2>
       <section class="procedure" id="procedure"><h3>手順</h3>
-         <p>Identify <code class="language-html">img</code>, <code class="language-html">area</code>, and <code class="language-html">input</code> elements of type <code class="language-html">image</code>. For each of these elements:</p>
+         <p><code class="language-html">img</code>、<code class="language-html">area</code> 及び type が <code class="language-html">image</code> の <code class="language-html">input</code> を特定する。これらの要素のそれぞれについて:</p>
          <ol>
-            <li>Check if the <code class="language-html">alt</code> attribute is present.</li>
-            <li>Check if <code class="language-html">aria-labelledby</code> attribute is present AND references one or more <code class="language-html">id</code> attributes in the page AND check if <code class="language-html">aria-labelledby</code> is <a href="https://w3c.github.io/wcag/guidelines/22/#dfn-accessibility-supported" target="terms">accessibility supported</a>.</li>
-            <li>Check if the <code class="language-html">aria-label</code> attribute is present AND check if <code class="language-html">aria-label</code> is <a href="https://w3c.github.io/wcag/guidelines/22/#dfn-accessibility-supported" target="terms">accessibility supported</a>.</li>
-            <li>Check if the <code class="language-html">title</code> attribute is present AND check if <code class="language-html">title</code> is <a href="https://w3c.github.io/wcag/guidelines/22/#dfn-accessibility-supported" target="terms"> accessibility supported</a>.</li>
+            <li><code class="language-html">alt</code> 属性が存在するかどうかをチェックする。</li>
+            <li><code class="language-html">aria-labelledby</code> 属性が存在するかどうかを確認し、かつページ内の一つ以上の <code class="language-html">id</code> 要素を参照し、かつ <code class="language-html">aria-labelledby</code> が<a href="https://waic.jp/translations/WCAG22/#dfn-accessibility-supported" target="terms">アクセシビリティ サポーテッド</a>かどうかをチェックする。</li>
+            <li><code class="language-html">aria-label</code> 属性が存在するかどうかを確認し、かつ<code  class="language-html">aria-label</code> が<a href="https://waic.jp/translations/WCAG22/#dfn-accessibility-supported" target="terms">アクセシビリティ サポーテッド</a>かどうかをチェックする。</li>
+            <li><code class="language-html">title</code> 属性が存在するかどうかを確認し、かつ <code class="language-html">title</code> が<a href="https://waic.jp/translations/WCAG22/#dfn-accessibility-supported" target="terms">アクセシビリティ サポーテッド</a>かどうかをチェックする。</li>
          </ol>
       </section>
       <section class="results" id="expected-results"><h3>期待される結果</h3>
