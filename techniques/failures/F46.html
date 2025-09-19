@@ -1,8 +1,6 @@
-<!DOCTYPE html><html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
+<!DOCTYPE html><html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml"><head>
 <meta charset="UTF-8">
-<title>F46: Failure of Success Criterion 1.3.1 due to using th elements,
-                    caption elements, or non-empty summary attributes in
-                    layout tables | WAI | W3C</title>
+<title>F46: 達成基準 1.3.1 の失敗例 － レイアウトテーブルで、th 要素、caption 要素、又は空ではない summary 属性を使用している | WAI | W3C</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css">
@@ -11,20 +9,18 @@
 
 
 
-<!-- 日本語訳されるまでの一時的なスクリプト -->
-<script src="../untranslated-note.js"></script>
 </head><body dir="ltr">
 
 <a href="#main" class="button button--skip-link">Skip to content</a>
 <div class="minimal-header-container default-grid">
   <header class="minimal-header" id="site-header">
     <div class="minimal-header-name">
-      <a href="https://w3c.github.io/wcag/techniques/">WCAG 2.2 Techniques</a>
+      <a href="https://waic.jp/translations/WCAG22/Techniques/">WCAG 2.2 テクニック</a>
     </div>
     
       <div class="minimal-header-subtitle">Examples of ways to meet WCAG; not required</div>
     
-    <a class="minimal-header-link" href="https://w3c.github.io/wcag/techniques/about">About WCAG Techniques</a>
+    <a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Techniques/about">WCAG テクニックについて</a>
     <div class="minimal-header-logo">
       <a href="http://w3.org/" aria-label="W3C">
         <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44">
@@ -53,92 +49,61 @@
 
 <div class="default-grid with-gap leftcol">
 <aside class="box nav-hack sidebar standalone-resource__sidebar">
-    <header class="box-h">Page Contents</header>
+    <header class="box-h">このページの内容</header>
     <div class="box-i">
       <nav aria-label="page contents" class="navtoc">
-        <ul><li><a href="#technique">About this Technique</a></li>
-<li><a href="#description">Description</a></li>
-<li><a href="#examples">Examples</a></li>
-<li><a href="#related">Related Techniques</a></li>
-<li><a href="#tests">Tests</a></li>
+        <ul><li><a href="#technique">このテクニックについて</a></li>
+<li><a href="#description">解説</a></li>
+<li><a href="#examples">事例</a></li>
+<li><a href="#related">関連テクニック</a></li>
+<li><a href="#tests">検証</a></li>
 </ul>
       </nav>
     </div>
 </aside>
 
 <main id="main" class="standalone-resource__main">
-<!-- 日本語訳されるまでの一時的な注記 -->
-<div class="untranslated-note"><p>このWCAG 2.2 テクニック集の日本語訳は作業中となっています。WCAG 2.1 達成方法集の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Techniques/">WCAG 2.1 達成方法集</a> ]</p></div>
-<h1><span>Technique F46:</span>Failure of Success Criterion 1.3.1 due to using th elements,
-                    caption elements, or non-empty summary attributes in
-                    layout tables</h1>
+
+<h1><span>テクニック F46:</span>達成基準 1.3.1 の失敗例 － レイアウトテーブルで、th 要素、caption 要素、又は空ではない summary 属性を使用している</h1>
 
 
 
 
 <section id="technique" class="box">
-	<h2 class="box-h box-h-icon">About this Technique</h2>
+	<h2 class="box-h box-h-icon">このテクニックについて</h2>
 	<div class="box-i">
 
 
   
   <p>
-    This technique relates to
+    このテクニックは
     
-<a href="https://w3c.github.io/wcag/understanding/info-and-relationships">1.3.1: Info and Relationships</a>
-(<strong>Failure</strong>).</p>
+<a href="https://waic.jp/translations/WCAG22/Understanding/info-and-relationships">1.3.1: 情報及び関係性</a>
+(<strong>失敗</strong>) に関連する。</p>
   
 
 
 
-<p>This failure applies to HTML.</p></div>
+<p>この失敗例は、HTML に適用される。</p></div>
 </section>
 	
 
-<section id="description"><h2>Description</h2>
-      <p>The objective of this technique is to describe a failure that occurs when a
-                        table used only for layout includes either th elements, a
-                            summary attribute, or a caption element. This
-                        is a failure because it uses structural (or semantic) markup only for
-                        presentation. The intent of the HTML table elements is to present data. </p>
-      <p>Although not commonly used in a layout table, the following structural markup would also be failures of Success Criterion 1.3.1 if used in a layout table: </p>
+<section id="description"><h2>解説</h2>
+      <p>この達成方法の目的は、レイアウトにのみ使用されるテーブルに th 要素、summary 属性、又は caption 要素が含まれる場合に発生する失敗について記述することである。これは、構造化 (又はセマンティック) マークアップを提示だけのために使用するため、失敗例である。HTML の table 要素の目的は、データを提示することである。</p>
+      <p>レイアウトテーブルの中で用いられることは少ないが、次の構造的なマークアップもレイアウトテーブル内で用いられる場合に達成基準 1.3.1 の失敗例となる:</p>
       <ul>
          <li> 
-               <code class="language-html">headers</code> attributes </li>
+               <code class="language-html">headers</code> 属性</li>
          <li> 
-               <code class="language-html">scope</code> attributes 
+               <code class="language-html">scope</code> 属性 
               </li>
       </ul>
-      <p>Assistive technologies use the structure of an HTML table to present data to
-                        the user in a logical manner. The th element is used to mark
-                        the column and row headers of the table. A screen reader uses the
-                        information in th elements to speak the header information that
-                        changes as the user navigates the table. The summary attribute on the
-                            table element provides a textual description of the table
-                        that describes its purpose and function. Assistive technologies make the
-                            summary attribute information available to users. The
-                            caption element is part of the table and identifies the
-                        table.</p>
-      <p>
-            Although WCAG 2 does not prohibit the use of layout tables, CSS-based layouts are recommended in order to retain the defined semantic meaning of the HTML table elements and to conform to the coding practice of separating presentation from content. 
-            When a table is used
-                        for layout purposes the th element should not be used. Since
-                        the table is not presenting data there is no need to mark any cells as
-                        column or row headers. Likewise, there is no need for an additional
-                        description of a table which is only used to layout content. Do not include
-                        a summary attribute and do not use the summary
-                        attribute to describe the table as, for instance, "layout table". When
-                        spoken, this information does not provide value and will only distract users
-                        navigating the content via a screen reader. Empty summary
-                        attributes are acceptable on layout tables, but not recommended.</p>
-   </section><section id="examples"><h2>Examples</h2>
-      <section class="example" id="example-1"><h3>Example 1</h3>
+      <p>支援技術は、HTML のテーブルに含まれる構造を用いて、利用者に対してデータを論理的な形で伝える。th 要素は、行及び列の見出しをマークすすために用いられる。スクリーンリーダーは、利用者が表をナビゲートすると、変化する見出し情報を読み上げるために th 要素の情報を利用する。table 要素の summary 属性は、その表の目的及び機能についてのテキストによる説明を提供する。支援技術は、summary 属性の情報を利用者が利用できるようにする。caption 要素は表の一部であり、その表を特定する役割を持つ。</p>
+      <p>WCAG 2 はレイアウトテーブルの使用を禁止していないが、HTML のテーブル関連要素の定義されたセマンティックな意味を保持し、コンテンツから提示を分離するコーディングの慣習に従うためにも、CSS ベースのレイアウトが推奨される。テーブルがレイアウトの目的で使用されるとき、th 要素を使用すべきではない。そのテーブルはデータを示していないため、どのセルも行又は列の見出しとしてマークアップする必要はない。同様に、コンテンツをレイアウトするためにのみ用いられているテーブルについて、追加の説明を提供する必要はない。summary 属性を含めない。そして、テーブルを「レイアウトテーブル」のような説明をするために summary 属性を使用しない。音声の場合、この情報は価値を提供せず、スクリーンリーダーを通してコンテンツをナビゲートする利用者の気を散らすだけである。空の summary 属性はレイアウトテーブルで許容されるが、推奨されない。</p>
+   </section><section id="examples"><h2>事例</h2>
+      <section class="example" id="example-1"><h3>事例 1</h3>
          
-            <p>Here is a simple example that uses a table to layout content in a
-                                three column format. The navigation bar is in the left column, the
-                                main content in the middle column, and an additional sidebar is on
-                                the right. At the top is a page title. The example marks the page
-                                title as &lt;th&gt;.</p>
+            <p>次は、テーブルを使ってコンテンツを 3 段組にする単純な例である。左側にナビゲーションバー、中央にメインのコンテンツ、右側に追加のサイドバーが配置されている。ページの上部にはページのタイトルが表示されている。この例では、ページのタイトルを &lt;th&gt; を使ってマークアップし、この表がレイアウトテーブルであることを示す summary 属性が指定されている。</p>
          
 <pre xml:space="preserve"><code class="language-html">&lt;table&gt;
   &lt;tr&gt;
@@ -156,33 +121,27 @@
       </section>
    </section>
 
-<section id="related"><h2>Related Techniques</h2><ul>
+<section id="related"><h2>関連テクニック</h2><ul>
       <li><a href="../html/H39">H39: Using caption elements to associate data table captions with data tables</a></li>
       <li><a href="../html/H51">H51: Using table markup to present tabular information</a></li>
    </ul></section>
-<section id="tests"><h2>Tests</h2>
-      <section class="procedure" id="procedure"><h3>Procedure</h3>
+<section id="tests"><h2>検証</h2>
+      <section class="procedure" id="procedure"><h3>手順</h3>
          <ol>
-            <li>Examine the source code of the HTML or XHTML document for the
-                                    table element</li>
+            <li>HTML 又は XHTML のソースコードに、table 要素があることを確認する。</li>
             <li>
-               <p>If the table is used only to visually lay out elements within the
-                                    content </p>
+               <p>そのコンテンツの中で、視覚的レイアウトのみの目的でテーブルが用いられている場合</p>
                <ol>
-                  <li>Check that the table does not contain any th
-                                            elements.</li>
-                  <li>Check that the table element does not
-                                            contain a non-empty summary attribute.</li>
-                  <li>Check that the table element does not
-                                            contain a caption element.</li>
+                  <li>その table 要素には、th 要素が含まれていないことをチェックする。</li>
+                  <li>その table 要素が、値が空ではない summary 属性を含んでいないことをチェックする。</li>
+                  <li>その table 要素が caption 要素を含んでいないことをチェックする。</li>
                </ol>
             </li>
          </ol>
       </section>
-      <section class="results" id="expected-results"><h3>Expected Results</h3>
+      <section class="results" id="expected-results"><h3>期待される結果</h3>
          <ul>
-            <li>If any check above is false, then this failure condition applies
-                                    and the content fails the Success Criterion.</li>
+            <li>上記全てのチェックが偽である場合、この失敗条件は適用され、コンテンツは達成基準に失敗する</li>
          </ul>
       </section>
    </section>
@@ -202,14 +161,13 @@
     <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
       <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
     </svg>
-    <h2>Help improve this page</h2>
+    <h2>このページを改善する</h2>
   </header>
   <div class="box-i">
-  <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org</a> or via GitHub</p>
+  <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。</p>
     <div class="button-group">
-      <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a>
-      <a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a>
-      <a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a>
+      <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdIpvogLx8kGIMewhQ6MzhG2pOCQZ50iIBViGg8pUrRJuslKg/viewform?entry.685195438=https%3A%2F%2Fwaic.jp%2Ftranslations%2FWCAG22%2FUnderstanding%2Ffocus-not-obscured-minimum" id="file-issue">翻訳に関するお問い合わせ (Google フォーム)</a>
+      <a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a>
     </div>
   </div>
 </aside>
@@ -231,12 +189,15 @@
       <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project,
       co-funded by the European Commission.
     </p>
+    <p>この文書は、2025 年 5 月 21 日付けの <a href="https://w3c.github.io/wcag/techniques/">Techniques for WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+    </p>
+    <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
   </div>
 </footer>
 
 <footer class="site-footer grid-4q" aria-label="Site">
   <div class="q1-start q3-end about">
-    <div>
+    <!--div>
       <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
       <p>Strategies, standards, and supporting resources to make the Web accessible to people with disabilities.</p>
     </div>
@@ -247,12 +208,12 @@
         <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube " viewBox="0 0 32 32"><path d="M31.327 8.273c-0.386-1.353-1.431-2.398-2.756-2.777l-0.028-0.007c-2.493-0.668-12.528-0.668-12.528-0.668s-10.009-0.013-12.528 0.668c-1.353 0.386-2.398 1.431-2.777 2.756l-0.007 0.028c-0.443 2.281-0.696 4.903-0.696 7.585 0 0.054 0 0.109 0 0.163l-0-0.008c-0 0.037-0 0.082-0 0.126 0 2.682 0.253 5.304 0.737 7.845l-0.041-0.26c0.386 1.353 1.431 2.398 2.756 2.777l0.028 0.007c2.491 0.669 12.528 0.669 12.528 0.669s10.008 0 12.528-0.669c1.353-0.386 2.398-1.431 2.777-2.756l0.007-0.028c0.425-2.233 0.668-4.803 0.668-7.429 0-0.099-0-0.198-0.001-0.297l0 0.015c0.001-0.092 0.001-0.201 0.001-0.31 0-2.626-0.243-5.196-0.708-7.687l0.040 0.258zM12.812 20.801v-9.591l8.352 4.803z"></path></svg> YouTube</a></li>
         <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
       </ul>
-    </div>
+    </div-->
     <div dir="auto" translate="no" lang="en">
       <p>Copyright © 2025 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
     </div>
   </div>
-  <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+  <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
     <ul style="margin-bottom:0">
       <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
       <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -261,7 +222,7 @@
       <li><a href="/WAI/translations/"> Translations</a></li>
       <li><a href="/WAI/roles/">Resources for Roles</a></li>
     </ul>
-  </div>
+  </div-->
 </footer>
 
 <link rel="stylesheet" href="../a11y-light.css">
@@ -275,7 +236,7 @@
 </script>
 <script src="https://www.w3.org/WAI/assets/scripts/main.js"></script>
 
-<script>
+<!--script>
   var _paq = _paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
   _paq.push(["setDoNotTrack", true]);
@@ -291,7 +252,7 @@
 </script>
 <noscript>
   <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-</noscript>
-
+</noscript-->
+<script src="https://waic.jp/docs/js/translation-contact.js"></script>
 
 </body></html>
