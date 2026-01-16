@@ -1000,26 +1000,26 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
    					
    <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus.html">Understanding Content on Hover or Focus</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#content-on-hover-or-focus">How to Meet Content on Hover or Focus</a></div><p class="conformance-level">(レベル AA)</p>
        
-    	<p>ポインタホバー又はキーボードフォーカスを受け取ってから外すことで、追加コンテンツを表示させてから非表示にさせる場合は、以下の要件を全て満たす:</p>
+    	<p>ポインタホバー又はキーボードフォーカスを受け取った後に外すことによって、追加コンテンツを表示した後に非表示にする場合は、次の要件を全て満たす:</p>
 
   <dl>
 
-    <dt>非表示にすることができる</dt>
-    <dd>ポインタホバー又はキーボードフォーカスを動かさずに追加コンテンツを非表示にする<a href="#dfn-mechanism" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-mechanism-3" title="結果を得るためのプロセス又は手法。">メカニズム</a>が存在する。ただし、追加コンテンツが<a href="#dfn-input-error" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-input-error-1" title="利用者が提供した情報で、受け付けられないもの。">入力エラー</a>を伝える場合や、他のコンテンツを不明瞭にしたり置き換えたりしない場合は除く。</dd>
+    <dt>非表示可能</dt>
+    <dd>ポインタホバー又はキーボードフォーカスを動かすことなく追加コンテンツを非表示にする<a href="#dfn-mechanism" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-mechanism-3" title="結果を得るためのプロセス又は手法。">メカニズム</a>が存在する。ただし、が利用可能である。ただし、追加コンテンツが<a href="#dfn-input-error" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-input-error-1" title="利用者が提供した情報で、受け付けられないもの。">入力誤り</a>を伝える場合、又は、他のコンテンツを隠したり置換したりしない場合は除く。</dd>
 
-    <dt>ホバーすることができる</dt>
-   <dd>ポインタホバーによって追加コンテンツを表示させることができる場合、その追加コンテンツを消すことなく、ポインタを追加コンテンツ上で動かすことができる。</dd>
+    <dt>ホバー可能</dt>
+   <dd>ポインタホバーによって追加コンテンツを表示することが可能である場合、その追加コンテンツを消すことなく、そのポインタを追加コンテンツ上で動かすことが可能である。</dd>
 
-    <dt>表示が継続される</dt>
-    <dd>ホバーやフォーカスが解除される、利用者が非表示にする、又はその情報が有効でなくなるまでは、追加コンテンツが表示され続ける。</dd>
+    <dt>継続</dt>
+    <dd>ホバーもしくはフォーカスが解除される、利用者が非表示にする、又はその情報が有効でなくなるまで、追加コンテンツが表示され続ける。</dd>
 
   </dl>
     	
     	<p>例外: 追加コンテンツの視覚的提示が<a href="#dfn-user-agents" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-agents-2" title="ウェブコンテンツを取得して利用者に提示するあらゆるソフトウェア。">ユーザエージェント</a>によって制御されていて、かつコンテンツ制作者が変更していない場合は例外とする。</p>
 
     	<div class="note" role="note" id="issue-container-generatedID-12"><div role="heading" class="note-title marker" id="h-note-12" aria-level="5"><span>注記 1</span></div><p class="">ユーザエージェントによって制御されている追加コンテンツの例としては、<abbr title="HyperText Markup Language">HTML</abbr> の <a href="https://html.spec.whatwg.org/multipage/dom.html#the-title-attribute"><code>title</code> 属性</a> [<cite><a class="bibref" data-link-type="biblio" href="#bib-html" title="HTML Standard">HTML</a></cite>] を用いて作られているブラウザのツールチップが挙げられる。</p></div>
-     <div class="note" role="note" id="issue-container-generatedID-13"><div role="heading" class="note-title marker" id="h-note-13" aria-level="5"><span>注記 2</span></div><p class="">ホバー時やフォーカス時に表示されるカスタムツールチップ、サブメニュー、他の非モーダルポップアップは、この達成基準の適用対象となる「追加コンテンツ」の例である。</p></div>
-     <div class="note" role="note" id="issue-container-generatedID-14"><div role="heading" class="note-title marker" id="h-note-14" aria-level="5"><span>注記 3</span></div><p class="">この達成基準は、トリガとなるコンポーネント自体に追加で表示されるコンテンツに対して適用される。キーボードフォーカスによって可視化される非表示のコンポーネント (例えば、ページの別の部分にスキップするためのリンク) は追加コンテンツを提示しないため、この達成基準の適用対象外である。</p></div>
+     <div class="note" role="note" id="issue-container-generatedID-13"><div role="heading" class="note-title marker" id="h-note-13" aria-level="5"><span>注記 2</span></div><p class="">ホバー時又はフォーカス時に表示されるカスタムツールチップ、サブメニュー、及び他の非モーダルポップアップは、この達成基準の適用対象となる「追加コンテンツ」の例である。</p></div>
+     <div class="note" role="note" id="issue-container-generatedID-14"><div role="heading" class="note-title marker" id="h-note-14" aria-level="5"><span>注記 3</span></div><p class="">この達成基準は、トリガーとなるコンポーネント自体に追加で表示されるコンテンツに対して適用される。キーボードフォーカス時に表示される、非表示のコンポーネント (例えば、ページの別の部分にスキップするためのリンク) は追加コンテンツを提示しないため、この達成基準の適用対象外である。</p></div>
   </section>
 
 
