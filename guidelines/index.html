@@ -1114,7 +1114,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
    
    <div class="doclinks"><a href="https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable.html">Understanding Timing Adjustable</a> <span class="screenreader">|</span> <br><a href="https://www.w3.org/WAI/WCAG22/quickref/#timing-adjustable">How to Meet Timing Adjustable</a></div><p class="conformance-level">(レベル A)</p>
    
-   <p>コンテンツに制限時間を設定する場合は、次に挙げる事項のうち、少なくとも一つを満たしている</p>
+   <p>コンテンツによって設定される各時間制限について、次に挙げる事項のうち、少なくとも一つを満たしている:</p>
    
    <dl>
       
@@ -1122,7 +1122,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       
       <dd>
          
-         <p>制限時間があるコンテンツを利用する前に、利用者がその制限時間を解除することができる。又は、</p>
+         <p>利用者は、制限時間に達する前に、その制限時間を解除することが許可される。又は、</p>
          
       </dd>
       
@@ -1130,7 +1130,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       
       <dd>
          
-         <p>制限時間があるコンテンツを利用する前に、利用者が少なくともデフォルト設定の 10 倍を超える、大幅な制限時間の調整をすることができる。又は、
+         <p>利用者は、制限時間に達する前に、少なくともデフォルトの設定の 10 倍を超える、大幅な制限時間の調整が許可される。又は、
          </p>
          
       </dd>
@@ -1139,7 +1139,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       
       <dd>
          
-         <p>時間切れになる前に利用者に警告し、かつ少なくとも 20 秒間の猶予をもって、例えば「スペースキーを押す」などの簡単な操作により、利用者が制限時間を少なくとも 10 倍以上延長することができる。又は、
+         <p>時間切れになる前に利用者に警告し、簡単な操作 (例えば、「スペースキーを押す」) で制限時間を延長するために少なくとも 20 秒間の猶予が与えられ、利用者がその制限時間を少なくとも 10 倍以上延長することが許可される。又は、
          </p>
          
       </dd>
@@ -1148,7 +1148,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       
       <dd>
          
-        <p><a href="#dfn-real-time-events" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-real-time-events-1" title="a) 閲覧と同時に発生し、かつ b) コンテンツによる生成だけでは完結しないイベント。">リアルタイムのイベント</a> (例えば、オークション) において制限時間が必須の要素で、その制限時間に代わる手段が存在しない。又は、
+        <p>制限時間は<a href="#dfn-real-time-events" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-real-time-events-1" title="a) 閲覧と同時に発生し、かつ b) コンテンツによる生成だけでは完結しないイベント。">リアルタイムのイベント</a> (例えば、オークション) において必須の要素であり、その制限時間に代わる手段が存在しない。又は、
          </p>
          
       </dd>
@@ -1157,7 +1157,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       
       <dd>
          
-         <p>制限時間が<a href="#dfn-essential" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-essential-5" title="もし取り除いてしまうと、コンテンツの情報又は機能を根本的に変えてしまい、かつ、適合する他の方法では情報及び機能を実現できない。">必要不可欠</a>なもので、制限時間を延長することがコンテンツの動作を無効にすることになる。又は、
+         <p>制限時間は<a href="#dfn-essential" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-essential-5" title="もし取り除いてしまうと、コンテンツの情報又は機能を根本的に変えてしまい、かつ、適合する他の方法では情報及び機能を実現できない。">必要不可欠</a>であり、制限時間を延長することがアクティビティを無効にすることになる。又は、
          </p>
          
       </dd>
@@ -1172,7 +1172,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       
    </dl>
    
-   <div class="note" role="note" id="issue-container-generatedID-18"><div role="heading" class="note-title marker" id="h-note-18" aria-level="5"><span>注記</span></div><p class="">この達成基準は、制限時間の結果として、コンテンツ又はコンテキストの予期せぬ変化を引き起こさないように利用者がタスクを完了できるようにするためのものである。この達成基準は、利用者の動作の結果としてのコンテンツ又はコンテキストの変化を制限する<a href="#on-focus">達成基準 3.2.1</a> と併せて考慮すること。
+   <div class="note" role="note" id="issue-container-generatedID-18"><div role="heading" class="note-title marker" id="h-note-18" aria-level="5"><span>注記</span></div><p class="">この達成基準は、制限時間の結果として、コンテンツ又はコンテキストの予期しない変化を引き起こさないように利用者がタスクを完了できることを保証するために役立つ。この達成基準は、利用者の動作の結果としてのコンテンツ又はコンテキストの変化に制限を設ける<a href="#on-focus">達成基準 3.2.1</a> と併せて考慮すべきである。
    </p></div>
    
 </section>
