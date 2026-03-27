@@ -1,6 +1,6 @@
-<!DOCTYPE html><html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
+<!DOCTYPE html><html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml"><head>
 <meta charset="UTF-8">
-<title>H91: Using HTML form controls and links | WAI | W3C</title>
+		<title>H91: HTML のフォームコントロール及びリンクを使用する | WAI | W3C</title>
 		
    
 
@@ -11,8 +11,6 @@
 
 
 
-<!-- 日本語訳されるまでの一時的なスクリプト -->
-<script src="../untranslated-note.js"></script>
 </head>
 	 <body dir="ltr">
 
@@ -20,12 +18,12 @@
 <div class="minimal-header-container default-grid">
   <header class="minimal-header" id="site-header">
     <div class="minimal-header-name">
-      <a href="https://w3c.github.io/wcag/techniques/">WCAG 2.2 Techniques</a>
+      <a href="https://waic.jp/translations/WCAG22/Techniques/">WCAG 2.2 テクニック集</a>
     </div>
     
       <div class="minimal-header-subtitle">Examples of ways to meet WCAG; not required</div>
     
-    <a class="minimal-header-link" href="https://w3c.github.io/wcag/techniques/about">About WCAG Techniques</a>
+    <a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Techniques/about">WCAG テクニック集について</a>
     <div class="minimal-header-logo">
       <a href="http://w3.org/" aria-label="W3C">
         <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44">
@@ -54,50 +52,46 @@
 
 <div class="default-grid with-gap leftcol">
 <aside class="box nav-hack sidebar standalone-resource__sidebar">
-    <header class="box-h">Page Contents</header>
+    <header class="box-h">このページの内容</header>
     <div class="box-i">
       <nav aria-label="page contents" class="navtoc">
-        <ul><li><a href="#technique">About this Technique</a></li>
-<li><a href="#description">Description</a></li>
-<li><a href="#examples">Examples</a></li>
-<li><a href="#resources">Related Resources</a></li>
-<li><a href="#related">Related Techniques</a></li>
-<li><a href="#tests">Tests</a></li>
+        <ul><li><a href="#technique">このテクニックについて</a></li>
+<li><a href="#description">解説</a></li>
+<li><a href="#examples">事例</a></li>
+<li><a href="#resources">関連リソース</a></li>
+<li><a href="#related">関連テクニック</a></li>
+<li><a href="#tests">検証</a></li>
 </ul>
       </nav>
     </div>
 </aside>
 
 <main id="main" class="standalone-resource__main">
-<!-- 日本語訳されるまでの一時的な注記 -->
-<div class="untranslated-note"><p>このWCAG 2.2 テクニック集の日本語訳は作業中となっています。WCAG 2.1 達成方法集の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Techniques/">WCAG 2.1 達成方法集</a> ]</p></div>
 		
-<h1><span>Technique H91:</span>Using <abbr title="HyperText Markup Language">HTML</abbr> form controls and links</h1>
+<h1><span>テクニック H91:</span><abbr title="HyperText Markup Language">HTML</abbr> のフォームコントロール及びリンクを使用する</h1>
 
 
 
 
 <section id="technique" class="box">
-	<h2 class="box-h box-h-icon">About this Technique</h2>
+	<h2 class="box-h box-h-icon">このテクニックについて</h2>
 	<div class="box-i">
 
 
   
-  <p>This technique relates to:</p>
+  <p>このテクニックは次に関連する:</p>
   <ul>
   
     <li>
       
-<a href="https://w3c.github.io/wcag/understanding/keyboard">2.1.1: Keyboard</a>
-(<strong>Sufficient</strong>
-  when used for ensuring keyboard control)
+<a href="https://waic.jp/translations/WCAG22/Understanding/keyboard">2.1.1: キーボード</a>
+(キーボードコントロールを確実にするために使用する場合は<strong>十分なテクニック</strong>)
     </li>
   
     <li>
       
-<a href="https://w3c.github.io/wcag/understanding/name-role-value">4.1.2: Name, Role, Value</a>
-(<strong>Sufficient</strong>
-  when used with <a href="../general/G108">G108: Using markup features to expose the name and role, allow user-settable properties to be directly set, and provide notification of changes</a>)
+<a href="https://waic.jp/translations/WCAG22/Understanding/name-role-value">4.1.2: 名前 (name)・役割 (role)・値 (value)</a>
+(<a href="../general/G108">G108: Using markup features to expose the name and role, allow user-settable properties to be directly set, and provide notification of changes</a> と併用する場合は<strong>十分なテクニック</strong>)
     </li>
   
   </ul>
@@ -105,7 +99,7 @@
 
 
 
-  <p>This technique applies to HTML form controls and links.</p>
+  <p>このテクニックは、HTML のフォームコントロール及びリンクに適用される。</p>
 
 </div>
 </section>
@@ -115,93 +109,94 @@
 		
 		
 		<section id="description">
-			<h2>Description</h2>
-      <p>The objective of this technique is to use standard HTML form controls and link elements to provide keyboard operation and assistive technology interoperability of interactive user interface elements.</p>
-      <p>User agents provide the keyboard operation of HTML form controls and links. In addition, the user agent maps the form controls and links to an accessibility <abbr title="Application Programming Interface">API</abbr>. Assistive technologies use the accessibility API to extract appropriate accessibility information, such as role, name, state, and value, and present them to users. The role is provided by the HTML element, and the name is provided by the text associated with that element. Elements for which values and states are appropriate also expose the values and states via multiple mechanisms.</p>
-      <p>In some cases, the text is already associated with the control through a required attribute. For example, submit buttons use the <code class="language-html">button</code> element text or image <code class="language-html">alt</code> attribute as the name. In the case of form controls, <code class="language-html">label</code> elements; the <code class="language-html">aria-label</code> or <code class="language-html">aria-labelledby</code> properties; or the <code class="language-html">title</code> attribute are used.</p>
+			<h2>解説</h2>
+      <p>このテクニックの目的は、インタラクティブなユーザインタフェースを構成する要素のキーボード操作及び支援技術との相互運用性を提供するために、標準的な HTML のフォームコントロール及びリンク要素を用いることである。</p>
+      <p>ユーザエージェントは、HTML のフォームコントロール及びリンクのキーボード操作を提供している。さらに、ユーザエージェントは、フォームコントロール及びリンクを、アクセシビリティ <abbr title="Application Programming Interface">API</abbr> に結び付けている。支援技術は、アクセシビリティ API を利用して、役割 (role)、名前 (name)、状態、値といった適切なアクセシビリティ情報を抽出し、それらを利用者に提供している。役割は HTML の要素によって提供され、名前はその要素に関連付けられているテキストによって提供される。値及び状態が適切な要素は、複合的なメカニズムを通じて、それらの値及び状態も支援技術に提示している。</p>
+      <p>必須の属性を通じてテキストがすでにコントロールと関連付けられている場合もある。たとえば、送信ボタンは、<code class="language-html">button</code> 要素内のテキスト又は画像の <code class="language-html">alt</code> 属性を名前 (name) として用いている。フォームコントロールの場合は、<code class="language-html">label</code> 要素、<code class="language-html">aria-label</code> もしくは <code class="language-html">aria-labelledby</code> プロパティ、又は <code class="language-html">title</code> 属性が用いられる。
+</p>
 	</section>
 	<section id="examples">
-		<h2>Examples</h2>
+		<h2>事例</h2>
 		<section class="example" id="example-1-links">
-			<h3>Example 1: Links</h3>
-      <p>User agents provide mechanisms to navigate to and select links. In each of the following examples, the role is "link" because the  <code class="language-html">a</code> element has an <code class="language-html">href</code> attribute. An <code class="language-html">a</code> element without an <code class="language-html">href</code> isn't a link. The link's value is the <abbr title="Uniform Resource Identifier">URI</abbr> in the <code class="language-html">href</code> attribute.</p>
+			<h3>事例 1: リンク</h3>
+      <p>ユーザエージェントは、リンクをナビゲートして選択するメカニズムを提供する。次の各事例では、<code class="language-html">a</code> 要素が <code class="language-html">href</code> 属性を持つため、役割 (role) は "link" である。<code class="language-html">href</code> を持たない <code class="language-html">a</code> 要素は、link ではない。link の値は、<code class="language-html">href</code> 属性の <abbr title="Uniform Resource Identifier">URI</abbr> である。</p>
 			<section id="link-example-a">
-				<h4>Link example A</h4>
-				<p>In example A, the name is the text inside the link, in this case "Example Site".</p>
+				<h4>リンクの事例 A</h4>
+				<p>事例 A では、名前 (name) はリンクの中にあるテキストである。この場合は "Example Site" が該当する。</p>
 <pre xml:space="preserve"><code class="language-html">&lt;a href="https://example.com"&gt;Example Site&lt;/a&gt;</code></pre>
 			</section>
 			<section id="link-example-b">
-				<h4>Link example B</h4>
-				<p>In example B of an image inside a link, the <code class="language-html">alt</code> attribute for the image provides the name.</p>
+				<h4>リンクの事例 B</h4>
+				<p>リンクの中にある画像に関する事例 B では、画像の <code class="language-html">alt</code> 属性が名前 (name) を提供している。</p>
 <pre xml:space="preserve"><code class="language-html">&lt;a href="https://example.com"&gt;&lt;img alt="Example" src="example-logo.gif"&gt;&lt;/a&gt;</code></pre>
 			</section>
 			<section id="link-example-c">
-				<h4>Link example C</h4>
-				<p>In example C, some assistive technology will not automatically insert a space character when concatenating the image's <code class="language-html">alt</code> text and the text of the link. If the text should not be concatenated without a space, it is safest to insert a space between the image and the adjacent word so that words will not run together.</p>
+				<h4>リンクの事例 C</h4>
+				<p>事例 C では、画像の <code class="language-html">alt</code> テキストとリンクのテキストを連結するときに自動的に空白文字を挿入しない支援技術もある。テキストをスペースなしで連結すべきでない場合、画像と隣接する単語との間にスペースを挿入して、単語が混ざらないようにするのが最も安全である。</p>
 <pre xml:space="preserve"><code class="language-html">&lt;a href="https://example.com"&gt;&lt;img alt="Example " src="example_logo.gif"&gt;Text&lt;/a&gt;</code></pre>
 			</section>
 		</section>
 		<section class="example" id="example-2-buttons">
-			<h3>Example 2: Buttons</h3>
-			<p>There are several ways to create a button in HTML.</p>
+			<h3>事例 2: ボタン</h3>
+			<p>HTML でボタンを作成する方法はいくつかある。</p>
 			<section id="buttons-example-a">
-				<h4>Buttons example A</h4>
-				<p>In example A, the text contained in the <code class="language-html">button</code> element, in this case "save", gives the button its name. There is no value.</p>
+				<h4>ボタンの事例 A</h4>
+				<p>事例 A では、<code class="language-html">button</code> 要素に含まれるテキスト (この場合は "save") がボタンの名前になっている。値はない。</p>
 <pre xml:space="preserve"><code class="language-html">&lt;button type="button"&gt;Save&lt;/button&gt;</code></pre>
 			</section>
 			<section id="buttons-example-b">
-				<h4>Buttons example B</h4>
-				<p>Example B uses the <code class="language-html">value</code> attribute, in this case "Save", "Submit", or "Reset" as the name.</p>
+				<h4>ボタンの事例 B</h4>
+				<p>事例 B では、<code class="language-html">value</code> 属性を用いて "Save"、"Submit"、"Reset" という名前 (name) を指定している。</p>
 <pre xml:space="preserve"><code class="language-html">&lt;input type="button" value="Save"&gt; 
 &lt;input type="submit" value="Submit"&gt;
 &lt;input type="reset" value="Reset"&gt;</code></pre>
 			</section>
 			<section id="buttons-example-c">
-				<h4>Buttons example C</h4>
-				<p>Example C uses the <code class="language-html">alt</code> attribute, in this case "save", as the name.</p>
+				<h4>ボタンの事例 C</h4>
+				<p>事例 C では、<code class="language-html">alt</code> 属性を用いて "save" という名前 (name) を指定している。</p>
 <pre xml:space="preserve"><code class="language-html">&lt;input alt="save" src="save.gif" type="image"&gt;</code></pre>
 			</section>
 			<section id="buttons-example-d">      
-				<h4>Buttons example D</h4>
-				<p>Example D clarifies how the user agent determines the name if the author specifies both the <code class="language-html">alt</code> and <code class="language-html">title</code> attributes of the input element. In this case, the user agent uses the <code class="language-html">alt</code> attribute ("Save") and ignores the <code class="language-html">title</code> attribute.</p>
+				<h4>ボタンの事例 D</h4>
+				<p>事例 D は、コンテンツ制作者が input 要素の <code class="language-html">alt</code> 属性と <code class="language-html">title</code> 属性の両方を指定する場合、ユーザエージェントが名前 (name) をどのように決定するかを明らかにする。この場合、ユーザエージェントは、 <code class="language-html">alt</code> 属性 ("save") を使用して、<code class="language-html">title</code> 属性を無視する。</p>
          
 <pre xml:space="preserve"><code class="language-html">&lt;input alt="save" src="save.gif" title="save the file" type="image"&gt;</code></pre>
 			</section>
 		</section>
       <section class="example" id="example-3-text-input">
-         <h3>Example 3: Text Input</h3>  
+         <h3>事例 3: テキスト入力</h3>  
 			<section id="text-input-example-a">
-				<h4>Text Input example A</h4>
-				<p>In example A, the input field has a role of "editable text". The <code class="language-html">label</code> element is associated to the <code class="language-html">input</code> element via the <code class="language-html">for</code> attribute which references the <code class="language-html">id</code> attribute of the <code class="language-html">input</code> element. The name comes from the <code class="language-html">label</code> element, in this case, "Type of fruit". Its value comes from its value attribute, in this case "bananas".</p>
+				<h4>テキスト入力の事例 A</h4>
+				<p>事例 A では、入力フィールドが「編集可能テキスト」という役割 (role) を持っている。<code class="language-html">label</code> 要素は、<code class="language-html">input</code> 要素の <code class="language-html">id</code> 属性を参照する <code class="language-html">for</code> 属性を介して、<code class="language-html">input</code> 要素に関連付けられている。input 要素の名前 (name) は、<code class="language-html">label</code> 要素で指定した "Type of fruit" となる。値は、value 属性の "bananas" となる。</p>
          
 <pre xml:space="preserve"><code class="language-html">&lt;label for="text-1"&gt;Type of fruit&lt;/label&gt;
 &lt;input id="text-1" type="text" value="bananas"&gt;</code></pre>
 			</section>
 			<section id="text-input-example-b">
-				<h4>Text Input example B</h4>
-				<p>In example B, the input field has the same role as example A, but the value is the empty string and the field gets its name from the <code class="language-html">aria-label</code> property.</p>
+				<h4>テキスト入力の事例 B</h4>
+				<p>事例 B では、入力フィールドの役割 (role) は例 A と同じであるが、値は空の文字列であり、フィールドの名前は <code class="language-html">aria-label</code> プロパティから取得される。</p>
          
 <pre xml:space="preserve"><code class="language-html">&lt;input aria-label="Type of fruit" id="text-1" type="text"&gt;</code></pre>
 			</section>
 		</section>
 		<section class="example" id="example-4-checkbox">
-         <h3>Example 4: Checkbox</h3>
-         <p>This example has a role of <code class="language-html">checkbox</code>, from the <code class="language-html">type</code> attribute of the <code class="language-html">input</code> element. The <code class="language-html">label</code> element is associated with the <code class="language-html">input</code> element via the <code class="language-html">for</code> attribute which refers to the <code class="language-html">id</code> attribute of the <code class="language-html">input</code> element. The name comes from the <code class="language-html">label</code> element, in this case "cheese". Its state can be <code class="language-html">checked</code> or <code class="language-html">unchecked</code> and comes from the <code class="language-html">checked</code> attribute. The state can be changed by the user's interaction with the control.</p>
+         <h3>事例 4: チェックボックス</h3>
+         <p>この事例は、<code class="language-html">input</code> 要素の <code class="language-html">type</code> 属性から <code class="language-html">checkbox</code> という役割 (role) を持っている。<code class="language-html">label</code> 要素は、<code class="language-html">input</code> 要素の <code class="language-html">id</code> 属性を参照する <code class="language-html">for</code> 属性を介して <code class="language-html">input</code> 要素に関連付けられる。名前 (name) は、<code class="language-html">label</code> 要素から取得され、この場合は「Cheese」となる。<code class="language-html">checked</code> 属性から、<code class="language-html">checked</code> 又は <code class="language-html">unchecked</code> の状態を取得できる。状態は、利用者がコントロールを操作することで変更できる。</p>
          
 <pre xml:space="preserve"><code class="language-html">&lt;label for="cb-1"&gt;Cheese&lt;/label&gt; 
 &lt;input checked id="cb-1" type="checkbox"&gt;</code></pre>
       </section>
       <section class="example" id="example-5-radio-buttons">
-         <h3>Example 5: Radio Buttons</h3>
-         <p>This example has a role of "radio button" from the <code class="language-html">type</code> attribute on the <code class="language-html">input</code> element. Its name comes from the <code class="language-html">label</code> element. Its state can be <code class="language-html">checked</code> or <code class="language-html">unchecked</code> and comes from the <code class="language-html">checked</code> attribute. The state can be changed by the user's interaction with the control.</p>
+         <h3>事例 5: ラジオボタン</h3>
+         <p>この事例では、<code class="language-html">input</code> 要素の <code class="language-html">type</code> 属性から「ラジオボタン」という役割 (role) を持っている。ボタンの名前 (name) は <code class="language-html">label</code> 要素から取得される。ボタンの状態は <code class="language-html">checked</code> 属性から取得され、<code class="language-html">checked</code> 又は <code class="language-html">unchecked</code> を選択できる。この状態は、利用者がコントロールを操作することで変更できる。</p>
          
 <pre xml:space="preserve"><code class="language-html">&lt;input checked id="r1" name="color" type="radio"&gt;&lt;label for="r1"&gt;Red&lt;/label&gt;
 &lt;input id="r2" name="color" type="radio"&gt;&lt;label for="r2"&gt;Blue&lt;/label&gt;
 &lt;input id="r3" name="color" type="radio"&gt;&lt;label for="r3"&gt;Green&lt;/label&gt;</code></pre>
       </section>
 			<section class="example" id="example-6-radio-fieldset">
-				<h3>Example 6: Radio Fieldset</h3>
-				<p>The radio <code class="language-html">fieldset</code> has a role of "grouping". The name comes from the <code class="language-html">legend</code> element.</p>
+				<h3>事例 6: ラジオボタンの fieldset</h3>
+				<p>ラジオボタン <code class="language-html">fieldset</code> は「グループ化」という役割 (role) を持っている。名前 (name) は <code class="language-html">legend</code> 要素から取得される。</p>
 <pre xml:space="preserve"><code class="language-html">&lt;fieldset&gt;
   &lt;legend&gt;Choose a Color:&lt;/legend&gt;
   &lt;div&gt;
@@ -218,10 +213,10 @@
 &lt;/fieldset&gt;</code></pre>
       </section>			
       <section class="example" id="example-7-select-element">
-				<h3>Example 7: Select Element</h3>
+				<h3>事例 7: Select 要素</h3>
 				<section id="select-element-example-a">
-					<h4>Select element example A</h4>
-					<p>Example A has a role of "list box" from the <code class="language-html">select</code> element. Its name is "Numbers" from the <code class="language-html">label</code> element. Forgetting to give a name to the select is a common error. The value is the <code class="language-html">option</code> element that has the <code class="language-html">selected</code> attribute present. In this case, the default value is "Two".</p>
+					<h4>Select 要素の事例 A</h4>
+					<p>事例 A は、<code class="language-html">select</code> 要素から「リストボックス」の役割 (role) を持っている。<code class="language-html">label</code> 要素から "Numbers" という名前 (name) が付けられている。select 要素に名前を付け忘れるのはよくある誤りである。値は、<code class="language-html">selected</code> 属性を持つ <code class="language-html">option</code> 要素の値である。この場合、デフォルト値は "Two" となる。</p>
          
 <pre xml:space="preserve"><code class="language-html">&lt;label for="s1"&gt;Numbers&lt;/label&gt;
 &lt;select id="s1"&gt;
@@ -231,8 +226,8 @@
 &lt;/select&gt;</code></pre>
 				</section>
 				<section id="select-element-example-b">
-					<h4>Select Element example B</h4>
-					<p>Example B has the same name, role, and value as the above, but sets the name with the <code class="language-html">aria-label</code> property on the <code class="language-html">select</code> element. This technique can be used when a visible label is not possible.</p>
+					<h4>Select 要素の事例 B</h4>
+					<p>事例 B は上記と同じ名前 (name)、役割 (role)、値を持つが、<code class="language-html">select</code> 要素の <code class="language-html">aria-label</code> プロパティで名前を設定している。このテクニックは、ラベルを表示できない場合に使用できる。</p>
          
 <pre xml:space="preserve"><code class="language-html">&lt;select aria-label="Numbers" id="s1"&gt;
   &lt;option&gt;One&lt;/option&gt;
@@ -243,17 +238,17 @@
 			</section>
       	</section>
 				<section class="example">
-					<h2>Textarea</h2>
+					<h2>事例8: Textarea 要素</h2>
 					<section id="textarea-example-a">
-						<h4>Textarea example A</h4>
-						<p>Example A has a role of "editable text" from the <code class="language-html">textarea</code> element. The name is "Type your speech here" from the <code class="language-html">label</code> element. The value is the content inside the <code class="language-html">textarea</code> element, in this case "Four score and seven years ago".</p>
+						<h4>Textarea 要素の事例 A</h4>
+						<p>事例 A は、<code class="language-html">textarea</code> 要素から「編集可能なテキスト」という役割 (role) を持っている。名前 (name) は <code class="language-html">label</code> 要素から取得される "Type your speech here" である。値は <code class="language-html">textarea</code> 要素内のコンテンツであり、この場合は "Four score and seven years ago" である。</p>
          
 <pre xml:space="preserve"><code class="language-html">&lt;label for="ta-1"&gt;Type your speech here&lt;/label&gt;
 &lt;textarea id="ta-1"&gt;Four score and seven years ago&lt;/textarea&gt;</code></pre>
 					</section>
 					<section id="textarea-example-b">
-						<h4>Textarea example B</h4>
-						<p>Example B has the same role, the name is set using the <code class="language-html">title</code> attribute, and the value is the empty string.</p>
+						<h4>Textarea 要素の事例 B</h4>
+						<p>事例 B は同じ役割 (role) を持ち、名前は <code class="language-html">title</code> 属性を使用して設定され、値は空の文字列である。</p>
          
 <pre xml:space="preserve"><code class="language-html">&lt;textarea title="Type your speech here"&gt;Four score and seven years ago&lt;/textarea&gt;</code></pre>
 					</section>
@@ -261,8 +256,8 @@
 			
 			
 			<section id="resources">
-				<h2>Related Resources</h2>
-<p style="margin-bottom: 1.5em;"><em><small>No endorsement implied.</small></em></p>
+				<h2>関連リソース</h2>
+<p style="margin-bottom: 1.5em;"><em><small>推奨を意味するものではない。</small></em></p>
 
 
 				<ul>
@@ -293,24 +288,24 @@
 		
 
 <section id="related">
-				<h2>Related Techniques</h2>
+				<h2>関連テクニック</h2>
 				<ul>
 					<li><a href="../html/H44">H44: Using label elements to associate text labels with form controls</a></li>
 				</ul>
 			</section>
 <section id="tests">
-				<h2>Tests</h2>
+				<h2>検証</h2>
 				<section class="procedure" id="procedure">
-					<h3>Procedure</h3>
+					<h3>手順</h3>
 					<ol>
-						<li>Inspect the HTML source code.</li>
-            <li>For each instance of links and form elements, check that the name, value, and state are specified.</li>
+						<li>HTML のソースコードを調べる。</li>
+            <li>リンクとフォーム要素の各インスタンスについて、名前 (name)、値、状態が指定されていることをチェックする。</li>
 					</ol>
 				</section>
 				<section class="results" id="expected-results">
-					<h3>Expected Results</h3>
+					<h3>期待される結果</h3>
 					<ul>
-						<li>Check #2 is true.</li>
+						<li>チェック 2 が真である。</li>
 					</ul>
 				</section>
 			</section>
@@ -330,14 +325,13 @@
     <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
       <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
     </svg>
-    <h2>Help improve this page</h2>
+    <h2>このページを改善する</h2>
   </header>
   <div class="box-i">
-  <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org</a> or via GitHub</p>
+  <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。</p>
     <div class="button-group">
-      <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a>
-      <a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a>
-      <a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a>
+      <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdIpvogLx8kGIMewhQ6MzhG2pOCQZ50iIBViGg8pUrRJuslKg/viewform?entry.685195438=https%3A%2F%2Fwaic.jp%2Ftranslations%2FWCAG22%2FUnderstanding%2Ffocus-not-obscured-minimum" id="file-issue">翻訳に関するお問い合わせ (Google フォーム)</a>
+      <a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a>
     </div>
   </div>
 </aside>
@@ -359,12 +353,15 @@
       <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project,
       co-funded by the European Commission.
     </p>
+    <p>この文書は、2025 年 5 月 21 日付けの <a href="https://w3c.github.io/wcag/techniques/">Techniques for WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+    </p>
+    <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
   </div>
 </footer>
 
 <footer class="site-footer grid-4q" aria-label="Site">
   <div class="q1-start q3-end about">
-    <div>
+    <!--div>
       <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
       <p>Strategies, standards, and supporting resources to make the Web accessible to people with disabilities.</p>
     </div>
@@ -375,12 +372,12 @@
         <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube " viewBox="0 0 32 32"><path d="M31.327 8.273c-0.386-1.353-1.431-2.398-2.756-2.777l-0.028-0.007c-2.493-0.668-12.528-0.668-12.528-0.668s-10.009-0.013-12.528 0.668c-1.353 0.386-2.398 1.431-2.777 2.756l-0.007 0.028c-0.443 2.281-0.696 4.903-0.696 7.585 0 0.054 0 0.109 0 0.163l-0-0.008c-0 0.037-0 0.082-0 0.126 0 2.682 0.253 5.304 0.737 7.845l-0.041-0.26c0.386 1.353 1.431 2.398 2.756 2.777l0.028 0.007c2.491 0.669 12.528 0.669 12.528 0.669s10.008 0 12.528-0.669c1.353-0.386 2.398-1.431 2.777-2.756l0.007-0.028c0.425-2.233 0.668-4.803 0.668-7.429 0-0.099-0-0.198-0.001-0.297l0 0.015c0.001-0.092 0.001-0.201 0.001-0.31 0-2.626-0.243-5.196-0.708-7.687l0.040 0.258zM12.812 20.801v-9.591l8.352 4.803z"></path></svg> YouTube</a></li>
         <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
       </ul>
-    </div>
+    </div-->
     <div dir="auto" translate="no" lang="en">
       <p>Copyright © 2025 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
     </div>
   </div>
-  <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+  <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
     <ul style="margin-bottom:0">
       <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
       <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -389,7 +386,7 @@
       <li><a href="/WAI/translations/"> Translations</a></li>
       <li><a href="/WAI/roles/">Resources for Roles</a></li>
     </ul>
-  </div>
+  </div-->
 </footer>
 
 <link rel="stylesheet" href="../a11y-light.css">
@@ -403,7 +400,7 @@
 </script>
 <script src="https://www.w3.org/WAI/assets/scripts/main.js"></script>
 
-<script>
+<!--script>
   var _paq = _paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
   _paq.push(["setDoNotTrack", true]);
@@ -419,7 +416,7 @@
 </script>
 <noscript>
   <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-</noscript>
-
+</noscript-->
+<script src="https://waic.jp/docs/js/translation-contact.js"></script>
 
 </body></html>
