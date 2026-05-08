@@ -1,7 +1,7 @@
 const trNote = "この文書内にあるリンクのうち、「Understanding WCAG 2.2」へのリンクについては、WAIC の公開する日本語版にリンク先を追加しています。WAIC の日本語訳は、 W3C の公開する英語版より内容が古い可能性がありますのでご注意ください。";
 const jaLinkText = '[日本語訳]';
 const jaLinkTitleSuffix = 'の日本語訳';
-const taregtUrlString = ['Understanding'];
+const taregtUrlString = ['Understanding', 'Techniques'];
 
 document.addEventListener('DOMContentLoaded', function(){
 	const lastTrNote = document.querySelector("aside.trnote>p:last-child");
