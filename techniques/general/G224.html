@@ -1,5 +1,6 @@
-<!DOCTYPE html><html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
-    <title>G224: Accounting for meaningful text indentation and Reflow | WAI | W3C</title>
+<!DOCTYPE html><html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta charset="UTF-8">
+<title>G224: 意味のあるテキストのインデント及びリフローを考慮する | WAI | W3C</title>
     
   
 
@@ -17,12 +18,12 @@
 <div class="minimal-header-container default-grid">
   <header class="minimal-header" id="site-header">
     <div class="minimal-header-name">
-      <a href="https://w3c.github.io/wcag/techniques/">WCAG 2.2 Techniques</a>
+      <a href="https://waic.jp/translations/WCAG22/Techniques/">WCAG 2.2 テクニック集</a>
     </div>
     
       <div class="minimal-header-subtitle">Examples of ways to meet WCAG; not required</div>
     
-    <a class="minimal-header-link" href="https://w3c.github.io/wcag/techniques/about">About WCAG Techniques</a>
+    <a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Techniques/about">WCAG テクニック集について</a>
     <div class="minimal-header-logo">
       <a href="http://w3.org/" aria-label="W3C">
         <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44">
@@ -51,14 +52,14 @@
 
 <div class="default-grid with-gap leftcol">
 <aside class="box nav-hack sidebar standalone-resource__sidebar">
-    <header class="box-h">Page Contents</header>
+    <header class="box-h">このページの内容</header>
     <div class="box-i">
       <nav aria-label="page contents" class="navtoc">
-        <ul><li><a href="#technique">About this Technique</a></li>
-<li><a href="#description">Description</a></li>
-<li><a href="#examples">Examples</a></li>
-<li><a href="#related">Related Techniques</a></li>
-<li><a href="#tests">Tests</a></li>
+        <ul><li><a href="#technique">このテクニックについて</a></li>
+<li><a href="#description">解説</a></li>
+<li><a href="#examples">事例</a></li>
+<li><a href="#related">関連テクニック</a></li>
+<li><a href="#tests">検証</a></li>
 </ul>
       </nav>
     </div>
@@ -66,27 +67,27 @@
 
 <main id="main" class="standalone-resource__main">
     
-<h1><span>Technique G224:</span>Accounting for meaningful text indentation and Reflow</h1>
+<h1><span>テクニック G224:</span>意味のあるテキストのインデント及びリフローを考慮する</h1>
 
 
 
 
 <section id="technique" class="box">
-	<h2 class="box-h box-h-icon">About this Technique</h2>
+	<h2 class="box-h box-h-icon">このテクニックについて</h2>
 	<div class="box-i">
 
 
   
   <p>
-    This technique relates to
+    このテクニックは
     
-<a href="https://w3c.github.io/wcag/understanding/reflow">1.4.10: Reflow</a>
-(<strong>Sufficient</strong>).</p>
+<a href="https://waic.jp/translations/WCAG22/Understanding/reflow">1.4.10: リフロー</a>
+(<strong>十分なテクニック</strong>) に関連する。</p>
   
 
 
 
-  <p>This technique applies to all technologies that support style switching.</p>
+  <p>このテクニックは、スタイルの切り替えをサポートする全ての技術に適用される。</p>
 
 </div>
 </section>
@@ -97,24 +98,24 @@
     
     
     <section id="description">
-      <h2>Description</h2>
-      <p>There can be instances where indentation of text is considered important to the presentation and understandability of the text content. If the indentations were to be removed, then meaning or functionality could suffer. For instance, the nesting of unordered lists can be harder to notice if indentations are removed. Additionally, maintaining indentations can be important to help understand code patterns, if not even necessary for the code to function.</p>
-      <p>Since maintaining indentation is important for these instances of text, two-dimensional scrolling of these distinct sections of content could be necessary. However, there are still styling modifications that could be made to help ensure the indentation was maintained, but as much text was made visible within the viewport as possible. Making such adjustments could limit, if not mitigate any two-dimensional scrolling from occurring, making the content easier for people to read.</p>
+      <h2>解説</h2>
+      <p>テキストのインデントは、テキストコンテンツの提示及び理解しやすさにとって重要であると考えられる場合がある。インデントを削除すると、意味又は機能性が損なわれる可能性がある。例えば、インデントを削除すると、順序なしリストの入れ子に気づくのが難しくなる可能性がある。さらに、コードの機能には必須ではないとしても、インデントを維持することはコードパターンを理解する上で重要な場合もある。</p>
+      <p>インデントを維持することは、これらのテキストのインスタンスにとって重要であるため、これらの個別のコンテンツセクションの 2 次元スクロールが必要になる可能性がある。しかし、インデントを維持しながら、ビューポート内に可能な限り多くのテキストを表示するために、スタイルを修正することが可能である。そのような修正を行うことで、2 次元スクロールの発生を緩和しないまでも、制限することができ、コンテンツを読みやすくすることができる。</p>
       
    </section>
     
     <section id="examples">
-      <h2>Examples</h2>
-      <section class="example" id="example-1"><h3>Example 1</h3>
-        <p>A website conveys information in a nested list format. The understandability of the list hierarchy is supported by the indentation of the list content. While it is important for the individual list item text to reflow, the list hierarchy would suffer if flattened so that all content would fit within a 320 CSS pixel wide viewport.</p>  
-        <p>The following example list contains additional nested lists to provide more context for each of the parent list item's text. To maintain the visual hierarchy, the indentation of each list level remains present, but modified once an author defined CSS breakpoint is met. Additional styles are set for different breakpoints to mitigate against the potential for content to extend beyond a 320px wide viewport, while accounting for visual spacing against the borders of the viewport, to attempt to make the content not feel cramped. At the smallest breakpoint, the content of list items receive a minimum width to mitigate against potentially "squished" content lists with many nested levels. At this breakpoint, each nested list level can be horizontally scrolled into view, and once a nested list is visible within the viewport, only vertical scrolling will be necessary to read the content of the nested list's items.</p>
+      <h2>事例</h2>
+      <section class="example" id="example-1"><h3>事例 1</h3>
+        <p>ウェブサイトは、入れ子にされたリスト形式で情報を伝達している。リスト階層の分かりやすさは、リストコンテンツのインデントによって支えられている。個々のリスト項目のテキストをリフローすることは重要であるが、全てのコンテンツを 320 CSS ピクセル幅のビューポートに収めるためにフラット化すると、リスト階層が損なわれる。</p>  
+        <p>下記の例のリストでは、親リスト項目のテキストに詳細なコンテキストを提供するために、入れ子にされたリストがさらに追加されている。視覚的な階層構造を維持するために、各リストレベルのインデントはそのまま維持されるが、コンテンツ制作者が定義した CSS ブレークポイントに達するとインデントが変更される。コンテンツが 320 px 幅のビューポートを超えて広がる可能性を軽減するため、各ブレークポイントにスタイルが追加されている。ビューポートのボーダーとの視覚的な間隔も考慮し、コンテンツが窮屈に感じられないように配慮されている。最小のブレークポイントでは、リスト項目のコンテンツに最小幅が与えられ、多数の入れ子レベルを持つコンテンツリストが「押しつぶされる」可能性を軽減する。このブレークポイントでは、入れ子にされた各リストレベルを水平スクロールで表示できる。入れ子にされたリストがビューポート内に表示されると、入れ子にされたリスト項目のコンテンツを読むのに垂直スクロールだけが必要になる。</p>
 <pre>&lt;div class="example"&gt;
 	&lt;ul&gt;
 		&lt;li&gt;
 			&lt;p&gt;Make a list using one of the HTML list elements, or even an ARIA &lt;code&gt;role=list&lt;/code&gt; container.&lt;/p&gt;
 			&lt;ul&gt;
 				&lt;li&gt;
-					&lt;p&gt;There are three types of lists in HTML which can contain list items (&lt;code&gt;li&lt;/code&gt; elements.&lt;/p&gt;
+					&lt;p&gt;There are three types of lists in HTML which can contain list items (&lt;code&gt;li&lt;/code&gt; elements).&lt;/p&gt;
 					&lt;ul&gt;
 						&lt;li&gt;&lt;p&gt;the &lt;code&gt;ul&lt;/code&gt; element&lt;/li&gt;
 						&lt;li&gt;&lt;p&gt;the &lt;code&gt;ol&lt;/code&gt; element&lt;/li&gt;
@@ -166,14 +167,14 @@ body, html {
     }
 }
 </pre>
-        <p>A working example of <a href="../../working-examples/reflow-nested-lists">a list where nested levels can be read within a 320px wide viewport</a>.</p>
+        <p>動作例: <a href="https://www.w3.org/WAI/WCAG22/working-examples/reflow-nested-lists">a list where nested levels can be read within a 320px wide viewport</a>.</p>
       </section>
       
-      <section class="example" id="example-2"><h3>Example 2</h3>
-        <p>A website providing code snippets needs to maintain line indentations, as the indentations are meaningful not only to the structure of the code, but in some languages - such as with Python, are requirements when defining blocks of code.</p>
-        <p>As a user zooms in the web page, the CSS of the indentation can be adjusted to maintain this necessary structure, while also allowing more text to be visible on a single line.</p>
+      <section class="example" id="example-2"><h3>事例 2</h3>
+        <p>コードスニペットを提供するウェブサイトでは、行のインデントを維持する必要がある。インデントはコードの構造だけでなく、Python などの一部の言語では、コードブロックを定義する際の要件でもあるためである。</p>
+        <p>利用者がウェブページを拡大すると、このインデントの CSS が調整され、この必要な構造を維持しながら、1 行に表示されるテキストを増やすことができる。</p>
 
-        <p>The following represents a Python code example. The indentation of each line of text is necessary to create a group of statements that are executed as a block.</p>
+        <p>次は Python コードの例である。各行のインデントは、ブロックとして実行される一連のステートメントのグループを作成するために必要である。</p>
 <pre>def complex_function(x):
     if x &gt; 0:
         for i in range(x):
@@ -194,7 +195,7 @@ body, html {
     else:
         print("x is not a positive number")
 </pre>
-        <p>The following code example demonstrates the use of indentation to convey the nesting of elements in an HTML document:</p>
+        <p>次のコード例は、インデントを使用して HTML ドキュメント内の要素の入れ子を伝える方法を示している:</p>
 <pre>&lt;html lang=en&gt;
 	&lt;head&gt;...&lt;/head&gt;
 	&lt;body&gt;
@@ -204,7 +205,7 @@ body, html {
 	&lt;/body&gt;
 &lt;/html&gt;
 </pre>     
-        <p>The indentation of code blocks like these could be adjusted at different viewport sizies, via a CSS Media Query.</p>
+        <p>このようなコードブロックのインデントは、CSS メディアクエリを使用して、さまざまなビューポートサイズで調整できる。</p>
 <pre>@media screen and ( min-width: 320px ) {
 	pre {
 		tab-size: 8px;
@@ -223,7 +224,7 @@ body, html {
 	}
 }
 </pre>
-        <p>A working example of <a href="../../working-examples/reflow-indenting.html">code snippets using CSS to modigy indentation width at different breakpoints</a>.
+        <p>動作例: <a href="https://www.w3.org/WAI/WCAG22/working-examples/reflow-indenting.html">code snippets using CSS to modigy indentation width at different breakpoints</a>.
         </p></section>
     </section>
     
@@ -233,39 +234,39 @@ body, html {
 
 
 <section id="related">
-      <h2>Related Techniques</h2>
+      <h2>関連テクニック</h2>
       <ul>
       <li><a href="../css/C20">C20: Using relative measurements to set column widths so that lines can average 80 characters or less when the browser is resized</a></li>
       </ul>
     </section>
 <section id="tests">
-      <h2>Tests</h2>
-      <section class="procedure" id="procedure-for-list-example"><h3>Procedure for list example</h3>
+      <h2>検証</h2>
+      <section class="procedure" id="procedure-for-list-example"><h3>リストの事例の手順</h3>
          <ol>
-            <li>Display the web page in a user agent where the page can be zoomed, or the user agent can be resized.</li>
-            <li>Zoom in or resize the browser window so that the viewport is equivallent to 320 CSS pixels wide.</li>
-            <li>The list content fits within the width so that it is only necessary so scroll vertically to read the list.</li>
-            <li>Or, each nested list can be horizontally scrolled into view. Only vertical scrolling is necessary to read the content of list items within each specific nested list level.</li>
+            <li>ウェブページを、ページをズームしたり、ユーザエージェントのサイズを変更したりできるユーザエージェントで表示する。</li>
+            <li>ブラウザのウィンドウをズームイン又はサイズ変更し、ビューポートが 320 CSS ピクセル幅に相当するようにする。</li>
+            <li>リストの内容は幅に収まるため、リストを読むには垂直スクロールだけで済む。</li>
+            <li>又は、入れ子にされた各リストを水平スクロールで表示する。入れ子にされた各レベル内のリスト項目の内容を読むには、垂直スクロールだけが必要である。</li>
          </ol>
       </section>
-      <section class="results" id="expected-results"><h3>Expected Results</h3>
+      <section class="results" id="expected-results"><h3>期待される結果</h3>
          <ul>
-            <li>Checks 3 or 4 are true.</li>
+            <li>チェック 3 又は 4 が真である。</li>
          </ul>
       </section>
 
-      <section class="procedure" id="procedure-for-code-snippets"><h3>Procedure for code snippets</h3>
+      <section class="procedure" id="procedure-for-code-snippets"><h3>コードスニペットの事例の手順</h3>
          <ol>
-            <li>Display the web page in a user agent where the page can be zoomed, or the user agent can be resized.</li>
-            <li>Zoom in or resize the browser window so that the viewport is equivallent to 320 CSS pixels wide.</li>
-            <li>The code snippets fits within the width so that it is only necessary so scroll vertically to read each line of code.</li>
-            <li>Or, for code where non-wrapping lines are not essential, the code wraps or a mechanism is provided to allow line wrapping.</li>
-            <li>Or, the indentation and linebreaks are meaningful to the code language. 
+            <li>ウェブページを、ページをズームしたり、ユーザエージェントのサイズを変更したりできるユーザエージェントで表示する。</li>
+            <li>ブラウザのウィンドウをズームイン又はサイズ変更し、ビューポートが 320 CSS ピクセル幅に相当するようにする。</li>
+            <li>コードスニペットは幅に収まるため、各行を読むには垂直スクロールするだけで済む。</li>
+            <li>又は、折り返しのない行が必須でないコードでは、コードが折り返されるもしくは、行の折り返しを可能にするメカニズムが提供される。</li>
+            <li>又は、インデント及び改行はコード言語にとって意味を持つ。
          </li></ol>
       </section>
-      <section class="results" id="expected-results"><h3>Expected Results</h3>
+      <section class="results" id="expected-results"><h3>期待される結果</h3>
          <ul>
-            <li>Checks #3, #4 or #5 are true.</li>
+            <li>チェック 3、4 又は 5 が真である。</li>
          </ul>
       </section>
     </section>
@@ -285,14 +286,13 @@ body, html {
     <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
       <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
     </svg>
-    <h2>Help improve this page</h2>
+    <h2>このページを改善する</h2>
   </header>
   <div class="box-i">
-  <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org</a> or via GitHub</p>
+  <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。</p>
     <div class="button-group">
-      <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a>
-      <a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a>
-      <a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a>
+      <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdIpvogLx8kGIMewhQ6MzhG2pOCQZ50iIBViGg8pUrRJuslKg/viewform?entry.685195438=https%3A%2F%2Fwaic.jp%2Ftranslations%2FWCAG22%2FUnderstanding%2Ffocus-not-obscured-minimum" id="file-issue">翻訳に関するお問い合わせ (Google フォーム)</a>
+      <a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a>
     </div>
   </div>
 </aside>
@@ -314,12 +314,15 @@ body, html {
       <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project,
       co-funded by the European Commission.
     </p>
+    <p>この文書は、2025 年 5 月 21 日付けの <a href="https://w3c.github.io/wcag/techniques/">Techniques for WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+    </p>
+    <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
   </div>
 </footer>
 
 <footer class="site-footer grid-4q" aria-label="Site">
   <div class="q1-start q3-end about">
-    <div>
+    <!--div>
       <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
       <p>Strategies, standards, and supporting resources to make the Web accessible to people with disabilities.</p>
     </div>
@@ -330,12 +333,12 @@ body, html {
         <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube " viewBox="0 0 32 32"><path d="M31.327 8.273c-0.386-1.353-1.431-2.398-2.756-2.777l-0.028-0.007c-2.493-0.668-12.528-0.668-12.528-0.668s-10.009-0.013-12.528 0.668c-1.353 0.386-2.398 1.431-2.777 2.756l-0.007 0.028c-0.443 2.281-0.696 4.903-0.696 7.585 0 0.054 0 0.109 0 0.163l-0-0.008c-0 0.037-0 0.082-0 0.126 0 2.682 0.253 5.304 0.737 7.845l-0.041-0.26c0.386 1.353 1.431 2.398 2.756 2.777l0.028 0.007c2.491 0.669 12.528 0.669 12.528 0.669s10.008 0 12.528-0.669c1.353-0.386 2.398-1.431 2.777-2.756l0.007-0.028c0.425-2.233 0.668-4.803 0.668-7.429 0-0.099-0-0.198-0.001-0.297l0 0.015c0.001-0.092 0.001-0.201 0.001-0.31 0-2.626-0.243-5.196-0.708-7.687l0.040 0.258zM12.812 20.801v-9.591l8.352 4.803z"></path></svg> YouTube</a></li>
         <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
       </ul>
-    </div>
+    </div-->
     <div dir="auto" translate="no" lang="en">
       <p>Copyright © 2025 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
     </div>
   </div>
-  <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+  <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
     <ul style="margin-bottom:0">
       <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
       <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -344,7 +347,7 @@ body, html {
       <li><a href="/WAI/translations/"> Translations</a></li>
       <li><a href="/WAI/roles/">Resources for Roles</a></li>
     </ul>
-  </div>
+  </div-->
 </footer>
 
 <link rel="stylesheet" href="../a11y-light.css">
@@ -358,7 +361,7 @@ body, html {
 </script>
 <script src="https://www.w3.org/WAI/assets/scripts/main.js"></script>
 
-<script>
+<!--script>
   var _paq = _paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
   _paq.push(["setDoNotTrack", true]);
@@ -374,7 +377,7 @@ body, html {
 </script>
 <noscript>
   <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-</noscript>
-
+</noscript-->
+<script src="https://waic.jp/docs/js/translation-contact.js"></script>
 
 </body></html>
