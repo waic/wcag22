@@ -1,6 +1,6 @@
-<!DOCTYPE html><html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
+<!DOCTYPE html><html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml"><head>
 <meta charset="UTF-8">
-<title>G14: Ensuring that information conveyed by color differences is also available in text | WAI | W3C</title>
+<title>G14: 色の違いで伝えている情報をテキストでも入手可能にする | WAI | W3C</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css">
@@ -9,20 +9,18 @@
 
 
 
-<!-- 日本語訳されるまでの一時的なスクリプト -->
-<script src="../untranslated-note.js"></script>
 </head><body dir="ltr">
 
 <a href="#main" class="button button--skip-link">Skip to content</a>
 <div class="minimal-header-container default-grid">
   <header class="minimal-header" id="site-header">
     <div class="minimal-header-name">
-      <a href="https://w3c.github.io/wcag/techniques/">WCAG 2.2 Techniques</a>
+      <a href="https://waic.jp/translations/WCAG22/Techniques/">WCAG 2.2 テクニック集</a>
     </div>
     
       <div class="minimal-header-subtitle">Examples of ways to meet WCAG; not required</div>
     
-    <a class="minimal-header-link" href="https://w3c.github.io/wcag/techniques/about">About WCAG Techniques</a>
+    <a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Techniques/about">WCAG テクニック集について</a>
     <div class="minimal-header-logo">
       <a href="http://w3.org/" aria-label="W3C">
         <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44">
@@ -51,101 +49,97 @@
 
 <div class="default-grid with-gap leftcol">
 <aside class="box nav-hack sidebar standalone-resource__sidebar">
-    <header class="box-h">Page Contents</header>
+    <header class="box-h">このページの内容</header>
     <div class="box-i">
       <nav aria-label="page contents" class="navtoc">
-        <ul><li><a href="#technique">About this Technique</a></li>
-<li><a href="#description">Description</a></li>
-<li><a href="#examples">Examples</a></li>
-<li><a href="#related">Related Techniques</a></li>
-<li><a href="#tests">Tests</a></li>
+        <ul><li><a href="#technique">このテクニックについて</a></li>
+<li><a href="#description">解説</a></li>
+<li><a href="#examples">事例</a></li>
+<li><a href="#related">関連テクニック</a></li>
+<li><a href="#tests">検証</a></li>
 </ul>
       </nav>
     </div>
 </aside>
 
 <main id="main" class="standalone-resource__main">
-<!-- 日本語訳されるまでの一時的な注記 -->
-<div class="untranslated-note"><p>このWCAG 2.2 テクニック集の日本語訳は作業中となっています。WCAG 2.1 達成方法集の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Techniques/">WCAG 2.1 達成方法集</a> ]</p></div>
-<h1><span>Technique G14:</span>Ensuring that information conveyed by color differences is also available in text</h1>
+
+<h1><span>テクニック G14:</span>色の違いで伝えている情報をテキストでも入手可能にする</h1>
 
 
 
 
 <section id="technique" class="box">
-	<h2 class="box-h box-h-icon">About this Technique</h2>
+	<h2 class="box-h box-h-icon">このテクニックについて</h2>
 	<div class="box-i">
 
 
   
   <p>
-    This technique relates to
+    このテクニックは
     
-<a href="https://w3c.github.io/wcag/understanding/use-of-color">1.4.1: Use of Color</a>
-(<strong>Sufficient</strong>).</p>
+<a href="https://waic.jp/translations/WCAG22/Understanding/use-of-color">1.4.1: 色の使用</a>
+(<strong>十分なテクニック</strong>) に関連する。</p>
   
 
 
 
-  <p>This technique applies to all technologies that support color and text.</p>
+  <p>このテクニックは、色及びテキストをサポートする全ての技術に適用される。</p>
 
 </div>
 </section>
 	
 
-<section id="description"><h2>Description</h2>
-      <p>The objective of this technique is to ensure that when color differences are used to convey information, such as required form fields, the information conveyed by the color differences are also conveyed explicitly in text.</p>
-   </section><section id="examples"><h2>Examples</h2>
+<section id="description"><h2>解説</h2>
+      <p>このテクニックの目的は、フォームの必須項目のように、情報を伝えるために色の違いを用いるとき、色の違いによって伝えている情報をテキストも用いて明示することである。</p>
+   </section><section id="examples"><h2>事例</h2>
       <section class="example" id="example-1-a-color-coded-schedule">
-         <h3>Example 1: A color-coded schedule</h3>
+         <h3>事例 1: 色でコード化されたスケジュール</h3>
          
-            <p>The schedule for sessions at a technology conference is organized into three tracks. Sessions for Track 1 are displayed over a blue background. Sessions in Track 2 are displayed over a yellow background. Sessions in Track 3 are displayed on a green background. After the name of each session is a code identifying the track in text: T1 for Track 1, T2 for Track 2, and T3 for Track 3.</p>
+            <p>技術会議のセッションスケジュールが三つのトラックで構成されている。トラック 1 のセッションが青い背景色で、トラック 2 のセッションが黄色い背景で、トラック 3 のセッションが緑色の背景で示されている。トラック 1 は T1、トラック 2 は T2、トラック 3 は T3 のように、各セッション名に続きテキストでも示されている。</p>
          
       </section>
       <section class="example" id="example-2-a-color-coded-schedule-with-icons">
-         <h3>Example 2: A color-coded schedule with icons</h3>
+         <h3>事例 2: 色のアイコンでコード化されたスケジュール</h3>
          
-            <p>The schedule for sessions at a technology conference is organized into three tracks. Next to the title of each session is an icon consisting of a colored circle with a number in the middle showing what track it belongs to: blue circles with the number 1 represent track 1, yellow circles with the number 2 represent Track 2, and green circles with the number 3 represent Track 3. Each icon is associated with a text alternative reading "Track 1," "Track 2," or "Track 3," as appropriate.</p>
+            <p>技術会議のセッションスケジュールが三つのトラックで構成されている。各セッションのタイトルの隣には、セッションのトラックを示す番号が中央に付いた色を用いたアイコンがあり、青はトラック 1、黄はトラック 2、緑はトラック 3 であることを示している。それぞれのアイコンには、トラック 1、トラック 2、トラック 3 と適切なテキストによる代替が提供されている。</p>
          
       </section>
       <section class="example" id="example-3-a-form-with-required-fields">
-         <h3>Example 3: A form with required fields</h3>
+         <h3>事例 3: 必須項目のあるフォーム</h3>
          
-            <p>A form contains several required fields. The labels for the required fields are displayed in red. In addition, at the end of each label is an asterisk character, *. The instructions for completing the form indicate that "all required fields are displayed in red and marked with an asterisk *", followed by an example.</p>
+            <p>フォームにいくつかの必須項目がある。必須項目のラベルは赤で示されている。それに加えて、各ラベルの末尾に * (アスタリスク) がある。フォーム入力の説明文では、入力例に続いて、「赤字で * (アスタリスク) の付いた項目は必須項目です。」と示されている。</p>
             <div class="note">
-				<p class="note-title marker">Note</p>
+				<p class="note-title marker">注記</p>
 				<div>
-               <p>Asterisks may not be read by all screen readers (in all reading modes) and may be difficult for users with low vision because they are rendered in a smaller size than default text. It is important for authors to include the text indicating that asterisk is used and to consider increasing the size of the asterisk that is presented.</p>
+               <p>アスタリスクは、スクリーンリーダー (読み上げモード) によっては読み上げられないことがあり、そしてデフォルトの文字サイズよりも小さいサイズでリンダリングされるため、ロービジョンの利用者にとっては見づらいかもしれない。コンテンツ制作者としては、アスタリスクが用いられていることをテキストで示すとともに、表示されるアスタリスクの文字サイズを大きくすることが重要である。</p>
             </div>
 			</div>
          
       </section>
       <section class="example" id="example-4-a-form-with-a-green-submit-button">
-         <h3>Example 4: A form with a green submit button</h3>
+         <h3>事例 4: 緑色の送信ボタンのあるフォーム</h3>
          
-            <p>An on-line loan application explains that green buttons advance in the process and red buttons cancel the process. A form contains a green button containing the text
-                <em>Go</em>. The instructions say "Press the button labeled
-                <em>Go</em>
-                to submit your results and proceed to the next step."</p>
+            <p>オンラインのローン申し込みにおいて、緑色のボタンでプロセスを進め、赤色のボタンでプロセスをキャンセルできると説明がある。このとき、フォームは、緑色のボタンにはテキストで「<em>Go</em>」と書かれていて、「緑色の[<em>Go</em>]ボタンを押して結果を送信し、次のステップに進んでください」と指示がある。</p>
          
       </section>
    </section>
-<section id="related"><h2>Related Techniques</h2><ul>
+<section id="related"><h2>関連テクニック</h2><ul>
       <li><a href="../general/G205">G205: Including a text cue for colored form control labels</a></li>
       <li><a href="../general/G138">G138: Using semantic markup whenever color cues are used</a></li>
       <li><a href="../general/G182">G182: Ensuring that additional visual cues are available when text color differences are used to convey information</a></li>
       <li><a href="../general/G183">G183: Using a contrast ratio of 3:1 with surrounding text and providing additional visual cues on hover for links or controls where color alone is used to identify them</a></li>
    </ul></section>
-<section id="tests"><h2>Tests</h2>
-      <section class="procedure" id="procedure"><h3>Procedure</h3>
-         <p>For each item where a color difference is used to convey information:</p>
+<section id="tests"><h2>検証</h2>
+      <section class="procedure" id="procedure"><h3>手順</h3>
+         <p>情報を伝えるのに色の違いが用いられている各項目に対して:</p>
          <ol>
-            <li>Check that the information conveyed is also available in text and that the text is not conditional content.</li>
+            <li>伝えられている情報がテキストでも利用可能であり、そのテキストが条件付きコンテンツでないことをチェックする。</li>
          </ol>
       </section>
-      <section class="results" id="expected-results"><h3>Expected Results</h3>
+      <section class="results" id="expected-results"><h3>期待される結果</h3>
          <ul>
-            <li>Check #1 is true.</li>
+            <li>チェック 1 が真である。</li>
          </ul>
       </section>
    </section>
