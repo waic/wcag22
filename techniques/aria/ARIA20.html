@@ -1,6 +1,6 @@
-<!DOCTYPE html><html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
+<!DOCTYPE html><html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml"><head>
 <meta charset="UTF-8">
-<title>ARIA20: Using the region role to identify a region of the page | WAI | W3C</title>
+<title>ARIA20: ページのリージョンを特定するために region ロールを使用する | WAI | W3C</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css">
@@ -9,20 +9,18 @@
 
 
 
-<!-- 日本語訳されるまでの一時的なスクリプト -->
-<script src="../untranslated-note.js"></script>
 </head><body dir="ltr">
 
 <a href="#main" class="button button--skip-link">Skip to content</a>
 <div class="minimal-header-container default-grid">
   <header class="minimal-header" id="site-header">
     <div class="minimal-header-name">
-      <a href="https://w3c.github.io/wcag/techniques/">WCAG 2.2 Techniques</a>
+      <a href="https://waic.jp/translations/WCAG22/Techniques/">WCAG 2.2 テクニック集</a>
     </div>
     
       <div class="minimal-header-subtitle">Examples of ways to meet WCAG; not required</div>
     
-    <a class="minimal-header-link" href="https://w3c.github.io/wcag/techniques/about">About WCAG Techniques</a>
+    <a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Techniques/about">WCAG テクニック集について</a>
     <div class="minimal-header-logo">
       <a href="http://w3.org/" aria-label="W3C">
         <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44">
@@ -51,57 +49,52 @@
 
 <div class="default-grid with-gap leftcol">
 <aside class="box nav-hack sidebar standalone-resource__sidebar">
-    <header class="box-h">Page Contents</header>
+    <header class="box-h">このページの内容</header>
     <div class="box-i">
       <nav aria-label="page contents" class="navtoc">
-        <ul><li><a href="#technique">About this Technique</a></li>
-<li><a href="#description">Description</a></li>
-<li><a href="#examples">Examples</a></li>
-<li><a href="#resources">Related Resources</a></li>
-<li><a href="#related">Related Techniques</a></li>
-<li><a href="#tests">Tests</a></li>
+        <ul><li><a href="#technique">このテクニックについて</a></li>
+<li><a href="#description">解説</a></li>
+<li><a href="#examples">事例</a></li>
+<li><a href="#resources">関連リソース</a></li>
+<li><a href="#related">関連テクニック</a></li>
+<li><a href="#tests">検証</a></li>
 </ul>
       </nav>
     </div>
 </aside>
 
 <main id="main" class="standalone-resource__main">
-<!-- 日本語訳されるまでの一時的な注記 -->
-<div class="untranslated-note"><p>このWCAG 2.2 テクニック集の日本語訳は作業中となっています。WCAG 2.1 達成方法集の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Techniques/">WCAG 2.1 達成方法集</a> ]</p></div>
-<h1><span>Technique ARIA20:</span>Using the region role to identify a region of the page</h1>
+<h1><span>テクニック ARIA20:</span> ページのリージョンを特定するために region ロールを使用する</h1>
 
 
 
 
 <section id="technique" class="box">
-	<h2 class="box-h box-h-icon">About this Technique</h2>
+	<h2 class="box-h box-h-icon">このテクニックについて</h2>
 	<div class="box-i">
 
 
   
   <p>
-    This technique relates to
-    
-<a href="https://w3c.github.io/wcag/understanding/info-and-relationships">1.3.1: Info and Relationships</a>
-(<strong>Sufficient</strong>).</p>
+    このテクニックは <a href="https://waic.jp/translations/WCAG22/Understanding/info-and-relationships">1.3.1: 情報及び関係性</a> (<strong>十分なテクニック</strong>) に関連する。</p>
   
 
 
 
-  <p>This technique applies to technologies that support <a href="https://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications</a>.</p>
+  <p>このテクニックは、<a href="https://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications</a> をサポートする技術に適用される。</p>
 
 </div>
 </section>
 	
 
-<section id="description"><h2>Description</h2>
-<p>This technique demonstrates how to assign a generic <code class="language-html">region</code> role to a section of a page so that user agents and assistive technologies may be able to programmatically identify it. The <code class="language-html">region</code> role demarcates a segment of the page that contains content of significance so that it is more readily discoverable and navigable. The generic region should be used when the section cannot be marked up using a standard document landmark role (see <a href="ARIA11">ARIA11</a>).</p>
-<p>It is important to name regions, because they are generic grouping elements and users will need some way to tell which region they are in. Regions can be named using <code class="language-html">aria-labelledby</code>, <code class="language-html">aria-label</code>, or another technique. Doing so helps to better expose content and information relationships on the page. The role of <code class="language-html">region</code> should be used prudently, because if overused they can make the page overly verbose for screen reader users.</p>
-   </section><section id="examples"><h2>Examples</h2>
+<section id="description"><h2>解説</h2>
+<p>このテクニックは、ユーザエージェント及び支援技術がプログラム的にページのセクションを識別できるように、そのページのセクションに汎用的な <code class="language-html">region</code> ロールを割り当てる方法を示す。<code class="language-html">region</code> ロールは、重要なコンテンツを含むページの区分を定めるものであり、それによってその部分がより容易に発見及びナビゲートできるようになる。標準の document ランドマークロールを使用してマークアップできないセクションの場合、汎用的なリージョンを使用すべきである (<a href="ARIA11">ARIA11</a>を参照)。</p>
+<p>リージョンに名前を付けることは重要である。なぜなら、リージョンは汎用的なグループ化要素であり、利用者は自分がどのリージョンにいるのかを知る手段が必要だからである。リージョンには、<code class="language-html">aria-labelledby</code>、<code class="language-html">aria-label</code>、又は他の手法を使用して名前を付けることができる。そうすることで、ページ上のコンテンツ及び情報の関係性をより適切に明示する助けとなる。<code class="language-html">region</code> ロールは慎重に使用すべきである。なぜなら、過剰に使用するとスクリーンリーダーの利用者にとってページが過度に冗長になる可能性があるからである。</p>
+   </section><section id="examples"><h2>事例</h2>
       <section class="example" id="example-1-region-on-a-news-website">
-         <h3>Example 1: Region on a news website</h3>
+         <h3>事例 1: ニュースサイト上のリージョン</h3>
          
-            <p>A section on the home page of a news website that contains a poll that changes every week is marked up with <code class="language-html">role="region"</code>. The <code class="language-html">h3</code> above the form is referenced as the region's name using <code class="language-html">aria-labelledby</code>.</p>
+            <p>ニュースサイトのホームページ上にある、毎週変わる世論調査を含むセクションが、<code class="language-html">role="region"</code> でマークアップされている。フォーム上部の <code class="language-html">h3</code> は、そのリージョンの名前として <code class="language-html">aria-labelledby</code> で参照されている。</p>
 <pre xml:space="preserve"><code class="language-html">&lt;div role="region" aria-labelledby="pollhead"&gt;
   &lt;h3 id="pollhead"&gt;This week's Poll&lt;/h3&gt;
   &lt;form&gt;
@@ -123,9 +116,9 @@
          
       </section>
       <section class="example" id="example-2-identifying-a-region-on-a-banking-site">
-         <h3>Example 2: Identifying a region on a banking site</h3>
+         <h3>事例 2: 銀行サイトでリージョンを識別する</h3>
          
-            <p>A user can expand links on a bank website after logging in to see details of term deposit accounts. The details are within a <code class="language-html">span</code> marked up with <code class="language-html">region</code> role. The heading for the region has <code class="language-html">role=heading</code> and is included in the <code class="language-html">aria-labelledby</code> that names the region.</p>
+            <p>利用者は、銀行のウェブサイトにログインした後、リンクを展開して定期預金口座の詳細を確認できるようになっている。詳細は、<code class="language-html">region</code> ロールでマークアップされた <code class="language-html">span</code> の中にある。リージョンの見出しは <code class="language-html">role=heading</code> を持ち、そのリージョンに名前を付ける <code class="language-html">aria-labelledby</code> に含まれている。</p>
 <pre xml:space="preserve"><code class="language-html">&lt;ol&gt;
   &lt;li&gt;
     &lt;button aria-controls="block1" aria-expanded="false" id="l1" title="show details"
@@ -163,9 +156,9 @@
          
       </section>
       <section class="example" id="example-3-identifying-a-portlet-with-a-generic-region">
-         <h3>Example 3: Identifying a portlet with a generic region</h3>
+         <h3>事例 3: 汎用的なリージョンでポートレットを識別する</h3>
          
-            <p>This example shows how a generic <code class="language-html">region</code> landmark might be added to a weather portlet. There is no existing text on the page that can be referenced as the label, so it is labelled with <code class="language-html">aria-label</code>.
+            <p>この例では、気象ポートレットに汎用的な <code class="language-html">region</code> ランドマークを追加する方法を示している。ラベルとして参照できる既存のテキストがページ内に存在しないため、<code class="language-html">aria-label</code> でラベル付けされている。
 </p>
          
 <pre xml:space="preserve"><code class="language-html">&lt;div role="region" aria-label="weather portlet"&gt; 
@@ -174,8 +167,8 @@
       </section>
    </section>
    <section id="resources">
-      <h2>Related Resources</h2>
-<p style="margin-bottom: 1.5em;"><em><small>No endorsement implied.</small></em></p>
+      <h2>関連リソース</h2>
+<p style="margin-bottom: 1.5em;"><em><small>推奨を意味するものではない。</small></em></p>
 
 
       <ul>
@@ -186,23 +179,23 @@
    </section>
 
 
-<section id="related"><h2>Related Techniques</h2><ul>
+<section id="related"><h2>関連テクニック</h2><ul>
       <li><a href="../aria/ARIA11">ARIA11: Using ARIA landmarks to identify regions of a page</a></li>
       <li><a href="../aria/ARIA12">ARIA12: Using role=heading to identify headings</a></li>
       <li><a href="../aria/ARIA13">ARIA13: Using aria-labelledby to name regions and landmarks</a></li>
    </ul></section>
-<section id="tests"><h2>Tests</h2>
-      <section class="procedure" id="procedure"><h3>Procedure</h3>
-         <p>For each section marked up with <code class="language-html">role="region"</code>:</p>
+<section id="tests"><h2>検証</h2>
+      <section class="procedure" id="procedure"><h3>手順</h3>
+         <p><code class="language-html">role="region"</code> でマークアップされた各セクションについて:</p>
          <ol>
-            <li>Examine the content and ensure that it is important enough to have an independent landmark</li>
-            <li>Ensure that a standard landmark role is not appropriate for this content</li>
-            <li>Check that the region has a programmatically determined name</li>
+            <li>コンテンツを調べ、独立したランドマークを持つのに十分なほど重要であることを確認する。</li>
+            <li>標準のランドマークロールがこのコンテンツに適さないことを確認する。</li>
+            <li>リージョンがプログラムによる解釈が可能な名前を持つことをチェックする。</li>
          </ol>
       </section>
-      <section class="results" id="expected-results"><h3>Expected Results</h3>
+      <section class="results" id="expected-results"><h3>期待される結果</h3>
          <ul>
-            <li>Checks #1-3 are true.</li>
+            <li>1 から 3 の結果が真である。</li>
          </ul>
       </section>
    </section>
@@ -222,14 +215,13 @@
     <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
       <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
     </svg>
-    <h2>Help improve this page</h2>
+    <h2>このページを改善する</h2>
   </header>
   <div class="box-i">
-  <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org</a> or via GitHub</p>
+  <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。</p>
     <div class="button-group">
-      <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a>
-      <a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a>
-      <a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a>
+      <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdIpvogLx8kGIMewhQ6MzhG2pOCQZ50iIBViGg8pUrRJuslKg/viewform?entry.685195438=https%3A%2F%2Fwaic.jp%2Ftranslations%2FWCAG22%2FUnderstanding%2Ffocus-not-obscured-minimum" id="file-issue">翻訳に関するお問い合わせ (Google フォーム)</a>
+      <a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a>
     </div>
   </div>
 </aside>
@@ -251,12 +243,15 @@
       <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project,
       co-funded by the European Commission.
     </p>
+    <p>この文書は、2025 年 5 月 21 日付けの <a href="https://w3c.github.io/wcag/techniques/">Techniques for WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+    </p>
+    <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
   </div>
 </footer>
 
 <footer class="site-footer grid-4q" aria-label="Site">
   <div class="q1-start q3-end about">
-    <div>
+    <!--div>
       <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
       <p>Strategies, standards, and supporting resources to make the Web accessible to people with disabilities.</p>
     </div>
@@ -267,12 +262,12 @@
         <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube " viewBox="0 0 32 32"><path d="M31.327 8.273c-0.386-1.353-1.431-2.398-2.756-2.777l-0.028-0.007c-2.493-0.668-12.528-0.668-12.528-0.668s-10.009-0.013-12.528 0.668c-1.353 0.386-2.398 1.431-2.777 2.756l-0.007 0.028c-0.443 2.281-0.696 4.903-0.696 7.585 0 0.054 0 0.109 0 0.163l-0-0.008c-0 0.037-0 0.082-0 0.126 0 2.682 0.253 5.304 0.737 7.845l-0.041-0.26c0.386 1.353 1.431 2.398 2.756 2.777l0.028 0.007c2.491 0.669 12.528 0.669 12.528 0.669s10.008 0 12.528-0.669c1.353-0.386 2.398-1.431 2.777-2.756l0.007-0.028c0.425-2.233 0.668-4.803 0.668-7.429 0-0.099-0-0.198-0.001-0.297l0 0.015c0.001-0.092 0.001-0.201 0.001-0.31 0-2.626-0.243-5.196-0.708-7.687l0.040 0.258zM12.812 20.801v-9.591l8.352 4.803z"></path></svg> YouTube</a></li>
         <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
       </ul>
-    </div>
+    </div-->
     <div dir="auto" translate="no" lang="en">
       <p>Copyright © 2025 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
     </div>
   </div>
-  <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+  <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
     <ul style="margin-bottom:0">
       <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
       <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -281,7 +276,7 @@
       <li><a href="/WAI/translations/"> Translations</a></li>
       <li><a href="/WAI/roles/">Resources for Roles</a></li>
     </ul>
-  </div>
+  </div-->
 </footer>
 
 <link rel="stylesheet" href="../a11y-light.css">
@@ -295,7 +290,7 @@
 </script>
 <script src="https://www.w3.org/WAI/assets/scripts/main.js"></script>
 
-<script>
+<!--script>
   var _paq = _paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
   _paq.push(["setDoNotTrack", true]);
@@ -311,7 +306,8 @@
 </script>
 <noscript>
   <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-</noscript>
+</noscript-->
+<script src="https://waic.jp/docs/js/translation-contact.js"></script>
 
 
 </body></html>
