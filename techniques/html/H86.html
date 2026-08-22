@@ -1,6 +1,6 @@
-<!DOCTYPE html><html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
+<!DOCTYPE html><html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml"><head>
 <meta charset="UTF-8">
-<title>H86: Providing text alternatives for emojis, emoticons, ASCII art, and leetspeak | WAI | W3C</title>
+      <title>H86: 絵文字、顔文字、ASCII アート、リート語の代替テキストを提供する | WAI | W3C</title>
       
    
 
@@ -11,8 +11,6 @@
 
 
 
-<!-- 日本語訳されるまでの一時的なスクリプト -->
-<script src="../untranslated-note.js"></script>
 </head>
    <body dir="ltr">
 
@@ -20,12 +18,12 @@
 <div class="minimal-header-container default-grid">
   <header class="minimal-header" id="site-header">
     <div class="minimal-header-name">
-      <a href="https://w3c.github.io/wcag/techniques/">WCAG 2.2 Techniques</a>
+      <a href="https://waic.jp/translations/WCAG22/Techniques/">WCAG 2.2 テクニック集</a>
     </div>
     
       <div class="minimal-header-subtitle">Examples of ways to meet WCAG; not required</div>
     
-    <a class="minimal-header-link" href="https://w3c.github.io/wcag/techniques/about">About WCAG Techniques</a>
+    <a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Techniques/about">WCAG テクニック集について</a>
     <div class="minimal-header-logo">
       <a href="http://w3.org/" aria-label="W3C">
         <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44">
@@ -54,44 +52,40 @@
 
 <div class="default-grid with-gap leftcol">
 <aside class="box nav-hack sidebar standalone-resource__sidebar">
-    <header class="box-h">Page Contents</header>
+    <header class="box-h">このページの内容</header>
     <div class="box-i">
       <nav aria-label="page contents" class="navtoc">
-        <ul><li><a href="#technique">About this Technique</a></li>
-<li><a href="#description">Description</a></li>
-<li><a href="#examples">Examples</a></li>
-<li><a href="#resources">Related Resources</a></li>
-<li><a href="#tests">Tests</a></li>
+        <ul><li><a href="#technique">このテクニックについて</a></li>
+<li><a href="#description">解説</a></li>
+<li><a href="#examples">事例</a></li>
+<li><a href="#resources">関連リソース</a></li>
+<li><a href="#tests">検証</a></li>
 </ul>
       </nav>
     </div>
 </aside>
 
 <main id="main" class="standalone-resource__main">
-<!-- 日本語訳されるまでの一時的な注記 -->
-<div class="untranslated-note"><p>このWCAG 2.2 テクニック集の日本語訳は作業中となっています。WCAG 2.1 達成方法集の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Techniques/">WCAG 2.1 達成方法集</a> ]</p></div>
       
-<h1><span>Technique H86:</span>Providing text alternatives for emojis, emoticons, <abbr title="American Standard Code for Information Interchange">ASCII</abbr> art, and leetspeak</h1>
+<h1><span>テクニック H86:</span>絵文字、顔文字、<abbr title="American Standard Code for Information Interchange">ASCII</abbr> アート、リート語の代替テキストを提供する</h1>
 
 
 
 
 <section id="technique" class="box">
-	<h2 class="box-h box-h-icon">About this Technique</h2>
+	<h2 class="box-h box-h-icon">このテクニックについて</h2>
 	<div class="box-i">
 
 
   
   <p>
-    This technique relates to
-    
-<a href="https://w3c.github.io/wcag/understanding/non-text-content">1.1.1: Non-text Content</a>
-(<strong>Sufficient</strong>).</p>
+    このテクニックは<a href="https://waic.jp/translations/WCAG22/Understanding/non-text-content">1.1.1: 非テキストコンテンツ</a>
+(<strong>十分なテクニック</strong>) に関連する。</p>
   
 
 
 
-  <p>This technique applies to <abbr title="HyperText Markup Language">HTML</abbr>.</p>
+  <p>このテクニックは <abbr title="HyperText Markup Language">HTML</abbr> に適用される。</p>
 
 </div>
 </section>
@@ -101,27 +95,27 @@
       
       
       <section id="description">
-         <h2>Description</h2>
-         <p>Emojis are very popular and are frequently used online to help provide more context and expression to text-based communication. Emojis come with their own pre-defined names that might not always match what the author is intending to communicate. For example, the emoji of a black right-facing triangle (►) is described by default as <i>black right-pointing pointer</i>, which would be confusing if a designer had changed its rotation or color, or if it was being used to give the accessible name to a "play" button in a multimedia player.</p>
-         <p>Emoticons pre-date emojis, are still used but are much less popular than they once were. Emoticons use ASCII characters to create facial expressions and other ways to communicate an emotion. Because emoticons are made from many text characters, they can be confusing for screen reader users. When possible it is better simply to use a word like "smile" or a suitable emoji instead of an emoticon. If emoticons are used they should have a text alternative.</p>
-         <p>ASCII art was common on the internet before graphics became widely used. ASCII characters were arranged to form pictures, pictures of text, or graphs. Although ASCII content is not used frequently on the web anymore, it must be remembered that, when it is used, it can be very confusing to people who are accessing the internet using screen readers. If ASCII art is used, it should also have a text explanation of what the picture is. It is also suggested that, if the ASCII picture isn't marked up as an image using <abbr title="Accessible Rich Internet Applications">ARIA</abbr>, that there is a link to skip over the art (although this is not required).</p>
+         <h2>解説</h2>
+         <p>絵文字は非常に人気があり、テキストベースのコミュニケーションにより多くの文脈及び表現を加えるためにオンラインで頻繁に使用されている。絵文字には独自の定義済みの名前が付けられているが、必ずしもコンテンツ制作者が伝えようとしているものと一致しない場合がある。例えば、黒い右向きの三角形 (►) の絵文字は、デフォルトでは<i>黒い右向きのポインター</i>として描画されており、デザイナーが回転もしくは色を変更した場合、又はマルチメディアプレーヤーの「再生」ボタンにアクセシブルな名前 (name) を付けるために使用された場合、混乱を招く可能性がある。</p>
+         <p>顔文字は絵文字よりも古く、今でも使われているが、かつてほど人気は高くない。顔文字は、顔の表情及びその他の感情表現を伝える方法を作成するために ASCII 文字を使用する。顔文字は多くのテキスト文字で構成されているため、スクリーンリーダーの利用者にとって混乱を招く可能性がある。可能であれば、顔文字の代わりに「スマイル」のような単語又は適切な絵文字を使用する方がよい。顔文字を使用する場合は、代替テキストを用意するべきである。</p>
+         <p>グラフィックスが広く使用されるようになる前は、ASCII アートはインターネット上で一般的であった。ASCII 文字は、画像、テキストの画像、グラフを形成するように配置されていた。ASCII コンテンツは現在ではウェブ上であまり使用されなくなったが、スクリーンリーダーを使用してインターネットにアクセスする人にとって非常に混乱を招く可能性があることを覚えておかなければならない。ASCII アートを使用する場合は、画像が何であるかをテキストでも説明すべきである。また、ASCII 画像が <abbr title="Accessible Rich Internet Applications">ARIA</abbr> を使用して画像としてマークアップされていない場合は、アートをスキップするためのリンクを用意することを勧める  (ただし、これは必須ではない)。</p>
 
-         <p>Leet used to be a fairly-common part of Internet culture and slang, but is now hardly used. Leetspeak uses various combinations of characters, including numerals and special characters, to replace standard characters. Leet is often incomprehensible to people using screen readers, and therefore requires a text alternative in order to conform to <a href="https://w3c.github.io/wcag/understanding/non-text-content.html">Success Criterion 1.1.1 (Non-Text Content)</a>.</p>
+         <p>リート語はかつてインターネット文化及びスラングとしてかなり一般的であったが、現在ではほとんど使われていない。リート語は、数字及び特殊文字を含む様々な文字の組み合わせで標準的な文字を置き換える。リート語はスクリーンリーダーを使用する人にとって理解しにくい場合が多いため、<a href="https://waic.jp/translations/WCAG22/Understanding/non-text-content">達成基準1.1.1 (非テキストコンテンツ)</a> に適合するためには、テキストによる代替が必要である。</p>
 
       </section>
       <section id="examples">
-         <h2>Examples</h2>
+         <h2>事例</h2>
          <section class="example" id="example-1-marking-up-emojis-in-a-sentence">
-            <h3>Example 1: Marking up emojis in a sentence</h3>
-            <p>This shows a technique to mark up emojis with accessible names that differ from their default. Because you can't use an <code class="language-html">alt</code> attribute on a <code class="language-html">span</code> element and the <abbr title="Accessible Rich Internet Applications">ARIA</abbr> recommendation disallows accessible names on generic elements, to give the emojis accessible names they are defined as images with the ARIA <code class="language-html">role="img"</code> property which then allows the creation of an accessible name using the <code class="language-html">aria-label</code> property.</p>
+            <h3>事例 1: 文中の絵文字のマークアップ</h3>
+            <p>これは、絵文字をデフォルトとは異なるアクセシブルな名前 (name) でマークアップする手法を示している。<code class="language-html">span</code> 要素では <code class="language-html">alt</code> 属性を使用できず、<abbr title="Accessible Rich Internet Applications">ARIA</abbr> 勧告では汎用の要素にアクセシブルな名前 (name) を使用することが禁止されているため、絵文字にアクセシブルな名前 (name) を付けるには、ARIA <code class="language-html">role="img"</code> を持つ画像として定義し、<code class="language-html">aria-label</code> プロパティを使用してアクセシブルな名前 (name) を作成できるようにする。</p>
 <pre xml:space="preserve"><code class="language-html">&lt;p&gt;I smiled at my friend and gestured 
    &lt;span aria-label="you" role="img"&gt;👉🏾&lt;/span&gt;
    &lt;span aria-label="rock" role="img"&gt;🤘🏾&lt;/span&gt;!
 &lt;/p&gt;</code></pre>
          </section>
          <section class="example" id="example-2-four-options-for-providing-alternatives-for-an-emoticon-representing-&quot;smile&quot;">
-            <h3>Example 2: Four options for providing alternatives for an emoticon representing "smile"</h3>
-            <p>The following shows four options for providing alternatives for an emoticon representing "smile", which is consists of a colon followed by a closing parenthesis.</p>
+            <h3>事例 2: 「smile」を表す顔文字の代替案を提供する四つのオプション</h3>
+            <p>次は、「smile」を表す顔文字 (コロンと閉じ括弧で構成) の代替を提供する四つのオプションを示している。</p>
 <pre xml:space="preserve">:) (smile)
 <code class="language-html">&lt;abbr title="smile"&gt;:)&lt;/abbr&gt;
 &lt;span aria-label="smile" role="img"&gt;:)&lt;/span&gt;
@@ -129,8 +123,8 @@
 </section>
 
          <section class="example" id="example-3-using-the-aria-label-and-role=&quot;img&quot;-properties">
-            <h3>Example 3: Using the <code class="language-html">aria-label</code> and <code class="language-html">role="img"</code> properties</h3>
-            <p>Adding the <code class="language-html">role="img"</code> property to the ASCII content's containing element defines it as an image, and the <code class="language-html">aria-label</code> property gives it the required text alternative. <a href="#ascii-butterfly">Skip to the next ASCII example</a>.</p>
+            <h3>事例 3: <code class="language-html">aria-label</code> プロパティ及び <code class="language-html">role="img"</code> プロパティの使用</h3>
+            <p>ASCII コンテンツを含む要素に <code class="language-html">role="img"</code> プロパティを追加すると、その要素は画像として定義され、<code class="language-html">aria-label</code> プロパティによって必要な代替テキストが付与される。<a href="#ascii-butterfly">次の ASCII の事例にスキップする</a>。</p>
 <pre xml:space="preserve"><code class="language-html">
 &lt;div aria-label="WCAG" role="img"&gt;
 oooooo   oooooo     oooo   .oooooo.         .o.         .oooooo.    
@@ -143,8 +137,8 @@ oooooo   oooooo     oooo   .oooooo.         .o.         .oooooo.
 &lt;/div&gt;</code></pre>
          </section>
       <section class="example" id="example-4-ascii-art-with-an-explanation-of-the-picture-preceding-it">
-         <h3 id="ascii-butterfly">Example 4: ASCII art with an explanation of the picture preceding it</h3>
-         <p>This example includes a link to skip over the ASCII art. <a href="#leetspeek">Skip to the Leetspeak example</a>.</p>
+         <h3 id="ascii-butterfly">事例 4: 画像の説明が手前にある ASCII アート</h3>
+         <p>この事例には、ASCII アートをスキップするためのリンクが含まれている。<a href="#leetspeek">リート語の事例にスキップする</a>。</p>
          
 <pre xml:space="preserve"><code class="language-html">&lt;figure&gt;
   &lt;figcaption&gt;
@@ -202,15 +196,15 @@ LLLLLLLLLLLLLLLL_  __L       _L  LLLLLLLL      LLL_ LLLLLLLLLLLLLLLLLLLLL
 &lt;p id="skipbutterfly"&gt;New content after the ASCII image.&lt;/p&gt;</code></pre>
       </section>
       <section class="example" id="example-5-marking-up-leetspeak">
-         <h3 id="leetspeek">Example 5: Marking up Leetspeak</h3>
-         <p>The following is Leetspeak for "Austin Rocks".</p>
+         <h3 id="leetspeek">事例 5: リート語のマークアップ</h3>
+         <p>次は、"Austin Rocks" のリート語である。</p>
 <pre xml:space="preserve"><code class="language-html">&lt;abbr title="Austin Rocks"&gt;Au5t1N r0xx0rz&lt;/abbr&gt;</code></pre>
       </section>
    </section>
    
    <section id="resources">
-      <h2>Related Resources</h2>
-<p style="margin-bottom: 1.5em;"><em><small>No endorsement implied.</small></em></p>
+      <h2>関連リソース</h2>
+<p style="margin-bottom: 1.5em;"><em><small>推奨を意味するものではない。</small></em></p>
 
 
       <ul>
@@ -222,24 +216,24 @@ LLLLLLLLLLLLLLLL_  __L       _L  LLLLLLLL      LLL_ LLLLLLLLLLLLLLLLLLLLL
 
 
 <section id="tests">
-      <h2>Tests</h2>
+      <h2>検証</h2>
       <section class="procedure" id="procedure">
-         <h3>Procedure</h3>
+         <h3>手順</h3>
          <ol>
-            <li>Check to see that the content contains emojis, emoticons, ASCII art, or leetspeak.</li>
-            <li>Check that each emoji has a text alternative that serves an equivalent purpose.</li>
-            <li>Check that each ASCII artwork, emoticon, and / or Leetspeak either:
+            <li>コンテンツに絵文字、顔文字、ASCII アート、又はリート語が含まれていることをチェックする。</li>
+            <li>それぞれの絵文字に同等の目的を果たすテキストによる代替があることをチェックする。</li>
+            <li>それぞれ ASCII アートワーク、顔文字、及び／又はリート語が、次のいずれかであることをチェックする:
                <ol>
-                  <li>is marked up as an image with a text alternative that serves an equivalent purpose; or</li>
-                  <li>has a text alternative immediately before or after.</li>
+                  <li>同等の目的を果たすテキストによる代替を含む画像としてマークアップされている。又は、</li>
+                  <li>直前又は直後にテキストによる代替がある。</li>
                </ol>
             </li>
          </ol>
       </section>
       <section class="results" id="expected-results">
-         <h3>Expected Results</h3>
+         <h3>期待される結果</h3>
          <ul>
-            <li>Checks #2 and #3 are true.</li>
+            <li>チェック 2 及び 3 が真である。</li>
          </ul>
       </section>
    </section>
@@ -259,14 +253,13 @@ LLLLLLLLLLLLLLLL_  __L       _L  LLLLLLLL      LLL_ LLLLLLLLLLLLLLLLLLLLL
     <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
       <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
     </svg>
-    <h2>Help improve this page</h2>
+    <h2>このページを改善する</h2>
   </header>
   <div class="box-i">
-  <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org</a> or via GitHub</p>
+  <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。</p>
     <div class="button-group">
-      <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a>
-      <a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a>
-      <a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a>
+      <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdIpvogLx8kGIMewhQ6MzhG2pOCQZ50iIBViGg8pUrRJuslKg/viewform?entry.685195438=https%3A%2F%2Fwaic.jp%2Ftranslations%2FWCAG22%2FUnderstanding%2Ffocus-not-obscured-minimum" id="file-issue">翻訳に関するお問い合わせ (Google フォーム)</a>
+      <a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a>
     </div>
   </div>
 </aside>
@@ -288,12 +281,15 @@ LLLLLLLLLLLLLLLL_  __L       _L  LLLLLLLL      LLL_ LLLLLLLLLLLLLLLLLLLLL
       <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project,
       co-funded by the European Commission.
     </p>
+    <p>この文書は、2025 年 5 月 21 日付けの <a href="https://w3c.github.io/wcag/techniques/">Techniques for WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+    </p>
+    <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
   </div>
 </footer>
 
 <footer class="site-footer grid-4q" aria-label="Site">
   <div class="q1-start q3-end about">
-    <div>
+    <!--div>
       <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
       <p>Strategies, standards, and supporting resources to make the Web accessible to people with disabilities.</p>
     </div>
@@ -304,12 +300,12 @@ LLLLLLLLLLLLLLLL_  __L       _L  LLLLLLLL      LLL_ LLLLLLLLLLLLLLLLLLLLL
         <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube " viewBox="0 0 32 32"><path d="M31.327 8.273c-0.386-1.353-1.431-2.398-2.756-2.777l-0.028-0.007c-2.493-0.668-12.528-0.668-12.528-0.668s-10.009-0.013-12.528 0.668c-1.353 0.386-2.398 1.431-2.777 2.756l-0.007 0.028c-0.443 2.281-0.696 4.903-0.696 7.585 0 0.054 0 0.109 0 0.163l-0-0.008c-0 0.037-0 0.082-0 0.126 0 2.682 0.253 5.304 0.737 7.845l-0.041-0.26c0.386 1.353 1.431 2.398 2.756 2.777l0.028 0.007c2.491 0.669 12.528 0.669 12.528 0.669s10.008 0 12.528-0.669c1.353-0.386 2.398-1.431 2.777-2.756l0.007-0.028c0.425-2.233 0.668-4.803 0.668-7.429 0-0.099-0-0.198-0.001-0.297l0 0.015c0.001-0.092 0.001-0.201 0.001-0.31 0-2.626-0.243-5.196-0.708-7.687l0.040 0.258zM12.812 20.801v-9.591l8.352 4.803z"></path></svg> YouTube</a></li>
         <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
       </ul>
-    </div>
+    </div-->
     <div dir="auto" translate="no" lang="en">
       <p>Copyright © 2025 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
     </div>
   </div>
-  <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+  <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
     <ul style="margin-bottom:0">
       <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
       <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -318,7 +314,7 @@ LLLLLLLLLLLLLLLL_  __L       _L  LLLLLLLL      LLL_ LLLLLLLLLLLLLLLLLLLLL
       <li><a href="/WAI/translations/"> Translations</a></li>
       <li><a href="/WAI/roles/">Resources for Roles</a></li>
     </ul>
-  </div>
+  </div-->
 </footer>
 
 <link rel="stylesheet" href="../a11y-light.css">
@@ -332,7 +328,7 @@ LLLLLLLLLLLLLLLL_  __L       _L  LLLLLLLL      LLL_ LLLLLLLLLLLLLLLLLLLLL
 </script>
 <script src="https://www.w3.org/WAI/assets/scripts/main.js"></script>
 
-<script>
+<!--script>
   var _paq = _paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
   _paq.push(["setDoNotTrack", true]);
@@ -348,7 +344,7 @@ LLLLLLLLLLLLLLLL_  __L       _L  LLLLLLLL      LLL_ LLLLLLLLLLLLLLLLLLLLL
 </script>
 <noscript>
   <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-</noscript>
-
+</noscript-->
+<script src="https://waic.jp/docs/js/translation-contact.js"></script>
 
 </body></html>
