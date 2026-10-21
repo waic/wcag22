@@ -84,7 +84,7 @@
 
 
 
-  <p>このテクニックは、<a href="https://www.w3.org/TR/wai-aria/">WAI-<abbr title="Accessible Rich Internet Applications">ARIA</abbr></a> を用いる HTMLに適用される。</p>
+  <p>このテクニックは、<a href="https://www.w3.org/TR/wai-aria/">WAI-<abbr title="Accessible Rich Internet Applications">ARIA</abbr></a> を用いる HTML に適用される。</p>
 
 </div>
 </section>
@@ -97,16 +97,16 @@
       <section id="description">
 
          <h2>解説</h2>
-         <p>このテクニックの目的は、アイコンにフォントファイルが使用されている要素を、意味的に識別する方法を示すことである。利用者がフォントファミリーを上書きすると、識別する手段がない限りそのアイコンは消える。つまり、アイコンフォントを一般的なフォント（テキスト）の使用法と区別する手段を提供する。</p>
+         <p>このテクニックの目的は、アイコンにフォントファイルが使用されている要素を、意味的に識別する方法を示すことである。利用者がフォントファミリーを上書きすると、識別する手段がない限りそのアイコンは消える。つまり、アイコンフォントを一般的なフォント (テキスト) の使用法と区別する手段を提供する。</p>
 
-         <p>一部のロービジョンの利用者は、テキストコンテンツを認識するためにユーザスタイルシート、スクリプト、又は拡張機能を使いページ上のフォントを上書きする必要がある。しかし、お気に入りを示す星やリンク内のメールアイコンなど、意味のあるアイコンフォントは認識できる必要がある。</p>
+         <p>一部のロービジョンの利用者は、テキストコンテンツを認識するためにユーザスタイルシート、スクリプト、又は拡張機能を使いページ上のフォントを上書きする必要がある。しかし、お気に入りを示す星、リンク内のメールアイコンなど、意味のあるアイコンフォントは認識できる必要がある。</p>
 
          <p>重要なのは、コンテンツ制作者が <code class="language-html">role="img"</code> を使用してアイコンフォントを意味的にマークアップすることである。これにより利用者のフォント置換セレクタはそのセマンティックにフックして <code class="language-html">role="img"</code> を除外できる。この結果、アイコンフォントは表示されたままとなる。</p>
 
          <h3>テクニックの基本原則</h3>
 
          <h4>1. コンテンツ制作者が CSS に font-face を追加する</h4>
-         <p>最初に、 CSS ファイルでアイコンのフォントを追加する。</p>
+         <p>最初に、CSS ファイルでアイコンのフォントを追加する。</p>
          <pre xml:space="preserve"><code class="language-html">/* specify font-family name for icons */
 @font-face { font-family: 'IconFontRoleImg'; }
 
@@ -126,7 +126,7 @@
 &lt;/p&gt;</code></pre>
 
          <h4>3. 利用者の CSS ファイルが、アイコンファイルを除いて font-family を置き換える</h4>
-         <p>最後に、 ":not セレクタ" と "[属性] セレクタ" を組み合わせて使用し、通常のテキストのフォントを置き換える。</p>
+         <p>最後に、":not セレクタ" と "[属性] セレクタ" を組み合わせて使用し、通常のテキストのフォントを置き換える。</p>
          <pre xml:space="preserve"><code class="language-html">/* replaces font faces but excludes all elements with attribute role="img" */
 *:not([role="img"]) { font-family: Verdana, sans-serif !important; }</code></pre>
 
@@ -138,7 +138,7 @@
          <section class="example" id="example-1-star-icon-font-used-as-an-indicator-not-interactive">
 
             <h3>事例 1: 指標として使われる星のアイコン (インタラクティブではない)</h3>
-            <p>この例では星のアイコンがお気に入りを示すものとして使われる。インタラクティブではなく、かつ、利用者がCSSでフォントファミリーを上書きしても消えることはない。</p>
+            <p>この例では星のアイコンがお気に入りを示すものとして使われる。インタラクティブではなく、かつ、利用者が CSS でフォントファミリーを上書きしても消えることはない。</p>
 
 			<section id="author-css">
             <h4>コンテンツ制作者の CSS</h4>
@@ -170,7 +170,7 @@
          	<section id="working-example">
             <h4>動作例:</h4>
             <p>
-               <a href="https://www.w3.org/WAI/WCAG22/working-examples/aria-icon-font-img-role/#example1">指標として使われる星のアイコン (インタラクティブではない)</a>
+               <a href="https://www.w3.org/WAI/WCAG22/working-examples/aria-icon-font-img-role/#example1">Star Icon Font used as an indicator (not interactive)</a>
             </p>
          	</section>
          </section>
@@ -178,7 +178,7 @@
          <section class="example" id="example-2-two-colored-/-stacked-star-icon-font-used-as-an-indicator">
 
             <h3>事例 2: 2 色を重ねた星のアイコンフォント</h3>
-            <p>この例では、異なる色のフォントを重ね合わせて 2 色の星のアイコンを作成する。このようにすると、星の半分までを示しているように見せることができる。インタラクティブではなく、かつ、利用者がCSSでフォントファミリーを上書きしても消えることはない。</p>
+            <p>この例では、異なる色のフォントを重ね合わせて 2 色の星のアイコンを作成する。このようにすると、星の半分までを示しているように見せることができる。インタラクティブではなく、かつ、利用者が CSS でフォントファミリーを上書きしても消えることはない。</p>
 			<section id="author-css">
             <h4>コンテンツ制作者の CSS</h4>
             <pre xml:space="preserve"><code class="language-css">/* default class for fonts-face with icons */
@@ -212,7 +212,7 @@
          	<section id="working-example">
             <h4>動作例:</h4>
             <p>
-               <a href="https://www.w3.org/WAI/WCAG22/working-examples/aria-icon-font-img-role/#example2">2色を重ねた星のアイコンフォント</a>
+               <a href="https://www.w3.org/WAI/WCAG22/working-examples/aria-icon-font-img-role/#example2">Two colored / stacked star Icon Font used as an indicator</a>
             </p>
          	</section>
          </section>
@@ -220,7 +220,7 @@
          <section class="example" id="example-3-email-icon-font-in-a-link-without-visible-text">
 
             <h3>事例 3: 表示テキストのない、リンク内のメールアイコンフォント</h3>
-            <p>この例では、メールのアイコンがリンク内にあり、テキストは表示されていない。利用者がフォントファミリーを上書きしても消えない。アイコンフォントは、支援技術によって（キーボード又はマウス操作時に）"リンクされた画像" 及び "電子メール" として識別される。</p>
+            <p>この例では、メールのアイコンがリンク内にあり、テキストは表示されていない。利用者がフォントファミリーを上書きしても消えない。アイコンフォントは、支援技術によって (キーボード又はマウス操作時に) "リンクされた画像" 及び "電子メール" として識別される。</p>
 			<section id="author-css">
             <h4>コンテンツ制作者の CSS</h4>
             <pre xml:space="preserve"><code class="language-css">/* default class for fonts-face with icons */
@@ -251,7 +251,7 @@
          	<section id="working-example">
             <h4>動作例:</h4>
             <p>
-               <a href="https://www.w3.org/WAI/WCAG22/working-examples/aria-icon-font-img-role/#example3">表示テキストのない、リンク内のメールアイコンフォント</a>
+               <a href="https://www.w3.org/WAI/WCAG22/working-examples/aria-icon-font-img-role/#example3">Email Icon Font in a link WITHOUT visible text</a>
             </p>
          	</section>
          </section>
@@ -260,7 +260,7 @@
 
             <h3>事例 4: 表示テキストのあるセマンティック要素の一部としての複数のアイコンフォント</h3>
 
-            <p>この例では、アクセシブルな名前 (accessible name)として使用するために、リンクにテキストラベルが既に表示されている。フォントファミリーが変更されても、メールとシェブロンのフォントアイコンは表示されていなければならない。これは、アイコンがそれぞれの要素に含まれ、かつ、支援技術によってフォントアイコンが無視されるように属性 <code>aria-hidden="true"</code> が使用されることで実現できる。</p>
+            <p>この例では、アクセシブルな名前 (accessible name) として使用するために、リンクにテキストラベルが既に表示されている。フォントファミリーが変更されても、メールとシェブロンのフォントアイコンは表示されていなければならない。これは、アイコンがそれぞれの要素に含まれ、かつ、支援技術によってフォントアイコンが無視されるように属性 <code>aria-hidden="true"</code> が使用されることで実現できる。</p>
 			<section id="author-css">
             <h4>コンテンツ制作者の CSS</h4>
             <pre xml:space="preserve"><code class="language-css">/* default class for fonts-face with icons */
@@ -302,7 +302,7 @@
          	<section id="working-example">
             <h4>動作例:</h4>
             <p>
-               <a href="https://www.w3.org/WAI/WCAG22/working-examples/aria-icon-font-img-role/#example4">表示テキストのあるセマンティック要素の一部としての複数のアイコンフォント</a>
+               <a href="https://www.w3.org/WAI/WCAG22/working-examples/aria-icon-font-img-role/#example4">Multiple Icon Fonts as part of another sematic element WITH visible text</a>
             </p>
          	</section>
          </section>
