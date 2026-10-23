@@ -153,7 +153,7 @@
 				</section>
 				<section class="example" id="example-4-adding-a-text-alternative-to-an-image-in-a-pdf-document-using-an-/alt-entry">
 					<h3>事例 4: <code>/Alt</code> エントリを使用して PDF 文書内の画像にテキストによる代替を追加する</h3>
-					<p>山と月と木々の画像の場合、<code>/Alt</code> プロパティは次のように使用される (通常、オーサリングツールを使用して行う)。</p>
+					<p>山と月と木々の画像の場合、<code>/Alt</code> プロパティは次のように使用される (通常、オーサリングツールを使用して行う):</p>
 <pre xml:space="preserve"><code>/Figure &lt;&lt;/Alt (Sketch of Mountains with moon rising over trees)&gt;&gt;</code></pre>
 					<p>この画像は別の名前のタグで表示される場合がある。別の名前が使用されるのは、タグ名が英語以外の言語で記述されているか、特定のツールで何らかの理由で別の名前が使用されているためである。そのような状況では、PDF 文書の <code>StructTreeRoot</code> にある <code>RoleMap</code> に、PDF 文書で使用される標準的な構造タイプを持つ画像で使用されるタグの名前 (この場合は Figure) を明示的に割り当てるエントリが含まれていなければならない。RoleMap に Shape タグと Figure タグのエントリマッピングだけが含まれる場合、ロールマップ情報は次のように表示される。</p>
 <pre xml:space="preserve"><code>/RoleMap &lt;&lt; /Shape /Figure &gt;&gt;</code></pre>
