@@ -155,7 +155,7 @@
 					<h3>事例 4: <code>/Alt</code> エントリを使用して PDF 文書内の画像にテキストによる代替を追加する</h3>
 					<p>山と月と木々の画像の場合、<code>/Alt</code> プロパティは次のように使用される (通常、オーサリングツールを使用して行う):</p>
 <pre xml:space="preserve"><code>/Figure &lt;&lt;/Alt (Sketch of Mountains with moon rising over trees)&gt;&gt;</code></pre>
-					<p>この画像は別の名前のタグで表示される場合がある。別の名前が使用されるのは、タグ名が英語以外の言語で記述されているか、特定のツールで何らかの理由で別の名前が使用されているためである。そのような状況では、PDF 文書の <code>StructTreeRoot</code> にある <code>RoleMap</code> に、PDF 文書で使用される標準的な構造タイプを持つ画像で使用されるタグの名前 (この場合は Figure) を明示的に割り当てるエントリが含まれていなければならない。RoleMap に Shape タグと Figure タグのエントリマッピングだけが含まれる場合、ロールマップ情報は次のように表示される。</p>
+					<p>画像は、別の名前を持つタグで表現される場合がある。タグ名が英語以外の言語で記述されている、又は特定のツールが何らかの理由で別の名前を使用しているために、別の名前が使用されることがある。そのような状況では、PDF 文書の <code>StructTreeRoot</code> にある <code>RoleMap</code> に、PDF 文書で使用される標準的な構造タイプと、画像に使用されるタグの名前 (この場合は Figure) とを明示的に割り当てるエントリを含む必要がある。RoleMap に Shape タグを Figure タグに対応付けるエントリだけが含まれる場合、<code>rolemap</code> 情報は次のように表示される:</p>
 <pre xml:space="preserve"><code>/RoleMap &lt;&lt; /Shape /Figure &gt;&gt;</code></pre>
 					<p>この場合、<code>/Alt</code> エントリは次のように使用することも適切である:</p>
 <pre xml:space="preserve"><code>/Shape &lt;&lt;/Alt (Crater Lake in the summer, with the blue sky, clouds and
