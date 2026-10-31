@@ -1,6 +1,6 @@
-<!DOCTYPE html><html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
+<!DOCTYPE html><html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml"><head>
 <meta charset="UTF-8">
-<title>PDF2: Creating bookmarks in PDF documents | WAI | W3C</title>
+<title>PDF2: PDF 文書内でしおりを作成する | WAI | W3C</title>
 		
 	
 
@@ -11,8 +11,6 @@
 
 
 
-<!-- 日本語訳されるまでの一時的なスクリプト -->
-<script src="../untranslated-note.js"></script>
 </head>
 	<body dir="ltr">
 
@@ -20,12 +18,12 @@
 <div class="minimal-header-container default-grid">
   <header class="minimal-header" id="site-header">
     <div class="minimal-header-name">
-      <a href="https://w3c.github.io/wcag/techniques/">WCAG 2.2 Techniques</a>
+      <a href="https://waic.jp/translations/WCAG22/Techniques/">WCAG 2.2 テクニック集</a>
     </div>
     
       <div class="minimal-header-subtitle">Examples of ways to meet WCAG; not required</div>
     
-    <a class="minimal-header-link" href="https://w3c.github.io/wcag/techniques/about">About WCAG Techniques</a>
+    <a class="minimal-header-link" href="https://waic.jp/translations/WCAG22/Techniques/about">WCAG テクニック集について</a>
     <div class="minimal-header-logo">
       <a href="http://w3.org/" aria-label="W3C">
         <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44">
@@ -54,45 +52,43 @@
 
 <div class="default-grid with-gap leftcol">
 <aside class="box nav-hack sidebar standalone-resource__sidebar">
-    <header class="box-h">Page Contents</header>
+    <header class="box-h">このページの内容</header>
     <div class="box-i">
       <nav aria-label="page contents" class="navtoc">
-        <ul><li><a href="#technique">About this Technique</a></li>
-<li><a href="#description">Description</a></li>
-<li><a href="#examples">Examples</a></li>
-<li><a href="#resources">Related Resources</a></li>
-<li><a href="#related">Related Techniques</a></li>
-<li><a href="#tests">Tests</a></li>
+        <ul><li><a href="#technique">このテクニックについて</a></li>
+<li><a href="#description">解説</a></li>
+<li><a href="#examples">事例</a></li>
+<li><a href="#resources">関連リソース</a></li>
+<li><a href="#related">関連テクニック</a></li>
+<li><a href="#tests">検証</a></li>
 </ul>
       </nav>
     </div>
 </aside>
 
 <main id="main" class="standalone-resource__main">
-<!-- 日本語訳されるまでの一時的な注記 -->
-<div class="untranslated-note"><p>このWCAG 2.2 テクニック集の日本語訳は作業中となっています。WCAG 2.1 達成方法集の日本語訳をご利用いただけます。<br>[ <a href="https://waic.jp/translations/WCAG21/Techniques/">WCAG 2.1 達成方法集</a> ]</p></div>
 		
-<h1><span>Technique PDF2:</span>Creating bookmarks in <abbr title="Portable Document Format">PDF</abbr> documents</h1>
+<h1><span>テクニック PDF2:</span><abbr title="Portable Document Format">PDF</abbr> 文書内でしおりを作成する</h1>
 
 
 
 
 <section id="technique" class="box">
-	<h2 class="box-h box-h-icon">About this Technique</h2>
+	<h2 class="box-h box-h-icon">このテクニックについて</h2>
 	<div class="box-i">
 
 
   
   <p>
-    This technique relates to
+    このテクニックは
     
-<a href="https://w3c.github.io/wcag/understanding/multiple-ways">2.4.5: Multiple Ways</a>
-(<strong>Advisory</strong>).</p>
+<a href="https://waic.jp/translations/WCAG22/Understanding/multiple-ways">2.4.5: 複数の経路</a>
+(<strong>参考テクニック</strong>) に関連する。</p>
   
 
 
 
-  <p>This technique applies to tagged PDF documents.</p>
+  <p>このテクニックは、タグ付き PDF 文書に適用される。</p>
 
 </div>
 </section>
@@ -102,66 +98,66 @@
 		
 		
 		<section id="description">
-			<h2>Description</h2>
-      <p>The intent of this technique is to make it possible for users to locate content using bookmarks (<i>outline entries</i> in an Outline dictionary) in long documents.</p>
-      <p>A person with cognitive disabilities may prefer a hierarchical outline that provides an overview of the document rather than reading and traversing through many pages. This is also a conventional means of navigating a document that benefits all users.</p>
+			<h2>解説</h2>
+      <p>このテクニックの目的は、利用者が長い文書でしおり (アウトライン辞書の<i>アウトラインエントリ</i>) を使用してコンテンツを見つけられるようにすることである。</p>
+      <p>認知障害のある利用者は、多数のページを読み進めるよりも、文書の概要を提供する階層的なアウトラインを好む場合がある。また、これは文書内を移動する方法として一般的なものであり、どのような利用者にとっても役立つものである。</p>
 		</section>
 		<section id="examples">
-			<h2>Examples</h2>
+			<h2>事例</h2>
       <section class="example" id="example-1-converting-a-table-of-contents-created-with-microsoft-word-to-bookmarks-in-a-pdf">
-				<h3>Example 1: Converting a table of contents created with Microsoft Word to bookmarks in a PDF</h3>
-				<p>This example is shown with Microsoft Word and Adobe Acrobat Pro. There are other software tools that perform similar functions.</p>
+				<h3>事例 1: Microsoft Word で作成した目次を PDF のしおりに変換する</h3>
+				<p>この事例は Microsoft Word と Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。</p>
 				<ol>
-					<li>Create a table of contents at the beginning of the Word document.</li>
-					<li>Use Save as... → PDF to convert the Word document to PDF.</li>
+					<li>Word 文書の最初に目次を作成する。</li>
+					<li>Save as... → PDF を選択し、Word 文書を PDF に変換する。</li>
 				</ol>
-				<p>The table-of-contents entries in the converted document will be linked to the headings in the document. In addition, the headings will appear as PDF Bookmarks in the Acrobat navigation pane.</p>
+				<p>変換された文書の目次エントリは、文書内の見出しにリンクされる。さらに、Acrobat のナビゲーションウィンドウに、見出しが PDF のしおりとして表示される。</p>
 				<div>
-					<img alt="PDF document showing the Table of Contents and Bookmarks created from the headings in a Word document." height="192" src="img/bookmarks.png" width="770">
+					<img alt="Word 文書の見出しから作成された目次としおりを表示するPDF文書" height="192" src="img/bookmarks.png" width="770">
 				</div>
-				<p>If the document provides a glossary and/or index, these sections should have headings that appear in the table of contents (and thus as bookmarks in the Navigation pane). The table of contents also should be marked up with a heading so it is bookmarked as well.</p>
-				<p>If this markup has not been done in the authoring tool, Adobe Acrobat Pro can be used to provide the tags. See <a href="../pdf/PDF9">PDF9</a> if you need to modify converted headings or add new ones.</p>
-				<p class="working-example">This example is shown in operation in the <a href="../../working-examples/pdf-bookmarks/bookmarks.docx">working example of creating bookmarks with Word</a>.</p> 
+				<p>文書に用語集やインデックスが含まれている場合、これらのセクションの見出しが目次に (またナビゲーションウィンドウのしおりとして) 表示される。また、目次は、しおりも付けられるようにするために、見出しによってマークアップされなければならない。</p>
+				<p>このマークアップがオーサリングツールによって行われていない場合は、Adobe Acrobat Pro を使用してタグを設定することができる。変換された見出しを変更する方法または新しい見出しを追加する方法については、<a href="../pdf/PDF9">PDF9</a> を参照のこと。</p>
+				<p class="working-example">この事例の実例は、<a href="https://www.w3.org/WAI/WCAG22/working-examples/pdf-bookmarks/bookmarks.docx">Word でしおりを作成する動作例</a> で見ることができる。</p> 
       </section>
       <section class="example" id="example-2-converting-a-table-of-contents-created-with-openoffice-and-writer-to-bookmarks-in-a-pdf">
-				<h3>Example 2: Converting a table of contents created with OpenOffice and Writer to bookmarks in a PDF</h3>
-				<p>This example is shown with OpenOffice Writer and Adobe Acrobat Pro and Reader. There are other software tools that perform similar functions.</p>
+				<h3>事例 2: OpenOffice.org 及び Writer で作成した目次を PDF のしおりに変換する</h3>
+				<p>この事例は、OpenOffice.org Writer と Adobe Acrobat Pro および Reader の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。</p>
 				<ol>
 					<li>
-						<p>Using the Styles and Formatting dialog found in the Format option, or by press F11, select the text to appear in the table of contents and then select a Heading.</p>
+						<p>Format オプションにある Styles and Formatting ダイアログ、又は F11 キーを使用して、目次に表示したいテキストを選択し、見出しを選択する。</p>
 						<div>
-							<img alt="A screen grab of the Styles and Formatting dialog" src="img/oostyles.jpg">
+							<img alt="Styles and Formatting ダイアログのスクリーンショット" src="img/oostyles.jpg">
 						</div>
-						<p>To create a table of contents at the beginning of the OpenOffice.org Writer document:</p>
+						<p>OpenOffice.org Writer 文書の最初に目次を作成するには:</p>
 						<ul>
-							<li>Move your cursor to the appropriate place in the document to insert the table of contents.</li>
-							<li>Insert → Indexes and Tables... → Indexes and Tables → Insert Index/Table</li>
-							<li>Use File → Export as PDF... to convert the document to PDF, specifying Tagged PDF in the Options dialog.</li>
+							<li>目次を挿入するための、文書内の適切な場所にカーソルを合わせる。</li>
+							<li>Insert → Indexes and Tables... → Indexes and Tables → Insert Index/Table と進む。</li>
+							<li>File → Export as PDF...  を選択し、Option ダイアログで Tagged PDF を指定して、文書を PDF に変換する。</li>
 						</ul>
 					</li>
 				</ol>
 				<div>
-					<img alt="A screen grab of the Insert Index/Table dialog in OpenOffice.org Writer." src="img/oo-toc.jpg">
+					<img alt="OpenOffice.org Writer の Insert Index/Table ダイアログのスクリーンショット" src="img/oo-toc.jpg">
 				</div>
-				<p>The table-of-contents entries in the converted document will be linked to the headings in the document, and will appear as PDF Bookmarks in the left-hand Navigation pane. The OpenOffice.org Table of Contents and Bookmarks look the same as they appeared in Example 1. </p>
-      	<p class="working-example">This example is shown in operation in the <a href="../../working-examples/pdf-bookmarks/bookmarks.odt">working example of creating bookmarks with OpenOffice Writer</a>.</p>
+				<p>変換された文書の目次エントリは、文書内の見出しにリンクされ、左側のナビゲーションウィンドウに PDF のしおりとして表示される。OpenOffice.org の目次としおりは、事例 1 と同様に表示される。</p>
+      	<p class="working-example">この事例の実例は、<a href="https://www.w3.org/WAI/WCAG22/working-examples/pdf-bookmarks/bookmarks.odt">OpenOffice Writer でしおりを作成する動作例</a> で見ることができる。</p>
 			</section>
       <section class="example" id="example-3-adding-bookmarks-using-adobe-acrobat-pro-after-conversion">
-				<h3>Example 3: Adding bookmarks using Adobe Acrobat Pro after conversion</h3>
-				<p>This example is shown with Adobe Acrobat Pro. There are other software tools that perform similar functions.</p>
-				<p>After conversion to tagged PDF, you may decide to add bookmarks that were not automatically generated. Like the converted bookmarks, tagged bookmarks use the underlying structural information in the document.</p>
+				<h3>事例 3: 変換後に Adobe Acrobat Pro を使用して、しおりを追加する</h3>
+				<p>この事例は Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。</p>
+				<p>タグ付き PDF に変換した後で、自動的に生成されなかったしおりを追加することができる。変換されたしおりと同様に、タグ付きしおりでも文書内の構造情報が使用される。</p>
 				<ol>
-					<li>In the Bookmarks panel, choose the options menu, then choose New Bookmarks From Structure...</li>
-					<li>From the Structure Elements dialog, select the elements you want specified as tagged bookmarks.
-						<img alt="The Bookmarks options menu." height="656" src="img/new-bookmarks-from-structure.png" width="375">
+					<li>Bookmarks パネルでオプションメニューを選択し、New Bookmarks From Structure... を選択する。</li>
+					<li>Structure Elements ダイアログボックスで、タグ付きしおりとして指定するエレメントを選択する。
+						<img alt="Bookmarks オプションメニュー" height="656" src="img/new-bookmarks-from-structure.png" width="375">
 					</li>
-					<li>The tagged bookmarks are nested under a new, untitled bookmark. Access the context menu for the new bookmark and select the Rename option to rename the new bookmark.</li>
+					<li>タグ付きしおりは、タイトルのない新規しおりの下にネストされている。新規しおりのコンテキストメニューから Rename オプションを選択して、新規しおりの名前を変更する。</li>
 				</ol>
-      	<p class="working-example">This example is shown in operation in the <a href="../../working-examples/pdf-bookmarks/bookmarks.pdf">working example of creating bookmarks with Acrobat Pro</a>.</p>
+      	<p class="working-example">この事例の実例は、<a href="https://www.w3.org/WAI/WCAG22/working-examples/pdf-bookmarks/bookmarks.pdf">Acrobat Pro でしおりを作成する動作例</a> で見ることができる。</p>
 			</section>
 			<section class="example" id="example-4-creating-bookmarks-with-the-outline-hierarchy">
-				<h3>Example 4: Creating bookmarks with the outline hierarchy</h3> 
-				<p>The following code fragment illustrates part of an outline hierarchy used to create bookmarks This is typically accomplished by an authoring tool.</p>
+				<h3>事例 4: アウトライン階層によってしおりを作成する</h3> 
+				<p>次のコードフラグメントは、しおりの作成に使用するアウトライン階層の一部を示している。これは通常、オーサリングツールを使用して行う。</p>
 <pre xml:space="preserve"><code>121 0 obj
   &lt;&lt; /Type /Outlines
     /First 22 0 R
@@ -191,8 +187,8 @@ endobj</code></pre>
 				
 				
 				<section id="resources">
-					<h2>Related Resources</h2>
-<p style="margin-bottom: 1.5em;"><em><small>No endorsement implied.</small></em></p>
+					<h2>関連リソース</h2>
+<p style="margin-bottom: 1.5em;"><em><small>推奨を意味するものではない。</small></em></p>
 
 
          <ul>
@@ -207,24 +203,24 @@ endobj</code></pre>
 
 
 <section id="related">
-					<h2>Related Techniques</h2>
+					<h2>関連テクニック</h2>
 					<ul>
 						<li><a href="../general/G64">G64: Providing a Table of Contents</a></li>
 					</ul>
 				</section>
 <section id="tests">
-					<h2>Tests</h2>
+					<h2>検証</h2>
 					<section class="procedure" id="procedure">
-						<h3>Procedure</h3>
+						<h3>手順</h3>
 						<ol>
-							<li>Check that the Bookmarks panel displays bookmarks.</li>
-							<li>Check that the bookmarks link to the correct sections in the document.</li>
+							<li>しおりパネルにしおりが表示されていることをチェックする。</li>
+							<li>しおりが文書内の正しいセクションにリンクされていることをチェックする。</li>
 						</ol>
 					</section>
 					<section class="results" id="expected-results">
-						<h3>Expected Results</h3>
+						<h3>期待される結果</h3>
 						<ul>
-							<li>Check #1 and Check #2 are true.</li>
+							<li>チェック #1 及び チェック #2 が真である。</li>
 						</ul>
 					</section>
 				</section>
@@ -244,14 +240,13 @@ endobj</code></pre>
     <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
       <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
     </svg>
-    <h2>Help improve this page</h2>
+    <h2>このページを改善する</h2>
   </header>
   <div class="box-i">
-  <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org</a> or via GitHub</p>
+  <p>あなたのアイデア、提案、又はコメントを、Google フォーム 又は GitHub で共有してください。</p>
     <div class="button-group">
-      <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>E-mail</span></a>
-      <a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork &amp; Edit on GitHub</span></a>
-      <a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a>
+      <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdIpvogLx8kGIMewhQ6MzhG2pOCQZ50iIBViGg8pUrRJuslKg/viewform?entry.685195438=https%3A%2F%2Fwaic.jp%2Ftranslations%2FWCAG22%2FUnderstanding%2Ffocus-not-obscured-minimum" id="file-issue">翻訳に関するお問い合わせ (Google フォーム)</a>
+      <a href="https://github.com/waic/wcag22/" class="button"><span>GitHub</span></a>
     </div>
   </div>
 </aside>
@@ -273,12 +268,15 @@ endobj</code></pre>
       <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project,
       co-funded by the European Commission.
     </p>
+    <p>この文書は、2025 年 5 月 21 日付けの <a href="https://w3c.github.io/wcag/techniques/">Techniques for WCAG 2.2</a> を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> の翻訳ワーキンググループが翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書は作業進行中です。また、あくまで参考情報であり、翻訳上の誤りが含まれていることがあります。
+    </p>
+    <p>この翻訳文書の利用条件については、<a href="https://waic.jp/license-for-translated-documents/">WAICが提供する翻訳文書のライセンス</a>をご覧ください。</p>
   </div>
 </footer>
 
 <footer class="site-footer grid-4q" aria-label="Site">
   <div class="q1-start q3-end about">
-    <div>
+    <!--div>
       <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web Accessibility Initiative (WAI)</a></p>
       <p>Strategies, standards, and supporting resources to make the Web accessible to people with disabilities.</p>
     </div>
@@ -289,12 +287,12 @@ endobj</code></pre>
         <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube " viewBox="0 0 32 32"><path d="M31.327 8.273c-0.386-1.353-1.431-2.398-2.756-2.777l-0.028-0.007c-2.493-0.668-12.528-0.668-12.528-0.668s-10.009-0.013-12.528 0.668c-1.353 0.386-2.398 1.431-2.777 2.756l-0.007 0.028c-0.443 2.281-0.696 4.903-0.696 7.585 0 0.054 0 0.109 0 0.163l-0-0.008c-0 0.037-0 0.082-0 0.126 0 2.682 0.253 5.304 0.737 7.845l-0.041-0.26c0.386 1.353 1.431 2.398 2.756 2.777l0.028 0.007c2.491 0.669 12.528 0.669 12.528 0.669s10.008 0 12.528-0.669c1.353-0.386 2.398-1.431 2.777-2.756l0.007-0.028c0.425-2.233 0.668-4.803 0.668-7.429 0-0.099-0-0.198-0.001-0.297l0 0.015c0.001-0.092 0.001-0.201 0.001-0.31 0-2.626-0.243-5.196-0.708-7.687l0.040 0.258zM12.812 20.801v-9.591l8.352 4.803z"></path></svg> YouTube</a></li>
         <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
       </ul>
-    </div>
+    </div-->
     <div dir="auto" translate="no" lang="en">
       <p>Copyright © 2025 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
     </div>
   </div>
-  <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
+  <!--div dir="auto" translate="no" class="q4-start q4-end" lang="en">
     <ul style="margin-bottom:0">
       <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
       <li><a href="/WAI/sitemap/">Site Map</a></li>
@@ -303,7 +301,7 @@ endobj</code></pre>
       <li><a href="/WAI/translations/"> Translations</a></li>
       <li><a href="/WAI/roles/">Resources for Roles</a></li>
     </ul>
-  </div>
+  </div-->
 </footer>
 
 <link rel="stylesheet" href="../a11y-light.css">
@@ -317,7 +315,7 @@ endobj</code></pre>
 </script>
 <script src="https://www.w3.org/WAI/assets/scripts/main.js"></script>
 
-<script>
+<!--script>
   var _paq = _paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
   _paq.push(["setDoNotTrack", true]);
@@ -333,7 +331,7 @@ endobj</code></pre>
 </script>
 <noscript>
   <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-</noscript>
-
+</noscript-->
+<script src="https://waic.jp/docs/js/translation-contact.js"></script>
 
 </body></html>
